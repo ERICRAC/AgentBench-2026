@@ -101,3 +101,17 @@ consignes futures sans réécrire les runs passés.
 
 **Trace utile** — Gouvernance adaptative, minimale, journalisée et non
 rétroactive.
+
+## Échange 009
+
+**Demande synthétique** — Stabiliser le protocole, figer les tests de la
+calculatrice scientifique, créer une tentative solo, l'exécuter et présenter
+son rapport avant toute variante multi-agent.
+
+**Réponse synthétique** — La spécification scientifique est figée avec son
+prompt solo et une suite d'acceptation indépendante. Les scripts de création et
+de vérification prennent désormais en charge plusieurs défis sans changer le
+comportement historique de Calculator Core.
+
+**Trace utile** — Protocole Scientific Calculator préparé avant la création du
+premier run candidat.

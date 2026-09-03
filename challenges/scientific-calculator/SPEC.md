@@ -2,8 +2,9 @@
 
 ## Statut
 
-Spécification préparatoire. Elle devra être figée avec sa suite de tests avant
-la création du premier run scientifique.
+Spécification figée avec sa suite de tests d'acceptation avant la création du
+premier run scientifique. Toute évolution ultérieure impose une nouvelle
+version du défi et ne peut pas être appliquée aux runs existants.
 
 ## Objectif
 
@@ -35,6 +36,8 @@ Le moteur doit accepter :
 - la variable `x` lorsqu'une valeur est fournie par l'appelant.
 
 Les angles des fonctions trigonométriques sont exprimés en radians.
+La puissance est associative à droite et prioritaire sur les signes unaires :
+`2 ^ 3 ^ 2` vaut `512` et `-2 ^ 2` vaut `-4`.
 
 ## Contrat Python
 
@@ -82,7 +85,8 @@ def write_svg(
 `write_svg` doit :
 
 - produire un SVG UTF-8 autonome et valide ;
-- dessiner un fond, les axes visibles et la courbe en segments discontinus ;
+- dessiner un fond, les deux axes avec des éléments SVG `line` et la courbe en
+  segments discontinus ;
 - adapter l'échelle aux points finis disponibles ;
 - échapper tout titre ou contenu provenant de l'utilisateur ;
 - n'inclure aucun script, lien externe ou contenu actif ;
@@ -143,3 +147,11 @@ La suite d'acceptation indépendante devra couvrir au minimum :
 - historique et récupération de la CLI après erreur ;
 - absence d'exécution dynamique interdite ;
 - présence et qualité minimale de la documentation.
+
+Commande de vérification depuis la racine du dépôt :
+
+```bash
+python3 scripts/verify.py \
+  --challenge scientific-calculator \
+  --solution runs/<identifiant>/solution
+```

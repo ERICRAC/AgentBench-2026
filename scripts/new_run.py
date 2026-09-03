@@ -7,12 +7,28 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SPEC = ROOT / "challenges" / "calculator" / "SPEC.md"
+CHALLENGES = {
+    "calculator": ROOT / "challenges" / "calculator" / "SPEC.md",
+    "scientific-calculator": ROOT / "challenges" / "scientific-calculator" / "SPEC.md",
+}
+MODES = ("codex-single", "codex-multi", "codex-ollama")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Crée une tentative AgentBench vierge.")
     parser.add_argument("run_id", help="Identifiant, par exemple codex-single-001")
+    parser.add_argument(
+        "--challenge",
+        choices=sorted(CHALLENGES),
+        default="calculator",
+        help="Défi à copier dans la tentative (calculator par défaut).",
+    )
+    parser.add_argument(
+        "--mode",
+        choices=MODES,
+        default="codex-single",
+        help="Organisation expérimentale (codex-single par défaut).",
+    )
     args = parser.parse_args()
 
     if not re.fullmatch(r"[a-z0-9][a-z0-9-]{1,63}", args.run_id):
@@ -24,10 +40,12 @@ def main() -> int:
 
     solution_dir = run_dir / "solution"
     solution_dir.mkdir(parents=True)
-    (run_dir / "CHALLENGE.md").write_text(SPEC.read_text(encoding="utf-8"), encoding="utf-8")
+    spec = CHALLENGES[args.challenge]
+    (run_dir / "CHALLENGE.md").write_text(spec.read_text(encoding="utf-8"), encoding="utf-8")
     metadata = {
         "run_id": args.run_id,
-        "mode": "codex-single",
+        "mode": args.mode,
+        "challenge": args.challenge,
         "created_at": datetime.now(timezone.utc).isoformat(),
         "status": "created",
     }
