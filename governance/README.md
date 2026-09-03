@@ -12,3 +12,8 @@ La hiérarchie de décision est : règles globales du dépôt, cahier des charge
 la tentative, prompt du mode, arbitrage de l'orchestrateur, puis verdict du
 vérificateur. Une consigne locale ne peut pas assouplir la sécurité, modifier
 les tests ou autoriser la lecture d'une autre solution.
+
+Cette gouvernance évolue avec l'expérience. Une clarification ou une erreur
+peut devenir une règle générale lorsqu'elle est utile, contrôlable et
+applicable aux runs suivants. Elle n'est jamais utilisée pour réécrire a
+posteriori les conditions d'un run déjà terminé.

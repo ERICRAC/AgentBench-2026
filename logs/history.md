@@ -72,3 +72,32 @@ feuille de route. Il sera exécuté dans chacun des modes afin de ne pas confond
 la difficulté du défi avec l'effet social de l'organisation des agents.
 
 **Trace utile** — Décision méthodologique : matrice défis × organisations.
+
+## Échange 007
+
+**Demande synthétique** — Formaliser le commit et le push après chaque échange,
+ajouter une version anglaise, présenter l'auteur et son CV, adapter le format
+des réponses et expliquer l'authentification SSH sous VS Code.
+
+**Réponse synthétique** — La gouvernance impose désormais un commit descriptif
+et son push, le README dispose d'une version anglaise liée manuellement, la bio
+publique renvoie vers LinkedIn et le CV, et une note explique l'usage sûr de
+`ssh-agent`. Pour protéger le rythme de travail sans falsifier l'expérience,
+les heures sont retirées des Markdown plutôt que remplacées par des valeurs
+fictives.
+
+**Trace utile** — Documentation bilingue, format objectif/réponse/TODO,
+politique Git par échange et guide SSH sans stockage de phrase secrète.
+
+## Échange 008
+
+**Demande synthétique** — Retirer les heures des Markdown publics et améliorer
+progressivement les règles de gouvernance au fil des enseignements du projet.
+
+**Réponse synthétique** — La confidentialité des horaires est confirmée sans
+recours à des données fictives. Une règle d'évolution contrôlée de la
+gouvernance est ajoutée pour transformer les apprentissages réutilisables en
+consignes futures sans réécrire les runs passés.
+
+**Trace utile** — Gouvernance adaptative, minimale, journalisée et non
+rétroactive.

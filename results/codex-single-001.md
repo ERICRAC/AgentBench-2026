@@ -23,8 +23,8 @@ run.
 | Modèle observé | `gpt-5.6-sol` |
 | Authentification | ChatGPT Plus, sans clé API OpenAI |
 | Prompt | [`prompts/codex-single.md`](../prompts/codex-single.md) |
-| Création | 2 septembre 2026 à 16:23:58 UTC |
-| Vérification enregistrée | 2 septembre 2026 à 21:20:33 UTC |
+| Création | 2 septembre 2026 — heure non publiée |
+| Vérification enregistrée | 2 septembre 2026 — heure non publiée |
 | Consommation observée | Environ 18 086 tokens |
 | Durée totale | Non enregistrée |
 | Niveau de raisonnement | Non enregistré |

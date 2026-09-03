@@ -1,5 +1,7 @@
 # AgentBench 2026
 
+**Français** · [English (UK)](README.en.md)
+
 ![AgentBench 2026 — un agent face à un collectif d'agents](assets/agentbench-social-agents.png)
 
 > Un laboratoire ouvert sur le comportement social des agents IA : quand
@@ -17,7 +19,7 @@ n'est pas seulement la génération de code : il observe une petite société
 d'agents au travail — spécialisation, coordination, contradictions, contrôle,
 coût des échanges et capacité à corriger ses propres erreurs.
 
-Le projet a été imaginé et piloté **entièrement au micro avec Codex** par
+Le projet a été imaginé et piloté **entièrement au microphone avec Codex** par
 [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
 humain–agent fait donc partie de l'expérience autant que le code produit.
 
@@ -168,6 +170,11 @@ consignes, le format de restitution et la politique de journalisation. Le
 [journal public](logs/history.md) conserve une synthèse numérotée des demandes
 et réponses, sans horodatage, secret ni transcription personnelle brute.
 
+Une [note consacrée à SSH dans VS Code et WSL](docs/ssh-vscode.md) explique
+pourquoi une clé protégée redemande parfois sa phrase secrète et comment
+utiliser `ssh-agent` sans placer celle-ci dans le dépôt ou dans une variable
+d'environnement.
+
 Les échecs seront conservés autant que les réussites. Les données absentes ne
 seront pas reconstruites a posteriori, et les interventions humaines seront
 distinguées du travail du candidat.
@@ -183,6 +190,23 @@ governance/   règles de conduite et de restitution
 logs/         historique public synthétique
 scripts/      création des runs et vérification
 ```
+
+## À propos de l'auteur
+
+[Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/) est
+architecte SI et responsable informatique, avec plus de trente ans de terrain
+entre développement, industrie, infrastructures, cloud, cybersécurité,
+pilotage de projets et conduite du changement.
+
+AgentBench 2026 est son premier véritable POC public réalisé avec Codex en mode
+agent IA, avec une démarche expérimentale reproductible et une chaîne Git de
+type CI/CD : spécifications versionnées, runs isolés, tests indépendants,
+rapports, historique et publication continue. Le projet explore autant
+l'ingénierie logicielle que la manière dont des agents se répartissent le
+travail, se contredisent et se contrôlent.
+
+[Consulter son profil LinkedIn](https://www.linkedin.com/in/eric-racineux-75475a7/)
+· [Parcourir son CV en ligne](https://ericrac.github.io/CV-Eric-RACINEUX/)
 
 ## Licence
 

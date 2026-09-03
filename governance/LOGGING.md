@@ -21,6 +21,11 @@ Chaque entrée reçoit un numéro séquentiel stable, sans date ni heure.
 - raisonnement interne ou verbatim inutile ;
 - horodatages dans l'historique conversationnel public.
 
+Les Markdown publics peuvent conserver une date ou une durée utile au
+protocole, mais pas l'heure de travail de l'auteur. Une information masquée est
+omise ou indiquée comme non publiée ; elle n'est jamais remplacée par une heure
+fictive.
+
 ## Forme d'une entrée
 
 ```markdown
@@ -36,3 +41,8 @@ Chaque entrée reçoit un numéro séquentiel stable, sans date ni heure.
 Les métadonnées techniques propres à un run peuvent conserver leurs dates et
 durées lorsqu'elles font partie du protocole de mesure. Cette exception ne
 s'applique pas à l'historique synthétique des échanges.
+
+Après chaque échange modifiant le dépôt, l'entrée correspondante est ajoutée
+avant le commit. Le titre du commit reste court ; son corps résume l'objectif,
+les changements et les contrôles. Le commit est poussé sauf instruction
+contraire explicite.
