@@ -1,0 +1,45 @@
+{
+  "run_id": "scientific-single-001",
+  "mode": "codex-single",
+  "challenge": "scientific-calculator",
+  "created_at": "2026-09-03T17:30:23.385200+00:00",
+  "started_at": "2026-09-03T17:31:02+00:00",
+  "completed_at": "2026-09-03T17:36:33+00:00",
+  "status": "passed",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": null,
+  "architecture": "Un agent Codex, sans sous-agent",
+  "agent_count": 1,
+  "prompt": "prompts/scientific-single.md",
+  "duration_seconds": 331,
+  "token_usage": {
+    "input": 324237,
+    "cached_input": 303360,
+    "output": 8459,
+    "reasoning_output": 941
+  },
+  "tests": {
+    "total": 9,
+    "first_pass": {
+      "passed": 3,
+      "errors": 6
+    },
+    "final_passed": 9
+  },
+  "corrections": 2,
+  "events": {
+    "commands": 8,
+    "file_change_batches": 3,
+    "agent_messages": 9
+  },
+  "human_interventions": [],
+  "infrastructure_incidents": [
+    "Un lancement préalable au run a échoué avant le modèle car l'état Codex était en lecture seule.",
+    "Le candidat n'a pas pu écrire dans l'index Git parent ; la publication est assurée après le run par l'orchestrateur."
+  ],
+  "notes": [
+    "Le niveau de raisonnement n'a pas été exposé par la configuration.",
+    "Le premier échec fonctionnel apparent provenait de l'interaction entre dataclass et le chargeur dynamique du vérificateur.",
+    "Une passe intermédiaire a quitté avec le code 1 sans sortie capturée ; le candidat l'a décrite comme 8 tests réussis sur 9."
+  ]
+}

@@ -35,6 +35,12 @@ de la gouvernance et des journaux se fait hors run et dans un commit séparé.
   ces données sont effectivement disponibles.
 - Ne jamais inventer une donnée manquante ; la marquer comme non enregistrée.
 - Publier une synthèse des échanges selon [`governance/LOGGING.md`](governance/LOGGING.md).
+- Avant de figer une nouvelle suite, calibrer son chargeur sur des constructions
+  standard plausibles et vérifier que les assertions mesurent le contrat plutôt
+  qu'un choix d'implémentation accidentel.
+- Après le premier run, ne jamais corriger silencieusement un défaut de
+  l'arbitre : le documenter, conserver la suite figée pour les candidats
+  comparables et créer une nouvelle version si une correction est nécessaire.
 
 ## Gouvernance évolutive
 

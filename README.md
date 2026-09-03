@@ -9,7 +9,8 @@
 > surtout davantage de bruit ?
 
 ![Statut V1](https://img.shields.io/badge/V1-Codex_seul_validé-22c55e)
-![Tests](https://img.shields.io/badge/tests-6%2F6-06b6d4)
+![Core](https://img.shields.io/badge/Core-6%2F6-06b6d4)
+![Scientific](https://img.shields.io/badge/Scientific-9%2F9-f97316)
 ![V2](https://img.shields.io/badge/V2-multi--agent_à_venir-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
@@ -37,13 +38,14 @@ peuvent ni lire ni réutiliser la solution d'une autre variante.
 
 | Version | Organisation | État | Résultat |
 | --- | --- | --- | --- |
-| **V1** | Un agent Codex généraliste | **Terminée et publiée** | **6/6** |
+| **V1** | Un agent Codex généraliste | **Terminée et publiée** | **Core 6/6 · Scientific 9/9** |
 | **V2** | Codex orchestrateur + spécialistes bornés | Prochaine expérience | — |
 | **V3** | Codex + modèles Ollama locaux | Planifiée | — |
 | **V4** | Témoin AutoGen historique | Facultative | — |
 
-**Le seul résultat expérimental disponible à ce jour est la V1.** Il constitue
-la référence ; aucune conclusion comparative ne sera formulée avant la V2.
+**La V1 est la seule organisation évaluée à ce jour.** Elle fournit désormais
+deux références solo, Core et Scientific ; aucune conclusion sur le
+multi-agent ne sera formulée avant la V2.
 
 ## Dispositif expérimental
 
@@ -92,19 +94,19 @@ répéter. C'est sur lui que la V1 a établi la référence et que V2 puis V3 se
 comparées à conditions strictement identiques.
 
 Le second défi, [**Scientific Calculator**](challenges/scientific-calculator/SPEC.md),
-montera ensuite d'un cran : analyse d'expressions sans `eval()`, fonctions
+monte d'un cran : analyse d'expressions sans `eval()`, fonctions
 scientifiques, constantes, variable `x`, gestion des domaines, échantillonnage
-de fonctions et production de courbes SVG. Il sera lui aussi exécuté
-séparément en modes solo, multi-agent et hybride Ollama. Changer la difficulté
-entre V1 et V2 fausserait l'expérience ; la matrice croise donc les
-organisations **et** les défis.
+de fonctions et production de courbes SVG. Sa référence solo obtient 9/9. Il
+sera ensuite exécuté séparément en modes multi-agent et hybride Ollama. Changer
+la difficulté entre V1 et V2 fausserait l'expérience ; la matrice croise donc
+les organisations **et** les défis.
 
 ```mermaid
 flowchart TB
     C1["Calculator Core"] --> C1S["Solo · terminé"]
     C1 --> C1M["Multi-agent · à faire"]
     C1 --> C1O["Ollama · planifié"]
-    C2["Scientific Calculator + courbes"] --> C2S["Solo · à faire"]
+    C2["Scientific Calculator + courbes"] --> C2S["Solo · terminé · 9/9"]
     C2 --> C2M["Multi-agent · à faire"]
     C2 --> C2O["Ollama · planifié"]
 ```
@@ -124,6 +126,11 @@ documenté son usage, lancé le vérificateur puis rendu compte du résultat.
 Le [rapport V1 détaillé](results/codex-single-001.md) décrit le traitement, les
 choix techniques, chaque contrôle, les métriques disponibles et les limites de
 l'expérience.
+
+La [référence scientifique solo](results/scientific-single-001.md) atteint 9/9
+en 331 secondes après deux corrections autonomes. Elle ajoute un parseur sûr,
+des fonctions scientifiques et la production de courbes SVG sans dépendance
+externe.
 
 ## V2 et V3 — là où l'expérience commence vraiment
 

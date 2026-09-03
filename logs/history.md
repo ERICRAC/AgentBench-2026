@@ -115,3 +115,18 @@ comportement historique de Calculator Core.
 
 **Trace utile** — Protocole Scientific Calculator préparé avant la création du
 premier run candidat.
+
+## Échange 010
+
+**Demande synthétique** — Exécuter la première référence solo du défi
+Scientific Calculator et présenter son rapport complet avant toute variante
+multi-agent.
+
+**Réponse synthétique** — Un agent Codex unique a livré le moteur, la CLI et la
+documentation en 331 secondes. Après deux corrections autonomes, le résultat
+final et sa vérification indépendante atteignent 9/9.
+
+**Trace utile** — Premier passage 3/9 avec six erreurs liées au chargeur de
+tests, passe intermédiaire non mesurable, résultat final 9/9, 8 459 tokens de
+sortie et aucune intervention humaine fonctionnelle. Le biais `dataclass` du
+vérificateur entraîne une nouvelle règle de calibration pré-run.

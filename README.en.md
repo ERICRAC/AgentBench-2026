@@ -8,7 +8,8 @@
 > agents collaborate, do they create more intelligence — or merely more noise?
 
 ![V1 status](https://img.shields.io/badge/V1-single_Codex_validated-22c55e)
-![Tests](https://img.shields.io/badge/tests-6%2F6-06b6d4)
+![Core](https://img.shields.io/badge/Core-6%2F6-06b6d4)
+![Scientific](https://img.shields.io/badge/Scientific-9%2F9-f97316)
 ![V2](https://img.shields.io/badge/V2-multi--agent_next-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
@@ -37,13 +38,14 @@ may neither inspect nor reuse another candidate's solution.
 
 | Version | Organisation | Status | Result |
 | --- | --- | --- | --- |
-| **V1** | One general-purpose Codex agent | **Complete and published** | **6/6** |
+| **V1** | One general-purpose Codex agent | **Complete and published** | **Core 6/6 · Scientific 9/9** |
 | **V2** | Codex orchestrator + bounded specialists | Next experiment | — |
 | **V3** | Codex + local Ollama models | Planned | — |
 | **V4** | Historical AutoGen control | Optional | — |
 
-**V1 is currently the only experimental result.** It is the baseline; no
-comparative conclusion will be drawn before V2 has run.
+**V1 is currently the only organisation evaluated.** It now provides two solo
+baselines, Core and Scientific; no multi-agent conclusion will be drawn before
+V2 has run.
 
 ## Experimental design
 
@@ -90,19 +92,19 @@ five times as many tokens is not automatically better.
 **Calculator Core** is a short, repeatable first challenge. V1 established the
 baseline on it, and V2 and V3 will tackle exactly the same task.
 
-[**Scientific Calculator**](challenges/scientific-calculator/SPEC.md) will then
-raise the technical bar: safe expression parsing without `eval()`, scientific
+[**Scientific Calculator**](challenges/scientific-calculator/SPEC.md) raises
+the technical bar: safe expression parsing without `eval()`, scientific
 functions and constants, an `x` variable, domain handling, function sampling
-and SVG curve generation. It will also run independently in solo, multi-agent
-and hybrid Ollama modes. This challenge × organisation matrix prevents task
-difficulty from being mistaken for an organisational effect.
+and SVG curve generation. Its solo baseline scores 9/9; it will next run in
+multi-agent and hybrid Ollama modes. This challenge × organisation matrix
+prevents task difficulty from being mistaken for an organisational effect.
 
 ```mermaid
 flowchart TB
     C1["Calculator Core"] --> C1S["Solo · complete"]
     C1 --> C1M["Multi-agent · pending"]
     C1 --> C1O["Ollama · planned"]
-    C2["Scientific Calculator + plots"] --> C2S["Solo · pending"]
+    C2["Scientific Calculator + plots"] --> C2S["Solo · complete · 9/9"]
     C2 --> C2M["Multi-agent · pending"]
     C2 --> C2O["Ollama · planned"]
 ```
@@ -122,6 +124,10 @@ documented its use, ran the verifier and reported the result.
 The [detailed V1 report](results/codex-single-001.md) documents the work,
 technical decisions, every acceptance check, available measurements and known
 limitations.
+
+The [scientific solo baseline](results/scientific-single-001.md) scores 9/9 in
+331 seconds after two autonomous corrections. It adds safe parsing, scientific
+functions and dependency-free SVG curve generation.
 
 ## V2 and V3 — where the social experiment begins
 

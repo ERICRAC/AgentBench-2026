@@ -17,3 +17,8 @@ Cette gouvernance évolue avec l'expérience. Une clarification ou une erreur
 peut devenir une règle générale lorsqu'elle est utile, contrôlable et
 applicable aux runs suivants. Elle n'est jamais utilisée pour réécrire a
 posteriori les conditions d'un run déjà terminé.
+
+Avant son gel, un nouvel arbitre doit être calibré contre plusieurs formes
+d'implémentation conformes, notamment les constructions usuelles de la
+bibliothèque standard. Un biais découvert après le premier candidat est
+documenté ; il n'est pas effacé silencieusement du protocole publié.
