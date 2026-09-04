@@ -1,6 +1,6 @@
 # AgentBench 2026
 
-[Français](README.md) · **English (UK)**
+[Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
@@ -13,7 +13,7 @@
 
 ![Campaign](https://img.shields.io/badge/campaign-2%2F6_validations-22c55e)
 ![Progress](https://img.shields.io/badge/progress-33%25-06b6d4)
-![Next step](https://img.shields.io/badge/next-V2_Core-8b5cf6)
+![Next step](https://img.shields.io/badge/next-V2_Core_Calculator-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
 AgentBench 2026 compares three agent organisations across two related
@@ -29,8 +29,8 @@ as the software it produces.
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validated** | **2 / 2 complete** | **V2 · Core** | **Core + Scientific frozen** |
-| `██████░░░░░░` **33%** | Core **6/6** · Scientific **9/9** | Governed multi-agent | Independent verifiers |
+| **2 / 6 validated** | **2 / 2 complete** | **V2 · Core Calculator** | **Core + Scientific frozen** |
+| `██████░░░░░░` **33%** | Core Calculator **6/6** · Scientific Calculator **9/9** | Governed multi-agent | Independent verifiers |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -46,19 +46,19 @@ as the software it produces.
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex alone · 2/2"]
-      V1C["✓ Core<br/>6/6"]
-      V1S["✓ Scientific<br/>9/9"]
+      V1C["✓ Core Calculator<br/>6/6"]
+      V1S["✓ Scientific Calculator<br/>9/9"]
     end
     G1{"V1 observations<br/>solo baseline"}
     subgraph V2["V2 · Codex team · 0/2"]
-      V2C["▶ Core<br/>next"]
-      V2S["○ Scientific<br/>pending"]
+      V2C["▶ Core Calculator<br/>next"]
+      V2S["○ Scientific Calculator<br/>pending"]
     end
     G2{"V2 observations<br/>possible refinement"}
     V21["V2.1 · optimised variant<br/>optional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
-      V3C["○ Core<br/>pending"]
-      V3S["○ Scientific<br/>pending"]
+      V3C["○ Core Calculator<br/>pending"]
+      V3S["○ Scientific Calculator<br/>pending"]
     end
     G3{"V3 observations<br/>final comparison"}
     V4["V4 · AutoGen control<br/>optional"]
@@ -83,8 +83,8 @@ flowchart LR
     class V21,V4 optional;
 ```
 
-**How to read it:** the six V1–V3 × Core–Scientific cells form the mandatory
-campaign. V2.1 and V4 are not included in the 2/6 count: they are explicitly
+**How to read it:** the six V1–V3 × Core Calculator–Scientific Calculator cells
+form the mandatory campaign. V2.1 and V4 are not included in the 2/6 count: they are explicitly
 optional extensions.
 
 ## The research question
@@ -108,10 +108,10 @@ experimental value = delivered quality / (time + tokens + coordination)
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-001`](results/codex-single-001.md) | V1 · Codex alone | Core | **6/6** | not recorded | ≈ 18,086 |
-| [`scientific-single-001`](results/scientific-single-001.md) | V1 · Codex alone | Scientific | **9/9** | 331 s | 332,696¹ |
+| [`codex-single-001`](results/codex-single-001.en.md) | V1 · Codex alone | Core Calculator | **6/6** | not recorded | ≈ 18,086 |
+| [`scientific-single-001`](results/scientific-single-001.en.md) | V1 · Codex alone | Scientific Calculator | **9/9** | 331 s | 332,696¹ |
 
-¹ Observed input + output; the [scientific report](results/scientific-single-001.md)
+¹ Observed input + output; the [scientific report](results/scientific-single-001.en.md)
 separates cache, reasoning and corrections. Missing data is never reconstructed
 after the event.
 
@@ -135,21 +135,21 @@ at every gate before any decision. A substantial change opens a **new
 campaign**, and the V1-to-current cells needed for comparison are rerun under
 the same configuration. Earlier results remain published.
 
-The comparison and versioning rules are defined in the French
-[`governance/EXPERIMENTAL_DESIGN.md`](governance/EXPERIMENTAL_DESIGN.md).
+The comparison and versioning rules are defined in
+[`governance/EXPERIMENTAL_DESIGN.en.md`](governance/EXPERIMENTAL_DESIGN.en.md).
 
 ## Experimental TODO
 
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
-- [x] Publish V1 Core: `codex-single-001`, **6/6**.
-- [x] Publish V1 Scientific: `scientific-single-001`, **9/9**.
+- [x] Publish V1 Core Calculator: `codex-single-001`, **6/6**.
+- [x] Publish V1 Scientific Calculator: `scientific-single-001`, **9/9**.
 - [x] Record V1 observations and the observed model baseline.
 - [ ] Freeze V2 roles, prompts and metrics before execution.
-- [ ] Run and publish **V2 Core**, then **V2 Scientific**.
+- [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.
 - [ ] Freeze V3's Ollama integration, local models and context limits.
-- [ ] Run and publish **V3 Core**, then **V3 Scientific**.
+- [ ] Run and publish **V3 Core Calculator**, then **V3 Scientific Calculator**.
 - [ ] Compare the six main runs: quality, cost, corrections, interventions and social noise.
 - [ ] Decide after the synthesis whether the historical V4 control is worthwhile.
 - [ ] After any substantial refinement, open a new campaign and rerun comparable V1…Vn baselines.
@@ -196,8 +196,8 @@ scientific challenge with `--challenge scientific-calculator`.
 <details>
 <summary><strong>Governance, transparency and repository layout</strong></summary>
 
-The [`governance/`](governance/) package defines instruction hierarchy,
-experimental design, reporting and public logging. The [public history](logs/history.md)
+The [`governance/`](governance/README.en.md) package defines instruction hierarchy,
+experimental design, reporting and public logging. The [public history](logs/history.en.md)
 records decisions without work times, secrets or raw personal transcripts.
 Failures remain visible alongside successes.
 
@@ -211,7 +211,7 @@ logs/         concise public history
 scripts/      run creation and verification
 ```
 
-A [French SSH note for VS Code and WSL](docs/ssh-vscode.md) explains how to use
+A [SSH note for VS Code and WSL](docs/ssh-vscode.en.md) explains how to use
 a dedicated key through `ssh-agent` without storing its passphrase in the
 repository.
 

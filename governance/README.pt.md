@@ -1,0 +1,26 @@
+# Governação pública
+
+[Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
+
+Este diretório publica o método necessário para compreender e reproduzir a
+experiência sem expor conversas completas nem a configuração privada do autor.
+
+- [`RESPONSE_FORMAT.pt.md`](RESPONSE_FORMAT.pt.md) define as restituições.
+- [`LOGGING.pt.md`](LOGGING.pt.md) define o registo público.
+- [`EXPERIMENTAL_DESIGN.pt.md`](EXPERIMENTAL_DESIGN.pt.md) define a matriz, os
+  marcos de observação e as repetições.
+- [`../logs/history.pt.md`](../logs/history.pt.md) preserva o histórico resumido.
+
+A precedência é: regras do repositório, contrato da tentativa, prompt do modo,
+decisão do orquestrador e veredicto do verificador independente. Uma instrução
+local não pode enfraquecer a segurança, alterar os testes nem permitir a leitura
+de outra solução.
+
+A governação evolui apenas quando um esclarecimento ou erro produz uma regra
+útil, verificável e reutilizável. Nunca reescreve uma execução concluída. Um
+novo verificador é calibrado antes de ser congelado; um viés descoberto depois
+do primeiro candidato é documentado, não removido silenciosamente.
+
+A documentação editorial pública existe em francês, inglês britânico,
+espanhol e português. Instruções de agentes, prompts, desafios congelados,
+traces e entregáveis dos runs permanecem provas canónicas e imutáveis.

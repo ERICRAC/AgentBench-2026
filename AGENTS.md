@@ -71,6 +71,10 @@ de la gouvernance et des journaux se fait hors run et dans un commit séparé.
 - Vérifier les visuels publics en thèmes clair et sombre. Lorsqu'un lecteur
   embarqué ne permet pas de contrôler son thème, fournir un aperçu adaptatif
   sans retirer l'accès à l'artefact interactif ou téléchargeable.
+- Publier les documents éditoriaux publics en français, anglais britannique,
+  espagnol et portugais, avec une navigation réciproque en tête. Conserver dans
+  leur langue canonique les instructions agent, prompts, défis figés, traces et
+  livrables de runs afin de ne pas modifier le protocole ou la preuve historique.
 
 ## Livraison Git
 

@@ -1,5 +1,7 @@
 # Politique de journalisation publique
 
+**Français** · [English (UK)](LOGGING.en.md) · [Español](LOGGING.es.md) · [Português](LOGGING.pt.md)
+
 Le journal rend le processus auditable sans exposer la conversation complète.
 Chaque entrée reçoit un numéro séquentiel stable, sans date ni heure.
 

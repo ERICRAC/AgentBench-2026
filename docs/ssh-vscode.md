@@ -1,5 +1,7 @@
 # Clé SSH, phrase secrète, WSL et VS Code
 
+**Français** · [English (UK)](ssh-vscode.en.md) · [Español](ssh-vscode.es.md) · [Português](ssh-vscode.pt.md)
+
 ## Objectif
 
 Permettre à Git, VS Code et Codex de pousser vers GitHub avec la clé dédiée au

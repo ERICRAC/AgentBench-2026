@@ -1,5 +1,7 @@
 # Gouvernance publique
 
+**Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
+
 Ce dossier expose juste assez de méthode pour rendre l'expérience lisible et
 reproductible sans publier les conversations brutes ni la configuration privée
 de son auteur.
@@ -24,3 +26,8 @@ Avant son gel, un nouvel arbitre doit être calibré contre plusieurs formes
 d'implémentation conformes, notamment les constructions usuelles de la
 bibliothèque standard. Un biais découvert après le premier candidat est
 documenté ; il n'est pas effacé silencieusement du protocole publié.
+
+Les documents éditoriaux publics sont proposés en français, anglais
+britannique, espagnol et portugais. Les instructions agent, prompts, défis
+figés, traces et livrables de runs restent dans leur langue canonique : ils
+constituent le protocole ou la preuve historique et ne sont pas réécrits.

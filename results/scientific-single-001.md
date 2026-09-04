@@ -1,8 +1,10 @@
 # Résultat détaillé — `scientific-single-001`
 
+**Français** · [English (UK)](scientific-single-001.en.md) · [Español](scientific-single-001.es.md) · [Português](scientific-single-001.pt.md)
+
 ## Résumé exécutif
 
-La première tentative solo du défi Scientific Calculator est terminée avec un
+La première tentative solo de la Calculatrice Scientific est terminée avec un
 résultat final de **9 tests sur 9**. Un seul agent Codex a produit un parseur
 d'expressions sécurisé, les fonctions scientifiques, l'échantillonnage de
 courbes, un export SVG autonome et une CLI documentée, sans dépendance externe.
@@ -23,7 +25,7 @@ solution publiée. Elle ne compte pas comme modification du candidat.
 | Donnée | Valeur |
 | --- | --- |
 | Identifiant | `scientific-single-001` |
-| Défi | Scientific Calculator |
+| Objectif | Calculatrice Scientific |
 | Mode | Codex seul |
 | Architecture | Un agent généraliste, aucun sous-agent |
 | Modèle | `gpt-5.6-sol` |
@@ -158,7 +160,7 @@ Core sans harmoniser la méthode de comptage.
 - **Robustesse :** erreurs numériques normalisées, discontinuités isolées et
   CLI récupérable.
 - **Lisibilité :** structure claire, mais 352 lignes représentent un saut de
-  complexité réel par rapport au Calculator Core.
+  complexité réel par rapport à la Calculatrice Core.
 - **Documentation :** API, syntaxe, sécurité et limites sont explicitées.
 - **Autocorrection :** deux corrections ciblées ont permis de converger vers
   9/9 sans orientation humaine.
@@ -181,6 +183,6 @@ Core sans harmoniser la méthode de comptage.
 
 La V1 scientifique atteint le contrat complet en un peu plus de cinq minutes et
 deux corrections autonomes. Elle fixe une référence plus exigeante que
-Calculator Core : la future équipe multi-agent devra faire mieux qu'un simple
+la Calculatrice Core : la future équipe multi-agent devra faire mieux qu'un simple
 9/9, par exemple réussir plus tôt, détecter le biais du vérificateur, réduire
 les corrections ou améliorer le rapport qualité/complexité.

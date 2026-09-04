@@ -1,5 +1,7 @@
 # Plan expérimental et comparabilité
 
+**Français** · [English (UK)](EXPERIMENTAL_DESIGN.en.md) · [Español](EXPERIMENTAL_DESIGN.es.md) · [Português](EXPERIMENTAL_DESIGN.pt.md)
+
 Ce document fixe la structure de la campagne AgentBench 2026. Il sépare les
 comparaisons obligatoires des variantes exploratoires et empêche qu'un affinage
 ultérieur réécrive les conditions d'un résultat déjà publié.
@@ -9,7 +11,7 @@ ultérieur réécrive les conditions d'un résultat déjà publié.
 La campagne principale contient six cellules : trois modes d'organisation
 croisés avec deux niveaux de difficulté.
 
-| Mode | Calculator Core | Scientific Calculator |
+| Mode | Objectif Calculatrice Core | Objectif Calculatrice Scientific |
 | --- | --- | --- |
 | V1 · Codex seul | obligatoire | obligatoire |
 | V2 · Codex multi-agent gouverné | obligatoire | obligatoire |

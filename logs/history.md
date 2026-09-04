@@ -1,5 +1,7 @@
 # Historique synthétique des échanges
 
+**Français** · [English (UK)](history.en.md) · [Español](history.es.md) · [Português](history.pt.md)
+
 Ce journal ne reproduit pas les conversations. Il conserve les demandes,
 réponses et décisions utiles à l'audit du projet, dans l'ordre d'exécution et
 sans date ni heure.
@@ -159,3 +161,18 @@ accessible dans un volet repliable.
 
 **Trace utile** — Deux aperçus PNG thématiques, modèle STL inchangé et nouvelle
 règle de contrôle visuel multi-thème ; aucun run expérimental affecté.
+
+## Échange 013
+
+**Demande synthétique** — Nommer explicitement les objectifs Calculatrice Core
+et Calculatrice Scientific, examiner le nom des README de dossier et proposer
+les documents publics en anglais britannique, espagnol et portugais.
+
+**Réponse synthétique** — Les objectifs sont explicités dans le tableau de bord
+et les rapports. Les `README.md` de dossier sont conservés pour leur rôle
+d'accueil contextuel sur GitHub ; chaque document éditorial public reçoit des
+versions `.en.md`, `.es.md` et `.pt.md` reliées par une navigation réciproque.
+
+**Trace utile** — Localisation quadrilingue de l'accueil, de la gouvernance,
+des rapports, du guide SSH et du journal. Les protocoles, prompts, traces et
+livrables de runs restent canoniques et immuables.

@@ -1,5 +1,7 @@
 # Format de restitution
 
+**Français** · [English (UK)](RESPONSE_FORMAT.en.md) · [Español](RESPONSE_FORMAT.es.md) · [Português](RESPONSE_FORMAT.pt.md)
+
 Les réponses doivent être courtes à lire mais assez complètes pour comprendre
 ce qui a réellement été fait. Elles utilisent des rubriques nommées plutôt
 qu'une suite artificielle de points numérotés. Les rubriques sans contenu utile

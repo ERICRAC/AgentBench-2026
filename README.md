@@ -1,6 +1,6 @@
 # AgentBench 2026
 
-**Français** · [English (UK)](README.en.md)
+**Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
@@ -14,7 +14,7 @@
 
 ![Campagne](https://img.shields.io/badge/campagne-2%2F6_validations-22c55e)
 ![Progression](https://img.shields.io/badge/progression-33%25-06b6d4)
-![Prochaine étape](https://img.shields.io/badge/prochaine-V2_Core-8b5cf6)
+![Prochaine étape](https://img.shields.io/badge/prochaine-V2_Calculatrice_Core-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
 AgentBench 2026 compare trois organisations d'agents sur deux défis de même
@@ -29,8 +29,8 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validés** | **2 / 2 terminés** | **V2 · Core** | **Core + Scientific figés** |
-| `██████░░░░░░` **33 %** | Core **6/6** · Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
+| **2 / 6 validés** | **2 / 2 terminés** | **V2 · Calculatrice Core** | **Core + Scientific figés** |
+| `██████░░░░░░` **33 %** | Calculatrice Core **6/6** · Calculatrice Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -46,19 +46,19 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex seul · 2/2"]
-      V1C["✓ Core<br/>6/6"]
-      V1S["✓ Scientific<br/>9/9"]
+      V1C["✓ Calculatrice Core<br/>6/6"]
+      V1S["✓ Calculatrice Scientific<br/>9/9"]
     end
     G1{"Observations V1<br/>référence solo"}
     subgraph V2["V2 · Équipe Codex · 0/2"]
-      V2C["▶ Core<br/>prochain"]
-      V2S["○ Scientific<br/>à faire"]
+      V2C["▶ Calculatrice Core<br/>prochain"]
+      V2S["○ Calculatrice Scientific<br/>à faire"]
     end
     G2{"Observations V2<br/>affinage éventuel"}
     V21["V2.1 · variante optimisée<br/>facultative"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
-      V3C["○ Core<br/>à faire"]
-      V3S["○ Scientific<br/>à faire"]
+      V3C["○ Calculatrice Core<br/>à faire"]
+      V3S["○ Calculatrice Scientific<br/>à faire"]
     end
     G3{"Observations V3<br/>comparaison finale"}
     V4["V4 · témoin AutoGen<br/>facultatif"]
@@ -83,8 +83,9 @@ flowchart LR
     class V21,V4 optional;
 ```
 
-**Lecture :** les six cases V1–V3 × Core–Scientific constituent la campagne
-obligatoire. V2.1 et V4 n'entrent pas dans le calcul des 2/6 : ce sont des
+**Lecture :** les six cases V1–V3 × Calculatrice Core–Calculatrice Scientific
+constituent la campagne obligatoire. V2.1 et V4 n'entrent pas dans le calcul
+des 2/6 : ce sont des
 extensions facultatives, annoncées comme telles.
 
 ## La question expérimentale
@@ -108,8 +109,8 @@ valeur expérimentale = qualité obtenue / (temps + tokens + coordination)
 
 | Run | Organisation | Défi | Verdict | Temps | Tokens observés |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-001`](results/codex-single-001.md) | V1 · Codex seul | Core | **6/6** | non enregistré | ≈ 18 086 |
-| [`scientific-single-001`](results/scientific-single-001.md) | V1 · Codex seul | Scientific | **9/9** | 331 s | 332 696¹ |
+| [`codex-single-001`](results/codex-single-001.md) | V1 · Codex seul | Calculatrice Core | **6/6** | non enregistré | ≈ 18 086 |
+| [`scientific-single-001`](results/scientific-single-001.md) | V1 · Codex seul | Calculatrice Scientific | **9/9** | 331 s | 332 696¹ |
 
 ¹ Entrée + sortie observées ; le [rapport scientifique](results/scientific-single-001.md)
 détaille le cache, le raisonnement et les corrections. Aucune donnée manquante
@@ -140,24 +141,24 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 
 ## TODO expérimental
 
-- [x] Figer les défis et vérificateurs **Calculator Core** et **Scientific Calculator**.
-- [x] Publier V1 Core : `codex-single-001`, **6/6**.
-- [x] Publier V1 Scientific : `scientific-single-001`, **9/9**.
+- [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
+- [x] Publier V1 Calculatrice Core : `codex-single-001`, **6/6**.
+- [x] Publier V1 Calculatrice Scientific : `scientific-single-001`, **9/9**.
 - [x] Consigner les observations V1 et la référence de modèle observée.
 - [ ] Figer avant exécution les rôles, prompts et métriques de V2.
-- [ ] Exécuter et publier **V2 Core**, puis **V2 Scientific**.
+- [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.
 - [ ] Figer l'intégration Ollama, les modèles locaux et les limites de contexte de V3.
-- [ ] Exécuter et publier **V3 Core**, puis **V3 Scientific**.
+- [ ] Exécuter et publier **V3 Calculatrice Core**, puis **V3 Calculatrice Scientific**.
 - [ ] Comparer les six runs principaux : qualité, coût, corrections, interventions et bruit social.
 - [ ] Décider après la synthèse si le témoin historique V4 mérite d'être exécuté.
 - [ ] Lors de tout affinage substantiel, ouvrir une nouvelle campagne et rejouer les références comparables V1…Vn.
 
 ## Deux niveaux de difficulté
 
-**Calculator Core** est une expérience courte et répétable. **Scientific
-Calculator** monte d'un cran : analyse sûre d'expressions sans `eval()`,
+**Calculatrice Core** est une expérience courte et répétable. **Calculatrice
+Scientific** monte d'un cran : analyse sûre d'expressions sans `eval()`,
 fonctions et constantes scientifiques, variable `x`, domaines,
 échantillonnage et courbes SVG sans dépendance externe.
 

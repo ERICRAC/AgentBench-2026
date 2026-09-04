@@ -1,5 +1,7 @@
 # Résultat détaillé — `codex-single-001`
 
+**Français** · [English (UK)](codex-single-001.en.md) · [Español](codex-single-001.es.md) · [Português](codex-single-001.pt.md)
+
 ## Résumé exécutif
 
 La tentative de référence a confié tout le cycle de réalisation à un seul
@@ -18,6 +20,7 @@ run.
 | Donnée | Valeur |
 | --- | --- |
 | Identifiant | `codex-single-001` |
+| Objectif | Calculatrice Core |
 | Mode | Codex seul |
 | Architecture | Un agent généraliste, aucun sous-agent |
 | Modèle observé | `gpt-5.6-sol` |
