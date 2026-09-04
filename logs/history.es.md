@@ -97,3 +97,17 @@ README de carpeta y añadir inglés británico, español y portugués.
 contextuales y la documentación editorial pública dispone de ediciones
 `.en.md`, `.es.md` y `.pt.md` enlazadas. Protocolos, prompts, trazas y
 entregables permanecen como pruebas canónicas inmutables.
+
+## Intercambio 014
+
+**Petición** — Repetir toda V1, sustituir la referencia publicada, preparar V2
+y evaluar límites deliberados de contexto y esfuerzo.
+
+**Respuesta** — Dos runs nuevos y fijados reprodujeron Core 6/6 y Scientific
+9/9. Los informes `002` pasan a ser referencias actuales sin borrar `001`. V2
+fija tres consultores, un escritor, modelo, esfuerzo, contexto, compactación y
+medidas.
+
+**Traza útil** — Core: 193 s y 556.461 tokens acumulados; Scientific: 541 s y
+603.492, sin ayuda funcional humana. Se conservan el sesgo `dataclass` del
+cargador y la colisión entre el perímetro del run y la regla Git.

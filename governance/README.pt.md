@@ -9,6 +9,8 @@ experiência sem expor conversas completas nem a configuração privada do autor
 - [`LOGGING.pt.md`](LOGGING.pt.md) define o registo público.
 - [`EXPERIMENTAL_DESIGN.pt.md`](EXPERIMENTAL_DESIGN.pt.md) define a matriz, os
   marcos de observação e as repetições.
+- [`V2_PROTOCOL.pt.md`](V2_PROTOCOL.pt.md) pré-regista a organização
+  multiagente, os limites de contexto e as medições.
 - [`../logs/history.pt.md`](../logs/history.pt.md) preserva o histórico resumido.
 
 A precedência é: regras do repositório, contrato da tentativa, prompt do modo,
@@ -24,3 +26,6 @@ do primeiro candidato é documentado, não removido silenciosamente.
 A documentação editorial pública existe em francês, inglês britânico,
 espanhol e português. Instruções de agentes, prompts, desafios congelados,
 traces e entregáveis dos runs permanecem provas canónicas e imutáveis.
+
+A regra Git global pertence ao orquestrador depois do run. Os candidatos só
+escrevem em `solution/` e não criam commits nem fazem push.

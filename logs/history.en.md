@@ -99,3 +99,17 @@ Portuguese public documentation.
 because GitHub surfaces them naturally; public editorial documents now have
 reciprocally linked `.en.md`, `.es.md` and `.pt.md` editions. Protocols,
 prompts, traces and run deliverables remain canonical immutable evidence.
+
+## Exchange 014
+
+**Request** — Rerun all of V1, replace the current published baseline, prepare
+V2 and assess deliberate limits on context and reasoning effort.
+
+**Response** — Two fresh pinned runs reproduced Core at 6/6 and Scientific at
+9/9. The `002` reports become current without deleting `001`. V2 freezes three
+consultants, one writer, model, effort, context, compaction and measurements.
+
+**Useful trace** — Core: 193 s and 556,461 cumulative tokens; Scientific:
+541 s and 603,492, with no functional human help. The `dataclass` loader bias
+and a run-scope/Git-rule collision remain recorded. Governance now separates
+cognitive budget, ceiling effects and a future large-scale challenge.

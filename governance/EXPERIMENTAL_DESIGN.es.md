@@ -43,13 +43,26 @@ nueva versión del reto.
 Una corrección del candidato durante un run pertenece a ese run y no abre otra
 campaña.
 
+## Presupuesto cognitivo y escala
+
+La versión exacta del modelo, el esfuerzo, la ventana de contexto y el umbral
+de compactación son variables experimentales. Se fijan por agente antes del
+run. El consumo acumulado de tokens se distingue del contexto disponible al
+mismo tiempo.
+
+Las dos calculadoras calibran el protocolo y pueden producir un efecto techo.
+Un futuro reto mayor formará otra campaña, repetida en cada organización con
+los mismos presupuestos, sin añadirse retroactivamente a las seis celdas.
+
 ## Variantes opcionales
 
 **V2.1** puede probar una organización ajustada, en ambas dificultades, después
 de publicar y analizar V2. No reemplaza V2 ni cuenta entre las seis celdas.
 
-**V4** queda reservado a un control histórico AutoGen comparable si la síntesis
-V1–V3 demuestra su utilidad. Otras arquitecturas futuras recibirán otro nombre.
+**V4** es un control histórico comparable del proyecto multiagente de Yann
+Pointud llamado AutoGen, independiente del framework homónimo de Microsoft.
+Solo se ejecuta si la síntesis V1–V3 aporta información útil y queda fuera de
+la matriz principal.
 
 ## Comparación final
 

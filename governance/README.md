@@ -10,6 +10,8 @@ de son auteur.
 - [`LOGGING.md`](LOGGING.md) définit ce qui entre dans le journal public.
 - [`EXPERIMENTAL_DESIGN.md`](EXPERIMENTAL_DESIGN.md) fixe la matrice, les
   jalons d'observation et les règles de relance après affinage.
+- [`V2_PROTOCOL.md`](V2_PROTOCOL.md) préenregistre l'organisation, les limites
+  de contexte et les mesures de la campagne multi-agent.
 - [`../logs/history.md`](../logs/history.md) conserve l'historique synthétique.
 
 La hiérarchie de décision est : règles globales du dépôt, cahier des charges de
@@ -31,3 +33,7 @@ Les documents éditoriaux publics sont proposés en français, anglais
 britannique, espagnol et portugais. Les instructions agent, prompts, défis
 figés, traces et livrables de runs restent dans leur langue canonique : ils
 constituent le protocole ou la preuve historique et ne sont pas réécrits.
+
+La règle Git globale concerne l'orchestrateur hors run. Un candidat n'écrit
+que dans `solution/` et ne prépare ni commit ni push ; cette précision évite
+qu'une règle de publication déborde sur la mesure expérimentale.

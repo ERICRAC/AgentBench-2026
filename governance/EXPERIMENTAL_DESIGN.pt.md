@@ -43,13 +43,26 @@ primeiro candidato cria uma nova versão do desafio.
 Uma correção do candidato durante um run pertence a esse run e não abre outra
 campanha.
 
+## Orçamento cognitivo e escala
+
+A versão exata do modelo, o esforço, a janela de contexto e o limiar de
+compactação são variáveis experimentais. São fixados por agente antes do run.
+O consumo acumulado de tokens distingue-se do contexto disponível em
+simultâneo.
+
+As duas calculadoras calibram o protocolo e podem produzir um efeito de teto.
+Um futuro desafio maior formará outra campanha, repetida em cada organização
+com os mesmos orçamentos, sem ser acrescentado retroativamente às seis células.
+
 ## Variantes opcionais
 
 **V2.1** pode testar uma organização afinada, nas duas dificuldades, depois de
 V2 ser publicada e analisada. Não substitui V2 nem conta entre as seis células.
 
-**V4** fica reservado a um controlo histórico AutoGen comparável caso a síntese
-V1–V3 demonstre a sua utilidade. Outras arquiteturas futuras recebem outro nome.
+**V4** é um controlo histórico comparável do projeto multiagente de Yann
+Pointud chamado AutoGen, independente do framework homónimo da Microsoft. Só
+é executado se a síntese V1–V3 mostrar informação útil e fica fora da matriz
+principal.
 
 ## Comparação final
 

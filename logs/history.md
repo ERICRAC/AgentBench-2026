@@ -176,3 +176,20 @@ versions `.en.md`, `.es.md` et `.pt.md` reliées par une navigation réciproque.
 **Trace utile** — Localisation quadrilingue de l'accueil, de la gouvernance,
 des rapports, du guide SSH et du journal. Les protocoles, prompts, traces et
 livrables de runs restent canoniques et immuables.
+
+## Échange 014
+
+**Demande synthétique** — Rejouer toute la V1, remplacer la référence publiée,
+préparer le protocole V2 et évaluer une proposition de limiter contexte et
+effort afin de mieux mesurer l'organisation multi-agent.
+
+**Réponse synthétique** — Deux tentatives neuves et paramétrées ont reproduit
+Core à 6/6 et Scientific à 9/9. Les rapports `002` deviennent les références
+courantes sans supprimer les `001`. Le protocole V2 fixe trois consultants, un
+seul écrivain, le modèle, l'effort, le contexte, la compaction et les mesures.
+
+**Trace utile** — V1 : 193 s et 556 461 tokens cumulés pour Core ; 541 s et
+603 492 pour Scientific, sans aide humaine fonctionnelle. Un biais de chargeur
+`dataclass` et une collision entre périmètre du run et règle Git sont conservés.
+La gouvernance distingue désormais budget cognitif, effet plafond et futur
+défi de grande ampleur.

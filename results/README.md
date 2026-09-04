@@ -4,10 +4,12 @@
 
 ## Résultats publiés
 
-| Tentative | Mode | Objectif | Résultat | Détails |
-| --- | --- | --- | --- | --- |
-| `codex-single-001` | Codex seul | Calculatrice Core | 6/6 | [Compte rendu](codex-single-001.md) |
-| `scientific-single-001` | Codex seul | Calculatrice Scientific | 9/9 | [Compte rendu](scientific-single-001.md) |
+| Tentative | Mode | Objectif | Résultat | Statut | Détails |
+| --- | --- | --- | --- | --- | --- |
+| `codex-single-002` | Codex seul | Calculatrice Core | 6/6 | Référence courante | [Compte rendu](codex-single-002.md) |
+| `scientific-single-002` | Codex seul | Calculatrice Scientific | 9/9 | Référence courante | [Compte rendu](scientific-single-002.md) |
+| `codex-single-001` | Codex seul | Calculatrice Core | 6/6 | Historique | [Compte rendu](codex-single-001.md) |
+| `scientific-single-001` | Codex seul | Calculatrice Scientific | 9/9 | Historique | [Compte rendu](scientific-single-001.md) |
 
 ## Données conservées
 

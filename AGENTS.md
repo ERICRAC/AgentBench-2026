@@ -24,6 +24,9 @@
 Pendant un run, seules les écritures dans le dossier `solution/` de la
 tentative active sont autorisées. La maintenance du protocole, des résultats,
 de la gouvernance et des journaux se fait hors run et dans un commit séparé.
+La livraison Git appartient à l'orchestrateur après le run : le candidat et
+ses éventuels consultants ne lancent jamais `git add`, `git commit` ou
+`git push`, même si une règle globale de livraison mentionne ces opérations.
 
 ## Validation et traçabilité
 

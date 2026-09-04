@@ -43,15 +43,28 @@ creates a new challenge version.
 A candidate code correction during one run remains part of that run and does
 not open a campaign.
 
+## Cognitive budget and scale
+
+The exact model version, reasoning effort, context window and compaction
+threshold are experimental variables rather than environment details. They
+are fixed per agent and recorded before a run. Cumulative token use remains
+distinct from simultaneously available context.
+
+The two calculators calibrate the protocol and may create a ceiling effect. A
+future larger challenge must therefore form a separate campaign, rerun across
+all organisations under equal budgets; it will not be added retrospectively
+to the current six cells.
+
 ## Optional variants
 
 **V2.1** may test a refined organisation after V2 has been published and
 analysed, on both difficulty levels. It neither replaces V2 nor counts among
 the six main cells.
 
-**V4** is reserved for a comparable historical AutoGen control if the V1–V3
-synthesis shows that it adds useful evidence. Other future architectures
-receive different names.
+**V4** is a comparable historical control for Yann Pointud's multi-agent
+project named AutoGen, which is independent of Microsoft's namesake framework.
+It runs only if the V1–V3 synthesis adds useful evidence and remains outside
+the main matrix.
 
 ## Final comparison
 

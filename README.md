@@ -29,7 +29,7 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validés** | **2 / 2 terminés** | **V2 · Calculatrice Core** | **Core + Scientific figés** |
+| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis + V2 figés** |
 | `██████░░░░░░` **33 %** | Calculatrice Core **6/6** · Calculatrice Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
@@ -109,12 +109,13 @@ valeur expérimentale = qualité obtenue / (temps + tokens + coordination)
 
 | Run | Organisation | Défi | Verdict | Temps | Tokens observés |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-001`](results/codex-single-001.md) | V1 · Codex seul | Calculatrice Core | **6/6** | non enregistré | ≈ 18 086 |
-| [`scientific-single-001`](results/scientific-single-001.md) | V1 · Codex seul | Calculatrice Scientific | **9/9** | 331 s | 332 696¹ |
+| [`codex-single-002`](results/codex-single-002.md) | V1 · référence courante | Calculatrice Core | **6/6** | 193 s | 556 461¹ |
+| [`scientific-single-002`](results/scientific-single-002.md) | V1 · référence courante | Calculatrice Scientific | **9/9** | 541 s | 603 492¹ |
+| [`codex-single-001`](results/codex-single-001.md) | V1 · historique | Calculatrice Core | **6/6** | non enregistré | ≈ 18 086 |
+| [`scientific-single-001`](results/scientific-single-001.md) | V1 · historique | Calculatrice Scientific | **9/9** | 331 s | 332 696¹ |
 
-¹ Entrée + sortie observées ; le [rapport scientifique](results/scientific-single-001.md)
-détaille le cache, le raisonnement et les corrections. Aucune donnée manquante
-n'est reconstruite après coup.
+¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
+corrections. Aucune donnée manquante n'est reconstruite après coup.
 
 ## V1, V2, V3… et pourquoi V2.1 ou V4
 
@@ -127,7 +128,8 @@ n'est reconstruite après coup.
 - **V3 — hybride local :** Codex orchestre, décide et écrit ; des modèles
   Ollama locaux analysent ou critiquent dans un contexte limité.
 - **V4 — témoin historique facultatif :** reproduction comparable de
-  l'approche AutoGen qui a inspiré le projet, après la matrice principale.
+  l'approche multi-agent de Yann Pointud, baptisée AutoGen mais indépendante
+  du framework Microsoft du même nom, après la matrice principale.
 
 L'« affinage » peut porter sur la version du modèle, le prompt, les rôles, le
 contexte ou les paramètres. Il ne signifie pas nécessairement entraîner les
@@ -142,10 +144,9 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 ## TODO expérimental
 
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
-- [x] Publier V1 Calculatrice Core : `codex-single-001`, **6/6**.
-- [x] Publier V1 Calculatrice Scientific : `scientific-single-001`, **9/9**.
-- [x] Consigner les observations V1 et la référence de modèle observée.
-- [ ] Figer avant exécution les rôles, prompts et métriques de V2.
+- [x] Conserver les premières observations V1 `001` sans les réécrire.
+- [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Figer les rôles, le [prompt](prompts/codex-multi.md), les limites et les [métriques V2](governance/V2_PROTOCOL.md).
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.
@@ -234,8 +235,9 @@ isolés, tests indépendants, rapports, historique et publication continue.
 
 ## Licence
 
-MIT. AutoGen reste un projet indépendant appartenant à son auteur ; il n'est
-ni inclus ni forké dans ce dépôt.
+MIT. Le projet AutoGen de Yann Pointud reste indépendant et appartient à son
+auteur ; il n'est ni inclus ni forké dans ce dépôt et ne repose pas sur le
+framework Microsoft homonyme.
 
 ## Bonus — AgentBench en 3D
 

@@ -51,6 +51,19 @@ qu'un premier candidat a été évalué.
 Une correction locale du code candidat au cours d'un run n'ouvre pas une
 campagne : elle fait partie du run et doit être tracée.
 
+## Budget cognitif et échelle
+
+La version exacte du modèle, son niveau d'effort, la fenêtre de contexte et le
+seuil de compaction sont des variables expérimentales, pas des détails
+d'environnement. Ils sont fixés par agent et enregistrés avant un run. La
+consommation cumulée de tokens reste distinguée du contexte simultanément
+disponible.
+
+Les deux calculatrices servent à calibrer le protocole et peuvent produire un
+effet plafond. Un futur défi de plus grande envergure devra donc former une
+campagne séparée, rejouée dans chaque organisation sous les mêmes budgets. Il
+ne sera pas ajouté rétroactivement aux six cellules actuelles.
+
 ## Variantes facultatives
 
 **V2.1** est une variante exploratoire possible après la publication et
@@ -58,10 +71,10 @@ l'analyse de V2. Elle sert à tester une hypothèse d'organisation affinée sur
 les deux difficultés. Elle ne remplace pas V2 et ne compte pas parmi les six
 cellules principales.
 
-**V4** est réservé à un témoin historique AutoGen comparable, exécuté si la
-synthèse V1–V3 montre qu'il apporte une information utile. Il reste extérieur
-à la matrice principale. Une autre architecture future recevra un autre nom
-afin de ne pas surcharger ce rôle de contrôle.
+**V4** est réservé à un témoin historique comparable du projet multi-agent de
+Yann Pointud nommé AutoGen, indépendant du framework Microsoft homonyme. Il est
+exécuté seulement si la synthèse V1–V3 montre une information utile et reste
+extérieur à la matrice principale.
 
 ## Comparaison finale
 

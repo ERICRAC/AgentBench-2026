@@ -29,7 +29,7 @@ as the software it produces.
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validated** | **2 / 2 complete** | **V2 · Core Calculator** | **Core + Scientific frozen** |
+| **2 / 6 validated** | **2 / 2 replicated** | **V2 · Core Calculator** | **Challenges + V2 frozen** |
 | `██████░░░░░░` **33%** | Core Calculator **6/6** · Scientific Calculator **9/9** | Governed multi-agent | Independent verifiers |
 
 ```mermaid
@@ -108,12 +108,13 @@ experimental value = delivered quality / (time + tokens + coordination)
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-001`](results/codex-single-001.en.md) | V1 · Codex alone | Core Calculator | **6/6** | not recorded | ≈ 18,086 |
-| [`scientific-single-001`](results/scientific-single-001.en.md) | V1 · Codex alone | Scientific Calculator | **9/9** | 331 s | 332,696¹ |
+| [`codex-single-002`](results/codex-single-002.en.md) | V1 · current baseline | Core Calculator | **6/6** | 193 s | 556,461¹ |
+| [`scientific-single-002`](results/scientific-single-002.en.md) | V1 · current baseline | Scientific Calculator | **9/9** | 541 s | 603,492¹ |
+| [`codex-single-001`](results/codex-single-001.en.md) | V1 · historical | Core Calculator | **6/6** | not recorded | ≈ 18,086 |
+| [`scientific-single-001`](results/scientific-single-001.en.md) | V1 · historical | Scientific Calculator | **9/9** | 331 s | 332,696¹ |
 
-¹ Observed input + output; the [scientific report](results/scientific-single-001.en.md)
-separates cache, reasoning and corrections. Missing data is never reconstructed
-after the event.
+¹ Cumulative input + output; detailed reports separate cache, reasoning and
+corrections. Missing data is never reconstructed after the event.
 
 ## V1, V2, V3… and the case for V2.1 or V4
 
@@ -126,8 +127,9 @@ after the event.
   may test a refined organisation without replacing or polishing V2.
 - **V3 — local hybrid:** Codex orchestrates, decides and writes; local Ollama
   models analyse or critique within limited context.
-- **V4 — optional historical control:** a comparable reproduction of the
-  AutoGen approach that inspired this project, after the main matrix.
+- **V4 — optional historical control:** a comparable reproduction of Yann
+  Pointud's multi-agent project, named AutoGen but independent of Microsoft's
+  namesake framework, after the main matrix.
 
 “Refinement” may concern model version, prompt, roles, context or parameters;
 it does not necessarily mean training model weights. Observations are recorded
@@ -141,10 +143,9 @@ The comparison and versioning rules are defined in
 ## Experimental TODO
 
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
-- [x] Publish V1 Core Calculator: `codex-single-001`, **6/6**.
-- [x] Publish V1 Scientific Calculator: `scientific-single-001`, **9/9**.
-- [x] Record V1 observations and the observed model baseline.
-- [ ] Freeze V2 roles, prompts and metrics before execution.
+- [x] Preserve the first `001` V1 observations without rewriting them.
+- [x] Replicate V1 with pinned model, effort and context: Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Freeze V2 roles, [prompt](prompts/codex-multi.md), limits and [metrics](governance/V2_PROTOCOL.en.md).
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.
@@ -234,8 +235,9 @@ continuous publication.
 
 ## Licence
 
-MIT. AutoGen remains an independent project owned by its author; it is neither
-included nor forked here.
+MIT. Yann Pointud's AutoGen remains an independent project owned by its author;
+it is neither included nor forked here and does not use Microsoft's namesake
+framework.
 
 ## Bonus — AgentBench in 3D
 

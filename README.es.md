@@ -28,7 +28,7 @@ Codex** por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/)
 
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validadas** | **2 / 2 terminadas** | **V2 · Calculadora Core** | **Core + Scientific congelados** |
+| **2 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Core** | **Retos + V2 congelados** |
 | `██████░░░░░░` **33 %** | Calculadora Core **6/6** · Calculadora Scientific **9/9** | Multiagente gobernado | Verificadores independientes |
 
 ```mermaid
@@ -97,11 +97,13 @@ valor experimental = calidad obtenida / (tiempo + tokens + coordinación)
 
 | Ejecución | Organización | Objetivo | Veredicto | Tiempo | Tokens observados |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-001`](results/codex-single-001.es.md) | V1 · Codex solo | Calculadora Core | **6/6** | no registrado | ≈ 18 086 |
-| [`scientific-single-001`](results/scientific-single-001.es.md) | V1 · Codex solo | Calculadora Scientific | **9/9** | 331 s | 332 696¹ |
+| [`codex-single-002`](results/codex-single-002.es.md) | V1 · referencia actual | Calculadora Core | **6/6** | 193 s | 556 461¹ |
+| [`scientific-single-002`](results/scientific-single-002.es.md) | V1 · referencia actual | Calculadora Scientific | **9/9** | 541 s | 603 492¹ |
+| [`codex-single-001`](results/codex-single-001.es.md) | V1 · histórica | Calculadora Core | **6/6** | no registrado | ≈ 18 086 |
+| [`scientific-single-001`](results/scientific-single-001.es.md) | V1 · histórica | Calculadora Scientific | **9/9** | 331 s | 332 696¹ |
 
-¹ Entrada + salida observadas. Los datos ausentes nunca se reconstruyen a
-posteriori.
+¹ Entrada + salida acumuladas. Los informes separan caché, razonamiento y
+correcciones; los datos ausentes nunca se reconstruyen a posteriori.
 
 ## V1, V2, V3… V2.1 y V4
 
@@ -109,7 +111,8 @@ posteriori.
 - **V2:** orquestador Codex y especialistas con misiones acotadas y un solo redactor.
 - **V2.1:** optimización exploratoria opcional, únicamente tras analizar V2.
 - **V3:** Codex orquesta, decide y escribe; modelos Ollama locales analizan o critican.
-- **V4:** control histórico AutoGen opcional tras la matriz principal.
+- **V4:** control histórico opcional del proyecto multiagente de Yann Pointud,
+  llamado AutoGen pero independiente del framework homónimo de Microsoft.
 
 Un cambio sustancial de modelo, prompt, roles, contexto o parámetros abre una
 **nueva campaña**. Se repiten las referencias comparables V1…Vn y se conservan
@@ -118,9 +121,9 @@ los resultados anteriores. Véase el [plan experimental](governance/EXPERIMENTAL
 ## Tareas experimentales
 
 - [x] Congelar las pruebas de Calculadora Core y Calculadora Scientific.
-- [x] Publicar V1 Core: **6/6**.
-- [x] Publicar V1 Scientific: **9/9**.
-- [ ] Congelar roles, prompts y métricas de V2.
+- [x] Conservar las primeras observaciones V1 `001` sin reescribirlas.
+- [x] Replicar V1 con modelo, esfuerzo y contexto fijados: Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Congelar roles, [prompt](prompts/codex-multi.md), límites y [métricas V2](governance/V2_PROTOCOL.es.md).
 - [ ] Ejecutar V2 para Calculadora Core y Calculadora Scientific.
 - [ ] Analizar V2 y decidir si V2.1 aporta una hipótesis medible.
 - [ ] Congelar los modelos Ollama y los límites de contexto de V3.
@@ -169,7 +172,8 @@ Codex como agente de IA y una cadena Git de estilo CI/CD.
 
 ## Licencia
 
-MIT. AutoGen es un proyecto independiente; no está incluido ni bifurcado aquí.
+MIT. El AutoGen de Yann Pointud es un proyecto independiente; no está incluido
+ni bifurcado aquí y no usa el framework homónimo de Microsoft.
 
 ## Bonus — AgentBench en 3D
 

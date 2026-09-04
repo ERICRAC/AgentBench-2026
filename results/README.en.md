@@ -4,10 +4,12 @@
 
 ## Published results
 
-| Attempt | Mode | Objective | Result | Details |
-| --- | --- | --- | --- | --- |
-| `codex-single-001` | Codex alone | Core Calculator | 6/6 | [Report](codex-single-001.en.md) |
-| `scientific-single-001` | Codex alone | Scientific Calculator | 9/9 | [Report](scientific-single-001.en.md) |
+| Attempt | Mode | Objective | Result | Status | Details |
+| --- | --- | --- | --- | --- | --- |
+| `codex-single-002` | Codex alone | Core Calculator | 6/6 | Current baseline | [Report](codex-single-002.en.md) |
+| `scientific-single-002` | Codex alone | Scientific Calculator | 9/9 | Current baseline | [Report](scientific-single-002.en.md) |
+| `codex-single-001` | Codex alone | Core Calculator | 6/6 | Historical | [Report](codex-single-001.en.md) |
+| `scientific-single-001` | Codex alone | Scientific Calculator | 9/9 | Historical | [Report](scientific-single-001.en.md) |
 
 ## Retained data
 

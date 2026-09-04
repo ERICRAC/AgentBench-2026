@@ -96,3 +96,17 @@ pasta e adicionar inglês britânico, espanhol e português.
 preservados e a documentação editorial pública recebe edições `.en.md`,
 `.es.md` e `.pt.md` interligadas. Protocolos, prompts, traces e entregáveis
 permanecem provas canónicas imutáveis.
+
+## Interação 014
+
+**Pedido** — Repetir toda a V1, substituir a referência publicada, preparar V2
+e avaliar limites deliberados de contexto e esforço.
+
+**Resposta** — Dois runs novos e fixados reproduziram Core 6/6 e Scientific
+9/9. Os relatórios `002` tornam-se as referências atuais sem apagar `001`. V2
+fixa três consultores, um escritor, modelo, esforço, contexto, compactação e
+medições.
+
+**Traço útil** — Core: 193 s e 556.461 tokens acumulados; Scientific: 541 s e
+603.492, sem ajuda funcional humana. O viés `dataclass` do carregador e a
+colisão entre o perímetro do run e a regra Git permanecem registados.

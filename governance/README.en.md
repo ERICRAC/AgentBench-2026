@@ -10,6 +10,8 @@ configuration.
 - [`LOGGING.en.md`](LOGGING.en.md) defines public logging.
 - [`EXPERIMENTAL_DESIGN.en.md`](EXPERIMENTAL_DESIGN.en.md) defines the matrix,
   observation gates and rerun rules.
+- [`V2_PROTOCOL.en.md`](V2_PROTOCOL.en.md) pre-registers the multi-agent
+  organisation, context limits and measurements.
 - [`../logs/history.en.md`](../logs/history.en.md) contains the concise history.
 
 Decision precedence is: repository rules, attempt brief, mode prompt,
@@ -24,3 +26,7 @@ candidate is documented rather than silently removed.
 Public editorial documentation is available in French, UK English, Spanish and
 Portuguese. Agent instructions, prompts, frozen challenges, traces and run
 deliverables remain canonical and immutable evidence.
+
+The global Git rule applies to the orchestrator after a run. Candidates write
+only to `solution/` and neither commit nor push, preventing publication duties
+from contaminating the experiment.
