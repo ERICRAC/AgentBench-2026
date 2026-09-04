@@ -34,10 +34,15 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
+  "primaryColor": "#0f2a4a",
+  "primaryTextColor": "#f8fafc",
+  "primaryBorderColor": "#22d3ee",
+  "secondaryColor": "#3b1d67",
+  "tertiaryColor": "#431f2b",
   "fontFamily": "system-ui",
-  "lineColor": "#64748b",
-  "clusterBkg": "#f8fafc",
-  "clusterBorder": "#94a3b8"
+  "lineColor": "#8b5cf6",
+  "clusterBkg": "#0b1220",
+  "clusterBorder": "#475569"
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex seul · 2/2"]
@@ -66,11 +71,11 @@ flowchart LR
     V3C & V3S --> G3
     G3 -. "contrôle historique" .-> V4
 
-    classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:3px;
-    classDef next fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:3px;
-    classDef todo fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e,stroke-width:2px;
-    classDef gate fill:#ffedd5,stroke:#ea580c,color:#7c2d12,stroke-width:2px;
-    classDef optional fill:#f1f5f9,stroke:#64748b,color:#334155;
+    classDef done fill:#14532d,stroke:#4ade80,color:#f0fdf4,stroke-width:3px;
+    classDef next fill:#4c1d95,stroke:#c084fc,color:#faf5ff,stroke-width:3px;
+    classDef todo fill:#172554,stroke:#38bdf8,color:#f0f9ff,stroke-width:2px;
+    classDef gate fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
+    classDef optional fill:#0f2a4a,stroke:#94a3b8,color:#f8fafc;
     class V1C,V1S done;
     class V2C next;
     class V2S,V3C,V3S todo;
@@ -234,8 +239,20 @@ ni inclus ni forké dans ce dépôt.
 ## Bonus — AgentBench en 3D
 
 Un petit cristal octaédrique représente les six expériences principales autour
-d'un même centre de décision. GitHub permet de le manipuler directement ; le
-fichier est aussi [téléchargeable au format STL](assets/agentbench-crystal.stl).
+d'un même centre de décision. Son aperçu s'adapte automatiquement au thème du
+visiteur.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-crystal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-crystal-light.png">
+  <img alt="Cristal octaédrique AgentBench en rendu 3D" src="assets/agentbench-crystal-light.png">
+</picture>
+
+<details>
+<summary><strong>Manipuler le modèle STL interactif</strong></summary>
+
+Le fond du lecteur interactif est imposé par GitHub et ne suit pas le thème du
+README. Le modèle reste [téléchargeable au format STL](assets/agentbench-crystal.stl).
 
 ```stl
 solid agentbench_crystal
@@ -297,3 +314,5 @@ solid agentbench_crystal
   endfacet
 endsolid agentbench_crystal
 ```
+
+</details>

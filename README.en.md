@@ -34,10 +34,15 @@ as the software it produces.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
+  "primaryColor": "#0f2a4a",
+  "primaryTextColor": "#f8fafc",
+  "primaryBorderColor": "#22d3ee",
+  "secondaryColor": "#3b1d67",
+  "tertiaryColor": "#431f2b",
   "fontFamily": "system-ui",
-  "lineColor": "#64748b",
-  "clusterBkg": "#f8fafc",
-  "clusterBorder": "#94a3b8"
+  "lineColor": "#8b5cf6",
+  "clusterBkg": "#0b1220",
+  "clusterBorder": "#475569"
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex alone · 2/2"]
@@ -66,11 +71,11 @@ flowchart LR
     V3C & V3S --> G3
     G3 -. "historical control" .-> V4
 
-    classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:3px;
-    classDef next fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:3px;
-    classDef todo fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e,stroke-width:2px;
-    classDef gate fill:#ffedd5,stroke:#ea580c,color:#7c2d12,stroke-width:2px;
-    classDef optional fill:#f1f5f9,stroke:#64748b,color:#334155;
+    classDef done fill:#14532d,stroke:#4ade80,color:#f0fdf4,stroke-width:3px;
+    classDef next fill:#4c1d95,stroke:#c084fc,color:#faf5ff,stroke-width:3px;
+    classDef todo fill:#172554,stroke:#38bdf8,color:#f0f9ff,stroke-width:2px;
+    classDef gate fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
+    classDef optional fill:#0f2a4a,stroke:#94a3b8,color:#f8fafc;
     class V1C,V1S done;
     class V2C next;
     class V2S,V3C,V3S todo;
@@ -235,8 +240,19 @@ included nor forked here.
 ## Bonus — AgentBench in 3D
 
 This small octahedral crystal represents the six main experiments around one
-decision centre. GitHub can render it interactively, and the
-[STL file can also be downloaded](assets/agentbench-crystal.stl).
+decision centre. Its preview automatically follows the visitor's theme.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-crystal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-crystal-light.png">
+  <img alt="AgentBench octahedral crystal as a 3D render" src="assets/agentbench-crystal-light.png">
+</picture>
+
+<details>
+<summary><strong>Manipulate the interactive STL model</strong></summary>
+
+GitHub controls the interactive viewer background, so it does not follow the
+README theme. The model remains [available to download as STL](assets/agentbench-crystal.stl).
 
 ```stl
 solid agentbench_crystal
@@ -298,3 +314,5 @@ solid agentbench_crystal
   endfacet
 endsolid agentbench_crystal
 ```
+
+</details>

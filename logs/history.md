@@ -146,3 +146,16 @@ historique facultatif.
 **Trace utile** — Tableau de bord Mermaid, bannière claire/sombre, plan
 expérimental versionné et objet STL octaédrique ; aucun run supplémentaire
 lancé.
+
+## Échange 012
+
+**Demande synthétique** — Restaurer la palette sombre du tableau de bord et
+éviter le fond blanc du rendu STL lorsque GitHub est utilisé en mode sombre.
+
+**Réponse synthétique** — Le Mermaid retrouve ses fonds bleu nuit, violet et
+orange avec texte clair. Un aperçu 3D clair/sombre suit désormais le thème du
+visiteur, tandis que le lecteur STL natif au fond imposé par GitHub reste
+accessible dans un volet repliable.
+
+**Trace utile** — Deux aperçus PNG thématiques, modèle STL inchangé et nouvelle
+règle de contrôle visuel multi-thème ; aucun run expérimental affecté.

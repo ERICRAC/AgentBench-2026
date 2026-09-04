@@ -68,6 +68,9 @@ de la gouvernance et des journaux se fait hors run et dans un commit séparé.
   réinterpréter les conditions d'une tentative terminée.
 - Protéger les habitudes de travail de l'auteur en retirant les heures des
   Markdown publics, sans jamais les remplacer par des heures fictives.
+- Vérifier les visuels publics en thèmes clair et sombre. Lorsqu'un lecteur
+  embarqué ne permet pas de contrôler son thème, fournir un aperçu adaptatif
+  sans retirer l'accès à l'artefact interactif ou téléchargeable.
 
 ## Livraison Git
 
