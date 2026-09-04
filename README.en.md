@@ -2,29 +2,87 @@
 
 [Français](README.md) · **English (UK)**
 
-![AgentBench 2026 — one agent facing a network of agents](assets/agentbench-social-agents.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-social-agents-light.png">
+  <img alt="AgentBench 2026 — one agent facing a network of agents" src="assets/agentbench-social-agents-light.png">
+</picture>
 
 > An open R&D laboratory for the social behaviour of AI agents: when several
 > agents collaborate, do they create more intelligence — or merely more noise?
 
-![V1 status](https://img.shields.io/badge/V1-single_Codex_validated-22c55e)
-![Core](https://img.shields.io/badge/Core-6%2F6-06b6d4)
-![Scientific](https://img.shields.io/badge/Scientific-9%2F9-f97316)
-![V2](https://img.shields.io/badge/V2-multi--agent_next-8b5cf6)
+![Campaign](https://img.shields.io/badge/campaign-2%2F6_validations-22c55e)
+![Progress](https://img.shields.io/badge/progress-33%25-06b6d4)
+![Next step](https://img.shields.io/badge/next-V2_Core-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
-AgentBench 2026 is a reproducible R&D experiment inspired by Yann Pointud's
-[AutoGen project](https://github.com/yannpointud/AutoGen). It is not only about
-generating code. It observes a small society of agents at work: specialisation,
-coordination, disagreement, control, communication cost and the ability to
-detect and correct errors.
+AgentBench 2026 compares three agent organisations across two related
+challenges. It measures the outcome as well as elapsed time, tokens,
+corrections, human interventions and coordination noise.
 
 The project was conceived and steered **entirely through a microphone with
 Codex** by [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 The human–agent conversation is therefore part of the experiment, just as much
 as the software it produces.
 
-## The question
+## Dashboard — current state
+
+| Main campaign | V1 · Codex alone | Next run | Protocols |
+| :---: | :---: | :---: | :---: |
+| **2 / 6 validated** | **2 / 2 complete** | **V2 · Core** | **Core + Scientific frozen** |
+| `██████░░░░░░` **33%** | Core **6/6** · Scientific **9/9** | Governed multi-agent | Independent verifiers |
+
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {
+  "fontFamily": "system-ui",
+  "lineColor": "#64748b",
+  "clusterBkg": "#f8fafc",
+  "clusterBorder": "#94a3b8"
+}}}%%
+flowchart LR
+    subgraph V1["V1 · Codex alone · 2/2"]
+      V1C["✓ Core<br/>6/6"]
+      V1S["✓ Scientific<br/>9/9"]
+    end
+    G1{"V1 observations<br/>solo baseline"}
+    subgraph V2["V2 · Codex team · 0/2"]
+      V2C["▶ Core<br/>next"]
+      V2S["○ Scientific<br/>pending"]
+    end
+    G2{"V2 observations<br/>possible refinement"}
+    V21["V2.1 · optimised variant<br/>optional"]
+    subgraph V3["V3 · Codex + Ollama · 0/2"]
+      V3C["○ Core<br/>pending"]
+      V3S["○ Scientific<br/>pending"]
+    end
+    G3{"V3 observations<br/>final comparison"}
+    V4["V4 · AutoGen control<br/>optional"]
+
+    V1C & V1S --> G1
+    G1 --> V2C & V2S
+    V2C & V2S --> G2
+    G2 -. "if gain is testable" .-> V21
+    G2 --> V3C & V3S
+    V3C & V3S --> G3
+    G3 -. "historical control" .-> V4
+
+    classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d,stroke-width:3px;
+    classDef next fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:3px;
+    classDef todo fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e,stroke-width:2px;
+    classDef gate fill:#ffedd5,stroke:#ea580c,color:#7c2d12,stroke-width:2px;
+    classDef optional fill:#f1f5f9,stroke:#64748b,color:#334155;
+    class V1C,V1S done;
+    class V2C next;
+    class V2S,V3C,V3S todo;
+    class G1,G2,G3 gate;
+    class V21,V4 optional;
+```
+
+**How to read it:** the six V1–V3 × Core–Scientific cells form the mandatory
+campaign. V2.1 and V4 are not included in the 2/6 count: they are explicitly
+optional extensions.
+
+## The research question
 
 > Does a team of agents produce a better result than one capable agent once
 > time, token use, coordination noise and added complexity are taken into
@@ -32,116 +90,74 @@ as the software it produces.
 
 Every organisation tackling the same challenge receives the same
 specification, constraints, independent tests and clean working directory. It
-may neither inspect nor reuse another candidate's solution.
+may neither inspect nor reuse another attempt's solution. **Agents propose;
+the independent verifier decides.**
 
-## Progress
+The score is therefore only part of the picture:
 
-| Version | Organisation | Status | Result |
-| --- | --- | --- | --- |
-| **V1** | One general-purpose Codex agent | **Complete and published** | **Core 6/6 · Scientific 9/9** |
-| **V2** | Codex orchestrator + bounded specialists | Next experiment | — |
-| **V3** | Codex + local Ollama models | Planned | — |
-| **V4** | Historical AutoGen control | Optional | — |
-
-**V1 is currently the only organisation evaluated.** It now provides two solo
-baselines, Core and Scientific; no multi-agent conclusion will be drawn before
-V2 has run.
-
-## Experimental design
-
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {
-  "primaryColor": "#0f2a4a",
-  "primaryTextColor": "#f8fafc",
-  "primaryBorderColor": "#22d3ee",
-  "lineColor": "#8b5cf6",
-  "secondaryColor": "#3b1d67",
-  "tertiaryColor": "#431f2b",
-  "fontFamily": "system-ui"
-}}}%%
-flowchart LR
-    S["Same specification"] --> R1["V1 · Codex alone<br/>✅ 6/6"]
-    S --> R2["V2 · Codex team<br/>⏳ next"]
-    S --> R3["V3 · Codex + Ollama<br/>○ planned"]
-    T["Same independent tests"] --> R1
-    T --> R2
-    T --> R3
-    R1 --> M["Measure<br/>quality · time · tokens<br/>interventions · noise"]
-    R2 --> M
-    R3 --> M
-    M --> C["Compare the<br/>quality / complexity ratio"]
-
-    classDef source fill:#0f2a4a,stroke:#22d3ee,color:#f8fafc,stroke-width:2px;
-    classDef done fill:#14532d,stroke:#4ade80,color:#f0fdf4,stroke-width:3px;
-    classDef next fill:#4c1d95,stroke:#c084fc,color:#faf5ff,stroke-width:2px;
-    classDef planned fill:#312e81,stroke:#818cf8,color:#eef2ff,stroke-width:2px;
-    classDef measure fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
-    class S,T source;
-    class R1 done;
-    class R2 next;
-    class R3 planned;
-    class M,C measure;
+```text
+experimental value = delivered quality / (time + tokens + coordination)
 ```
 
-The governing rule is simple: **agents propose; the independent verifier
-decides**. A team that also scores 6/6 but consumes five times as much time or
-five times as many tokens is not automatically better.
+## Published results
+
+| Run | Organisation | Challenge | Verdict | Time | Observed tokens |
+| --- | --- | --- | ---: | ---: | ---: |
+| [`codex-single-001`](results/codex-single-001.md) | V1 · Codex alone | Core | **6/6** | not recorded | ≈ 18,086 |
+| [`scientific-single-001`](results/scientific-single-001.md) | V1 · Codex alone | Scientific | **9/9** | 331 s | 332,696¹ |
+
+¹ Observed input + output; the [scientific report](results/scientific-single-001.md)
+separates cache, reasoning and corrections. Missing data is never reconstructed
+after the event.
+
+## V1, V2, V3… and the case for V2.1 or V4
+
+- **V1 — solo baseline:** one general-purpose Codex agent with no delegation.
+  Both difficulty levels are complete.
+- **V2 — Codex society:** an orchestrator and specialists with bounded
+  assignments, with only one writer. It measures the benefit and cost of
+  coordination.
+- **V2.1 — optional optimisation:** considered only after full V2 analysis. It
+  may test a refined organisation without replacing or polishing V2.
+- **V3 — local hybrid:** Codex orchestrates, decides and writes; local Ollama
+  models analyse or critique within limited context.
+- **V4 — optional historical control:** a comparable reproduction of the
+  AutoGen approach that inspired this project, after the main matrix.
+
+“Refinement” may concern model version, prompt, roles, context or parameters;
+it does not necessarily mean training model weights. Observations are recorded
+at every gate before any decision. A substantial change opens a **new
+campaign**, and the V1-to-current cells needed for comparison are rerun under
+the same configuration. Earlier results remain published.
+
+The comparison and versioning rules are defined in the French
+[`governance/EXPERIMENTAL_DESIGN.md`](governance/EXPERIMENTAL_DESIGN.md).
+
+## Experimental TODO
+
+- [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
+- [x] Publish V1 Core: `codex-single-001`, **6/6**.
+- [x] Publish V1 Scientific: `scientific-single-001`, **9/9**.
+- [x] Record V1 observations and the observed model baseline.
+- [ ] Freeze V2 roles, prompts and metrics before execution.
+- [ ] Run and publish **V2 Core**, then **V2 Scientific**.
+- [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
+- [ ] If activated, run V2.1 separately on both difficulty levels.
+- [ ] Freeze V3's Ollama integration, local models and context limits.
+- [ ] Run and publish **V3 Core**, then **V3 Scientific**.
+- [ ] Compare the six main runs: quality, cost, corrections, interventions and social noise.
+- [ ] Decide after the synthesis whether the historical V4 control is worthwhile.
+- [ ] After any substantial refinement, open a new campaign and rerun comparable V1…Vn baselines.
 
 ## Two difficulty levels
 
-**Calculator Core** is a short, repeatable first challenge. V1 established the
-baseline on it, and V2 and V3 will tackle exactly the same task.
+**Calculator Core** is short and repeatable. **Scientific Calculator** raises
+the bar with safe expression parsing without `eval()`, scientific functions
+and constants, an `x` variable, domain handling, sampling and dependency-free
+SVG plots.
 
-[**Scientific Calculator**](challenges/scientific-calculator/SPEC.md) raises
-the technical bar: safe expression parsing without `eval()`, scientific
-functions and constants, an `x` variable, domain handling, function sampling
-and SVG curve generation. Its solo baseline scores 9/9; it will next run in
-multi-agent and hybrid Ollama modes. This challenge × organisation matrix
-prevents task difficulty from being mistaken for an organisational effect.
-
-```mermaid
-flowchart TB
-    C1["Calculator Core"] --> C1S["Solo · complete"]
-    C1 --> C1M["Multi-agent · pending"]
-    C1 --> C1O["Ollama · planned"]
-    C2["Scientific Calculator + plots"] --> C2S["Solo · complete · 9/9"]
-    C2 --> C2M["Multi-agent · pending"]
-    C2 --> C2O["Ollama · planned"]
-```
-
-## V1 — the baseline
-
-One Codex agent read the brief, designed and implemented the calculator,
-documented its use, ran the verifier and reported the result.
-
-- Observed model: `gpt-5.6-sol`
-- Sub-agents: none
-- External dependencies: none
-- Observed consumption: approximately 18,086 tokens
-- First known test pass: 6/6
-- Final result: 6/6
-
-The [detailed V1 report](results/codex-single-001.md) documents the work,
-technical decisions, every acceptance check, available measurements and known
-limitations.
-
-The [scientific solo baseline](results/scientific-single-001.md) scores 9/9 in
-331 seconds after two autonomous corrections. It adds safe parsing, scientific
-functions and dependency-free SVG curve generation.
-
-## V2 and V3 — where the social experiment begins
-
-V2 will give bounded roles to several Codex agents: analysis, architecture,
-critique and test review. Only one writer will control the solution, while the
-orchestrator retains final decision authority. The experiment will observe
-whether plurality discovers more defects or merely increases disagreement and
-iteration.
-
-V3 will replace selected specialists with local Ollama models. It will test
-whether smaller models can provide useful dissent without another commercial
-API, while Codex continues to orchestrate, decide and edit the repository.
-
-## What is measured
+<details>
+<summary><strong>What is measured</strong></summary>
 
 - functional compliance and robustness;
 - code readability and documentation quality;
@@ -149,38 +165,52 @@ API, while Codex continues to orchestrate, decide and edit the repository.
 - human interventions;
 - disagreement, decisions and coordination noise;
 - agents' ability to detect their own errors;
-- the ratio between delivered quality and organisational complexity.
+- delivered quality relative to organisational complexity.
 
-## Reproducing V1
+</details>
+
+<details>
+<summary><strong>Reproduce a V1 baseline</strong></summary>
 
 Requirements: Linux, Python 3.10 or later, Git and Codex CLI connected through
 a ChatGPT subscription. No OpenAI API key is required.
 
 ```bash
-python3 scripts/new_run.py codex-single-001
-cd runs/codex-single-001
+python3 scripts/new_run.py my-v1-run
+cd runs/my-v1-run
 codex "$(cat ../../prompts/codex-single.md)"
 cd ../..
-python3 scripts/verify.py --solution runs/codex-single-001/solution
+python3 scripts/verify.py --solution runs/my-v1-run/solution
 ```
 
-Every attempt must use a new identifier and clean directory.
+Every attempt uses a unique identifier and a clean directory. Select the
+scientific challenge with `--challenge scientific-calculator`.
 
-## Transparency and governance
+</details>
 
-The small [`governance/`](governance/) package defines instruction hierarchy,
-response format and public logging policy. The [public history](logs/history.md)
-contains numbered summaries of requests and responses, without timestamps,
-secrets or raw personal transcripts.
+<details>
+<summary><strong>Governance, transparency and repository layout</strong></summary>
 
-A [French technical note about SSH in VS Code and WSL](docs/ssh-vscode.md)
-explains why a protected key may ask for its passphrase again and how to use
-`ssh-agent` without storing that passphrase in the repository or an environment
-variable.
+The [`governance/`](governance/) package defines instruction hierarchy,
+experimental design, reporting and public logging. The [public history](logs/history.md)
+records decisions without work times, secrets or raw personal transcripts.
+Failures remain visible alongside successes.
 
-Failures will be retained alongside successes. Missing measurements will not
-be reconstructed after the fact, and human intervention will be distinguished
-from candidate work.
+```text
+challenges/   specifications and independent tests
+prompts/      exact prompts given to candidates
+runs/         clean workspaces and produced solutions
+results/      detailed results and future comparisons
+governance/   conduct and reporting rules
+logs/         concise public history
+scripts/      run creation and verification
+```
+
+A [French SSH note for VS Code and WSL](docs/ssh-vscode.md) explains how to use
+a dedicated key through `ssh-agent` without storing its passphrase in the
+repository.
+
+</details>
 
 ## About the author
 
@@ -190,10 +220,9 @@ experience spanning software development, industry, infrastructure, cloud,
 cybersecurity, project leadership and organisational change.
 
 AgentBench 2026 is his first substantial public proof of concept built with
-Codex operating as an AI agent. It applies an experimental, CI/CD-style Git
-workflow: versioned specifications, isolated runs, independent tests, reports,
-history and continuous publication. It explores both software engineering and
-the way agents divide work, disagree and govern one another.
+Codex operating as an AI agent and a CI/CD-style Git workflow: versioned
+specifications, isolated runs, independent tests, reports, history and
+continuous publication.
 
 [LinkedIn profile](https://www.linkedin.com/in/eric-racineux-75475a7/)
 · [Online CV](https://ericrac.github.io/CV-Eric-RACINEUX/)
@@ -202,3 +231,70 @@ the way agents divide work, disagree and govern one another.
 
 MIT. AutoGen remains an independent project owned by its author; it is neither
 included nor forked here.
+
+## Bonus — AgentBench in 3D
+
+This small octahedral crystal represents the six main experiments around one
+decision centre. GitHub can render it interactively, and the
+[STL file can also be downloaded](assets/agentbench-crystal.stl).
+
+```stl
+solid agentbench_crystal
+  facet normal 0.577350 0.577350 0.577350
+    outer loop
+      vertex 0 0 14
+      vertex 10 0 0
+      vertex 0 10 0
+    endloop
+  endfacet
+  facet normal -0.577350 0.577350 0.577350
+    outer loop
+      vertex 0 0 14
+      vertex 0 10 0
+      vertex -10 0 0
+    endloop
+  endfacet
+  facet normal -0.577350 -0.577350 0.577350
+    outer loop
+      vertex 0 0 14
+      vertex -10 0 0
+      vertex 0 -10 0
+    endloop
+  endfacet
+  facet normal 0.577350 -0.577350 0.577350
+    outer loop
+      vertex 0 0 14
+      vertex 0 -10 0
+      vertex 10 0 0
+    endloop
+  endfacet
+  facet normal 0.577350 0.577350 -0.577350
+    outer loop
+      vertex 0 0 -14
+      vertex 0 10 0
+      vertex 10 0 0
+    endloop
+  endfacet
+  facet normal -0.577350 0.577350 -0.577350
+    outer loop
+      vertex 0 0 -14
+      vertex -10 0 0
+      vertex 0 10 0
+    endloop
+  endfacet
+  facet normal -0.577350 -0.577350 -0.577350
+    outer loop
+      vertex 0 0 -14
+      vertex 0 -10 0
+      vertex -10 0 0
+    endloop
+  endfacet
+  facet normal 0.577350 -0.577350 -0.577350
+    outer loop
+      vertex 0 0 -14
+      vertex 10 0 0
+      vertex 0 -10 0
+    endloop
+  endfacet
+endsolid agentbench_crystal
+```

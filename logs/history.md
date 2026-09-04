@@ -130,3 +130,19 @@ final et sa vérification indépendante atteignent 9/9.
 tests, passe intermédiaire non mesurable, résultat final 9/9, 8 459 tokens de
 sortie et aucune intervention humaine fonctionnelle. Le biais `dataclass` du
 vérificateur entraîne une nouvelle règle de calibration pré-run.
+
+## Échange 011
+
+**Demande synthétique** — Transformer l'avancement en tableau de bord plus
+graphique, planifier V1 à V3 sur les deux difficultés, intégrer des jalons
+d'affinage et étudier V2.1, V4 ainsi qu'un rendu STL ludique.
+
+**Réponse synthétique** — Le README bilingue affiche désormais les six cellules
+principales, leur progression, la prochaine étape et le TODO complet. Les
+règles de campagne distinguent les observations, les affinages et les relances
+comparables ; V2.1 reste une optimisation exploratoire et V4 un témoin
+historique facultatif.
+
+**Trace utile** — Tableau de bord Mermaid, bannière claire/sombre, plan
+expérimental versionné et objet STL octaédrique ; aucun run supplémentaire
+lancé.

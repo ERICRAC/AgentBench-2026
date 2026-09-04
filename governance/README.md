@@ -6,6 +6,8 @@ de son auteur.
 
 - [`RESPONSE_FORMAT.md`](RESPONSE_FORMAT.md) définit la forme des restitutions.
 - [`LOGGING.md`](LOGGING.md) définit ce qui entre dans le journal public.
+- [`EXPERIMENTAL_DESIGN.md`](EXPERIMENTAL_DESIGN.md) fixe la matrice, les
+  jalons d'observation et les règles de relance après affinage.
 - [`../logs/history.md`](../logs/history.md) conserve l'historique synthétique.
 
 La hiérarchie de décision est : règles globales du dépôt, cahier des charges de

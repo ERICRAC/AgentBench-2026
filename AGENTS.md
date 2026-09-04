@@ -42,6 +42,20 @@ de la gouvernance et des journaux se fait hors run et dans un commit séparé.
   l'arbitre : le documenter, conserver la suite figée pour les candidats
   comparables et créer une nouvelle version si une correction est nécessaire.
 
+## Comparabilité des campagnes
+
+- Traiter V1, V2 et V3 comme des modes d'organisation croisés avec chacun des
+  deux défis ; leurs six cellules forment la campagne principale.
+- Publier les résultats d'un mode avant son jalon d'observation et séparer les
+  constats des propositions d'affinage.
+- Identifier une campagne par ses défis, vérificateurs, modèles, paramètres
+  structurants et prompts. Toute modification substantielle ouvre une nouvelle
+  campagne sans altérer les résultats antérieurs.
+- Après un changement de campagne, rejouer de V1 jusqu'au mode étudié les
+  cellules nécessaires à une comparaison homogène.
+- Conserver V2.1 comme variante optimisée facultative et V4 comme témoin
+  historique facultatif ; aucun des deux ne remplace une cellule principale.
+
 ## Gouvernance évolutive
 
 - À chaque échange, examiner si une erreur, une ambiguïté, une intervention
