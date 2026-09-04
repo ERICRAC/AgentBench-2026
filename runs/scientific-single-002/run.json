@@ -1,0 +1,37 @@
+{
+  "run_id": "scientific-single-002",
+  "mode": "codex-single",
+  "challenge": "scientific-calculator",
+  "created_at": "2026-09-04T09:34:32.127774+00:00",
+  "status": "completed",
+  "candidate": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "codex_cli": "0.152.1",
+    "context_window_tokens": 200000,
+    "auto_compact_token_limit": 180000,
+    "auto_compact_token_limit_scope": "total",
+    "session_persistence": false,
+    "subagents": 0
+  },
+  "prompt": "prompts/scientific-single.md",
+  "duration_seconds_observed_rounded": 541,
+  "usage": {
+    "input_tokens": 587315,
+    "cached_input_tokens": 541312,
+    "output_tokens": 16177,
+    "reasoning_output_tokens": 6289,
+    "input_plus_output_tokens": 603492
+  },
+  "verification": {
+    "candidate_first_pass": "failed during module loading",
+    "candidate_final_pass": "9/9",
+    "independent_final_pass": "9/9"
+  },
+  "corrections": {
+    "code_after_first_pass": 1,
+    "cause": "dataclass incompatible with the verifier dynamic loader under Python 3.13"
+  },
+  "human_functional_interventions": 0,
+  "candidate_commit": "1e339ef6e944deff1314240e23e24fb4dd02093a"
+}
