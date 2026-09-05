@@ -29,5 +29,6 @@ candidatos não executam operações Git.
 
 Registam-se primeira passagem, resultado independente, duração, tokens reais
 por agente quando disponíveis, chamadas, contradições, conselhos aceites ou
-rejeitados, correções e incidentes. V2 Core é publicada antes de V2 Scientific,
-sem afinação intermédia. Qualquer mudança abre outra campanha.
+rejeitados, correções e incidentes. Um `PV.md` numerado regista cada mandato,
+parecer, resposta e decisão fundamentada por papel. V2 Core é publicada antes
+de V2 Scientific, sem afinação intermédia. Qualquer mudança abre outra campanha.

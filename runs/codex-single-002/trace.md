@@ -8,7 +8,9 @@
 - effort de raisonnement : `high` ;
 - contexte déclaré : 200 000 tokens ;
 - compaction automatique : 180 000 tokens, portée `total` ;
-- sous-agents : aucun ;
+- orchestrateur expérimental : session Codex extérieure au run candidat ;
+- agent candidat : processus `codex exec` distinct, mandaté par l'orchestrateur ;
+- consultants ou sous-agents lancés par le candidat : aucun ;
 - intervention humaine fonctionnelle : aucune.
 
 La session était éphémère. Les deux tentatives de lancement qui ont précédé le
@@ -52,3 +54,6 @@ Il a créé un commit contenant exclusivement les deux livrables, puis a tenté
 un push. Le push a échoué et aucun état distant n'a été modifié par le
 candidat. Cet événement est conservé comme bruit de gouvernance ; il justifie
 une exclusion explicite des opérations Git dans les futurs prompts de run.
+
+Le [procès-verbal](PV.md) distingue les échanges de l'orchestrateur, du
+candidat et du vérificateur sans publier le raisonnement interne brut.

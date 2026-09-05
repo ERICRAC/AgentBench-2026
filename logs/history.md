@@ -193,3 +193,18 @@ seul écrivain, le modèle, l'effort, le contexte, la compaction et les mesures.
 `dataclass` et une collision entre périmètre du run et règle Git sont conservés.
 La gouvernance distingue désormais budget cognitif, effet plafond et futur
 défi de grande ampleur.
+
+## Échange 015
+
+**Demande synthétique** — Clarifier qui a réellement exécuté V1, conserver un
+procès-verbal des échanges et afficher la valeur expérimentale comme une vraie
+formule mathématique dans le README.
+
+**Réponse synthétique** — V1 distingue désormais le commanditaire,
+l'orchestrateur expérimental et la session candidate Codex mandatée ; seul le
+candidat n'a utilisé aucun consultant ou sous-agent. Chaque run `002` possède
+un PV numéroté, rendu obligatoire pour V2 et les modes suivants.
+
+**Trace utile** — Topologie des acteurs ajoutée aux métadonnées et rapports,
+politique de journalisation renforcée, formule rendue en notation mathématique
+GitHub dans les quatre langues.

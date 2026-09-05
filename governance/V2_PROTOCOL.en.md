@@ -41,7 +41,9 @@ after closure in a separate commit.
 Record first-pass and independent final scores, total and per-role duration
 when available, genuine per-agent token counters, calls, disagreements,
 accepted and rejected advice, corrections, human interventions, incidents and
-delivered size. Missing data remains explicitly unrecorded.
+delivered size. A numbered `PV.md` records every mandate, recommendation,
+response and reasoned disposition by role. Missing data remains explicitly
+unrecorded.
 
 Run and publish V2 Core first, then V2 Scientific without intermediate tuning.
 Observe both before any V2.1 decision. Any parameter change opens a new

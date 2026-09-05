@@ -8,7 +8,9 @@
 - effort de raisonnement : `high` ;
 - contexte déclaré : 200 000 tokens ;
 - compaction automatique : 180 000 tokens, portée `total` ;
-- sous-agents : aucun ;
+- orchestrateur expérimental : session Codex extérieure au run candidat ;
+- agent candidat : processus `codex exec` distinct, mandaté par l'orchestrateur ;
+- consultants ou sous-agents lancés par le candidat : aucun ;
 - intervention humaine fonctionnelle : aucune.
 
 La session était éphémère et utilisait les mêmes paramètres que le run Core.
@@ -55,3 +57,6 @@ Comme dans le run Core, le candidat a appliqué la règle Git globale : il a
 créé un commit limité aux deux livrables, puis tenté un push. L'authentification
 SSH a bloqué la publication et le candidat n'a pas modifié le distant. Le
 protocole V2 devra neutraliser explicitement cette collision de périmètre.
+
+Le [procès-verbal](PV.md) distingue les échanges de l'orchestrateur, du
+candidat et du vérificateur sans publier le raisonnement interne brut.

@@ -5,8 +5,9 @@
 ## Résumé exécutif
 
 La seconde référence V1 de la **Calculatrice Core** atteint **6 tests sur 6**
-dès son premier passage officiel et lors de la vérification indépendante. Elle
-a été exécutée par un seul agent, sans sous-agent ni aide fonctionnelle
+dès son premier passage officiel et lors de la vérification indépendante.
+L'orchestrateur expérimental a mandaté une session candidate Codex distincte ;
+ce candidat a travaillé sans consultant, sous-agent ni aide fonctionnelle
 humaine, avec le modèle, l'effort et le contexte explicitement épinglés.
 
 Cette réplication devient la référence courante pour préparer V2. Elle ne
@@ -25,7 +26,8 @@ historique aux paramètres incomplets.
 | Fenêtre déclarée | 200 000 tokens |
 | Compaction | 180 000 tokens, portée `total` |
 | Prompt | [`prompts/codex-single.md`](../prompts/codex-single.md) |
-| Sous-agents | 0 |
+| Agent candidat | session `codex exec` distincte |
+| Consultants ou sous-agents du candidat | 0 |
 | Intervention humaine fonctionnelle | 0 |
 | Premier passage | **6/6** |
 | Verdict indépendant final | **6/6** |
@@ -80,5 +82,6 @@ score déjà maximal, V2 ne pourra démontrer un intérêt qu'en réduisant le c
 en améliorant la qualité non couverte par les tests ou en détectant plus tôt
 les risques — pas en revendiquant simplement le même 6/6.
 
-La [trace synthétique](../runs/codex-single-002/trace.md) et les
+Le [procès-verbal](../runs/codex-single-002/PV.md), la
+[trace synthétique](../runs/codex-single-002/trace.md) et les
 [métadonnées](../runs/codex-single-002/run.json) rendent le parcours auditable.

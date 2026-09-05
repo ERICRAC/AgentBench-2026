@@ -14,7 +14,9 @@
 
 ## Gouvernance par mode
 
-- **V1 — Codex seul :** aucun sous-agent ni aucune délégation.
+- **V1 — Codex seul :** l'agent candidat n'utilise aucun consultant,
+  sous-agent ni délégation ; l'orchestrateur expérimental qui mandate et
+  contrôle cette session distincte reste hors du périmètre candidat.
 - **V2 — Codex multi-agent :** les sous-agents sont autorisés uniquement quand
   le lancement de la V2 le demande explicitement. Leurs missions sont bornées
   et consultatives ; un seul écrivain principal modifie la solution.
@@ -36,6 +38,12 @@ ses éventuels consultants ne lancent jamais `git add`, `git commit` ou
   contrôles restant en échec.
 - Enregistrer les rôles, décisions, tests, corrections, tokens et durées quand
   ces données sont effectivement disponibles.
+- Distinguer explicitement l'orchestrateur expérimental, l'agent candidat et
+  les consultants ou sous-agents du candidat ; « aucun sous-agent » ne signifie
+  jamais qu'aucun processus candidat distinct n'a été mandaté.
+- Produire après chaque run un procès-verbal synthétique numéroté des échanges,
+  avis, arbitrages et contrôles observables, sans publier de raisonnement
+  interne brut ni d'horodatage de travail.
 - Ne jamais inventer une donnée manquante ; la marquer comme non enregistrée.
 - Publier une synthèse des échanges selon [`governance/LOGGING.md`](governance/LOGGING.md).
 - Avant de figer une nouvelle suite, calibrer son chargeur sur des constructions

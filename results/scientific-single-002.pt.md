@@ -5,8 +5,9 @@
 ## Resumo executivo
 
 A segunda referência V1 da **Calculadora Scientific** alcançou **9 testes de
-9**. Um único agente entregou análise segura, amostragem, SVG e CLI sem
-dependências externas nem ajuda funcional humana.
+9**. O orquestrador experimental encarregou uma sessão candidata Codex
+distinta; esse único candidato entregou análise segura, amostragem, SVG e CLI
+sem consultores, dependências externas nem ajuda funcional humana.
 
 O primeiro verificador oficial parou ao carregar o módulo devido à interação
 conhecida entre `dataclass` e o carregador dinâmico em Python 3.13. Uma correção
@@ -19,7 +20,7 @@ específica bastou. Esta execução é a referência atual para V2;
 | Modelo / esforço | `gpt-5.6-sol` / `high` |
 | Codex CLI | `0.152.1` |
 | Contexto / compactação | 200.000 / 180.000 tokens, escopo `total` |
-| Subagentes / ajuda funcional humana | 0 / 0 |
+| Consultores ou subagentes do candidato / ajuda funcional humana | 0 / 0 |
 | Primeira passagem | falha ao carregar o módulo |
 | Resultado final candidato / independente | **9/9 / 9/9** |
 
@@ -41,5 +42,6 @@ carregamento para certas `dataclass`; a amostragem uniforme também pode perder
 uma descontinuidade entre pontos. A tentativa Git do candidato não alterou o
 remoto.
 
-Consulte a [traça](../runs/scientific-single-002/trace.md) e os
+Consulte a [ata](../runs/scientific-single-002/PV.md), o
+[traço](../runs/scientific-single-002/trace.md) e os
 [metadados](../runs/scientific-single-002/run.json).

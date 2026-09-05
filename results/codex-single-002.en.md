@@ -5,9 +5,10 @@
 ## Executive summary
 
 The second V1 **Core Calculator** baseline passed **6 tests out of 6** on its
-first official run and in the independent verification. One agent completed
-it without sub-agents or functional human help, with the model, effort and
-context explicitly pinned. It is the current V2 comparison baseline;
+first official run and in the independent verification. The experimental
+orchestrator commissioned a separate Codex candidate session; that candidate
+worked without consultants, sub-agents or functional human help, with the
+model, effort and context explicitly pinned. It is the current V2 baseline;
 `codex-single-001` remains available as the first historical observation.
 
 ## Identity and result
@@ -18,7 +19,8 @@ context explicitly pinned. It is the current V2 comparison baseline;
 | Model / effort | `gpt-5.6-sol` / `high` |
 | Codex CLI | `0.152.1` |
 | Context / compaction | 200,000 / 180,000 tokens, `total` scope |
-| Sub-agents / human functional help | 0 / 0 |
+| Candidate / its consultants or sub-agents | separate `codex exec` session / 0 |
+| Functional human help | 0 |
 | First pass / independent final verdict | **6/6 / 6/6** |
 
 The candidate implemented an explicit four-operation engine, input parsing
@@ -45,5 +47,6 @@ created a solution-only commit before attempting a push. The remote was not
 changed. Future run prompts now exclude Git operations explicitly.
 
 Independent command: `python3 scripts/verify.py --solution
-runs/codex-single-002/solution`. See the [trace](../runs/codex-single-002/trace.md)
-and [metadata](../runs/codex-single-002/run.json).
+runs/codex-single-002/solution`. See the [minutes](../runs/codex-single-002/PV.md),
+[trace](../runs/codex-single-002/trace.md) and
+[metadata](../runs/codex-single-002/run.json).

@@ -80,6 +80,8 @@ publie les artefacts après clôture, dans un commit distinct.
 - tokens entrée, cache, sortie et raisonnement par agent lorsque l'outil les
   expose réellement ;
 - appels de consultants, contradictions, recommandations retenues ou écartées ;
+- procès-verbal `PV.md` numérotant chaque mandat, avis, réponse et arbitrage,
+  avec l'identité du rôle et sa disposition motivée ;
 - corrections, interventions humaines et incidents d'infrastructure ;
 - lignes et fichiers livrés, dépendances et limites observées.
 

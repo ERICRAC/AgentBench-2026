@@ -101,8 +101,11 @@ proposent ; le vérificateur tranche.**
 
 La lecture ne se limite donc pas au score :
 
-```text
-valeur expérimentale = qualité obtenue / (temps + tokens + coordination)
+```math
+\text{valeur expérimentale}
+=
+\frac{\text{qualité obtenue}}
+{\text{temps} + \text{tokens} + \text{coordination}}
 ```
 
 ## Résultats publiés
@@ -119,8 +122,9 @@ corrections. Aucune donnée manquante n'est reconstruite après coup.
 
 ## V1, V2, V3… et pourquoi V2.1 ou V4
 
-- **V1 — référence solo :** un agent Codex généraliste, sans délégation. Les
-  deux niveaux sont terminés.
+- **V1 — référence solo :** l'orchestrateur expérimental mandate une session
+  candidate Codex distincte ; celle-ci travaille seule, sans consultant ni
+  délégation. Les deux niveaux sont terminés.
 - **V2 — société Codex :** orchestrateur et spécialistes aux missions bornées,
   avec un seul écrivain. Elle mesure le bénéfice et le coût de la coordination.
 - **V2.1 — optimisation facultative :** seulement après l'analyse complète de

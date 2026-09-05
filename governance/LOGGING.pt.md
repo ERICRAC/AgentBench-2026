@@ -43,3 +43,15 @@ Os metadados de um run podem preservar datas e durações exigidas pelo protocol
 Após cada interação que altere o repositório, a entrada é adicionada antes do
 commit. O corpo do commit resume objetivo, alterações e controlos, seguindo-se
 o push salvo instrução explícita em contrário.
+
+## Ata de cada run
+
+Cada run publicado possui um `PV.md` separado do histórico geral. Identifica o
+patrocinador, o orquestrador experimental, o agente candidato, os consultores e
+o verificador, numerando mandatos, pareceres, respostas, decisões, correções e
+vereditos observáveis.
+
+A ata é uma síntese probatória, não uma transcrição integral. Liga decisões a
+ficheiros, testes e métricas, assinala saídas não capturadas e exclui raciocínio
+interno bruto. A partir de V2, cada recomendação indica o papel e a decisão
+fundamentada do orquestrador: aceite, rejeitada ou não verificável.

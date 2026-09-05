@@ -5,9 +5,10 @@
 ## Resumen ejecutivo
 
 La segunda referencia V1 de la **Calculadora Core** superó **6 pruebas de 6**
-en la primera ejecución oficial y en la verificación independiente. Un solo
-agente la completó sin subagentes ni ayuda funcional humana, con modelo,
-esfuerzo y contexto fijados explícitamente. Es la referencia actual para V2;
+en la primera ejecución oficial y en la verificación independiente. El
+orquestador experimental encargó el trabajo a una sesión candidata Codex
+distinta; esta trabajó sin consultores, subagentes ni ayuda funcional humana,
+con modelo, esfuerzo y contexto fijados. Es la referencia actual para V2;
 `codex-single-001` se conserva como primera observación histórica.
 
 ## Identidad y resultado
@@ -18,7 +19,8 @@ esfuerzo y contexto fijados explícitamente. Es la referencia actual para V2;
 | Modelo / esfuerzo | `gpt-5.6-sol` / `high` |
 | Codex CLI | `0.152.1` |
 | Contexto / compactación | 200.000 / 180.000 tokens, alcance `total` |
-| Subagentes / ayuda funcional humana | 0 / 0 |
+| Candidato / sus consultores o subagentes | sesión `codex exec` distinta / 0 |
+| Ayuda funcional humana | 0 |
 | Primera pasada / veredicto independiente | **6/6 / 6/6** |
 
 El candidato implementó cuatro operaciones explícitas, análisis de entrada y
@@ -42,5 +44,6 @@ aplicó por error la regla Git global y trató de publicar; el remoto no cambió
 Los futuros prompts excluyen expresamente las operaciones Git.
 
 Comando independiente: `python3 scripts/verify.py --solution
-runs/codex-single-002/solution`. Véanse la [traza](../runs/codex-single-002/trace.md)
-y los [metadatos](../runs/codex-single-002/run.json).
+runs/codex-single-002/solution`. Véanse el [acta](../runs/codex-single-002/PV.md),
+la [traza](../runs/codex-single-002/trace.md) y los
+[metadatos](../runs/codex-single-002/run.json).

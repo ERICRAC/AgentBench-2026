@@ -89,8 +89,11 @@ Cada organização recebe a mesma especificação, restrições, testes independ
 e um diretório limpo. Não pode consultar nem reutilizar a solução de outra
 tentativa. **Os agentes propõem; o verificador decide.**
 
-```text
-valor experimental = qualidade obtida / (tempo + tokens + coordenação)
+```math
+\text{valor experimental}
+=
+\frac{\text{qualidade obtida}}
+{\text{tempo} + \text{tokens} + \text{coordenação}}
 ```
 
 ## Resultados publicados
@@ -107,7 +110,8 @@ correções; dados ausentes nunca são reconstruídos a posteriori.
 
 ## V1, V2, V3… V2.1 e V4
 
-- **V1:** referência individual sem delegação; ambos os objetivos estão concluídos.
+- **V1:** o orquestrador experimental encarrega uma sessão candidata Codex
+  distinta; esta trabalha sozinha, sem consultores nem delegação.
 - **V2:** orquestrador Codex e especialistas com missões limitadas e um único redator.
 - **V2.1:** otimização exploratória opcional, apenas após a análise da V2.
 - **V3:** o Codex orquestra, decide e escreve; modelos Ollama locais analisam ou criticam.

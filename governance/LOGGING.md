@@ -44,6 +44,19 @@ Les métadonnées techniques propres à un run peuvent conserver leurs dates et
 durées lorsqu'elles font partie du protocole de mesure. Cette exception ne
 s'applique pas à l'historique synthétique des échanges.
 
+## Procès-verbal par run
+
+Chaque run publié possède un `PV.md` distinct du journal général. Il nomme le
+commanditaire, l'orchestrateur expérimental, l'agent candidat, les consultants
+et le vérificateur. Il numérote les mandats, avis, réponses, arbitrages,
+corrections et verdicts observables.
+
+Le PV est une synthèse probante, pas une transcription intégrale. Il relie les
+décisions aux fichiers, tests et métriques disponibles, indique les sorties
+non capturées et exclut le raisonnement interne brut. À partir de V2, chaque
+recommandation de consultant est associée à son rôle et à la décision motivée
+de l'orchestrateur : retenue, écartée ou non vérifiable.
+
 Après chaque échange modifiant le dépôt, l'entrée correspondante est ajoutée
 avant le commit. Le titre du commit reste court ; son corps résume l'objectif,
 les changements et les contrôles. Le commit est poussé sauf instruction

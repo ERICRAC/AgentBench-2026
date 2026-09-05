@@ -111,3 +111,15 @@ medidas.
 **Traza útil** — Core: 193 s y 556.461 tokens acumulados; Scientific: 541 s y
 603.492, sin ayuda funcional humana. Se conservan el sesgo `dataclass` del
 cargador y la colisión entre el perímetro del run y la regla Git.
+
+## Intercambio 015
+
+**Petición** — Aclarar quién ejecutó V1, conservar un acta formal del run y
+mostrar el valor experimental como fórmula matemática en el README.
+
+**Respuesta** — V1 distingue ahora patrocinador, orquestador experimental y
+sesión candidata Codex encargada; solo el candidato no usó consultores ni
+subagentes. Cada run `002` tiene acta numerada, obligatoria desde V2.
+
+**Traza útil** — Topología añadida a metadatos e informes, registro reforzado y
+notación matemática GitHub en los cuatro idiomas.

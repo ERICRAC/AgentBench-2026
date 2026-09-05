@@ -113,3 +113,16 @@ consultants, one writer, model, effort, context, compaction and measurements.
 541 s and 603,492, with no functional human help. The `dataclass` loader bias
 and a run-scope/Git-rule collision remain recorded. Governance now separates
 cognitive budget, ceiling effects and a future large-scale challenge.
+
+## Exchange 015
+
+**Request** — Clarify who actually executed V1, retain formal run minutes and
+render experimental value as a proper mathematical expression in the README.
+
+**Response** — V1 now distinguishes sponsor, experimental orchestrator and the
+commissioned separate Codex candidate session; only the candidate used no
+consultant or sub-agent. Each `002` run has numbered minutes, now mandatory for
+V2 and later modes.
+
+**Useful trace** — Actor topology added to metadata and reports, stronger
+logging policy, and GitHub mathematical notation in all four languages.

@@ -5,9 +5,10 @@
 ## Résumé exécutif
 
 La seconde référence V1 de la **Calculatrice Scientific** atteint un verdict
-final de **9 tests sur 9**. Un seul agent a livré un moteur d'expressions sûr,
-l'échantillonnage, l'export SVG et la CLI sans dépendance externe ni aide
-fonctionnelle humaine.
+final de **9 tests sur 9**. L'orchestrateur expérimental a mandaté une session
+candidate Codex distincte ; ce candidat unique a livré un moteur d'expressions
+sûr, l'échantillonnage, l'export SVG et la CLI sans consultant, dépendance
+externe ni aide fonctionnelle humaine.
 
 Le premier vérificateur officiel a échoué pendant le chargement du module à
 cause de l'interaction connue entre `dataclass` et le chargeur dynamique sous
@@ -24,7 +25,7 @@ courante pour V2, tandis que `scientific-single-001` reste publiée.
 | Codex CLI | `0.152.1` |
 | Fenêtre / compaction | 200 000 / 180 000 tokens, portée `total` |
 | Prompt | [`prompts/scientific-single.md`](../prompts/scientific-single.md) |
-| Sous-agents / intervention humaine | 0 / 0 |
+| Consultants ou sous-agents du candidat / intervention humaine | 0 / 0 |
 | Premier passage | échec au chargement du module |
 | Verdict candidat final | **9/9** |
 | Verdict indépendant final | **9/9** |
@@ -84,5 +85,6 @@ Le candidat a créé un commit limité à sa solution puis tenté un push en
 appliquant la règle Git globale. L'authentification a bloqué l'opération et le
 distant n'a pas été modifié. Cette collision est corrigée pour les futurs runs.
 
-La [trace synthétique](../runs/scientific-single-002/trace.md) et les
+Le [procès-verbal](../runs/scientific-single-002/PV.md), la
+[trace synthétique](../runs/scientific-single-002/trace.md) et les
 [métadonnées](../runs/scientific-single-002/run.json) conservent les preuves.

@@ -43,3 +43,15 @@ Los metadatos de un run pueden conservar fechas y duraciones exigidas por el
 protocolo. Tras cada intercambio que cambie el repositorio, se añade la entrada
 antes del commit. El cuerpo del commit resume objetivo, cambios y controles, y
 se publica salvo orden contraria explícita.
+
+## Acta de cada run
+
+Cada run publicado tiene un `PV.md` separado del historial general. Identifica
+patrocinador, orquestador experimental, agente candidato, consultores y
+verificador, y numera mandatos, consejos, respuestas, decisiones, correcciones
+y veredictos observables.
+
+El acta es una síntesis probatoria, no una transcripción completa. Relaciona
+decisiones con archivos, pruebas y métricas, señala salidas no capturadas y
+excluye razonamiento interno bruto. Desde V2, cada recomendación indica su rol
+y la decisión motivada del orquestador: aceptada, rechazada o no verificable.

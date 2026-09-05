@@ -5,8 +5,9 @@
 ## Executive summary
 
 The second V1 **Scientific Calculator** baseline reached a final **9 tests out
-of 9**. One agent delivered safe expression parsing, sampling, SVG export and
-the CLI without external dependencies or functional human help.
+of 9**. The experimental orchestrator commissioned a separate Codex candidate
+session; that sole candidate delivered safe parsing, sampling, SVG export and
+the CLI without consultants, external dependencies or functional human help.
 
 The first official verifier stopped while loading the module because of the
 known interaction between `dataclass` and its dynamic loader under Python
@@ -21,7 +22,7 @@ known interaction between `dataclass` and its dynamic loader under Python
 | Model / effort | `gpt-5.6-sol` / `high` |
 | Codex CLI | `0.152.1` |
 | Context / compaction | 200,000 / 180,000 tokens, `total` scope |
-| Sub-agents / functional human help | 0 / 0 |
+| Candidate consultants or sub-agents / functional human help | 0 / 0 |
 | First pass | module-loading failure |
 | Candidate final / independent verdict | **9/9 / 9/9** |
 
@@ -49,5 +50,6 @@ to a global-rule collision; the remote was not changed.
 
 Independent command: `python3 scripts/verify.py --challenge
 scientific-calculator --solution runs/scientific-single-002/solution`. See the
+[minutes](../runs/scientific-single-002/PV.md),
 [trace](../runs/scientific-single-002/trace.md) and
 [metadata](../runs/scientific-single-002/run.json).

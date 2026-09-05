@@ -40,6 +40,20 @@ replaced with a fabricated time.
 ```
 
 Run metadata may retain dates and durations when required by the protocol.
+
+## Minutes for each run
+
+Every published run has a `PV.md` separate from the general history. It names
+the sponsor, experimental orchestrator, candidate agent, consultants and
+verifier, then numbers observable mandates, advice, responses, decisions,
+corrections and verdicts.
+
+The minutes are evidence-based summaries, not full transcripts. They link
+decisions to available files, tests and metrics, identify uncaptured output
+and exclude raw internal reasoning. From V2 onwards, each consultant
+recommendation records its role and the orchestrator's reasoned disposition:
+accepted, rejected or unverifiable.
+
 After every repository-changing exchange, its entry is added before commit.
 The commit body records objective, changes and checks, then is pushed unless
 the user explicitly says otherwise.

@@ -100,8 +100,11 @@ the independent verifier decides.**
 
 The score is therefore only part of the picture:
 
-```text
-experimental value = delivered quality / (time + tokens + coordination)
+```math
+\text{experimental value}
+=
+\frac{\text{delivered quality}}
+{\text{time} + \text{tokens} + \text{coordination}}
 ```
 
 ## Published results
@@ -118,8 +121,9 @@ corrections. Missing data is never reconstructed after the event.
 
 ## V1, V2, V3… and the case for V2.1 or V4
 
-- **V1 — solo baseline:** one general-purpose Codex agent with no delegation.
-  Both difficulty levels are complete.
+- **V1 — solo baseline:** the experimental orchestrator commissions a separate
+  Codex candidate session; that candidate works alone, with no consultant or
+  delegation. Both difficulty levels are complete.
 - **V2 — Codex society:** an orchestrator and specialists with bounded
   assignments, with only one writer. It measures the benefit and cost of
   coordination.
