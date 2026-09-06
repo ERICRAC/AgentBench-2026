@@ -29,11 +29,11 @@ de segredos e declarar qualquer omissão.
 Registar direção, fase, duração e contadores disponíveis de entrada/cache/saída/
 raciocínio.
 
-**Texto enviado literalmente**
+#### Texto enviado literalmente
 
 > …
 
-**Texto devolvido literalmente**
+#### Texto devolvido literalmente
 
 > …
 

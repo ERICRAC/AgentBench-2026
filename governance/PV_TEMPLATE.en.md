@@ -30,15 +30,15 @@ after secret screening; disclose omissions rather than silently rewriting.
 Record direction, phase, response duration and available input/cache/output/
 reasoning counters.
 
-**Verbatim sent text**
+#### Verbatim sent text
 
 > …
 
-**Verbatim returned text**
+#### Verbatim returned text
 
 > …
 
-**Analytical summary**
+#### Analytical summary
 
 - testable proposals and new information;
 - agreement, contradiction or duplication;

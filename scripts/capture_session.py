@@ -46,7 +46,7 @@ def main():
               "duration_seconds": round(time.monotonic() - started, 3),
               "exit_code": completed.returncode,
               "cli_version": subprocess.check_output(["codex", "--version"], text=True).strip(),
-              "thread_id": None, "usage": None, "visible_messages": [], "commands": []}
+              "thread_id": None, "usage": None, "visible_messages": [], "commands": [], "errors": []}
     for line in (private / "events.jsonl").read_text().splitlines():
         try:
             event = json.loads(line)
@@ -56,6 +56,8 @@ def main():
             record["thread_id"] = event.get("thread_id")
         if event.get("type") == "turn.completed":
             record["usage"] = event.get("usage")
+        if event.get("type") in ("error", "turn.failed"):
+            record["errors"].append(event)
         if event.get("type") == "item.completed":
             item = event.get("item", {})
             if item.get("type") == "agent_message":

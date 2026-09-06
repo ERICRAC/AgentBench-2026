@@ -44,15 +44,15 @@ jamais réécrite silencieusement.
 | Durée de réponse | … |
 | Entrée / cache / sortie / raisonnement | … |
 
-**Texte envoyé, mot pour mot**
+#### Texte envoyé, mot pour mot
 
 > …
 
-**Texte retourné, mot pour mot**
+#### Texte retourné, mot pour mot
 
 > …
 
-**Synthèse analytique**
+#### Synthèse analytique
 
 - propositions vérifiables : …
 - information nouvelle : …

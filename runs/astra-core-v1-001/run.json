@@ -3,5 +3,14 @@
   "mode": "codex-single",
   "challenge": "calculator",
   "created_at": "2026-09-06T14:47:41.832044+00:00",
-  "status": "created"
+  "status": "infrastructure_failed_before_candidate",
+  "campaign_id": "astra-high-001",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "codex_cli": "0.152.1",
+  "duration_seconds": 5.301,
+  "thread_id": "01a07732-ca63-7c82-ab1d-6ab9e5e01f68",
+  "usage": null,
+  "error": "The 'gpt-6-astra' model requires a newer version of Codex. Please upgrade to the latest app or CLI and try again.",
+  "counts_as_benchmark": false
 }

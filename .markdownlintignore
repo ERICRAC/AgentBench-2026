@@ -1,0 +1,6 @@
+# Historical evidence, frozen prompts and candidate deliverables are immutable.
+runs/**
+challenges/**
+prompts/**
+results/codex-single-*.md
+results/scientific-single-*.md
