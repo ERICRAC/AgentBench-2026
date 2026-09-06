@@ -133,5 +133,19 @@ eficiência.
 dossiê transmitido. Pré-regista três profissões, análise independente, uma
 contradição cruzada, revisão adversarial e ata literal filtrada com síntese.
 
-**Traço útil** — Sete decisões antes do congelamento; modelo em quatro línguas;
+**Traço útil** — Oito decisões antes do congelamento; modelo em quatro línguas;
 comparação separada de qualidade, tempos, tokens por papel e ruído de coordenação.
+
+## Interação 017
+
+**Pedido** — Aprovar as decisões V2 propostas e determinar se GPT-6 Astra com
+esforço alto pode ser usado no próximo run perante o saldo Codex disponível.
+
+**Resposta** — A-01 a A-08 ficam congeladas com a referência comparável
+`gpt-5.6-sol`/`high`; o preflight V2 é o próximo passo. Astra suporta `high` e
+é tecnicamente adequado ao multiagente, mas usá-lo apenas na V2 confundiria os
+efeitos do modelo e da organização.
+
+**Traço útil** — Uma possível variante Astra é uma campanha nova que exige
+repetir V1 Core e Scientific. A interface mostra saldo restante positivo sem
+garantir o custo de um run; nenhum run ou subagente foi lançado.

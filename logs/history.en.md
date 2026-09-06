@@ -138,6 +138,21 @@ usage and transmitted input. It pre-registers three professions, independent
 analysis, one cross-challenge, adversarial review and secret-screened verbatim
 minutes with analytical synthesis.
 
-**Useful trace** — Seven decisions before freeze; four-language minutes
+**Useful trace** — Eight decisions before freeze; four-language minutes
 template; separate comparison of initial/final quality, wall/agent time,
 per-role tokens and coordination noise.
+
+## Exchange 017
+
+**Request** — Approve the proposed V2 decisions and determine whether GPT-6
+Astra at high reasoning effort can serve for the next run given the available
+Codex allowance.
+
+**Response** — A-01 to A-08 are frozen with the comparable
+`gpt-5.6-sol`/`high` baseline; the V2 preflight is next. Astra supports `high`
+and is technically suitable for multi-agent work, but using it only for V2
+would confound model and organisational effects.
+
+**Useful trace** — A possible Astra variant is a new campaign requiring V1
+Core and Scientific reruns. The interface shows positive remaining allowance
+but cannot guarantee the cost of one run; no run or sub-agent was launched.

@@ -135,5 +135,20 @@ y dossier transmitido. Preinscribe tres profesiones, análisis independiente,
 una contradicción cruzada, revisión adversarial y acta literal filtrada con
 síntesis analítica.
 
-**Traza útil** — Siete decisiones antes de fijar; plantilla en cuatro idiomas;
+**Traza útil** — Ocho decisiones antes de fijar; plantilla en cuatro idiomas;
 comparación separada de calidad, tiempos, tokens por rol y ruido de coordinación.
+
+## Intercambio 017
+
+**Petición** — Aprobar las decisiones V2 propuestas y determinar si GPT-6
+Astra con esfuerzo alto puede utilizarse en el próximo run según el saldo
+Codex disponible.
+
+**Respuesta** — A-01 a A-08 quedan fijadas con la referencia comparable
+`gpt-5.6-sol`/`high`; el preflight V2 es el siguiente paso. Astra admite
+`high` y es apto para multiagente, pero usarlo solo en V2 mezclaría los efectos
+del modelo y de la organización.
+
+**Traza útil** — Una posible variante Astra es una campaña nueva que exige
+repetir V1 Core y Scientific. La interfaz muestra saldo restante positivo sin
+garantizar el coste de un run; no se lanzó ningún run ni subagente.

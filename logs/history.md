@@ -220,6 +220,22 @@ consommation cumulée et dossier transmis. Il préenregistre trois métiers, une
 analyse indépendante, une contradiction croisée, une critique adversariale et
 un PV verbatim filtré accompagné d'une synthèse analytique.
 
-**Trace utile** — Sept arbitrages identifiés avant gel ; modèle de PV en quatre
+**Trace utile** — Huit arbitrages identifiés avant gel ; modèle de PV en quatre
 langues ; comparaison séparée de la qualité initiale/finale, du temps mural et
 des temps-agents, des tokens par rôle et du bruit de coordination.
+
+## Échange 017
+
+**Demande synthétique** — Valider les arbitrages V2 proposés et déterminer si
+GPT-6 Astra en effort élevé peut servir au prochain run au regard du solde
+Codex disponible.
+
+**Réponse synthétique** — A-01 à A-08 sont gelés avec la référence comparable
+`gpt-5.6-sol`/`high`; le préflight V2 devient la prochaine étape. Astra accepte
+l'effort `high` et convient techniquement au multi-agent, mais l'utiliser
+seulement en V2 confondrait effet du modèle et effet de l'organisation.
+
+**Trace utile** — L'éventuelle variante Astra est classée comme nouvelle
+campagne nécessitant de rejouer V1 Core et Scientific. Le solde d'interface
+indique une marge positive, sans permettre de garantir le coût d'un run ;
+aucun run ni sous-agent n'a été lancé.

@@ -4,15 +4,15 @@
 
 ## Estado e hipótese
 
-O protocolo está preparado mas aguarda arbitragem antes de ser congelado e de
-lançar a V2. Testa se três revisões
+O protocolo está congelado: o patrocinador aprovou A-01 a A-08. O preflight
+técnico é o próximo passo obrigatório antes de lançar a V2. Testa se três revisões
 especializadas melhoram qualidade ou convergência de um único escritor depois
 de contabilizar a coordenação. As referências atuais são `codex-single-002` e
 `scientific-single-002`; os runs `001` continuam históricos.
 
-## Decisões a confirmar
+## Decisões congeladas
 
-Recomendam-se: A-01 contexto 200k/compactação 180k (100k obriga a repetir V1);
+Foram aprovados: A-01 contexto 200k/compactação 180k (100k obriga a repetir V1);
 A-02 três papéis; A-03 análises cegas e uma contradição cruzada; A-04 1.200
 palavras por análise, 600 por réplica e 1.200 para crítica; A-05 o mesmo
 `gpt-5.6-sol`/`high`; A-06 textos visíveis completos após filtrar segredos;
@@ -20,9 +20,12 @@ A-07 painel qualidade/tempo/tokens e dominância de Pareto, sem pesos arbitrári
 A-08 usa subagentes nativos apenas se expuserem configuração e contadores por
 thread; caso contrário, sessões `codex exec --json` separadas. Um preflight
 trivial fora do benchmark verifica papel, isolamento, texto e uso JSON antes de
-ler um desafio. A-06 já foi decidido; a V2 aguarda as restantes confirmações.
+ler um desafio. As oito decisões formam uma configuração congelada. Mudar
+apenas a V2 para `gpt-6-astra`/`high` também alteraria o modelo e impediria
+atribuir a diferença à organização. Essa opção abre uma campanha nova e obriga
+a repetir as referências V1 Core e Scientific com Astra.
 
-| Parâmetro | Referência e V2 planeada |
+| Parâmetro | Referência e V2 congelada |
 | --- | --- |
 | Modelo / esforço | `gpt-5.6-sol` / `high` |
 | Contexto declarado por agente | 200.000 tokens |

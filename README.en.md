@@ -29,7 +29,7 @@ as the software it produces.
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validated** | **2 / 2 replicated** | **V2 · Core Calculator** | **Challenges frozen · V2 to decide** |
+| **2 / 6 validated** | **2 / 2 replicated** | **V2 · Core Calculator** | **Challenges and V2 protocol frozen** |
 | `██████░░░░░░` **33%** | Core Calculator **6/6** · Scientific Calculator **9/9** | Governed multi-agent | Independent verifiers |
 
 ```mermaid
@@ -149,7 +149,8 @@ The comparison and versioning rules are defined in
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
 - [x] Preserve the first `001` V1 observations without rewriting them.
 - [x] Replicate V1 with pinned model, effort and context: Core `002` **6/6**, Scientific `002` **9/9**.
-- [ ] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
+- [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
+- [ ] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters.
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.

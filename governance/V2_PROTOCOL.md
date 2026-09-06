@@ -4,7 +4,8 @@
 
 ## Statut et hypothèse
 
-Ce protocole est prêt mais reste à arbitrer avant son gel et le premier run V2.
+Ce protocole est gelé : le commanditaire a validé A-01 à A-08. Le préflight
+technique est la prochaine étape obligatoire avant le premier run V2.
 V2 teste si trois avis spécialisés améliorent la qualité ou la convergence
 d'un écrivain unique dans des conditions de modèle comparables, une fois le
 coût de coordination compté.
@@ -13,9 +14,9 @@ Les références courantes sont `codex-single-002` et
 `scientific-single-002`. Les tentatives `001` restent des observations
 historiques et ne sont pas écrasées.
 
-## Arbitrages restant à confirmer
+## Arbitrages gelés
 
-| ID | Décision | Recommandation | Conséquence d'une autre option |
+| ID | Décision | Valeur gelée | Conséquence d'une autre option |
 | --- | --- | --- | --- |
 | A-01 | Budget de contexte | **200k / compaction 180k** | 100k impose de rejouer V1 pour rester comparable |
 | A-02 | Équipe | **trois métiers SA-01 à SA-03** | deux réduisent l'observation sociale ; quatre augmentent le bruit |
@@ -26,16 +27,18 @@ historiques et ne sont pas écrasées.
 | A-07 | Verdict d'efficacité | **tableau qualité/temps/tokens et dominance de Pareto** | un score composite impose des poids arbitraires |
 | A-08 | Moteur d'exécution | **sous-agents natifs s'ils exposent configuration et compteurs par thread ; sinon sessions `codex exec --json` séparées** | choisir sans préflight peut rendre contexte et tokens invérifiables |
 
-A-06 résulte directement de la demande du commanditaire. Les autres lignes
-sont les réglages recommandés ; le run V2 ne commence qu'après leur validation.
-Un préflight minimal, extérieur au benchmark, demande une réponse triviale à
+A-01 à A-08 constituent ensemble la configuration validée. Passer uniquement
+V2 à `gpt-6-astra`/`high` changerait aussi le modèle et empêcherait d'isoler
+l'effet de l'organisation : cette option ouvrirait une nouvelle campagne et
+imposerait de rejouer les références V1 Core et Scientific avec Astra. Un
+préflight minimal, extérieur au benchmark, demande une réponse triviale à
 un consultant et vérifie le rôle, l'isolation, la configuration, le texte
 visible et les compteurs JSON. Il ne lit aucun challenge et n'entre dans aucune
 mesure V1/V2.
 
 ## Variables contrôlées
 
-| Paramètre | Valeur V1 de référence et V2 prévue |
+| Paramètre | Valeur V1 de référence et V2 gelée |
 | --- | --- |
 | Modèle | `gpt-5.6-sol` |
 | Effort de raisonnement | `high` |

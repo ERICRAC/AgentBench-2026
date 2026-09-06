@@ -28,7 +28,7 @@ Codex** por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/)
 
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Core** | **Retos fijados · V2 por decidir** |
+| **2 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Core** | **Retos y protocolo V2 fijados** |
 | `██████░░░░░░` **33 %** | Calculadora Core **6/6** · Calculadora Scientific **9/9** | Multiagente gobernado | Verificadores independientes |
 
 ```mermaid
@@ -127,7 +127,8 @@ los resultados anteriores. Véase el [plan experimental](governance/EXPERIMENTAL
 - [x] Congelar las pruebas de Calculadora Core y Calculadora Scientific.
 - [x] Conservar las primeras observaciones V1 `001` sin reescribirlas.
 - [x] Replicar V1 con modelo, esfuerzo y contexto fijados: Core `002` **6/6**, Scientific `002` **9/9**.
-- [ ] Decidir y fijar roles, intercambios, presupuestos y [métricas V2](governance/V2_PROTOCOL.es.md).
+- [x] Decidir y fijar roles, intercambios, presupuestos y [métricas V2](governance/V2_PROTOCOL.es.md).
+- [ ] Validar el preflight V2: aislamiento, configuración por rol, trazas visibles y contadores.
 - [ ] Ejecutar V2 para Calculadora Core y Calculadora Scientific.
 - [ ] Analizar V2 y decidir si V2.1 aporta una hipótesis medible.
 - [ ] Congelar los modelos Ollama y los límites de contexto de V3.

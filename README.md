@@ -29,7 +29,7 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis figés · V2 à arbitrer** |
+| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis et protocole V2 figés** |
 | `██████░░░░░░` **33 %** | Calculatrice Core **6/6** · Calculatrice Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
@@ -150,7 +150,8 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
 - [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `002` **6/6**, Scientific `002` **9/9**.
-- [ ] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
+- [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
+- [ ] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs.
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.

@@ -4,15 +4,15 @@
 
 ## Status and hypothesis
 
-This protocol is ready but awaits arbitration before freeze and the first V2
-run. V2 tests whether three
+This protocol is frozen: the sponsor approved A-01 to A-08. The technical
+preflight is the next mandatory step before the first V2 run. V2 tests whether three
 specialist reviews improve the quality or convergence of one writer once
 coordination cost is included. Current baselines are `codex-single-002` and
 `scientific-single-002`; the `001` runs remain historical evidence.
 
-## Decisions to confirm
+## Frozen decisions
 
-Recommended settings are: A-01 200k context/180k compaction (100k requires V1
+The approved settings are: A-01 200k context/180k compaction (100k requires V1
 reruns); A-02 three roles; A-03 blind analyses followed by one cross-challenge;
 A-04 limits of 1,200 words per analysis, 600 per reply and 1,200 for the final
 critique; A-05 the same `gpt-5.6-sol`/`high` for all; A-06 full visible text
@@ -21,11 +21,14 @@ dominance rather than arbitrary composite weights; A-08 native subagents only
 if they expose per-thread configuration and counters, otherwise separate
 `codex exec --json` sessions. A trivial, non-benchmark preflight checks role,
 isolation, configuration, visible text and JSON usage before any challenge is
-read. A-06 is already requested by the sponsor; V2 awaits the other decisions.
+read. These eight decisions form one frozen configuration. Moving only V2 to
+`gpt-6-astra`/`high` would also change the model and prevent attribution of the
+difference to organisation. That option therefore opens a new campaign and
+requires both V1 Core and Scientific baselines to be rerun with Astra.
 
 ## Controlled variables
 
-| Parameter | Baseline and planned V2 value |
+| Parameter | Baseline and frozen V2 value |
 | --- | --- |
 | Model / reasoning effort | `gpt-5.6-sol` / `high` |
 | Declared context per agent | 200,000 tokens |
