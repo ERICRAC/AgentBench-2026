@@ -208,3 +208,18 @@ un PV numéroté, rendu obligatoire pour V2 et les modes suivants.
 **Trace utile** — Topologie des acteurs ajoutée aux métadonnées et rapports,
 politique de journalisation renforcée, formule rendue en notation mathématique
 GitHub dans les quatre langues.
+
+## Échange 016
+
+**Demande synthétique** — Définir précisément la validation du contexte par
+consultant, rendre les derniers arbitrages V2 explicites et conserver les
+textes inter-agents afin d'analyser relation sociale et efficacité.
+
+**Réponse synthétique** — Le protocole distingue capacité active, compaction,
+consommation cumulée et dossier transmis. Il préenregistre trois métiers, une
+analyse indépendante, une contradiction croisée, une critique adversariale et
+un PV verbatim filtré accompagné d'une synthèse analytique.
+
+**Trace utile** — Sept arbitrages identifiés avant gel ; modèle de PV en quatre
+langues ; comparaison séparée de la qualité initiale/finale, du temps mural et
+des temps-agents, des tokens par rôle et du bruit de coordination.

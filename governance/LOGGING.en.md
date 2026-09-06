@@ -54,6 +54,9 @@ and exclude raw internal reasoning. From V2 onwards, each consultant
 recommendation records its role and the orchestrator's reasoned disposition:
 accepted, rejected or unverifiable.
 
+From V2 onwards, **visible inter-agent messages** are nevertheless retained
+verbatim after secret screening, using [`PV_TEMPLATE.en.md`](PV_TEMPLATE.en.md).
+
 After every repository-changing exchange, its entry is added before commit.
 The commit body records objective, changes and checks, then is pushed unless
 the user explicitly says otherwise.

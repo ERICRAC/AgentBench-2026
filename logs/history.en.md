@@ -126,3 +126,18 @@ V2 and later modes.
 
 **Useful trace** — Actor topology added to metadata and reports, stronger
 logging policy, and GitHub mathematical notation in all four languages.
+
+## Exchange 016
+
+**Request** — Define per-consultant context validation precisely, expose the
+remaining V2 decisions and retain inter-agent text for social and efficiency
+analysis.
+
+**Response** — The protocol separates active capacity, compaction, cumulative
+usage and transmitted input. It pre-registers three professions, independent
+analysis, one cross-challenge, adversarial review and secret-screened verbatim
+minutes with analytical synthesis.
+
+**Useful trace** — Seven decisions before freeze; four-language minutes
+template; separate comparison of initial/final quality, wall/agent time,
+per-role tokens and coordination noise.

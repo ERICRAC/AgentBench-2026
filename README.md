@@ -29,7 +29,7 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis + V2 figés** |
+| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis figés · V2 à arbitrer** |
 | `██████░░░░░░` **33 %** | Calculatrice Core **6/6** · Calculatrice Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
@@ -150,7 +150,7 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
 - [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `002` **6/6**, Scientific `002` **9/9**.
-- [x] Figer les rôles, le [prompt](prompts/codex-multi.md), les limites et les [métriques V2](governance/V2_PROTOCOL.md).
+- [ ] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.
@@ -175,6 +175,8 @@ fonctions et constantes scientifiques, variable `x`, domaines,
 - durée, tokens, appels et corrections ;
 - interventions humaines ;
 - contradictions, décisions et bruit de coordination ;
+- textes inter-agents visibles et influence de chaque métier, consignés dans
+  un [PV expérimental](governance/PV_TEMPLATE.md) ;
 - capacité des agents à détecter leurs propres erreurs ;
 - rapport entre qualité obtenue et complexité organisationnelle.
 

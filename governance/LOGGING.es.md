@@ -55,3 +55,6 @@ El acta es una síntesis probatoria, no una transcripción completa. Relaciona
 decisiones con archivos, pruebas y métricas, señala salidas no capturadas y
 excluye razonamiento interno bruto. Desde V2, cada recomendación indica su rol
 y la decisión motivada del orquestador: aceptada, rechazada o no verificable.
+
+Desde V2, los **mensajes visibles entre agentes** se conservan literalmente
+tras filtrar secretos, según [`PV_TEMPLATE.es.md`](PV_TEMPLATE.es.md).

@@ -57,6 +57,10 @@ non capturées et exclut le raisonnement interne brut. À partir de V2, chaque
 recommandation de consultant est associée à son rôle et à la décision motivée
 de l'orchestrateur : retenue, écartée ou non vérifiable.
 
+À partir de V2, les **messages visibles entre agents** constituent toutefois
+une annexe verbatim du PV après contrôle des secrets. Le format obligatoire est
+défini dans [`PV_TEMPLATE.md`](PV_TEMPLATE.md).
+
 Après chaque échange modifiant le dépôt, l'entrée correspondante est ajoutée
 avant le commit. Le titre du commit reste court ; son corps résume l'objectif,
 les changements et les contrôles. Le commit est poussé sauf instruction

@@ -55,3 +55,6 @@ A ata é uma síntese probatória, não uma transcrição integral. Liga decisõ
 ficheiros, testes e métricas, assinala saídas não capturadas e exclui raciocínio
 interno bruto. A partir de V2, cada recomendação indica o papel e a decisão
 fundamentada do orquestrador: aceite, rejeitada ou não verificável.
+
+A partir da V2, as **mensagens visíveis entre agentes** são preservadas
+literalmente após filtrar segredos, segundo [`PV_TEMPLATE.pt.md`](PV_TEMPLATE.pt.md).

@@ -12,6 +12,8 @@ configuration.
   observation gates and rerun rules.
 - [`V2_PROTOCOL.en.md`](V2_PROTOCOL.en.md) pre-registers the multi-agent
   organisation, context limits and measurements.
+- [`PV_TEMPLATE.en.md`](PV_TEMPLATE.en.md) defines inter-agent text, decision,
+  social relationship and efficiency records.
 - [`../logs/history.en.md`](../logs/history.en.md) contains the concise history.
 
 Decision precedence is: repository rules, attempt brief, mode prompt,

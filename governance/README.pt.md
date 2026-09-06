@@ -11,6 +11,8 @@ experiência sem expor conversas completas nem a configuração privada do autor
   marcos de observação e as repetições.
 - [`V2_PROTOCOL.pt.md`](V2_PROTOCOL.pt.md) pré-regista a organização
   multiagente, os limites de contexto e as medições.
+- [`PV_TEMPLATE.pt.md`](PV_TEMPLATE.pt.md) define textos entre agentes,
+  decisões, relação social e eficiência.
 - [`../logs/history.pt.md`](../logs/history.pt.md) preserva o histórico resumido.
 
 A precedência é: regras do repositório, contrato da tentativa, prompt do modo,

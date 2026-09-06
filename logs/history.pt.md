@@ -122,3 +122,16 @@ subagentes. Cada run `002` possui ata numerada, obrigatória a partir da V2.
 
 **Traço útil** — Topologia adicionada a metadados e relatórios, registo
 reforçado e notação matemática GitHub nas quatro línguas.
+
+## Interação 016
+
+**Pedido** — Precisar a validação do contexto por consultor, expor decisões V2
+restantes e preservar textos entre agentes para analisar relação social e
+eficiência.
+
+**Resposta** — O protocolo separa capacidade, compactação, consumo acumulado e
+dossiê transmitido. Pré-regista três profissões, análise independente, uma
+contradição cruzada, revisão adversarial e ata literal filtrada com síntese.
+
+**Traço útil** — Sete decisões antes do congelamento; modelo em quatro línguas;
+comparação separada de qualidade, tempos, tokens por papel e ruído de coordenação.

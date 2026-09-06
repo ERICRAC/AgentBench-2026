@@ -9,6 +9,13 @@ Contraintes particulières pour cette tentative :
   3. critique final des cas limites ;
 - les deux premiers interviennent avant l'implémentation et le critique après
   une première solution ;
+- demande d'abord aux deux analystes une réponse indépendante de 1 200 mots
+  maximum, sans leur montrer l'avis de l'autre ;
+- relaie ensuite à chacun le texte visible intégral de l'autre et autorise une
+  seule réponse contradictoire ou révision de 600 mots maximum ;
+- synthétise leurs propositions dans une table d'arbitrage avant d'écrire ;
+- transmets au critique le challenge, la première solution et cette table ; sa
+  critique finale est limitée à 1 200 mots ;
 - leurs missions sont consultatives et en lecture seule ; toi seul écris ;
 - écris exclusivement dans `solution/` et ne modifie ni spécification, ni
   tests, ni scripts, ni gouvernance ;
@@ -21,3 +28,5 @@ Contraintes particulières pour cette tentative :
   placeholder ;
 - résume les rôles, avis, arbitrages, tests, corrections et limites sans
   exposer de raisonnement interne brut.
+- conserve dans ta restitution l'ordre et le texte visible des échanges afin
+  que l'orchestrateur expérimental puisse produire le `PV.md` du run.

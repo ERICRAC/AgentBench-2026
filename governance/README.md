@@ -12,6 +12,8 @@ de son auteur.
   jalons d'observation et les règles de relance après affinage.
 - [`V2_PROTOCOL.md`](V2_PROTOCOL.md) préenregistre l'organisation, les limites
   de contexte et les mesures de la campagne multi-agent.
+- [`PV_TEMPLATE.md`](PV_TEMPLATE.md) fixe le relevé des textes inter-agents,
+  des arbitrages, de la relation sociale et de l'efficacité.
 - [`../logs/history.md`](../logs/history.md) conserve l'historique synthétique.
 
 La hiérarchie de décision est : règles globales du dépôt, cahier des charges de

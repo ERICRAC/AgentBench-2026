@@ -12,6 +12,8 @@ del autor.
   los hitos de observación y las repeticiones.
 - [`V2_PROTOCOL.es.md`](V2_PROTOCOL.es.md) preinscribe la organización
   multiagente, los límites de contexto y las medidas.
+- [`PV_TEMPLATE.es.md`](PV_TEMPLATE.es.md) define textos interagente,
+  decisiones, relación social y eficiencia.
 - [`../logs/history.es.md`](../logs/history.es.md) conserva el historial resumido.
 
 La precedencia es: reglas del repositorio, contrato del intento, prompt del
