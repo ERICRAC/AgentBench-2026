@@ -3,5 +3,16 @@
   "mode": "codex-single",
   "challenge": "scientific-calculator",
   "created_at": "2026-09-06T14:47:41.854103+00:00",
-  "status": "created"
+  "status": "interrupted_usage_limit",
+  "campaign_id": "astra-high-001",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "codex_cli": "0.153.4",
+  "duration_seconds": 216.929,
+  "thread_id": "01a07736-7e88-70c1-a3c4-9a10ffa340eb",
+  "usage": null,
+  "verification": null,
+  "counts_as_completed_benchmark": false,
+  "error": "Usage limit reached after initial solution write, before verification; reset time omitted.",
+  "successor": "astra-scientific-v1-002"
 }

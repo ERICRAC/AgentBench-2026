@@ -10,8 +10,8 @@ V2 teste si trois avis spécialisés améliorent la qualité ou la convergence
 d'un écrivain unique dans des conditions de modèle comparables, une fois le
 coût de coordination compté.
 
-Les références courantes sont `astra-core-v1-001` et
-`astra-scientific-v1-001`. Les tentatives `001` restent des observations
+Les références courantes sont `astra-core-v1-002` et
+`astra-scientific-v1-002`. Les tentatives `001` restent des observations
 historiques et ne sont pas écrasées.
 
 ## Arbitrages gelés

@@ -7,8 +7,8 @@
 O protocolo está congelado: o patrocinador aprovou A-01 a A-08. O preflight
 técnico é o próximo passo obrigatório antes de lançar a V2. Testa se três revisões
 especializadas melhoram qualidade ou convergência de um único escritor depois
-de contabilizar a coordenação. As referências atuais são `astra-core-v1-001` e
-`astra-scientific-v1-001`; os runs `001` continuam históricos.
+de contabilizar a coordenação. As referências atuais são `astra-core-v1-002` e
+`astra-scientific-v1-002`; os runs `001` continuam históricos.
 
 ## Decisões congeladas
 

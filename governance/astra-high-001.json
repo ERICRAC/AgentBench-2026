@@ -7,7 +7,7 @@
   "compaction_scope": "total",
   "v1_runs": [
     "astra-core-v1-002",
-    "astra-scientific-v1-001"
+    "astra-scientific-v1-002"
   ],
   "v2_status": "preflight after V1 publication",
   "config": "governance/astra-v1.toml",
@@ -29,7 +29,8 @@
     "prompts/scientific-single.md": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad"
   },
   "infrastructure_attempts": [
-    "astra-core-v1-001"
+    "astra-core-v1-001",
+    "astra-scientific-v1-001"
   ],
   "codex_cli": "0.153.4"
 }

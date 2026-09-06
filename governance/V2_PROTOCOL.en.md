@@ -7,8 +7,8 @@
 This protocol is frozen: the sponsor approved A-01 to A-08. The technical
 preflight is the next mandatory step before the first V2 run. V2 tests whether three
 specialist reviews improve the quality or convergence of one writer once
-coordination cost is included. Current baselines are `astra-core-v1-001` and
-`astra-scientific-v1-001`; the `001` runs remain historical evidence.
+coordination cost is included. Current baselines are `astra-core-v1-002` and
+`astra-scientific-v1-002`; the `001` runs remain historical evidence.
 
 ## Frozen decisions
 

@@ -8,7 +8,7 @@ El protocolo está fijado: el patrocinador aprobó A-01 a A-08. El preflight
 técnico es el siguiente paso obligatorio antes de lanzar V2. Prueba si tres revisiones
 especializadas mejoran la calidad o convergencia de un único escritor después
 de contabilizar la coordinación. Las referencias actuales son
-`astra-core-v1-001` y `astra-scientific-v1-001`; los runs `001` siguen históricos.
+`astra-core-v1-002` y `astra-scientific-v1-002`; los runs `001` siguen históricos.
 
 ## Decisiones fijadas
 
