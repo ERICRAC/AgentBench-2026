@@ -1,0 +1,30 @@
+{
+  "campaign_id": "astra-high-001",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "context_window": 200000,
+  "compaction": 180000,
+  "compaction_scope": "total",
+  "v1_runs": [
+    "astra-core-v1-001",
+    "astra-scientific-v1-001"
+  ],
+  "v2_status": "preflight after V1 publication",
+  "config": "governance/astra-v1.toml",
+  "previous_evidence": "governance/archive-v1-sha256.json",
+  "previous_protocol_commit": "158d087",
+  "changes": [
+    "model migrated from Sol to Astra",
+    "explicit candidate isolation/publication instructions",
+    "fresh CLI sessions ignore user config and rules; authentication remains external"
+  ],
+  "frozen_files": {
+    "challenges/calculator/SPEC.md": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+    "challenges/calculator/tests/test_acceptance.py": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+    "challenges/scientific-calculator/SPEC.md": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+    "challenges/scientific-calculator/tests/test_acceptance.py": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89",
+    "prompts/codex-multi.md": "fb13706183d5a6c260b9d3f71d7e92e2918eb5d8fb53d52897fa5cf594ed19bf",
+    "prompts/codex-single.md": "c3d2ed4404339c9d72bf7abd6778bb1a0692300b23326c7d6621d0af4a0f51e9",
+    "prompts/scientific-single.md": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad"
+  }
+}

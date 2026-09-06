@@ -7,30 +7,30 @@
 This protocol is frozen: the sponsor approved A-01 to A-08. The technical
 preflight is the next mandatory step before the first V2 run. V2 tests whether three
 specialist reviews improve the quality or convergence of one writer once
-coordination cost is included. Current baselines are `codex-single-002` and
-`scientific-single-002`; the `001` runs remain historical evidence.
+coordination cost is included. Current baselines are `astra-core-v1-001` and
+`astra-scientific-v1-001`; the `001` runs remain historical evidence.
 
 ## Frozen decisions
 
 The approved settings are: A-01 200k context/180k compaction (100k requires V1
 reruns); A-02 three roles; A-03 blind analyses followed by one cross-challenge;
 A-04 limits of 1,200 words per analysis, 600 per reply and 1,200 for the final
-critique; A-05 the same `gpt-5.6-sol`/`high` for all; A-06 full visible text
+critique; A-05 the same `gpt-6-astra`/`high` for all; A-06 full visible text
 after secret screening; A-07 a quality/time/token dashboard with Pareto
 dominance rather than arbitrary composite weights; A-08 native subagents only
 if they expose per-thread configuration and counters, otherwise separate
 `codex exec --json` sessions. A trivial, non-benchmark preflight checks role,
 isolation, configuration, visible text and JSON usage before any challenge is
-read. These eight decisions form one frozen configuration. Moving only V2 to
-`gpt-6-astra`/`high` would also change the model and prevent attribution of the
-difference to organisation. That option therefore opens a new campaign and
-requires both V1 Core and Scientific baselines to be rerun with Astra.
+read. The sponsor opened campaign `astra-high-001`: rerun both V1 baselines with
+Astra before the V2 preflight. A-01 to A-08 remain fixed, with A-05 explicitly
+migrated to Astra for every role. The previous Sol protocol is preserved at
+commit `158d087`.
 
 ## Controlled variables
 
 | Parameter | Baseline and frozen V2 value |
 | --- | --- |
-| Model / reasoning effort | `gpt-5.6-sol` / `high` |
+| Model / reasoning effort | `gpt-6-astra` / `high` |
 | Declared context per agent | 200,000 tokens |
 | Automatic compaction | 180,000 tokens, `total` scope |
 | Sessions | fresh and ephemeral |

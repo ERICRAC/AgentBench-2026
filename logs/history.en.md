@@ -156,3 +156,9 @@ would confound model and organisational effects.
 **Useful trace** — A possible Astra variant is a new campaign requiring V1
 Core and Scientific reruns. The interface shows positive remaining allowance
 but cannot guarantee the cost of one run; no run or sub-agent was launched.
+
+## Exchange 018
+
+**Request** — Review and fix the project, archive V1, rerun V1 with Astra high, then perform V2 preflight after an intermediate commit/push.
+
+**Response** — Stable archive links and SHA-256 hashes; astra-high-001 campaign and explicit configuration; private session capture for screened public evidence. Windows Node works but the WSL wrapper cannot find node. Execution results follow after closure.

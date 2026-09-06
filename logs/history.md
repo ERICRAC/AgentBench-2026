@@ -239,3 +239,9 @@ seulement en V2 confondrait effet du modèle et effet de l'organisation.
 campagne nécessitant de rejouer V1 Core et Scientific. Le solde d'interface
 indique une marge positive, sans permettre de garantir le coût d'un run ;
 aucun run ni sous-agent n'a été lancé.
+
+## Échange 018
+
+**Demande synthétique** — Analyser et corriger le projet, archiver les V1, rejouer V1 avec Astra high puis effectuer le préflight V2 après un commit/push intermédiaire.
+
+**Réponse synthétique** — Archives à adresses stables avec empreintes SHA-256 ; campagne astra-high-001 et configuration explicite ; capture privée des sessions pour produire des preuves publiques filtrées. Node Windows fonctionne, mais le lanceur WSL ne trouve pas node. Résultats d’exécution ajoutés après clôture.

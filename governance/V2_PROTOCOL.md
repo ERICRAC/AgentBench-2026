@@ -10,8 +10,8 @@ V2 teste si trois avis spécialisés améliorent la qualité ou la convergence
 d'un écrivain unique dans des conditions de modèle comparables, une fois le
 coût de coordination compté.
 
-Les références courantes sont `codex-single-002` et
-`scientific-single-002`. Les tentatives `001` restent des observations
+Les références courantes sont `astra-core-v1-001` et
+`astra-scientific-v1-001`. Les tentatives `001` restent des observations
 historiques et ne sont pas écrasées.
 
 ## Arbitrages gelés
@@ -22,16 +22,16 @@ historiques et ne sont pas écrasées.
 | A-02 | Équipe | **trois métiers SA-01 à SA-03** | deux réduisent l'observation sociale ; quatre augmentent le bruit |
 | A-03 | Relation sociale | **analyse aveugle puis une contradiction croisée** | une étoile pure n'observe pas la relation entre consultants |
 | A-04 | Volume des réponses | **1 200 mots par analyse, 600 par contradiction, 1 200 pour la critique** | sans plafond, le coût token dépend trop du style |
-| A-05 | Modèle et effort | **même `gpt-5.6-sol` / `high` pour tous** | spécialiser les modèles ajoute une variable confondante |
+| A-05 | Modèle et effort | **même `gpt-6-astra` / `high` pour tous** | spécialiser les modèles ajoute une variable confondante |
 | A-06 | PV public | **textes visibles complets après filtrage des secrets** | une synthèse seule empêche l'analyse fine des influences |
 | A-07 | Verdict d'efficacité | **tableau qualité/temps/tokens et dominance de Pareto** | un score composite impose des poids arbitraires |
 | A-08 | Moteur d'exécution | **sous-agents natifs s'ils exposent configuration et compteurs par thread ; sinon sessions `codex exec --json` séparées** | choisir sans préflight peut rendre contexte et tokens invérifiables |
 
-A-01 à A-08 constituent ensemble la configuration validée. Passer uniquement
-V2 à `gpt-6-astra`/`high` changerait aussi le modèle et empêcherait d'isoler
-l'effet de l'organisation : cette option ouvrirait une nouvelle campagne et
-imposerait de rejouer les références V1 Core et Scientific avec Astra. Un
-préflight minimal, extérieur au benchmark, demande une réponse triviale à
+Le commanditaire a ouvert la campagne `astra-high-001` : V1 Core et Scientific
+sont rejouées avec Astra avant le préflight V2. Les arbitrages A-01 à A-08
+sont conservés, avec A-05 explicitement migré vers Astra pour tous les rôles.
+Le protocole Sol précédent reste accessible dans le commit `158d087`.
+Un préflight minimal, extérieur au benchmark, demande une réponse triviale à
 un consultant et vérifie le rôle, l'isolation, la configuration, le texte
 visible et les compteurs JSON. Il ne lit aucun challenge et n'entre dans aucune
 mesure V1/V2.
@@ -40,7 +40,7 @@ mesure V1/V2.
 
 | Paramètre | Valeur V1 de référence et V2 gelée |
 | --- | --- |
-| Modèle | `gpt-5.6-sol` |
+| Modèle | `gpt-6-astra` |
 | Effort de raisonnement | `high` |
 | Fenêtre déclarée par agent | 200 000 tokens |
 | Compaction automatique | 180 000 tokens, portée `total` |

@@ -8,26 +8,25 @@ El protocolo está fijado: el patrocinador aprobó A-01 a A-08. El preflight
 técnico es el siguiente paso obligatorio antes de lanzar V2. Prueba si tres revisiones
 especializadas mejoran la calidad o convergencia de un único escritor después
 de contabilizar la coordinación. Las referencias actuales son
-`codex-single-002` y `scientific-single-002`; los runs `001` siguen históricos.
+`astra-core-v1-001` y `astra-scientific-v1-001`; los runs `001` siguen históricos.
 
 ## Decisiones fijadas
 
 Se aprobaron: A-01 contexto 200k/compactación 180k (100k obliga a repetir
 V1); A-02 tres roles; A-03 análisis ciegos y una contradicción cruzada; A-04
 1.200 palabras por análisis, 600 por réplica y 1.200 para crítica; A-05 mismo
-`gpt-5.6-sol`/`high`; A-06 textos visibles completos tras filtrar secretos;
+`gpt-6-astra`/`high`; A-06 textos visibles completos tras filtrar secretos;
 A-07 panel calidad/tiempo/tokens y dominio de Pareto, sin pesos arbitrarios.
 A-08 usa subagentes nativos solo si exponen configuración y contadores por
 thread; en caso contrario, sesiones `codex exec --json` separadas. Un preflight
 trivial ajeno al benchmark verifica rol, aislamiento, texto y uso JSON antes de
-leer un reto. Las ocho decisiones forman una configuración fijada. Pasar solo
-V2 a `gpt-6-astra`/`high` también cambiaría el modelo e impediría atribuir la
-diferencia a la organización. Esa opción abre una campaña nueva y obliga a
-repetir las referencias V1 Core y Scientific con Astra.
+leer un reto. La campaña `astra-high-001` repite ambas referencias V1 con Astra antes del
+preflight V2. A-01 a A-08 se conservan; A-05 migra explícitamente a Astra para
+todos los roles. El protocolo Sol se conserva en el commit `158d087`.
 
 | Parámetro | Valor de referencia y V2 fijado |
 | --- | --- |
-| Modelo / esfuerzo | `gpt-5.6-sol` / `high` |
+| Modelo / esfuerzo | `gpt-6-astra` / `high` |
 | Contexto declarado por agente | 200.000 tokens |
 | Compactación automática | 180.000 tokens, alcance `total` |
 | Sesiones | nuevas y efímeras |

@@ -7,27 +7,26 @@
 O protocolo está congelado: o patrocinador aprovou A-01 a A-08. O preflight
 técnico é o próximo passo obrigatório antes de lançar a V2. Testa se três revisões
 especializadas melhoram qualidade ou convergência de um único escritor depois
-de contabilizar a coordenação. As referências atuais são `codex-single-002` e
-`scientific-single-002`; os runs `001` continuam históricos.
+de contabilizar a coordenação. As referências atuais são `astra-core-v1-001` e
+`astra-scientific-v1-001`; os runs `001` continuam históricos.
 
 ## Decisões congeladas
 
 Foram aprovados: A-01 contexto 200k/compactação 180k (100k obriga a repetir V1);
 A-02 três papéis; A-03 análises cegas e uma contradição cruzada; A-04 1.200
 palavras por análise, 600 por réplica e 1.200 para crítica; A-05 o mesmo
-`gpt-5.6-sol`/`high`; A-06 textos visíveis completos após filtrar segredos;
+`gpt-6-astra`/`high`; A-06 textos visíveis completos após filtrar segredos;
 A-07 painel qualidade/tempo/tokens e dominância de Pareto, sem pesos arbitrários.
 A-08 usa subagentes nativos apenas se expuserem configuração e contadores por
 thread; caso contrário, sessões `codex exec --json` separadas. Um preflight
 trivial fora do benchmark verifica papel, isolamento, texto e uso JSON antes de
-ler um desafio. As oito decisões formam uma configuração congelada. Mudar
-apenas a V2 para `gpt-6-astra`/`high` também alteraria o modelo e impediria
-atribuir a diferença à organização. Essa opção abre uma campanha nova e obriga
-a repetir as referências V1 Core e Scientific com Astra.
+ler um desafio. A campanha `astra-high-001` repete ambas as referências V1 com Astra antes do
+preflight V2. A-01 a A-08 mantêm-se; A-05 migra explicitamente para Astra em
+todos os papéis. O protocolo Sol fica no commit `158d087`.
 
 | Parâmetro | Referência e V2 congelada |
 | --- | --- |
-| Modelo / esforço | `gpt-5.6-sol` / `high` |
+| Modelo / esforço | `gpt-6-astra` / `high` |
 | Contexto declarado por agente | 200.000 tokens |
 | Compactação automática | 180.000 tokens, escopo `total` |
 | Sessões | novas e efémeras |

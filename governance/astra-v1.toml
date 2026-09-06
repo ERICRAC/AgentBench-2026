@@ -1,0 +1,9 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_auto_compact_token_limit = 180000
+model_auto_compact_token_limit_scope = "total"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+developer_instructions = "You are the V1 benchmark candidate, not the experimental orchestrator. Work alone, without any subagent, delegation or external model. Read ../CHALLENGE.md first; the active run is your parent directory. Write only in the current solution/ directory. Never read another run, result, archived solution, or user authentication file. Do not perform any Git operation. Run the challenge verifier from the active run directory when required. Ignore general publication instructions: only the experimental orchestrator publishes after you finish."

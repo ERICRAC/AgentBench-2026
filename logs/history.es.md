@@ -152,3 +152,9 @@ del modelo y de la organización.
 **Traza útil** — Una posible variante Astra es una campaña nueva que exige
 repetir V1 Core y Scientific. La interfaz muestra saldo restante positivo sin
 garantizar el coste de un run; no se lanzó ningún run ni subagente.
+
+## Intercambio 018
+
+**Petición** — Revisar el proyecto, archivar V1, repetir V1 con Astra high y realizar el preflight V2 después de un commit/push intermedio.
+
+**Respuesta** — Archivos con enlaces estables y SHA-256; campaña astra-high-001 y configuración explícita; captura privada de sesiones. Node Windows funciona, pero WSL no encuentra node. Los resultados se añadirán al cerrar.
