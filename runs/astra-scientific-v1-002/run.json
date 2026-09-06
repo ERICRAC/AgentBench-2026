@@ -3,5 +3,67 @@
   "mode": "codex-single",
   "challenge": "scientific-calculator",
   "created_at": "2026-09-06T22:20:43.458696+00:00",
-  "status": "created"
+  "status": "completed",
+  "campaign_id": "astra-high-001",
+  "actor_topology": {
+    "experimental_orchestrator": "Separate maintenance session, outside candidate measurements",
+    "candidate": "Fresh ephemeral codex exec session",
+    "candidate_consultants_or_subagents": 0
+  },
+  "candidate": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "codex_cli": "codex-cli 0.153.4",
+    "context_window_tokens": 200000,
+    "auto_compact_token_limit": 180000,
+    "auto_compact_token_limit_scope": "total",
+    "thread_id": "01a078cf-ad3f-77a0-be6c-220aeba856ec",
+    "session_persistence": false
+  },
+  "config": "governance/astra-v1.toml",
+  "config_sha256": "10fcff1a1658aef8e3b3c93b5433d6a5e58fcccd16f9a8234b8ad86d7d9dc0ef",
+  "prompt": "prompts/scientific-single.md",
+  "prompt_sha256": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad",
+  "duration_seconds": 399.478,
+  "usage": {
+    "input_tokens": 208078,
+    "cached_input_tokens": 167808,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 12432,
+    "reasoning_output_tokens": 1429,
+    "input_plus_output_tokens": 220510
+  },
+  "verification": {
+    "candidate_first_pass": "9/9",
+    "candidate_final_pass": "9/9",
+    "independent_final_pass": "9/9",
+    "additional_candidate_tests": "4/4",
+    "independent_replay_of_additional_tests": "4/4",
+    "first_pass_evidence": "Candidate visible report plus recorded verifier exit 0; JSON tool output empty"
+  },
+  "corrections": {
+    "functional_after_first_official_pass": 1,
+    "description": "Candidate supplementary test found extreme-float interpolation outside interval; fixed and regression-tested"
+  },
+  "human_functional_interventions": 0,
+  "files": [
+    {
+      "path": "solution/README.md",
+      "lines": 138
+    },
+    {
+      "path": "solution/verify_additional.py",
+      "lines": 79
+    },
+    {
+      "path": "solution/PV.md",
+      "lines": 76
+    },
+    {
+      "path": "solution/scientific_calculator.py",
+      "lines": 380
+    }
+  ],
+  "candidate_commit": "ae9921a",
+  "minutes": "runs/astra-scientific-v1-002/PV.md"
 }

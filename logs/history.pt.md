@@ -155,3 +155,11 @@ garantir o custo de um run; nenhum run ou subagente foi lançado.
 **Pedido** — Rever o projeto, arquivar V1, repetir V1 com Astra high e realizar o preflight V2 após um commit/push intermédio.
 
 **Resposta** — Arquivos com ligações estáveis e SHA-256; campanha astra-high-001 e configuração explícita; captura privada de sessões. Node Windows funciona, mas WSL não encontra node. Os resultados serão adicionados no fim.
+
+## Interação 019
+
+**Pedido** — Continuar após renovar o crédito e fornecer comandos Node.js para WSL Debian.
+
+**Resposta** — Tentativa Scientific interrompida preservada sem inventar resultados ou consumo. Sessão nova: 9/9 e correção numérica descoberta após o primeiro 9/9, com quatro testes adicionais. Core 6/6. Relatórios, atas e métricas publicados antes do preflight V2. Guia Debian nodejs/npm e lint fixado.
+
+Controlos independentes: Core 6/6, Scientific 9/9, testes adicionais 4/4. Provas históricas preservadas. Sessões concluídas: 499,653 s e 340.988 tokens, sem tentativas interrompidas nem manutenção.

@@ -24,6 +24,8 @@ as intervenções humanas e o ruído de coordenação.
 O projeto foi concebido e conduzido **inteiramente por microfone com o Codex**
 por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 
+Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
+
 ## Painel — estado atual
 
 | Campanha principal | V1 · Codex sozinho | Próxima execução | Protocolos |
@@ -96,14 +98,14 @@ tentativa. **Os agentes propõem; o verificador decide.**
 {\text{tempo} + \text{tokens} + \text{coordenação}}
 ```
 
+A fórmula ilustra a intuição do projeto; não é uma pontuação que some unidades incompatíveis. Os relatórios comparam qualidade, segundos, tokens e coordenação separadamente.
+
 ## Resultados publicados
 
 | Execução | Organização | Objetivo | Veredicto | Tempo | Tokens observados |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-002`](results/codex-single-002.pt.md) | V1 · referência atual | Calculadora Core | **6/6** | 193 s | 556 461¹ |
-| [`scientific-single-002`](results/scientific-single-002.pt.md) | V1 · referência atual | Calculadora Scientific | **9/9** | 541 s | 603 492¹ |
-| [`codex-single-001`](results/codex-single-001.pt.md) | V1 · histórica | Calculadora Core | **6/6** | não registado | ≈ 18 086 |
-| [`scientific-single-001`](results/scientific-single-001.pt.md) | V1 · histórica | Calculadora Scientific | **9/9** | 331 s | 332 696¹ |
+| [`astra-core-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Core | **6/6** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Scientific | **9/9** | 399.478 s | 220 510¹ |
 
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.
@@ -127,7 +129,7 @@ os resultados anteriores são preservados. Consulte o
 
 - [x] Congelar os testes da Calculadora Core e da Calculadora Scientific.
 - [x] Preservar as primeiras observações V1 `001` sem as reescrever.
-- [x] Replicar V1 com modelo, esforço e contexto fixados: Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Replicar V1 com modelo, esforço e contexto fixados: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Decidir e fixar papéis, trocas, orçamentos e [métricas V2](governance/V2_PROTOCOL.pt.md).
 - [ ] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores.
 - [ ] Executar V2 para a Calculadora Core e a Calculadora Scientific.
@@ -148,7 +150,7 @@ de coordenação e textos visíveis entre profissões, preservados numa
 ```bash
 python3 scripts/new_run.py meu-run-v1
 cd runs/meu-run-v1
-codex "$(cat ../../prompts/codex-single.md)"
+python3 ../../scripts/capture_session.py --cwd solution --prompt ../../prompts/codex-single.md --config ../../governance/astra-v1.toml
 cd ../..
 python3 scripts/verify.py --solution runs/meu-run-v1/solution
 ```

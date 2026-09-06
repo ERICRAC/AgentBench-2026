@@ -2,14 +2,14 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+Las V1 anteriores están [archivadas](ARCHIVE_V1.es.md). «Referencia actual» en sus informes describe su estado histórico, no la campaña Astra.
+
 ## Resultados publicados
 
-| Intento | Modo | Objetivo | Resultado | Estado | Detalles |
+| Intento | Mode | Objetivo | Resultado | Estado | Detalles |
 | --- | --- | --- | --- | --- | --- |
-| `codex-single-002` | Codex solo | Calculadora Core | 6/6 | Referencia actual | [Informe](codex-single-002.es.md) |
-| `scientific-single-002` | Codex solo | Calculadora Scientific | 9/9 | Referencia actual | [Informe](scientific-single-002.es.md) |
-| `codex-single-001` | Codex solo | Calculadora Core | 6/6 | Histórica | [Informe](codex-single-001.es.md) |
-| `scientific-single-001` | Codex solo | Calculadora Scientific | 9/9 | Histórica | [Informe](scientific-single-001.es.md) |
+| `astra-core-v1-002` | Codex solo | Calculadora Core | 6/6 | Referencia Astra | [Informe completo](astra-v1.es.md) |
+| `astra-scientific-v1-002` | Codex solo | Calculadora Scientific | 9/9 | Referencia Astra | [Informe completo](astra-v1.es.md) |
 
 ## Datos conservados
 

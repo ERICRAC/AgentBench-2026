@@ -25,6 +25,8 @@ Le projet a été imaginé et piloté **entièrement au microphone avec Codex** 
 [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
 humain–agent fait donc partie de l'expérience autant que le code produit.
 
+Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
+
 ## Tableau de bord — état actuel
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
@@ -108,14 +110,14 @@ La lecture ne se limite donc pas au score :
 {\text{temps} + \text{tokens} + \text{coordination}}
 ```
 
+Cette formule illustre l'intuition du projet ; elle n'additionne pas des unités incompatibles dans un score calculé. Qualité, secondes, tokens et coordination sont comparés séparément dans les rapports.
+
 ## Résultats publiés
 
 | Run | Organisation | Défi | Verdict | Temps | Tokens observés |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-002`](results/codex-single-002.md) | V1 · référence courante | Calculatrice Core | **6/6** | 193 s | 556 461¹ |
-| [`scientific-single-002`](results/scientific-single-002.md) | V1 · référence courante | Calculatrice Scientific | **9/9** | 541 s | 603 492¹ |
-| [`codex-single-001`](results/codex-single-001.md) | V1 · historique | Calculatrice Core | **6/6** | non enregistré | ≈ 18 086 |
-| [`scientific-single-001`](results/scientific-single-001.md) | V1 · historique | Calculatrice Scientific | **9/9** | 331 s | 332 696¹ |
+| [`astra-core-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Core | **6/6** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Scientific | **9/9** | 399.478 s | 220 510¹ |
 
 ¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
 corrections. Aucune donnée manquante n'est reconstruite après coup.
@@ -149,7 +151,7 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
-- [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
 - [ ] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs.
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
@@ -192,7 +194,7 @@ abonnement ChatGPT. Aucune clé API OpenAI n'est nécessaire.
 ```bash
 python3 scripts/new_run.py mon-run-v1
 cd runs/mon-run-v1
-codex "$(cat ../../prompts/codex-single.md)"
+python3 ../../scripts/capture_session.py --cwd solution --prompt ../../prompts/codex-single.md --config ../../governance/astra-v1.toml
 cd ../..
 python3 scripts/verify.py --solution runs/mon-run-v1/solution
 ```

@@ -162,3 +162,11 @@ but cannot guarantee the cost of one run; no run or sub-agent was launched.
 **Request** — Review and fix the project, archive V1, rerun V1 with Astra high, then perform V2 preflight after an intermediate commit/push.
 
 **Response** — Stable archive links and SHA-256 hashes; astra-high-001 campaign and explicit configuration; private session capture for screened public evidence. Windows Node works but the WSL wrapper cannot find node. Execution results follow after closure.
+
+## Exchange 019
+
+**Request** — Continue after credit renewal and provide Node.js commands for WSL Debian.
+
+**Response** — The quota-interrupted Scientific attempt is retained without invented scores or usage. A fresh session passes 9/9 and fixes a numeric defect found after the first 9/9, retaining four passing extra tests. Core remains 6/6. V1 reports, visible minutes, measurements and archives are published before V2 preflight. A Debian guide covers nodejs/npm and pinned lint.
+
+Checks: independent Core 6/6, Scientific 9/9 and replayed extra tests 4/4; historical evidence preserved. Completed sessions total 499.653 s and 340,988 tokens, excluding interrupted attempts and maintenance.

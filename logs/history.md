@@ -245,3 +245,11 @@ aucun run ni sous-agent n'a été lancé.
 **Demande synthétique** — Analyser et corriger le projet, archiver les V1, rejouer V1 avec Astra high puis effectuer le préflight V2 après un commit/push intermédiaire.
 
 **Réponse synthétique** — Archives à adresses stables avec empreintes SHA-256 ; campagne astra-high-001 et configuration explicite ; capture privée des sessions pour produire des preuves publiques filtrées. Node Windows fonctionne, mais le lanceur WSL ne trouve pas node. Résultats d’exécution ajoutés après clôture.
+
+## Échange 019
+
+**Demande synthétique** — Poursuivre après rétablissement du crédit et fournir les commandes Node.js pour WSL Debian.
+
+**Réponse synthétique** — La Scientific interrompue par quota est conservée sans verdict ni compteurs inventés. Une nouvelle session vierge termine à 9/9, avec une correction numérique découverte après le premier 9/9 et quatre tests complémentaires réussis. Core reste à 6/6. Les rapports V1, PV visibles, métriques et archives sont publiés avant le préflight V2. Un guide Debian explique l'installation nodejs/npm et le lint épinglé.
+
+Contrôles : vérification indépendante Core 6/6, Scientific 9/9 et réexécution des tests complémentaires 4/4 ; intégrité des preuves historiques conservée. Sessions terminées : 499,653 s et 340 988 tokens au total, hors essais interrompus et maintenance.

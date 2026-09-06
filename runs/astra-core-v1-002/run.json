@@ -3,5 +3,63 @@
   "mode": "codex-single",
   "challenge": "calculator",
   "created_at": "2026-09-06T14:51:47.133620+00:00",
-  "status": "created"
+  "status": "completed",
+  "campaign_id": "astra-high-001",
+  "actor_topology": {
+    "experimental_orchestrator": "Separate maintenance session, outside candidate measurements",
+    "candidate": "Fresh ephemeral codex exec session",
+    "candidate_consultants_or_subagents": 0
+  },
+  "candidate": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "codex_cli": "codex-cli 0.153.4",
+    "context_window_tokens": 200000,
+    "auto_compact_token_limit": 180000,
+    "auto_compact_token_limit_scope": "total",
+    "thread_id": "01a07734-9f88-7032-9645-2c1bb44c0a95",
+    "session_persistence": false
+  },
+  "config": "governance/astra-v1.toml",
+  "config_sha256": "10fcff1a1658aef8e3b3c93b5433d6a5e58fcccd16f9a8234b8ad86d7d9dc0ef",
+  "prompt": "prompts/codex-single.md",
+  "prompt_sha256": "c3d2ed4404339c9d72bf7abd6778bb1a0692300b23326c7d6621d0af4a0f51e9",
+  "duration_seconds": 100.175,
+  "usage": {
+    "input_tokens": 117769,
+    "cached_input_tokens": 96896,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2709,
+    "reasoning_output_tokens": 195,
+    "input_plus_output_tokens": 120478
+  },
+  "verification": {
+    "candidate_first_pass": "6/6",
+    "candidate_final_pass": "6/6",
+    "independent_final_pass": "6/6",
+    "additional_candidate_tests": null,
+    "independent_replay_of_additional_tests": null,
+    "first_pass_evidence": "Captured unittest output and verifier exit 0"
+  },
+  "corrections": {
+    "functional_after_first_official_pass": 0,
+    "description": "No functional correction"
+  },
+  "human_functional_interventions": 0,
+  "files": [
+    {
+      "path": "solution/README.md",
+      "lines": 76
+    },
+    {
+      "path": "solution/calculator.py",
+      "lines": 56
+    },
+    {
+      "path": "solution/PV.md",
+      "lines": 40
+    }
+  ],
+  "candidate_commit": "ae9921a",
+  "minutes": "runs/astra-core-v1-002/PV.md"
 }

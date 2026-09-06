@@ -2,14 +2,14 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+Earlier V1 runs are [archived](ARCHIVE_V1.en.md). “Current baseline” in those reports refers to their historical status, not the Astra campaign.
+
 ## Published results
 
-| Attempt | Mode | Objective | Result | Status | Details |
+| Run | Mode | Objective | Result | Status | Details |
 | --- | --- | --- | --- | --- | --- |
-| `codex-single-002` | Codex alone | Core Calculator | 6/6 | Current baseline | [Report](codex-single-002.en.md) |
-| `scientific-single-002` | Codex alone | Scientific Calculator | 9/9 | Current baseline | [Report](scientific-single-002.en.md) |
-| `codex-single-001` | Codex alone | Core Calculator | 6/6 | Historical | [Report](codex-single-001.en.md) |
-| `scientific-single-001` | Codex alone | Scientific Calculator | 9/9 | Historical | [Report](scientific-single-001.en.md) |
+| `astra-core-v1-002` | Codex alone | Core Calculator | 6/6 | Astra baseline | [Full report](astra-v1.en.md) |
+| `astra-scientific-v1-002` | Codex alone | Scientific Calculator | 9/9 | Astra baseline | [Full report](astra-v1.en.md) |
 
 ## Retained data
 

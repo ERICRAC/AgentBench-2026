@@ -25,6 +25,8 @@ Codex** by [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 The human–agent conversation is therefore part of the experiment, just as much
 as the software it produces.
 
+Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
+
 ## Dashboard — current state
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
@@ -107,14 +109,14 @@ The score is therefore only part of the picture:
 {\text{time} + \text{tokens} + \text{coordination}}
 ```
 
+This expression illustrates the project's intuition; it is not a computed score adding incompatible units. Reports compare quality, seconds, tokens and coordination separately.
+
 ## Published results
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`codex-single-002`](results/codex-single-002.en.md) | V1 · current baseline | Core Calculator | **6/6** | 193 s | 556,461¹ |
-| [`scientific-single-002`](results/scientific-single-002.en.md) | V1 · current baseline | Scientific Calculator | **9/9** | 541 s | 603,492¹ |
-| [`codex-single-001`](results/codex-single-001.en.md) | V1 · historical | Core Calculator | **6/6** | not recorded | ≈ 18,086 |
-| [`scientific-single-001`](results/scientific-single-001.en.md) | V1 · historical | Scientific Calculator | **9/9** | 331 s | 332,696¹ |
+| [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Core Calculator | **6/6** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9** | 399.478 s | 220 510¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.
@@ -148,7 +150,7 @@ The comparison and versioning rules are defined in
 
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
 - [x] Preserve the first `001` V1 observations without rewriting them.
-- [x] Replicate V1 with pinned model, effort and context: Core `002` **6/6**, Scientific `002` **9/9**.
+- [x] Replicate V1 with pinned model, effort and context: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
 - [ ] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters.
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
@@ -191,7 +193,7 @@ a ChatGPT subscription. No OpenAI API key is required.
 ```bash
 python3 scripts/new_run.py my-v1-run
 cd runs/my-v1-run
-codex "$(cat ../../prompts/codex-single.md)"
+python3 ../../scripts/capture_session.py --cwd solution --prompt ../../prompts/codex-single.md --config ../../governance/astra-v1.toml
 cd ../..
 python3 scripts/verify.py --solution runs/my-v1-run/solution
 ```
