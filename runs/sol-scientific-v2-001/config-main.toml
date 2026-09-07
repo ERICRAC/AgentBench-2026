@@ -1,0 +1,9 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_auto_compact_token_limit = 180000
+model_auto_compact_token_limit_scope = "total"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+developer_instructions = "MAIN: AgentBench V2 candidate orchestrator and sole writer. The experimental relay supplies exactly the authorised consultant texts; do not create or call any other agent. Read no other run, solution or result. Write only inside the active run's solution directory. Never modify the challenge, tests, scripts or governance. Never use eval, exec or compile. Do not perform Git operations. Follow the phase boundary in the user prompt and run the exact verifier only in the final phase."

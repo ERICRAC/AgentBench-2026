@@ -1,0 +1,50 @@
+{
+  "run_id": "sol-scientific-v2-001",
+  "mode": "codex-multi",
+  "challenge": "scientific-calculator",
+  "created_at": "2026-09-07T23:35:23.278786+00:00",
+  "status": "prepared",
+  "campaign_id": "sol-high-control-001",
+  "reference_run": "sol-scientific-v1-001",
+  "paired_v2_run": "sol-core-v2-001",
+  "protocol": "governance/V2_PROTOCOL.md",
+  "protocol_adaptation": "New Sol campaign: organisational sequence unchanged; model changed from Astra to Sol for comparison with the completed Sol V1 control",
+  "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
+  "roles": [
+    "MAIN",
+    "SA-01",
+    "SA-02",
+    "SA-03"
+  ],
+  "planned_sequence": [
+    "SA-01 and SA-02 blind analyses in parallel",
+    "one cross-response each in parallel",
+    "MAIN decision table and first solution",
+    "SA-03 adversarial critique",
+    "MAIN dispositions, corrections and official verifier"
+  ],
+  "candidate_model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "context_window_tokens_per_session": 200000,
+  "auto_compact_token_limit": 180000,
+  "auto_compact_token_limit_scope": "total",
+  "human_functional_interventions": 0,
+  "challenge_sha256": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+  "acceptance_tests_sha256": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89",
+  "base_prompt": "prompts/codex-multi.md",
+  "base_prompt_sha256": "fb13706183d5a6c260b9d3f71d7e92e2918eb5d8fb53d52897fa5cf594ed19bf",
+  "runner": "scripts/run_v2.py",
+  "runner_sha256": "3cb0f940ebc8fe0c422b948c35de4b00273815d3dc4cb91f04b53e62814f19c4",
+  "config_sha256": {
+    "MAIN": "f6f80c6719c5872bad51c2f601caf19679b83bcc50f40c2a0dfa742d12384b6a",
+    "SA-01": "469329b90e4f0ca14109c89c99d590cbda45cd67c5bf963d257783548a77797a",
+    "SA-02": "7fb9d427bc45fc9dfc73fffa8160b3c79a7f2cbb2fb2c70faefee9fd2e1bfa66",
+    "SA-03": "1f61093c2cc2ae936c6efc1ee9efc168eaf97d794af0d70c7ddefd76378a5077"
+  },
+  "preflight": {
+    "solution_empty": true,
+    "challenge_read": true,
+    "paired_core_report_published_first": "ad7e234",
+    "protocol_or_runner_changed_since_core": false
+  }
+}
