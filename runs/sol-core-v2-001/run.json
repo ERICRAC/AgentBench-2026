@@ -3,7 +3,7 @@
   "mode": "codex-multi",
   "challenge": "calculator",
   "created_at": "2026-09-07T23:00:18.606776+00:00",
-  "status": "prepared",
+  "status": "completed",
   "campaign_id": "sol-high-control-001",
   "reference_run": "sol-core-v1-001",
   "protocol": "governance/V2_PROTOCOL.md",
@@ -39,5 +39,52 @@
     "SA-01": "469329b90e4f0ca14109c89c99d590cbda45cd67c5bf963d257783548a77797a",
     "SA-02": "7fb9d427bc45fc9dfc73fffa8160b3c79a7f2cbb2fb2c70faefee9fd2e1bfa66",
     "SA-03": "1f61093c2cc2ae936c6efc1ee9efc168eaf97d794af0d70c7ddefd76378a5077"
-  }
+  },
+  "codex_cli": "codex-cli 0.153.4",
+  "wall_duration_seconds": 796.534,
+  "sum_session_seconds": 898.229,
+  "usage": {
+    "input_tokens": 536013,
+    "cached_input_tokens": 435200,
+    "output_tokens": 23075,
+    "reasoning_output_tokens": 8904,
+    "input_plus_output_tokens": 559088
+  },
+  "sessions": [
+    {"phase": "sa01_initial", "thread_id": "01a07e1c-d0f4-7c43-9286-a8effef26e8f", "duration_seconds": 62.931, "input_tokens": 13559, "output_tokens": 1566, "visible_words": 999},
+    {"phase": "sa02_initial", "thread_id": "01a07e1c-d0ca-7ee3-a303-4e9549d94c26", "duration_seconds": 72.214, "input_tokens": 13561, "output_tokens": 1840, "visible_words": 995},
+    {"phase": "sa01_cross", "thread_id": "01a07e1d-eb28-77b0-8fcd-68b3d5d47226", "duration_seconds": 48.026, "input_tokens": 16242, "output_tokens": 1143, "visible_words": 428},
+    {"phase": "sa02_cross", "thread_id": "01a07e1d-eb48-7a80-8d64-e212290be15c", "duration_seconds": 38.788, "input_tokens": 16244, "output_tokens": 898, "visible_words": 471},
+    {"phase": "main_first", "thread_id": "01a07e1e-a70b-7233-8947-449724938334", "duration_seconds": 236.374, "input_tokens": 153193, "output_tokens": 6106, "visible_words": 350},
+    {"phase": "sa03_critic", "thread_id": "01a07e22-4257-74f1-af4b-8a3a295b2a75", "duration_seconds": 118.418, "input_tokens": 20440, "output_tokens": 3116, "visible_words": 614},
+    {"phase": "main_final", "thread_id": "01a07e24-0f2d-75f1-9528-5ade27b30553", "duration_seconds": 321.478, "input_tokens": 302774, "output_tokens": 8406, "visible_words": 490}
+  ],
+  "verification": {
+    "candidate_first_official_pass": "6/6 unittest groups; 14/14 elementary checks",
+    "candidate_final_pass": "6/6 unittest groups; 14/14 elementary checks",
+    "independent_final_pass": "6/6 unittest groups; 14/14 elementary checks",
+    "functional_corrections_after_first_official_pass": 0
+  },
+  "social_observations": {
+    "consultant_roles": 3,
+    "request_response_exchanges": 7,
+    "consultant_visible_words": 3507,
+    "all_visible_words": 4347,
+    "initial_recommendations_retained": 19,
+    "initial_recommendations_rejected": 4,
+    "critic_points_retained": 10,
+    "critic_points_rejected": 5,
+    "critic_points_non_verifiable_final": 0,
+    "useful_disagreement": "CLI whitespace grammar; converged on exactly three whitespace-separated fields"
+  },
+  "corrections_after_critic_before_verifier": [
+    "Made README import example reproducible",
+    "Extended KeyboardInterrupt handling across the CLI loop",
+    "Replaced tuple generic annotation with typing.Tuple for older Python compatibility"
+  ],
+  "candidate_commit": "31223f7",
+  "publisher": "scripts/publish_v2.py",
+  "publisher_sha256": "98b7163dbf0c1c882a7d0fe3353dfe3ec3135f92395733576b9efd2bfa1dd275",
+  "minutes": "runs/sol-core-v2-001/PV.md",
+  "trace": "runs/sol-core-v2-001/trace.json"
 }

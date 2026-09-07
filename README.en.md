@@ -11,9 +11,9 @@
 > An open R&D laboratory for the social behaviour of AI agents: when several
 > agents collaborate, do they create more intelligence — or merely more noise?
 
-![Campaign](https://img.shields.io/badge/campaign-2%2F6_validations-22c55e)
-![Progress](https://img.shields.io/badge/progress-33%25-06b6d4)
-![Next step](https://img.shields.io/badge/next-V2_Core_Calculator-8b5cf6)
+![Campaign](https://img.shields.io/badge/campaign-3%2F6_validations-22c55e)
+![Progress](https://img.shields.io/badge/progress-50%25-06b6d4)
+![Next step](https://img.shields.io/badge/next-V2_Scientific_Calculator-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
 AgentBench 2026 compares three agent organisations across two related
@@ -25,7 +25,7 @@ Codex** by [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 The human–agent conversation is therefore part of the experiment, just as much
 as the software it produces.
 
-Active campaign: **Astra high · `astra-high-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [V1 report](results/astra-v1.en.md) · [Sol vs Astra control](results/sol-vs-astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
+Active campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [Sol V1 control](results/sol-vs-astra-v1.en.md) · [V2 Core report](results/sol-v2-core.en.md) · [V1 archive](results/ARCHIVE_V1.en.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.en.md) · [V2 preflight](results/astra-v2-preflight.en.md).
 
@@ -33,8 +33,8 @@ Active campaign: **Astra high · `astra-high-001`**. [71-check catalogue](docs/a
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validated** | **2 / 2 replicated** | **V2 · Core Calculator** | **Challenges and V2 protocol frozen** |
-| `██████░░░░░░` **33%** | Core **6 groups · 14 checks** · Scientific **9 groups · 57 checks** | Governed multi-agent | Independent verifiers |
+| **3 / 6 validated** | **2 / 2 replicated** | **V2 · Scientific Calculator** | **Challenges and V2 protocol frozen** |
+| `█████████░░░░░` **50%** | Core **6 groups · 14 checks** · Scientific **9 groups · 57 checks** | Governed multi-agent | Independent verifiers |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -54,9 +54,9 @@ flowchart LR
       V1S["✓ Scientific Calculator<br/>9 groups · 57 checks"]
     end
     G1{"V1 observations<br/>solo baseline"}
-    subgraph V2["V2 · Codex team · 0/2"]
-      V2C["▶ Core Calculator<br/>next"]
-      V2S["○ Scientific Calculator<br/>pending"]
+    subgraph V2["V2 · Codex team · 1/2"]
+      V2C["✓ Core Calculator<br/>6 groups · 14 checks"]
+      V2S["▶ Scientific Calculator<br/>next"]
     end
     G2{"V2 observations<br/>possible refinement"}
     V21["V2.1 · optimised variant<br/>optional"]
@@ -80,15 +80,15 @@ flowchart LR
     classDef todo fill:#172554,stroke:#38bdf8,color:#f0f9ff,stroke-width:2px;
     classDef gate fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
     classDef optional fill:#0f2a4a,stroke:#94a3b8,color:#f8fafc;
-    class V1C,V1S done;
-    class V2C next;
-    class V2S,V3C,V3S todo;
+    class V1C,V1S,V2C done;
+    class V2S next;
+    class V3C,V3S todo;
     class G1,G2,G3 gate;
     class V21,V4 optional;
 ```
 
 **How to read it:** the six V1–V3 × Core Calculator–Scientific Calculator cells
-form the mandatory campaign. V2.1 and V4 are not included in the 2/6 count: they are explicitly
+form the mandatory campaign. V2.1 and V4 are not included in the 3/6 count: they are explicitly
 optional extensions.
 
 ## The research question
@@ -152,6 +152,7 @@ Scientific**.
 | [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9 groups · 57/57 checks** | 399.478 s | 220 510¹ |
 | [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Core Calculator | **6/6 groups · 14/14 checks** | 189.964 s | 158 101¹ |
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,009.468 s | 296 275¹ |
+| [`sol-core-v2-001`](results/sol-v2-core.en.md) | V2 · Sol team | Core Calculator | **6/6 groups · 14/14 checks** | 796.534 s | 559 088¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.
@@ -189,7 +190,8 @@ The comparison and versioning rules are defined in
 - [x] Control V1 like for like with Sol/high: **15/15 groups and 71/71 elementary checks**, with [comparison published](results/sol-vs-astra-v1.en.md).
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
 - [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
-- [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
+- [x] Run and publish **V2 Core Calculator**: **6/6 groups and 14/14 checks**, with [report and minutes](results/sol-v2-core.en.md).
+- [ ] Run and publish **V2 Scientific Calculator** without changing the protocol between challenges.
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.
 - [ ] Freeze V3's Ollama integration, local models and context limits.

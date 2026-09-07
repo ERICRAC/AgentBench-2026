@@ -12,9 +12,9 @@
 > plusieurs agents collaborent, produisent-ils davantage d'intelligence… ou
 > surtout davantage de bruit ?
 
-![Campagne](https://img.shields.io/badge/campagne-2%2F6_validations-22c55e)
-![Progression](https://img.shields.io/badge/progression-33%25-06b6d4)
-![Prochaine étape](https://img.shields.io/badge/prochaine-V2_Calculatrice_Core-8b5cf6)
+![Campagne](https://img.shields.io/badge/campagne-3%2F6_validations-22c55e)
+![Progression](https://img.shields.io/badge/progression-50%25-06b6d4)
+![Prochaine étape](https://img.shields.io/badge/prochaine-V2_Calculatrice_Scientific-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
 AgentBench 2026 compare trois organisations d'agents sur deux défis de même
@@ -25,7 +25,7 @@ Le projet a été imaginé et piloté **entièrement au microphone avec Codex** 
 [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
 humain–agent fait donc partie de l'expérience autant que le code produit.
 
-Campagne active : **Astra high · `astra-high-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Rapport V1](results/astra-v1.md) · [Contrôle Sol vs Astra](results/sol-vs-astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
+Campagne active : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Rapport V2 Core](results/sol-v2-core.md) · [Archives V1](results/ARCHIVE_V1.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.md) · [V2 preflight](results/astra-v2-preflight.md).
 
@@ -33,8 +33,8 @@ Campagne active : **Astra high · `astra-high-001`**. [Catalogue des 71 contrôl
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis et protocole V2 figés** |
-| `██████░░░░░░` **33 %** | Core **6 groupes · 14 contrôles** · Scientific **9 groupes · 57 contrôles** | Multi-agent gouverné | Vérificateurs indépendants |
+| **3 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Scientific** | **Défis et protocole V2 figés** |
+| `█████████░░░░░` **50 %** | Core **6 groupes · 14 contrôles** · Scientific **9 groupes · 57 contrôles** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -54,9 +54,9 @@ flowchart LR
       V1S["✓ Calculatrice Scientific<br/>9 groupes · 57 contrôles"]
     end
     G1{"Observations V1<br/>référence solo"}
-    subgraph V2["V2 · Équipe Codex · 0/2"]
-      V2C["▶ Calculatrice Core<br/>prochain"]
-      V2S["○ Calculatrice Scientific<br/>à faire"]
+    subgraph V2["V2 · Équipe Codex · 1/2"]
+      V2C["✓ Calculatrice Core<br/>6 groupes · 14 contrôles"]
+      V2S["▶ Calculatrice Scientific<br/>prochain"]
     end
     G2{"Observations V2<br/>affinage éventuel"}
     V21["V2.1 · variante optimisée<br/>facultative"]
@@ -80,16 +80,16 @@ flowchart LR
     classDef todo fill:#172554,stroke:#38bdf8,color:#f0f9ff,stroke-width:2px;
     classDef gate fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
     classDef optional fill:#0f2a4a,stroke:#94a3b8,color:#f8fafc;
-    class V1C,V1S done;
-    class V2C next;
-    class V2S,V3C,V3S todo;
+    class V1C,V1S,V2C done;
+    class V2S next;
+    class V3C,V3S todo;
     class G1,G2,G3 gate;
     class V21,V4 optional;
 ```
 
 **Lecture :** les six cases V1–V3 × Calculatrice Core–Calculatrice Scientific
 constituent la campagne obligatoire. V2.1 et V4 n'entrent pas dans le calcul
-des 2/6 : ce sont des
+des 3/6 : ce sont des
 extensions facultatives, annoncées comme telles.
 
 ## La question expérimentale
@@ -154,6 +154,7 @@ suites actuelles ; elles ne constituent pas une note absolue de qualité.
 | [`astra-scientific-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Scientific | **9/9 groupes · 57/57 contrôles** | 399.478 s | 220 510¹ |
 | [`sol-core-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Core | **6/6 groupes · 14/14 contrôles** | 189.964 s | 158 101¹ |
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Scientific | **9/9 groupes · 57/57 contrôles** | 1 009.468 s | 296 275¹ |
+| [`sol-core-v2-001`](results/sol-v2-core.md) | V2 · Équipe Sol | Calculatrice Core | **6/6 groupes · 14/14 contrôles** | 796.534 s | 559 088¹ |
 
 ¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
 corrections. Aucune donnée manquante n'est reconstruite après coup.
@@ -191,7 +192,8 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Contrôler V1 à périmètre constant avec Sol/high : **15/15 groupes et 71/71 contrôles élémentaires**, avec [comparaison publiée](results/sol-vs-astra-v1.md).
 - [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
 - [x] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs. [PV](results/astra-v2-preflight.md).
-- [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
+- [x] Exécuter et publier **V2 Calculatrice Core** : **6/6 groupes et 14/14 contrôles**, avec [rapport et PV](results/sol-v2-core.md).
+- [ ] Exécuter et publier **V2 Calculatrice Scientific** sans modifier le protocole entre les deux défis.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.
 - [ ] Figer l'intégration Ollama, les modèles locaux et les limites de contexte de V3.

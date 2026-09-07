@@ -12,9 +12,9 @@
 > de IA: cuando varios agentes colaboran, ¿generan más inteligencia o sobre todo
 > más ruido?
 
-![Campaña](https://img.shields.io/badge/campa%C3%B1a-2%2F6_validaciones-22c55e)
-![Progreso](https://img.shields.io/badge/progreso-33%25-06b6d4)
-![Siguiente paso](https://img.shields.io/badge/siguiente-V2_Calculadora_Core-8b5cf6)
+![Campaña](https://img.shields.io/badge/campa%C3%B1a-3%2F6_validaciones-22c55e)
+![Progreso](https://img.shields.io/badge/progreso-50%25-06b6d4)
+![Siguiente paso](https://img.shields.io/badge/siguiente-V2_Calculadora_Scientific-8b5cf6)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-f97316)
 
 AgentBench 2026 compara tres organizaciones de agentes en dos retos de la misma
@@ -24,7 +24,7 @@ correcciones, las intervenciones humanas y el ruido de coordinación.
 El proyecto fue concebido y dirigido **íntegramente mediante micrófono con
 Codex** por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 
-Campaña activa: **Astra high · `astra-high-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Informe V1](results/astra-v1.es.md) · [Control Sol vs Astra](results/sol-vs-astra-v1.es.md) · [Archivo V1 anterior](results/ARCHIVE_V1.es.md).
+Campaña activa: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Informe V2 Core](results/sol-v2-core.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.es.md) · [V2 preflight](results/astra-v2-preflight.es.md).
 
@@ -32,8 +32,8 @@ Campaña activa: **Astra high · `astra-high-001`**. [Catálogo de 71 controles]
 
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |
 | :---: | :---: | :---: | :---: |
-| **2 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Core** | **Retos y protocolo V2 fijados** |
-| `██████░░░░░░` **33 %** | Core **6 grupos · 14 controles** · Scientific **9 grupos · 57 controles** | Multiagente gobernado | Verificadores independientes |
+| **3 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Scientific** | **Retos y protocolo V2 fijados** |
+| `█████████░░░░░` **50 %** | Core **6 grupos · 14 controles** · Scientific **9 grupos · 57 controles** | Multiagente gobernado | Verificadores independientes |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -49,9 +49,9 @@ flowchart LR
       V1S["✓ Calculadora Scientific<br/>9 grupos · 57 controles"]
     end
     G1{"Observaciones V1<br/>referencia individual"}
-    subgraph V2["V2 · Equipo Codex · 0/2"]
-      V2C["▶ Calculadora Core<br/>siguiente"]
-      V2S["○ Calculadora Scientific<br/>pendiente"]
+    subgraph V2["V2 · Equipo Codex · 1/2"]
+      V2C["✓ Calculadora Core<br/>6 grupos · 14 controles"]
+      V2S["▶ Calculadora Scientific<br/>siguiente"]
     end
     G2{"Observaciones V2<br/>posible ajuste"}
     V21["V2.1 · variante optimizada<br/>opcional"]
@@ -73,9 +73,9 @@ flowchart LR
     classDef todo fill:#172554,stroke:#38bdf8,color:#f0f9ff,stroke-width:2px;
     classDef gate fill:#7c2d12,stroke:#fb923c,color:#fff7ed,stroke-width:2px;
     classDef optional fill:#0f2a4a,stroke:#94a3b8,color:#f8fafc;
-    class V1C,V1S done;
-    class V2C next;
-    class V2S,V3C,V3S todo;
+    class V1C,V1S,V2C done;
+    class V2S next;
+    class V3C,V3S todo;
     class G1,G2,G3 gate;
     class V21,V4 optional;
 ```
@@ -134,6 +134,7 @@ actas y trazas. La cobertura no es una nota absoluta de calidad.
 | [`astra-scientific-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 399.478 s | 220 510¹ |
 | [`sol-core-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora Core | **6/6 grupos · 14/14 controles** | 189.964 s | 158 101¹ |
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 1 009.468 s | 296 275¹ |
+| [`sol-core-v2-001`](results/sol-v2-core.es.md) | V2 · Equipo Sol | Calculadora Core | **6/6 grupos · 14/14 controles** | 796.534 s | 559 088¹ |
 
 ¹ Entrada + salida acumuladas. Los informes separan caché, razonamiento y
 correcciones; los datos ausentes nunca se reconstruyen a posteriori.
@@ -160,7 +161,8 @@ los resultados anteriores. Véase el [plan experimental](governance/EXPERIMENTAL
 - [x] Controlar V1 con Sol/high: **15/15 grupos y 71/71 controles elementales**, con [comparación publicada](results/sol-vs-astra-v1.es.md).
 - [x] Decidir y fijar roles, intercambios, presupuestos y [métricas V2](governance/V2_PROTOCOL.es.md).
 - [x] Validar el preflight V2: aislamiento, configuración por rol, trazas visibles y contadores. [PV](results/astra-v2-preflight.es.md).
-- [ ] Ejecutar V2 para Calculadora Core y Calculadora Scientific.
+- [x] Ejecutar y publicar V2 Calculadora Core: **6/6 grupos y 14/14 controles**, con [informe y acta](results/sol-v2-core.es.md).
+- [ ] Ejecutar y publicar V2 Calculadora Scientific sin cambiar el protocolo entre retos.
 - [ ] Analizar V2 y decidir si V2.1 aporta una hipótesis medible.
 - [ ] Congelar los modelos Ollama y los límites de contexto de V3.
 - [ ] Ejecutar V3 para ambos objetivos.
