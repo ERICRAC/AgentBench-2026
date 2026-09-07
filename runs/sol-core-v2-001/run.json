@@ -1,0 +1,43 @@
+{
+  "run_id": "sol-core-v2-001",
+  "mode": "codex-multi",
+  "challenge": "calculator",
+  "created_at": "2026-09-07T23:00:18.606776+00:00",
+  "status": "prepared",
+  "campaign_id": "sol-high-control-001",
+  "reference_run": "sol-core-v1-001",
+  "protocol": "governance/V2_PROTOCOL.md",
+  "protocol_adaptation": "New Sol campaign: organisational sequence unchanged; model changed from Astra to Sol for comparison with the completed Sol V1 control",
+  "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
+  "roles": [
+    "MAIN",
+    "SA-01",
+    "SA-02",
+    "SA-03"
+  ],
+  "planned_sequence": [
+    "SA-01 and SA-02 blind analyses in parallel",
+    "one cross-response each in parallel",
+    "MAIN decision table and first solution",
+    "SA-03 adversarial critique",
+    "MAIN dispositions, corrections and official verifier"
+  ],
+  "candidate_model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "context_window_tokens_per_session": 200000,
+  "auto_compact_token_limit": 180000,
+  "auto_compact_token_limit_scope": "total",
+  "human_functional_interventions": 0,
+  "challenge_sha256": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+  "acceptance_tests_sha256": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+  "base_prompt": "prompts/codex-multi.md",
+  "base_prompt_sha256": "fb13706183d5a6c260b9d3f71d7e92e2918eb5d8fb53d52897fa5cf594ed19bf",
+  "runner": "scripts/run_v2.py",
+  "runner_sha256": "3cb0f940ebc8fe0c422b948c35de4b00273815d3dc4cb91f04b53e62814f19c4",
+  "config_sha256": {
+    "MAIN": "f6f80c6719c5872bad51c2f601caf19679b83bcc50f40c2a0dfa742d12384b6a",
+    "SA-01": "469329b90e4f0ca14109c89c99d590cbda45cd67c5bf963d257783548a77797a",
+    "SA-02": "7fb9d427bc45fc9dfc73fffa8160b3c79a7f2cbb2fb2c70faefee9fd2e1bfa66",
+    "SA-03": "1f61093c2cc2ae936c6efc1ee9efc168eaf97d794af0d70c7ddefd76378a5077"
+  }
+}
