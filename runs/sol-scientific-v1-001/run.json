@@ -1,0 +1,41 @@
+{
+  "run_id": "sol-scientific-v1-001",
+  "mode": "codex-single",
+  "challenge": "scientific-calculator",
+  "created_at": "2026-09-07T08:16:15.817122+00:00",
+  "status": "prepared",
+  "campaign_id": "sol-high-control-001",
+  "comparison_target": "astra-high-001",
+  "comparison_design": {
+    "intentional_variable": "candidate.model",
+    "controlled_against": "astra-scientific-v1-002",
+    "controlled_variables": [
+      "challenge",
+      "acceptance_tests",
+      "prompt",
+      "reasoning_effort",
+      "context_window",
+      "compaction_threshold_and_scope",
+      "codex_cli",
+      "candidate_instructions",
+      "sandbox_and_network_policy",
+      "fresh_ephemeral_session",
+      "capture_and_verification_harness"
+    ]
+  },
+  "candidate": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "codex_cli": "codex-cli 0.153.4",
+    "context_window_tokens": 200000,
+    "auto_compact_token_limit": 180000,
+    "auto_compact_token_limit_scope": "total",
+    "session_persistence": false
+  },
+  "config": "runs/sol-scientific-v1-001/config.toml",
+  "config_sha256": "626c1e36bf77fdeb51ab88b565648102d606de03a3abffc97c4ef6eaa8f11ece",
+  "prompt": "prompts/scientific-single.md",
+  "prompt_sha256": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad",
+  "challenge_sha256": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+  "acceptance_tests_sha256": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89"
+}
