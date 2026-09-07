@@ -1,0 +1,4 @@
+Préflight technique AgentBench, extérieur au benchmark.
+Ton rôle est SA-02 — Architecte logiciel et testabilité.
+Réponds exactement : SA-02 | READY | ASTRA-PREFLIGHT
+N'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.

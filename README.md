@@ -27,6 +27,8 @@ humain–agent fait donc partie de l'expérience autant que le code produit.
 
 Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
 
+[Node.js / WSL / Markdown](docs/node-wsl.md) · [V2 preflight](results/astra-v2-preflight.md).
+
 ## Tableau de bord — état actuel
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
@@ -153,7 +155,7 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
 - [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
-- [ ] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs.
+- [x] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs. [PV](results/astra-v2-preflight.md).
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
 - [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
 - [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.

@@ -1,0 +1,178 @@
+{
+  "campaign_id": "astra-high-001",
+  "status": "minimal_preflight_passed",
+  "benchmark": false,
+  "v1_published_commit": "c959216",
+  "engine": "separate codex exec --json sessions",
+  "engine_choice_reason": "Native collaboration tool does not expose a per-thread context/compaction setting and usage counters in its callable contract. Use the pre-approved A-08 fallback.",
+  "codex_cli": "0.153.4",
+  "context_validation": "Client configuration accepted with strict validation; server context enforcement not measured.",
+  "isolation": "Fresh ephemeral threads, empty external working directory, no inherited conversation supplied, no observed tool commands; platform instructions still apply.",
+  "working_directory_empty_after": true,
+  "total_input_tokens": 49961,
+  "total_output_tokens": 58,
+  "sum_session_seconds": 31.623,
+  "total_wall_time_seconds": null,
+  "roles": [
+    {
+      "role": "MAIN",
+      "config": {
+        "model": "gpt-6-astra",
+        "model_reasoning_effort": "high",
+        "model_context_window": 200000,
+        "model_auto_compact_token_limit": 180000,
+        "model_auto_compact_token_limit_scope": "total",
+        "approval_policy": "never",
+        "sandbox_mode": "workspace-write",
+        "web_search": "disabled",
+        "developer_instructions": "MAIN: Orchestrateur candidat et écrivain unique. This session is an infrastructure preflight, outside any benchmark. Do not use tools, read files, write files, delegate, or solve a challenge. Return only the exact acknowledgement requested by the user."
+      },
+      "config_file": "governance/astra-v2-preflight/MAIN.toml",
+      "config_sha256": "d6736b6d271402b7cfc0d054ae32dc6f26b04f1f1b0720ebf33a77032bd870f9",
+      "prompt": "Préflight technique AgentBench, extérieur au benchmark.\nTon rôle est MAIN — Orchestrateur candidat et écrivain unique.\nRéponds exactement : MAIN | READY | ASTRA-PREFLIGHT\nN'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.\n",
+      "prompt_sha256": "257f34fe097b7dfce5b68417e7896b430f8876bec505a3b67d192a9958cb02c1",
+      "thread_id": "01a078de-ca11-7b60-8e6a-7952c9bbd2f5",
+      "duration_seconds": 8.406,
+      "usage": {
+        "input_tokens": 12660,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13,
+        "reasoning_output_tokens": 0
+      },
+      "visible_messages": [
+        "MAIN | READY | ASTRA-PREFLIGHT"
+      ],
+      "command_count": 0,
+      "exit_code": 0,
+      "errors": [],
+      "checks": {
+        "config_hash_matches": true,
+        "exact_reply": true,
+        "no_tool_commands": true,
+        "usage_available": true,
+        "process_succeeded": true
+      }
+    },
+    {
+      "role": "SA-01",
+      "config": {
+        "model": "gpt-6-astra",
+        "model_reasoning_effort": "high",
+        "model_context_window": 200000,
+        "model_auto_compact_token_limit": 180000,
+        "model_auto_compact_token_limit_scope": "total",
+        "approval_policy": "never",
+        "sandbox_mode": "read-only",
+        "web_search": "disabled",
+        "developer_instructions": "SA-01: Analyste exigences et sécurité. This session is an infrastructure preflight, outside any benchmark. Do not use tools, read files, write files, delegate, or solve a challenge. Return only the exact acknowledgement requested by the user."
+      },
+      "config_file": "governance/astra-v2-preflight/SA-01.toml",
+      "config_sha256": "2a2e73d85e4eaada66d642adaf896e0f2c3da0602b75f325e1124f5baa850cd4",
+      "prompt": "Préflight technique AgentBench, extérieur au benchmark.\nTon rôle est SA-01 — Analyste exigences et sécurité.\nRéponds exactement : SA-01 | READY | ASTRA-PREFLIGHT\nN'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.\n",
+      "prompt_sha256": "86b298171c81716d981130521deaa3829d7492404231951c183c8e8ad71dd6de",
+      "thread_id": "01a078de-da72-7f71-9eaf-1f3af3599a8c",
+      "duration_seconds": 8.7,
+      "usage": {
+        "input_tokens": 12497,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_output_tokens": 0
+      },
+      "visible_messages": [
+        "SA-01 | READY | ASTRA-PREFLIGHT"
+      ],
+      "command_count": 0,
+      "exit_code": 0,
+      "errors": [],
+      "checks": {
+        "config_hash_matches": true,
+        "exact_reply": true,
+        "no_tool_commands": true,
+        "usage_available": true,
+        "process_succeeded": true
+      }
+    },
+    {
+      "role": "SA-02",
+      "config": {
+        "model": "gpt-6-astra",
+        "model_reasoning_effort": "high",
+        "model_context_window": 200000,
+        "model_auto_compact_token_limit": 180000,
+        "model_auto_compact_token_limit_scope": "total",
+        "approval_policy": "never",
+        "sandbox_mode": "read-only",
+        "web_search": "disabled",
+        "developer_instructions": "SA-02: Architecte logiciel et testabilité. This session is an infrastructure preflight, outside any benchmark. Do not use tools, read files, write files, delegate, or solve a challenge. Return only the exact acknowledgement requested by the user."
+      },
+      "config_file": "governance/astra-v2-preflight/SA-02.toml",
+      "config_sha256": "6ac8bc2ae127f6628607572079439b890c48bc6da93e23f77ec4972ce5245129",
+      "prompt": "Préflight technique AgentBench, extérieur au benchmark.\nTon rôle est SA-02 — Architecte logiciel et testabilité.\nRéponds exactement : SA-02 | READY | ASTRA-PREFLIGHT\nN'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.\n",
+      "prompt_sha256": "02d5d2f585ce6aa8b1cf6eb3fdb5dda2893e140e8a794c730c3852e521b5c600",
+      "thread_id": "01a078de-eb30-7f63-8d94-364f9d717253",
+      "duration_seconds": 7.134,
+      "usage": {
+        "input_tokens": 12499,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_output_tokens": 0
+      },
+      "visible_messages": [
+        "SA-02 | READY | ASTRA-PREFLIGHT"
+      ],
+      "command_count": 0,
+      "exit_code": 0,
+      "errors": [],
+      "checks": {
+        "config_hash_matches": true,
+        "exact_reply": true,
+        "no_tool_commands": true,
+        "usage_available": true,
+        "process_succeeded": true
+      }
+    },
+    {
+      "role": "SA-03",
+      "config": {
+        "model": "gpt-6-astra",
+        "model_reasoning_effort": "high",
+        "model_context_window": 200000,
+        "model_auto_compact_token_limit": 180000,
+        "model_auto_compact_token_limit_scope": "total",
+        "approval_policy": "never",
+        "sandbox_mode": "read-only",
+        "web_search": "disabled",
+        "developer_instructions": "SA-03: Critique QA adversarial. This session is an infrastructure preflight, outside any benchmark. Do not use tools, read files, write files, delegate, or solve a challenge. Return only the exact acknowledgement requested by the user."
+      },
+      "config_file": "governance/astra-v2-preflight/SA-03.toml",
+      "config_sha256": "b2cf1b0a225d227ba30b0eecf5ba3ccf9069cfa260408c29fc21394cb50cb731",
+      "prompt": "Préflight technique AgentBench, extérieur au benchmark.\nTon rôle est SA-03 — Critique QA adversarial.\nRéponds exactement : SA-03 | READY | ASTRA-PREFLIGHT\nN'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.\n",
+      "prompt_sha256": "f85333ceefaca7b9accf1b1c2ed5c48f3fa1dc333efb4e52b4d7625a573cb4ac",
+      "thread_id": "01a078de-fa3b-74d3-ad27-44f805f0d595",
+      "duration_seconds": 7.383,
+      "usage": {
+        "input_tokens": 12305,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_output_tokens": 0
+      },
+      "visible_messages": [
+        "SA-03 | READY | ASTRA-PREFLIGHT"
+      ],
+      "command_count": 0,
+      "exit_code": 0,
+      "errors": [],
+      "checks": {
+        "config_hash_matches": true,
+        "exact_reply": true,
+        "no_tool_commands": true,
+        "usage_available": true,
+        "process_succeeded": true
+      }
+    }
+  ]
+}

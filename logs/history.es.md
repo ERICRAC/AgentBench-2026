@@ -166,3 +166,13 @@ garantizar el coste de un run; no se lanzó ningún run ni subagente.
 **Respuesta** — Intento Scientific interrumpido conservado sin inventar resultados ni consumo. Sesión nueva: 9/9 y corrección numérica descubierta después del primer 9/9, con cuatro pruebas adicionales. Core 6/6. Informes, actas y métricas publicados antes del preflight V2. Guía Debian nodejs/npm y lint fijado.
 
 Controles independientes: Core 6/6, Scientific 9/9, pruebas adicionales 4/4. Evidencia histórica preservada. Sesiones terminadas: 499,653 s y 340.988 tokens, sin intentos interrumpidos ni mantenimiento.
+
+Cierre del preflight: cuatro roles validados después del push V1 c959216, con sesiones distintas, respuestas exactas, SHA-256 y contadores. Coste: 50.019 tokens; benchmark V2 no lanzado. Gobernanza reforzada para conservar interrupciones y costes incompletos sin ocultarlos al repetir.
+
+Control final WSL: Node.js `20.19.2` en `/usr/bin/node`, npm `9.2.0` en `/usr/bin/npm` y markdownlint `0.47.0`. Todos los Markdown editoriales pasan ahora el lint con el runtime Linux.
+
+## Intercambio 020
+
+**Petición** — Confirmar Node/npm y continuar tras restablecer créditos.
+
+**Respuesta** — Node 20.19.2 y npm 9.2.0 confirmados en WSL. V1 y preflight terminados; solo la publicación final había sido rechazada por el límite de uso de la revisión automática. Se retoma sin repetir benchmarks.

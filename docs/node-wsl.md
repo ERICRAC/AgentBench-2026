@@ -37,3 +37,5 @@ Le lanceur Windows de markdownlint était trouvé dans le PATH WSL, mais appelai
 Les anciennes V1 sont indexées et protégées par empreintes SHA-256. Les essais interrompus ne sont pas convertis en succès. Les rapports séparent les métriques disponibles, les coûts d'infrastructure et les données absentes. La formule du README reste conceptuelle ; les indicateurs mesurés ont leurs unités propres. Le biais historique du chargeur de tests reste documenté sans modification de la suite figée.
 
 [V1 Astra](../results/astra-v1.md) · [V1 archives](../results/ARCHIVE_V1.md)
+
+Contrôle final sous WSL : Node.js `20.19.2` dans `/usr/bin/node`, npm `9.2.0` dans `/usr/bin/npm`, et markdownlint `0.47.0`. Le lint de tous les Markdown éditoriaux réussit désormais directement avec le runtime Linux.

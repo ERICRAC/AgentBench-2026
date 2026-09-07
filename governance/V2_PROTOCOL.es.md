@@ -4,8 +4,8 @@
 
 ## Estado e hipótesis
 
-El protocolo está fijado: el patrocinador aprobó A-01 a A-08. El preflight
-técnico es el siguiente paso obligatorio antes de lanzar V2. Prueba si tres revisiones
+El protocolo está fijado: el patrocinador aprobó A-01 a A-08. El [preflight mínimo](../results/astra-v2-preflight.es.md) pasó para los
+cuatro roles tras publicar V1. El benchmark V2 no ha comenzado. Prueba si tres revisiones
 especializadas mejoran la calidad o convergencia de un único escritor después
 de contabilizar la coordinación. Las referencias actuales son
 `astra-core-v1-002` y `astra-scientific-v1-002`; los runs `001` siguen históricos.

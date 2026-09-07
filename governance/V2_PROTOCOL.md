@@ -4,8 +4,8 @@
 
 ## Statut et hypothèse
 
-Ce protocole est gelé : le commanditaire a validé A-01 à A-08. Le préflight
-technique est la prochaine étape obligatoire avant le premier run V2.
+Ce protocole est gelé : le commanditaire a validé A-01 à A-08. Le [préflight minimal](../results/astra-v2-preflight.md) a réussi pour les
+quatre rôles après publication V1. Le benchmark V2 n'est pas encore lancé.
 V2 teste si trois avis spécialisés améliorent la qualité ou la convergence
 d'un écrivain unique dans des conditions de modèle comparables, une fois le
 coût de coordination compté.

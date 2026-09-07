@@ -4,8 +4,8 @@
 
 ## Status and hypothesis
 
-This protocol is frozen: the sponsor approved A-01 to A-08. The technical
-preflight is the next mandatory step before the first V2 run. V2 tests whether three
+This protocol is frozen: the sponsor approved A-01 to A-08. The [minimal preflight](../results/astra-v2-preflight.en.md) passed for all
+four roles after V1 publication. The V2 benchmark has not started. V2 tests whether three
 specialist reviews improve the quality or convergence of one writer once
 coordination cost is included. Current baselines are `astra-core-v1-002` and
 `astra-scientific-v1-002`; the `001` runs remain historical evidence.

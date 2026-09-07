@@ -37,3 +37,5 @@ WSL encontraba un lanzador Windows que llamaba a un node Linux ausente. Node Win
 V1 anteriores indexadas con SHA-256. Intentos interrumpidos separados de los éxitos. Informes distinguen medidas, costes de infraestructura y datos ausentes. Fórmula README conceptual, con indicadores medidos por separado. Sesgo histórico del cargador documentado sin alterar pruebas fijadas.
 
 [V1 Astra](../results/astra-v1.es.md) · [V1 archives](../results/ARCHIVE_V1.es.md)
+
+Control final WSL: Node.js `20.19.2` en `/usr/bin/node`, npm `9.2.0` en `/usr/bin/npm` y markdownlint `0.47.0`. Todos los Markdown editoriales pasan ahora el lint con el runtime Linux.

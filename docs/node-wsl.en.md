@@ -37,3 +37,5 @@ WSL found a Windows markdownlint wrapper that called a missing Linux node. Expli
 Earlier V1 evidence is indexed and SHA-256 protected. Interrupted attempts are not recast as successes. Reports separate available measurements, infrastructure costs and missing data. The README formula is conceptual, while measured indicators retain distinct units. The historical test-loader bias stays documented without modifying frozen tests.
 
 [V1 Astra](../results/astra-v1.en.md) · [V1 archives](../results/ARCHIVE_V1.en.md)
+
+Final WSL check: Node.js `20.19.2` at `/usr/bin/node`, npm `9.2.0` at `/usr/bin/npm`, and markdownlint `0.47.0`. All editorial Markdown now passes lint directly with the Linux runtime.

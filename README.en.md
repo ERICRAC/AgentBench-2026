@@ -27,6 +27,8 @@ as the software it produces.
 
 Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
 
+[Node.js / WSL / Markdown](docs/node-wsl.en.md) · [V2 preflight](results/astra-v2-preflight.en.md).
+
 ## Dashboard — current state
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
@@ -152,7 +154,7 @@ The comparison and versioning rules are defined in
 - [x] Preserve the first `001` V1 observations without rewriting them.
 - [x] Replicate V1 with pinned model, effort and context: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
-- [ ] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters.
+- [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.

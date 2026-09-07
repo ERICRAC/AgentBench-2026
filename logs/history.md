@@ -253,3 +253,13 @@ aucun run ni sous-agent n'a été lancé.
 **Réponse synthétique** — La Scientific interrompue par quota est conservée sans verdict ni compteurs inventés. Une nouvelle session vierge termine à 9/9, avec une correction numérique découverte après le premier 9/9 et quatre tests complémentaires réussis. Core reste à 6/6. Les rapports V1, PV visibles, métriques et archives sont publiés avant le préflight V2. Un guide Debian explique l'installation nodejs/npm et le lint épinglé.
 
 Contrôles : vérification indépendante Core 6/6, Scientific 9/9 et réexécution des tests complémentaires 4/4 ; intégrité des preuves historiques conservée. Sessions terminées : 499,653 s et 340 988 tokens au total, hors essais interrompus et maintenance.
+
+Clôture du préflight : quatre rôles sur quatre validés après le push V1 `c959216`, avec sessions distinctes, réponses exactes, SHA-256 et compteurs. Coût du diagnostic : 50 019 tokens ; pas de benchmark V2 lancé. La gouvernance précise désormais comment conserver les interruptions et leurs coûts incomplets, pour éviter qu'une relance masque l'incident.
+
+Contrôle final sous WSL : Node.js `20.19.2` dans `/usr/bin/node`, npm `9.2.0` dans `/usr/bin/npm`, et markdownlint `0.47.0`. Le lint de tous les Markdown éditoriaux réussit désormais directement avec le runtime Linux.
+
+## Échange 020
+
+**Demande synthétique** — Confirmer l'installation de Node/npm et reprendre après le rétablissement des crédits.
+
+**Réponse synthétique** — Node 20.19.2 et npm 9.2.0 sont confirmés dans WSL. V1 et préflight sont déjà terminés ; seule la livraison finale avait été refusée par la revue automatique à cause de son quota. Reprise de la publication sans relancer les benchmarks.

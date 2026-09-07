@@ -4,8 +4,8 @@
 
 ## Estado e hipótese
 
-O protocolo está congelado: o patrocinador aprovou A-01 a A-08. O preflight
-técnico é o próximo passo obrigatório antes de lançar a V2. Testa se três revisões
+O protocolo está congelado: o patrocinador aprovou A-01 a A-08. O [preflight mínimo](../results/astra-v2-preflight.pt.md) passou nos quatro
+papéis após publicar V1. O benchmark V2 ainda não começou. Testa se três revisões
 especializadas melhoram qualidade ou convergência de um único escritor depois
 de contabilizar a coordenação. As referências atuais são `astra-core-v1-002` e
 `astra-scientific-v1-002`; os runs `001` continuam históricos.

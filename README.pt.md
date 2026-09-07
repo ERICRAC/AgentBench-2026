@@ -26,6 +26,8 @@ por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 
 Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
 
+[Node.js / WSL / Markdown](docs/node-wsl.pt.md) · [V2 preflight](results/astra-v2-preflight.pt.md).
+
 ## Painel — estado atual
 
 | Campanha principal | V1 · Codex sozinho | Próxima execução | Protocolos |
@@ -131,7 +133,7 @@ os resultados anteriores são preservados. Consulte o
 - [x] Preservar as primeiras observações V1 `001` sem as reescrever.
 - [x] Replicar V1 com modelo, esforço e contexto fixados: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Decidir e fixar papéis, trocas, orçamentos e [métricas V2](governance/V2_PROTOCOL.pt.md).
-- [ ] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores.
+- [x] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores. [PV](results/astra-v2-preflight.pt.md).
 - [ ] Executar V2 para a Calculadora Core e a Calculadora Scientific.
 - [ ] Analisar V2 e decidir se V2.1 oferece uma hipótese mensurável.
 - [ ] Congelar os modelos Ollama e os limites de contexto da V3.

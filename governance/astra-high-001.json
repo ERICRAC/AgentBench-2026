@@ -9,7 +9,7 @@
     "astra-core-v1-002",
     "astra-scientific-v1-002"
   ],
-  "v2_status": "preflight after V1 publication",
+  "v2_status": "minimal preflight passed; benchmark not started",
   "config": "governance/astra-v1.toml",
   "previous_evidence": "governance/archive-v1-sha256.json",
   "previous_protocol_commit": "158d087",
@@ -32,5 +32,7 @@
     "astra-core-v1-001",
     "astra-scientific-v1-001"
   ],
-  "codex_cli": "0.153.4"
+  "codex_cli": "0.153.4",
+  "v1_published_commit": "c959216",
+  "v2_preflight_record": "governance/astra-v2-preflight/run.json"
 }

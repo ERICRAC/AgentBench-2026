@@ -1,0 +1,4 @@
+Préflight technique AgentBench, extérieur au benchmark.
+Ton rôle est SA-03 — Critique QA adversarial.
+Réponds exactement : SA-03 | READY | ASTRA-PREFLIGHT
+N'utilise aucun outil, ne lis aucun fichier, ne résous aucun défi et ne délègue rien.

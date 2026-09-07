@@ -1,0 +1,9 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_auto_compact_token_limit = 180000
+model_auto_compact_token_limit_scope = "total"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+web_search = "disabled"
+developer_instructions = "MAIN: Orchestrateur candidat et écrivain unique. This session is an infrastructure preflight, outside any benchmark. Do not use tools, read files, write files, delegate, or solve a challenge. Return only the exact acknowledgement requested by the user."

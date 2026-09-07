@@ -170,3 +170,13 @@ but cannot guarantee the cost of one run; no run or sub-agent was launched.
 **Response** — The quota-interrupted Scientific attempt is retained without invented scores or usage. A fresh session passes 9/9 and fixes a numeric defect found after the first 9/9, retaining four passing extra tests. Core remains 6/6. V1 reports, visible minutes, measurements and archives are published before V2 preflight. A Debian guide covers nodejs/npm and pinned lint.
 
 Checks: independent Core 6/6, Scientific 9/9 and replayed extra tests 4/4; historical evidence preserved. Completed sessions total 499.653 s and 340,988 tokens, excluding interrupted attempts and maintenance.
+
+Preflight closure: all four roles passed after V1 push c959216, with distinct sessions, exact replies, SHA-256 and counters. Diagnostic cost: 50,019 tokens; no V2 benchmark launched. Governance now explicitly preserves interrupted attempts and incomplete costs so a restart cannot hide an incident.
+
+Final WSL check: Node.js `20.19.2` at `/usr/bin/node`, npm `9.2.0` at `/usr/bin/npm`, and markdownlint `0.47.0`. All editorial Markdown now passes lint directly with the Linux runtime.
+
+## Exchange 020
+
+**Request** — Confirm Node/npm installation and continue after credits were restored.
+
+**Response** — Node 20.19.2 and npm 9.2.0 are confirmed in WSL. V1 and preflight were already complete; only final publication was rejected by automatic approval review due to its usage limit. Publication resumed without rerunning benchmarks.

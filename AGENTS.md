@@ -45,6 +45,10 @@ ses éventuels consultants ne lancent jamais `git add`, `git commit` ou
   avis, arbitrages et contrôles observables, sans publier de raisonnement
   interne brut ni d'horodatage de travail.
 - Ne jamais inventer une donnée manquante ; la marquer comme non enregistrée.
+- Conserver toute tentative interrompue avec son état et sa cause ; une
+  relance depuis zéro reçoit un nouvel identifiant et ne réutilise pas sa
+  solution. Séparer les coûts des essais interrompus des références terminées,
+  sans présenter un total incomplet comme le coût de toute la campagne.
 - Publier une synthèse des échanges selon [`governance/LOGGING.md`](governance/LOGGING.md).
 - Avant de figer une nouvelle suite, calibrer son chargeur sur des constructions
   standard plausibles et vérifier que les assertions mesurent le contrat plutôt
