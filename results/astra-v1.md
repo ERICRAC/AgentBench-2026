@@ -43,6 +43,12 @@ Les PV distinguent suite officielle exécutée par le candidat et vérification 
 
 ## Observations et suite
 
-Core : 100,175 s / 120 478 tokens contre 193 s / 556 461 pour Sol. Scientific : 399,478 s / 220 510 contre 541 s / 603 492. Ces écarts sont descriptifs : le modèle, le CLI et les consignes de lancement ont changé, avec un seul run terminé par cellule. Ils ne démontrent ni causalité du modèle ni gain multi-agent.
+Les comparaisons historiques avec les anciens runs Sol restent archivées mais
+ne servent plus de contrôle modèle. Une [V1 Sol à périmètre client constant](sol-vs-astra-v1.md)
+mesure désormais les deux défis avec le même CLI, les mêmes prompts et les
+mêmes paramètres : verdict final égal, mais +140,1 % de temps et +33,3 % de
+tokens pour Sol sur les deux sessions observées.
 
-Le défaut trouvé après 9/9 confirme l'effet plafond des suites courtes. Le biais historique du chargeur `dataclass` reste documenté ; la suite figée n'a pas été retouchée. Prochaine étape : publier V1 puis exécuter le préflight V2, sans lancer le benchmark V2 lui-même.
+Le défaut trouvé après 9/9 confirme l'effet plafond des suites courtes. Le biais
+du chargeur `dataclass` reste documenté ; la suite figée n'a pas été retouchée.
+Le préflight V2 est terminé et le prochain benchmark prêt est V2 Core Astra.

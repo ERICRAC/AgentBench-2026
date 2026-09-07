@@ -43,6 +43,11 @@ Some Scientific tool outputs are empty in exported JSON. The first 9/9 is suppor
 
 ## Observations and next step
 
-Core: 100.175 s / 120,478 tokens versus Sol's 193 s / 556,461. Scientific: 399.478 s / 220,510 versus 541 s / 603,492. These are descriptive differences, not causal model or multi-agent gains: model, CLI and launch instructions changed, with only one completed run per cell.
+Historical comparisons with earlier Sol runs remain archived but no longer act
+as the model control. A [like-for-like Sol V1](sol-vs-astra-v1.en.md) now runs
+both challenges with the same CLI, prompts and settings: equal final verdict,
+but +140.1% time and +33.3% tokens for Sol across the two observed sessions.
 
-A defect discovered after 9/9 illustrates ceiling effects. The historical dataclass-loader bias remains documented and the frozen suite unchanged. Publish V1 before V2 preflight; do not start the V2 benchmark yet.
+The defect discovered after 9/9 illustrates ceiling effects. The dataclass
+loader interaction remains documented and the frozen suite unchanged. V2
+preflight is complete; the next ready benchmark is Astra V2 Core.

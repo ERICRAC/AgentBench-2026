@@ -10,6 +10,8 @@ Earlier V1 runs are [archived](ARCHIVE_V1.en.md). “Current baseline” in thos
 | --- | --- | --- | --- | --- | --- |
 | `astra-core-v1-002` | Codex alone | Core Calculator | 6/6 | Astra baseline | [Full report](astra-v1.en.md) |
 | `astra-scientific-v1-002` | Codex alone | Scientific Calculator | 9/9 | Astra baseline | [Full report](astra-v1.en.md) |
+| `sol-core-v1-001` | Codex alone | Core Calculator | 6/6 | Model control | [Comparison](sol-vs-astra-v1.en.md) |
+| `sol-scientific-v1-001` | Codex alone | Scientific Calculator | 9/9 | Model control | [Comparison](sol-vs-astra-v1.en.md) |
 
 ## Retained data
 

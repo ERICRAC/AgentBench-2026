@@ -24,7 +24,7 @@ as intervenções humanas e o ruído de coordenação.
 O projeto foi concebido e conduzido **inteiramente por microfone com o Codex**
 por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 
-Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
+Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astra-v1.pt.md) · [Controlo Sol vs Astra](results/sol-vs-astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.pt.md) · [V2 preflight](results/astra-v2-preflight.pt.md).
 
@@ -108,6 +108,8 @@ A fórmula ilustra a intuição do projeto; não é uma pontuação que some uni
 | --- | --- | --- | ---: | ---: | ---: |
 | [`astra-core-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Core | **6/6** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Scientific | **9/9** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Core | **6/6** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Scientific | **9/9** | 1 009.468 s | 296 275¹ |
 
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.
@@ -132,6 +134,7 @@ os resultados anteriores são preservados. Consulte o
 - [x] Congelar os testes da Calculadora Core e da Calculadora Scientific.
 - [x] Preservar as primeiras observações V1 `001` sem as reescrever.
 - [x] Replicar V1 com modelo, esforço e contexto fixados: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
+- [x] Controlar V1 no mesmo perímetro com Sol/high: veredito final **15/15** e [comparação publicada](results/sol-vs-astra-v1.pt.md).
 - [x] Decidir e fixar papéis, trocas, orçamentos e [métricas V2](governance/V2_PROTOCOL.pt.md).
 - [x] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores. [PV](results/astra-v2-preflight.pt.md).
 - [ ] Executar V2 para a Calculadora Core e a Calculadora Scientific.

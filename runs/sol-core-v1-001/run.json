@@ -3,7 +3,7 @@
   "mode": "codex-single",
   "challenge": "calculator",
   "created_at": "2026-09-07T08:16:15.794220+00:00",
-  "status": "prepared",
+  "status": "completed",
   "campaign_id": "sol-high-control-001",
   "comparison_target": "astra-high-001",
   "comparison_design": {
@@ -30,6 +30,7 @@
     "context_window_tokens": 200000,
     "auto_compact_token_limit": 180000,
     "auto_compact_token_limit_scope": "total",
+    "thread_id": "01a07af3-2647-7ab3-8e1e-6b50e85a8356",
     "session_persistence": false
   },
   "config": "runs/sol-core-v1-001/config.toml",
@@ -37,5 +38,37 @@
   "prompt": "prompts/codex-single.md",
   "prompt_sha256": "c3d2ed4404339c9d72bf7abd6778bb1a0692300b23326c7d6621d0af4a0f51e9",
   "challenge_sha256": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
-  "acceptance_tests_sha256": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97"
+  "acceptance_tests_sha256": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+  "duration_seconds": 189.964,
+  "usage": {
+    "input_tokens": 152902,
+    "cached_input_tokens": 122112,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5199,
+    "reasoning_output_tokens": 2149,
+    "input_plus_output_tokens": 158101
+  },
+  "verification": {
+    "candidate_first_pass": "6/6",
+    "candidate_final_pass": "6/6",
+    "independent_final_pass": "6/6",
+    "first_pass_evidence": "Recorded verifier output and exit 0"
+  },
+  "corrections": {
+    "functional_after_first_official_pass": 0,
+    "description": "Documentation path clarified; no functional correction"
+  },
+  "human_functional_interventions": 0,
+  "files": [
+    {
+      "path": "solution/README.md",
+      "lines": 63
+    },
+    {
+      "path": "solution/calculator.py",
+      "lines": 83
+    }
+  ],
+  "candidate_commit": "beb3ce1",
+  "minutes": "runs/sol-core-v1-001/PV.md"
 }

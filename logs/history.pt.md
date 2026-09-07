@@ -173,3 +173,19 @@ Controlo final WSL: Node.js `20.19.2` em `/usr/bin/node`, npm `9.2.0` em `/usr/b
 **Pedido** — Confirmar Node/npm e continuar após repor créditos.
 
 **Resposta** — Node 20.19.2 e npm 9.2.0 confirmados no WSL. V1 e preflight concluídos; apenas a publicação final fora recusada pelo limite de utilização da revisão automática. Retoma sem repetir benchmarks.
+
+## Interação 021
+
+**Pedido** — Não alterar a governação e repetir a V1 com Sol em esforço alto
+para comparar Sol e Astra no mesmo perímetro.
+
+**Resposta** — Dois runs individuais novos foram pré-registados antes do
+lançamento. Desafios, testes, prompts, CLI, contexto, compactação, isolamento e
+captura coincidem com Astra; apenas o modelo muda. Core obtém 6/6 na primeira
+passagem. Scientific passa de 3/9 para 9/9 após corrigir autonomamente a carga
+Python 3.13. Ambos os vereditos são confirmados de forma independente.
+
+**Traço útil** — Sol totaliza 1 199,432 s e 454 376 tokens contra 499,653 s e
+340 988 para Astra: +140,1 % de tempo e +33,3 % de tokens. Uma suite posterior
+favorece Astra 4/4 contra Sol 0/4, mas é exploratória e parcialmente ligada à
+implementação. Nenhuma regra de governação é alterada.

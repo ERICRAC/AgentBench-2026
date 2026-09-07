@@ -25,7 +25,7 @@ Codex** by [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 The human–agent conversation is therefore part of the experiment, just as much
 as the software it produces.
 
-Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
+Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v1.en.md) · [Sol vs Astra control](results/sol-vs-astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.en.md) · [V2 preflight](results/astra-v2-preflight.en.md).
 
@@ -119,6 +119,8 @@ This expression illustrates the project's intuition; it is not a computed score 
 | --- | --- | --- | ---: | ---: | ---: |
 | [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Core Calculator | **6/6** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Core Calculator | **6/6** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9** | 1,009.468 s | 296 275¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.
@@ -153,6 +155,7 @@ The comparison and versioning rules are defined in
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
 - [x] Preserve the first `001` V1 observations without rewriting them.
 - [x] Replicate V1 with pinned model, effort and context: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
+- [x] Control V1 like for like with Sol/high: final verdict **15/15** and [comparison published](results/sol-vs-astra-v1.en.md).
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
 - [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.

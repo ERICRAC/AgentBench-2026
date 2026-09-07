@@ -10,6 +10,8 @@ Les V1 antérieures sont [archivées](ARCHIVE_V1.md). Les mentions « référenc
 | --- | --- | --- | --- | --- | --- |
 | `astra-core-v1-002` | Codex seul | Calculatrice Core | 6/6 | Référence Astra | [Rapport complet](astra-v1.md) |
 | `astra-scientific-v1-002` | Codex seul | Calculatrice Scientific | 9/9 | Référence Astra | [Rapport complet](astra-v1.md) |
+| `sol-core-v1-001` | Codex seul | Calculatrice Core | 6/6 | Contrôle modèle | [Comparaison](sol-vs-astra-v1.md) |
+| `sol-scientific-v1-001` | Codex seul | Calculatrice Scientific | 9/9 | Contrôle modèle | [Comparaison](sol-vs-astra-v1.md) |
 
 ## Données conservées
 

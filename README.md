@@ -25,7 +25,7 @@ Le projet a été imaginé et piloté **entièrement au microphone avec Codex** 
 [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
 humain–agent fait donc partie de l'expérience autant que le code produit.
 
-Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
+Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra-v1.md) · [Contrôle Sol vs Astra](results/sol-vs-astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.md) · [V2 preflight](results/astra-v2-preflight.md).
 
@@ -120,6 +120,8 @@ Cette formule illustre l'intuition du projet ; elle n'additionne pas des unités
 | --- | --- | --- | ---: | ---: | ---: |
 | [`astra-core-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Core | **6/6** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Scientific | **9/9** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Core | **6/6** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Scientific | **9/9** | 1 009.468 s | 296 275¹ |
 
 ¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
 corrections. Aucune donnée manquante n'est reconstruite après coup.
@@ -154,6 +156,7 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
 - [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
+- [x] Contrôler V1 à périmètre constant avec Sol/high : verdict final **15/15** et [comparaison publiée](results/sol-vs-astra-v1.md).
 - [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
 - [x] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs. [PV](results/astra-v2-preflight.md).
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.

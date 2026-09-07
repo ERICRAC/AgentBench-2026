@@ -3,7 +3,7 @@
   "mode": "codex-single",
   "challenge": "scientific-calculator",
   "created_at": "2026-09-07T08:16:15.817122+00:00",
-  "status": "prepared",
+  "status": "completed",
   "campaign_id": "sol-high-control-001",
   "comparison_target": "astra-high-001",
   "comparison_design": {
@@ -30,6 +30,7 @@
     "context_window_tokens": 200000,
     "auto_compact_token_limit": 180000,
     "auto_compact_token_limit_scope": "total",
+    "thread_id": "01a07af6-6de1-7c02-a88b-f0a80e3e58dc",
     "session_persistence": false
   },
   "config": "runs/sol-scientific-v1-001/config.toml",
@@ -37,5 +38,41 @@
   "prompt": "prompts/scientific-single.md",
   "prompt_sha256": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad",
   "challenge_sha256": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
-  "acceptance_tests_sha256": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89"
+  "acceptance_tests_sha256": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89",
+  "duration_seconds": 1009.468,
+  "usage": {
+    "input_tokens": 280773,
+    "cached_input_tokens": 245888,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15502,
+    "reasoning_output_tokens": 5408,
+    "input_plus_output_tokens": 296275
+  },
+  "verification": {
+    "candidate_first_pass": "3/9 (6 import errors)",
+    "candidate_final_pass": "9/9",
+    "independent_final_pass": "9/9",
+    "candidate_targeted_checks": "Passed before official verification",
+    "posthoc_common_additional_suite": "0/4 test methods; 6 assertion failures",
+    "posthoc_comparator_result": "astra-scientific-v1-002: 4/4",
+    "posthoc_suite_sha256": "66680c1afd3978cc4c7ce9a9430631f41c7cca00bc8f64059a2a466c71cd641a",
+    "posthoc_warning": "Exploratory only: suite authored by the Astra candidate and not preregistered for this Sol run"
+  },
+  "corrections": {
+    "functional_after_first_official_pass": 1,
+    "description": "Replaced an internal dataclass after the independent loader failed under Python 3.13"
+  },
+  "human_functional_interventions": 0,
+  "files": [
+    {
+      "path": "solution/README.md",
+      "lines": 93
+    },
+    {
+      "path": "solution/scientific_calculator.py",
+      "lines": 593
+    }
+  ],
+  "candidate_commit": "beb3ce1",
+  "minutes": "runs/sol-scientific-v1-001/PV.md"
 }

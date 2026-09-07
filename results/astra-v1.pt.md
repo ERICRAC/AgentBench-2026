@@ -43,6 +43,11 @@ Algumas saídas Scientific estão vazias no JSON. O primeiro 9/9 apoia-se na men
 
 ## Observações e próximo passo
 
-Core: 100,175 s / 120.478 tokens contra Sol 193 s / 556.461. Scientific: 399,478 s / 220.510 contra 541 s / 603.492. Diferenças descritivas, não causais: mudaram modelo, CLI e instruções, com apenas um run completo por célula.
+As comparações históricas com runs Sol anteriores continuam arquivadas, mas já
+não são o controlo do modelo. Uma [V1 Sol no mesmo perímetro](sol-vs-astra-v1.pt.md)
+executa ambos os desafios com o mesmo CLI, prompts e parâmetros: veredito final
+igual, mas +140,1 % de tempo e +33,3 % de tokens para Sol nas duas sessões.
 
-O defeito descoberto após 9/9 evidencia o teto da suite. O viés histórico do carregador dataclass permanece documentado sem alterar os testes fixados. Publicar V1 antes do preflight V2; ainda não executar o benchmark V2.
+O defeito descoberto após 9/9 evidencia o teto da suite. A interação do
+carregador `dataclass` permanece documentada e a suite não muda. O preflight V2
+está concluído; o próximo benchmark preparado é Astra V2 Core.
