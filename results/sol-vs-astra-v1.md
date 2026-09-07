@@ -4,8 +4,10 @@
 
 ## Réponse directe
 
-Les quatre solutions atteignent leur verdict officiel final : Core 6/6 et
-Scientific 9/9. Sur ces deux observations, `gpt-5.6-sol/high` consomme pourtant
+Les quatre solutions atteignent leur verdict officiel final : Core **6/6
+groupes et 14/14 contrôles**, Scientific **9/9 groupes et 57/57 contrôles**.
+Le [catalogue d'acceptation](../docs/acceptance-tests.md) détaille les 71
+assertions. Sur ces deux observations, `gpt-5.6-sol/high` consomme pourtant
 **2,40 fois le temps** et **1,33 fois les tokens** de `gpt-6-astra/high`.
 Scientific Sol nécessite aussi une correction après un premier passage à 3/9,
 alors qu'Astra atteint 9/9 au premier passage officiel.
@@ -48,7 +50,7 @@ de toutes les conditions cachées.
 | Scientific | Premier / final / indépendant | 9/9 · 9/9 · 9/9 | 3/9 · 9/9 · 9/9 | correction Sol |
 | Scientific | Durée | 399,478 s | 1 009,468 s | +152,7 % |
 | Scientific | Entrée + sortie | 220 510 | 296 275 | +34,4 % |
-| **Total** | **Verdict final officiel** | **15/15** | **15/15** | **égalité** |
+| **Total** | **Groupes / contrôles élémentaires** | **15/15 · 71/71** | **15/15 · 71/71** | **égalité** |
 | **Total** | **Durée** | **499,653 s** | **1 199,432 s** | **+140,1 %** |
 | **Total** | **Entrée + sortie** | **340 988** | **454 376** | **+33,3 %** |
 

@@ -4,8 +4,10 @@
 
 ## Direct answer
 
-All four solutions reach their final official verdict: Core 6/6 and Scientific
-9/9. Across these two observations, however, `gpt-5.6-sol/high` uses **2.40×
+All four solutions reach their final official verdict: Core **6/6 groups and
+14/14 checks**, Scientific **9/9 groups and 57/57 checks**. The
+[acceptance catalogue](../docs/acceptance-tests.en.md) expands all 71 assertions.
+Across these two observations, however, `gpt-5.6-sol/high` uses **2.40×
 the time** and **1.33× the tokens** of `gpt-6-astra/high`. Scientific Sol also
 needs a correction after an initial 3/9, while Astra reaches 9/9 on its first
 official pass.
@@ -37,7 +39,7 @@ frozen, so “like-for-like” refers to the observable client protocol.
 | Scientific | First / final / independent | 9/9 · 9/9 · 9/9 | 3/9 · 9/9 · 9/9 | Sol corrected |
 | Scientific | Duration | 399.478 s | 1,009.468 s | +152.7% |
 | Scientific | Input + output | 220,510 | 296,275 | +34.4% |
-| **Total** | **Final official verdict** | **15/15** | **15/15** | **tie** |
+| **Total** | **Groups / elementary checks** | **15/15 · 71/71** | **15/15 · 71/71** | **tie** |
 | **Total** | **Duration** | **499.653 s** | **1,199.432 s** | **+140.1%** |
 | **Total** | **Input + output** | **340,988** | **454,376** | **+33.3%** |
 

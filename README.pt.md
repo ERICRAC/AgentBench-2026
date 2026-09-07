@@ -24,7 +24,7 @@ as intervenções humanas e o ruído de coordenação.
 O projeto foi concebido e conduzido **inteiramente por microfone com o Codex**
 por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 
-Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astra-v1.pt.md) · [Controlo Sol vs Astra](results/sol-vs-astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
+Campanha ativa: **Astra high · `astra-high-001`**. [Catálogo de 71 controlos](docs/acceptance-tests.pt.md) · [Relatório V1](results/astra-v1.pt.md) · [Controlo Sol vs Astra](results/sol-vs-astra-v1.pt.md) · [Arquivo V1 anterior](results/ARCHIVE_V1.pt.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.pt.md) · [V2 preflight](results/astra-v2-preflight.pt.md).
 
@@ -33,7 +33,7 @@ Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astr
 | Campanha principal | V1 · Codex sozinho | Próxima execução | Protocolos |
 | :---: | :---: | :---: | :---: |
 | **2 / 6 validadas** | **2 / 2 replicadas** | **V2 · Calculadora Core** | **Desafios e protocolo V2 congelados** |
-| `██████░░░░░░` **33%** | Calculadora Core **6/6** · Calculadora Scientific **9/9** | Multiagente governado | Verificadores independentes |
+| `██████░░░░░░` **33%** | Core **6 grupos · 14 controlos** · Scientific **9 grupos · 57 controlos** | Multiagente governado | Verificadores independentes |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -45,8 +45,8 @@ Campanha ativa: **Astra high · `astra-high-001`**. [Relatório V1](results/astr
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex sozinho · 2/2"]
-      V1C["✓ Calculadora Core<br/>6/6"]
-      V1S["✓ Calculadora Scientific<br/>9/9"]
+      V1C["✓ Calculadora Core<br/>6 grupos · 14 controlos"]
+      V1S["✓ Calculadora Scientific<br/>9 grupos · 57 controlos"]
     end
     G1{"Observações V1<br/>referência individual"}
     subgraph V2["V2 · Equipa Codex · 0/2"]
@@ -102,14 +102,38 @@ tentativa. **Os agentes propõem; o verificador decide.**
 
 A fórmula ilustra a intuição do projeto; não é uma pontuação que some unidades incompatíveis. Os relatórios comparam qualidade, segundos, tokens e coordenação separadamente.
 
+## O que é realmente testado
+
+`6/6` e `9/9` contam **grupos `unittest`**, não todas as asserções. Numa
+execução bem-sucedida, os 15 grupos realizam **71 controlos: 14 Core e 57
+Scientific**.
+
+### Core — 6 grupos / 14 controlos
+
+- [x] C01 ficheiros (2); C02 sem execução dinâmica (1).
+- [x] C03 quatro operações verificadas separadamente (4).
+- [x] C04 operador desconhecido (1); C05 divisão por zero (1).
+- [x] C06 CLI, erros e recuperação (5).
+
+### Scientific — 9 grupos / 57 controlos
+
+- [x] S01 entregáveis e documentação (7); S02 segurança (2).
+- [x] S03 operadores e prioridades (10); S04 linguagem matemática (6).
+- [x] S05 variável e nomes proibidos (5); S06 erros (6).
+- [x] S07 amostragem (8); S08 SVG passivo (7); S09 CLI (6).
+
+**Auditoria:** [71 controlos detalhados](docs/acceptance-tests.pt.md) →
+[especificações e testes](challenges/) → [resultados](results/README.pt.md) →
+atas e traces. A cobertura não é uma nota absoluta de qualidade.
+
 ## Resultados publicados
 
 | Execução | Organização | Objetivo | Veredicto | Tempo | Tokens observados |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`astra-core-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Core | **6/6** | 100.175 s | 120 478¹ |
-| [`astra-scientific-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Scientific | **9/9** | 399.478 s | 220 510¹ |
-| [`sol-core-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Core | **6/6** | 189.964 s | 158 101¹ |
-| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Scientific | **9/9** | 1 009.468 s | 296 275¹ |
+| [`astra-core-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Core | **6/6 grupos · 14/14 controlos** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.pt.md) | V1 · Referência Astra | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Core | **6/6 grupos · 14/14 controlos** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 1 009.468 s | 296 275¹ |
 
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.
@@ -134,7 +158,7 @@ os resultados anteriores são preservados. Consulte o
 - [x] Congelar os testes da Calculadora Core e da Calculadora Scientific.
 - [x] Preservar as primeiras observações V1 `001` sem as reescrever.
 - [x] Replicar V1 com modelo, esforço e contexto fixados: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
-- [x] Controlar V1 no mesmo perímetro com Sol/high: veredito final **15/15** e [comparação publicada](results/sol-vs-astra-v1.pt.md).
+- [x] Controlar V1 com Sol/high: **15/15 grupos e 71/71 controlos elementares**, com [comparação publicada](results/sol-vs-astra-v1.pt.md).
 - [x] Decidir e fixar papéis, trocas, orçamentos e [métricas V2](governance/V2_PROTOCOL.pt.md).
 - [x] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores. [PV](results/astra-v2-preflight.pt.md).
 - [ ] Executar V2 para a Calculadora Core e a Calculadora Scientific.

@@ -4,14 +4,18 @@
 
 Las V1 anteriores están [archivadas](ARCHIVE_V1.es.md). «Referencia actual» en sus informes describe su estado histórico, no la campaña Astra.
 
+**Recorrido aconsejado:** [entender los 15 grupos y 71 controles](../docs/acceptance-tests.es.md)
+→ [ver resultados](#resultados-publicados) → abrir el informe, el acta y la
+traza. Los antiguos `6/6` y `9/9` cuentan grupos `unittest`, no cada aserción.
+
 ## Resultados publicados
 
 | Intento | Mode | Objetivo | Resultado | Estado | Detalles |
 | --- | --- | --- | --- | --- | --- |
-| `astra-core-v1-002` | Codex solo | Calculadora Core | 6/6 | Referencia Astra | [Informe completo](astra-v1.es.md) |
-| `astra-scientific-v1-002` | Codex solo | Calculadora Scientific | 9/9 | Referencia Astra | [Informe completo](astra-v1.es.md) |
-| `sol-core-v1-001` | Codex solo | Calculadora Core | 6/6 | Control de modelo | [Comparación](sol-vs-astra-v1.es.md) |
-| `sol-scientific-v1-001` | Codex solo | Calculadora Scientific | 9/9 | Control de modelo | [Comparación](sol-vs-astra-v1.es.md) |
+| `astra-core-v1-002` | Codex solo | Calculadora Core | 6/6 grupos · 14/14 controles | Referencia Astra | [Informe completo](astra-v1.es.md) |
+| `astra-scientific-v1-002` | Codex solo | Calculadora Scientific | 9/9 grupos · 57/57 controles | Referencia Astra | [Informe completo](astra-v1.es.md) |
+| `sol-core-v1-001` | Codex solo | Calculadora Core | 6/6 grupos · 14/14 controles | Control de modelo | [Comparación](sol-vs-astra-v1.es.md) |
+| `sol-scientific-v1-001` | Codex solo | Calculadora Scientific | 9/9 grupos · 57/57 controles | Control de modelo | [Comparación](sol-vs-astra-v1.es.md) |
 
 ## Datos conservados
 

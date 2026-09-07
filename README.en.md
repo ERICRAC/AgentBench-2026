@@ -25,7 +25,7 @@ Codex** by [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
 The human–agent conversation is therefore part of the experiment, just as much
 as the software it produces.
 
-Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v1.en.md) · [Sol vs Astra control](results/sol-vs-astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
+Active campaign: **Astra high · `astra-high-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [V1 report](results/astra-v1.en.md) · [Sol vs Astra control](results/sol-vs-astra-v1.en.md) · [Earlier V1 archive](results/ARCHIVE_V1.en.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.en.md) · [V2 preflight](results/astra-v2-preflight.en.md).
 
@@ -34,7 +34,7 @@ Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
 | **2 / 6 validated** | **2 / 2 replicated** | **V2 · Core Calculator** | **Challenges and V2 protocol frozen** |
-| `██████░░░░░░` **33%** | Core Calculator **6/6** · Scientific Calculator **9/9** | Governed multi-agent | Independent verifiers |
+| `██████░░░░░░` **33%** | Core **6 groups · 14 checks** · Scientific **9 groups · 57 checks** | Governed multi-agent | Independent verifiers |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -50,8 +50,8 @@ Active campaign: **Astra high · `astra-high-001`**. [V1 report](results/astra-v
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex alone · 2/2"]
-      V1C["✓ Core Calculator<br/>6/6"]
-      V1S["✓ Scientific Calculator<br/>9/9"]
+      V1C["✓ Core Calculator<br/>6 groups · 14 checks"]
+      V1S["✓ Scientific Calculator<br/>9 groups · 57 checks"]
     end
     G1{"V1 observations<br/>solo baseline"}
     subgraph V2["V2 · Codex team · 0/2"]
@@ -113,14 +113,45 @@ The score is therefore only part of the picture:
 
 This expression illustrates the project's intuition; it is not a computed score adding incompatible units. Reports compare quality, seconds, tokens and coordination separately.
 
+## What is actually tested
+
+The `6/6` and `9/9` verdicts count **`unittest` groups**, not every assertion.
+On a passing run, the 15 groups execute **71 elementary checks: 14 Core and 57
+Scientific**.
+
+### Core Calculator — 6 groups / 14 checks
+
+- [x] C01 · Required files — 2 checks.
+- [x] C02 · No dynamic execution — 1 check.
+- [x] C03 · Addition, subtraction, multiplication and division — 4 checks.
+- [x] C04 · Unknown operator — 1 check.
+- [x] C05 · Division by zero — 1 check.
+- [x] C06 · Recovering CLI with no traceback — 5 checks.
+
+### Scientific Calculator — 9 groups / 57 checks
+
+- [x] S01 · Deliverables and documentation — 7 checks.
+- [x] S02 · Safety and standard library — 2 checks.
+- [x] S03 · Precedence, parentheses, powers and signs — 10 checks.
+- [x] S04 · Functions, constants and scientific notation — 6 checks.
+- [x] S05 · Variable `x` and forbidden names — 5 checks.
+- [x] S06 · Syntax, domains and division by zero — 6 checks.
+- [x] S07 · Sampling, bounds and discontinuities — 8 checks.
+- [x] S08 · Valid, passive SVG with a curve — 7 checks.
+- [x] S09 · CLI, plot, history and recovery — 6 checks.
+
+**Audit path:** [all 71 checks](docs/acceptance-tests.en.md) →
+[source specifications and tests](challenges/) → [results](results/README.en.md)
+→ each run's minutes and trace. This coverage is not an absolute quality score.
+
 ## Published results
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Core Calculator | **6/6** | 100.175 s | 120 478¹ |
-| [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9** | 399.478 s | 220 510¹ |
-| [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Core Calculator | **6/6** | 189.964 s | 158 101¹ |
-| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9** | 1,009.468 s | 296 275¹ |
+| [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Core Calculator | **6/6 groups · 14/14 checks** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9 groups · 57/57 checks** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Core Calculator | **6/6 groups · 14/14 checks** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,009.468 s | 296 275¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.
@@ -155,7 +186,7 @@ The comparison and versioning rules are defined in
 - [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
 - [x] Preserve the first `001` V1 observations without rewriting them.
 - [x] Replicate V1 with pinned model, effort and context: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
-- [x] Control V1 like for like with Sol/high: final verdict **15/15** and [comparison published](results/sol-vs-astra-v1.en.md).
+- [x] Control V1 like for like with Sol/high: **15/15 groups and 71/71 elementary checks**, with [comparison published](results/sol-vs-astra-v1.en.md).
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
 - [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
 - [ ] Run and publish **V2 Core Calculator**, then **V2 Scientific Calculator**.

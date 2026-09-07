@@ -4,8 +4,10 @@
 
 ## Resposta direta
 
-As quatro soluções atingem o veredito oficial final: Core 6/6 e Scientific
-9/9. Contudo, nestas duas observações, `gpt-5.6-sol/high` consome **2,40 vezes o
+As quatro soluções atingem o veredito oficial final: Core **6/6 grupos e 14/14
+controlos**, Scientific **9/9 grupos e 57/57 controlos**. O
+[catálogo](../docs/acceptance-tests.pt.md) detalha as 71 asserções. Contudo,
+nestas duas observações, `gpt-5.6-sol/high` consome **2,40 vezes o
 tempo** e **1,33 vezes os tokens** de `gpt-6-astra/high`. Scientific Sol também
 precisa de uma correção após um primeiro resultado de 3/9, enquanto Astra
 atinge 9/9 logo na primeira passagem oficial.
@@ -37,7 +39,7 @@ mesmo perímetro descreve o protocolo cliente observável.
 | Scientific | Primeiro / final / independente | 9/9 · 9/9 · 9/9 | 3/9 · 9/9 · 9/9 | Sol corrigido |
 | Scientific | Duração | 399,478 s | 1 009,468 s | +152,7 % |
 | Scientific | Entrada + saída | 220 510 | 296 275 | +34,4 % |
-| **Total** | **Veredito oficial final** | **15/15** | **15/15** | **empate** |
+| **Total** | **Grupos / controlos elementares** | **15/15 · 71/71** | **15/15 · 71/71** | **empate** |
 | **Total** | **Duração** | **499,653 s** | **1 199,432 s** | **+140,1 %** |
 | **Total** | **Entrada + saída** | **340 988** | **454 376** | **+33,3 %** |
 

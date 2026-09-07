@@ -25,7 +25,7 @@ Le projet a été imaginé et piloté **entièrement au microphone avec Codex** 
 [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
 humain–agent fait donc partie de l'expérience autant que le code produit.
 
-Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra-v1.md) · [Contrôle Sol vs Astra](results/sol-vs-astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
+Campagne active : **Astra high · `astra-high-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Rapport V1](results/astra-v1.md) · [Contrôle Sol vs Astra](results/sol-vs-astra-v1.md) · [Archives V1 antérieures](results/ARCHIVE_V1.md).
 
 [Node.js / WSL / Markdown](docs/node-wsl.md) · [V2 preflight](results/astra-v2-preflight.md).
 
@@ -34,7 +34,7 @@ Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
 | **2 / 6 validés** | **2 / 2 répliqués** | **V2 · Calculatrice Core** | **Défis et protocole V2 figés** |
-| `██████░░░░░░` **33 %** | Calculatrice Core **6/6** · Calculatrice Scientific **9/9** | Multi-agent gouverné | Vérificateurs indépendants |
+| `██████░░░░░░` **33 %** | Core **6 groupes · 14 contrôles** · Scientific **9 groupes · 57 contrôles** | Multi-agent gouverné | Vérificateurs indépendants |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -50,8 +50,8 @@ Campagne active : **Astra high · `astra-high-001`**. [Rapport V1](results/astra
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex seul · 2/2"]
-      V1C["✓ Calculatrice Core<br/>6/6"]
-      V1S["✓ Calculatrice Scientific<br/>9/9"]
+      V1C["✓ Calculatrice Core<br/>6 groupes · 14 contrôles"]
+      V1S["✓ Calculatrice Scientific<br/>9 groupes · 57 contrôles"]
     end
     G1{"Observations V1<br/>référence solo"}
     subgraph V2["V2 · Équipe Codex · 0/2"]
@@ -114,14 +114,46 @@ La lecture ne se limite donc pas au score :
 
 Cette formule illustre l'intuition du projet ; elle n'additionne pas des unités incompatibles dans un score calculé. Qualité, secondes, tokens et coordination sont comparés séparément dans les rapports.
 
+## Ce qui est réellement testé
+
+Les verdicts `6/6` et `9/9` comptent des **groupes `unittest`**, pas toutes les
+assertions. Sur un passage réussi, les 15 groupes exécutent **71 contrôles
+élémentaires : 14 Core et 57 Scientific**.
+
+### Calculatrice Core — 6 groupes / 14 contrôles
+
+- [x] C01 · Deux livrables présents — 2 contrôles.
+- [x] C02 · Aucun `eval()` ou `exec()` — 1 contrôle.
+- [x] C03 · Addition, soustraction, multiplication et division — **4 contrôles**.
+- [x] C04 · Opérateur inconnu rejeté — 1 contrôle.
+- [x] C05 · Division par zéro rejetée — 1 contrôle.
+- [x] C06 · CLI sans traceback, avec erreur lisible et reprise — 5 contrôles.
+
+### Calculatrice Scientific — 9 groupes / 57 contrôles
+
+- [x] S01 · Livrables et documentation — 7 contrôles.
+- [x] S02 · Sécurité et bibliothèque standard — 2 contrôles.
+- [x] S03 · Priorités, parenthèses, puissances et signes — 10 contrôles.
+- [x] S04 · Fonctions, constantes et notation scientifique — 6 contrôles.
+- [x] S05 · Variable `x` et noms interdits — 5 contrôles.
+- [x] S06 · Syntaxe, domaines et division par zéro — 6 contrôles.
+- [x] S07 · Échantillonnage, bornes et discontinuités — 8 contrôles.
+- [x] S08 · SVG valide, tracé et sans contenu actif — 7 contrôles.
+- [x] S09 · CLI, courbe, historique et récupération — 6 contrôles.
+
+**Parcours d'audit recommandé :** [liste détaillée des 71 contrôles](docs/acceptance-tests.md)
+→ [spécifications et tests sources](challenges/) → [résultats](results/README.md)
+→ PV et traces de chaque run. Les cases ci-dessus décrivent la couverture des
+suites actuelles ; elles ne constituent pas une note absolue de qualité.
+
 ## Résultats publiés
 
 | Run | Organisation | Défi | Verdict | Temps | Tokens observés |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`astra-core-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Core | **6/6** | 100.175 s | 120 478¹ |
-| [`astra-scientific-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Scientific | **9/9** | 399.478 s | 220 510¹ |
-| [`sol-core-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Core | **6/6** | 189.964 s | 158 101¹ |
-| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Scientific | **9/9** | 1 009.468 s | 296 275¹ |
+| [`astra-core-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Core | **6/6 groupes · 14/14 contrôles** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.md) | V1 · Référence Astra | Calculatrice Scientific | **9/9 groupes · 57/57 contrôles** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Core | **6/6 groupes · 14/14 contrôles** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.md) | V1 · Contrôle Sol | Calculatrice Scientific | **9/9 groupes · 57/57 contrôles** | 1 009.468 s | 296 275¹ |
 
 ¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
 corrections. Aucune donnée manquante n'est reconstruite après coup.
@@ -156,7 +188,7 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Figer les défis et vérificateurs **Calculatrice Core** et **Calculatrice Scientific**.
 - [x] Conserver les premières observations V1 `001` sans les réécrire.
 - [x] Répliquer V1 avec modèle, effort et contexte épinglés : Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
-- [x] Contrôler V1 à périmètre constant avec Sol/high : verdict final **15/15** et [comparaison publiée](results/sol-vs-astra-v1.md).
+- [x] Contrôler V1 à périmètre constant avec Sol/high : **15/15 groupes et 71/71 contrôles élémentaires**, avec [comparaison publiée](results/sol-vs-astra-v1.md).
 - [x] Arbitrer puis figer les rôles, échanges, budgets et [métriques V2](governance/V2_PROTOCOL.md).
 - [x] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs. [PV](results/astra-v2-preflight.md).
 - [ ] Exécuter et publier **V2 Calculatrice Core**, puis **V2 Calculatrice Scientific**.
