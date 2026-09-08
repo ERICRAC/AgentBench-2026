@@ -210,3 +210,9 @@ Core supera la primera pasada; Scientific pasa de 3/9 a 9/9 tras corregir la
 compatibilidad del cargador Python 3.13. Se publican 14 sesiones, actas
 verbatim filtradas, trazas, decisiones y métricas. No cambia ninguna regla de
 gobernanza; sigue el hito de observación V2.
+
+## Intercambio 023
+
+**Petición** — Repetir V2 con Astra en esfuerzo alto.
+
+**Respuesta** — Prerregistrar `astra-core-v2-001` y `astra-scientific-v2-001` en `astra-high-001`, frente a las V1 Astra `002`. Mismo runner y parámetros V2 de Sol salvo el modelo. Publicar Core antes de Scientific.

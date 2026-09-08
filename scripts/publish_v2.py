@@ -57,6 +57,8 @@ def main() -> int:
         parser.error("Private record and run directory do not match")
 
     records = data["records"]
+    main_config = records["main_first"]["config"]
+    model_label = f"{main_config['model']}/{main_config['model_reasoning_effort']}"
     total_input = sum(int((record.get("usage") or {}).get("input_tokens", 0)) for record in records.values())
     total_cache = sum(int((record.get("usage") or {}).get("cached_input_tokens", 0)) for record in records.values())
     total_output = sum(int((record.get("usage") or {}).get("output_tokens", 0)) for record in records.values())
@@ -68,7 +70,7 @@ def main() -> int:
         "",
         "## Identification et périmètre",
         "",
-        "Le commanditaire lance V2 Sol/high. L'orchestrateur expérimental",
+        f"Le commanditaire lance V2 {model_label}. L'orchestrateur expérimental",
         "exécute le relais mécanique et publie après clôture. MAIN est le seul",
         "rôle écrivain. SA-01, SA-02 et SA-03 sont consultants en lecture seule,",
         "sans sous-délégation. Les sept sessions sont neuves et éphémères.",

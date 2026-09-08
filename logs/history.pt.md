@@ -207,3 +207,9 @@ passa à primeira; Scientific passa de 3/9 para 9/9 após corrigir a
 compatibilidade do carregador Python 3.13. São publicadas 14 sessões, atas
 verbatim filtradas, traces, decisões e métricas. Nenhuma regra de governação é
 alterada; segue-se o marco de observação V2.
+
+## Interação 023
+
+**Pedido** — Repetir V2 com Astra em esforço elevado.
+
+**Resposta** — Pré-registar `astra-core-v2-001` e `astra-scientific-v2-001` em `astra-high-001`, face às V1 Astra `002`. Mesmo runner e parâmetros V2 de Sol, exceto o modelo. Publicar Core antes de Scientific.

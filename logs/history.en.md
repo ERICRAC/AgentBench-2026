@@ -214,3 +214,9 @@ time; Scientific moves from 3/9 to 9/9 after a Python 3.13 loader compatibility
 fix. Fourteen sessions, screened verbatim minutes, traces, decisions and
 metrics are published. No governance rule changes; the V2 observation gate is
 next.
+
+## Exchange 023
+
+**Request** — Rerun V2 with Astra at high effort.
+
+**Response** — Preregister fresh `astra-core-v2-001` and `astra-scientific-v2-001` in `astra-high-001`, compared with Astra V1 `002`. Same runner and V2 settings as Sol except the model. Publish Core before Scientific.

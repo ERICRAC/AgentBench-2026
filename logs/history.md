@@ -300,3 +300,9 @@ correction de compatibilité du chargeur Python 3.13. Les 14 sessions, PV
 verbatim filtrés, traces, décisions et métriques sont publiés. Aucune règle de
 gouvernance n'est modifiée ; le jalon d'observation V2 devient la prochaine
 étape.
+
+## Échange 023
+
+**Demande synthétique** — Rejouer V2 avec Astra en effort élevé.
+
+**Réponse synthétique** — Préenregistrement des tentatives vierges `astra-core-v2-001` et `astra-scientific-v2-001` dans `astra-high-001`, comparées aux V1 Astra `002`. Même runner et mêmes paramètres V2 que Sol, sauf le modèle. Publication Core avant Scientific.
