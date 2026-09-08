@@ -136,6 +136,7 @@ actas y trazas. La cobertura no es una nota absoluta de calidad.
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 1 009.468 s | 296 275¹ |
 | [`sol-core-v2-001`](results/sol-v2-core.es.md) | V2 · Equipo Sol | Calculadora Core | **6/6 grupos · 14/14 controles** | 796.534 s | 559 088¹ |
 | [`sol-scientific-v2-001`](results/sol-v2.es.md) | V2 · Equipo Sol | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 1 587.605 s | 916 538¹ |
+| [`astra-core-v2-001`](results/astra-v2-core.es.md) | V2 · Equipo Astra | Calculadora Core | **6/6 grupos · 14/14 controles** | 700.994 s | 572 168¹ |
 
 ¹ Entrada + salida acumuladas. Los informes separan caché, razonamiento y
 correcciones; los datos ausentes nunca se reconstruyen a posteriori.

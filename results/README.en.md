@@ -19,6 +19,7 @@ every assertion.
 | `sol-scientific-v1-001` | Codex alone | Scientific Calculator | 9/9 groups · 57/57 checks | Model control | [Comparison](sol-vs-astra-v1.en.md) |
 | `sol-core-v2-001` | Codex team | Core Calculator | 6/6 groups · 14/14 checks | Sol V2 published | [Report, minutes and trace](sol-v2-core.en.md) |
 | `sol-scientific-v2-001` | Codex team | Scientific Calculator | 9/9 groups · 57/57 checks | Sol V2 published | [Synthesis, minutes and trace](sol-v2.en.md) |
+| `astra-core-v2-001` | Astra team | Calculator Core | 6/6 groups · 14/14 checks | V2 Astra | [Report](astra-v2-core.en.md) |
 
 ## Retained data
 
