@@ -216,3 +216,7 @@ gobernanza; sigue el hito de observación V2.
 **Petición** — Repetir V2 con Astra en esfuerzo alto.
 
 **Respuesta** — Prerregistrar `astra-core-v2-001` y `astra-scientific-v2-001` en `astra-high-001`, frente a las V1 Astra `002`. Mismo runner y parámetros V2 de Sol salvo el modelo. Publicar Core antes de Scientific.
+
+## Intercambio 024
+
+Retomar tras cuotas: añadir requirements.txt y guía de roles, retirar V2 Astra/high y repetir V2 Astra/medium conservando Sol. Scientific high 002 aprobó 9/9 antes de la cuota final, confirmado independientemente. Retirada recuperable y costes parciales documentados. Dos intentos nuevos prerregistrados; sin V1 medium comparable. Gobernanza y protocolo sin cambios; propuesta Vx de relevo no activada.

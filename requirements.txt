@@ -1,0 +1,4 @@
+# No third-party Python packages are required: standard library only.
+# Calculator solutions: Python >= 3.10; benchmark runner: Python >= 3.11 (tomllib).
+# External tools, installed separately: Git and authenticated Codex CLI.
+# Documentation lint: Node.js/npm and markdownlint-cli 0.47.0 (not Python).

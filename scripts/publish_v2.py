@@ -10,6 +10,18 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ROLE_DESCRIPTIONS = {
+    "RELAY": "Orchestrateur expérimental : lance, relaie, mesure et publie",
+    "MAIN": "Développeur principal : arbitre et reste le seul écrivain",
+    "SA-01": "Sous-agent 1 — analyste exigences et sécurité",
+    "SA-02": "Sous-agent 2 — architecte logiciel et testabilité",
+    "SA-03": "Sous-agent 3 — relecteur qualité critique, défauts et cas limites",
+}
+SESSION_ROLES = {
+    "sa01_initial": "SA-01", "sa02_initial": "SA-02",
+    "sa01_cross": "SA-01", "sa02_cross": "SA-02",
+    "main_first": "MAIN", "sa03_critic": "SA-03", "main_final": "MAIN",
+}
 SESSION_META = {
     "sa01_initial": ("MSG-001", "RELAY → SA-01 → MAIN", "analyse indépendante", 1200),
     "sa02_initial": ("MSG-002", "RELAY → SA-02 → MAIN", "analyse indépendante", 1200),
@@ -78,6 +90,13 @@ def main() -> int:
         "Les textes ci-dessous sont conservés dans l'ordre des phases. Seuls le",
         "préfixe local du dépôt et d'éventuels secrets reconnus sont remplacés ;",
         "aucun raisonnement interne n'est publié.",
+        "",
+        "## Qui est qui ?",
+        "",
+        *[f"- **{role}** : {description}." for role, description in ROLE_DESCRIPTIONS.items()],
+        "",
+        "Sept sessions représentent quatre rôles candidats, pas sept métiers.",
+        "Le vérificateur est un programme indépendant, pas un consultant LLM.",
         "",
         "## Équipe et métriques",
         "",
@@ -162,6 +181,8 @@ def main() -> int:
         sessions.append(
             {
                 "phase": name,
+                "role": SESSION_ROLES[name],
+                "role_description": ROLE_DESCRIPTIONS[SESSION_ROLES[name]],
                 "label": record["label"],
                 "thread_id": record["thread_id"],
                 "config_file": record["config_file"],
@@ -176,6 +197,7 @@ def main() -> int:
         )
     trace = {
         "run_id": data["run_id"],
+        "roles": ROLE_DESCRIPTIONS,
         "note": "Observable agent messages, commands and file changes only; internal reasoning excluded. Full screened prompts and replies are in PV.md.",
         "wall_duration_seconds": data["wall_duration_seconds"],
         "sessions": sessions,

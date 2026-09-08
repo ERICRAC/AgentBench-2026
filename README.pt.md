@@ -2,6 +2,10 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+Laboratório I&D sobre colaboração de agentes: as calculadoras são exercícios comuns. V1 = um candidato sozinho; V2 = um escritor e três consultores; V3 = futuros consultores locais. Medem-se qualidade, tempo e tokens: não se promete que V2 seja melhor.
+
+[Guide](docs/reading-guide.pt.md) · [V2 Astra medium](results/astra-medium-v2.pt.md) · [Astra/high](results/astra-v2-retired.pt.md) · [requirements.txt](requirements.txt)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-social-agents-light.png">
@@ -136,7 +140,6 @@ atas e traces. A cobertura não é uma nota absoluta de qualidade.
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.pt.md) | V1 · Controlo Sol | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 1 009.468 s | 296 275¹ |
 | [`sol-core-v2-001`](results/sol-v2-core.pt.md) | V2 · Equipa Sol | Calculadora Core | **6/6 grupos · 14/14 controlos** | 796.534 s | 559 088¹ |
 | [`sol-scientific-v2-001`](results/sol-v2.pt.md) | V2 · Equipa Sol | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 1 587.605 s | 916 538¹ |
-| [`astra-core-v2-001`](results/astra-v2-core.pt.md) | V2 · Equipa Astra | Calculadora Core | **6/6 grupos · 14/14 controlos** | 700.994 s | 572 168¹ |
 
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.

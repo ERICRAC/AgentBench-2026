@@ -8,6 +8,8 @@ As V1 anteriores estão [arquivadas](ARCHIVE_V1.pt.md). «Referência atual» ne
 → [ver resultados](#resultados-publicados) → abrir o relatório, a ata e o
 trace. Os antigos `6/6` e `9/9` contam grupos `unittest`, não cada asserção.
 
+[V2 Astra medium](astra-medium-v2.pt.md) · [Astra/high](astra-v2-retired.pt.md) · [Guide](../docs/reading-guide.pt.md)
+
 ## Resultados publicados
 
 | Tentativa | Mode | Objetivo | Resultado | Estado | Detalhes |
@@ -18,7 +20,6 @@ trace. Os antigos `6/6` e `9/9` contam grupos `unittest`, não cada asserção.
 | `sol-scientific-v1-001` | Codex sozinho | Calculadora Scientific | 9/9 grupos · 57/57 controlos | Controlo de modelo | [Comparação](sol-vs-astra-v1.pt.md) |
 | `sol-core-v2-001` | Equipa Codex | Calculadora Core | 6/6 grupos · 14/14 controlos | V2 Sol publicada | [Relatório, ata e trace](sol-v2-core.pt.md) |
 | `sol-scientific-v2-001` | Equipa Codex | Calculadora Scientific | 9/9 grupos · 57/57 controlos | V2 Sol publicada | [Síntese, ata e trace](sol-v2.pt.md) |
-| `astra-core-v2-001` | Equipa Astra | Calculadora Core | 6/6 grupos · 14/14 controlos | V2 Astra | [Relatório](astra-v2-core.pt.md) |
 
 ## Dados preservados
 

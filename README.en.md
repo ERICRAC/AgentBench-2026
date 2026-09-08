@@ -2,6 +2,10 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+R&D laboratory on agent collaboration: calculators are shared exercises. V1 = one candidate alone; V2 = one writer and three consultants; V3 = future local consultants. We measure quality, time and tokens: V2 is not promised to be better.
+
+[Guide](docs/reading-guide.en.md) · [V2 Astra medium](results/astra-medium-v2.en.md) · [Astra/high](results/astra-v2-retired.en.md) · [requirements.txt](requirements.txt)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-social-agents-light.png">
@@ -154,7 +158,6 @@ Scientific**.
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,009.468 s | 296 275¹ |
 | [`sol-core-v2-001`](results/sol-v2-core.en.md) | V2 · Sol team | Core Calculator | **6/6 groups · 14/14 checks** | 796.534 s | 559 088¹ |
 | [`sol-scientific-v2-001`](results/sol-v2.en.md) | V2 · Sol team | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,587.605 s | 916 538¹ |
-| [`astra-core-v2-001`](results/astra-v2-core.en.md) | V2 · Astra team | Calculator Core | **6/6 groups · 14/14 checks** | 700.994 s | 572 168¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.

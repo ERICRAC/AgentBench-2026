@@ -213,3 +213,7 @@ alterada; segue-se o marco de observação V2.
 **Pedido** — Repetir V2 com Astra em esforço elevado.
 
 **Resposta** — Pré-registar `astra-core-v2-001` e `astra-scientific-v2-001` em `astra-high-001`, face às V1 Astra `002`. Mesmo runner e parâmetros V2 de Sol, exceto o modelo. Publicar Core antes de Scientific.
+
+## Troca 024
+
+Retomar após quotas: adicionar requirements.txt e guia de papéis, retirar V2 Astra/high e repetir V2 Astra/medium conservando Sol. Scientific high 002 passou 9/9 antes da quota final, confirmado independentemente. Remoção recuperável e custos parciais documentados. Duas tentativas novas pré-registadas; sem V1 medium comparável. Governação e protocolo inalterados; proposta Vx de passagem de código não ativada.

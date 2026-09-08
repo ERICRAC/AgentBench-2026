@@ -306,3 +306,7 @@ gouvernance n'est modifiée ; le jalon d'observation V2 devient la prochaine
 **Demande synthétique** — Rejouer V2 avec Astra en effort élevé.
 
 **Réponse synthétique** — Préenregistrement des tentatives vierges `astra-core-v2-001` et `astra-scientific-v2-001` dans `astra-high-001`, comparées aux V1 Astra `002`. Même runner et mêmes paramètres V2 que Sol, sauf le modèle. Publication Core avant Scientific.
+
+## Échange 024
+
+Reprise après quotas : ajouter requirements.txt et un guide des métiers, retirer V2 Astra/high et relancer toute V2 Astra/medium en conservant Sol. Scientific high 002 avait réussi 9/9 avant sa coupure finale, confirmé indépendamment. Retrait récupérable et coûts partiels documentés. Deux dossiers vierges préenregistrés ; aucune V1 medium comparable. Gouvernance et protocole inchangés ; proposition Vx de reprise du code non activée.

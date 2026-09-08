@@ -1,8 +1,8 @@
 {
-  "run_id": "astra-scientific-v2-002",
+  "run_id": "astra-medium-scientific-v2-001",
   "mode": "codex-multi",
   "challenge": "scientific-calculator",
-  "created_at": "2026-09-08T15:05:23.153479+00:00",
+  "created_at": "2026-09-08T22:42:50.382535+00:00",
   "status": "prepared",
   "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
   "roles": [
@@ -18,7 +18,6 @@
     "SA-03 adversarial critique",
     "MAIN dispositions, corrections and official verifier"
   ],
-  "reasoning_effort": "high",
   "context_window_tokens_per_session": 200000,
   "auto_compact_token_limit": 180000,
   "auto_compact_token_limit_scope": "total",
@@ -29,25 +28,24 @@
   "base_prompt_sha256": "fb13706183d5a6c260b9d3f71d7e92e2918eb5d8fb53d52897fa5cf594ed19bf",
   "runner": "scripts/run_v2.py",
   "runner_sha256": "3cb0f940ebc8fe0c422b948c35de4b00273815d3dc4cb91f04b53e62814f19c4",
-  "campaign_id": "astra-high-001",
-  "reference_run": "astra-scientific-v1-002",
-  "model_control_run": "sol-scientific-v2-001",
   "candidate_model": "gpt-6-astra",
   "protocol": "governance/V2_PROTOCOL.md",
-  "protocol_adaptation": "Same organisational sequence and runner as Sol V2; only model configuration changes to the requested Astra/high",
   "codex_cli": "codex-cli 0.153.4",
+  "campaign_id": "astra-medium-001",
+  "reasoning_effort": "medium",
+  "reference_run": null,
+  "model_control_run": "sol-scientific-v2-001",
   "config_sha256": {
-    "MAIN": "796a4db9aa182ed1c98df169757a1e204eea71dc2ae1a22cc07c80acbad4b6cf",
-    "SA-01": "054bdf5dfa609f5614709e4014c5842b4f50c428f71e270fa1c71e6f90f57a6c",
-    "SA-02": "5b2bf317aca50314eae278200ba99b7d41adae83593c0c28a3d491fcd7e884ff",
-    "SA-03": "04680afebbdfd2d7b9a0461a6f1ff2f741c32f199c60487ab17c69fe6a4ad7c3"
+    "MAIN": "44167c0ed68aa18776855ece812421b2c75079ef6916ae467a31b654a95324d4",
+    "SA-01": "b8d8dbb71f77940c7851af766ac1133e3b74cbde3686c35ad3fb2b54f0e8df7e",
+    "SA-02": "81722edfc9663bde13f86b6a5ff2f6cc59b5bbd40bcfff96af9f719ef3c40459",
+    "SA-03": "9e20f7d8aac7143ce6b547147ab98b43054b0ec9e7c04047ed061cc955ccf3ce"
   },
+  "comparability": "Exploratory V2 only. No Astra medium V1 baseline exists; comparisons with Sol high or Astra high conflate effort and/or model.",
+  "protocol_adaptation": "User-requested medium effort for every role; otherwise frozen seven-session sequence, prompts, runner and tests unchanged.",
   "preflight": {
     "solution_empty": true,
     "challenge_read": true,
-    "previous_astra_preflight": "results/astra-v2-preflight.md",
-    "sequence": "Publish Core report before Scientific starts; no intermediate refinement"
-  },
-  "replaces_interrupted_run": "astra-scientific-v2-001",
-  "core_report_published_before_launch": "111cd7f"
+    "sequence": "Publish Core before Scientific; no intermediate refinement"
+  }
 }

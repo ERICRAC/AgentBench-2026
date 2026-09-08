@@ -220,3 +220,7 @@ next.
 **Request** — Rerun V2 with Astra at high effort.
 
 **Response** — Preregister fresh `astra-core-v2-001` and `astra-scientific-v2-001` in `astra-high-001`, compared with Astra V1 `002`. Same runner and V2 settings as Sol except the model. Publish Core before Scientific.
+
+## Exchange 024
+
+Resume after quotas: add requirements.txt and a role guide, retire Astra/high V2 and retry all V2 with Astra/medium, preserving Sol. Scientific high 002 passed 9/9 before final interruption, independently confirmed. Recoverable removal and partial costs documented. Two fresh attempts preregistered; no comparable medium V1. Governance and protocol unchanged; code-handover Vx proposal inactive.

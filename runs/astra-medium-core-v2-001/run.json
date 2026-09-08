@@ -1,0 +1,51 @@
+{
+  "run_id": "astra-medium-core-v2-001",
+  "mode": "codex-multi",
+  "challenge": "calculator",
+  "created_at": "2026-09-08T22:42:50.346583+00:00",
+  "status": "prepared",
+  "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
+  "roles": [
+    "MAIN",
+    "SA-01",
+    "SA-02",
+    "SA-03"
+  ],
+  "planned_sequence": [
+    "SA-01 and SA-02 blind analyses in parallel",
+    "one cross-response each in parallel",
+    "MAIN decision table and first solution",
+    "SA-03 adversarial critique",
+    "MAIN dispositions, corrections and official verifier"
+  ],
+  "context_window_tokens_per_session": 200000,
+  "auto_compact_token_limit": 180000,
+  "auto_compact_token_limit_scope": "total",
+  "human_functional_interventions": 0,
+  "challenge_sha256": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+  "acceptance_tests_sha256": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+  "base_prompt": "prompts/codex-multi.md",
+  "base_prompt_sha256": "fb13706183d5a6c260b9d3f71d7e92e2918eb5d8fb53d52897fa5cf594ed19bf",
+  "runner": "scripts/run_v2.py",
+  "runner_sha256": "3cb0f940ebc8fe0c422b948c35de4b00273815d3dc4cb91f04b53e62814f19c4",
+  "candidate_model": "gpt-6-astra",
+  "protocol": "governance/V2_PROTOCOL.md",
+  "codex_cli": "codex-cli 0.153.4",
+  "campaign_id": "astra-medium-001",
+  "reasoning_effort": "medium",
+  "reference_run": null,
+  "model_control_run": "sol-core-v2-001",
+  "config_sha256": {
+    "MAIN": "44167c0ed68aa18776855ece812421b2c75079ef6916ae467a31b654a95324d4",
+    "SA-01": "b8d8dbb71f77940c7851af766ac1133e3b74cbde3686c35ad3fb2b54f0e8df7e",
+    "SA-02": "81722edfc9663bde13f86b6a5ff2f6cc59b5bbd40bcfff96af9f719ef3c40459",
+    "SA-03": "9e20f7d8aac7143ce6b547147ab98b43054b0ec9e7c04047ed061cc955ccf3ce"
+  },
+  "comparability": "Exploratory V2 only. No Astra medium V1 baseline exists; comparisons with Sol high or Astra high conflate effort and/or model.",
+  "protocol_adaptation": "User-requested medium effort for every role; otherwise frozen seven-session sequence, prompts, runner and tests unchanged.",
+  "preflight": {
+    "solution_empty": true,
+    "challenge_read": true,
+    "sequence": "Publish Core before Scientific; no intermediate refinement"
+  }
+}
