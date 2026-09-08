@@ -189,3 +189,21 @@ Python 3.13. Ambos os vereditos são confirmados de forma independente.
 340 988 para Astra: +140,1 % de tempo e +33,3 % de tokens. Uma suite posterior
 favorece Astra 4/4 contra Sol 0/4, mas é exploratória e parcialmente ligada à
 implementação. Nenhuma regra de governação é alterada.
+
+## Interação 022
+
+**Pedido** — Tornar auditáveis até ao README os vereditos 6/6, 9/9 e 15/15,
+melhorar as ligações documentais e executar V2 com Sol em esforço elevado.
+
+**Resposta** — O catálogo público separa 15 grupos `unittest` de 71 controlos
+elementares, com listas Core 14 e Scientific 57 nos quatro README. A V2 usa
+três profissões consultoras e um único redator segundo o protocolo congelado:
+Core primeiro e Scientific depois, sem afinação intermédia. Ambos os vereditos
+finais independentes atingem 71/71.
+
+**Trace útil** — A V2 totaliza 2 384,139 s e 1 475 626 tokens: +98,8 % de tempo
+e +224,8 % de tokens face à V1 Sol, sem ganho nos controlos congelados. Core
+passa à primeira; Scientific passa de 3/9 para 9/9 após corrigir a
+compatibilidade do carregador Python 3.13. São publicadas 14 sessões, atas
+verbatim filtradas, traces, decisões e métricas. Nenhuma regra de governação é
+alterada; segue-se o marco de observação V2.

@@ -192,3 +192,21 @@ problema de carga Python 3.13. Ambos veredictos se confirman por separado.
 340 988 para Astra: +140,1 % de tiempo y +33,3 % de tokens. Una suite posterior
 favorece a Astra 4/4 frente a Sol 0/4, pero es exploratoria y parcialmente
 dependiente de la implementación. No se modifica ninguna regla de gobernanza.
+
+## Intercambio 022
+
+**Petición** — Hacer auditables hasta el README los veredictos 6/6, 9/9 y
+15/15, mejorar los enlaces documentales y ejecutar V2 con Sol en esfuerzo alto.
+
+**Respuesta** — El catálogo público separa 15 grupos `unittest` de 71 controles
+elementales, con listas Core 14 y Scientific 57 en los cuatro README. V2 usa
+tres profesiones consultoras y un único redactor bajo el protocolo congelado:
+Core primero y Scientific después, sin ajuste intermedio. Ambos veredictos
+finales independientes alcanzan 71/71.
+
+**Traza útil** — V2 totaliza 2 384,139 s y 1 475 626 tokens: +98,8 % de tiempo
+y +224,8 % de tokens frente a V1 Sol, sin mejora en los controles congelados.
+Core supera la primera pasada; Scientific pasa de 3/9 a 9/9 tras corregir la
+compatibilidad del cargador Python 3.13. Se publican 14 sesiones, actas
+verbatim filtradas, trazas, decisiones y métricas. No cambia ninguna regla de
+gobernanza; sigue el hito de observación V2.

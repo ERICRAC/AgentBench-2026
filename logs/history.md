@@ -280,3 +280,23 @@ et 340 988 pour Astra, soit +140,1 % de temps et +33,3 % de tokens. Une suite
 supplémentaire postérieure favorise Astra 4/4 contre Sol 0/4, mais reste
 exploratoire et partiellement couplée à l'implémentation. Aucune règle de
 gouvernance n'est modifiée.
+
+## Échange 022
+
+**Demande synthétique** — Rendre les verdicts 6/6, 9/9 et 15/15 réellement
+auditables jusqu'au README, améliorer les liens entre documents, puis exécuter
+V2 avec Sol en effort élevé.
+
+**Réponse synthétique** — Le catalogue public distingue désormais 15 groupes
+`unittest` et 71 contrôles élémentaires, avec une checklist Core 14 et
+Scientific 57 dans les quatre README. V2 exécute trois métiers consultants et
+un écrivain selon le protocole figé, d'abord sur Core puis sur Scientific sans
+affinage intermédiaire. Les deux verdicts finaux indépendants atteignent 71/71.
+
+**Trace utile** — V2 totalise 2 384,139 s et 1 475 626 tokens, soit +98,8 % de
+temps et +224,8 % de tokens face à V1 Sol, sans gain sur les contrôles figés.
+Core réussit au premier passage ; Scientific passe de 3/9 à 9/9 après une
+correction de compatibilité du chargeur Python 3.13. Les 14 sessions, PV
+verbatim filtrés, traces, décisions et métriques sont publiés. Aucune règle de
+gouvernance n'est modifiée ; le jalon d'observation V2 devient la prochaine
+étape.

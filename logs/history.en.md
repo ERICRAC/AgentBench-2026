@@ -196,3 +196,21 @@ confirmed independently.
 and 340,988 for Astra: +140.1% time and +33.3% tokens. A later supplementary
 suite favours Astra 4/4 versus Sol 0/4, but is exploratory and partly coupled
 to the implementation. No governance rule is changed.
+
+## Exchange 022
+
+**Request** — Make the 6/6, 9/9 and 15/15 verdicts auditable through to the
+README, improve document links, then run V2 with Sol at high effort.
+
+**Response** — The public catalogue now separates 15 `unittest` groups from 71
+elementary checks, with Core 14 and Scientific 57 checklists in all four
+READMEs. V2 runs three consultant professions and one writer under the frozen
+protocol, Core first and Scientific second with no intermediate refinement.
+Both independent final verdicts reach 71/71.
+
+**Useful trace** — V2 totals 2,384.139 s and 1,475,626 tokens: +98.8% time and
++224.8% tokens versus Sol V1, with no gain on frozen checks. Core passes first
+time; Scientific moves from 3/9 to 9/9 after a Python 3.13 loader compatibility
+fix. Fourteen sessions, screened verbatim minutes, traces, decisions and
+metrics are published. No governance rule changes; the V2 observation gate is
+next.

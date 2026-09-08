@@ -3,7 +3,7 @@
   "mode": "codex-multi",
   "challenge": "scientific-calculator",
   "created_at": "2026-09-07T23:35:23.278786+00:00",
-  "status": "prepared",
+  "status": "completed",
   "campaign_id": "sol-high-control-001",
   "reference_run": "sol-scientific-v1-001",
   "paired_v2_run": "sol-core-v2-001",
@@ -46,5 +46,64 @@
     "challenge_read": true,
     "paired_core_report_published_first": "ad7e234",
     "protocol_or_runner_changed_since_core": false
-  }
+  },
+  "codex_cli": "codex-cli 0.153.4",
+  "wall_duration_seconds": 1587.605,
+  "sum_session_seconds": 1698.864,
+  "usage": {
+    "input_tokens": 871245,
+    "cached_input_tokens": 736640,
+    "output_tokens": 45293,
+    "reasoning_output_tokens": 19503,
+    "input_plus_output_tokens": 916538
+  },
+  "sessions": [
+    {"phase": "sa01_initial", "thread_id": "01a07e3b-e29d-7a72-8acc-e66b64088644", "duration_seconds": 78.281, "input_tokens": 14402, "output_tokens": 2015, "visible_words": 915},
+    {"phase": "sa02_initial", "thread_id": "01a07e3b-e323-7a01-951e-ad97cea52119", "duration_seconds": 73.029, "input_tokens": 14404, "output_tokens": 1860, "visible_words": 1065},
+    {"phase": "sa01_cross", "thread_id": "01a07e3d-1125-7b73-acc9-99b5c36e1ea1", "duration_seconds": 41.247, "input_tokens": 16295, "output_tokens": 996, "visible_words": 413},
+    {"phase": "sa02_cross", "thread_id": "01a07e3d-1126-7462-935d-39e4a98dba83", "duration_seconds": 38.271, "input_tokens": 16297, "output_tokens": 917, "visible_words": 466},
+    {"phase": "main_first", "thread_id": "01a07e3d-b472-7801-95f5-a36068b37472", "duration_seconds": 810.863, "input_tokens": 394075, "output_tokens": 21975, "visible_words": 429},
+    {"phase": "sa03_critic", "thread_id": "01a07e4a-14d6-7220-8ff1-ae71b980ed8e", "duration_seconds": 226.117, "input_tokens": 26664, "output_tokens": 6122, "visible_words": 666},
+    {"phase": "main_final", "thread_id": "01a07e4d-88a0-75f3-be20-5d735bae7cf5", "duration_seconds": 431.056, "input_tokens": 389108, "output_tokens": 11408, "visible_words": 555}
+  ],
+  "verification": {
+    "candidate_first_official_pass": "3/9 unittest groups; 6 import errors from one dataclass loader incompatibility",
+    "candidate_final_pass": "9/9 unittest groups; 57/57 elementary checks",
+    "independent_final_pass": "9/9 unittest groups; 57/57 elementary checks",
+    "functional_corrections_after_first_official_pass": 1
+  },
+  "social_observations": {
+    "consultant_roles": 3,
+    "request_response_exchanges": 7,
+    "consultant_visible_words": 3525,
+    "all_visible_words": 4509,
+    "grouped_initial_recommendations_retained": 15,
+    "grouped_initial_recommendations_rejected": 1,
+    "critic_points_retained": 10,
+    "critic_points_rejected": 5,
+    "critic_points_non_verifiable_final": 0,
+    "useful_disagreements": [
+      "Whether to impose non-contractual resource caps",
+      "Whether additional variable keys should be rejected or ignored",
+      "Whether output paths and overwrites should be sandboxed"
+    ]
+  },
+  "corrections_after_critic_before_verifier": [
+    "Caught KeyboardInterrupt across the full CLI operation",
+    "Removed destructive 15-significant-digit result formatting",
+    "Made AST evaluation iterative for deep left-associative expressions",
+    "Aligned the interactive README example with actual output",
+    "Escaped control characters when redisplaying output paths",
+    "Reserved ZeroDivisionError for the division operator"
+  ],
+  "corrections_after_first_verifier": [
+    "Replaced the dataclass token container with a plain slots class compatible with the independent Python 3.13 loader"
+  ],
+  "candidate_commit": "8a7cd69",
+  "publisher": "scripts/publish_v2.py",
+  "publisher_sha256": "98b7163dbf0c1c882a7d0fe3353dfe3ec3135f92395733576b9efd2bfa1dd275",
+  "minutes": "runs/sol-scientific-v2-001/PV.md",
+  "minutes_sha256": "c6c7b26cae22386073326482b84cc5df4d2673894cdaee22a80d2e18d3137fe7",
+  "trace": "runs/sol-scientific-v2-001/trace.json",
+  "trace_sha256": "9c9580dc41adcbc025515202b44d8e9011125247e511b4640a68988e952ff186"
 }
