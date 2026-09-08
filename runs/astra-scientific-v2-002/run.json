@@ -1,9 +1,9 @@
 {
-  "run_id": "astra-scientific-v2-001",
+  "run_id": "astra-scientific-v2-002",
   "mode": "codex-multi",
   "challenge": "scientific-calculator",
-  "created_at": "2026-09-08T08:01:29.297329+00:00",
-  "status": "interrupted",
+  "created_at": "2026-09-08T15:05:23.153479+00:00",
+  "status": "prepared",
   "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
   "roles": [
     "MAIN",
@@ -48,25 +48,6 @@
     "previous_astra_preflight": "results/astra-v2-preflight.md",
     "sequence": "Publish Core report before Scientific starts; no intermediate refinement"
   },
-  "interruption": {
-    "phase": "main_first",
-    "cause": "usage_limit",
-    "solution_created": false,
-    "missing_usage": [
-      "05-main-first"
-    ],
-    "wall_duration_seconds": null
-  },
-  "partial_usage": {
-    "input_tokens": 64670,
-    "cached_input_tokens": 18176,
-    "output_tokens": 5043,
-    "reasoning_output_tokens": 451,
-    "input_plus_output_tokens": 69713
-  },
-  "sum_observed_session_seconds": 185.06,
-  "verification": null,
-  "replacement_run": "astra-scientific-v2-002",
-  "minutes": "runs/astra-scientific-v2-001/PV.md",
-  "trace": "runs/astra-scientific-v2-001/trace.json"
+  "replaces_interrupted_run": "astra-scientific-v2-001",
+  "core_report_published_before_launch": "111cd7f"
 }

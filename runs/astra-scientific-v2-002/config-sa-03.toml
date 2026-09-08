@@ -1,0 +1,9 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+model_context_window = 200000
+model_auto_compact_token_limit = 180000
+model_auto_compact_token_limit_scope = "total"
+approval_policy = "never"
+sandbox_mode = "read-only"
+web_search = "disabled"
+developer_instructions = "SA-03: AgentBench V2 adversarial QA critic. Work alone without subdelegation. Use only the challenge, consultations, decisions and first solution embedded in the user prompt. Do not use tools, read files, write files, solve the challenge, or perform Git operations. Return one bounded visible critique distinguishing confirmed defects, risks and preferences."
