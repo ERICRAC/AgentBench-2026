@@ -16,6 +16,8 @@ En los PV, abrir « Texte envoyé, mot pour mot » y leer « Texte retourné ».
 
 [Sol Core PV](../runs/sol-core-v2-001/PV.md#messages-visibles--verbatim-filtré) · [Sol Scientific PV](../runs/sol-scientific-v2-001/PV.md#messages-visibles--verbatim-filtré) · [Astra medium](../results/astra-medium-v2.es.md)
 
+[Astra medium Core PV](../runs/astra-medium-core-v2-001/PV.md#messages-visibles--verbatim-filtré) · [Astra medium Scientific PV](../runs/astra-medium-scientific-v2-001/PV.md#messages-visibles--verbatim-filtré)
+
 Vx futura, no activada: asignar una evolución fijada a un nuevo mantenedor con solo código y documentación; medir éxito, regresiones, tiempo, tokens y aclaraciones. Las pruebas actuales no miden mantenibilidad (Scientific verifica cinco palabras documentales). Evaluar explicaciones útiles, no contar comentarios. Trabajar en una nueva rama o carpeta para conservar la prueba.
 
 [README](../README.es.md) → [Tests](acceptance-tests.es.md) → [Results](../results/README.es.md)

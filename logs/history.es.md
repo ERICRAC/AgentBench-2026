@@ -222,3 +222,5 @@ gobernanza; sigue el hito de observación V2.
 Retomar tras cuotas: añadir requirements.txt y guía de roles, retirar V2 Astra/high y repetir V2 Astra/medium conservando Sol. Scientific high 002 aprobó 9/9 antes de la cuota final, confirmado independientemente. Retirada recuperable y costes parciales documentados. Dos intentos nuevos prerregistrados; sin V1 medium comparable. Gobernanza y protocolo sin cambios; propuesta Vx de relevo no activada.
 
 Core Astra medium terminado y verificado: 6/6 grupos, 14/14 controles, 375.169 s, 408 616 tokens. Publicado antes de Scientific. Por la petición adicional, se restablece Core Astra high completo; Scientific high sigue interrumpido con métricas incompletas.
+
+V2 Astra/medium terminada sin interrupciones: 15/15 grupos, 71/71 controles, 1 023.177 s y 978 998 tokens. Informes, PV con roles, trazas y decisiones publicados. Scientific: tres grupos de correcciones antes del primer veredicto oficial. Sin nueva V1 ni cambio de gobernanza. Core high restablecido; Scientific high como interrupción con costes incompletos.

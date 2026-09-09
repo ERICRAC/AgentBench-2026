@@ -312,3 +312,5 @@ gouvernance n'est modifiée ; le jalon d'observation V2 devient la prochaine
 Reprise après quotas : ajouter requirements.txt et un guide des métiers, retirer V2 Astra/high et relancer toute V2 Astra/medium en conservant Sol. Scientific high 002 avait réussi 9/9 avant sa coupure finale, confirmé indépendamment. Retrait récupérable et coûts partiels documentés. Deux dossiers vierges préenregistrés ; aucune V1 medium comparable. Gouvernance et protocole inchangés ; proposition Vx de reprise du code non activée.
 
 Core Astra medium terminé et vérifié : 6/6 groupes, 14/14 contrôles, 375.169 s, 408 616 tokens. Publication avant Scientific. À la demande complémentaire, Core Astra high est rétabli car complet ; Scientific high reste un résultat interrompu à métriques incomplètes.
+
+V2 Astra/medium terminée sans interruption : 15/15 groupes, 71/71 contrôles, 1 023.177 s et 978 998 tokens. Rapports, PV avec métiers, traces et décisions publiés. Scientific : trois groupes de corrections avant le premier verdict officiel. Aucun nouveau run V1, aucune évolution de gouvernance. Core high restauré ; Scientific high conservé comme interruption à coûts incomplets.

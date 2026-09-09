@@ -6,6 +6,8 @@ Laboratório I&D sobre colaboração de agentes: as calculadoras são exercício
 
 [Guide](docs/reading-guide.pt.md) · [V2 Astra medium](results/astra-medium-v2.pt.md) · [Astra/high](results/astra-v2-retired.pt.md) · [requirements.txt](requirements.txt)
 
+**V2 Astra médio: 2/2 desafios terminados, 15/15 grupos e 71/71 controlos.** Falta uma V1 com esforço médio; o painel de campanha abaixo continua Sol/high.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-social-agents-light.png">
@@ -142,6 +144,7 @@ atas e traces. A cobertura não é uma nota absoluta de qualidade.
 | [`sol-scientific-v2-001`](results/sol-v2.pt.md) | V2 · Equipa Sol | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 1 587.605 s | 916 538¹ |
 | [`astra-core-v2-001`](results/astra-v2-core.pt.md) | V2 · Equipa Astra | Calculadora Core | **6/6 grupos · 14/14 controlos** | 700.994 s | 572 168¹ |
 | [`astra-medium-core-v2-001`](results/astra-medium-v2.pt.md) | V2 · Equipa Astra medium | Calculadora Core | **6/6 grupos · 14/14 controlos** | 375.169 s | 408 616¹ |
+| [`astra-medium-scientific-v2-001`](results/astra-medium-v2.pt.md) | V2 · Equipa Astra medium | Calculadora Scientific | **9/9 grupos · 57/57 controlos** | 648.008 s | 570 382¹ |
 
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.

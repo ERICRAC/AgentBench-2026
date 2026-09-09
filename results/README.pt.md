@@ -22,6 +22,7 @@ trace. Os antigos `6/6` e `9/9` contam grupos `unittest`, não cada asserção.
 | `sol-scientific-v2-001` | Equipa Codex | Calculadora Scientific | 9/9 grupos · 57/57 controlos | V2 Sol publicada | [Síntese, ata e trace](sol-v2.pt.md) |
 | `astra-core-v2-001` | Equipa Astra | Calculadora Core | 6/6 grupos · 14/14 controlos | V2 Astra | [Relatório](astra-v2-core.pt.md) |
 | `astra-medium-core-v2-001` | Equipa Astra medium | Calculadora Core | 6/6 grupos · 14/14 controlos | V2 Astra medium | [Relatório](astra-medium-v2.pt.md) |
+| `astra-medium-scientific-v2-001` | Equipa Astra medium | Calculadora Scientific | 9/9 grupos · 57/57 controlos | V2 Astra medium | [Relatório](astra-medium-v2.pt.md) |
 
 ## Dados preservados
 

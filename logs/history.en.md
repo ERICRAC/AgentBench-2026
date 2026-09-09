@@ -226,3 +226,5 @@ next.
 Resume after quotas: add requirements.txt and a role guide, retire Astra/high V2 and retry all V2 with Astra/medium, preserving Sol. Scientific high 002 passed 9/9 before final interruption, independently confirmed. Recoverable removal and partial costs documented. Two fresh attempts preregistered; no comparable medium V1. Governance and protocol unchanged; code-handover Vx proposal inactive.
 
 Core Astra medium completed and verified: 6/6 groups, 14/14 checks, 375.169 s, 408 616 tokens. Published before Scientific. At the follow-up request, complete Astra high Core is restored; Scientific high remains interrupted with incomplete metrics.
+
+Astra/medium V2 completed without interruption: 15/15 groups, 71/71 checks, 1 023.177 s and 978 998 tokens. Reports, role-labelled minutes, traces and decisions published. Scientific: three correction groups before the first official verdict. No extra V1 or governance change. Core high restored; Scientific high retained as an interruption with incomplete costs.

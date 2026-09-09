@@ -6,6 +6,8 @@ R&D laboratory on agent collaboration: calculators are shared exercises. V1 = on
 
 [Guide](docs/reading-guide.en.md) · [V2 Astra medium](results/astra-medium-v2.en.md) · [Astra/high](results/astra-v2-retired.en.md) · [requirements.txt](requirements.txt)
 
+**Astra medium V2: 2/2 challenges completed, 15/15 groups and 71/71 checks.** A medium-effort V1 baseline is still missing; the campaign dashboard below remains Sol/high.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/agentbench-social-agents-light.png">
@@ -160,6 +162,7 @@ Scientific**.
 | [`sol-scientific-v2-001`](results/sol-v2.en.md) | V2 · Sol team | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,587.605 s | 916 538¹ |
 | [`astra-core-v2-001`](results/astra-v2-core.en.md) | V2 · Astra team | Calculator Core | **6/6 groups · 14/14 checks** | 700.994 s | 572 168¹ |
 | [`astra-medium-core-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Core | **6/6 groups · 14/14 checks** | 375.169 s | 408 616¹ |
+| [`astra-medium-scientific-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Scientific | **9/9 groups · 57/57 checks** | 648.008 s | 570 382¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.

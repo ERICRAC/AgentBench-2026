@@ -3,7 +3,27 @@
   "mode": "codex-multi",
   "challenge": "scientific-calculator",
   "created_at": "2026-09-08T22:42:50.382535+00:00",
-  "status": "prepared",
+  "status": "completed",
+  "candidate_commit": "5e6cecb",
+  "core_report_published_before_launch": "5c143cd",
+  "verification": {
+    "candidate_first_official_pass": "9/9 groups; 57/57 checks",
+    "candidate_final_pass": "9/9 groups; 57/57 checks",
+    "independent_final_pass": "9/9 groups; 57/57 checks",
+    "functional_correction_groups_after_critic": 3,
+    "functional_corrections_after_first_official_pass": 0,
+    "candidate_supplementary_final_tests": "4/4 methods; separate from official score"
+  },
+  "social_observations": {
+    "initial_decision_rows": 22,
+    "final_decision_rows": 13,
+    "final_retained_rows": 10,
+    "final_rejected_rows": 2,
+    "final_unverifiable_rows": 1,
+    "consultant_visible_words": 3625,
+    "all_visible_words": 4061,
+    "outcome": "Cross-replies correct function composition and all-invalid constant sampling advice. SA-03 prompts removal of language limits, terminal escaping and CLI channel handling. No correction after official verification."
+  },
   "engine": "seven fresh ephemeral codex exec --json sessions across four roles",
   "roles": [
     "MAIN",
@@ -47,5 +67,189 @@
     "solution_empty": true,
     "challenge_read": true,
     "sequence": "Publish Core before Scientific; no intermediate refinement"
-  }
+  },
+  "wall_duration_seconds": 648.008,
+  "sum_session_seconds": 730.595,
+  "usage": {
+    "input_tokens": 548369,
+    "cached_input_tokens": 409216,
+    "output_tokens": 22013,
+    "reasoning_output_tokens": 955,
+    "input_plus_output_tokens": 570382
+  },
+  "sessions": [
+    {
+      "phase": "sa01_initial",
+      "thread_id": "01a08585-c934-78d0-8d91-4796bd58f07b",
+      "duration_seconds": 55.127,
+      "usage": {
+        "input_tokens": 15106,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1612,
+        "reasoning_output_tokens": 0
+      },
+      "config_sha256": "b8d8dbb71f77940c7851af766ac1133e3b74cbde3686c35ad3fb2b54f0e8df7e",
+      "prompt_sha256": "6c21e4509a463202627945e9dd5ce5f9d463296f9168ac6d26bd48bc99b531bb",
+      "visible_words": 1000,
+      "word_limit": 1200,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 0,
+      "file_change_events": 0
+    },
+    {
+      "phase": "sa02_initial",
+      "thread_id": "01a08585-c934-7352-9534-c7b4f5f1e334",
+      "duration_seconds": 54.314,
+      "usage": {
+        "input_tokens": 15108,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1590,
+        "reasoning_output_tokens": 0
+      },
+      "config_sha256": "81722edfc9663bde13f86b6a5ff2f6cc59b5bbd40bcfff96af9f719ef3c40459",
+      "prompt_sha256": "e4e3d32896ddd8687eadaf5186ec0d32daaf528171a012bf0aaa659c25f50c30",
+      "visible_words": 1031,
+      "word_limit": 1200,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 0,
+      "file_change_events": 0
+    },
+    {
+      "phase": "sa01_cross",
+      "thread_id": "01a08586-9ebc-7d83-b88b-6e3c1f2404a9",
+      "duration_seconds": 28.439,
+      "usage": {
+        "input_tokens": 17123,
+        "cached_input_tokens": 4992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 722,
+        "reasoning_output_tokens": 0
+      },
+      "config_sha256": "b8d8dbb71f77940c7851af766ac1133e3b74cbde3686c35ad3fb2b54f0e8df7e",
+      "prompt_sha256": "c028003fc61dcb225a1db1e4c4a5c3813a0d48633b9521d53daaf559cb6b37b4",
+      "visible_words": 473,
+      "word_limit": 600,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 0,
+      "file_change_events": 0
+    },
+    {
+      "phase": "sa02_cross",
+      "thread_id": "01a08586-9ec8-7a83-8d90-447b1922348d",
+      "duration_seconds": 28.315,
+      "usage": {
+        "input_tokens": 17125,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 778,
+        "reasoning_output_tokens": 0
+      },
+      "config_sha256": "81722edfc9663bde13f86b6a5ff2f6cc59b5bbd40bcfff96af9f719ef3c40459",
+      "prompt_sha256": "0e9fcbf056f3ab4dbdb5ac0451b3deaa412483ff80610f74766572b004959a76",
+      "visible_words": 497,
+      "word_limit": 600,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 0,
+      "file_change_events": 0
+    },
+    {
+      "phase": "main_first",
+      "thread_id": "01a08587-0ff1-7073-b817-7addb1999394",
+      "duration_seconds": 311.551,
+      "usage": {
+        "input_tokens": 188709,
+        "cached_input_tokens": 163072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9796,
+        "reasoning_output_tokens": 296
+      },
+      "config_sha256": "44167c0ed68aa18776855ece812421b2c75079ef6916ae467a31b654a95324d4",
+      "prompt_sha256": "05687f82c7203a3e10c29c16ff4b5ce55ee1dd4b5a9cd4b52764634ae48b8546",
+      "visible_words": 195,
+      "word_limit": null,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 6,
+      "file_change_events": 0
+    },
+    {
+      "phase": "sa03_critic",
+      "thread_id": "01a0858b-d0df-73c3-987c-6e285369fbef",
+      "duration_seconds": 48.689,
+      "usage": {
+        "input_tokens": 26532,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1402,
+        "reasoning_output_tokens": 451
+      },
+      "config_sha256": "9e20f7d8aac7143ce6b547147ab98b43054b0ec9e7c04047ed061cc955ccf3ce",
+      "prompt_sha256": "7141bd56f29e8bfca892e0a3fb915b429fa6fbada329acf411f459494a49a46b",
+      "visible_words": 624,
+      "word_limit": 1200,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 0,
+      "file_change_events": 0
+    },
+    {
+      "phase": "main_final",
+      "thread_id": "01a0858c-9011-7e33-a3c3-388d6dc58cb0",
+      "duration_seconds": 204.16,
+      "usage": {
+        "input_tokens": 268666,
+        "cached_input_tokens": 222976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6113,
+        "reasoning_output_tokens": 208
+      },
+      "config_sha256": "44167c0ed68aa18776855ece812421b2c75079ef6916ae467a31b654a95324d4",
+      "prompt_sha256": "6a3e7cc03caa4daeb3a87a75ca902963913e06f4557d04faefdcbb5da67d8bcf",
+      "visible_words": 241,
+      "word_limit": null,
+      "within_word_limit": true,
+      "exit_code": 0,
+      "command_events": 7,
+      "file_change_events": 0
+    }
+  ],
+  "publisher": "scripts/publish_v2.py",
+  "publisher_sha256": "9c54d54bc726e9b8a4d5cfbd706b31d2f564e9c2c824b60c0d85de79bf34cb3b",
+  "minutes": "runs/astra-medium-scientific-v2-001/PV.md",
+  "trace": "runs/astra-medium-scientific-v2-001/trace.json",
+  "files": [
+    {
+      "path": "solution/CONTROLES.md",
+      "sha256": "a5c60460230ccef5dba891b4710135a14b58d718901427b2d9184d8cbf00e8ca",
+      "lines": 158
+    },
+    {
+      "path": "solution/DECISIONS.md",
+      "sha256": "0d32be2fc0c34a28a82f8b17640e83b20237fec103460af1c809b327f2b1c36b",
+      "lines": 108
+    },
+    {
+      "path": "solution/README.md",
+      "sha256": "a2873106d6dead0013995749bca399edc13158e9c7a1d538f8f96e333ed1e8fb",
+      "lines": 127
+    },
+    {
+      "path": "solution/controle_final.py",
+      "sha256": "89a8842823b59628f78cbe30998a5935fc8b3177c3f708b8ca5aae8d38024e59",
+      "lines": 76
+    },
+    {
+      "path": "solution/scientific_calculator.py",
+      "sha256": "7e4b7435700577c84c2c3da2216ca97ff3c37fa59c582b0d622d4eb156204c8f",
+      "lines": 348
+    }
+  ],
+  "minutes_sha256": "73f3a7ae6cd2cd18a20479e5ce660857e322204804a9f3df2cc894ccae8e9f14",
+  "trace_sha256": "018739d9648c4b7b9f267a9028bd9c60f3e5bc4d5977324d8b7a2cb723603cb1"
 }
