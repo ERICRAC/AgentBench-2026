@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Conclusions — quand le collectif devient-il rentable ?](CONCLUSIONS.md)
+
 Les V1 antérieures sont [archivées](ARCHIVE_V1.md). Les mentions « référence courante » dans leurs rapports décrivent leur statut historique, pas la campagne Astra.
 
 **Parcours conseillé :** [comprendre les 15 groupes et 71 contrôles](../docs/acceptance-tests.md)

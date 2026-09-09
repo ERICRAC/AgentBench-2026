@@ -2,6 +2,10 @@
 
 **Français** · [English (UK)](reading-guide.en.md) · [Español](reading-guide.es.md) · [Português](reading-guide.pt.md)
 
+[Conclusions — quand le collectif devient-il rentable ?](../results/CONCLUSIONS.md)
+
+Les noms lisibles sont **calculatrice simple** (Core) et **calculatrice scientifique** (Scientific). Les identifiants techniques et les preuves historiques sont inchangés.
+
 Laboratoire R&D sur la collaboration des agents : les calculatrices sont les exercices communs. V1 = un candidat seul ; V2 = un écrivain et trois consultants ; V3 = futurs consultants locaux. On mesure qualité, temps et tokens : V2 n'est pas promise meilleure.
 
 | ID | Role |

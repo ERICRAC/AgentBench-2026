@@ -2,6 +2,10 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+> On the tasks studied so far, coordination costs exceed the measured benefit. AgentBench now seeks the conditions where this relationship reverses: difficulty, specialisation, parallelism and the cost of errors.
+
+[Conclusions — when does collaboration pay off?](results/CONCLUSIONS.en.md) — This concerns available comparisons at identical model and effort, using the current advisory V2. It does not condemn all agent teams. Official tests do not fully measure the additional corrections observed.
+
 R&D laboratory on agent collaboration: calculators are shared exercises. V1 = one candidate alone; V2 = one writer and three consultants; V3 = future local consultants. We measure quality, time and tokens: V2 is not promised to be better.
 
 [Guide](docs/reading-guide.en.md) · [V2 Astra medium](results/astra-medium-v2.en.md) · [Astra/high](results/astra-v2-retired.en.md) · [requirements.txt](requirements.txt)
@@ -40,7 +44,7 @@ Active campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](do
 | Main campaign | V1 · Codex alone | Next run | Protocols |
 | :---: | :---: | :---: | :---: |
 | **4 / 6 validated** | **2 / 2 replicated** | **V2 observation gate** | **Challenges and V2 protocol frozen** |
-| `████████░░░░` **67%** | Core **6 groups · 14 checks** · Scientific **9 groups · 57 checks** | Compare gain and noise | Independent verifiers |
+| `████████░░░░` **67%** | Simple **6 groups · 14 checks** · Scientific **9 groups · 57 checks** | Compare gain and noise | Independent verifiers |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -56,18 +60,18 @@ Active campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](do
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex alone · 2/2"]
-      V1C["✓ Core Calculator<br/>6 groups · 14 checks"]
+      V1C["✓ Simple Calculator<br/>6 groups · 14 checks"]
       V1S["✓ Scientific Calculator<br/>9 groups · 57 checks"]
     end
     G1{"V1 observations<br/>solo baseline"}
     subgraph V2["V2 · Codex team · 2/2"]
-      V2C["✓ Core Calculator<br/>6 groups · 14 checks"]
+      V2C["✓ Simple Calculator<br/>6 groups · 14 checks"]
       V2S["✓ Scientific Calculator<br/>9 groups · 57 checks"]
     end
     G2{"V2 observations<br/>possible refinement"}
     V21["V2.1 · optimised variant<br/>optional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
-      V3C["○ Core Calculator<br/>pending"]
+      V3C["○ Simple Calculator<br/>pending"]
       V3S["○ Scientific Calculator<br/>pending"]
     end
     G3{"V3 observations<br/>final comparison"}
@@ -93,7 +97,7 @@ flowchart LR
     class V21,V4 optional;
 ```
 
-**How to read it:** the six V1–V3 × Core Calculator–Scientific Calculator cells
+**How to read it:** the six V1–V3 × Simple Calculator–Scientific Calculator cells
 form the mandatory campaign. V2.1 and V4 are not included in the 4/6 count: they are explicitly
 optional extensions.
 
@@ -122,10 +126,10 @@ This expression illustrates the project's intuition; it is not a computed score 
 ## What is actually tested
 
 The `6/6` and `9/9` verdicts count **`unittest` groups**, not every assertion.
-On a passing run, the 15 groups execute **71 elementary checks: 14 Core and 57
+On a passing run, the 15 groups execute **71 elementary checks: 14 Simple and 57
 Scientific**.
 
-### Core Calculator — 6 groups / 14 checks
+### Simple Calculator — 6 groups / 14 checks
 
 - [x] C01 · Required files — 2 checks.
 - [x] C02 · No dynamic execution — 1 check.
@@ -154,14 +158,14 @@ Scientific**.
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Core Calculator | **6/6 groups · 14/14 checks** | 100.175 s | 120 478¹ |
+| [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Simple Calculator | **6/6 groups · 14/14 checks** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9 groups · 57/57 checks** | 399.478 s | 220 510¹ |
-| [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Core Calculator | **6/6 groups · 14/14 checks** | 189.964 s | 158 101¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Simple Calculator | **6/6 groups · 14/14 checks** | 189.964 s | 158 101¹ |
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,009.468 s | 296 275¹ |
-| [`sol-core-v2-001`](results/sol-v2-core.en.md) | V2 · Sol team | Core Calculator | **6/6 groups · 14/14 checks** | 796.534 s | 559 088¹ |
+| [`sol-core-v2-001`](results/sol-v2-core.en.md) | V2 · Sol team | Simple Calculator | **6/6 groups · 14/14 checks** | 796.534 s | 559 088¹ |
 | [`sol-scientific-v2-001`](results/sol-v2.en.md) | V2 · Sol team | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,587.605 s | 916 538¹ |
-| [`astra-core-v2-001`](results/astra-v2-core.en.md) | V2 · Astra team | Calculator Core | **6/6 groups · 14/14 checks** | 700.994 s | 572 168¹ |
-| [`astra-medium-core-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Core | **6/6 groups · 14/14 checks** | 375.169 s | 408 616¹ |
+| [`astra-core-v2-001`](results/astra-v2-core.en.md) | V2 · Astra team | Calculator Simple | **6/6 groups · 14/14 checks** | 700.994 s | 572 168¹ |
+| [`astra-medium-core-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Simple | **6/6 groups · 14/14 checks** | 375.169 s | 408 616¹ |
 | [`astra-medium-scientific-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Scientific | **9/9 groups · 57/57 checks** | 648.008 s | 570 382¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
@@ -194,25 +198,25 @@ The comparison and versioning rules are defined in
 
 ## Experimental TODO
 
-- [x] Freeze the **Calculator Core** and **Scientific Calculator** challenges and verifiers.
+- [x] Freeze the **Calculator Simple** and **Scientific Calculator** challenges and verifiers.
 - [x] Preserve the first `001` V1 observations without rewriting them.
-- [x] Replicate V1 with pinned model, effort and context: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
+- [x] Replicate V1 with pinned model, effort and context: Simple `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
 - [x] Control V1 like for like with Sol/high: **15/15 groups and 71/71 elementary checks**, with [comparison published](results/sol-vs-astra-v1.en.md).
 - [x] Decide and freeze V2 roles, exchanges, budgets and [metrics](governance/V2_PROTOCOL.en.md).
 - [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
-- [x] Run and publish **V2 Core Calculator**: **6/6 groups and 14/14 checks**, with [report and minutes](results/sol-v2-core.en.md).
+- [x] Run and publish **V2 Simple Calculator**: **6/6 groups and 14/14 checks**, with [report and minutes](results/sol-v2-core.en.md).
 - [x] Run and publish **V2 Scientific Calculator** without changing the protocol: **9/9 groups and 57/57 checks**, with [V2 synthesis](results/sol-v2.en.md).
 - [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
 - [ ] If activated, run V2.1 separately on both difficulty levels.
 - [ ] Freeze V3's Ollama integration, local models and context limits.
-- [ ] Run and publish **V3 Core Calculator**, then **V3 Scientific Calculator**.
+- [ ] Run and publish **V3 Simple Calculator**, then **V3 Scientific Calculator**.
 - [ ] Compare the six main runs: quality, cost, corrections, interventions and social noise.
 - [ ] Decide after the synthesis whether the historical V4 control is worthwhile.
 - [ ] After any substantial refinement, open a new campaign and rerun comparable V1…Vn baselines.
 
 ## Two difficulty levels
 
-**Calculator Core** is short and repeatable. **Scientific Calculator** raises
+**Calculator Simple** is short and repeatable. **Scientific Calculator** raises
 the bar with safe expression parsing without `eval()`, scientific functions
 and constants, an `x` variable, domain handling, sampling and dependency-free
 SVG plots.

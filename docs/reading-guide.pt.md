@@ -2,6 +2,10 @@
 
 [Français](reading-guide.md) · [English (UK)](reading-guide.en.md) · [Español](reading-guide.es.md) · **Português**
 
+[Conclusões — quando compensa colaborar?](../results/CONCLUSIONS.pt.md)
+
+Os nomes são **calculadora simples** (Core) e **calculadora científica** (Scientific). Identificadores técnicos e provas históricas inalterados.
+
 Laboratório I&D sobre colaboração de agentes: as calculadoras são exercícios comuns. V1 = um candidato sozinho; V2 = um escritor e três consultores; V3 = futuros consultores locais. Medem-se qualidade, tempo e tokens: não se promete que V2 seja melhor.
 
 | ID | Role |

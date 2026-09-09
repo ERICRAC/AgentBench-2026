@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+[Conclusiones — ¿cuándo compensa colaborar?](CONCLUSIONS.es.md)
+
 Las V1 anteriores están [archivadas](ARCHIVE_V1.es.md). «Referencia actual» en sus informes describe su estado histórico, no la campaña Astra.
 
 **Recorrido aconsejado:** [entender los 15 grupos y 71 controles](../docs/acceptance-tests.es.md)

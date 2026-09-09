@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](astra-medium-v2.en.md) · [Español](astra-medium-v2.es.md) · [Português](astra-medium-v2.pt.md)
 
+[Conclusions — quand le collectif devient-il rentable ?](CONCLUSIONS.md)
+
 Les deux runs sont terminés et confirmés indépendamment : **15/15 groupes, 71/71 contrôles**, dès le premier passage officiel. Total : **1 023.177 s et 978 998 tokens entrée + sortie**. Aucune interruption dans cette série. Ces mesures excluent maintenance, publication et anciennes tentatives.
 
 ## Verdicts

@@ -2,6 +2,10 @@
 
 [Français](reading-guide.md) · **English (UK)** · [Español](reading-guide.es.md) · [Português](reading-guide.pt.md)
 
+[Conclusions — when does collaboration pay off?](../results/CONCLUSIONS.en.md)
+
+Reader-facing names are **simple calculator** (Core) and **scientific calculator** (Scientific). Technical identifiers and historical evidence remain unchanged.
+
 R&D laboratory on agent collaboration: calculators are shared exercises. V1 = one candidate alone; V2 = one writer and three consultants; V3 = future local consultants. We measure quality, time and tokens: V2 is not promised to be better.
 
 | ID | Role |

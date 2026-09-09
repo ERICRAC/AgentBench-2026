@@ -2,6 +2,10 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+> En las tareas estudiadas, el coste de coordinación supera el beneficio medido. AgentBench busca las condiciones donde se invierte esta relación: dificultad, especialización, paralelismo y coste de los errores.
+
+[Conclusiones — ¿cuándo compensa colaborar?](results/CONCLUSIONS.es.md) — Esto se refiere a comparaciones disponibles con modelo y esfuerzo idénticos y la V2 consultiva actual, no a todos los equipos. Las pruebas oficiales no miden todas las correcciones adicionales observadas.
+
 Laboratorio I+D sobre colaboración de agentes: las calculadoras son ejercicios comunes. V1 = un candidato solo; V2 = un escritor y tres consultores; V3 = futuros consultores locales. Se miden calidad, tiempo y tokens: no se promete que V2 sea mejor.
 
 [Guide](docs/reading-guide.es.md) · [V2 Astra medium](results/astra-medium-v2.es.md) · [Astra/high](results/astra-v2-retired.es.md) · [requirements.txt](requirements.txt)
@@ -39,7 +43,7 @@ Campaña activa: **Sol high · `sol-high-control-001`**. [Catálogo de 71 contro
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |
 | :---: | :---: | :---: | :---: |
 | **4 / 6 validadas** | **2 / 2 replicadas** | **Hito de observación V2** | **Retos y protocolo V2 fijados** |
-| `████████░░░░` **67 %** | Core **6 grupos · 14 controles** · Scientific **9 grupos · 57 controles** | Comparar mejora y ruido | Verificadores independientes |
+| `████████░░░░` **67 %** | simple **6 grupos · 14 controles** · científica **9 grupos · 57 controles** | Comparar mejora y ruido | Verificadores independientes |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {
@@ -51,19 +55,19 @@ Campaña activa: **Sol high · `sol-high-control-001`**. [Catálogo de 71 contro
 }}}%%
 flowchart LR
     subgraph V1["V1 · Codex solo · 2/2"]
-      V1C["✓ Calculadora Core<br/>6 grupos · 14 controles"]
-      V1S["✓ Calculadora Scientific<br/>9 grupos · 57 controles"]
+      V1C["✓ Calculadora simple<br/>6 grupos · 14 controles"]
+      V1S["✓ Calculadora científica<br/>9 grupos · 57 controles"]
     end
     G1{"Observaciones V1<br/>referencia individual"}
     subgraph V2["V2 · Equipo Codex · 2/2"]
-      V2C["✓ Calculadora Core<br/>6 grupos · 14 controles"]
-      V2S["✓ Calculadora Scientific<br/>9 grupos · 57 controles"]
+      V2C["✓ Calculadora simple<br/>6 grupos · 14 controles"]
+      V2S["✓ Calculadora científica<br/>9 grupos · 57 controles"]
     end
     G2{"Observaciones V2<br/>posible ajuste"}
     V21["V2.1 · variante optimizada<br/>opcional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
-      V3C["○ Calculadora Core<br/>pendiente"]
-      V3S["○ Calculadora Scientific<br/>pendiente"]
+      V3C["○ Calculadora simple<br/>pendiente"]
+      V3S["○ Calculadora científica<br/>pendiente"]
     end
     G3{"Observaciones V3<br/>comparación final"}
     V4["V4 · control AutoGen<br/>opcional"]
@@ -86,7 +90,7 @@ flowchart LR
     class V21,V4 optional;
 ```
 
-Las seis celdas V1–V3 × Calculadora Core–Calculadora Scientific forman la
+Las seis celdas V1–V3 × Calculadora simple–Calculadora científica forman la
 campaña obligatoria. V2.1 y V4 son extensiones opcionales.
 
 ## Pregunta experimental
@@ -111,17 +115,17 @@ La fórmula ilustra la intuición del proyecto; no es una puntuación que sume u
 ## Qué se prueba realmente
 
 `6/6` y `9/9` cuentan **grupos `unittest`**, no todas las aserciones. En una
-ejecución correcta, los 15 grupos realizan **71 controles: 14 Core y 57
-Scientific**.
+ejecución correcta, los 15 grupos realizan **71 controles: 14 simple y 57
+científica**.
 
-### Core — 6 grupos / 14 controles
+### simple — 6 grupos / 14 controles
 
 - [x] C01 archivos (2); C02 sin ejecución dinámica (1).
 - [x] C03 cuatro operaciones verificadas por separado (4).
 - [x] C04 operador desconocido (1); C05 división por cero (1).
 - [x] C06 CLI, errores y recuperación (5).
 
-### Scientific — 9 grupos / 57 controles
+### científica — 9 grupos / 57 controles
 
 - [x] S01 entregables y documentación (7); S02 seguridad (2).
 - [x] S03 operadores y prioridades (10); S04 lenguaje matemático (6).
@@ -136,15 +140,15 @@ actas y trazas. La cobertura no es una nota absoluta de calidad.
 
 | Ejecución | Organización | Objetivo | Veredicto | Tiempo | Tokens observados |
 | --- | --- | --- | ---: | ---: | ---: |
-| [`astra-core-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora Core | **6/6 grupos · 14/14 controles** | 100.175 s | 120 478¹ |
-| [`astra-scientific-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 399.478 s | 220 510¹ |
-| [`sol-core-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora Core | **6/6 grupos · 14/14 controles** | 189.964 s | 158 101¹ |
-| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 1 009.468 s | 296 275¹ |
-| [`sol-core-v2-001`](results/sol-v2-core.es.md) | V2 · Equipo Sol | Calculadora Core | **6/6 grupos · 14/14 controles** | 796.534 s | 559 088¹ |
-| [`sol-scientific-v2-001`](results/sol-v2.es.md) | V2 · Equipo Sol | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 1 587.605 s | 916 538¹ |
-| [`astra-core-v2-001`](results/astra-v2-core.es.md) | V2 · Equipo Astra | Calculadora Core | **6/6 grupos · 14/14 controles** | 700.994 s | 572 168¹ |
-| [`astra-medium-core-v2-001`](results/astra-medium-v2.es.md) | V2 · Equipo Astra medium | Calculadora Core | **6/6 grupos · 14/14 controles** | 375.169 s | 408 616¹ |
-| [`astra-medium-scientific-v2-001`](results/astra-medium-v2.es.md) | V2 · Equipo Astra medium | Calculadora Scientific | **9/9 grupos · 57/57 controles** | 648.008 s | 570 382¹ |
+| [`astra-core-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora simple | **6/6 grupos · 14/14 controles** | 100.175 s | 120 478¹ |
+| [`astra-scientific-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora científica | **9/9 grupos · 57/57 controles** | 399.478 s | 220 510¹ |
+| [`sol-core-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora simple | **6/6 grupos · 14/14 controles** | 189.964 s | 158 101¹ |
+| [`sol-scientific-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora científica | **9/9 grupos · 57/57 controles** | 1 009.468 s | 296 275¹ |
+| [`sol-core-v2-001`](results/sol-v2-core.es.md) | V2 · Equipo Sol | Calculadora simple | **6/6 grupos · 14/14 controles** | 796.534 s | 559 088¹ |
+| [`sol-scientific-v2-001`](results/sol-v2.es.md) | V2 · Equipo Sol | Calculadora científica | **9/9 grupos · 57/57 controles** | 1 587.605 s | 916 538¹ |
+| [`astra-core-v2-001`](results/astra-v2-core.es.md) | V2 · Equipo Astra | Calculadora simple | **6/6 grupos · 14/14 controles** | 700.994 s | 572 168¹ |
+| [`astra-medium-core-v2-001`](results/astra-medium-v2.es.md) | V2 · Equipo Astra medium | Calculadora simple | **6/6 grupos · 14/14 controles** | 375.169 s | 408 616¹ |
+| [`astra-medium-scientific-v2-001`](results/astra-medium-v2.es.md) | V2 · Equipo Astra medium | Calculadora científica | **9/9 grupos · 57/57 controles** | 648.008 s | 570 382¹ |
 
 ¹ Entrada + salida acumuladas. Los informes separan caché, razonamiento y
 correcciones; los datos ausentes nunca se reconstruyen a posteriori.
@@ -165,14 +169,14 @@ los resultados anteriores. Véase el [plan experimental](governance/EXPERIMENTAL
 
 ## Tareas experimentales
 
-- [x] Congelar las pruebas de Calculadora Core y Calculadora Scientific.
+- [x] Congelar las pruebas de Calculadora simple y Calculadora científica.
 - [x] Conservar las primeras observaciones V1 `001` sin reescribirlas.
-- [x] Replicar V1 con modelo, esfuerzo y contexto fijados: Core `astra-core-v1-002` **6/6**, Scientific `astra-scientific-v1-002` **9/9**.
+- [x] Replicar V1 con modelo, esfuerzo y contexto fijados: simple `astra-core-v1-002` **6/6**, científica `astra-scientific-v1-002` **9/9**.
 - [x] Controlar V1 con Sol/high: **15/15 grupos y 71/71 controles elementales**, con [comparación publicada](results/sol-vs-astra-v1.es.md).
 - [x] Decidir y fijar roles, intercambios, presupuestos y [métricas V2](governance/V2_PROTOCOL.es.md).
 - [x] Validar el preflight V2: aislamiento, configuración por rol, trazas visibles y contadores. [PV](results/astra-v2-preflight.es.md).
-- [x] Ejecutar y publicar V2 Calculadora Core: **6/6 grupos y 14/14 controles**, con [informe y acta](results/sol-v2-core.es.md).
-- [x] Ejecutar y publicar V2 Calculadora Scientific sin cambiar el protocolo: **9/9 grupos y 57/57 controles**, con [síntesis V2](results/sol-v2.es.md).
+- [x] Ejecutar y publicar V2 Calculadora simple: **6/6 grupos y 14/14 controles**, con [informe y acta](results/sol-v2-core.es.md).
+- [x] Ejecutar y publicar V2 Calculadora científica sin cambiar el protocolo: **9/9 grupos y 57/57 controles**, con [síntesis V2](results/sol-v2.es.md).
 - [ ] Analizar V2 y decidir si V2.1 aporta una hipótesis medible.
 - [ ] Congelar los modelos Ollama y los límites de contexto de V3.
 - [ ] Ejecutar V3 para ambos objetivos.

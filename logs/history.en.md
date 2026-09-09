@@ -228,3 +228,7 @@ Resume after quotas: add requirements.txt and a role guide, retire Astra/high V2
 Core Astra medium completed and verified: 6/6 groups, 14/14 checks, 375.169 s, 408 616 tokens. Published before Scientific. At the follow-up request, complete Astra high Core is restored; Scientific high remains interrupted with incomplete metrics.
 
 Astra/medium V2 completed without interruption: 15/15 groups, 71/71 checks, 1 023.177 s and 978 998 tokens. Reports, role-labelled minutes, traces and decisions published. Scientific: three correction groups before the first official verdict. No extra V1 or governance change. Core high restored; Scientific high retained as an interruption with incomplete costs.
+
+## Exchange 025
+
+Publish the coordination-cost conclusion and crossover research question at the top of the README and in a central synthesis. Distinguish simple/scientific calculators from V1/V2 organisations. Propose solo, advisory, parallel development and a pair using Astra medium, without launching runs or changing governance. Across-difficulty comparisons use each identical exercise's V2/V1 differences; no threshold or future gain is claimed.

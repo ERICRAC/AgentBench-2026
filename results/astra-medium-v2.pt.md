@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v2.md) · [English (UK)](astra-medium-v2.en.md) · [Español](astra-medium-v2.es.md) · **Português**
 
+[Conclusões — quando compensa colaborar?](CONCLUSIONS.pt.md)
+
 Ambas as tentativas terminadas e confirmadas independentemente: **15/15 grupos, 71/71 controlos**, na primeira passagem oficial. Total: **1 023.177 s e 978 998 tokens entrada + saída**. Sem interrupções nesta série. Excluem-se manutenção, publicação e tentativas anteriores.
 
 ## Veredictos

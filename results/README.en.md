@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+[Conclusions — when does collaboration pay off?](CONCLUSIONS.en.md)
+
 Earlier V1 runs are [archived](ARCHIVE_V1.en.md). “Current baseline” in those reports refers to their historical status, not the Astra campaign.
 
 **Suggested path:** [understand the 15 groups and 71 checks](../docs/acceptance-tests.en.md)

@@ -314,3 +314,7 @@ Reprise après quotas : ajouter requirements.txt et un guide des métiers, retir
 Core Astra medium terminé et vérifié : 6/6 groupes, 14/14 contrôles, 375.169 s, 408 616 tokens. Publication avant Scientific. À la demande complémentaire, Core Astra high est rétabli car complet ; Scientific high reste un résultat interrompu à métriques incomplètes.
 
 V2 Astra/medium terminée sans interruption : 15/15 groupes, 71/71 contrôles, 1 023.177 s et 978 998 tokens. Rapports, PV avec métiers, traces et décisions publiés. Scientific : trois groupes de corrections avant le premier verdict officiel. Aucun nouveau run V1, aucune évolution de gouvernance. Core high restauré ; Scientific high conservé comme interruption à coûts incomplets.
+
+## Échange 025
+
+Publier la conclusion sur le coût de coordination et la recherche du point de bascule, accessible dès le README et via une synthèse centrale. Distinguer calculatrice simple/scientifique des organisations V1/V2. Proposer solo, conseil, développement parallèle et binôme en Astra moyen, sans lancer de run ni modifier la gouvernance. Les comparaisons entre difficultés portent sur les écarts V2/V1 de chaque même exercice ; aucun seuil ni gain futur n'est affirmé.

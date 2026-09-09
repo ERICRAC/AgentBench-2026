@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v2.md) · **English (UK)** · [Español](astra-medium-v2.es.md) · [Português](astra-medium-v2.pt.md)
 
+[Conclusions — when does collaboration pay off?](CONCLUSIONS.en.md)
+
 Both runs completed and were independently confirmed: **15/15 groups, 71/71 checks**, on the first official pass. Total: **1 023.177 s and 978 998 input + output tokens**. No interruption in this series. Measurements exclude maintenance, publication and older attempts.
 
 ## Verdicts
