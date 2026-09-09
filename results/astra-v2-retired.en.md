@@ -2,7 +2,7 @@
 
 [Français](astra-v2-retired.md) · **English (UK)** · [Español](astra-v2-retired.es.md) · [Português](astra-v2-retired.pt.md)
 
-Removed at the sponsor's request; Sol V2 and all V1 runs preserved. Temporary local backup and Git history for previously published files (`9b03beb`), without rewriting history.
+Astra/high V2 runs had been removed at the sponsor's request. **Fully completed Core is restored** to the repository and dashboard following the new request. Both Scientific attempts remain retired and documented below. Sol V2 and all V1 runs remain. Temporary local backup and Git history remain available, without rewriting history.
 
 | Run | Tokens (input + output) |
 | --- | ---: |

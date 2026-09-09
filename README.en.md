@@ -158,6 +158,8 @@ Scientific**.
 | [`sol-scientific-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,009.468 s | 296 275¹ |
 | [`sol-core-v2-001`](results/sol-v2-core.en.md) | V2 · Sol team | Core Calculator | **6/6 groups · 14/14 checks** | 796.534 s | 559 088¹ |
 | [`sol-scientific-v2-001`](results/sol-v2.en.md) | V2 · Sol team | Scientific Calculator | **9/9 groups · 57/57 checks** | 1,587.605 s | 916 538¹ |
+| [`astra-core-v2-001`](results/astra-v2-core.en.md) | V2 · Astra team | Calculator Core | **6/6 groups · 14/14 checks** | 700.994 s | 572 168¹ |
+| [`astra-medium-core-v2-001`](results/astra-medium-v2.en.md) | V2 · Astra medium team | Calculator Core | **6/6 groups · 14/14 checks** | 375.169 s | 408 616¹ |
 
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.

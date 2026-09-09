@@ -217,3 +217,5 @@ alterada; segue-se o marco de observação V2.
 ## Troca 024
 
 Retomar após quotas: adicionar requirements.txt e guia de papéis, retirar V2 Astra/high e repetir V2 Astra/medium conservando Sol. Scientific high 002 passou 9/9 antes da quota final, confirmado independentemente. Remoção recuperável e custos parciais documentados. Duas tentativas novas pré-registadas; sem V1 medium comparável. Governação e protocolo inalterados; proposta Vx de passagem de código não ativada.
+
+Core Astra medium terminado e verificado: 6/6 grupos, 14/14 controlos, 375.169 s, 408 616 tokens. Publicado antes de Scientific. Pelo pedido adicional, Core Astra high completo é reposto; Scientific high continua interrompido com métricas incompletas.

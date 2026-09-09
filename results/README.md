@@ -21,6 +21,8 @@ PV et la trace du run. Les anciens rapports utilisent parfois le raccourci
 | `sol-scientific-v1-001` | Codex seul | Calculatrice Scientific | 9/9 groupes · 57/57 contrôles | Contrôle modèle | [Comparaison](sol-vs-astra-v1.md) |
 | `sol-core-v2-001` | Équipe Codex | Calculatrice Core | 6/6 groupes · 14/14 contrôles | V2 Sol publiée | [Rapport, PV et trace](sol-v2-core.md) |
 | `sol-scientific-v2-001` | Équipe Codex | Calculatrice Scientific | 9/9 groupes · 57/57 contrôles | V2 Sol publiée | [Synthèse, PV et trace](sol-v2.md) |
+| `astra-core-v2-001` | Équipe Astra | Calculatrice Core | 6/6 groupes · 14/14 contrôles | V2 Astra | [Rapport](astra-v2-core.md) |
+| `astra-medium-core-v2-001` | Équipe Astra medium | Calculatrice Core | 6/6 groupes · 14/14 contrôles | V2 Astra medium | [Rapport](astra-medium-v2.md) |
 
 ## Données conservées
 

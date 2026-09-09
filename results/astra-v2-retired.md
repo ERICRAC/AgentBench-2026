@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](astra-v2-retired.en.md) · [Español](astra-v2-retired.es.md) · [Português](astra-v2-retired.pt.md)
 
-Retirées à la demande du commanditaire ; V2 Sol et toutes les V1 conservées. Sauvegarde locale temporaire et historique Git des fichiers déjà publiés (`9b03beb`), sans réécriture.
+Les V2 Astra/high avaient été retirées à la demande du commanditaire. **Core, entièrement terminé, est rétabli** dans le dépôt et le tableau de bord à sa nouvelle demande. Les deux Scientific restent retirés et documentés ci-dessous. Sol V2 et toutes les V1 sont conservées. La sauvegarde locale temporaire et l'historique Git restent disponibles, sans réécriture.
 
 | Run | Tokens (input + output) |
 | --- | ---: |

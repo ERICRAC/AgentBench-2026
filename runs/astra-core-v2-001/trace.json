@@ -1,0 +1,355 @@
+{
+  "run_id": "astra-core-v2-001",
+  "note": "Observable agent messages, commands and file changes only; internal reasoning excluded. Full screened prompts and replies are in PV.md.",
+  "wall_duration_seconds": 700.994,
+  "sessions": [
+    {
+      "phase": "sa01_initial",
+      "label": "01-sa01-initial",
+      "thread_id": "01a0800a-dc24-7913-a599-dde3e062a7a9",
+      "config_file": "runs/astra-core-v2-001/config-sa-01.toml",
+      "config_sha256": "054bdf5dfa609f5614709e4014c5842b4f50c428f71e270fa1c71e6f90f57a6c",
+      "prompt_sha256": "293bb71d20598a44c5357277aaba44ccd3297d634fb733b38123b12f322d9e42",
+      "duration_seconds": 48.093,
+      "usage": {
+        "input_tokens": 14260,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1342,
+        "reasoning_output_tokens": 71
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Avis SA-01 fondé uniquement sur le challenge fourni. Aucune consultation du dépôt, exécution, modification ou délégation. Le contrat permet une réalisation simple ; les principaux arbitrages concernent la grammaire des entrées et les valeurs numériques particulières.\n\n1. **Obligations à retenir**\n\n   - Livrer exclusivement `calculator.py` et `README.md` dans `solution/`, avec logique métier et CLI dans le premier, lancement, utilisation et exemples dans le second.\n   - Exposer `calculate(left: float, operator: str, right: float) -> float` et prendre en charge exactement les quatre opérateurs annoncés.\n   - Accepter les nombres entiers, décimaux et négatifs ; lever `ValueError` pour un opérateur inconnu et `ZeroDivisionError` pour une division par zéro.\n   - Ne jamais employer `eval()` ou `exec()` ; utiliser uniquement la bibliothèque standard.\n   - Lancer une boucle interactive avec la commande indiquée ; reconnaître `quit` et `exit`.\n   - Pour une expression invalide ou une division par zéro, afficher une erreur compréhensible sans traceback, puis permettre une nouvelle saisie.\n   - Ne modifier ni cahier des charges ni tests et ne solliciter aucune intervention humaine hors autorisation système.\n\n   **Recommandation :** distinguer explicitement les deux interfaces. Les exceptions prescrites appartiennent au contrat Python ; leur traduction en messages appartient à la CLI. Retourner un message d’erreur depuis `calculate` compromettrait ce contrat.\n\n2. **Ambiguïtés nécessitant un arbitrage**\n\n   | Sujet | Lecture du contrat | Recommandation |\n   |---|---|---|\n   | Espaces | L’exemple contient trois éléments séparés par des espaces ; les variantes ne sont pas définies. | Accepter les espaces périphériques, multiples et les tabulations. Considérer les formes compactes comme `2+3` hors périmètre minimal. |\n   | Grammaire | Une ligne représente une opération binaire. | Rejeter les opérandes manquants, éléments supplémentaires, parenthèses et opérations chaînées. Ne pas ajouter de priorité opératoire. |\n   | Commandes de sortie | Seuls `quit` et `exit` sont cités. | Les reconnaître après retrait des espaces périphériques. La reconnaissance des majuscules reste facultative. |\n   | Ligne vide | Aucun comportement spécifique. | La traiter comme une expression invalide et poursuivre la boucle. |\n   | Décimaux | Le séparateur et la notation scientifique ne sont pas précisés. | Documenter le point décimal. Ne pas ajouter de conversion implicite de la virgule. L’acceptation de notation scientifique reste compatible avec le contrat. |\n   | Valeurs non finies | `NaN`, les infinis et les débordements ne sont pas spécifiés. | Les identifier comme un choix de politique numérique ; ne pas inventer une obligation de rejet ni étendre silencieusement les exceptions de l’API. |\n   | Types à l’appel Python | Les annotations donnent les types attendus sans définir les appels hors contrat. | Garantir les entrées numériques annoncées, sans imposer une conversion générale de chaînes ou d’objets. |\n   | Présentation du résultat | Aucune chaîne de sortie exacte n’est prescrite. | Préférer un affichage numérique simple et éviter les arrondis arbitraires. |\n\n   Ces arbitrages peuvent être pris et documentés par le candidat sans intervention humaine.\n\n3. **Erreurs fonctionnelles prioritaires**\n\n   - **Confusion entre signe et opérateur :** une valeur négative doit rester un opérande valide, y compris à droite.\n   - **Zéro signé :** une division par `-0.0` constitue également une division par zéro.\n   - **Validation incomplète :** une ligne contenant une expression valide suivie de contenu supplémentaire doit être rejetée intégralement.\n   - **Perte de continuité :** un message d’erreur correct ne suffit pas si le programme termine ensuite ou ne traite plus les saisies.\n   - **Import déclenchant la CLI :** l’exposition d’une fonction réutilisable appelle une séparation du lancement interactif ; importer le module ne devrait pas attendre une saisie.\n   - **Chemins de lancement :** distinguer dans le README le lancement depuis la racine du dépôt et depuis le dossier de solution.\n\n4. **Surfaces d’attaque et robustesse**\n\n   **Priorité élevée :** traiter les saisies comme des données. Aucune entrée ne doit devenir du code Python, une commande système ou un nom de fonction résolu dynamiquement. L’interdiction d’`eval()` et d’`exec()` ne justifie pas un mécanisme d’exécution équivalent.\n\n   **Priorité élevée :** contenir les erreurs attendues à la frontière CLI. Une capture trop étroite peut exposer un traceback ; une capture générale peut masquer des défauts internes et gêner l’arrêt du programme.\n\n   **Priorité moyenne :** terminer proprement à la fin de l’entrée standard. Continuer indéfiniment après EOF provoquerait une boucle inutile. La gestion propre d’une interruption clavier est également souhaitable, mais n’est pas explicitement exigée.\n\n   **Priorité secondaire :** les entrées démesurées peuvent consommer des ressources. Le challenge ne fixe aucune limite ; éviter d’ajouter une restriction arbitraire aux nombres valides sans besoin démontré.\n\n5. **Vérification et décision proposées**\n\n   Retenir le périmètre minimal : opération binaire, quatre opérateurs, erreurs explicites et boucle persistante. Vérifier particulièrement une séquence mêlant calcul valide, erreur de syntaxe, division par zéro, nouveau calcul valide et sortie.\n\n   La commande officielle doit être exécutée par le candidat depuis la racine du dépôt, avec l’identifiant réel de la tentative. **Aucun résultat de vérification n’est disponible dans cet avis** ; le verdict technique demeure celui du vérificateur indépendant. Aucune livraison Git ne relève de cette consultation."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "sa02_initial",
+      "label": "02-sa02-initial",
+      "thread_id": "01a0800a-dc2c-7941-ab8b-e529f3d0eefa",
+      "config_file": "runs/astra-core-v2-001/config-sa-02.toml",
+      "config_sha256": "5b2bf317aca50314eae278200ba99b7d41adae83593c0c28a3d491fcd7e884ff",
+      "prompt_sha256": "f0f534375342da57fcca612e92ffeee64798e5ab5ee58a736aef615da217b20d",
+      "duration_seconds": 46.555,
+      "usage": {
+        "input_tokens": 14262,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1229,
+        "reasoning_output_tokens": 123
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Avis SA-02 : privilégier une architecture minimale, avec une fonction métier indépendante de la console et une boucle CLI responsable de la saisie, des messages et de la reprise après erreur.\n\n1. **Structure recommandée — à retenir**\n\n   Dans `calculator.py`, distinguer trois responsabilités : calculer une opération, interpréter une ligne et piloter la boucle interactive. Une petite fonction de lecture d’expression peut rendre la conversion des nombres testable, sans introduire de classes ni de framework.\n\n   Protéger le lancement de la CLI par le garde Python habituel : importer le module doit permettre d’appeler `calculate` sans attendre une saisie ni produire de sortie.\n\n   **Arbitrage :** retenir cette séparation légère. Une architecture à plusieurs modules serait disproportionnée et dépasserait les livrables demandés.\n\n2. **Invariants métier — obligatoires**\n\n   `calculate` doit :\n   - reconnaître exactement les quatre opérateurs annoncés ;\n   - préserver l’ordre des opérandes, particulièrement pour la soustraction et la division ;\n   - accepter les nombres négatifs et décimaux ;\n   - lever `ValueError` pour tout opérateur inconnu ;\n   - lever `ZeroDivisionError` lorsque le diviseur vaut zéro, y compris `-0.0` ;\n   - rester indépendante de toute entrée ou sortie console.\n\n   Une sélection explicite de l’opération suffit. Aucune évaluation dynamique n’est nécessaire.\n\n   **Arbitrage sensible :** contrôler la validité de l’opérateur avant une éventuelle vérification du diviseur. Avec un opérateur inconnu et un opérande droit nul, l’erreur pertinente reste `ValueError`. Ne pas transformer les exceptions métier en chaînes de caractères : leur présentation appartient à la CLI.\n\n3. **Syntaxe CLI — fixer un périmètre conservateur**\n\n   La forme documentée comprend deux nombres et un opérateur. Une séparation sur les espaces blancs permet de gérer naturellement plusieurs espaces, les tabulations et les espaces périphériques. Vérifier qu’il existe exactement trois éléments avant de convertir les opérandes.\n\n   Les nombres négatifs doivent être traités comme des opérandes signés : `-2 * -3` constitue un cas essentiel. Découper la ligne directement sur les caractères d’opération risquerait de confondre signe et opérateur.\n\n   **Arbitrage :** documenter la forme avec espaces. Le challenge n’impose pas explicitement `2+3`, les parenthèses ou les expressions composées ; leur prise en charge ajouterait une grammaire inutile.\n\n   Reconnaître `quit` et `exit` sur la ligne entière après retrait des espaces périphériques. L’insensibilité à la casse est une commodité facultative.\n\n4. **Gestion des erreurs et terminaison — obligatoires et recommandées**\n\n   Les erreurs de format, de conversion numérique, d’opérateur et de division par zéro doivent produire un message compréhensible, puis rendre la main à la boucle. Distinguer au minimum « expression invalide » et « division par zéro ».\n\n   Limiter les interceptions aux exceptions attendues. Une capture générale pourrait masquer un défaut de programmation tout en donnant l’apparence d’une CLI robuste.\n\n   **Arbitrage :** traiter également la fin de l’entrée standard comme une sortie normale. Ce comportement facilite l’utilisation par redirection et les vérifications automatisées. Une sortie propre sur interruption clavier est utile, mais secondaire par rapport aux obligations explicites.\n\n5. **Validation — prioriser les comportements observables**\n\n   Pour la fonction métier, couvrir les quatre opérations, les signes, les décimaux, les résultats nuls, les divisions non entières, les opérateurs inconnus et les deux représentations signées du zéro comme diviseur. Comparer les résultats décimaux avec une tolérance adaptée aux flottants.\n\n   Pour la CLI, utiliser des sessions complètes, notamment :\n   - erreur de syntaxe, puis calcul valide, puis `quit` ;\n   - division par zéro, puis calcul valide, puis `exit` ;\n   - ligne vide, nombre invalide et nombre incorrect d’éléments ;\n   - fin de fichier sans commande de sortie.\n\n   Vérifier les résultats, l’absence de traceback, la poursuite effective après erreur et la terminaison du processus. Éviter d’imposer un libellé exact de message ou d’invite que le contrat ne fixe pas.\n\n   **Arbitrage :** ne pas ajouter de fichier de tests aux deux livrables autorisés ni modifier les tests existants. L’agent principal doit exécuter la commande officielle depuis la racine du dépôt ; le verdict technique appartient au vérificateur indépendant.\n\n6. **Points ouverts et livraison**\n\n   Le contrat ne précise ni le format exact des résultats ni le traitement de `NaN` et des infinis. Éviter d’ajouter des restrictions sans nécessité démontrée. Le README doit expliquer le lancement, la syntaxe retenue, les sorties et la reprise après erreur, avec quelques exemples représentatifs.\n\n   Priorité d’exécution : fonction métier, interprétation des lignes, boucle résiliente, documentation, vérification officielle et correction des défauts confirmés.\n\nCet avis repose uniquement sur le challenge fourni. Aucun outil, dépôt, test ou sous-agent n’a été utilisé ; aucune modification ni opération Git n’a été effectuée."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "sa01_cross",
+      "label": "03-sa01-cross",
+      "thread_id": "01a0800b-97a2-7333-9998-c498639b4502",
+      "config_file": "runs/astra-core-v2-001/config-sa-01.toml",
+      "config_sha256": "054bdf5dfa609f5614709e4014c5842b4f50c428f71e270fa1c71e6f90f57a6c",
+      "prompt_sha256": "3df24dd2a16f6f0478fe9d8b79f4158e86bc4dcc337ca087962c0ab3f9e74fe3",
+      "duration_seconds": 27.954,
+      "usage": {
+        "input_tokens": 16285,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 664,
+        "reasoning_output_tokens": 67
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Je confirme l’essentiel de l’avis SA-02 et révise deux formulations de mon avis initial. Cette confrontation repose uniquement sur les deux avis reproduits ; le texte du challenge n’est pas présent ici, donc leur concordance ne constitue pas une vérification indépendante du contrat.\n\n**Accords et doublons.** Les deux avis convergent sur la séparation entre fonction métier et CLI, les exceptions prescrites, les opérandes négatifs, le zéro signé, le rejet intégral des expressions mal formées, la reprise après erreur et l’absence d’exécution dynamique. Ils recommandent également un import sans lancement interactif, une syntaxe documentée avec espaces et des vérifications portant sur les comportements observables. Ces recommandations peuvent être regroupées : leur répétition n’ajoute pas de preuve.\n\n**Apports utiles de SA-02.** La préservation de l’ordre des opérandes mérite une vérification explicite pour la soustraction et la division. L’opérateur inconnu associé à un opérande droit nul constitue aussi un cas discriminant : la présence de zéro ne doit pas provoquer une erreur de division lorsqu’aucune division valide n’est demandée. Enfin, les comparaisons avec une tolérance adaptée aux flottants évitent de confondre représentation numérique et défaut fonctionnel.\n\n**Révisions et réserves.** Aucun désaccord fonctionnel majeur n’apparaît. Deux distinctions doivent néanmoins rester explicites :\n\n- Une fonction dédiée à l’interprétation des lignes est une option d’organisation, pas une obligation contractuelle établie.\n- La sortie propre sur EOF reste une recommandation de robustesse d’après les textes fournis. De même, distinguer les messages selon leur cause est utile, mais ne permet pas d’imposer deux libellés précis.\n\nJe précise aussi ma formulation sur les noms de fonctions résolus dynamiquement : le risque concerne la résolution arbitraire pilotée par l’entrée. Une table fixe associant les quatre opérateurs autorisés à des opérations connues ne constitue pas, à elle seule, une surface d’exécution arbitraire.\n\n**Priorités consolidées.**\n\n1. Respecter le contrat métier et les interdictions : opérations autorisées, exceptions correctes, absence d’exécution des saisies et de dépendance interdite.\n2. Garantir les comportements CLI : validation complète, messages compréhensibles, continuité après erreur et sorties demandées.\n3. Vérifier les cas discriminants : signes, ordre des opérandes, opérateur inconnu avec zéro, import et session mêlant erreurs et réussites.\n4. Documenter les arbitrages non imposés : espaces, valeurs non finies, affichage et EOF ; éviter les restrictions arbitraires.\n\nAucun contrôle n’a été exécuté dans cette consultation. La vérification officielle et le verdict indépendant restent à établir ; aucune modification ni opération Git n’a été effectuée."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "sa02_cross",
+      "label": "04-sa02-cross",
+      "thread_id": "01a0800b-97a6-7883-af81-8b0b26e3b2bb",
+      "config_file": "runs/astra-core-v2-001/config-sa-02.toml",
+      "config_sha256": "5b2bf317aca50314eae278200ba99b7d41adae83593c0c28a3d491fcd7e884ff",
+      "prompt_sha256": "81302815969d09b690e824f45f20489e5c3e8c563c9833e113ec39a74d1ff583",
+      "duration_seconds": 33.817,
+      "usage": {
+        "input_tokens": 16287,
+        "cached_input_tokens": 9088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 693,
+        "reasoning_output_tokens": 0
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Je confirme la convergence des deux avis et révise un point de formulation : les choix de syntaxe proposés constituent un périmètre d’implémentation raisonnable, mais les textes cités ne permettent pas de les présenter tous comme des obligations explicites du challenge.\n\n**Accords et doublons.** Nous recommandons la même séparation légère : calcul sans entrée-sortie, interprétation d’une ligne, puis boucle interactive. Les exceptions métier doivent rester des exceptions dans `calculate` et devenir des messages à la frontière CLI. La protection du lancement à l’import, les opérandes négatifs, le zéro signé et la reprise après erreur sont également consensuels. Ces répétitions peuvent être fusionnées en une seule liste d’invariants ; elles ne justifient ni davantage de modules ni plusieurs campagnes de tests équivalentes.\n\n**Désaccord utile sur la portée de la grammaire.** SA-01 recommande de rejeter explicitement les formes compactes, parenthèses et opérations chaînées ; mon avis les considère hors périmètre minimal. La conséquence pratique peut être identique avec une lecture en trois éléments, mais la justification doit rester précise : documenter la syntaxe retenue, puis rejeter les lignes qui ne la respectent pas. Éviter d’affirmer que le contrat interdit expressément chaque variante non décrite. La validation doit mesurer les exigences établies, sans transformer une préférence de lecture en contrainte supplémentaire du vérificateur.\n\n**Compléments à retenir.** SA-01 précise utilement que les annotations de types n’imposent pas une conversion générale des arguments Python et qu’un affichage simple évite les arrondis arbitraires. Je maintiens aussi la priorité de l’erreur d’opérateur : un opérateur inconnu accompagné d’un opérande droit nul doit conduire à `ValueError`. Le contrôle du zéro ne concerne que la division. Sur les valeurs non finies, aucun désaccord : ne pas ajouter de politique restrictive sans fondement contractuel.\n\n**Priorités consolidées.**\n\n1. **Contrat métier et livrables.** Garantir les quatre opérations, l’ordre des opérandes, les exceptions prescrites et l’indépendance de la console ; respecter les fichiers autorisés et l’interdiction d’évaluation dynamique.\n2. **Continuité observable de la CLI.** Vérifier une session réunissant calcul valide, erreur de syntaxe, division par zéro, nouveau calcul valide et sortie. Le traitement effectif du calcul suivant établit la reprise ; l’affichage d’un message seul ne suffit pas.\n3. **Cas sensibles ciblés.** Vérifier signes des deux opérandes, décimaux avec tolérance adaptée, `-0.0`, opérateur inconnu avec zéro à droite, éléments supplémentaires et import sans interaction. Contrôler aussi la terminaison à EOF, recommandation utile pour l’automatisation.\n4. **Documentation et vérification officielle.** Expliquer syntaxe, lancement et erreurs, puis exécuter la commande officielle dans le contexte prescrit. Majuscules des commandes, interruption clavier et limites de taille restent secondaires.\n\nLes deux avis suffisent à établir ces recommandations, mais aucun résultat d’exécution ne permet de confirmer une conformité réelle. Cette consultation repose exclusivement sur les textes intégrés au message ; aucun outil, fichier, sous-agent ou acte Git n’a été utilisé."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "main_first",
+      "label": "05-main-first",
+      "thread_id": "01a0800c-1de2-7880-a054-ef9871a3568c",
+      "config_file": "runs/astra-core-v2-001/config-main.toml",
+      "config_sha256": "796a4db9aa182ed1c98df169757a1e204eea71dc2ae1a22cc07c80acbad4b6cf",
+      "prompt_sha256": "4494c6300ad2b680e8ea6523ef8ac7e370656d3280c19f697d44801ade1e1d19",
+      "duration_seconds": 393.69,
+      "usage": {
+        "input_tokens": 201478,
+        "cached_input_tokens": 177024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11570,
+        "reasoning_output_tokens": 613
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Je vais lire le challenge de la tentative active, consigner les arbitrages des quatre avis dans `DECISIONS.md`, puis implémenter et contrôler la première solution. Le vérificateur officiel restera réservé à la phase finale, après la critique SA-03.\n"
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'pwd; rg --files -g CHALLENGE.md -g AGENTS.md -g LOGGING.md -g RESPONSE_FORMAT.md -g calculator.py -g README.md -g DECISIONS.md .'",
+          "exit_code": 1
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat ../../../governance/LOGGING.md ../../../governance/RESPONSE_FORMAT.md'",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat ../CHALLENGE.md'",
+          "exit_code": 0
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/DECISIONS.md",
+              "kind": "add"
+            }
+          ]
+        },
+        {
+          "type": "agent_message",
+          "text": "Les deux analystes convergent sur une architecture simple et une saisie en trois éléments séparés par des espaces. La table d’arbitrage est créée : elle distingue les exigences du contrat des choix de robustesse, notamment EOF, les commandes en majuscules et les valeurs non finies.\n"
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/DECISIONS.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/README.md",
+              "kind": "add"
+            },
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/calculator.py",
+              "kind": "add"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"python3 -B - <<'PY'\nimport subprocess\nimport sys\n\nsessions = [\n    ('mixte', '2 + 3\\\\n2+3\\\\n1 / -0.0\\\\n-2.5 * -4\\\\nquit\\\\n999 + 1\\\\n', ['5.0', '10.0'], 2),\n    ('exit', '1 / 0\\\\n7 / 2\\\\nexit\\\\n999 + 1\\\\n', ['3.5'], 1),\n    ('entrees invalides', '\\\\nx + 2\\\\n2 +\\\\n2 + 3 suffixe\\\\n2 ** 0\\\\n8 - 3\\\\nquit\\\\n', ['5.0'], 5),\n    ('espaces et casse', '\\\\t-2  *\\\\t-3 \\\\n  EXIT  \\\\n999 + 1\\\\n', ['6.0'], 0),\n    ('EOF apres calcul', '1e3 / -2\\\\n', ['-500.0'], 0),\n    ('EOF immediat', '', [], 0),\n    ('EOF apres erreur', '2 +\\\\n', [], 1),\n]\nfor label, data, expected_results, error_count in sessions:\n    completed = subprocess.run(\n        [sys.executable, '-B', 'calculator.py'], input=data,\n        text=True, capture_output=True, timeout=5, check=False,\n    )\n    assert completed.returncode == 0, (label, completed)\n    assert completed.stderr == '', (label, completed.stderr)\n    assert 'traceback' not in completed.stdout.lower(), label\n    fragments = [part.strip() for part in completed.stdout.split('> ') if part.strip()]\n    numbers = [part for part in fragments if not part.startswith('Erreur :')]\n    errors = [part for part in fragments if part.startswith('Erreur :')]\n    assert numbers == expected_results, (label, numbers)\n    assert len(errors) == error_count, (label, errors)\n    print(f'OK : session {label}, résultats {numbers}, erreurs {len(errors)}, sortie 0, stderr vide.')\nprint('OK : 7 sessions CLI ; reprise après erreur et arrêt avant les lignes suivant quit/exit confirmés.')\nPY\"",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"python3 -B - <<'PY'\nimport contextlib\nimport io\nimport math\nfrom unittest.mock import patch\n\noutput = io.StringIO()\nwith patch('builtins.input', side_effect=AssertionError('Import interactif')):\n    with contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):\n        import calculator\nassert output.getvalue() == ''\n\ncases = [\n    (2, '+', 3, 5), (9, '-', 12, -3), (3, '*', 4, 12),\n    (7, '/', 2, 3.5), (-2.5, '*', -4, 10), (-8, '/', 2, -4),\n    (8, '/', -2, -4), (3, '-', -2, 5), (2, '-', 2, 0),\n    (0, '*', -2, 0), (0.1, '+', 0.2, 0.3), (-2, '+', -3, -5),\n]\nfor left, operator, right, expected in cases:\n    assert math.isclose(calculator.calculate(left, operator, right), expected,\n                        rel_tol=1e-12, abs_tol=1e-12)\nfor operator in ('**', '//', '%', '', 'plus', ' + '):\n    try:\n        calculator.calculate(2, operator, 0)\n    except ValueError:\n        pass\n    else:\n        raise AssertionError(operator)\nfor zero in (0, 0.0, -0.0):\n    try:\n        calculator.calculate(1, '/', zero)\n    except ZeroDivisionError:\n        pass\n    else:\n        raise AssertionError('Division par zéro acceptée')\nassert calculator.parse_expression(' \\\\t-2.5  *\\\\t-4  ') == (-2.5, '*', -4.0)\nassert calculator.parse_expression('1e3 / -2') == (1000.0, '/', -2.0)\nassert math.isinf(calculator.parse_expression('1e999 + 2')[0])\nassert math.isnan(calculator.calculate(float('nan'), '+', 1))\nassert math.isinf(calculator.calculate(1e308, '*', 1e308))\ninvalid = ('', '2+3', '(2 + 3)', '2 + 3 * 4', '2 +', 'x + 2',\n           '2 + x', '1,5 + 2', '2 + 3 suffixe', '__import__(\\\"os\\\") + 1')\nfor line in invalid:\n    try:\n        calculator.parse_expression(line)\n    except ValueError:\n        pass\n    else:\n        raise AssertionError(line)\nwith patch('builtins.input', side_effect=KeyboardInterrupt):\n    with contextlib.redirect_stdout(io.StringIO()):\n        assert calculator.main() is None\nprint('OK : import silencieux, 12 calculs, 6 opérateurs inconnus avec zéro, 3 zéros diviseurs, 5 contrôles de parsing/valeurs spéciales, 10 lignes invalides, interruption clavier simulée.')\nPY\"",
+          "exit_code": 0
+        },
+        {
+          "type": "agent_message",
+          "text": "La première implémentation passe les contrôles ciblés : calculs et exceptions de l’API, import silencieux et sept sessions CLI. Ces sessions confirment la reprise après erreur, les sorties `quit`/`exit` et EOF, sans traceback. Je consigne ces résultats pour SA-03 ; le vérificateur officiel n’a pas été lancé.\n"
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/DECISIONS.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"rg --files --hidden -g '\"'!.git'\"' -g '\"'!.agents'\"' -g '\"'!.codex'\"' .\"",
+          "exit_code": 0
+        },
+        {
+          "type": "agent_message",
+          "text": "Première solution complète, prête pour la critique SA-03 :\n\n- [calculator.py](<repo>/runs/astra-core-v2-001/solution/calculator.py) : API et boucle interactive avec gestion des erreurs.\n- [README.md](<repo>/runs/astra-core-v2-001/solution/README.md) : lancement, exemples et limites.\n- [DECISIONS.md](<repo>/runs/astra-core-v2-001/solution/DECISIONS.md) : arbitrages créés avant le code, quatre avis conservés intégralement dans l’ordre et résultats des contrôles.\n\nTous les contrôles ciblés passent, dont sept sessions CLI confirmant la reprise après erreur et les sorties propres.\n\nLe vérificateur officiel reste réservé à la phase finale après SA-03. Aucun autre agent lancé, aucune opération Git ; écritures limitées au dossier autorisé."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "sa03_critic",
+      "label": "06-sa03-critic",
+      "thread_id": "01a08012-21c9-7060-bee6-605bc05ff4ab",
+      "config_file": "runs/astra-core-v2-001/config-sa-03.toml",
+      "config_sha256": "04680afebbdfd2d7b9a0461a6f1ff2f741c32f199c60487ab17c69fe6a4ad7c3",
+      "prompt_sha256": "f3721b91bae5a00407364cde1ea234e9ee9fc32cd09b699157364fe546f717cd",
+      "duration_seconds": 44.659,
+      "usage": {
+        "input_tokens": 25968,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1147,
+        "reasoning_output_tokens": 238
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "La lecture statique ne révèle **aucun défaut fonctionnel confirmé sur les exigences explicites**. La première solution paraît cohérente avec les arbitrages retenus ; sa conformité officielle reste à établir.\n\n1. **Constats favorables confirmés par le code.** Les quatre opérations préservent l’ordre des opérandes. Un opérateur inconnu conduit à `ValueError`, même avec zéro à droite. La division vérifie également `-0.0`. Le découpage en exactement trois éléments préserve les signes et rejette les suffixes ou expressions composées. Les erreurs attendues sont interceptées dans la boucle, qui continue après leur affichage. Les commandes de sortie, EOF et le garde d’import sont correctement placés. Aucun mécanisme d’exécution des saisies, accès système ou dépendance externe n’apparaît.\n\n2. **Risque d’interprétation du contrat — type du résultat.** Avec deux arguments entiers, `calculate(2, \"+\", 3)` retourne un `int`, malgré l’annotation `-> float`. Ce comportement est observable dans le code et reconnu dans le README. Il ne constitue pas automatiquement une violation : les annotations Python permettent couramment l’emploi d’entiers là où des flottants sont attendus. Toutefois, une exigence de résultat strictement de type `float` ferait échouer les branches addition, soustraction et multiplication sur des entiers. Le challenge ne précise pas cette distinction ; ne pas transformer cette ambiguïté en défaut certain ni imposer une conversion sans arbitrage.\n\n3. **Risque de compatibilité — version minimale.** L’annotation `tuple[float, str, float]`, évaluée au chargement, nécessite Python 3.9 ou ultérieur. Sur Python 3.8, le module échouerait avant même de lancer la CLI, avec traceback. Le README annonce correctement cette limite ; le challenge ne fixe aucune version minimale au-delà de `python3`. C’est donc une dépendance à l’environnement à confronter au vérificateur, pas un échec établi dans l’environnement réel.\n\n4. **Point de traçabilité ouvert — fichier supplémentaire et vérification différée.** D01 rapporte une autorisation explicite d’ajouter `DECISIONS.md`, et D16 rapporte une interdiction temporaire de lancer le vérificateur. Le mandat MAIN correspondant n’est pas reproduit directement dans les pièces fournies : ces éléments restent des autorisations rapportées. Leur absence du dossier de consultation ne prouve aucune infraction. De plus, « créer exclusivement dans le dossier `solution/` » ne signifie pas sans ambiguïté « créer seulement deux fichiers ». Il serait injustifié d’exiger ici la suppression de la trace. La vérification officielle demeure néanmoins nécessaire avant de conclure le run ; son report annoncé n’est pas un défaut de cette première phase.\n\n5. **Risques résiduels de robustesse, sans faille de sécurité confirmée.** Une ligne démesurée est chargée entièrement puis découpée sans limite ; elle peut épuiser les ressources. D13 reconnaît déjà cette limite, et aucun besoin contractuel ne justifie actuellement un plafonnement arbitraire. Les erreurs d’entrée-sortie, telles qu’un tube de sortie fermé, ne sont pas interceptées. Elles peuvent interrompre le programme, mais ne relèvent pas des erreurs d’expression que le challenge exige de contenir. Les messages fixes n’exposent pas directement le contenu hostile saisi.\n\n6. **Préférences à ne pas convertir en corrections obligatoires.** Accepter `2+3`, rejeter `nan` ou `inf`, arrondir les résultats, accepter la virgule décimale ou ajouter une validation générale des types modifierait le périmètre choisi sans nécessité démontrée. Les limites des flottants, notamment le sous-débordement vers zéro, sont explicitement documentées.\n\nLes contrôles ciblés sont **rapportés**, sans scripts ni sorties brutes permettant leur examen indépendant. Ils couvrent les principaux cas discriminants annoncés. Aucune régression ne peut être établie sans version antérieure comparable. La priorité restante est le vérificateur officiel, puis l’arbitrage de ses éventuels échecs au regard du contrat.\n\nAvis SA-03 fondé uniquement sur les textes transmis ; aucun outil, fichier, sous-agent, test ou acte Git utilisé."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "phase": "main_final",
+      "label": "07-main-final",
+      "thread_id": "01a08012-cf2f-7620-a913-1272e49086e1",
+      "config_file": "runs/astra-core-v2-001/config-main.toml",
+      "config_sha256": "796a4db9aa182ed1c98df169757a1e204eea71dc2ae1a22cc07c80acbad4b6cf",
+      "prompt_sha256": "9bd06ee86693b5fd7a72adaf55887afb13b4bc55f105f3b3187d73261cc83d6d",
+      "duration_seconds": 180.712,
+      "usage": {
+        "input_tokens": 261877,
+        "cached_input_tokens": 226560,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5106,
+        "reasoning_output_tokens": 149
+      },
+      "exit_code": 0,
+      "events": [
+        {
+          "type": "agent_message",
+          "text": "Je vais relire le challenge et les fichiers de la tentative active, consigner l’arbitrage de chaque point de SA-03, puis lancer la commande officielle. Aucun nouveau consultant ne sera sollicité.\n"
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat CHALLENGE.md'",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat governance/LOGGING.md governance/RESPONSE_FORMAT.md'",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"pwd; rg --files -g 'CHALLENGE.md' -g 'AGENTS.md' -g 'calculator.py' -g 'README.md' -g 'DECISIONS.md' .\"",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'python3 --version'",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat calculator.py README.md DECISIONS.md'",
+          "exit_code": 0
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'cat scripts/verify.py'",
+          "exit_code": 0
+        },
+        {
+          "type": "agent_message",
+          "text": "La lecture confirme les constats de SA-03 : aucun défaut fonctionnel établi ne justifie de changer le code. Je conserve les choix numériques et la syntaxe existants ; l’environnement utilise Python 3.13.5, compatible avec l’annotation signalée. Je consigne aussi les limites de preuve des contrôles antérieurs avant le passage officiel.\n"
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/DECISIONS.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"cat >> DECISIONS.md <<'EOF'\n\n### SA-03 CRITIQUE\n\nLa lecture statique ne révèle **aucun défaut fonctionnel confirmé sur les exigences explicites**. La première solution paraît cohérente avec les arbitrages retenus ; sa conformité officielle reste à établir.\n\n1. **Constats favorables confirmés par le code.** Les quatre opérations préservent l’ordre des opérandes. Un opérateur inconnu conduit à \"'`ValueError`, même avec zéro à droite. La division vérifie également `-0.0`. Le découpage en exactement trois éléments préserve les signes et rejette les suffixes ou expressions composées. Les erreurs attendues sont interceptées dans la boucle, qui continue après leur affichage. Les commandes de sortie, EOF et le garde d’import sont correctement placés. Aucun mécanisme d’exécution des saisies, accès système ou dépendance externe n’apparaît.\n\n2. **Risque d’interprétation du contrat — type du résultat.** Avec deux arguments entiers, `calculate(2, \"+\", 3)` retourne un `int`, malgré l’annotation `-> float`. Ce comportement est observable dans le code et reconnu dans le README. Il ne constitue pas automatiquement une violation : les annotations Python permettent couramment l’emploi d’entiers là où des flottants sont attendus. Toutefois, une exigence de résultat strictement de type `float` ferait échouer les branches addition, soustraction et multiplication sur des entiers. Le challenge ne précise pas cette distinction ; ne pas transformer cette ambiguïté en défaut certain ni imposer une conversion sans arbitrage.\n\n3. **Risque de compatibilité — version minimale.** L’annotation `tuple[float, str, float]`, évaluée au chargement, nécessite Python 3.9 ou ultérieur. Sur Python 3.8, le module échouerait avant même de lancer la CLI, avec traceback. Le README annonce correctement cette limite ; le challenge ne fixe aucune version minimale au-delà de `python3`. C’est donc une dépendance à l’environnement à confronter au vérificateur, pas un échec établi dans l’environnement réel.\n\n4. **Point de traçabilité ouvert — fichier supplémentaire et vérification différée.** D01 rapporte une autorisation explicite d’ajouter `DECISIONS.md`, et D16 rapporte une interdiction temporaire de lancer le vérificateur. Le mandat MAIN correspondant n’est pas reproduit directement dans les pièces fournies : ces éléments restent des autorisations rapportées. Leur absence du dossier de consultation ne prouve aucune infraction. De plus, « créer exclusivement dans le dossier `solution/` » ne signifie pas sans ambiguïté « créer seulement deux fichiers ». Il serait injustifié d’exiger ici la suppression de la trace. La vérification officielle demeure néanmoins nécessaire avant de conclure le run ; son report annoncé n’est pas un défaut de cette première phase.\n\n5. **Risques résiduels de robustesse, sans faille de sécurité confirmée.** Une ligne démesurée est chargée entièrement puis découpée sans limite ; elle peut épuiser les ressources. D13 reconnaît déjà cette limite, et aucun besoin contractuel ne justifie actuellement un plafonnement arbitraire. Les erreurs d’entrée-sortie, telles qu’un tube de sortie fermé, ne sont pas interceptées. Elles peuvent interrompre le programme, mais ne relèvent pas des erreurs d’expression que le challenge exige de contenir. Les messages fixes n’exposent pas directement le contenu hostile saisi.\n\n6. **Préférences à ne pas convertir en corrections obligatoires.** Accepter `2+3`, rejeter `nan` ou `inf`, arrondir les résultats, accepter la virgule décimale ou ajouter une validation générale des types modifierait le périmètre choisi sans nécessité démontrée. Les limites des flottants, notamment le sous-débordement vers zéro, sont explicitement documentées.\n\nLes contrôles ciblés sont **rapportés**, sans scripts ni sorties brutes permettant leur examen indépendant. Ils couvrent les principaux cas discriminants annoncés. Aucune régression ne peut être établie sans version antérieure comparable. La priorité restante est le vérificateur officiel, puis l’arbitrage de ses éventuels échecs au regard du contrat.\n\nAvis SA-03 fondé uniquement sur les textes transmis ; aucun outil, fichier, sous-agent, test ou acte Git utilisé.\nEOF'",
+          "exit_code": 0
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/README.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc 'export PYTHONDONTWRITEBYTECODE=1\npython3 scripts/verify.py --solution runs/astra-core-v2-001/solution'",
+          "exit_code": 0
+        },
+        {
+          "type": "agent_message",
+          "text": "Le premier passage officiel réussit : 6 tests, verdict `OK`, code de sortie 0. Aucune correction fonctionnelle n’est nécessaire. Je consigne la sortie du vérificateur dans `DECISIONS.md` et mets à jour l’état final du README.\n"
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/DECISIONS.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"cat >> DECISIONS.md <<'EOF'\n\n## Bilan final — contrôles et clôture MAIN\n\n10. MAIN complète la table d'arbitrage de chaque point SA-03 avant vérification,\n    conserve sa critique intégralement après les quatre avis antérieurs et\n    actualise le README. Seules les précisions documentaires retenues sont\n    appliquées ; aucune modification de \"'`calculator.py` n'\"'est nécessaire.\n11. MAIN lance depuis la racine du dépôt la commande exacte ci-dessous.\n    La variable d'environnement \"'`PYTHONDONTWRITEBYTECODE=1` est exportée au\n    préalable pour éviter la création de caches Python hors de `solution/`.\n    Aucun argument ni script du vérificateur n'\"'est modifié.\n\n\"'```bash\npython3 scripts/verify.py --solution runs/astra-core-v2-001/solution\n```\n\nPremier passage officiel observé, sortie capturée :\n\n```text\ntest_cli_recovers_from_errors_and_exits_cleanly (test_acceptance.CalculatorAcceptanceTests.test_cli_recovers_from_errors_and_exits_cleanly) ... ok\ntest_division_by_zero (test_acceptance.CalculatorAcceptanceTests.test_division_by_zero) ... ok\ntest_forbidden_dynamic_execution_is_absent (test_acceptance.CalculatorAcceptanceTests.test_forbidden_dynamic_execution_is_absent) ... ok\ntest_four_operations_and_numeric_variants (test_acceptance.CalculatorAcceptanceTests.test_four_operations_and_numeric_variants) ... ok\ntest_invalid_operator (test_acceptance.CalculatorAcceptanceTests.test_invalid_operator) ... ok\ntest_required_files_exist (test_acceptance.CalculatorAcceptanceTests.test_required_files_exist) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nOK\n```\n\n12. Le processus termine avec le code **0**. Premier passage : **6 tests réussis,\n    OK**. Verdict final : **OK**, identique au premier passage ; un seul passage\n    officiel est réalisé dans cette session. Aucun défaut confirmé, aucune\n    correction fonctionnelle ni nouvelle exécution nécessaire. MAIN ajoute\n    ensuite uniquement le présent résultat et l'\"'état final du README.\n\n### Portée des preuves et limites\n\n- Le verdict appartient au vérificateur officiel ; il établit la réussite des\n  six contrôles exécutés. Il ne prouve pas une résistance à toutes les entrées\n  démesurées, aux erreurs d'entrée-sortie ou une compatibilité Python 3.8.\n- Le passage réussit sous Python 3.13.5 avec les retours numériques natifs.\n  Il ne tranche pas à lui seul l'interprétation abstraite d'une exigence de\n  résultat strictement \"'`float` ; aucune telle correction n'\"'est requise par\n  les résultats observés. Python 3.9 minimum reste documenté.\n- Les contrôles ciblés de première phase sont des résultats rapportés dans\n  cette nouvelle session ; leurs sorties brutes ne sont pas disponibles ici.\n  Le véritable signal Ctrl+C, le tube fermé et l'épuisement de ressources ne\n  sont pas testés dans cette phase finale.\n- Les textes SA-01 INITIAL, SA-02 INITIAL, SA-01 CONTRADICTION,\n  SA-02 CONTRADICTION et SA-03 CRITIQUE sont conservés dans cet ordre,\n  sans nouvel échange candidat-consultant. Le relais expérimental reste\n  responsable de l'assemblage du PV du run ; les entrées numérotées de cette\n  trace en fournissent la synthèse observable.\n- Les tokens et la durée totale de cette session, des consultations et du run\n  sont **non enregistrés** dans les éléments disponibles. La durée \"'`0.010s`\n  est celle annoncée par la suite de tests uniquement, pas celle du run.\n- Aucun autre run, solution ou résultat n'\"'est consulté. Les écritures de cette\n  phase portent uniquement sur \"'`DECISIONS.md` et `README.md` dans la solution\n  active ; le code, le challenge, les tests, les scripts et la gouvernance\n  restent inchangés. Aucune opération Git n'\"'est effectuée.\n- Aucun contrôle officiel ne reste en échec et aucune correction n'est en\n  attente. Aucune évolution de gouvernance n'est proposée : les réserves de\n  preuve sont déjà couvertes par les règles de traçabilité existantes.\nEOF\"",
+          "exit_code": 0
+        },
+        {
+          "type": "file_change",
+          "changes": [
+            {
+              "path": "<repo>/runs/astra-core-v2-001/solution/README.md",
+              "kind": "update"
+            }
+          ]
+        },
+        {
+          "type": "command_execution",
+          "command": "/bin/bash -lc \"rg -n '\"'^## Phase|''^### SA-|''^## Bilan|Qualification|Verdict final|Résultat final'\"' DECISIONS.md README.md\"",
+          "exit_code": 0
+        },
+        {
+          "type": "agent_message",
+          "text": "La phase finale est terminée : **premier passage officiel réussi, 6 tests, verdict final `OK`, code de sortie 0**.\n\n- **Rôles :** MAIN reste l’unique écrivain ; les trois consultants interviennent par les avis relayés. Aucun nouvel agent sollicité.\n- **Arbitrages :** chaque point SA-03 est qualifié et justifié dans [DECISIONS.md](<repo>/runs/astra-core-v2-001/solution/DECISIONS.md:93). Les cinq avis sont conservés intégralement dans leur ordre.\n- **Corrections :** documentation uniquement ; `calculator.py` reste inchangé.\n- **Vérification :** commande exacte exécutée depuis la racine : `python3 scripts/verify.py --solution runs/astra-core-v2-001/solution`.\n- **Limites :** contrôles antérieurs rapportés ; Python 3.8, épuisement de ressources et erreurs d’entrée-sortie non testés. Tokens et durée totale non enregistrés.\n- **Livraison :** écritures limitées à `solution/`, aucune opération Git. Aucune correction en attente."
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
