@@ -228,3 +228,9 @@ V2 Astra/medium terminada sin interrupciones: 15/15 grupos, 71/71 controles, 1 0
 ## Intercambio 025
 
 Publicar la conclusión sobre coste de coordinación y búsqueda del umbral desde README y una síntesis central. Distinguir calculadora simple/científica de organizaciones V1/V2. Proponer solo, consultiva, desarrollo paralelo y pareja con Astra medio, sin lanzar ni cambiar gobernanza. Comparar diferencias V2/V1 dentro de cada ejercicio idéntico; ningún umbral ni ganancia futura afirmados.
+
+## Intercambio 026
+
+**Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
+
+Estos puntos proceden del documento recibido; aprobar nombres V2.x no significa completarlos. [Trabajo documental adjunto — pendiente](../docs/reading-guide.es.md).

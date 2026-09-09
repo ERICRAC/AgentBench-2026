@@ -318,3 +318,9 @@ V2 Astra/medium terminée sans interruption : 15/15 groupes, 71/71 contrôles, 1
 ## Échange 025
 
 Publier la conclusion sur le coût de coordination et la recherche du point de bascule, accessible dès le README et via une synthèse centrale. Distinguer calculatrice simple/scientifique des organisations V1/V2. Proposer solo, conseil, développement parallèle et binôme en Astra moyen, sans lancer de run ni modifier la gouvernance. Les comparaisons entre difficultés portent sur les écarts V2/V1 de chaque même exercice ; aucun seuil ni gain futur n'est affirmé.
+
+## Échange 026
+
+**Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
+
+Ces points proviennent du cadrage transmis ; ils ne sont pas déclarés terminés par la validation des noms V2.x. [Chantier documentaire joint — restant à réaliser](../docs/reading-guide.md).

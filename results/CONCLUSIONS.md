@@ -26,8 +26,10 @@ Les mots V1/V2 désignent des organisations, jamais des générations de calcula
 | --- | --- | --- |
 | Solo (V1) | Un candidat réalise tout. | Référence Astra moyen manquante. |
 | Conseil (V2 actuelle) | Un écrivain et trois consultants. | Des avis et une relecture évitent des erreurs. |
-| Développement parallèle | Deux développeurs, un intégrateur et un relecteur ; contributions isolées, interfaces fixées avant développement. | Le travail simultané compense les échanges et l’intégration. |
-| Binôme sobre | Un développeur et un relecteur, une revue bornée. | Conserver la critique utile avec moins de coordination. |
+| **V2.1** — Développement parallèle | Deux développeurs, un intégrateur et un relecteur ; contributions isolées, interfaces fixées avant développement. | Le travail simultané compense les échanges et l’intégration. |
+| **V2.2** — Binôme sobre | Un développeur et un relecteur, une revue bornée. | Conserver la critique utile avec moins de coordination. |
+
+**Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
 
 Toutes les variantes proposées utilisent Astra en effort moyen. Même modèle ne signifie pas contexte identique, expertise réellement identique ou coût total égal : les rôles, informations reçues et budgets sont enregistrés. Le binôme teste aussi un changement d’effectif ; ce n’est pas une comparaison de topologie seule.
 

@@ -6,6 +6,8 @@
 
 [Conclusions — when does collaboration pay off?](results/CONCLUSIONS.en.md) — This concerns available comparisons at identical model and effort, using the current advisory V2. It does not condemn all agent teams. Official tests do not fully measure the additional corrections observed.
 
+**Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
+
 R&D laboratory on agent collaboration: calculators are shared exercises. V1 = one candidate alone; V2 = one writer and three consultants; V3 = future local consultants. We measure quality, time and tokens: V2 is not promised to be better.
 
 [Guide](docs/reading-guide.en.md) · [V2 Astra medium](results/astra-medium-v2.en.md) · [Astra/high](results/astra-v2-retired.en.md) · [requirements.txt](requirements.txt)
@@ -69,7 +71,7 @@ flowchart LR
       V2S["✓ Scientific Calculator<br/>9 groups · 57 checks"]
     end
     G2{"V2 observations<br/>possible refinement"}
-    V21["V2.1 · optimised variant<br/>optional"]
+    V21["V2.x · optimised variant<br/>optional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
       V3C["○ Simple Calculator<br/>pending"]
       V3S["○ Scientific Calculator<br/>pending"]
@@ -98,7 +100,7 @@ flowchart LR
 ```
 
 **How to read it:** the six V1–V3 × Simple Calculator–Scientific Calculator cells
-form the mandatory campaign. V2.1 and V4 are not included in the 4/6 count: they are explicitly
+form the mandatory campaign. V2.x and V4 are not included in the 4/6 count: they are explicitly
 optional extensions.
 
 ## The research question
@@ -171,7 +173,7 @@ Scientific**.
 ¹ Cumulative input + output; detailed reports separate cache, reasoning and
 corrections. Missing data is never reconstructed after the event.
 
-## V1, V2, V3… and the case for V2.1 or V4
+## V1, V2, V3… and the case for V2.x or V4
 
 - **V1 — solo baseline:** the experimental orchestrator commissions a separate
   Codex candidate session; that candidate works alone, with no consultant or
@@ -179,7 +181,7 @@ corrections. Missing data is never reconstructed after the event.
 - **V2 — Codex society:** an orchestrator and specialists with bounded
   assignments, with only one writer. It measures the benefit and cost of
   coordination.
-- **V2.1 — optional optimisation:** considered only after full V2 analysis. It
+- **V2.x — optional optimisation:** considered only after full V2 analysis. It
   may test a refined organisation without replacing or polishing V2.
 - **V3 — local hybrid:** Codex orchestrates, decides and writes; local Ollama
   models analyse or critique within limited context.
@@ -206,8 +208,8 @@ The comparison and versioning rules are defined in
 - [x] Validate the V2 preflight: isolation, per-role configuration, visible traces and counters. [PV](results/astra-v2-preflight.en.md).
 - [x] Run and publish **V2 Simple Calculator**: **6/6 groups and 14/14 checks**, with [report and minutes](results/sol-v2-core.en.md).
 - [x] Run and publish **V2 Scientific Calculator** without changing the protocol: **9/9 groups and 57/57 checks**, with [V2 synthesis](results/sol-v2.en.md).
-- [ ] Hold the V2 observation gate; decide against written criteria whether V2.1 adds a testable hypothesis.
-- [ ] If activated, run V2.1 separately on both difficulty levels.
+- [ ] Hold the V2 observation gate; decide against written criteria whether V2.x adds a testable hypothesis.
+- [ ] If activated, run V2.x separately on both difficulty levels.
 - [ ] Freeze V3's Ollama integration, local models and context limits.
 - [ ] Run and publish **V3 Simple Calculator**, then **V3 Scientific Calculator**.
 - [ ] Compare the six main runs: quality, cost, corrections, interventions and social noise.

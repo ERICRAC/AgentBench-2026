@@ -26,8 +26,10 @@ V1/V2 designam organizações, não gerações da calculadora. **Calculadora sim
 | --- | --- | --- |
 | Solo (V1) | Um candidato faz tudo. | Falta referência Astra médio. |
 | Consultiva (V2 atual) | Um escritor e três consultores. | Conselhos e revisão evitam erros. |
-| Desenvolvimento paralelo | Dois programadores, integrador e revisor; contribuições isoladas e interfaces previamente fixadas. | O trabalho simultâneo compensa comunicação e integração. |
-| Par leve | Um programador e um revisor, uma revisão limitada. | Manter crítica útil com menos coordenação. |
+| **V2.1** — Desenvolvimento paralelo | Dois programadores, integrador e revisor; contribuições isoladas e interfaces previamente fixadas. | O trabalho simultâneo compensa comunicação e integração. |
+| **V2.2** — Par leve | Um programador e um revisor, uma revisão limitada. | Manter crítica útil com menos coordenação. |
+
+**Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
 
 Todas as variantes propostas usam Astra médio. O mesmo modelo não implica contexto, competências reais ou custo total idênticos: registar papéis, informação e orçamentos. O par também muda o tamanho da equipa, não só a topologia.
 

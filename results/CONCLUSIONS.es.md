@@ -26,8 +26,10 @@ V1/V2 designan organizaciones, no generaciones de calculadora. **Calculadora sim
 | --- | --- | --- |
 | Solo (V1) | Un candidato hace todo. | Falta referencia Astra medio. |
 | Consultiva (V2 actual) | Un escritor y tres consultores. | Consejos y revisión evitan errores. |
-| Desarrollo paralelo | Dos desarrolladores, integrador y revisor; contribuciones aisladas e interfaces fijadas previamente. | El trabajo simultáneo compensa comunicación e integración. |
-| Pareja ligera | Un desarrollador y un revisor, una revisión acotada. | Conservar crítica útil con menos coordinación. |
+| **V2.1** — Desarrollo paralelo | Dos desarrolladores, integrador y revisor; contribuciones aisladas e interfaces fijadas previamente. | El trabajo simultáneo compensa comunicación e integración. |
+| **V2.2** — Pareja ligera | Un desarrollador y un revisor, una revisión acotada. | Conservar crítica útil con menos coordinación. |
+
+**Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
 Todas las variantes propuestas usan Astra medio. El mismo modelo no implica contexto, competencias reales ni coste total idénticos: registrar roles, información y presupuestos. La pareja cambia también el tamaño del equipo, no solo la topología.
 

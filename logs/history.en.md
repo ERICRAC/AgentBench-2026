@@ -232,3 +232,9 @@ Astra/medium V2 completed without interruption: 15/15 groups, 71/71 checks, 1 02
 ## Exchange 025
 
 Publish the coordination-cost conclusion and crossover research question at the top of the README and in a central synthesis. Distinguish simple/scientific calculators from V1/V2 organisations. Propose solo, advisory, parallel development and a pair using Astra medium, without launching runs or changing governance. Across-difficulty comparisons use each identical exercise's V2/V1 differences; no threshold or future gain is claimed.
+
+## Exchange 026
+
+**Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
+
+These items come from the supplied brief; agreeing V2.x names does not mark them complete. [Attached documentation work — still pending](../docs/reading-guide.en.md).

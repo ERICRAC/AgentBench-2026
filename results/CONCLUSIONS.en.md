@@ -26,8 +26,10 @@ V1/V2 describe organisations, never calculator generations. **Simple calculator*
 | --- | --- | --- |
 | Solo (V1) | One candidate does everything. | Missing Astra medium baseline. |
 | Advisory (current V2) | One writer and three consultants. | Advice and review prevent errors. |
-| Parallel development | Two developers, one integrator and one reviewer; isolated contributions and interfaces agreed before development. | Simultaneous work offsets communication and integration. |
-| Lean pair | One developer and one reviewer, one bounded review. | Keep useful criticism with less coordination. |
+| **V2.1** — Parallel development | Two developers, one integrator and one reviewer; isolated contributions and interfaces agreed before development. | Simultaneous work offsets communication and integration. |
+| **V2.2** — Lean pair | One developer and one reviewer, one bounded review. | Keep useful criticism with less coordination. |
+
+**Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
 
 All proposed variants use Astra medium. The same model does not imply identical context, actual expertise or total cost: record roles, supplied information and budgets. The pair also changes team size; it is not a topology-only comparison.
 

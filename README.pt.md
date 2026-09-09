@@ -6,6 +6,8 @@
 
 [Conclusões — quando compensa colaborar?](results/CONCLUSIONS.pt.md) — Isto refere-se às comparações disponíveis com modelo e esforço idênticos e à V2 consultiva atual, não a todas as equipas. Os testes oficiais não medem todas as correções adicionais observadas.
 
+**Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
+
 Laboratório I&D sobre colaboração de agentes: as calculadoras são exercícios comuns. V1 = um candidato sozinho; V2 = um escritor e três consultores; V3 = futuros consultores locais. Medem-se qualidade, tempo e tokens: não se promete que V2 seja melhor.
 
 [Guide](docs/reading-guide.pt.md) · [V2 Astra medium](results/astra-medium-v2.pt.md) · [Astra/high](results/astra-v2-retired.pt.md) · [requirements.txt](requirements.txt)
@@ -64,7 +66,7 @@ flowchart LR
       V2S["✓ Calculadora científica<br/>9 grupos · 57 controlos"]
     end
     G2{"Observações V2<br/>possível afinação"}
-    V21["V2.1 · variante otimizada<br/>opcional"]
+    V21["V2.x · variante otimizada<br/>opcional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
       V3C["○ Calculadora simples<br/>pendente"]
       V3S["○ Calculadora científica<br/>pendente"]
@@ -91,7 +93,7 @@ flowchart LR
 ```
 
 As seis células V1–V3 × Calculadora simples–Calculadora científica formam a
-campanha obrigatória. V2.1 e V4 são extensões opcionais.
+campanha obrigatória. V2.x e V4 são extensões opcionais.
 
 ## Pergunta experimental
 
@@ -153,12 +155,12 @@ atas e traces. A cobertura não é uma nota absoluta de qualidade.
 ¹ Entrada + saída acumuladas. Os relatórios separam cache, raciocínio e
 correções; dados ausentes nunca são reconstruídos a posteriori.
 
-## V1, V2, V3… V2.1 e V4
+## V1, V2, V3… V2.x e V4
 
 - **V1:** o orquestrador experimental encarrega uma sessão candidata Codex
   distinta; esta trabalha sozinha, sem consultores nem delegação.
 - **V2:** orquestrador Codex e especialistas com missões limitadas e um único redator.
-- **V2.1:** otimização exploratória opcional, apenas após a análise da V2.
+- **V2.x:** otimização exploratória opcional, apenas após a análise da V2.
 - **V3:** o Codex orquestra, decide e escreve; modelos Ollama locais analisam ou criticam.
 - **V4:** controlo histórico opcional do projeto multiagente de Yann Pointud,
   chamado AutoGen mas independente do framework homónimo da Microsoft.
@@ -178,7 +180,7 @@ os resultados anteriores são preservados. Consulte o
 - [x] Validar o preflight V2: isolamento, configuração por papel, traces visíveis e contadores. [PV](results/astra-v2-preflight.pt.md).
 - [x] Executar e publicar V2 Calculadora simples: **6/6 grupos e 14/14 controlos**, com [relatório e ata](results/sol-v2-core.pt.md).
 - [x] Executar e publicar V2 Calculadora científica sem alterar o protocolo: **9/9 grupos e 57/57 controlos**, com [síntese V2](results/sol-v2.pt.md).
-- [ ] Analisar V2 e decidir se V2.1 oferece uma hipótese mensurável.
+- [ ] Analisar V2 e decidir se V2.x oferece uma hipótese mensurável.
 - [ ] Congelar os modelos Ollama e os limites de contexto da V3.
 - [ ] Executar V3 para ambos os objetivos.
 - [ ] Comparar as seis execuções principais.

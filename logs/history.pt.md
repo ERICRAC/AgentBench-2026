@@ -225,3 +225,9 @@ V2 Astra/medium terminada sem interrupções: 15/15 grupos, 71/71 controlos, 1 0
 ## Troca 025
 
 Publicar a conclusão sobre custo de coordenação e procura do limiar no README e numa síntese central. Distinguir calculadora simples/científica de organizações V1/V2. Propor solo, consultiva, desenvolvimento paralelo e par com Astra médio, sem lançar nem mudar governação. Comparar diferenças V2/V1 de cada exercício idêntico; nenhum limiar ou ganho futuro afirmado.
+
+## Troca 026
+
+**Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
+
+Estes pontos vêm do documento recebido; aprovar nomes V2.x não significa concluí-los. [Trabalho documental anexo — pendente](../docs/reading-guide.pt.md).

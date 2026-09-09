@@ -25,3 +25,14 @@ In the minutes, expand “Texte envoyé, mot pour mot” and read “Texte retou
 Future, inactive Vx: assign a frozen change to a fresh maintainer with only code and documentation; measure success, regressions, time, tokens and clarifications. Current tests do not measure maintainability (Scientific checks five documentation keywords). Assess useful explanations, not comment counts. Work from a solution in a new branch or directory to preserve evidence.
 
 [README](../README.en.md) → [Tests](acceptance-tests.en.md) → [Results](../results/README.en.md)
+
+## Attached documentation work — still pending
+
+These items come from the supplied brief; agreeing V2.x names does not mark them complete.
+
+- [ ] Two-level guide and where-to-find-what table, reusing this guide rather than duplicating it.
+- [ ] Sequence diagram: parallel phases, barriers, recipients and supplied information; distinguish mechanical RELAY from candidate MAIN.
+- [ ] Automatically generated two-minute run summaries outside runs, separate from historical verbatim: team, verdict, metrics and decisive interaction.
+- [ ] Explicit interpretive annotations: proposal → transmission → decision → change → effect; distinguish confirmation, rejection and no observable effect, without automatically calling the latter noise.
+- [ ] Future-run instrumentation: measured relative times, dependencies and parallel groups, generic N-agent/V3 structure. Never invent historical timing; check any impact before applying changes.
+- [ ] Multilingual audit: separate frozen protocol from current status; check historical evidence, metrics, tests and runner behaviour without rerunning benchmarks for documentation.

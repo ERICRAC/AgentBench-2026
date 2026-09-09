@@ -25,3 +25,14 @@ Nos PV, abrir « Texte envoyé, mot pour mot » e ler « Texte retourné ». MSG
 Vx futura, não ativada: atribuir uma evolução fixada a um novo responsável com apenas código e documentação; medir sucesso, regressões, tempo, tokens e esclarecimentos. Os testes atuais não medem manutenibilidade (Scientific verifica cinco palavras documentais). Avaliar explicações úteis, não contar comentários. Trabalhar numa nova ramificação ou pasta para conservar a prova.
 
 [README](../README.pt.md) → [Tests](acceptance-tests.pt.md) → [Results](../results/README.pt.md)
+
+## Trabalho documental anexo — pendente
+
+Estes pontos vêm do documento recebido; aprovar nomes V2.x não significa concluí-los.
+
+- [ ] Guia de dois níveis e tabela de fontes, reutilizando este guia sem o duplicar.
+- [ ] Diagrama de sequência: paralelismo, barreiras, destinatários e informação; distinguir RELAY mecânico de MAIN candidato.
+- [ ] Resumos automáticos de dois minutos fora dos runs, separados do verbatim histórico: equipa, veredicto, métricas e interação decisiva.
+- [ ] Anotações interpretativas explícitas: proposta → transmissão → decisão → alteração → efeito; distinguir confirmação, rejeição e ausência de efeito observável, sem lhe chamar ruído automaticamente.
+- [ ] Instrumentação futura: tempos relativos medidos, dependências e grupos paralelos, estrutura genérica N agentes/V3. Nunca inventar tempos históricos; verificar impactos antes de aplicar alterações.
+- [ ] Auditoria multilingue: protocolo congelado separado do estado atual; verificar provas históricas, métricas, testes e comportamento do runner sem repetir benchmarks por documentação.

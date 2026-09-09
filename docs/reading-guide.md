@@ -25,3 +25,14 @@ Dans les PV, ouvrir « Texte envoyé, mot pour mot » et lire « Texte retourné
 Vx future, non activée : confier une évolution figée à un repreneur neuf avec seulement code et documentation ; mesurer succès, régressions, temps, tokens et clarifications. Les tests actuels ne mesurent pas la maintenabilité (Scientific vérifie cinq mots-clés documentaires). Évaluer les explications utiles, pas le nombre de commentaires. Reprendre une solution dans une nouvelle branche ou un nouveau dossier pour conserver la preuve.
 
 [README](../README.md) → [Tests](acceptance-tests.md) → [Results](../results/README.md)
+
+## Chantier documentaire joint — restant à réaliser
+
+Ces points proviennent du cadrage transmis ; ils ne sont pas déclarés terminés par la validation des noms V2.x.
+
+- [ ] Guide à deux niveaux et tableau « où trouver quoi », en réutilisant ce guide plutôt qu'en créant un doublon.
+- [ ] Diagramme de séquence : phases parallèles, barrières, destinataires et informations reçues ; distinguer RELAY mécanique et MAIN candidat.
+- [ ] Synthèses « le run en 2 minutes » générées hors run, séparées du verbatim historique ; équipe, verdict, métriques et interaction déterminante.
+- [ ] Annotations interprétatives explicites : proposition → transmission → arbitrage → modification → effet ; distinguer confirmé, rejeté et absence d'effet observable, sans assimiler automatiquement celle-ci à du bruit.
+- [ ] Instrumentation des futurs runs : temps relatifs mesurés, dépendances et groupes parallèles, structure générique pour N agents et V3. Ne jamais inventer une chronologie historique ; vérifier tout impact avant application.
+- [ ] Audit multilingue : séparer protocole figé et état courant, vérifier anciennes preuves, métriques, tests et comportement du lanceur sans relancer de benchmark documentaire.

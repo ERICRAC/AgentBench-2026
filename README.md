@@ -6,6 +6,8 @@
 
 [Conclusions — quand le collectif devient-il rentable ?](results/CONCLUSIONS.md) — Ce constat concerne les comparaisons disponibles à modèle et effort identiques, avec la V2 consultative actuelle. Il ne condamne pas toutes les équipes d’agents. Les corrections supplémentaires observées ne sont pas entièrement mesurées par les tests officiels.
 
+**Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
+
 Laboratoire R&D sur la collaboration des agents : les calculatrices sont les exercices communs. V1 = un candidat seul ; V2 = un écrivain et trois consultants ; V3 = futurs consultants locaux. On mesure qualité, temps et tokens : V2 n'est pas promise meilleure.
 
 [Guide](docs/reading-guide.md) · [V2 Astra medium](results/astra-medium-v2.md) · [Astra/high](results/astra-v2-retired.md) · [requirements.txt](requirements.txt)
@@ -69,7 +71,7 @@ flowchart LR
       V2S["✓ Calculatrice scientifique<br/>9 groupes · 57 contrôles"]
     end
     G2{"Observations V2<br/>affinage éventuel"}
-    V21["V2.1 · variante optimisée<br/>facultative"]
+    V21["V2.x · variante optimisée<br/>facultative"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
       V3C["○ Calculatrice simple<br/>à faire"]
       V3S["○ Calculatrice scientifique<br/>à faire"]
@@ -98,7 +100,7 @@ flowchart LR
 ```
 
 **Lecture :** les six cases V1–V3 × Calculatrice simple–Calculatrice scientifique
-constituent la campagne obligatoire. V2.1 et V4 n'entrent pas dans le calcul
+constituent la campagne obligatoire. V2.x et V4 n'entrent pas dans le calcul
 des 4/6 : ce sont des
 extensions facultatives, annoncées comme telles.
 
@@ -173,14 +175,14 @@ suites actuelles ; elles ne constituent pas une note absolue de qualité.
 ¹ Entrée + sortie cumulées ; les rapports détaillent cache, raisonnement et
 corrections. Aucune donnée manquante n'est reconstruite après coup.
 
-## V1, V2, V3… et pourquoi V2.1 ou V4
+## V1, V2, V3… et pourquoi V2.x ou V4
 
 - **V1 — référence solo :** l'orchestrateur expérimental mandate une session
   candidate Codex distincte ; celle-ci travaille seule, sans consultant ni
   délégation. Les deux niveaux sont terminés.
 - **V2 — société Codex :** orchestrateur et spécialistes aux missions bornées,
   avec un seul écrivain. Elle mesure le bénéfice et le coût de la coordination.
-- **V2.1 — optimisation facultative :** seulement après l'analyse complète de
+- **V2.x — optimisation facultative :** seulement après l'analyse complète de
   V2. Elle peut tester une organisation affinée, sans remplacer ni embellir V2.
 - **V3 — hybride local :** Codex orchestre, décide et écrit ; des modèles
   Ollama locaux analysent ou critiquent dans un contexte limité.
@@ -208,8 +210,8 @@ Le protocole complet de comparaison et de versionnement est décrit dans
 - [x] Valider le préflight V2 : isolation, configuration par rôle, traces visibles et compteurs. [PV](results/astra-v2-preflight.md).
 - [x] Exécuter et publier **V2 Calculatrice simple** : **6/6 groupes et 14/14 contrôles**, avec [rapport et PV](results/sol-v2-core.md).
 - [x] Exécuter et publier **V2 Calculatrice scientifique** sans modifier le protocole : **9/9 groupes et 57/57 contrôles**, avec [synthèse V2](results/sol-v2.md).
-- [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.1 apporte une hypothèse testable.
-- [ ] Si elle est activée, exécuter V2.1 séparément sur les deux difficultés.
+- [ ] Tenir le jalon d'observation V2 ; décider avec des critères écrits si V2.x apporte une hypothèse testable.
+- [ ] Si elle est activée, exécuter V2.x séparément sur les deux difficultés.
 - [ ] Figer l'intégration Ollama, les modèles locaux et les limites de contexte de V3.
 - [ ] Exécuter et publier **V3 Calculatrice simple**, puis **V3 Calculatrice scientifique**.
 - [ ] Comparer les six runs principaux : qualité, coût, corrections, interventions et bruit social.

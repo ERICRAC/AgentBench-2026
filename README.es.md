@@ -6,6 +6,8 @@
 
 [Conclusiones — ¿cuándo compensa colaborar?](results/CONCLUSIONS.es.md) — Esto se refiere a comparaciones disponibles con modelo y esfuerzo idénticos y la V2 consultiva actual, no a todos los equipos. Las pruebas oficiales no miden todas las correcciones adicionales observadas.
 
+**Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
+
 Laboratorio I+D sobre colaboración de agentes: las calculadoras son ejercicios comunes. V1 = un candidato solo; V2 = un escritor y tres consultores; V3 = futuros consultores locales. Se miden calidad, tiempo y tokens: no se promete que V2 sea mejor.
 
 [Guide](docs/reading-guide.es.md) · [V2 Astra medium](results/astra-medium-v2.es.md) · [Astra/high](results/astra-v2-retired.es.md) · [requirements.txt](requirements.txt)
@@ -64,7 +66,7 @@ flowchart LR
       V2S["✓ Calculadora científica<br/>9 grupos · 57 controles"]
     end
     G2{"Observaciones V2<br/>posible ajuste"}
-    V21["V2.1 · variante optimizada<br/>opcional"]
+    V21["V2.x · variante optimizada<br/>opcional"]
     subgraph V3["V3 · Codex + Ollama · 0/2"]
       V3C["○ Calculadora simple<br/>pendiente"]
       V3S["○ Calculadora científica<br/>pendiente"]
@@ -91,7 +93,7 @@ flowchart LR
 ```
 
 Las seis celdas V1–V3 × Calculadora simple–Calculadora científica forman la
-campaña obligatoria. V2.1 y V4 son extensiones opcionales.
+campaña obligatoria. V2.x y V4 son extensiones opcionales.
 
 ## Pregunta experimental
 
@@ -153,12 +155,12 @@ actas y trazas. La cobertura no es una nota absoluta de calidad.
 ¹ Entrada + salida acumuladas. Los informes separan caché, razonamiento y
 correcciones; los datos ausentes nunca se reconstruyen a posteriori.
 
-## V1, V2, V3… V2.1 y V4
+## V1, V2, V3… V2.x y V4
 
 - **V1:** el orquestador experimental encarga el trabajo a una sesión candidata
   Codex distinta; esta trabaja sola, sin consultores ni delegación.
 - **V2:** orquestador Codex y especialistas con misiones acotadas y un solo redactor.
-- **V2.1:** optimización exploratoria opcional, únicamente tras analizar V2.
+- **V2.x:** optimización exploratoria opcional, únicamente tras analizar V2.
 - **V3:** Codex orquesta, decide y escribe; modelos Ollama locales analizan o critican.
 - **V4:** control histórico opcional del proyecto multiagente de Yann Pointud,
   llamado AutoGen pero independiente del framework homónimo de Microsoft.
@@ -177,7 +179,7 @@ los resultados anteriores. Véase el [plan experimental](governance/EXPERIMENTAL
 - [x] Validar el preflight V2: aislamiento, configuración por rol, trazas visibles y contadores. [PV](results/astra-v2-preflight.es.md).
 - [x] Ejecutar y publicar V2 Calculadora simple: **6/6 grupos y 14/14 controles**, con [informe y acta](results/sol-v2-core.es.md).
 - [x] Ejecutar y publicar V2 Calculadora científica sin cambiar el protocolo: **9/9 grupos y 57/57 controles**, con [síntesis V2](results/sol-v2.es.md).
-- [ ] Analizar V2 y decidir si V2.1 aporta una hipótesis medible.
+- [ ] Analizar V2 y decidir si V2.x aporta una hipótesis medible.
 - [ ] Congelar los modelos Ollama y los límites de contexto de V3.
 - [ ] Ejecutar V3 para ambos objetivos.
 - [ ] Comparar las seis ejecuciones principales.

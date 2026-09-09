@@ -25,3 +25,14 @@ En los PV, abrir « Texte envoyé, mot pour mot » y leer « Texte retourné ».
 Vx futura, no activada: asignar una evolución fijada a un nuevo mantenedor con solo código y documentación; medir éxito, regresiones, tiempo, tokens y aclaraciones. Las pruebas actuales no miden mantenibilidad (Scientific verifica cinco palabras documentales). Evaluar explicaciones útiles, no contar comentarios. Trabajar en una nueva rama o carpeta para conservar la prueba.
 
 [README](../README.es.md) → [Tests](acceptance-tests.es.md) → [Results](../results/README.es.md)
+
+## Trabajo documental adjunto — pendiente
+
+Estos puntos proceden del documento recibido; aprobar nombres V2.x no significa completarlos.
+
+- [ ] Guía de dos niveles y tabla de fuentes, reutilizando esta guía sin duplicarla.
+- [ ] Diagrama de secuencia: paralelismo, barreras, destinatarios e información; distinguir RELAY mecánico de MAIN candidato.
+- [ ] Resúmenes automáticos de dos minutos fuera del run, separados del verbatim histórico: equipo, veredicto, métricas e interacción decisiva.
+- [ ] Anotaciones interpretativas explícitas: propuesta → transmisión → decisión → modificación → efecto; distinguir confirmación, rechazo y ausencia de efecto observable, sin llamarla ruido automáticamente.
+- [ ] Instrumentación futura: tiempos relativos medidos, dependencias y grupos paralelos, estructura genérica N agentes/V3. Nunca inventar tiempos históricos; verificar impactos antes de aplicar cambios.
+- [ ] Auditoría multilingüe: protocolo congelado separado del estado actual; verificar pruebas históricas, métricas, tests y comportamiento del runner sin repetir benchmarks por documentación.
