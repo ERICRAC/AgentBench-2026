@@ -2,17 +2,15 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-> En las tareas estudiadas, el coste de coordinación supera el beneficio medido. AgentBench busca las condiciones donde se invierte esta relación: dificultad, especialización, paralelismo y coste de los errores.
+> Un agente sabe escribir código. ¿Qué sucede cuando varios agentes tienen que trabajar juntos?
 
-[Conclusiones — ¿cuándo compensa colaborar?](results/CONCLUSIONS.es.md) — Esto se refiere a comparaciones disponibles con modelo y esfuerzo idénticos y la V2 consultiva actual, no a todos los equipos. Las pruebas oficiales no miden todas las correcciones adicionales observadas.
+**AgentBench 2026 es un laboratorio abierto de I+D sobre colaboración y comportamiento social de agentes IA.** Les damos los mismos problemas y cambiamos su organización: un desarrollador solo, un equipo de especialistas o, en el futuro, agentes locales.
 
-**Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
+No buscamos únicamente comprobar que el programa funciona. Queremos entender **quién aporta qué, cómo circulan los consejos, qué errores se evitan y cuánto cuesta en tiempo y tokens**. Los primeros ejercicios son una calculadora simple y una científica: problemas accesibles para observar estos mecanismos.
 
-Laboratorio I+D sobre colaboración de agentes: las calculadoras son ejercicios comunes. V1 = un candidato solo; V2 = un escritor y tres consultores; V3 = futuros consultores locales. Se miden calidad, tiempo y tokens: no se promete que V2 sea mejor.
+La pregunta que guía el proyecto: **¿a partir de cuándo trabajar juntos resulta más eficiente que trabajar solos?**
 
-[Guide](docs/reading-guide.es.md) · [V2 Astra medium](results/astra-medium-v2.es.md) · [Astra/high](results/astra-v2-retired.es.md) · [requirements.txt](requirements.txt)
-
-**V2 Astra medio: 2/2 retos terminados, 15/15 grupos y 71/71 controles.** Falta una V1 con esfuerzo medio; el panel de campaña de abajo sigue siendo Sol/high.
+Una experiencia concebida y dirigida **íntegramente mediante micrófono con Codex** por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/), con intercambios, resultados y límites publicados para examinarlos.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
@@ -20,27 +18,20 @@ Laboratorio I+D sobre colaboración de agentes: las calculadoras son ejercicios 
   <img alt="AgentBench 2026: un agente frente a una red de agentes" src="assets/agentbench-social-agents-light.png">
 </picture>
 
-> Un laboratorio abierto de I+D sobre el comportamiento social de los agentes
-> de IA: cuando varios agentes colaboran, ¿generan más inteligencia o sobre todo
-> más ruido?
+[📖 Descubrir el proyecto y leer un run](docs/reading-guide.es.md) · [Ver runs en 2 minutos](results/run-summaries/index.es.md) · [Leer conclusiones](results/CONCLUSIONS.es.md)
+
+Para orientarse: **V1 = solo**, **V2 = un desarrollador escritor y tres consultores**, **V3 = futuros consultores locales**. Las versiones describen organizaciones, no niveles de dificultad de calculadoras.
 
 ![Campaña](https://img.shields.io/badge/campa%C3%B1a-4%2F6_validaciones-22c55e)
 ![Progreso](https://img.shields.io/badge/progreso-67%25-06b6d4)
 ![Siguiente paso](https://img.shields.io/badge/siguiente-observaciones_V2-8b5cf6)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-f97316)
 
-AgentBench 2026 compara tres organizaciones de agentes en dos retos de la misma
-familia. Mide el resultado, pero también el tiempo, los tokens, las
-correcciones, las intervenciones humanas y el ruido de coordinación.
-
-El proyecto fue concebido y dirigido **íntegramente mediante micrófono con
-Codex** por [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/).
-
-Campaña activa: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Síntesis V2](results/sol-v2.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
-
-[Node.js / WSL / Markdown](docs/node-wsl.es.md) · [V2 preflight](results/astra-v2-preflight.es.md).
-
 ## Panel de control — estado actual
+
+**V2 Astra medio: 2/2 retos terminados, 15/15 grupos y 71/71 controles.** Falta una V1 con esfuerzo medio; el panel de campaña de abajo sigue siendo Sol/high.
+
+Campaña de referencia del panel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Síntesis V2](results/sol-v2.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
 
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |
 | :---: | :---: | :---: | :---: |
@@ -95,6 +86,12 @@ flowchart LR
 Las seis celdas V1–V3 × Calculadora simple–Calculadora científica forman la
 campaña obligatoria. V2.x y V4 son extensiones opcionales.
 
+## Qué nos enseñan los primeros experimentos
+
+> En las tareas estudiadas, el coste de coordinación supera el beneficio medido. AgentBench busca las condiciones donde se invierte esta relación: dificultad, especialización, paralelismo y coste de los errores.
+
+[Conclusiones — ¿cuándo compensa colaborar?](results/CONCLUSIONS.es.md) — Esto se refiere a comparaciones disponibles con modelo y esfuerzo idénticos y la V2 consultiva actual, no a todos los equipos. Las pruebas oficiales no miden todas las correcciones adicionales observadas.
+
 ## Pregunta experimental
 
 > ¿Un equipo de agentes produce un resultado mejor que un único buen agente
@@ -138,6 +135,27 @@ científica**.
 [especificaciones y tests](challenges/) → [resultados](results/README.es.md) →
 actas y trazas. La cobertura no es una nota absoluta de calidad.
 
+## V2 de un vistazo
+
+[📖 Cómo leer e interpretar un run AgentBench](docs/reading-guide.es.md) · [Cinco runs V2, dos minutos cada uno](results/run-summaries/index.es.md)
+
+```mermaid
+flowchart TB
+    X["Desafío"] --> A["SA-01 · requisitos"]
+    X --> B["SA-02 · arquitectura"]
+    A --> W["Barrera · ambas respuestas recibidas"]
+    B --> W
+    W --> C["SA-01 + SA-02 · revisiones cruzadas paralelas"]
+    C --> D["Barrera · ambas revisiones recibidas"]
+    D --> M["MAIN · único desarrollador escritor"]
+    M --> Q["SA-03 · revisión de calidad"]
+    Q --> F["MAIN · correcciones y verificador"]
+```
+
+RELAY lanza y transmite mecánicamente, fuera del equipo candidato. Cuatro roles candidatos, siete sesiones; las dos primeras fases son paralelas, la escritura es secuencial.
+
+[Instrumentación y publicación](docs/observability.es.md) · [Dependencias](requirements.txt) · [Node.js / WSL / Markdown](docs/node-wsl.es.md)
+
 ## Resultados publicados
 
 | Ejecución | Organización | Objetivo | Veredicto | Tiempo | Tokens observados |
@@ -156,6 +174,8 @@ actas y trazas. La cobertura no es una nota absoluta de calidad.
 correcciones; los datos ausentes nunca se reconstruyen a posteriori.
 
 ## V1, V2, V3… V2.x y V4
+
+**Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
 - **V1:** el orquestador experimental encarga el trabajo a una sesión candidata
   Codex distinta; esta trabaja sola, sin consultores ni delegación.

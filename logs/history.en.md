@@ -238,3 +238,11 @@ Publish the coordination-cost conclusion and crossover research question at the 
 **Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
 
 These items come from the supplied brief; agreeing V2.x names does not mark them complete. [Attached documentation work — still pending](../docs/reading-guide.en.md).
+
+## Exchange 027
+
+Implement the attached documentation brief without rerunning experiments: README V2 flow, two-level guide and parallel sequence, five generated PV covers in four languages, separate sourced analysis. Optional future instrumentation: relative intervals, dependencies and groups; historical runner unchanged. Twelve maintenance tests passed without model calls; nine existing solutions rechecked. Old publishers verified at their Git versions, without rewriting hashes. [Full audit](../docs/documentation-audit.en.md). Governance and evidence unchanged. Real instrumentation validation and GitHub light/dark rendering remain open; no new run implicitly authorised.
+
+## Exchange 028
+
+At the author’s request, introduce context before conclusions: why this R&D lab, which exercises, what collaboration question and how the microphone-led approach works. Move findings below the dashboard, the V2 diagram after the experimental explanation and naming into the roadmap. Four languages synchronised; no measurement or evidence changed.

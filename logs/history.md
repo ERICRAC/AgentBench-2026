@@ -324,3 +324,11 @@ Publier la conclusion sur le coût de coordination et la recherche du point de b
 **Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
 
 Ces points proviennent du cadrage transmis ; ils ne sont pas déclarés terminés par la validation des noms V2.x. [Chantier documentaire joint — restant à réaliser](../docs/reading-guide.md).
+
+## Échange 027
+
+Réaliser le chantier documentaire joint sans relancer les expériences : README avec flux V2, guide à deux niveaux et séquence parallèle, cinq couvertures de PV générées en quatre langues, analyses sourcées séparées. Instrumentation future optionnelle : intervalles relatifs, dépendances et groupes ; lanceur historique intact. Douze tests de maintenance réussis sans appel modèle ; neuf solutions existantes revérifiées. Les anciens publishers sont vérifiés dans leur version Git, sans réécrire les empreintes. [Bilan complet](../docs/documentation-audit.md). Gouvernance et preuves inchangées. Validation réelle de l’instrumentation et rendu GitHub clair/sombre restent ouverts ; aucun nouveau run autorisé implicitement.
+
+## Échange 028
+
+À la demande de l’auteur, réintroduire le contexte avant les conclusions : pourquoi ce laboratoire R&D, quels exercices, quelle question sur la collaboration et quelle démarche au microphone. Faire descendre les constats après le tableau de bord, le schéma V2 après l’explication expérimentale et la nomenclature dans la feuille de route. Quatre langues synchronisées ; aucune mesure ni preuve modifiée.

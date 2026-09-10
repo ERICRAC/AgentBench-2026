@@ -234,3 +234,11 @@ Publicar la conclusión sobre coste de coordinación y búsqueda del umbral desd
 **Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
 Estos puntos proceden del documento recibido; aprobar nombres V2.x no significa completarlos. [Trabajo documental adjunto — pendiente](../docs/reading-guide.es.md).
+
+## Intercambio 027
+
+Realizar el encargo documental sin relanzar experimentos: flujo V2 en README, guía a dos niveles y secuencia paralela, cinco portadas generadas en cuatro idiomas, análisis con fuentes separado. Instrumentación futura opcional: intervalos relativos, dependencias y grupos; lanzador histórico intacto. Doce tests de mantenimiento correctos sin llamadas al modelo; nueve soluciones existentes verificadas. Publishers antiguos verificados en su versión Git, sin reescribir hashes. [Auditoría completa](../docs/documentation-audit.es.md). Gobernanza y pruebas intactas. Validación real de instrumentación y renderizado GitHub claro/oscuro pendientes; ningún run autorizado implícitamente.
+
+## Intercambio 028
+
+A petición del autor, presentar contexto antes de conclusiones: motivo del laboratorio I+D, ejercicios, pregunta sobre colaboración y enfoque mediante micrófono. Bajar conclusiones tras el panel, diagrama V2 tras explicación experimental y nombres a la hoja de ruta. Cuatro idiomas sincronizados; ninguna medida ni prueba alterada.

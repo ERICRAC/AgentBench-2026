@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Les cinq runs V2 en 2 minutes chacun](run-summaries/index.md) · [📖 Comment lire et interpréter un run AgentBench](../docs/reading-guide.md)
+
 [Conclusions — quand le collectif devient-il rentable ?](CONCLUSIONS.md)
 
 Les V1 antérieures sont [archivées](ARCHIVE_V1.md). Les mentions « référence courante » dans leurs rapports décrivent leur statut historique, pas la campagne Astra.

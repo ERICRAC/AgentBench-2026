@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · **English (UK)** · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+[Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
+
 > On the tasks studied so far, coordination costs exceed the measured benefit. AgentBench now seeks the conditions where this relationship reverses: difficulty, specialisation, parallelism and the cost of errors.
 
 This concerns available comparisons at identical model and effort, using the current advisory V2. It does not condemn all agent teams. Official tests do not fully measure the additional corrections observed.

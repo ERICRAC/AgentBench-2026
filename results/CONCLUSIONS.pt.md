@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · **Português**
 
+[Cinco runs V2, dois minutos cada](run-summaries/index.pt.md) · [📖 Como ler e interpretar um run AgentBench](../docs/reading-guide.pt.md)
+
 > Nas tarefas estudadas, o custo de coordenação supera o benefício medido. O AgentBench procura as condições em que esta relação se inverte: dificuldade, especialização, paralelismo e custo dos erros.
 
 Isto refere-se às comparações disponíveis com modelo e esforço idênticos e à V2 consultiva atual, não a todas as equipas. Os testes oficiais não medem todas as correções adicionais observadas.

@@ -231,3 +231,11 @@ Publicar a conclusão sobre custo de coordenação e procura do limiar no README
 **Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
 
 Estes pontos vêm do documento recebido; aprovar nomes V2.x não significa concluí-los. [Trabalho documental anexo — pendente](../docs/reading-guide.pt.md).
+
+## Troca 027
+
+Realizar o trabalho documental sem relançar experiências: fluxo V2 no README, guia a dois níveis e sequência paralela, cinco capas geradas em quatro línguas, análise fundamentada separada. Instrumentação futura opcional: intervalos relativos, dependências e grupos; lançador histórico intacto. Doze testes de manutenção corretos sem chamadas ao modelo; nove soluções existentes verificadas. Publishers antigos verificados na versão Git, sem reescrever hashes. [Auditoria completa](../docs/documentation-audit.pt.md). Governação e provas intactas. Validação real da instrumentação e apresentação GitHub clara/escura pendentes; nenhum run autorizado implicitamente.
+
+## Troca 028
+
+A pedido do autor, apresentar contexto antes das conclusões: motivo do laboratório I&D, exercícios, pergunta sobre colaboração e abordagem por microfone. Descer conclusões após o painel, diagrama V2 após explicação experimental e nomes para o roteiro. Quatro línguas sincronizadas; nenhuma medição nem prova alterada.

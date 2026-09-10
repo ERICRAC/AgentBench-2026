@@ -2,17 +2,15 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-> Sur les tâches actuellement étudiées, le coût de coordination dépasse le bénéfice mesuré. AgentBench cherche désormais à identifier les conditions où ce rapport s’inverse : difficulté, spécialisation, parallélisme et coût des erreurs.
+> Un agent sait écrire du code. Mais que se passe-t-il quand plusieurs agents doivent travailler ensemble ?
 
-[Conclusions — quand le collectif devient-il rentable ?](results/CONCLUSIONS.md) — Ce constat concerne les comparaisons disponibles à modèle et effort identiques, avec la V2 consultative actuelle. Il ne condamne pas toutes les équipes d’agents. Les corrections supplémentaires observées ne sont pas entièrement mesurées par les tests officiels.
+**AgentBench 2026 est un laboratoire R&D ouvert sur la collaboration et le comportement social des agents IA.** On leur confie les mêmes problèmes, puis on fait varier leur organisation : un développeur seul, une équipe de spécialistes ou, demain, des agents locaux.
 
-**Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
+L’objectif n’est pas seulement de vérifier que le programme fonctionne. Nous cherchons à comprendre **qui apporte quoi, comment les avis circulent, quelles erreurs sont évitées — et à quel prix en temps et en tokens**. Les premiers terrains d’essai sont une calculatrice simple et une calculatrice scientifique : deux exercices accessibles pour observer concrètement ces mécanismes.
 
-Laboratoire R&D sur la collaboration des agents : les calculatrices sont les exercices communs. V1 = un candidat seul ; V2 = un écrivain et trois consultants ; V3 = futurs consultants locaux. On mesure qualité, temps et tokens : V2 n'est pas promise meilleure.
+La question qui guide le projet : **à partir de quand travailler à plusieurs devient-il plus efficace que travailler seul ?**
 
-[Guide](docs/reading-guide.md) · [V2 Astra medium](results/astra-medium-v2.md) · [Astra/high](results/astra-v2-retired.md) · [requirements.txt](requirements.txt)
-
-**V2 Astra moyen : 2/2 défis terminés, 15/15 groupes et 71/71 contrôles.** La V1 en effort moyen reste à établir ; le tableau de bord de campagne ci-dessous demeure celui de Sol/high.
+Une expérience imaginée et pilotée **entièrement au microphone avec Codex** par [Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/), avec les échanges, les résultats et les limites publiés pour pouvoir les examiner.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agentbench-social-agents.png">
@@ -20,28 +18,20 @@ Laboratoire R&D sur la collaboration des agents : les calculatrices sont les exe
   <img alt="AgentBench 2026 — un agent face à un collectif d'agents" src="assets/agentbench-social-agents-light.png">
 </picture>
 
-> Un laboratoire R&D ouvert sur le comportement social des agents IA : quand
-> plusieurs agents collaborent, produisent-ils davantage d'intelligence… ou
-> surtout davantage de bruit ?
+[📖 Découvrir le projet et lire un run](docs/reading-guide.md) · [Voir les runs en 2 minutes](results/run-summaries/index.md) · [Lire les conclusions](results/CONCLUSIONS.md)
+
+Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois consultants**, **V3 = futurs consultants locaux**. Ces versions désignent des organisations, pas les niveaux des calculatrices.
 
 ![Campagne](https://img.shields.io/badge/campagne-4%2F6_validations-22c55e)
 ![Progression](https://img.shields.io/badge/progression-67%25-06b6d4)
 ![Prochaine étape](https://img.shields.io/badge/prochaine-observations_V2-8b5cf6)
 ![Licence](https://img.shields.io/badge/licence-MIT-f97316)
 
-AgentBench 2026 compare trois organisations d'agents sur deux défis de même
-famille. Il mesure le résultat, mais aussi le temps, les tokens, les
-corrections, les interventions humaines et le bruit de coordination.
-
-Le projet a été imaginé et piloté **entièrement au microphone avec Codex** par
-[Éric Racineux](https://www.linkedin.com/in/eric-racineux-75475a7/). Le dialogue
-humain–agent fait donc partie de l'expérience autant que le code produit.
-
-Campagne active : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
-
-[Node.js / WSL / Markdown](docs/node-wsl.md) · [V2 preflight](results/astra-v2-preflight.md).
-
 ## Tableau de bord — état actuel
+
+**V2 Astra moyen : 2/2 défis terminés, 15/15 groupes et 71/71 contrôles.** La V1 en effort moyen reste à établir ; le tableau de bord de campagne ci-dessous demeure celui de Sol/high.
+
+Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |
 | :---: | :---: | :---: | :---: |
@@ -104,6 +94,12 @@ constituent la campagne obligatoire. V2.x et V4 n'entrent pas dans le calcul
 des 4/6 : ce sont des
 extensions facultatives, annoncées comme telles.
 
+## Ce que les premiers essais nous apprennent
+
+> Sur les tâches actuellement étudiées, le coût de coordination dépasse le bénéfice mesuré. AgentBench cherche désormais à identifier les conditions où ce rapport s’inverse : difficulté, spécialisation, parallélisme et coût des erreurs.
+
+[Conclusions — quand le collectif devient-il rentable ?](results/CONCLUSIONS.md) — Ce constat concerne les comparaisons disponibles à modèle et effort identiques, avec la V2 consultative actuelle. Il ne condamne pas toutes les équipes d’agents. Les corrections supplémentaires observées ne sont pas entièrement mesurées par les tests officiels.
+
 ## La question expérimentale
 
 > Une équipe d'agents produit-elle un meilleur résultat qu'un seul bon agent,
@@ -158,6 +154,27 @@ assertions. Sur un passage réussi, les 15 groupes exécutent **71 contrôles
 → PV et traces de chaque run. Les cases ci-dessus décrivent la couverture des
 suites actuelles ; elles ne constituent pas une note absolue de qualité.
 
+## Comprendre V2 d’un regard
+
+[📖 Comment lire et interpréter un run AgentBench](docs/reading-guide.md) · [Les cinq runs V2 en 2 minutes chacun](results/run-summaries/index.md)
+
+```mermaid
+flowchart TB
+    X["Challenge"] --> A["SA-01 · exigences"]
+    X --> B["SA-02 · architecture"]
+    A --> W["Barrière · deux avis reçus"]
+    B --> W
+    W --> C["SA-01 + SA-02 · revues croisées en parallèle"]
+    C --> D["Barrière · deux revues reçues"]
+    D --> M["MAIN · seul développeur écrivain"]
+    M --> Q["SA-03 · relecture qualité"]
+    Q --> F["MAIN · corrections et vérificateur"]
+```
+
+RELAY lance et transmet mécaniquement, hors équipe candidate. Quatre rôles candidats, sept sessions ; les deux premières phases sont parallèles, l’écriture reste séquentielle.
+
+[Instrumentation et publication](docs/observability.md) · [Dépendances](requirements.txt) · [Node.js / WSL / Markdown](docs/node-wsl.md)
+
 ## Résultats publiés
 
 | Run | Organisation | Défi | Verdict | Temps | Tokens observés |
@@ -176,6 +193,8 @@ suites actuelles ; elles ne constituent pas une note absolue de qualité.
 corrections. Aucune donnée manquante n'est reconstruite après coup.
 
 ## V1, V2, V3… et pourquoi V2.x ou V4
+
+**Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
 
 - **V1 — référence solo :** l'orchestrateur expérimental mandate une session
   candidate Codex distincte ; celle-ci travaille seule, sans consultant ni

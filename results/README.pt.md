@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+[Cinco runs V2, dois minutos cada](run-summaries/index.pt.md) · [📖 Como ler e interpretar um run AgentBench](../docs/reading-guide.pt.md)
+
 [Conclusões — quando compensa colaborar?](CONCLUSIONS.pt.md)
 
 As V1 anteriores estão [arquivadas](ARCHIVE_V1.pt.md). «Referência atual» nesses relatórios descreve o estado histórico, não a campanha Astra.
