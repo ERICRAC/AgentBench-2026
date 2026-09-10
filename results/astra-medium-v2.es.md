@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v2.md) · [English (UK)](astra-medium-v2.en.md) · **Español** · [Português](astra-medium-v2.pt.md)
 
+Navegación actualizada: este informe conserva su estado de publicación original. V1 Astra medio ya cubre ambos ejercicios; véase el balance actual. [Balance completo y pruebas](astra-medium-v1-v2.es.md)
+
 [Conclusiones — ¿cuándo compensa colaborar?](CONCLUSIONS.es.md)
 
 Ambos intentos terminados y confirmados independientemente: **15/15 grupos, 71/71 controles**, al primer paso oficial. Total: **1 023.177 s y 978 998 tokens entrada + salida**. Sin interrupciones en esta serie. Se excluyen mantenimiento, publicación e intentos anteriores.

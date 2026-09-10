@@ -254,3 +254,7 @@ Prepare Astra medium V1 on both calculators only, without launching candidates. 
 ## Exchange 030
 
 Authorise simple Astra medium V1 only, verify and publish before Scientific. Separate solo session without consultants: 98.572 s, 98,496 input + output tokens, 6/6 groups and 14/14 checks on first pass, independently confirmed. Path incident without functional fix; extra candidate minutes preserved as deliverable tension. Code frozen in ddf4745, report/minutes/trace/metadata published separately. Simple medium V2: ×3.81 time, ×4.15 tokens, equal score; causal limits explicit. Scientific remains fresh; governance and verifiers unchanged.
+
+## Exchange 031
+
+Authorise and execute Astra medium scientific V1 after Core publication. Separate solo candidate: 188.560 s, 119,388 tokens, first and independent passes 9/9 groups and 57/57 checks; no post-verdict fix. Unchanged code aaa83de, authorisation b312fb5; minutes, visible texts, trace and metrics published separately. Two post-run probes reveal length/recursion limits outside the score. Full comparison: V2 ×3.56 time and ×4.49 tokens, same score; SA-03 robustness contribution distinguished. Four languages and navigation updated, governance and suites unchanged, no variant launched. [Full comparison and evidence](../results/astra-medium-v1-v2.en.md)

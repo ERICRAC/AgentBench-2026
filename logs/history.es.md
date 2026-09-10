@@ -250,3 +250,7 @@ Preparar solo V1 Astra medio en ambas calculadoras, sin candidatos. Dos director
 ## Intercambio 030
 
 Autorizar solo V1 simple Astra medio, verificar y publicar antes de Scientific. Sesión solo distinta sin consultores: 98,572 s, 98 496 tokens, 6/6 grupos y 14/14 controles al primer pase, confirmados independientemente. Error de rutas sin corrección funcional; acta candidata extra preservada como tensión documental. Código fijado en ddf4745; informe/acta/traza/metadatos separados. V2 simple medio: ×3,81 tiempo, ×4,15 tokens, puntuación igual y límites causales explícitos. Scientific virgen; gobernanza y verificadores intactos.
+
+## Intercambio 031
+
+Autorizar y ejecutar V1 científica Astra medio tras publicar Core. Candidato solo separado: 188,560 s, 119 388 tokens, primer pase y confirmación independiente 9/9 grupos y 57/57 controles; sin corrección posterior. Código intacto aaa83de, autorización b312fb5; acta, textos visibles, traza y métricas publicados aparte. Dos sondas posteriores revelan límites de longitud/recursión fuera de puntuación. Balance completo: V2 ×3,56 tiempo y ×4,49 tokens, igual puntuación; contribución de robustez SA-03 diferenciada. Cuatro idiomas y navegación actualizados; gobernanza y suites intactas, ninguna variante lanzada. [Balance completo y pruebas](../results/astra-medium-v1-v2.es.md)

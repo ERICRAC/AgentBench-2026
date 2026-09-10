@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v1-core.md) · **English (UK)** · [Español](astra-medium-v1-core.es.md) · [Português](astra-medium-v1-core.pt.md)
 
+Navigation update: this report preserves its original publication state. Astra medium V1 now covers both exercises; see the current comparison. [Full comparison and evidence](astra-medium-v1-v2.en.md)
+
 astra-medium-core-v1-001 completed: **6/6 groups, 14/14 checks**, on the first pass, independently confirmed. **98.572 s and 98,496 input + output tokens.** No scientific candidate launched.
 
 ## The run in two minutes

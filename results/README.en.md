@@ -15,15 +15,16 @@ every assertion.
 
 [V2 Astra medium](astra-medium-v2.en.md) · [Astra/high](astra-v2-retired.en.md) · [Guide](../docs/reading-guide.en.md)
 
-## Astra medium V1 baseline — simple complete
+## Astra medium V1 baseline — both calculators complete
 
-**Astra medium simple V1: 98.572 s, 98,496 tokens, 6/6 groups and 14/14 checks.** V2 uses ×3.81 time and ×4.15 tokens at equal official score. [Report and evidence](astra-medium-v1-core.en.md)
+**Astra medium V1 versus V2: equal official scores on both challenges.** V2 uses ×3.56 time and ×4.49 tokens overall. Review nevertheless contributes robustness fixes outside the score. [Full comparison and evidence](astra-medium-v1-v2.en.md)
 
 ## Published results
 
 | Run | Mode | Objective | Result | Status | Details |
 | --- | --- | --- | --- | --- | --- |
-| `astra-medium-core-v1-001` | V1 solo Astra medium | Core | 6/6 · 14/14 | completed | [Report](astra-medium-v1-core.en.md) |
+| `astra-medium-core-v1-001` | V1 solo Astra medium | Simple | 6/6 groups · 14/14 checks | completed | [Report](astra-medium-v1-core.en.md) |
+| `astra-medium-scientific-v1-001` | V1 solo Astra medium | Scientific | 9/9 groups · 57/57 checks | completed | [Full comparison and evidence](astra-medium-v1-v2.en.md) |
 | `astra-core-v1-002` | Codex alone | Core Calculator | 6/6 groups · 14/14 checks | Astra baseline | [Full report](astra-v1.en.md) |
 | `astra-scientific-v1-002` | Codex alone | Scientific Calculator | 9/9 groups · 57/57 checks | Astra baseline | [Full report](astra-v1.en.md) |
 | `sol-core-v1-001` | Codex alone | Core Calculator | 6/6 groups · 14/14 checks | Model control | [Comparison](sol-vs-astra-v1.en.md) |

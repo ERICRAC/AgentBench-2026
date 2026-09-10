@@ -120,7 +120,7 @@ Vérifier défi, empreinte du vérificateur, modèle, effort, contexte, prompts 
 
 Somme des durées de sessions ≠ temps mural. Cache inclus dans entrée, raisonnement inclus dans sortie : pas de double comptage. Total de tokens ≠ contexte simultanément occupé. Donnée manquante ≠ zéro. Séparer interruptions et maintenance des runs complets.
 
-La V1 simple Astra moyen est terminée ; seule la scientifique reste manquante. [V1 Core](../results/astra-medium-v1-core.md). Comparer V2 moyen à V1 élevé n’isole pas l’organisation. Une observation par cellule ne démontre ni généralité ni causalité. Tests : 6 groupes/14 contrôles simples, 9 groupes/57 contrôles scientifiques. Les quatre tests candidats Scientific moyen ne s’y ajoutent pas.
+Les références V1 et V2 Astra moyen sont terminées sur les deux calculatrices. [Bilan complet et preuves](../results/astra-medium-v1-v2.md) [V1 Core](../results/astra-medium-v1-core.md). Comparer V2 moyen à V1 élevé n’isole pas l’organisation. Une observation par cellule ne démontre ni généralité ni causalité. Tests : 6 groupes/14 contrôles simples, 9 groupes/57 contrôles scientifiques. Les quatre tests candidats Scientific moyen ne s’y ajoutent pas.
 
 ## État courant, historique et reprise du code
 

@@ -29,9 +29,9 @@ Para orientarse: **V1 = solo**, **V2 = un desarrollador escritor y tres consulto
 
 ## Panel de control — estado actual
 
-**V2 Astra medio: 2/2 retos terminados, 15/15 grupos y 71/71 controles.** V1 Astra medio: calculadora simple terminada, 6/6 grupos y 14/14 controles; científica no lanzada.
+**Astra medio: V1 y V2 terminadas en ambas calculadoras**, 4/6 celdas de campaña; cada organización alcanza 15/15 grupos y 71/71 controles. V3 pendiente.
 
-**V1 simple Astra medio: 98,572 s, 98 496 tokens, 6/6 grupos y 14/14 controles.** V2 usa ×3,81 tiempo y ×4,15 tokens con igual resultado oficial. [Informe y pruebas](results/astra-medium-v1-core.es.md)
+**V1 frente a V2, Astra medio: igual puntuación oficial en ambos desafíos.** V2 utiliza ×3,56 tiempo y ×4,49 tokens en total. La revisión aporta correcciones de robustez fuera de la puntuación. [Balance completo y pruebas](results/astra-medium-v1-v2.es.md)
 
 Campaña de referencia del panel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Síntesis V2](results/sol-v2.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
 
@@ -162,6 +162,8 @@ RELAY lanza y transmite mecánicamente, fuera del equipo candidato. Cuatro roles
 
 | Ejecución | Organización | Objetivo | Veredicto | Tiempo | Tokens observados |
 | --- | --- | --- | ---: | ---: | ---: |
+| [`astra-medium-core-v1-001`](results/astra-medium-v1-core.es.md) | V1 · Astra medium | Simple | **6/6 grupos · 14/14 controles** | 98.572 s | 98 496¹ |
+| [`astra-medium-scientific-v1-001`](results/astra-medium-v1-v2.es.md) | V1 · Astra medium | Científica | **9/9 grupos · 57/57 controles** | 188.560 s | 119 388¹ |
 | [`astra-core-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora simple | **6/6 grupos · 14/14 controles** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.es.md) | V1 · Referencia Astra | Calculadora científica | **9/9 grupos · 57/57 controles** | 399.478 s | 220 510¹ |
 | [`sol-core-v1-001`](results/sol-vs-astra-v1.es.md) | V1 · Control Sol | Calculadora simple | **6/6 grupos · 14/14 controles** | 189.964 s | 158 101¹ |

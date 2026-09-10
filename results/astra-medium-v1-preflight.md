@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](astra-medium-v1-preflight.en.md) · [Español](astra-medium-v1-preflight.es.md) · [Português](astra-medium-v1-preflight.pt.md)
 
-État historique de préparation : Core est désormais terminé. Le contrôle global 44/44 ci-dessous décrit l’avant-run et doit refuser un Core déjà exécuté. Scientific reste vierge et non autorisé. [V1 Core](astra-medium-v1-core.md)
+Document historique : les deux V1 sont désormais terminées. Le contrôle 44/44 ci-dessous décrit la préparation et doit refuser ces dossiers déjà exécutés. Le reste du document conserve les autorisations et constats de cette étape. [Bilan complet et preuves](astra-medium-v1-v2.md)
 
 Deux tentatives solo vierges sont préparées. **44/44 contrôles statiques réussis ; aucun candidat, aucun appel modèle de test, aucun score produit.** Autorisation reçue : préparer seulement. Le choix de modèle dans cette conversation ne remplace pas les configurations explicites des futurs candidats.
 

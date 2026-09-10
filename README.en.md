@@ -29,9 +29,9 @@ Finding your bearings: **V1 = solo**, **V2 = one developer writer and three cons
 
 ## Dashboard — current state
 
-**Astra medium V2: 2/2 challenges completed, 15/15 groups and 71/71 checks.** Astra medium V1: simple calculator completed, 6/6 groups and 14/14 checks; scientific not launched.
+**Astra medium: V1 and V2 complete on both calculators**, 4/6 campaign cells; each achieves 15/15 groups and 71/71 checks. V3 remains pending.
 
-**Astra medium simple V1: 98.572 s, 98,496 tokens, 6/6 groups and 14/14 checks.** V2 uses ×3.81 time and ×4.15 tokens at equal official score. [Report and evidence](results/astra-medium-v1-core.en.md)
+**Astra medium V1 versus V2: equal official scores on both challenges.** V2 uses ×3.56 time and ×4.49 tokens overall. Review nevertheless contributes robustness fixes outside the score. [Full comparison and evidence](results/astra-medium-v1-v2.en.md)
 
 Dashboard reference campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [Sol V1 control](results/sol-vs-astra-v1.en.md) · [V2 synthesis](results/sol-v2.en.md) · [V1 archive](results/ARCHIVE_V1.en.md).
 
@@ -179,6 +179,8 @@ RELAY launches and forwards mechanically, outside the candidate team. Four candi
 
 | Run | Organisation | Challenge | Verdict | Time | Observed tokens |
 | --- | --- | --- | ---: | ---: | ---: |
+| [`astra-medium-core-v1-001`](results/astra-medium-v1-core.en.md) | V1 · Astra medium | Simple | **6/6 groups · 14/14 checks** | 98.572 s | 98 496¹ |
+| [`astra-medium-scientific-v1-001`](results/astra-medium-v1-v2.en.md) | V1 · Astra medium | Scientific | **9/9 groups · 57/57 checks** | 188.560 s | 119 388¹ |
 | [`astra-core-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Simple Calculator | **6/6 groups · 14/14 checks** | 100.175 s | 120 478¹ |
 | [`astra-scientific-v1-002`](results/astra-v1.en.md) | V1 · Astra baseline | Scientific Calculator | **9/9 groups · 57/57 checks** | 399.478 s | 220 510¹ |
 | [`sol-core-v1-001`](results/sol-vs-astra-v1.en.md) | V1 · Sol control | Simple Calculator | **6/6 groups · 14/14 checks** | 189.964 s | 158 101¹ |

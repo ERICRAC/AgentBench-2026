@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v1-core.md) · [English (UK)](astra-medium-v1-core.en.md) · **Español** · [Português](astra-medium-v1-core.pt.md)
 
+Navegación actualizada: este informe conserva su estado de publicación original. V1 Astra medio ya cubre ambos ejercicios; véase el balance actual. [Balance completo y pruebas](astra-medium-v1-v2.es.md)
+
 astra-medium-core-v1-001 terminada: **6/6 grupos, 14/14 controles**, al primer pase y confirmados independientemente. **98,572 s y 98 496 tokens entrada + salida.** Ningún candidato científico lanzado.
 
 ## El run en dos minutos

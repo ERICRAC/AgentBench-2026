@@ -120,7 +120,7 @@ Comprobar desafío, hash del verificador, modelo, esfuerzo, contexto, prompts y 
 
 Suma de duraciones de sesiones ≠ duración total. Caché incluida en entrada, razonamiento en salida: no contar dos veces. Tokens totales ≠ contexto simultáneamente ocupado. Ausente ≠ cero. Separar interrupciones y mantenimiento de runs completos.
 
-V1 simple Astra medio terminada; falta solo la científica. [V1 Core](../results/astra-medium-v1-core.es.md) comparar V2 medio con V1 elevado no aísla organización. Una observación por celda no demuestra generalidad ni causalidad. Tests: 6 grupos/14 controles simples, 9 grupos/57 científicos. Los cuatro tests candidatos Scientific medio son aparte.
+V1 y V2 Astra medio terminadas en ambas calculadoras. [Balance completo y pruebas](../results/astra-medium-v1-v2.es.md) [V1 Core](../results/astra-medium-v1-core.es.md) comparar V2 medio con V1 elevado no aísla organización. Una observación por celda no demuestra generalidad ni causalidad. Tests: 6 grupos/14 controles simples, 9 grupos/57 científicos. Los cuatro tests candidatos Scientific medio son aparte.
 
 ## Estado actual, historia y continuación del código
 

@@ -340,3 +340,7 @@ Préparer uniquement V1 Astra moyen sur les deux calculatrices, sans lancer de c
 ## Échange 030
 
 Autorisation de lancer uniquement V1 simple Astra moyen, puis vérifier et publier avant Scientific. Session solo distincte sans consultant : 98,572 s, 98 496 tokens entrée + sortie, 6/6 groupes et 14/14 contrôles dès le premier passage, confirmés indépendamment. Incident de chemins sans correction fonctionnelle ; PV supplémentaire candidat conservé comme tension de livrables. Code figé dans ddf4745, rapport/PV/trace/métadonnées publiés séparément. V2 simple moyen : ×3,81 temps, ×4,15 tokens, score égal ; limites de causalité explicites. Scientific demeure vierge ; gouvernance et arbitres inchangés.
+
+## Échange 031
+
+Autorisation et exécution de V1 scientifique Astra moyen après publication Core. Candidat solo distinct : 188,560 s, 119 388 tokens, 9/9 groupes et 57/57 contrôles au premier passage puis indépendamment ; aucun correctif après verdict. Code inchangé dans aaa83de, autorisation b312fb5 ; PV, verbatim, trace et métriques publiés séparément. Deux sondes après run exposent les limites longueur/récursion, hors score. Comparaison complète : V2 ×3,56 temps et ×4,49 tokens, même score ; apport de robustesse de SA-03 distingué. Quatre langues et navigation actualisées, gouvernance et suites inchangées, aucune variante lancée. [Bilan complet et preuves](../results/astra-medium-v1-v2.md)

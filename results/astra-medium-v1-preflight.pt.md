@@ -2,7 +2,7 @@
 
 [Français](astra-medium-v1-preflight.md) · [English (UK)](astra-medium-v1-preflight.en.md) · [Español](astra-medium-v1-preflight.es.md) · **Português**
 
-Preparação histórica: Core já terminou. O controlo 44/44 seguinte descreve estado anterior e deve rejeitar Core já executado. Scientific continua virgem e sem autorização. [V1 Core](astra-medium-v1-core.pt.md)
+Documento histórico: ambas as V1 já terminaram. O controlo 44/44 seguinte descreve a preparação e deve rejeitar estes diretórios executados. O restante preserva autorizações e observações daquela etapa. [Balanço completo e provas](astra-medium-v1-v2.pt.md)
 
 Duas tentativas solo novas preparadas. **44/44 controlos estáticos corretos; nenhum candidato, chamada de teste ao modelo ou resultado.** Só preparação autorizada. O modelo do chat não substitui configurações explícitas dos futuros candidatos.
 

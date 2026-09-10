@@ -14,15 +14,16 @@ traza. Los antiguos `6/6` y `9/9` cuentan grupos `unittest`, no cada aserción.
 
 [V2 Astra medium](astra-medium-v2.es.md) · [Astra/high](astra-v2-retired.es.md) · [Guide](../docs/reading-guide.es.md)
 
-## Referencia V1 Astra medio — simple terminada
+## Referencia V1 Astra medio — ambas calculadoras terminadas
 
-**V1 simple Astra medio: 98,572 s, 98 496 tokens, 6/6 grupos y 14/14 controles.** V2 usa ×3,81 tiempo y ×4,15 tokens con igual resultado oficial. [Informe y pruebas](astra-medium-v1-core.es.md)
+**V1 frente a V2, Astra medio: igual puntuación oficial en ambos desafíos.** V2 utiliza ×3,56 tiempo y ×4,49 tokens en total. La revisión aporta correcciones de robustez fuera de la puntuación. [Balance completo y pruebas](astra-medium-v1-v2.es.md)
 
 ## Resultados publicados
 
 | Intento | Mode | Objetivo | Resultado | Estado | Detalles |
 | --- | --- | --- | --- | --- | --- |
-| `astra-medium-core-v1-001` | V1 solo Astra medium | Core | 6/6 · 14/14 | completed | [Report](astra-medium-v1-core.es.md) |
+| `astra-medium-core-v1-001` | V1 solo Astra medium | Simple | 6/6 grupos · 14/14 controles | completed | [Report](astra-medium-v1-core.es.md) |
+| `astra-medium-scientific-v1-001` | V1 solo Astra medium | Científica | 9/9 grupos · 57/57 controles | completed | [Balance completo y pruebas](astra-medium-v1-v2.es.md) |
 | `astra-core-v1-002` | Codex solo | Calculadora Core | 6/6 grupos · 14/14 controles | Referencia Astra | [Informe completo](astra-v1.es.md) |
 | `astra-scientific-v1-002` | Codex solo | Calculadora Scientific | 9/9 grupos · 57/57 controles | Referencia Astra | [Informe completo](astra-v1.es.md) |
 | `sol-core-v1-001` | Codex solo | Calculadora Core | 6/6 grupos · 14/14 controles | Control de modelo | [Comparación](sol-vs-astra-v1.es.md) |

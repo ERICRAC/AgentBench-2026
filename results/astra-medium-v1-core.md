@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](astra-medium-v1-core.en.md) · [Español](astra-medium-v1-core.es.md) · [Português](astra-medium-v1-core.pt.md)
 
+Mise à jour de navigation : ce rapport conserve son état de publication initial. V1 Astra moyen est désormais terminée sur les deux exercices ; voir le bilan actuel. [Bilan complet et preuves](astra-medium-v1-v2.md)
+
 La tentative astra-medium-core-v1-001 est terminée : **6/6 groupes, soit 14/14 contrôles**, dès le premier passage, confirmés indépendamment. **98,572 s et 98 496 tokens entrée + sortie.** Aucun candidat scientifique lancé.
 
 ## Le run en deux minutes
