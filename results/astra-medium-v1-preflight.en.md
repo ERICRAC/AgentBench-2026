@@ -2,6 +2,8 @@
 
 [Français](astra-medium-v1-preflight.md) · **English (UK)** · [Español](astra-medium-v1-preflight.es.md) · [Português](astra-medium-v1-preflight.pt.md)
 
+Historical preparation state: Core is now complete. The 44/44 check below describes pre-run state and must reject an already executed Core. Scientific remains fresh and unauthorised. [V1 Core](astra-medium-v1-core.en.md)
+
 Two fresh solo attempts are prepared. **44/44 static checks pass; no candidate, no test model call, no score produced.** Preparation only was authorised. This conversation’s model selection does not replace explicit future candidate configurations.
 
 ## Reserved attempts

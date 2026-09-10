@@ -29,9 +29,9 @@ Para orientar a leitura: **V1 = solo**, **V2 = um programador escritor e três c
 
 ## Painel — estado atual
 
-**V2 Astra médio: 2/2 desafios terminados, 15/15 grupos e 71/71 controlos.** Falta uma V1 com esforço médio; o painel de campanha abaixo continua Sol/high.
+**V2 Astra médio: 2/2 desafios terminados, 15/15 grupos e 71/71 controlos.** V1 Astra médio: calculadora simples terminada, 6/6 grupos e 14/14 controlos; científica não lançada.
 
-**Próxima etapa preparada: [preflight V1 Astra médio](results/astra-medium-v1-preflight.pt.md)** — dois diretórios novos, 44/44 controlos estáticos; nenhum candidato iniciado.
+**V1 simples Astra médio: 98,572 s, 98 496 tokens, 6/6 grupos e 14/14 controlos.** V2 usa ×3,81 tempo e ×4,15 tokens com resultado oficial igual. [Relatório e provas](results/astra-medium-v1-core.pt.md)
 
 Campanha de referência do painel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controlos](docs/acceptance-tests.pt.md) · [Controlo V1 Sol](results/sol-vs-astra-v1.pt.md) · [Síntese V2](results/sol-v2.pt.md) · [Arquivo V1](results/ARCHIVE_V1.pt.md).
 

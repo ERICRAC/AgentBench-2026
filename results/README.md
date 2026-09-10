@@ -15,14 +15,15 @@ PV et la trace du run. Les anciens rapports utilisent parfois le raccourci
 
 [V2 Astra medium](astra-medium-v2.md) · [Astra/high](astra-v2-retired.md) · [Guide](../docs/reading-guide.md)
 
-## Préparation — aucun nouveau résultat
+## Référence V1 Astra moyen — simple terminée
 
-**Prochaine étape préparée : [préflight V1 Astra moyen](astra-medium-v1-preflight.md)** — deux dossiers vierges, 44/44 contrôles statiques ; aucun candidat lancé.
+**V1 simple Astra moyen : 98,572 s, 98 496 tokens, 6/6 groupes et 14/14 contrôles.** V2 utilise ×3,81 le temps et ×4,15 les tokens à résultat officiel égal. [Rapport et preuves](astra-medium-v1-core.md)
 
 ## Résultats publiés
 
 | Tentative | Mode | Objectif | Résultat | Statut | Détails |
 | --- | --- | --- | --- | --- | --- |
+| `astra-medium-core-v1-001` | V1 solo Astra medium | Core | 6/6 · 14/14 | completed | [Report](astra-medium-v1-core.md) |
 | `astra-core-v1-002` | Codex seul | Calculatrice Core | 6/6 groupes · 14/14 contrôles | Référence Astra | [Rapport complet](astra-v1.md) |
 | `astra-scientific-v1-002` | Codex seul | Calculatrice Scientific | 9/9 groupes · 57/57 contrôles | Référence Astra | [Rapport complet](astra-v1.md) |
 | `sol-core-v1-001` | Codex seul | Calculatrice Core | 6/6 groupes · 14/14 contrôles | Contrôle modèle | [Comparaison](sol-vs-astra-v1.md) |

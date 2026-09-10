@@ -29,9 +29,9 @@ Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois cons
 
 ## Tableau de bord — état actuel
 
-**V2 Astra moyen : 2/2 défis terminés, 15/15 groupes et 71/71 contrôles.** La V1 en effort moyen reste à établir ; le tableau de bord de campagne ci-dessous demeure celui de Sol/high.
+**V2 Astra moyen : 2/2 défis terminés, 15/15 groupes et 71/71 contrôles.** V1 Astra moyen : calculatrice simple terminée, 6/6 groupes et 14/14 contrôles ; scientifique non lancée.
 
-**Prochaine étape préparée : [préflight V1 Astra moyen](results/astra-medium-v1-preflight.md)** — deux dossiers vierges, 44/44 contrôles statiques ; aucun candidat lancé.
+**V1 simple Astra moyen : 98,572 s, 98 496 tokens, 6/6 groupes et 14/14 contrôles.** V2 utilise ×3,81 le temps et ×4,15 les tokens à résultat officiel égal. [Rapport et preuves](results/astra-medium-v1-core.md)
 
 Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 

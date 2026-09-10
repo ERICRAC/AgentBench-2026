@@ -336,3 +336,7 @@ Réaliser le chantier documentaire joint sans relancer les expériences : README
 ## Échange 029
 
 Préparer uniquement V1 Astra moyen sur les deux calculatrices, sans lancer de candidat. Deux dossiers vierges préenregistrés dans la campagne associée astra-medium-001 ; configuration V1 historique modifiée uniquement de high à medium. Capture historique conservée, nouvelle instrumentation désactivée. 44/44 contrôles statiques et 12 tests de maintenance réussis ; aucun appel modèle de test. Comparabilité, limites d’une référence après V2, absence de garantie de quota et commandes de contrôle documentées en quatre langues. Compétence OpenAI Docs utilisée pour les paramètres, sans considérer la documentation comme une preuve d’accès au modèle. Gouvernance et anciens résultats inchangés ; le lancement nécessite une nouvelle autorisation.
+
+## Échange 030
+
+Autorisation de lancer uniquement V1 simple Astra moyen, puis vérifier et publier avant Scientific. Session solo distincte sans consultant : 98,572 s, 98 496 tokens entrée + sortie, 6/6 groupes et 14/14 contrôles dès le premier passage, confirmés indépendamment. Incident de chemins sans correction fonctionnelle ; PV supplémentaire candidat conservé comme tension de livrables. Code figé dans ddf4745, rapport/PV/trace/métadonnées publiés séparément. V2 simple moyen : ×3,81 temps, ×4,15 tokens, score égal ; limites de causalité explicites. Scientific demeure vierge ; gouvernance et arbitres inchangés.

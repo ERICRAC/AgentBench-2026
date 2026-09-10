@@ -8,6 +8,8 @@
 
 Ce constat concerne les comparaisons disponibles à modèle et effort identiques, avec la V2 consultative actuelle. Il ne condamne pas toutes les équipes d’agents. Les corrections supplémentaires observées ne sont pas entièrement mesurées par les tests officiels.
 
+**V1 simple Astra moyen : 98,572 s, 98 496 tokens, 6/6 groupes et 14/14 contrôles.** V2 utilise ×3,81 le temps et ×4,15 les tokens à résultat officiel égal. [Rapport et preuves](astra-medium-v1-core.md)
+
 ## Ce que montrent les expériences
 
 | Comparaison | Temps V2 / V1 | Tokens V2 / V1 |
@@ -15,18 +17,19 @@ Ce constat concerne les comparaisons disponibles à modèle et effort identiques
 | Sol élevé · calculatrice simple | ×4,19 | ×3,54 |
 | Sol élevé · calculatrice scientifique | ×1,57 | ×3,09 |
 | Astra élevé · calculatrice simple | ×7,00 | ×4,75 |
+| Astra moyen · calculatrice simple | ×3,81 | ×4,15 |
 
-Dans ces trois comparaisons, le score final officiel est identique : V1 est moins coûteuse en temps et en tokens. Pour Sol, le surcoût relatif diminue sur la calculatrice scientifique, sans devenir un gain. Deux difficultés et une observation par cellule ne permettent ni de situer ni d’extrapoler un seuil de bascule.
+Dans ces quatre comparaisons, le score final officiel est identique : V1 est moins coûteuse en temps et en tokens. Pour Sol, le surcoût relatif diminue sur la calculatrice scientifique, sans devenir un gain. Deux difficultés et une observation par cellule ne permettent ni de situer ni d’extrapoler un seuil de bascule.
 
 [Sol V1/V2](sol-v2.md) · [Astra Core V1/V2](astra-v2-core.md)
 
 Les mots V1/V2 désignent des organisations, jamais des générations de calculatrice. **Calculatrice simple** = identifiant historique Core ; **calculatrice scientifique** = Scientific. On compare V1 et V2 sur chaque même exercice, puis leurs écarts entre exercices. Comparer directement V1 simple à V2 scientifique mélangerait difficulté et organisation.
 
-## Organisations à comparer — propositions, non lancées
+## Organisations — références et variantes proposées
 
 | Organisation | Répartition du travail | Hypothèse |
 | --- | --- | --- |
-| Solo (V1) | Un candidat réalise tout. | Référence Astra moyen manquante. |
+| Solo (V1) | Un candidat réalise tout. | Simple terminée ; scientifique manquante. |
 | Conseil (V2 actuelle) | Un écrivain et trois consultants. | Des avis et une relecture évitent des erreurs. |
 | **V2.1** — Développement parallèle | Deux développeurs, un intégrateur et un relecteur ; contributions isolées, interfaces fixées avant développement. | Le travail simultané compense les échanges et l’intégration. |
 | **V2.2** — Binôme sobre | Un développeur et un relecteur, une revue bornée. | Conserver la critique utile avec moins de coordination. |
@@ -39,7 +42,7 @@ Les variantes sont distinctes de la V2 figée : aucun benchmark existant n’est
 
 ## Comment chercher la bascule
 
-Commencer par la référence solo Astra moyen, puis tester les organisations sur les deux exercices identiques. Les calculatrices monofichier constituent un premier témoin, mais offrent peu de travail réellement divisible. Étendre ensuite à un défi modulaire ou à une évolution de code existant avec davantage d’interactions ; figer les nouveaux tests avant les runs.
+Compléter la référence solo Astra moyen, puis tester les organisations sur les deux exercices identiques. Les calculatrices monofichier constituent un premier témoin, mais offrent peu de travail réellement divisible. Étendre ensuite à un défi modulaire ou à une évolution de code existant avec davantage d’interactions ; figer les nouveaux tests avant les runs.
 
 Mesurer séparément qualité, délai total jusqu’à validation, tokens de tous les agents, reprises d’intégration et échanges. Répéter les cellules avec ordre de passage équilibré ; fixer à l’avance budgets, arrêt et traitement des quotas. Distinguer les temps d’attente imposés des temps d’exécution. Le nombre de répétitions et le nouveau défi restent à arbitrer.
 
@@ -47,6 +50,6 @@ Le seuil peut être différent pour le délai, les tokens et la qualité. Une é
 
 ## Limites et preuves
 
-V1 Astra moyen n’a pas été exécutée. Les résultats V2 Astra moyen / Sol élevé changent modèle et effort ; Scientific Astra élevé a des coûts incomplets. Ils ne démontrent pas isolément l’effet de l’organisation. Les PV révèlent des corrections utiles, mais 71/71 ne mesure pas toute la qualité ni la maintenabilité.
+La V1 simple Astra moyen est terminée ; seule la scientifique reste manquante. Les résultats V2 Astra moyen / Sol élevé changent modèle et effort ; Scientific Astra élevé a des coûts incomplets. Ils ne démontrent pas isolément l’effet de l’organisation. Les PV révèlent des corrections utiles, mais 71/71 ne mesure pas toute la qualité ni la maintenabilité.
 
 [Astra medium](astra-medium-v2.md) · [Guide](../docs/reading-guide.md) · [README](../README.md) · [Tests](../docs/acceptance-tests.md)

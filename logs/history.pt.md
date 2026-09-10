@@ -243,3 +243,7 @@ A pedido do autor, apresentar contexto antes das conclusões: motivo do laborat�
 ## Troca 029
 
 Preparar apenas V1 Astra médio nas duas calculadoras, sem candidatos. Dois diretórios novos pré-registados na campanha associada astra-medium-001; configuração V1 histórica muda só high para medium. Captura histórica preservada, novo observador desativado. 44/44 controlos estáticos e 12 testes de manutenção corretos; nenhuma chamada de teste ao modelo. Comparabilidade, limites de referência posterior a V2, quota não verificada e comandos documentados em quatro línguas. OpenAI Docs usado para parâmetros, sem provar acesso ao modelo. Governação e resultados anteriores intactos; lançamento exige nova autorização.
+
+## Troca 030
+
+Autorizar apenas V1 simples Astra médio, verificar e publicar antes de Scientific. Sessão solo distinta sem consultores: 98,572 s, 98 496 tokens, 6/6 grupos e 14/14 controlos na primeira passagem, confirmados independentemente. Erro de caminhos sem correção funcional; ata extra preservada como tensão documental. Código fixado em ddf4745; relatório/ata/trace/metadados separados. V2 simples médio: ×3,81 tempo, ×4,15 tokens, pontuação igual e limites causais explícitos. Scientific virgem; governação e verificadores intactos.

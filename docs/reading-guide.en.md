@@ -120,7 +120,7 @@ Check challenge, verifier hash, model, effort, context, prompts and budget. Comp
 
 Sum of session durations ≠ wall time. Cache is included in input, reasoning in output: no double counting. Total tokens ≠ simultaneous context occupancy. Missing ≠ zero. Separate interruptions and maintenance from completed runs.
 
-Astra medium V1 is missing; V2 medium versus V1 high does not isolate organisation. One observation per cell cannot establish generality or causality. Tests: 6 groups/14 simple checks, 9 groups/57 scientific checks. The four Scientific medium candidate tests are separate.
+Astra medium simple V1 is complete; only scientific is still missing. [V1 Core](../results/astra-medium-v1-core.en.md) V2 medium versus V1 high does not isolate organisation. One observation per cell cannot establish generality or causality. Tests: 6 groups/14 simple checks, 9 groups/57 scientific checks. The four Scientific medium candidate tests are separate.
 
 ## Current status, history and continuing the code
 

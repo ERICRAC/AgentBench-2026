@@ -120,7 +120,7 @@ Verificar desafio, hash do verificador, modelo, esforço, contexto, prompts e or
 
 Soma de durações de sessões ≠ duração total. Cache incluída na entrada, raciocínio na saída: não contar duas vezes. Tokens totais ≠ contexto simultaneamente ocupado. Ausente ≠ zero. Separar interrupções e manutenção de runs completos.
 
-Falta V1 Astra médio; comparar V2 médio com V1 elevado não isola organização. Uma observação por célula não demonstra generalidade nem causalidade. Testes: 6 grupos/14 controlos simples, 9 grupos/57 científicos. Os quatro testes candidatos Scientific médio são separados.
+V1 simples Astra médio terminada; falta apenas a científica. [V1 Core](../results/astra-medium-v1-core.pt.md) comparar V2 médio com V1 elevado não isola organização. Uma observação por célula não demonstra generalidade nem causalidade. Testes: 6 grupos/14 controlos simples, 9 grupos/57 científicos. Os quatro testes candidatos Scientific médio são separados.
 
 ## Estado atual, história e continuação do código
 

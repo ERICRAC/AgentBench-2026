@@ -250,3 +250,7 @@ At the author’s request, introduce context before conclusions: why this R&D la
 ## Exchange 029
 
 Prepare Astra medium V1 on both calculators only, without launching candidates. Two fresh directories preregistered in associated campaign astra-medium-001; historical V1 config changes only high to medium. Historical capture retained, new observer disabled. 44/44 static checks and 12 maintenance tests passed; no test model call. Comparability, post-V2 baseline limitations, unverified quota and check commands documented in four languages. OpenAI Docs used for settings, without treating documentation as proof of model access. Governance and historical results unchanged; launch requires new authorisation.
+
+## Exchange 030
+
+Authorise simple Astra medium V1 only, verify and publish before Scientific. Separate solo session without consultants: 98.572 s, 98,496 input + output tokens, 6/6 groups and 14/14 checks on first pass, independently confirmed. Path incident without functional fix; extra candidate minutes preserved as deliverable tension. Code frozen in ddf4745, report/minutes/trace/metadata published separately. Simple medium V2: ×3.81 time, ×4.15 tokens, equal score; causal limits explicit. Scientific remains fresh; governance and verifiers unchanged.

@@ -3,7 +3,7 @@
   "mode": "codex-single",
   "challenge": "calculator",
   "created_at": "2026-09-10T14:56:32.684443+00:00",
-  "status": "authorized_not_started",
+  "status": "completed",
   "campaign_id": "astra-medium-001",
   "campaign_extension": "V1 baseline prepared after completed V2; not preregistered before V2",
   "launch_authorized": true,
@@ -37,10 +37,25 @@
   },
   "instrumentation": "historical capture only; new observer disabled",
   "planned_order": "Core publication before Scientific; no refinement between candidates",
-  "verification": null,
-  "usage": null,
-  "duration_seconds": null,
-  "thread_id": null,
+  "verification": {
+    "candidate_first_official_pass": "6/6 groups; 14/14 checks",
+    "candidate_final_pass": "6/6 groups; 14/14 checks",
+    "independent_final_pass": "6/6 groups; 14/14 checks",
+    "functional_corrections_after_first_official_pass": 0,
+    "additional_candidate_tests": null,
+    "independent_command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify.py --solution runs/astra-medium-core-v1-001/solution",
+    "independent_exit_code": 0
+  },
+  "usage": {
+    "input_tokens": 96182,
+    "cached_input_tokens": 76800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2314,
+    "reasoning_output_tokens": 104,
+    "input_plus_output_tokens": 98496
+  },
+  "duration_seconds": 98.572,
+  "thread_id": "01a08c95-b8c4-7583-a98c-e82c566ec3ce",
   "preflight": {
     "kind": "static_only_no_candidate",
     "model_access_checked": false,
@@ -55,5 +70,58 @@
     "Historical timing boundaries are similar but not byte-identical; V2 includes relay work",
     "No new token or wall-time cap; 200k context is not a total consumption cap",
     "V1 baseline collected after V2; no randomisation or statistical replication"
+  ],
+  "candidate_commit": "ddf4745",
+  "authorization_commit": "70857ec",
+  "wall_duration_seconds": 98.572,
+  "sum_session_seconds": 98.572,
+  "codex_cli": "codex-cli 0.153.4",
+  "human_functional_interventions": 0,
+  "runtime_validation": {
+    "process_exit_code": 0,
+    "recorded_errors": [],
+    "configuration_accepted_by_cli": true,
+    "context_limit_enforcement_demonstrated": false,
+    "model_snapshot_identity_verified": false
+  },
+  "sessions": [
+    {
+      "phase": "solo",
+      "role": "CANDIDATE",
+      "thread_id": "01a08c95-b8c4-7583-a98c-e82c566ec3ce",
+      "duration_seconds": 98.572,
+      "usage": {
+        "input_tokens": 96182,
+        "cached_input_tokens": 76800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2314,
+        "reasoning_output_tokens": 104
+      },
+      "command_events": 4,
+      "file_change_events": 2,
+      "visible_messages": 4
+    }
+  ],
+  "incidents": [
+    "Relative-path search failed with exit 2; correct governance paths read afterwards",
+    "Candidate adds solution/PV.md for logging, beyond challenge's two listed deliverables; verifier accepts it"
+  ],
+  "minutes": "runs/astra-medium-core-v1-001/PV.md",
+  "trace": "runs/astra-medium-core-v1-001/trace.json",
+  "minutes_sha256": "f2acf8f849f49291c74cb60d091165126318e16d281d7005692d6cb40b3d9623",
+  "trace_sha256": "f1933a49e2659c800e18b446b79d0fce05412deaee85b038445cb3744972b314",
+  "files": [
+    {
+      "path": "solution/PV.md",
+      "sha256": "7dbb5e7835828044b9d2cb690651cee285be521950e9f738e474f037f20644e7"
+    },
+    {
+      "path": "solution/README.md",
+      "sha256": "c6d353dee685ba075571af5a759720bd97dfd6137831bc3d3546116a96995cd9"
+    },
+    {
+      "path": "solution/calculator.py",
+      "sha256": "7abd1940df1917d772a75ad7472b38e2244f9fa6d4b389bb5f1a943e19cedf06"
+    }
   ]
 }
