@@ -31,6 +31,8 @@ Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois cons
 
 **V2 Astra moyen : 2/2 défis terminés, 15/15 groupes et 71/71 contrôles.** La V1 en effort moyen reste à établir ; le tableau de bord de campagne ci-dessous demeure celui de Sol/high.
 
+**Prochaine étape préparée : [préflight V1 Astra moyen](results/astra-medium-v1-preflight.md)** — deux dossiers vierges, 44/44 contrôles statiques ; aucun candidat lancé.
+
 Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |

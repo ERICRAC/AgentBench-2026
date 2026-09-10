@@ -332,3 +332,7 @@ Réaliser le chantier documentaire joint sans relancer les expériences : README
 ## Échange 028
 
 À la demande de l’auteur, réintroduire le contexte avant les conclusions : pourquoi ce laboratoire R&D, quels exercices, quelle question sur la collaboration et quelle démarche au microphone. Faire descendre les constats après le tableau de bord, le schéma V2 après l’explication expérimentale et la nomenclature dans la feuille de route. Quatre langues synchronisées ; aucune mesure ni preuve modifiée.
+
+## Échange 029
+
+Préparer uniquement V1 Astra moyen sur les deux calculatrices, sans lancer de candidat. Deux dossiers vierges préenregistrés dans la campagne associée astra-medium-001 ; configuration V1 historique modifiée uniquement de high à medium. Capture historique conservée, nouvelle instrumentation désactivée. 44/44 contrôles statiques et 12 tests de maintenance réussis ; aucun appel modèle de test. Comparabilité, limites d’une référence après V2, absence de garantie de quota et commandes de contrôle documentées en quatre langues. Compétence OpenAI Docs utilisée pour les paramètres, sans considérer la documentation comme une preuve d’accès au modèle. Gouvernance et anciens résultats inchangés ; le lancement nécessite une nouvelle autorisation.

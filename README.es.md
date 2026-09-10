@@ -31,6 +31,8 @@ Para orientarse: **V1 = solo**, **V2 = un desarrollador escritor y tres consulto
 
 **V2 Astra medio: 2/2 retos terminados, 15/15 grupos y 71/71 controles.** Falta una V1 con esfuerzo medio; el panel de campaña de abajo sigue siendo Sol/high.
 
+**Próxima etapa preparada: [preflight V1 Astra medio](results/astra-medium-v1-preflight.es.md)** — dos directorios nuevos, 44/44 controles estáticos; ningún candidato iniciado.
+
 Campaña de referencia del panel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Síntesis V2](results/sol-v2.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
 
 | Campaña principal | V1 · Codex solo | Próxima ejecución | Protocolos |

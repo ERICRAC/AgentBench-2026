@@ -1,0 +1,58 @@
+{
+  "run_id": "astra-medium-scientific-v1-001",
+  "mode": "codex-single",
+  "challenge": "scientific-calculator",
+  "created_at": "2026-09-10T14:56:32.737387+00:00",
+  "status": "prepared_not_started",
+  "campaign_id": "astra-medium-001",
+  "campaign_extension": "V1 baseline prepared after completed V2; not preregistered before V2",
+  "launch_authorized": false,
+  "comparison_run": "astra-medium-scientific-v2-001",
+  "candidate_model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "context_window_tokens_per_session": 200000,
+  "auto_compact_token_limit": 180000,
+  "auto_compact_token_limit_scope": "total",
+  "actor_topology": {
+    "candidate": "one fresh ephemeral Codex session",
+    "candidate_consultants_or_subagents": 0,
+    "experimental_orchestrator": "outside candidate measurements"
+  },
+  "config": "runs/astra-medium-scientific-v1-001/config.toml",
+  "config_sha256": "719208036cd582c2c8ee3620d1cea66174c0ba6d8b645fbdc8b91c81ff460905",
+  "prompt": "prompts/scientific-single.md",
+  "prompt_sha256": "d8666f4d5c595dde1bba726fa1d3da5de3efeecb3de89a9314f7ec20ce18c8ad",
+  "challenge_sha256": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+  "acceptance_tests_sha256": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89",
+  "runner": "scripts/capture_session.py",
+  "runner_sha256": "1b43dcb859834c27882ef5d3acdcb173a615c332e4f49045c18aae62f2b02382",
+  "verifier": "scripts/verify.py",
+  "verifier_sha256": "dedc9f21e989c991233a50066483afa6027c7f3ee51be6de5848fc8403ed81d4",
+  "preflight_environment": {
+    "codex_cli": "codex-cli 0.153.4",
+    "python": "3.13.5",
+    "node": "20.19.2",
+    "npm": "9.2.0"
+  },
+  "instrumentation": "historical capture only; new observer disabled",
+  "planned_order": "Core publication before Scientific; no refinement between candidates",
+  "verification": null,
+  "usage": null,
+  "duration_seconds": null,
+  "thread_id": null,
+  "preflight": {
+    "kind": "static_only_no_candidate",
+    "model_access_checked": false,
+    "quota_checked": false,
+    "runtime_configuration_enforcement_checked": false,
+    "solution_directory_empty": true
+  },
+  "comparability_limits": [
+    "Same requested alias and effort, no proof of immutable server model snapshot",
+    "Different V1/V2 role prompts and session counts are the organisational treatment",
+    "V1 official first pass has no mandatory consultant review; V2 first pass follows critique",
+    "Historical timing boundaries are similar but not byte-identical; V2 includes relay work",
+    "No new token or wall-time cap; 200k context is not a total consumption cap",
+    "V1 baseline collected after V2; no randomisation or statistical replication"
+  ]
+}

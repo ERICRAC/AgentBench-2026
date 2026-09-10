@@ -239,3 +239,7 @@ Realizar o trabalho documental sem relançar experiências: fluxo V2 no README, 
 ## Troca 028
 
 A pedido do autor, apresentar contexto antes das conclusões: motivo do laboratório I&D, exercícios, pergunta sobre colaboração e abordagem por microfone. Descer conclusões após o painel, diagrama V2 após explicação experimental e nomes para o roteiro. Quatro línguas sincronizadas; nenhuma medição nem prova alterada.
+
+## Troca 029
+
+Preparar apenas V1 Astra médio nas duas calculadoras, sem candidatos. Dois diretórios novos pré-registados na campanha associada astra-medium-001; configuração V1 histórica muda só high para medium. Captura histórica preservada, novo observador desativado. 44/44 controlos estáticos e 12 testes de manutenção corretos; nenhuma chamada de teste ao modelo. Comparabilidade, limites de referência posterior a V2, quota não verificada e comandos documentados em quatro línguas. OpenAI Docs usado para parâmetros, sem provar acesso ao modelo. Governação e resultados anteriores intactos; lançamento exige nova autorização.

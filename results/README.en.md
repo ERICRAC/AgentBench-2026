@@ -15,6 +15,10 @@ every assertion.
 
 [V2 Astra medium](astra-medium-v2.en.md) · [Astra/high](astra-v2-retired.en.md) · [Guide](../docs/reading-guide.en.md)
 
+## Preparation — no new result
+
+**Next step prepared: [Astra medium V1 preflight](astra-medium-v1-preflight.en.md)** — two fresh directories, 44/44 static checks; no candidate launched.
+
 ## Published results
 
 | Run | Mode | Objective | Result | Status | Details |

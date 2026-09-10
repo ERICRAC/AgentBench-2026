@@ -31,6 +31,8 @@ Para orientar a leitura: **V1 = solo**, **V2 = um programador escritor e três c
 
 **V2 Astra médio: 2/2 desafios terminados, 15/15 grupos e 71/71 controlos.** Falta uma V1 com esforço médio; o painel de campanha abaixo continua Sol/high.
 
+**Próxima etapa preparada: [preflight V1 Astra médio](results/astra-medium-v1-preflight.pt.md)** — dois diretórios novos, 44/44 controlos estáticos; nenhum candidato iniciado.
+
 Campanha de referência do painel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controlos](docs/acceptance-tests.pt.md) · [Controlo V1 Sol](results/sol-vs-astra-v1.pt.md) · [Síntese V2](results/sol-v2.pt.md) · [Arquivo V1](results/ARCHIVE_V1.pt.md).
 
 | Campanha principal | V1 · Codex sozinho | Próxima execução | Protocolos |

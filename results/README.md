@@ -15,6 +15,10 @@ PV et la trace du run. Les anciens rapports utilisent parfois le raccourci
 
 [V2 Astra medium](astra-medium-v2.md) · [Astra/high](astra-v2-retired.md) · [Guide](../docs/reading-guide.md)
 
+## Préparation — aucun nouveau résultat
+
+**Prochaine étape préparée : [préflight V1 Astra moyen](astra-medium-v1-preflight.md)** — deux dossiers vierges, 44/44 contrôles statiques ; aucun candidat lancé.
+
 ## Résultats publiés
 
 | Tentative | Mode | Objectif | Résultat | Statut | Détails |

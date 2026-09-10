@@ -14,6 +14,10 @@ traza. Los antiguos `6/6` y `9/9` cuentan grupos `unittest`, no cada aserción.
 
 [V2 Astra medium](astra-medium-v2.es.md) · [Astra/high](astra-v2-retired.es.md) · [Guide](../docs/reading-guide.es.md)
 
+## Preparación — ningún resultado nuevo
+
+**Próxima etapa preparada: [preflight V1 Astra medio](astra-medium-v1-preflight.es.md)** — dos directorios nuevos, 44/44 controles estáticos; ningún candidato iniciado.
+
 ## Resultados publicados
 
 | Intento | Mode | Objetivo | Resultado | Estado | Detalles |

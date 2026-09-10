@@ -246,3 +246,7 @@ Implement the attached documentation brief without rerunning experiments: README
 ## Exchange 028
 
 At the author’s request, introduce context before conclusions: why this R&D lab, which exercises, what collaboration question and how the microphone-led approach works. Move findings below the dashboard, the V2 diagram after the experimental explanation and naming into the roadmap. Four languages synchronised; no measurement or evidence changed.
+
+## Exchange 029
+
+Prepare Astra medium V1 on both calculators only, without launching candidates. Two fresh directories preregistered in associated campaign astra-medium-001; historical V1 config changes only high to medium. Historical capture retained, new observer disabled. 44/44 static checks and 12 maintenance tests passed; no test model call. Comparability, post-V2 baseline limitations, unverified quota and check commands documented in four languages. OpenAI Docs used for settings, without treating documentation as proof of model access. Governance and historical results unchanged; launch requires new authorisation.

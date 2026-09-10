@@ -31,6 +31,8 @@ Finding your bearings: **V1 = solo**, **V2 = one developer writer and three cons
 
 **Astra medium V2: 2/2 challenges completed, 15/15 groups and 71/71 checks.** A medium-effort V1 baseline is still missing; the campaign dashboard below remains Sol/high.
 
+**Next step prepared: [Astra medium V1 preflight](results/astra-medium-v1-preflight.en.md)** — two fresh directories, 44/44 static checks; no candidate launched.
+
 Dashboard reference campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [Sol V1 control](results/sol-vs-astra-v1.en.md) · [V2 synthesis](results/sol-v2.en.md) · [V1 archive](results/ARCHIVE_V1.en.md).
 
 | Main campaign | V1 · Codex alone | Next run | Protocols |
