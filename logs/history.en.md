@@ -270,3 +270,9 @@ Prepare V2.2 relay with fake transport, JSONL capture, full handovers, snapshots
 ## Exchange 034
 
 **V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. Approved: pilot without a new aggregate cap; repetitions not authorised. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.en.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.
+
+## Exchange 035
+
+Same task resumed after the automatic Git approval check hit a usage limit. No run restarted; 52 tests and 64 historical hashes rechecked. Astra medium retained; no switch to Sol high requested.
+
+**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** MCP stdio bridge added and tested with MAIN/REV-01; local stub provider without credentials. 7/8 integration checks passed: catalogue sent via input/additional_tools, collaboration tools still advertised despite disable settings. No authenticated probe or freeze. OpenAI Docs informed configuration, checked against actual behaviour. Historical results and general governance preserved. [MCP / CLI](../results/v2-2-bridge.en.md)

@@ -1,0 +1,95 @@
+{
+  "kind": "stdio_bridge_and_local_cli_catalog",
+  "model_calls": 0,
+  "status": "blocked_tool_catalog",
+  "real_authentication_checked": false,
+  "checks": {
+    "MAIN.handshake_and_list": true,
+    "MAIN.complete_streams": true,
+    "MAIN.write_policy": true,
+    "REV-01.handshake_and_list": true,
+    "REV-01.complete_streams": true,
+    "REV-01.write_policy": true,
+    "local_stub_reached": true,
+    "candidate_tool_allowlist": false
+  },
+  "advertised_tools": [
+    [
+      "functions.exec",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.request_user_input_async",
+      "clock.sleep",
+      "collaboration.followup_task",
+      "collaboration.interrupt_agent",
+      "collaboration.list_agents",
+      "collaboration.send_message",
+      "collaboration.spawn_agent",
+      "collaboration.wait_agent"
+    ]
+  ],
+  "cli_exit_code": 1,
+  "request_envelopes": [
+    {
+      "path": "/responses",
+      "keys": [
+        "client_metadata",
+        "include",
+        "input",
+        "model",
+        "parallel_tool_calls",
+        "prompt_cache_key",
+        "reasoning",
+        "store",
+        "stream",
+        "text",
+        "tool_choice"
+      ],
+      "model": "gpt-6-astra",
+      "tool_choice": "auto",
+      "metadata_keys": [
+        "root_turn_id",
+        "x-codex-turn-metadata",
+        "session_id",
+        "turn_id",
+        "thread_id",
+        "x-codex-window-id",
+        "x-codex-installation-id"
+      ],
+      "input_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message",
+        "message",
+        "message"
+      ]
+    }
+  ],
+  "cli_configuration_accepted": true,
+  "bridge_started_by_cli": true,
+  "negotiation": {
+    "requested_version": "2025-06-18"
+  },
+  "mcp_methods": [
+    {
+      "method": "initialize"
+    },
+    {
+      "method": "notifications/initialized"
+    },
+    {
+      "method": "tools/list"
+    }
+  ],
+  "live_authorized": false,
+  "protocol_frozen": false,
+  "hashes": {
+    "scripts/v2_2_tool_bridge.py": "c7f7f988b7ae7e0afdcc332ae01f95adfb303426e39cf040d5f935844fb37fc8",
+    "scripts/preflight_v2_2_bridge.py": "8c9461a749138f5e4a18006eb4212463c18691d9456740a129978c0c51677f55",
+    "tests/test_v2_2_tool_bridge.py": "d8c2ec4b3f0d58d95da0e5fe64a307dce47aa47ac72789d4515d032e57cf7878",
+    "governance/v2-2-draft/model-policy.json": "0faddcd3486fcfdcb4fd72915e12b43b4a92bf09fa264546a10a27e69bcae46f"
+  },
+  "maintenance_tests_passed": 52
+}

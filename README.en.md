@@ -33,7 +33,7 @@ Finding your bearings: **V1 = solo**, **V2 = one developer writer and three cons
 
 **Astra medium V1 versus V2: equal official scores on both challenges.** V2 uses ×3.56 time and ×4.49 tokens overall. Review nevertheless contributes robustness fixes outside the score. [Full comparison and evidence](results/astra-medium-v1-v2.en.md)
 
-**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](results/v2-2-transport.en.md)
+**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** [MCP / CLI](results/v2-2-bridge.en.md)
 
 Dashboard reference campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [Sol V1 control](results/sol-vs-astra-v1.en.md) · [V2 synthesis](results/sol-v2.en.md) · [V1 archive](results/ARCHIVE_V1.en.md).
 

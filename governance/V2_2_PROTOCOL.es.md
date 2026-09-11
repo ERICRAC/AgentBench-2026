@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · **Español** · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2: piloto aprobado; 46 tests y aislamiento local 30/30.** Seis procesos ficticios, sin llamadas modelo. Perfil nativo 26/30: integración modelo no cualificada, lanzamiento bloqueado. Comparación Sol/Astra y esfuerzo conservada. [Transport / isolation](../results/v2-2-transport.es.md)
+**V2.2: puente confinado probado; 52 tests correctos.** Integración bloqueada: CLI anuncia herramientas fuera de la lista permitida. Sin llamadas modelo. **Astra alto: solo histórico, sin nuevos runs previstos.** [MCP / CLI](../results/v2-2-bridge.es.md)
 
 ## En un minuto
 

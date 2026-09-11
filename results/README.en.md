@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](v2-2-transport.en.md)
+**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** [MCP / CLI](v2-2-bridge.en.md)
 
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 

@@ -1,0 +1,8 @@
+{
+  "status": "prospective_user_decision_not_launch_authority",
+  "active_pilot": {"model": "gpt-6-astra", "effort": "medium"},
+  "future_comparison_requires_separate_authority": {"model": "gpt-5.6-sol", "effort": "high"},
+  "historical_only": [{"model": "gpt-6-astra", "effort": "high"}],
+  "preserve_all_historical_results": true,
+  "launch_authorized": false
+}

@@ -263,3 +263,9 @@ Preparar relé V2.2 com transporte fictício, captura JSONL, transmissões integ
 ## Interação 034
 
 **V2.2: piloto aprovado; 46 testes e isolamento local 30/30.** Seis processos fictícios, sem chamadas modelo. Perfil nativo 26/30: integração modelo não qualificada, lançamento bloqueado. Comparação Sol/Astra e esforço preservada. Aprovado: piloto sem novo limite global; repetições não autorizadas. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.pt.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.
+
+## Interação 035
+
+Mesmo tratamento retomado após limite de utilização do controlo automático de autorização Git. Nenhum run reiniciado; 52 testes e 64 hashes históricos revistos. Mantém-se Astra médio; sem pedir mudança para Sol elevado.
+
+**V2.2: ponte confinada testada; 52 testes aprovados.** Integração bloqueada: CLI anuncia ferramentas fora da lista permitida. Sem chamadas modelo. **Astra elevado: apenas histórico, sem novos runs previstos.** Ponte MCP stdio testada com MAIN/REV-01 e fornecedor local fictício sem credenciais. 7/8 controlos: catálogo input/additional_tools mantém ferramentas de colaboração apesar da desativação. Sem sonda autenticada ou congelamento. OpenAI Docs orientou configuração confrontada com comportamento real; resultados e governação geral preservados. [MCP / CLI](../results/v2-2-bridge.pt.md)

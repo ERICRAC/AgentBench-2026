@@ -39,7 +39,7 @@ For Astra medium, the time ratio decreases from 3.81 to 3.44 between simple and 
 
 **Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
 
-**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](v2-2-transport.en.md)
+**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** [MCP / CLI](v2-2-bridge.en.md)
 
 All proposed variants use Astra medium. The same model does not imply identical context, actual expertise or total cost: record roles, supplied information and budgets. The pair also changes team size; it is not a topology-only comparison.
 

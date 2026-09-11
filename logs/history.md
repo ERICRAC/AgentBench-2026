@@ -356,3 +356,9 @@ Préparer le relais V2.2 avec transport factice, capture JSONL, transmissions co
 ## Échange 034
 
 **V2.2 : choix du pilote approuvés ; 46 tests de maintenance et isolation locale 30/30.** Six processus factices, aucun appel modèle. Profil natif 26/30 : intégration modèle non qualifiée, lancement verrouillé. Comparaison Sol/Astra et effort conservée. Choix validé : pilote sans nouveau plafond global ; répétitions non autorisées. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.
+
+## Échange 035
+
+Reprise du même traitement après interruption du contrôle automatique d’autorisation Git pour limite d’usage. Aucun run relancé ; 52 tests et 64 empreintes historiques revérifiés. Maintien d’Astra moyen, sans demande de passage à Sol élevé.
+
+**V2.2 : pont confiné testé ; 52 tests de maintenance réussis.** Raccordement bloqué : le CLI annonce encore des outils hors liste autorisée. Aucun appel modèle. **Astra élevé : historique uniquement, aucun nouveau run prévu.** Pont MCP stdio ajouté et testé avec MAIN/REV-01 ; fournisseur factice local sans identifiants. 7/8 contrôles d’intégration réussis : catalogue tools transmis via input/additional_tools, outils de collaboration encore annoncés malgré désactivation. Pas de sonde authentifiée, protocole non gelé. OpenAI Docs utilisé pour préparer puis confronter la configuration au comportement observé. Résultats et gouvernance générale préservés. [MCP / CLI](../results/v2-2-bridge.md)

@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2: piloto aprovado; 46 testes e isolamento local 30/30.** Seis processos fictícios, sem chamadas modelo. Perfil nativo 26/30: integração modelo não qualificada, lançamento bloqueado. Comparação Sol/Astra e esforço preservada. [Transport / isolation](v2-2-transport.pt.md)
+**V2.2: ponte confinada testada; 52 testes aprovados.** Integração bloqueada: CLI anuncia ferramentas fora da lista permitida. Sem chamadas modelo. **Astra elevado: apenas histórico, sem novos runs previstos.** [MCP / CLI](v2-2-bridge.pt.md)
 
 [Cinco runs V2, dois minutos cada](run-summaries/index.pt.md) · [📖 Como ler e interpretar um run AgentBench](../docs/reading-guide.pt.md)
 

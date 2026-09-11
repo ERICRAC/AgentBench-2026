@@ -39,7 +39,7 @@ En Astra medio, la relación temporal baja de 3,81 a 3,44 entre simple y cientí
 
 **Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
-**V2.2: piloto aprobado; 46 tests y aislamiento local 30/30.** Seis procesos ficticios, sin llamadas modelo. Perfil nativo 26/30: integración modelo no cualificada, lanzamiento bloqueado. Comparación Sol/Astra y esfuerzo conservada. [Transport / isolation](v2-2-transport.es.md)
+**V2.2: puente confinado probado; 52 tests correctos.** Integración bloqueada: CLI anuncia herramientas fuera de la lista permitida. Sin llamadas modelo. **Astra alto: solo histórico, sin nuevos runs previstos.** [MCP / CLI](v2-2-bridge.es.md)
 
 Todas las variantes propuestas usan Astra medio. El mismo modelo no implica contexto, competencias reales ni coste total idénticos: registrar roles, información y presupuestos. La pareja cambia también el tamaño del equipo, no solo la topología.
 
