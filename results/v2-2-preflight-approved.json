@@ -1,0 +1,50 @@
+{
+  "kind": "static_and_synthetic_preflight",
+  "status": "passed",
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "model_calls": 0,
+  "model_access_checked": false,
+  "runtime_configuration_acceptance_checked": false,
+  "os_isolation_checked": false,
+  "quota_checked": false,
+  "hashes_kind": "current_draft_inventory_not_frozen_baseline",
+  "hashes": {
+    "scripts/run_v2_2.py": "2cdbc0c1ffa02bd9c5c34de4a88de9a4963929e453a7ad1f0abb3ef427521f17",
+    "scripts/preflight_v2_2.py": "3c3d46faed0d8381f36b14a5931b9fb3d14edcbba5a07208621cebb4f5024a76",
+    "tests/test_v2_2.py": "ab4510662c939ab7047608d02c27ee237676d4724e84359533cd187c220e2760",
+    "scripts/verify.py": "dedc9f21e989c991233a50066483afa6027c7f3ee51be6de5848fc8403ed81d4",
+    "governance/V2_2_PROTOCOL.md": "a871b2ca152b09f2b2965a5f111769fea5d0639bbd98df62f2cb2d3f0b2986a3",
+    "governance/v2-2-draft/choices.json": "4ebd8ef03fde5216baceb3bde209295cb1f82a47df427bea392241b9af932c67",
+    "governance/v2-2-draft/config-main.toml": "0ec19354d36bc258b1e86926baf8cf23ad861a7b4ab50d7c8ba8a5902671564e",
+    "governance/v2-2-draft/config-rev-01.toml": "cf1f664b4a65b632f6f4cf70cc2c0d4f4d9bade2b4419152ce0d3b033189830c",
+    "prompts/v2-2-developer-initial.md": "a862d4fda86e807829d5bc5a5668f21e2e324a06a72564a37ee9163c51b7e827",
+    "prompts/v2-2-reviewer.md": "78c748db025956d17b10ae697d57a7c5dbecdbb1764da415a516166a53581fb0",
+    "prompts/v2-2-developer-final.md": "43707994ce54c9d19db2eddebb12ba302fd14be94a019cf6e2435a76dba892dc",
+    "challenges/calculator/SPEC.md": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+    "challenges/calculator/tests/test_acceptance.py": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+    "challenges/scientific-calculator/SPEC.md": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+    "challenges/scientific-calculator/tests/test_acceptance.py": "bcc32bf9a48a7f732f4265d79fb25b49768bd0d9b301dc78a70a948af58dfb89"
+  },
+  "simulations": [
+    {
+      "challenge": "calculator",
+      "status": "simulation_completed",
+      "sessions": 3,
+      "model_calls": 0,
+      "official_verdict": null
+    },
+    {
+      "challenge": "scientific-calculator",
+      "status": "simulation_completed",
+      "sessions": 3,
+      "model_calls": 0,
+      "official_verdict": null
+    }
+  ],
+  "limits": [
+    "Real read/write isolation and CLI configuration acceptance checks",
+    "Live transport and capture failure/termination behaviour qualification",
+    "Explicit protocol freeze and per-challenge launch authority"
+  ]
+}

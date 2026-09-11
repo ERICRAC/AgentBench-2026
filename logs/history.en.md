@@ -266,3 +266,7 @@ Prepare Astra medium V2.2 without launch: two roles (MAIN and REV-01), three fre
 ## Exchange 033
 
 Prepare V2.2 relay with fake transport, JSONL capture, full handovers, snapshots, write audits and stop without retry. Add two draft configurations, unapproved choices and 15-hash inventory. Preflight: two simulated challenges, three phases each, no model call or score; 26 new tests, 38 total. Live launch locked; OS isolation, live transport and budget approval remain open. OpenAI Docs and CLI help consulted for flags without authentication/model calls. Four languages, protocol, indexes and README updated; historical evidence preserved. [Preflight and checklist](../results/v2-2-preflight.en.md)
+
+## Exchange 034
+
+**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. Approved: pilot without a new aggregate cap; repetitions not authorised. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.en.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.

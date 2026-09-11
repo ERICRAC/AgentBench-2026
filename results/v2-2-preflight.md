@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](v2-2-preflight.en.md) · [Español](v2-2-preflight.es.md) · [Português](v2-2-preflight.pt.md)
 
+**V2.2 : choix du pilote approuvés ; 46 tests de maintenance et isolation locale 30/30.** Six processus factices, aucun appel modèle. Profil natif 26/30 : intégration modèle non qualifiée, lancement verrouillé. Comparaison Sol/Astra et effort conservée. [Transport / isolation](v2-2-transport.md)
+
 **Préflight statique et simulé réussi : 2 défis × 3 phases ; 26 nouveaux tests, 38 tests de maintenance au total. Aucun appel modèle, aucun score de calculatrice, aucun run historique modifié.** Le protocole reste non gelé et non autorisé au lancement.
 
 ## Ce qui est livré

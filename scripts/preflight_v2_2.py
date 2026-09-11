@@ -22,7 +22,7 @@ def check() -> dict:
         "model": "gpt-6-astra", "reasoning_effort": "medium",
         "pilot": "one_attempt_per_challenge", "global_token_cap": None,
         "global_time_cap_seconds": None,
-        "limits_status": "proposed_no_new_cap_not_approved",
+        "limits_status": "approved_pilot_no_new_cap",
         "review_words": 1200, "initial_handover_words": 600,
         "final_handover_words": 1200,
         "repeat_plan_status": "18_runs_proposed_not_authorized",

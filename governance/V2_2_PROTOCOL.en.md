@@ -2,6 +2,8 @@
 
 [Français](V2_2_PROTOCOL.md) · **English (UK)** · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
+**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](../results/v2-2-transport.en.md)
+
 ## One-minute overview
 
 **Prepared for approval, not frozen; no launch authorised.** V2.2 tests whether one review retains V2’s useful contribution with less coordination. It is not parallel development: one developer remains sole writer. Optional variant outside the six main cells; neither historical V2 nor V2.1 is replaced.
@@ -78,14 +80,14 @@ Homogeneous confirmation must rerun V1, V2 and V2.2 in the new campaign on both 
 
 - [x] Hypothesis, roles, three phases, mandates, criteria and interruptions documented.
 - [x] FR, UK, ES, PT linked; previous protocols/runs preserved.
-- [ ] Approve uncapped pilot or campaign with a numerical budget; decide repetitions separately.
+- [x] Approved: pilot without a new aggregate cap; repetitions not authorised.
 - [x] Three-phase relay tested with fake candidates: handovers, write audits, limits, stops, capture, snapshots and live lock. Not OS isolation validation.
 - [x] Two draft configurations and 15-hash inventory; simulations in fresh temporary directories. Benchmark directories and frozen hashes remain pending.
 - [ ] Verify actual isolation/model access; a real trivial test costs tokens and requires separate approval.
 - [ ] Freeze protocol, mandates and runner; publish static preflight, then explicitly authorise simple calculator.
 
-**Ready: simulation runner, static preflight and 26 V2.2 tests. Pending: qualified live transport, OS isolation, model access, freeze and benchmark.** No candidate launched.
+**Current stage: local transport and Bubblewrap isolation tested; model integration unqualified, no freeze or benchmark.** No candidate launched.
 
-Current validation: 38 maintenance tests (12 existing + 26 V2.2), two three-phase simulations, zero model calls. The [technical report](../results/v2-2-preflight.en.md) separates tested properties from missing guarantees.
+Previous simulation-stage validation: 38 maintenance tests (12 existing + 26 V2.2), two three-phase simulations, zero model calls. The [technical report](../results/v2-2-preflight.en.md) separates tested properties from missing guarantees.
 
 [README](../README.en.md) · [Conclusions](../results/CONCLUSIONS.en.md) · [Frozen V2](V2_PROTOCOL.en.md) · [Experimental design](EXPERIMENTAL_DESIGN.en.md) · [Instrumentation](../docs/observability.en.md)

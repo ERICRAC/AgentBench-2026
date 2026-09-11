@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
+**V2.2 : choix du pilote approuvés ; 46 tests de maintenance et isolation locale 30/30.** Six processus factices, aucun appel modèle. Profil natif 26/30 : intégration modèle non qualifiée, lancement verrouillé. Comparaison Sol/Astra et effort conservée. [Transport / isolation](../results/v2-2-transport.md)
+
 ## En une minute
 
 **Préparé pour validation, non gelé, aucun lancement autorisé.** V2.2 teste si une seule relecture conserve l’apport utile de V2 avec moins de coordination. Ce n’est pas du développement parallèle : un développeur reste seul écrivain. Variante facultative, hors des six cellules principales ; ni V2 historique ni V2.1 ne sont remplacées.
@@ -81,14 +83,14 @@ Une confirmation homogène doit rejouer V1, V2 et V2.2 dans la nouvelle campagne
 
 - [x] Hypothèse, rôles, trois phases, mandats, critères et interruption documentés.
 - [x] Versions FR, UK, ES, PT reliées ; anciens protocoles et runs préservés.
-- [ ] Valider pilote sans plafond nouveau ou campagne avec budget chiffré ; décider séparément des répétitions.
+- [x] Choix validé : pilote sans nouveau plafond global ; répétitions non autorisées.
 - [x] Relais trois phases testé avec faux candidats : transmissions, audits d’écriture, limites, arrêt, captures, instantanés et verrouillage réel. Cela ne valide pas l’isolation OS.
 - [x] Deux configurations de brouillon et inventaire de 15 empreintes ; simulations en dossiers temporaires neufs. Les dossiers de benchmark et empreintes gelées restent à créer.
 - [ ] Vérifier isolation réelle et accès modèle ; un test trivial réel consomme des tokens et nécessite une autorisation distincte.
 - [ ] Geler protocole, mandats et lanceur ; publier le préflight statique puis autoriser explicitement la calculatrice simple.
 
-**Prêt : lanceur simulé, préflight statique et 26 tests V2.2. Non fait : transport réel qualifié, isolation OS, accès modèle, gel et benchmark.** Aucun candidat lancé.
+**Étape actuelle : transport local et isolation Bubblewrap testés ; intégration modèle non qualifiée, gel et benchmark non effectués.** Aucun candidat lancé.
 
-Validation actuelle : 38 tests de maintenance (12 existants + 26 V2.2), deux simulations à trois phases, zéro appel modèle. Le [rapport technique](../results/v2-2-preflight.md) distingue les propriétés testées des garanties encore absentes.
+Validation de l’étape simulée précédente : 38 tests de maintenance (12 existants + 26 V2.2), deux simulations à trois phases, zéro appel modèle. Le [rapport technique](../results/v2-2-preflight.md) distingue les propriétés testées des garanties encore absentes.
 
 [README](../README.md) · [Conclusions](../results/CONCLUSIONS.md) · [V2 figée](V2_PROTOCOL.md) · [Plan expérimental](EXPERIMENTAL_DESIGN.md) · [Instrumentation](../docs/observability.md)

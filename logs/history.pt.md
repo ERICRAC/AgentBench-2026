@@ -259,3 +259,7 @@ Preparar V2.2 Astra médio sem lançamento: dois papéis (MAIN e REV-01), três 
 ## Intercâmbio 033
 
 Preparar relé V2.2 com transporte fictício, captura JSONL, transmissões integrais, instantâneos, auditoria de escrita e paragem sem repetição. Duas configurações rascunho, escolhas pendentes e inventário de 15 hashes. Preflight: dois desafios simulados, três fases cada, sem modelo ou pontuação; 26 testes novos, 38 no total. Modo real bloqueado; isolamento OS, transporte real e orçamento pendentes. OpenAI Docs e ajuda CLI consultados sem autenticação/chamadas modelo. Quatro línguas, protocolo, índices e README atualizados; provas históricas intactas. [Preflight e lista](../results/v2-2-preflight.pt.md)
+
+## Interação 034
+
+**V2.2: piloto aprovado; 46 testes e isolamento local 30/30.** Seis processos fictícios, sem chamadas modelo. Perfil nativo 26/30: integração modelo não qualificada, lançamento bloqueado. Comparação Sol/Astra e esforço preservada. Aprovado: piloto sem novo limite global; repetições não autorizadas. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.pt.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.

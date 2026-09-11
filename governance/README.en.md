@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: simulation runner and static preflight passed, no model calls.** 26 new tests, 38 maintenance tests in total; live mode locked, choices and isolation pending before freeze. [Preflight and checklist](../results/v2-2-preflight.en.md)
+**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](../results/v2-2-transport.en.md)
 
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private

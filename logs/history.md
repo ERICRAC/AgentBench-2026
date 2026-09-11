@@ -352,3 +352,7 @@ Préparer V2.2 Astra moyen sans lancement : deux métiers (MAIN et REV-01), troi
 ## Échange 033
 
 Préparer le relais V2.2 avec transport factice, capture JSONL, transmissions complètes, instantanés, audit des écritures et arrêt sans relance. Ajouter deux configurations de brouillon, choix non validés et inventaire de 15 empreintes. Préflight : deux défis simulés, trois phases chacun, aucun appel modèle ni score ; 26 nouveaux tests, 38 au total. Lancement réel verrouillé ; isolation OS, transport réel et arbitrage des budgets restent ouverts. OpenAI Docs et aide CLI consultées pour les options, sans authentification ni appel modèle. Quatre langues, protocole, index et README actualisés ; anciennes preuves préservées. [Préflight et checklist](../results/v2-2-preflight.md)
+
+## Échange 034
+
+**V2.2 : choix du pilote approuvés ; 46 tests de maintenance et isolation locale 30/30.** Six processus factices, aucun appel modèle. Profil natif 26/30 : intégration modèle non qualifiée, lancement verrouillé. Comparaison Sol/Astra et effort conservée. Choix validé : pilote sans nouveau plafond global ; répétitions non autorisées. [Rapport / Report / Informe / Relatório](../results/v2-2-transport.md). OpenAI Docs ; protocol frozen = false ; model calls = 0.

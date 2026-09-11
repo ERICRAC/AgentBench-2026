@@ -2,6 +2,8 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · **Español** · [Português](V2_2_PROTOCOL.pt.md)
 
+**V2.2: piloto aprobado; 46 tests y aislamiento local 30/30.** Seis procesos ficticios, sin llamadas modelo. Perfil nativo 26/30: integración modelo no cualificada, lanzamiento bloqueado. Comparación Sol/Astra y esfuerzo conservada. [Transport / isolation](../results/v2-2-transport.es.md)
+
 ## En un minuto
 
 **Preparado para validar, no congelado; ningún lanzamiento autorizado.** V2.2 estudia si una revisión conserva la aportación útil de V2 con menos coordinación. No es desarrollo paralelo: un desarrollador sigue siendo el único escritor. Variante opcional fuera de las seis celdas principales; no sustituye V2 histórica ni V2.1.
@@ -78,14 +80,14 @@ Confirmación homogénea: repetir V1, V2 y V2.2 en nueva campaña, ambos desafí
 
 - [x] Hipótesis, roles, tres fases, mandatos, criterios e interrupciones documentados.
 - [x] FR, UK, ES, PT enlazados; protocolos/runs anteriores intactos.
-- [ ] Validar piloto sin nuevo techo o campaña con presupuesto; decidir repeticiones aparte.
+- [x] Aprobado: piloto sin nuevo límite global; repeticiones no autorizadas.
 - [x] Relé de tres fases probado con candidatos ficticios: transmisión, auditoría de escritura, límites, parada, capturas, instantáneas y bloqueo real. No valida aislamiento OS.
 - [x] Dos configuraciones borrador e inventario de 15 hashes; simulaciones temporales nuevas. Directorios benchmark y hashes congelados pendientes.
 - [ ] Verificar aislamiento/acceso real; prueba trivial real consume tokens y necesita autorización separada.
 - [ ] Congelar protocolo, mandatos y ejecutor; publicar preflight estático, autorizar explícitamente calculadora simple.
 
-**Listo: ejecutor simulado, preflight estático y 26 tests V2.2. Pendiente: transporte real cualificado, aislamiento OS, acceso modelo, congelado y benchmark.** Ningún candidato lanzado.
+**Etapa actual: transporte local y aislamiento Bubblewrap probados; integración modelo no cualificada, sin congelar ni benchmark.** Ningún candidato lanzado.
 
-Validación actual: 38 tests de mantenimiento (12 existentes + 26 V2.2), dos simulaciones de tres fases, cero llamadas modelo. El [informe técnico](../results/v2-2-preflight.es.md) distingue propiedades probadas y garantías pendientes.
+Validación de la etapa simulada anterior: 38 tests de mantenimiento (12 existentes + 26 V2.2), dos simulaciones de tres fases, cero llamadas modelo. El [informe técnico](../results/v2-2-preflight.es.md) distingue propiedades probadas y garantías pendientes.
 
 [README](../README.es.md) · [Conclusiones](../results/CONCLUSIONS.es.md) · [V2 congelada](V2_PROTOCOL.es.md) · [Plan experimental](EXPERIMENTAL_DESIGN.es.md) · [Instrumentación](../docs/observability.es.md)

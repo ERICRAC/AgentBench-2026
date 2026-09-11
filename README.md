@@ -33,7 +33,7 @@ Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois cons
 
 **V1 contre V2, Astra moyen : même score officiel sur les deux défis.** V2 utilise ×3,56 le temps et ×4,49 les tokens au total. La relecture apporte toutefois des corrections de robustesse hors score. [Bilan complet et preuves](results/astra-medium-v1-v2.md)
 
-**V2.2 : lanceur de simulation et préflight statique réussis, sans appel modèle.** 26 nouveaux tests, 38 tests de maintenance au total ; lancement réel verrouillé, choix et isolation à valider avant gel. [Préflight et checklist](results/v2-2-preflight.md)
+**V2.2 : choix du pilote approuvés ; 46 tests de maintenance et isolation locale 30/30.** Six processus factices, aucun appel modèle. Profil natif 26/30 : intégration modèle non qualifiée, lancement verrouillé. Comparaison Sol/Astra et effort conservée. [Transport / isolation](results/v2-2-transport.md)
 
 Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 

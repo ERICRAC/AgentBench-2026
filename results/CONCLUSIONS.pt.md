@@ -39,7 +39,7 @@ Em Astra médio, a razão temporal desce de 3,81 para 3,44 entre simples e cient
 
 **Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
 
-**V2.2: executante simulado e preflight estático concluídos, sem chamadas a modelos.** 26 testes novos, 38 no total; modo real bloqueado, escolhas e isolamento pendentes antes de congelar. [Preflight e lista](v2-2-preflight.pt.md)
+**V2.2: piloto aprovado; 46 testes e isolamento local 30/30.** Seis processos fictícios, sem chamadas modelo. Perfil nativo 26/30: integração modelo não qualificada, lançamento bloqueado. Comparação Sol/Astra e esforço preservada. [Transport / isolation](v2-2-transport.pt.md)
 
 Todas as variantes propostas usam Astra médio. O mesmo modelo não implica contexto, competências reais ou custo total idênticos: registar papéis, informação e orçamentos. O par também muda o tamanho da equipa, não só a topologia.
 

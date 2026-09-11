@@ -2,6 +2,8 @@
 
 [Français](v2-2-preflight.md) · [English (UK)](v2-2-preflight.en.md) · **Español** · [Português](v2-2-preflight.pt.md)
 
+**V2.2: piloto aprobado; 46 tests y aislamiento local 30/30.** Seis procesos ficticios, sin llamadas modelo. Perfil nativo 26/30: integración modelo no cualificada, lanzamiento bloqueado. Comparación Sol/Astra y esfuerzo conservada. [Transport / isolation](v2-2-transport.es.md)
+
 **Preflight estático/simulado correcto: 2 desafíos × 3 fases; 26 tests nuevos, 38 de mantenimiento en total. Sin llamada a modelo, puntuación de calculadora ni cambio histórico.** Protocolo no congelado, lanzamiento no autorizado.
 
 ## Entregado

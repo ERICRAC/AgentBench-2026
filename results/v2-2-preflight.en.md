@@ -2,6 +2,8 @@
 
 [Français](v2-2-preflight.md) · **English (UK)** · [Español](v2-2-preflight.es.md) · [Português](v2-2-preflight.pt.md)
 
+**V2.2: pilot choices approved; 46 maintenance tests and local isolation 30/30.** Six synthetic processes, no model calls. Native profile 26/30: model integration unqualified, launch locked. Sol/Astra and effort comparison retained. [Transport / isolation](v2-2-transport.en.md)
+
 **Static/synthetic preflight passed: 2 challenges × 3 phases; 26 new tests, 38 maintenance tests in total. No model call, calculator score or historical run change.** Protocol remains unfrozen and launch unauthorised.
 
 ## Delivered

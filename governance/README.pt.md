@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2: executante simulado e preflight estático concluídos, sem chamadas a modelos.** 26 testes novos, 38 no total; modo real bloqueado, escolhas e isolamento pendentes antes de congelar. [Preflight e lista](../results/v2-2-preflight.pt.md)
+**V2.2: piloto aprovado; 46 testes e isolamento local 30/30.** Seis processos fictícios, sem chamadas modelo. Perfil nativo 26/30: integração modelo não qualificada, lançamento bloqueado. Comparação Sol/Astra e esforço preservada. [Transport / isolation](../results/v2-2-transport.pt.md)
 
 Este diretório publica o método necessário para compreender e reproduzir a
 experiência sem expor conversas completas nem a configuração privada do autor.
