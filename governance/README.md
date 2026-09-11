@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 : pont confiné testé ; 52 tests de maintenance réussis.** Raccordement bloqué : le CLI annonce encore des outils hors liste autorisée. Aucun appel modèle. **Astra élevé : historique uniquement, aucun nouveau run prévu.** [MCP / CLI](../results/v2-2-bridge.md)
+**V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** [CLI](../results/v2-2-cli-qualification.md)
 
 Ce dossier expose juste assez de méthode pour rendre l'expérience lisible et
 reproductible sans publier les conversations brutes ni la configuration privée

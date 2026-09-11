@@ -5,6 +5,8 @@ No account, credentials or real model provider is used. The local HTTP stub
 always rejects inference. It records tool names only, never headers/prompts.
 """
 
+import argparse
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -17,7 +19,33 @@ from v2_2_transport import local_cli
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def check():
+def tool_names(payload):
+    """Read both supported catalogue locations; never confuse absence with safety."""
+    advertised = list(payload.get("tools", []))
+    for item in payload.get("input", []):
+        if item.get("type") == "additional_tools":
+            advertised.extend(item.get("tools", []))
+
+    def names(items, prefix=""):
+        result = []
+        for item in items:
+            name = prefix + item.get("name", item.get("type", "unknown"))
+            if item.get("type") == "namespace":
+                result.extend(names(item.get("tools", []), name + "."))
+            else:
+                result.append(name)
+        return result
+    return names(advertised)
+
+
+def allowed_catalog(observed):
+    return observed == [["mcp__agentbench__confined_command"]]
+
+
+def check(cli=None):
+    cli = Path(cli).resolve(strict=True) if cli is not None else local_cli()
+    if not cli.is_file():
+        raise ValueError("CLI must be a file")
     with tempfile.TemporaryDirectory(prefix="agentbench-bridge-") as directory:
         root = Path(directory)
         workspace = root / "workspace"
@@ -49,20 +77,7 @@ def check():
                 payload = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
                 envelopes.append({"path": self.path, "keys": sorted(payload), "model": payload.get("model"), "tool_choice": payload.get("tool_choice"), "metadata_keys": list(payload.get("client_metadata", {})), "input_types": [x.get("type") for x in payload.get("input", [])]})
                 # Retain ONLY the advertised tool names/types.
-                advertised = list(payload.get("tools", []))
-                for item in payload.get("input", []):
-                    if item.get("type") == "additional_tools":
-                        advertised.extend(item.get("tools", []))
-                def names(items, prefix=""):
-                    result = []
-                    for item in items:
-                        name = prefix + item.get("name", item.get("type", "unknown"))
-                        if item.get("type") == "namespace":
-                            result.extend(names(item.get("tools", []), name + "."))
-                        else:
-                            result.append(name)
-                    return result
-                observed.append(names(advertised))
+                observed.append(tool_names(payload))
                 self.send_response(400)
                 self.end_headers()
                 self.wfile.write(b'{"error":{"message":"LOCAL PREFLIGHT STOP: no inference","type":"invalid_request_error"}}')
@@ -88,7 +103,7 @@ def check():
                     "computer_use", "image_generation", "view_image", "memories", "shell_snapshot", "skill_search", "code_mode", "code_mode_host")
         for feature in disabled:
             config["features." + feature] = "false"
-        argv = [str(local_cli()), "exec", "--strict-config", "--ignore-user-config", "--ignore-rules",
+        argv = [str(cli), "exec", "--strict-config", "--ignore-user-config", "--ignore-rules",
                 "--ephemeral", "--json", "--skip-git-repo-check", "-C", str(workspace / "solution")]
         for key, value in config.items():
             argv += ["-c", key + "=" + value]
@@ -100,8 +115,16 @@ def check():
             server.server_close()
             worker.join()
         checks["local_stub_reached"] = len(observed) == 1
-        checks["candidate_tool_allowlist"] = observed == [["mcp__agentbench__confined_command"]]
+        checks["candidate_tool_allowlist"] = allowed_catalog(observed)
+        catalog = json.loads(subprocess.check_output([str(cli), "debug", "models", "--bundled"],
+                             text=True, env=env, stderr=subprocess.DEVNULL))
+        models = catalog if isinstance(catalog, list) else catalog["models"]
+        profiles = [{key: model.get(key) for key in ("slug", "tool_mode", "multi_agent_version")}
+                    for model in models if model.get("slug") in {"gpt-6-astra", "gpt-5.6-sol"}]
         return {"kind": "stdio_bridge_and_local_cli_catalog", "model_calls": 0,
+                "cli_version": subprocess.check_output([str(cli), "--version"], text=True, env=env, stderr=subprocess.DEVNULL).strip(),
+                "cli_entrypoint_sha256": hashlib.sha256(cli.read_bytes()).hexdigest(),
+                "bundled_model_profiles": profiles,
                 "status": "passed" if all(checks.values()) else "blocked_tool_catalog",
                 "real_authentication_checked": False, "checks": checks,
                 "advertised_tools": observed, "cli_exit_code": result.returncode,
@@ -114,6 +137,9 @@ def check():
 
 
 if __name__ == "__main__":
-    report = check()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--cli", type=Path, help="Explicit isolated CLI; never changes PATH or account")
+    args = parser.parse_args()
+    report = check(args.cli)
     print(json.dumps(report, indent=2))
     raise SystemExit(0 if report["status"] == "passed" else 1)

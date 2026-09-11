@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** [MCP / CLI](../results/v2-2-bridge.en.md)
+**V2.2: 57 maintenance tests passed; three CLI probes remain at 7/8.** A separate official package reproduces the catalogue blocker. No model launched; existing installations unchanged. **Astra high: historical only.** [CLI](../results/v2-2-cli-qualification.en.md)
 
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private

@@ -276,3 +276,7 @@ Prepare V2.2 relay with fake transport, JSONL capture, full handovers, snapshots
 Same task resumed after the automatic Git approval check hit a usage limit. No run restarted; 52 tests and 64 historical hashes rechecked. Astra medium retained; no switch to Sol high requested.
 
 **V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** MCP stdio bridge added and tested with MAIN/REV-01; local stub provider without credentials. 7/8 integration checks passed: catalogue sent via input/additional_tools, collaboration tools still advertised despite disable settings. No authenticated probe or freeze. OpenAI Docs informed configuration, checked against actual behaviour. Historical results and general governance preserved. [MCP / CLI](../results/v2-2-bridge.en.md)
+
+## Exchange 036
+
+**V2.2: 57 maintenance tests passed; three CLI probes remain at 7/8.** A separate official package reproduces the catalogue blocker. No model launched; existing installations unchanged. **Astra high: historical only.** The test installation remains outside the repository in a dedicated temporary directory; no helper/package is published. OpenAI Docs guided official-package selection; conclusions come from local probes. [CLI](../results/v2-2-cli-qualification.en.md)

@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2: puente confinado probado; 52 tests correctos.** Integración bloqueada: CLI anuncia herramientas fuera de la lista permitida. Sin llamadas modelo. **Astra alto: solo histórico, sin nuevos runs previstos.** [MCP / CLI](v2-2-bridge.es.md)
+**V2.2: 57 tests correctos; tres sondas CLI siguen en 7/8.** Paquete oficial separado reproduce el bloqueo. Sin modelo ni cambios de instalaciones existentes. **Astra alto: solo histórico.** [CLI](v2-2-cli-qualification.es.md)
 
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 

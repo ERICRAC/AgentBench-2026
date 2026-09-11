@@ -272,3 +272,7 @@ Preparar relé V2.2 con transporte ficticio, captura JSONL, transmisiones comple
 Mismo tratamiento reanudado tras límite de uso del control automático de autorización Git. Ningún run reiniciado; 52 tests y 64 hashes históricos revisados. Se mantiene Astra medio; sin solicitar cambio a Sol alto.
 
 **V2.2: puente confinado probado; 52 tests correctos.** Integración bloqueada: CLI anuncia herramientas fuera de la lista permitida. Sin llamadas modelo. **Astra alto: solo histórico, sin nuevos runs previstos.** Puente MCP stdio probado con MAIN/REV-01 y proveedor local ficticio sin credenciales. 7/8 controles: catálogo input/additional_tools conserva herramientas de colaboración pese a desactivarlas. Sin sonda autenticada ni congelación. OpenAI Docs orientó configuración contrastada con comportamiento real; resultados y gobernanza general intactos. [MCP / CLI](../results/v2-2-bridge.es.md)
+
+## Intercambio 036
+
+**V2.2: 57 tests correctos; tres sondas CLI siguen en 7/8.** Paquete oficial separado reproduce el bloqueo. Sin modelo ni cambios de instalaciones existentes. **Astra alto: solo histórico.** Instalación de prueba conservada fuera del repositorio en directorio temporal dedicado; ningún helper/paquete publicado. OpenAI Docs orientó selección del paquete oficial; conclusiones basadas en sondas locales. [CLI](../results/v2-2-cli-qualification.es.md)

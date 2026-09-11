@@ -33,7 +33,7 @@ Para orientar a leitura: **V1 = solo**, **V2 = um programador escritor e três c
 
 **V1 versus V2, Astra médio: pontuação oficial igual nos dois desafios.** V2 utiliza ×3,56 tempo e ×4,49 tokens no total. A revisão contribui com correções de robustez fora da pontuação. [Balanço completo e provas](results/astra-medium-v1-v2.pt.md)
 
-**V2.2: ponte confinada testada; 52 testes aprovados.** Integração bloqueada: CLI anuncia ferramentas fora da lista permitida. Sem chamadas modelo. **Astra elevado: apenas histórico, sem novos runs previstos.** [MCP / CLI](results/v2-2-bridge.pt.md)
+**V2.2: 57 testes aprovados; três sondas CLI permanecem em 7/8.** Pacote oficial separado reproduz o bloqueio. Sem modelo ou alterações de instalações existentes. **Astra elevado: apenas histórico.** [CLI](results/v2-2-cli-qualification.pt.md)
 
 Campanha de referência do painel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controlos](docs/acceptance-tests.pt.md) · [Controlo V1 Sol](results/sol-vs-astra-v1.pt.md) · [Síntese V2](results/sol-v2.pt.md) · [Arquivo V1](results/ARCHIVE_V1.pt.md).
 

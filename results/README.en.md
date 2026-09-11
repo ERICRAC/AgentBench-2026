@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: confined bridge tested; 52 maintenance tests passed.** Integration blocked: CLI still advertises tools outside the allowlist. No model calls. **Astra high: historical only, no new runs planned.** [MCP / CLI](v2-2-bridge.en.md)
+**V2.2: 57 maintenance tests passed; three CLI probes remain at 7/8.** A separate official package reproduces the catalogue blocker. No model launched; existing installations unchanged. **Astra high: historical only.** [CLI](v2-2-cli-qualification.en.md)
 
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 

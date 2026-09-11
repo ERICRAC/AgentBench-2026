@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · **Português**
 
-**V2.2: ponte confinada testada; 52 testes aprovados.** Integração bloqueada: CLI anuncia ferramentas fora da lista permitida. Sem chamadas modelo. **Astra elevado: apenas histórico, sem novos runs previstos.** [MCP / CLI](../results/v2-2-bridge.pt.md)
+**V2.2: 57 testes aprovados; três sondas CLI permanecem em 7/8.** Pacote oficial separado reproduz o bloqueio. Sem modelo ou alterações de instalações existentes. **Astra elevado: apenas histórico.** [CLI](../results/v2-2-cli-qualification.pt.md)
 
 ## Num minuto
 

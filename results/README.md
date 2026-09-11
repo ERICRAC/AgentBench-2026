@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 : pont confiné testé ; 52 tests de maintenance réussis.** Raccordement bloqué : le CLI annonce encore des outils hors liste autorisée. Aucun appel modèle. **Astra élevé : historique uniquement, aucun nouveau run prévu.** [MCP / CLI](v2-2-bridge.md)
+**V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** [CLI](v2-2-cli-qualification.md)
 
 [Les cinq runs V2 en 2 minutes chacun](run-summaries/index.md) · [📖 Comment lire et interpréter un run AgentBench](../docs/reading-guide.md)
 

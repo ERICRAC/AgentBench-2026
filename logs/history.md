@@ -362,3 +362,7 @@ Préparer le relais V2.2 avec transport factice, capture JSONL, transmissions co
 Reprise du même traitement après interruption du contrôle automatique d’autorisation Git pour limite d’usage. Aucun run relancé ; 52 tests et 64 empreintes historiques revérifiés. Maintien d’Astra moyen, sans demande de passage à Sol élevé.
 
 **V2.2 : pont confiné testé ; 52 tests de maintenance réussis.** Raccordement bloqué : le CLI annonce encore des outils hors liste autorisée. Aucun appel modèle. **Astra élevé : historique uniquement, aucun nouveau run prévu.** Pont MCP stdio ajouté et testé avec MAIN/REV-01 ; fournisseur factice local sans identifiants. 7/8 contrôles d’intégration réussis : catalogue tools transmis via input/additional_tools, outils de collaboration encore annoncés malgré désactivation. Pas de sonde authentifiée, protocole non gelé. OpenAI Docs utilisé pour préparer puis confronter la configuration au comportement observé. Résultats et gouvernance générale préservés. [MCP / CLI](../results/v2-2-bridge.md)
+
+## Échange 036
+
+**V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** Installation de test conservée hors dépôt dans un répertoire temporaire dédié ; aucun helper ou paquet publié. OpenAI Docs a guidé le choix du paquet officiel ; le résultat repose sur les sondes locales. [CLI](../results/v2-2-cli-qualification.md)
