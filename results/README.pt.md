@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+**V2.2 — par leve: protocolo preparado, não congelado.** Dois papéis, três sessões, uma revisão. Nenhum candidato lançado; faltam preflight técnico e autorização. [Protocolo V2.2](../governance/V2_2_PROTOCOL.pt.md)
+
 [Cinco runs V2, dois minutos cada](run-summaries/index.pt.md) · [📖 Como ler e interpretar um run AgentBench](../docs/reading-guide.pt.md)
 
 [Conclusões — quando compensa colaborar?](CONCLUSIONS.pt.md)

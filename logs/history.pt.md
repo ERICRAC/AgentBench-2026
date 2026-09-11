@@ -251,3 +251,7 @@ Autorizar apenas V1 simples Astra médio, verificar e publicar antes de Scientif
 ## Intercâmbio 031
 
 Autorizar e executar V1 científica Astra médio após publicar Core. Candidato solo separado: 188,560 s, 119 388 tokens, primeira passagem e confirmação independente 9/9 grupos e 57/57 controlos; sem correção posterior. Código intacto aaa83de, autorização b312fb5; ata, textos visíveis, trace e métricas publicados à parte. Duas sondas posteriores revelam limites de comprimento/recursão fora da pontuação. Balanço completo: V2 ×3,56 tempo e ×4,49 tokens, igual pontuação; contribuição de robustez SA-03 diferenciada. Quatro línguas e navegação atualizadas; governação e suites intactas, nenhuma variante lançada. [Balanço completo e provas](../results/astra-medium-v1-v2.pt.md)
+
+## Intercâmbio 032
+
+Preparar V2.2 Astra médio sem lançamento: dois papéis (MAIN e REV-01), três sessões novas, uma revisão de 1200 palavras. Três mandatos canónicos em rascunho e protocolo em quatro línguas: entradas, permissões, atas literais/decisões, diagnóstico antes/depois, custos, interrupções e comparação exploratória separada de confirmação repetida. Não congelado; sem diretório candidato, configuração ou executante V2.2, sem chamada a modelo. Regras gerais, suites, executantes e runs históricos intactos. Próximo passo: preparação técnica e testes com candidatos fictícios antes de preflight. [Protocolo V2.2](../governance/V2_2_PROTOCOL.pt.md)

@@ -258,3 +258,7 @@ Authorise simple Astra medium V1 only, verify and publish before Scientific. Sep
 ## Exchange 031
 
 Authorise and execute Astra medium scientific V1 after Core publication. Separate solo candidate: 188.560 s, 119,388 tokens, first and independent passes 9/9 groups and 57/57 checks; no post-verdict fix. Unchanged code aaa83de, authorisation b312fb5; minutes, visible texts, trace and metrics published separately. Two post-run probes reveal length/recursion limits outside the score. Full comparison: V2 ×3.56 time and ×4.49 tokens, same score; SA-03 robustness contribution distinguished. Four languages and navigation updated, governance and suites unchanged, no variant launched. [Full comparison and evidence](../results/astra-medium-v1-v2.en.md)
+
+## Exchange 032
+
+Prepare Astra medium V2.2 without launch: two roles (MAIN and REV-01), three fresh sessions, one 1200-word review. Three canonical draft mandates and a four-language protocol: inputs, permissions, verbatim minutes/dispositions, before/after diagnostics, costs, interruptions and exploratory comparison separate from repeated confirmation. Not frozen; no candidate directory, configuration or V2.2 runner created, no model call. General rules, suites, runners and historical runs unchanged. Next: technical preparation and fake-candidate tests before preflight. [V2.2 protocol](../governance/V2_2_PROTOCOL.en.md)

@@ -344,3 +344,7 @@ Autorisation de lancer uniquement V1 simple Astra moyen, puis vérifier et publi
 ## Échange 031
 
 Autorisation et exécution de V1 scientifique Astra moyen après publication Core. Candidat solo distinct : 188,560 s, 119 388 tokens, 9/9 groupes et 57/57 contrôles au premier passage puis indépendamment ; aucun correctif après verdict. Code inchangé dans aaa83de, autorisation b312fb5 ; PV, verbatim, trace et métriques publiés séparément. Deux sondes après run exposent les limites longueur/récursion, hors score. Comparaison complète : V2 ×3,56 temps et ×4,49 tokens, même score ; apport de robustesse de SA-03 distingué. Quatre langues et navigation actualisées, gouvernance et suites inchangées, aucune variante lancée. [Bilan complet et preuves](../results/astra-medium-v1-v2.md)
+
+## Échange 032
+
+Préparer V2.2 Astra moyen sans lancement : deux métiers (MAIN et REV-01), trois sessions fraîches, une revue de 1200 mots. Trois projets de mandat canoniques et protocole en quatre langues : entrées, droits, PV verbatim/arbitrages, diagnostics avant/après, coûts, interruptions et comparaison exploratoire distincte d’une confirmation répétée. Non gelé ; aucun dossier candidat, configuration ou lanceur V2.2 créé, aucun appel modèle. Règles générales, suites, lanceurs et runs historiques inchangés. Suite : préparation technique et tests à faux candidats avant préflight. [Protocole V2.2](../governance/V2_2_PROTOCOL.md)

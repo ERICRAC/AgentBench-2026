@@ -39,6 +39,8 @@ En Astra medio, la relación temporal baja de 3,81 a 3,44 entre simple y cientí
 
 **Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
+**V2.2 — pareja ligera: protocolo preparado, no congelado.** Dos roles, tres sesiones, una revisión. Ningún candidato lanzado; faltan preflight técnico y autorización. [Protocolo V2.2](../governance/V2_2_PROTOCOL.es.md)
+
 Todas las variantes propuestas usan Astra medio. El mismo modelo no implica contexto, competencias reales ni coste total idénticos: registrar roles, información y presupuestos. La pareja cambia también el tamaño del equipo, no solo la topología.
 
 Variantes separadas de V2 congelada; no reescribir benchmarks existentes. El protocolo actual no autoriza escritura paralela. Prerregistrar protocolo nuevo, permisos por archivo o rama, interfaces, integración y conflictos antes de lanzar.

@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+**V2.2 — pareja ligera: protocolo preparado, no congelado.** Dos roles, tres sesiones, una revisión. Ningún candidato lanzado; faltan preflight técnico y autorización. [Protocolo V2.2](../governance/V2_2_PROTOCOL.es.md)
+
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 
 [Conclusiones — ¿cuándo compensa colaborar?](CONCLUSIONS.es.md)

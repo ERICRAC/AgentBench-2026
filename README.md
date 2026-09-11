@@ -33,6 +33,8 @@ Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois cons
 
 **V1 contre V2, Astra moyen : même score officiel sur les deux défis.** V2 utilise ×3,56 le temps et ×4,49 les tokens au total. La relecture apporte toutefois des corrections de robustesse hors score. [Bilan complet et preuves](results/astra-medium-v1-v2.md)
 
+**V2.2 — binôme sobre : protocole préparé, non gelé.** Deux métiers, trois sessions, une seule revue. Aucun candidat lancé ; préflight technique et autorisation restent nécessaires. [Protocole V2.2](governance/V2_2_PROTOCOL.md)
+
 Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 
 | Campagne principale | V1 · Codex seul | Prochain run | Protocoles |

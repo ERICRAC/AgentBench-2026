@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+**V2.2 — lean pair: protocol prepared, not frozen.** Two roles, three sessions, one review. No candidate launched; technical preflight and authorisation still required. [V2.2 protocol](V2_2_PROTOCOL.en.md)
+
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private
 configuration.

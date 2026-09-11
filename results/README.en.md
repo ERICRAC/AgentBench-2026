@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+**V2.2 — lean pair: protocol prepared, not frozen.** Two roles, three sessions, one review. No candidate launched; technical preflight and authorisation still required. [V2.2 protocol](../governance/V2_2_PROTOCOL.en.md)
+
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 
 [Conclusions — when does collaboration pay off?](CONCLUSIONS.en.md)
