@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2 — par leve: protocolo preparado, não congelado.** Dois papéis, três sessões, uma revisão. Nenhum candidato lançado; faltam preflight técnico e autorização. [Protocolo V2.2](V2_2_PROTOCOL.pt.md)
+**V2.2: executante simulado e preflight estático concluídos, sem chamadas a modelos.** 26 testes novos, 38 no total; modo real bloqueado, escolhas e isolamento pendentes antes de congelar. [Preflight e lista](../results/v2-2-preflight.pt.md)
 
 Este diretório publica o método necessário para compreender e reproduzir a
 experiência sem expor conversas completas nem a configuração privada do autor.

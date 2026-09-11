@@ -82,13 +82,13 @@ Une confirmation homogène doit rejouer V1, V2 et V2.2 dans la nouvelle campagne
 - [x] Hypothèse, rôles, trois phases, mandats, critères et interruption documentés.
 - [x] Versions FR, UK, ES, PT reliées ; anciens protocoles et runs préservés.
 - [ ] Valider pilote sans plafond nouveau ou campagne avec budget chiffré ; décider séparément des répétitions.
-- [ ] Implémenter et tester le relais trois phases avec faux candidats : droits, transmissions complètes, limites, arrêt, captures, instantanés, refus de lancement sans autorisation.
-- [ ] Créer configurations et dossiers neufs, enregistrer tous les SHA-256, versions et paramètres ; aucun dossier V2.2 créé ici.
+- [x] Relais trois phases testé avec faux candidats : transmissions, audits d’écriture, limites, arrêt, captures, instantanés et verrouillage réel. Cela ne valide pas l’isolation OS.
+- [x] Deux configurations de brouillon et inventaire de 15 empreintes ; simulations en dossiers temporaires neufs. Les dossiers de benchmark et empreintes gelées restent à créer.
 - [ ] Vérifier isolation réelle et accès modèle ; un test trivial réel consomme des tokens et nécessite une autorisation distincte.
 - [ ] Geler protocole, mandats et lanceur ; publier le préflight statique puis autoriser explicitement la calculatrice simple.
 
-**Prêt : cadrage documentaire. Non fait : lanceur V2.2, préflight d’exécution, appel modèle, benchmark.** Le lanceur V2 historique n’exécute pas ce protocole. La prochaine demande peut autoriser sa préparation technique sans lancer de candidats.
+**Prêt : lanceur simulé, préflight statique et 26 tests V2.2. Non fait : transport réel qualifié, isolation OS, accès modèle, gel et benchmark.** Aucun candidat lancé.
 
-Vérification documentaire : linter Markdown, liens de 156 documents, 64 empreintes historiques et reproductibilité des résumés réussis ; 12 tests de maintenance existants réussis sans appel modèle. Ils ne valident pas un lanceur V2.2, qui n’existe pas encore.
+Validation actuelle : 38 tests de maintenance (12 existants + 26 V2.2), deux simulations à trois phases, zéro appel modèle. Le [rapport technique](../results/v2-2-preflight.md) distingue les propriétés testées des garanties encore absentes.
 
 [README](../README.md) · [Conclusions](../results/CONCLUSIONS.md) · [V2 figée](V2_PROTOCOL.md) · [Plan expérimental](EXPERIMENTAL_DESIGN.md) · [Instrumentation](../docs/observability.md)

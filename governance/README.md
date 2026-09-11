@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 — binôme sobre : protocole préparé, non gelé.** Deux métiers, trois sessions, une seule revue. Aucun candidat lancé ; préflight technique et autorisation restent nécessaires. [Protocole V2.2](V2_2_PROTOCOL.md)
+**V2.2 : lanceur de simulation et préflight statique réussis, sans appel modèle.** 26 nouveaux tests, 38 tests de maintenance au total ; lancement réel verrouillé, choix et isolation à valider avant gel. [Préflight et checklist](../results/v2-2-preflight.md)
 
 Ce dossier expose juste assez de méthode pour rendre l'expérience lisible et
 reproductible sans publier les conversations brutes ni la configuration privée

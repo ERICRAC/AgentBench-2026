@@ -255,3 +255,7 @@ Autorizar e executar V1 científica Astra médio após publicar Core. Candidato 
 ## Intercâmbio 032
 
 Preparar V2.2 Astra médio sem lançamento: dois papéis (MAIN e REV-01), três sessões novas, uma revisão de 1200 palavras. Três mandatos canónicos em rascunho e protocolo em quatro línguas: entradas, permissões, atas literais/decisões, diagnóstico antes/depois, custos, interrupções e comparação exploratória separada de confirmação repetida. Não congelado; sem diretório candidato, configuração ou executante V2.2, sem chamada a modelo. Regras gerais, suites, executantes e runs históricos intactos. Próximo passo: preparação técnica e testes com candidatos fictícios antes de preflight. [Protocolo V2.2](../governance/V2_2_PROTOCOL.pt.md)
+
+## Intercâmbio 033
+
+Preparar relé V2.2 com transporte fictício, captura JSONL, transmissões integrais, instantâneos, auditoria de escrita e paragem sem repetição. Duas configurações rascunho, escolhas pendentes e inventário de 15 hashes. Preflight: dois desafios simulados, três fases cada, sem modelo ou pontuação; 26 testes novos, 38 no total. Modo real bloqueado; isolamento OS, transporte real e orçamento pendentes. OpenAI Docs e ajuda CLI consultados sem autenticação/chamadas modelo. Quatro línguas, protocolo, índices e README atualizados; provas históricas intactas. [Preflight e lista](../results/v2-2-preflight.pt.md)

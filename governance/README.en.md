@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 — lean pair: protocol prepared, not frozen.** Two roles, three sessions, one review. No candidate launched; technical preflight and authorisation still required. [V2.2 protocol](V2_2_PROTOCOL.en.md)
+**V2.2: simulation runner and static preflight passed, no model calls.** 26 new tests, 38 maintenance tests in total; live mode locked, choices and isolation pending before freeze. [Preflight and checklist](../results/v2-2-preflight.en.md)
 
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private

@@ -79,13 +79,13 @@ Confirmación homogénea: repetir V1, V2 y V2.2 en nueva campaña, ambos desafí
 - [x] Hipótesis, roles, tres fases, mandatos, criterios e interrupciones documentados.
 - [x] FR, UK, ES, PT enlazados; protocolos/runs anteriores intactos.
 - [ ] Validar piloto sin nuevo techo o campaña con presupuesto; decidir repeticiones aparte.
-- [ ] Implementar/probar relé con candidatos ficticios: permisos, entradas completas, límites, paradas, capturas, instantáneas, rechazo sin autorización.
-- [ ] Crear configuraciones/directorios nuevos; registrar SHA-256, versiones y parámetros. Ningún directorio V2.2 creado aquí.
+- [x] Relé de tres fases probado con candidatos ficticios: transmisión, auditoría de escritura, límites, parada, capturas, instantáneas y bloqueo real. No valida aislamiento OS.
+- [x] Dos configuraciones borrador e inventario de 15 hashes; simulaciones temporales nuevas. Directorios benchmark y hashes congelados pendientes.
 - [ ] Verificar aislamiento/acceso real; prueba trivial real consume tokens y necesita autorización separada.
 - [ ] Congelar protocolo, mandatos y ejecutor; publicar preflight estático, autorizar explícitamente calculadora simple.
 
-**Listo: diseño documental. Pendiente: ejecutor V2.2, preflight de ejecución, llamada a modelo, benchmark.** El ejecutor V2 histórico no aplica este protocolo. Una siguiente petición puede autorizar preparación técnica sin candidatos.
+**Listo: ejecutor simulado, preflight estático y 26 tests V2.2. Pendiente: transporte real cualificado, aislamiento OS, acceso modelo, congelado y benchmark.** Ningún candidato lanzado.
 
-Verificación documental correcta: linter Markdown, enlaces de 156 documentos, 64 huellas históricas y resúmenes reproducibles; 12 tests de mantenimiento existentes sin llamadas a modelos. No validan un ejecutor V2.2, que aún no existe.
+Validación actual: 38 tests de mantenimiento (12 existentes + 26 V2.2), dos simulaciones de tres fases, cero llamadas modelo. El [informe técnico](../results/v2-2-preflight.es.md) distingue propiedades probadas y garantías pendientes.
 
 [README](../README.es.md) · [Conclusiones](../results/CONCLUSIONS.es.md) · [V2 congelada](V2_PROTOCOL.es.md) · [Plan experimental](EXPERIMENTAL_DESIGN.es.md) · [Instrumentación](../docs/observability.es.md)

@@ -79,13 +79,13 @@ Homogeneous confirmation must rerun V1, V2 and V2.2 in the new campaign on both 
 - [x] Hypothesis, roles, three phases, mandates, criteria and interruptions documented.
 - [x] FR, UK, ES, PT linked; previous protocols/runs preserved.
 - [ ] Approve uncapped pilot or campaign with a numerical budget; decide repetitions separately.
-- [ ] Implement/test the three-phase relay with fake candidates: permissions, complete inputs, limits, stops, capture, snapshots, refusal without authorisation.
-- [ ] Create fresh configurations/directories; record all SHA-256 hashes, versions and settings. No V2.2 run directory created here.
+- [x] Three-phase relay tested with fake candidates: handovers, write audits, limits, stops, capture, snapshots and live lock. Not OS isolation validation.
+- [x] Two draft configurations and 15-hash inventory; simulations in fresh temporary directories. Benchmark directories and frozen hashes remain pending.
 - [ ] Verify actual isolation/model access; a real trivial test costs tokens and requires separate approval.
 - [ ] Freeze protocol, mandates and runner; publish static preflight, then explicitly authorise simple calculator.
 
-**Ready: documentary design. Not done: V2.2 runner, execution preflight, model call, benchmark.** The historical V2 runner does not execute this protocol. A next request may authorise technical preparation without launching candidates.
+**Ready: simulation runner, static preflight and 26 V2.2 tests. Pending: qualified live transport, OS isolation, model access, freeze and benchmark.** No candidate launched.
 
-Document checks passed: Markdown lint, links across 156 documents, 64 historical hashes and reproducible summaries; 12 existing maintenance tests passed without model calls. They do not validate a V2.2 runner, which does not yet exist.
+Current validation: 38 maintenance tests (12 existing + 26 V2.2), two three-phase simulations, zero model calls. The [technical report](../results/v2-2-preflight.en.md) separates tested properties from missing guarantees.
 
 [README](../README.en.md) · [Conclusions](../results/CONCLUSIONS.en.md) · [Frozen V2](V2_PROTOCOL.en.md) · [Experimental design](EXPERIMENTAL_DESIGN.en.md) · [Instrumentation](../docs/observability.en.md)

@@ -39,7 +39,7 @@ For Astra medium, the time ratio decreases from 3.81 to 3.44 between simple and 
 
 **Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
 
-**V2.2 — lean pair: protocol prepared, not frozen.** Two roles, three sessions, one review. No candidate launched; technical preflight and authorisation still required. [V2.2 protocol](../governance/V2_2_PROTOCOL.en.md)
+**V2.2: simulation runner and static preflight passed, no model calls.** 26 new tests, 38 maintenance tests in total; live mode locked, choices and isolation pending before freeze. [Preflight and checklist](v2-2-preflight.en.md)
 
 All proposed variants use Astra medium. The same model does not imply identical context, actual expertise or total cost: record roles, supplied information and budgets. The pair also changes team size; it is not a topology-only comparison.
 

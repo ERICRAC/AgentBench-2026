@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2 — pareja ligera: protocolo preparado, no congelado.** Dos roles, tres sesiones, una revisión. Ningún candidato lanzado; faltan preflight técnico y autorización. [Protocolo V2.2](V2_2_PROTOCOL.es.md)
+**V2.2: ejecutor simulado y preflight estático correctos, sin llamadas a modelos.** 26 tests nuevos, 38 en total; modo real bloqueado, decisiones y aislamiento pendientes antes de congelar. [Preflight y lista](../results/v2-2-preflight.es.md)
 
 Este directorio publica el método necesario para entender y reproducir el
 experimento sin exponer conversaciones completas ni la configuración privada

@@ -79,13 +79,13 @@ Confirmação homogénea: repetir V1, V2 e V2.2 na nova campanha, ambos os desaf
 - [x] Hipótese, papéis, três fases, mandatos, critérios e interrupções documentados.
 - [x] FR, UK, ES, PT ligados; protocolos/runs anteriores intactos.
 - [ ] Validar piloto sem novo teto ou campanha com orçamento; decidir repetições à parte.
-- [ ] Implementar/testar relé com candidatos fictícios: permissões, entradas completas, limites, paragens, capturas, instantâneos, recusa sem autorização.
-- [ ] Criar configurações/diretórios novos; registar SHA-256, versões e parâmetros. Nenhum diretório V2.2 criado aqui.
+- [x] Relé de três fases testado com candidatos fictícios: transmissões, auditoria de escrita, limites, paragem, capturas, instantâneos e bloqueio real. Não valida isolamento OS.
+- [x] Duas configurações rascunho e inventário de 15 hashes; simulações temporárias novas. Diretórios benchmark e hashes congelados pendentes.
 - [ ] Verificar isolamento/acesso real; teste trivial real consome tokens e exige autorização separada.
 - [ ] Congelar protocolo, mandatos e executante; publicar preflight estático, autorizar explicitamente calculadora simples.
 
-**Pronto: conceção documental. Pendente: executante V2.2, preflight de execução, chamada a modelo, benchmark.** O executante V2 histórico não aplica este protocolo. Uma próxima mensagem pode autorizar preparação técnica sem candidatos.
+**Pronto: executante simulado, preflight estático e 26 testes V2.2. Pendente: transporte real qualificado, isolamento OS, acesso modelo, congelamento e benchmark.** Nenhum candidato lançado.
 
-Verificação documental concluída: linter Markdown, ligações de 156 documentos, 64 hashes históricos e resumos reprodutíveis; 12 testes de manutenção existentes sem chamadas a modelos. Não validam um executante V2.2, que ainda não existe.
+Validação atual: 38 testes de manutenção (12 existentes + 26 V2.2), duas simulações de três fases, zero chamadas modelo. O [relatório técnico](../results/v2-2-preflight.pt.md) distingue propriedades testadas e garantias pendentes.
 
 [README](../README.pt.md) · [Conclusões](../results/CONCLUSIONS.pt.md) · [V2 congelada](V2_PROTOCOL.pt.md) · [Plano experimental](EXPERIMENTAL_DESIGN.pt.md) · [Instrumentação](../docs/observability.pt.md)

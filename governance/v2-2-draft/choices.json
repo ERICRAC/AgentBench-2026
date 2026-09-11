@@ -1,0 +1,30 @@
+{
+  "status": "draft_simulation_only",
+  "campaign_id_proposed": "astra-medium-lean-001",
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "real_isolation_validated": false,
+  "model_access_checked": false,
+  "choices": {
+    "organisation": "two_roles_three_fresh_sessions_one_review",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "pilot": "one_attempt_per_challenge",
+    "global_token_cap": null,
+    "global_time_cap_seconds": null,
+    "limits_status": "proposed_no_new_cap_not_approved",
+    "review_words": 1200,
+    "initial_handover_words": 600,
+    "final_handover_words": 1200,
+    "repeat_plan_status": "18_runs_proposed_not_authorized",
+    "stop_policy": "stop_no_retry_no_automatic_quota_wait",
+    "first_official_pass": "P3_after_review",
+    "snapshot_diagnostic": "after_run_only"
+  },
+  "pending_before_freeze": [
+    "Budget and pilot versus confirmation approval",
+    "Real read/write isolation and CLI configuration acceptance checks",
+    "Live transport and capture failure/termination behaviour qualification",
+    "Explicit protocol freeze and per-challenge launch authority"
+  ]
+}

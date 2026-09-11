@@ -262,3 +262,7 @@ Authorise and execute Astra medium scientific V1 after Core publication. Separat
 ## Exchange 032
 
 Prepare Astra medium V2.2 without launch: two roles (MAIN and REV-01), three fresh sessions, one 1200-word review. Three canonical draft mandates and a four-language protocol: inputs, permissions, verbatim minutes/dispositions, before/after diagnostics, costs, interruptions and exploratory comparison separate from repeated confirmation. Not frozen; no candidate directory, configuration or V2.2 runner created, no model call. General rules, suites, runners and historical runs unchanged. Next: technical preparation and fake-candidate tests before preflight. [V2.2 protocol](../governance/V2_2_PROTOCOL.en.md)
+
+## Exchange 033
+
+Prepare V2.2 relay with fake transport, JSONL capture, full handovers, snapshots, write audits and stop without retry. Add two draft configurations, unapproved choices and 15-hash inventory. Preflight: two simulated challenges, three phases each, no model call or score; 26 new tests, 38 total. Live launch locked; OS isolation, live transport and budget approval remain open. OpenAI Docs and CLI help consulted for flags without authentication/model calls. Four languages, protocol, indexes and README updated; historical evidence preserved. [Preflight and checklist](../results/v2-2-preflight.en.md)
