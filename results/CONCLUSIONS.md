@@ -39,7 +39,7 @@ En Astra moyen, le rapport de temps diminue de 3,81 à 3,44 entre simple et scie
 
 **Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.
 
-**V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** [CLI](v2-2-cli-qualification.md)
+**V2.2 : pont MCP exécuté de bout en bout avec une commande factice ; 63 tests de maintenance réussis.** Terminal natif indisponible dans la sonde, mais outils natifs restants à qualifier. Aucun modèle ni benchmark lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](v2-2-dispatch.md)
 
 Toutes les variantes proposées utilisent Astra en effort moyen. Même modèle ne signifie pas contexte identique, expertise réellement identique ou coût total égal : les rôles, informations reçues et budgets sont enregistrés. Le binôme teste aussi un changement d’effectif ; ce n’est pas une comparaison de topologie seule.
 

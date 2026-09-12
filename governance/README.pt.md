@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2: 57 testes aprovados; três sondas CLI permanecem em 7/8.** Pacote oficial separado reproduz o bloqueio. Sem modelo ou alterações de instalações existentes. **Astra elevado: apenas histórico.** [CLI](../results/v2-2-cli-qualification.pt.md)
+**V2.2: ponte MCP executada de ponta a ponta com comando fixo; 63 testes aprovados.** Terminal nativo indisponível; restantes ferramentas por qualificar. Sem modelo ou benchmark. **Astra elevado: apenas histórico.** [Routage / Dispatch](../results/v2-2-dispatch.pt.md)
 
 Este diretório publica o método necessário para compreender e reproduzir a
 experiência sem expor conversas completas nem a configuração privada do autor.

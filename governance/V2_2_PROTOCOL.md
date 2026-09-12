@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** [CLI](../results/v2-2-cli-qualification.md)
+**V2.2 : pont MCP exécuté de bout en bout avec une commande factice ; 63 tests de maintenance réussis.** Terminal natif indisponible dans la sonde, mais outils natifs restants à qualifier. Aucun modèle ni benchmark lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](../results/v2-2-dispatch.md)
 
 ## En une minute
 

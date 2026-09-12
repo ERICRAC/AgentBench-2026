@@ -280,3 +280,7 @@ Same task resumed after the automatic Git approval check hit a usage limit. No r
 ## Exchange 036
 
 **V2.2: 57 maintenance tests passed; three CLI probes remain at 7/8.** A separate official package reproduces the catalogue blocker. No model launched; existing installations unchanged. **Astra high: historical only.** The test installation remains outside the repository in a dedicated temporary directory; no helper/package is published. OpenAI Docs guided official-package selection; conclusions come from local probes. [CLI](../results/v2-2-cli-qualification.en.md)
+
+## Exchange 037
+
+Extension updated to 0.154.0-alpha.6.2; terminal unchanged. Eight no-model probes distinguish advertisement and execution: host refusal, runtime inventory, MCP approval requirement, echo on both versions, absent native shell, callable agent listing without creation. Six tests added; configuration correction, not an update-attributed effect. OpenAI Docs informed events and per-tool approval. Overall native isolation unqualified; history/general governance preserved. [Routage / Dispatch](../results/v2-2-dispatch.en.md)

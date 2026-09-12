@@ -273,3 +273,7 @@ Mesmo tratamento retomado após limite de utilização do controlo automático d
 ## Interação 036
 
 **V2.2: 57 testes aprovados; três sondas CLI permanecem em 7/8.** Pacote oficial separado reproduz o bloqueio. Sem modelo ou alterações de instalações existentes. **Astra elevado: apenas histórico.** Instalação de teste conservada fora do repositório em diretório temporário dedicado; nenhum helper/pacote publicado. OpenAI Docs orientou seleção do pacote oficial; conclusões baseadas nas sondas locais. [CLI](../results/v2-2-cli-qualification.pt.md)
+
+## Interação 037
+
+Extensão 0.154.0-alpha.6.2, terminal inalterado. Oito sondas sem modelo: recusa host, inventário, aprovação MCP, eco nas duas versões, terminal nativo ausente e listagem de agentes sem criação. Seis testes novos; correção de configuração, não efeito atribuído à atualização. OpenAI Docs para eventos/aprovação. Isolamento nativo global pendente; história/governação intactas. [Routage / Dispatch](../results/v2-2-dispatch.pt.md)

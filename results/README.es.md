@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2: 57 tests correctos; tres sondas CLI siguen en 7/8.** Paquete oficial separado reproduce el bloqueo. Sin modelo ni cambios de instalaciones existentes. **Astra alto: solo histórico.** [CLI](v2-2-cli-qualification.es.md)
+**V2.2: puente MCP ejecutado de extremo a extremo con orden fija; 63 tests correctos.** Terminal nativo no disponible; otras herramientas nativas pendientes. Sin modelo ni benchmark. **Astra alto: solo histórico.** [Routage / Dispatch](v2-2-dispatch.es.md)
 
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 

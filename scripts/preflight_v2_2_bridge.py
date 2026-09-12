@@ -2,7 +2,8 @@
 """Exercise real MCP stdio and inspect CLI tool advertisement on a local stub.
 
 No account, credentials or real model provider is used. The local HTTP stub
-always rejects inference. It records tool names only, never headers/prompts.
+rejects inference or supplies one fixed diagnostic call before stopping. It
+records tool names and that fixed call's output, never headers/prompts.
 """
 
 import argparse
@@ -15,6 +16,7 @@ import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from v2_2_transport import local_cli
+import v2_2_dispatch_fixtures as dispatch
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -42,7 +44,13 @@ def allowed_catalog(observed):
     return observed == [["mcp__agentbench__confined_command"]]
 
 
-def check(cli=None):
+def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_bridge_echo=False):
+    if dispatch_fixture is not None and dispatch_fixture not in dispatch.FIXTURES:
+        raise ValueError("Only fixed non-mutating dispatch fixtures are permitted")
+    if enable_code_mode_host and dispatch_fixture is None:
+        raise ValueError("Host countercheck requires a fixed no-model dispatch fixture")
+    if approve_bridge_echo and (dispatch_fixture != "bridge_echo" or not enable_code_mode_host):
+        raise ValueError("Approval countercheck is limited to the fixed bridge echo")
     cli = Path(cli).resolve(strict=True) if cli is not None else local_cli()
     if not cli.is_file():
         raise ValueError("CLI must be a file")
@@ -71,6 +79,7 @@ def check(cli=None):
 
         observed = []
         envelopes = []
+        dispatch_outputs = []
 
         class Stub(BaseHTTPRequestHandler):
             def do_POST(self):
@@ -78,6 +87,14 @@ def check(cli=None):
                 envelopes.append({"path": self.path, "keys": sorted(payload), "model": payload.get("model"), "tool_choice": payload.get("tool_choice"), "metadata_keys": list(payload.get("client_metadata", {})), "input_types": [x.get("type") for x in payload.get("input", [])]})
                 # Retain ONLY the advertised tool names/types.
                 observed.append(tool_names(payload))
+                if dispatch_fixture is not None:
+                    dispatch_outputs.extend(dispatch.outputs(payload))
+                    if len(observed) == 1:
+                        self.send_response(200)
+                        self.send_header("Content-Type", "text/event-stream")
+                        self.end_headers()
+                        self.wfile.write(dispatch.stream(dispatch_fixture))
+                        return
                 self.send_response(400)
                 self.end_headers()
                 self.wfile.write(b'{"error":{"message":"LOCAL PREFLIGHT STOP: no inference","type":"invalid_request_error"}}')
@@ -103,6 +120,10 @@ def check(cli=None):
                     "computer_use", "image_generation", "view_image", "memories", "shell_snapshot", "skill_search", "code_mode", "code_mode_host")
         for feature in disabled:
             config["features." + feature] = "false"
+        if enable_code_mode_host:
+            config["features.code_mode_host"] = "true"
+        if approve_bridge_echo:
+            config["mcp_servers.agentbench.tools.confined_command.approval_mode"] = '"approve"'
         argv = [str(cli), "exec", "--strict-config", "--ignore-user-config", "--ignore-rules",
                 "--ephemeral", "--json", "--skip-git-repo-check", "-C", str(workspace / "solution")]
         for key, value in config.items():
@@ -114,8 +135,8 @@ def check(cli=None):
             server.shutdown()
             server.server_close()
             worker.join()
-        checks["local_stub_reached"] = len(observed) == 1
-        checks["candidate_tool_allowlist"] = allowed_catalog(observed)
+        checks["local_stub_reached"] = len(observed) == (2 if dispatch_fixture else 1)
+        checks["candidate_tool_allowlist"] = checks["local_stub_reached"] and all(allowed_catalog([names]) for names in observed)
         catalog = json.loads(subprocess.check_output([str(cli), "debug", "models", "--bundled"],
                              text=True, env=env, stderr=subprocess.DEVNULL))
         models = catalog if isinstance(catalog, list) else catalog["models"]
@@ -125,6 +146,11 @@ def check(cli=None):
                 "cli_version": subprocess.check_output([str(cli), "--version"], text=True, env=env, stderr=subprocess.DEVNULL).strip(),
                 "cli_entrypoint_sha256": hashlib.sha256(cli.read_bytes()).hexdigest(),
                 "bundled_model_profiles": profiles,
+                "dispatch_fixture": dispatch_fixture,
+                "code_mode_host_enabled_for_probe": enable_code_mode_host,
+                "bridge_echo_approved_for_probe": approve_bridge_echo,
+                "dispatch_outputs": dispatch_outputs,
+                "dispatch_assessment": dispatch.assess(dispatch_fixture, dispatch_outputs) if dispatch_fixture else None,
                 "status": "passed" if all(checks.values()) else "blocked_tool_catalog",
                 "real_authentication_checked": False, "checks": checks,
                 "advertised_tools": observed, "cli_exit_code": result.returncode,
@@ -139,7 +165,10 @@ def check(cli=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cli", type=Path, help="Explicit isolated CLI; never changes PATH or account")
+    parser.add_argument("--dispatch-fixture", choices=tuple(dispatch.FIXTURES), help="Fixed non-mutating call supplied by the local stub, not a model")
+    parser.add_argument("--enable-code-mode-host-for-probe", action="store_true", help="Countercheck only; requires a fixed dispatch fixture")
+    parser.add_argument("--approve-bridge-echo-for-probe", action="store_true", help="Per-tool approval only for the fixed printf fixture")
     args = parser.parse_args()
-    report = check(args.cli)
+    report = check(args.cli, args.dispatch_fixture, args.enable_code_mode_host_for_probe, args.approve_bridge_echo_for_probe)
     print(json.dumps(report, indent=2))
     raise SystemExit(0 if report["status"] == "passed" else 1)

@@ -366,3 +366,7 @@ Reprise du même traitement après interruption du contrôle automatique d’aut
 ## Échange 036
 
 **V2.2 : 57 tests de maintenance réussis ; trois sondes de CLI restent à 7/8.** Le paquet officiel séparé reproduit le blocage du catalogue. Aucun modèle lancé ; installations existantes inchangées. **Astra élevé : historique uniquement.** Installation de test conservée hors dépôt dans un répertoire temporaire dédié ; aucun helper ou paquet publié. OpenAI Docs a guidé le choix du paquet officiel ; le résultat repose sur les sondes locales. [CLI](../results/v2-2-cli-qualification.md)
+
+## Échange 037
+
+Extension mise à jour vers 0.154.0-alpha.6.2, terminal inchangé. Huit sondes sans modèle distinguent catalogue et exécution : hôte désactivé refusé, inventaire réel, approbation MCP nécessaire, écho réussi sur deux versions, terminal natif absent, liste des agents encore exécutable sans création. Six tests ajoutés ; source des corrections : configuration, non effet attribué à la mise à jour. OpenAI Docs utilisé pour événements et approbation par outil. Isolation native globale non certifiée, historique et gouvernance générale préservés. [Routage / Dispatch](../results/v2-2-dispatch.md)

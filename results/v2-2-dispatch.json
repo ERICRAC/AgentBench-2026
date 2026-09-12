@@ -1,0 +1,1389 @@
+{
+  "kind": "fixed_non_mutating_dispatch_probes",
+  "status": "bridge_echo_demonstrated_native_isolation_unqualified",
+  "model_calls": 0,
+  "benchmark_runs": 0,
+  "maintenance_tests_passed": 63,
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "source_hashes": {
+    "scripts/preflight_v2_2_bridge.py": "e1ed1465b6b1804e9cfc2c123a99c3f90d29b18b15f7aa39b885148cb0bba97d",
+    "scripts/v2_2_dispatch_fixtures.py": "eb229e751f5396cde3c72f047491064ef5a2586ac857ac23e30c1007fa64da6f",
+    "tests/test_v2_2_dispatch.py": "447fdd1c67b13fd68ed26cec741907e36840d98d15045f46efc09a225c8db81a"
+  },
+  "probes": {
+    "stable_host_off": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.153.4",
+      "cli_entrypoint_sha256": "56ef98ab4032d317ab26e9b5e5a175650717351edb16ed9cde0cb6d1734d62da",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "inventory",
+      "code_mode_host_enabled_for_probe": false,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        "code-mode host is disabled"
+      ],
+      "dispatch_assessment": {
+        "outcome": "host_disabled_refusal"
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "turn_id",
+            "x-codex-installation-id",
+            "root_turn_id",
+            "x-codex-turn-metadata",
+            "session_id",
+            "thread_id",
+            "x-codex-window-id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "session_id",
+            "root_turn_id",
+            "x-codex-window-id",
+            "turn_id",
+            "x-codex-installation-id",
+            "x-codex-turn-metadata",
+            "thread_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "stable_inventory": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.153.4",
+      "cli_entrypoint_sha256": "56ef98ab4032d317ab26e9b5e5a175650717351edb16ed9cde0cb6d1734d62da",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "inventory",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "[\"apply_patch\",\"clock__curr_time\",\"list_mcp_resource_templates\",\"list_mcp_resources\",\"mcp__agentbench__confined_command\",\"read_mcp_resource\"]"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "inventory_returned",
+        "tool_names": [
+          "apply_patch",
+          "clock__curr_time",
+          "list_mcp_resource_templates",
+          "list_mcp_resources",
+          "mcp__agentbench__confined_command",
+          "read_mcp_resource"
+        ]
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-turn-metadata",
+            "session_id",
+            "thread_id",
+            "x-codex-window-id",
+            "turn_id",
+            "root_turn_id",
+            "x-codex-installation-id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "thread_id",
+            "x-codex-window-id",
+            "x-codex-installation-id",
+            "root_turn_id",
+            "session_id",
+            "turn_id",
+            "x-codex-turn-metadata"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "stable_echo": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.153.4",
+      "cli_entrypoint_sha256": "56ef98ab4032d317ab26e9b5e5a175650717351edb16ed9cde0cb6d1734d62da",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "bridge_echo",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": true,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "{\"exit_code\": 0, \"stdout\": \"AGENTBENCH_BRIDGE_DISPATCH\", \"stderr\": \"\"}"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "confined_echo_executed"
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-installation-id",
+            "session_id",
+            "root_turn_id",
+            "x-codex-window-id",
+            "x-codex-turn-metadata",
+            "turn_id",
+            "thread_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "turn_id",
+            "root_turn_id",
+            "x-codex-turn-metadata",
+            "x-codex-installation-id",
+            "x-codex-window-id",
+            "session_id",
+            "thread_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        },
+        {
+          "method": "tools/call"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "updated_inventory": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "cli_entrypoint_sha256": "6970ad6a5b7615d2f5838879e19c1369e5527cb1544f1515f76900267740a403",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "inventory",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "[\"apply_patch\",\"clock__curr_time\",\"list_mcp_resource_templates\",\"list_mcp_resources\",\"mcp__agentbench__confined_command\",\"read_mcp_resource\"]"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "inventory_returned",
+        "tool_names": [
+          "apply_patch",
+          "clock__curr_time",
+          "list_mcp_resource_templates",
+          "list_mcp_resources",
+          "mcp__agentbench__confined_command",
+          "read_mcp_resource"
+        ]
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-installation-id",
+            "thread_id",
+            "session_id",
+            "turn_id",
+            "x-codex-window-id",
+            "root_turn_id",
+            "x-codex-turn-metadata"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "thread_id",
+            "x-codex-window-id",
+            "turn_id",
+            "x-codex-installation-id",
+            "x-codex-turn-metadata",
+            "root_turn_id",
+            "session_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "updated_approval_off": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "cli_entrypoint_sha256": "6970ad6a5b7615d2f5838879e19c1369e5527cb1544f1515f76900267740a403",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "bridge_echo",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "MCP tool call requires approval, but approval policy is never"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "mcp_approval_refusal"
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-installation-id",
+            "session_id",
+            "turn_id",
+            "x-codex-window-id",
+            "x-codex-turn-metadata",
+            "root_turn_id",
+            "thread_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "root_turn_id",
+            "x-codex-turn-metadata",
+            "x-codex-window-id",
+            "session_id",
+            "x-codex-installation-id",
+            "thread_id",
+            "turn_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "updated_echo": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "cli_entrypoint_sha256": "6970ad6a5b7615d2f5838879e19c1369e5527cb1544f1515f76900267740a403",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "bridge_echo",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": true,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "{\"exit_code\": 0, \"stdout\": \"AGENTBENCH_BRIDGE_DISPATCH\", \"stderr\": \"\"}"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "confined_echo_executed"
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-installation-id",
+            "x-codex-turn-metadata",
+            "turn_id",
+            "x-codex-window-id",
+            "session_id",
+            "root_turn_id",
+            "thread_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-turn-metadata",
+            "turn_id",
+            "x-codex-installation-id",
+            "session_id",
+            "root_turn_id",
+            "thread_id",
+            "x-codex-window-id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        },
+        {
+          "method": "tools/call"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "updated_shell": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "cli_entrypoint_sha256": "6970ad6a5b7615d2f5838879e19c1369e5527cb1544f1515f76900267740a403",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "shell_noop",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "TypeError: tools.exec_command is not a function"
+          }
+        ]
+      ],
+      "dispatch_assessment": {
+        "outcome": "native_shell_unavailable"
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "turn_id",
+            "x-codex-installation-id",
+            "session_id",
+            "x-codex-window-id",
+            "root_turn_id",
+            "thread_id",
+            "x-codex-turn-metadata"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-installation-id",
+            "session_id",
+            "thread_id",
+            "x-codex-window-id",
+            "turn_id",
+            "root_turn_id",
+            "x-codex-turn-metadata"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "custom_tool_call",
+            "custom_tool_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    },
+    "updated_collaboration": {
+      "kind": "stdio_bridge_and_local_cli_catalog",
+      "model_calls": 0,
+      "cli_version": "codex-cli 0.154.0-alpha.6.2",
+      "cli_entrypoint_sha256": "6970ad6a5b7615d2f5838879e19c1369e5527cb1544f1515f76900267740a403",
+      "bundled_model_profiles": [
+        {
+          "slug": "gpt-6-astra",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        },
+        {
+          "slug": "gpt-5.6-sol",
+          "tool_mode": "code_mode_only",
+          "multi_agent_version": "v2"
+        }
+      ],
+      "dispatch_fixture": "collaboration_list",
+      "code_mode_host_enabled_for_probe": true,
+      "bridge_echo_approved_for_probe": false,
+      "dispatch_outputs": [
+        "{\"agents\":[{\"agent_name\":\"/root\",\"agent_status\":\"running\"}]}"
+      ],
+      "dispatch_assessment": {
+        "outcome": "collaboration_list_executed",
+        "agent_count": 1
+      },
+      "status": "blocked_tool_catalog",
+      "real_authentication_checked": false,
+      "checks": {
+        "MAIN.handshake_and_list": true,
+        "MAIN.complete_streams": true,
+        "MAIN.write_policy": true,
+        "REV-01.handshake_and_list": true,
+        "REV-01.complete_streams": true,
+        "REV-01.write_policy": true,
+        "local_stub_reached": true,
+        "candidate_tool_allowlist": false
+      },
+      "advertised_tools": [
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ],
+        [
+          "functions.exec",
+          "functions.wait",
+          "functions.request_user_input",
+          "functions.request_user_input_async",
+          "clock.sleep",
+          "collaboration.followup_task",
+          "collaboration.interrupt_agent",
+          "collaboration.list_agents",
+          "collaboration.send_message",
+          "collaboration.spawn_agent",
+          "collaboration.wait_agent"
+        ]
+      ],
+      "cli_exit_code": 1,
+      "request_envelopes": [
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "session_id",
+            "root_turn_id",
+            "x-codex-turn-metadata",
+            "thread_id",
+            "x-codex-installation-id",
+            "x-codex-window-id",
+            "turn_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message"
+          ]
+        },
+        {
+          "path": "/responses",
+          "keys": [
+            "client_metadata",
+            "include",
+            "input",
+            "model",
+            "parallel_tool_calls",
+            "prompt_cache_key",
+            "reasoning",
+            "store",
+            "stream",
+            "text",
+            "tool_choice"
+          ],
+          "model": "gpt-6-astra",
+          "tool_choice": "auto",
+          "metadata_keys": [
+            "x-codex-turn-metadata",
+            "x-codex-window-id",
+            "turn_id",
+            "session_id",
+            "x-codex-installation-id",
+            "thread_id",
+            "root_turn_id"
+          ],
+          "input_types": [
+            "additional_tools",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "message",
+            "function_call",
+            "function_call_output"
+          ]
+        }
+      ],
+      "cli_configuration_accepted": true,
+      "bridge_started_by_cli": true,
+      "negotiation": {
+        "requested_version": "2025-06-18"
+      },
+      "mcp_methods": [
+        {
+          "method": "initialize"
+        },
+        {
+          "method": "notifications/initialized"
+        },
+        {
+          "method": "tools/list"
+        }
+      ],
+      "live_authorized": false,
+      "protocol_frozen": false
+    }
+  }
+}
