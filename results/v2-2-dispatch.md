@@ -2,6 +2,36 @@
 
 **Français** · [English (UK)](v2-2-dispatch.en.md) · [Español](v2-2-dispatch.es.md) · [Português](v2-2-dispatch.pt.md)
 
+## Verdict final de qualification — non prêt au gel
+
+**La qualification est close avec un verdict NON-GO pour le dispositif automatisé actuel. Aucun benchmark n'a été lancé.** Ce n'est pas un échec de la calculatrice ou d'Astra : le raccordement du lanceur et les garanties d'isolation ne sont pas complets. Nous arrêtons la succession de petites qualifications ; la prochaine décision porte sur le dispositif à retenir.
+
+| Exigence | Verdict et preuve |
+| --- | --- |
+| Développeur → relecteur → développeur | Deux simulations rejouées, trois sessions chacune ; aucun score candidat |
+| Capture locale des sorties | Réussie : stdin, stdout, stderr, sortie non nulle, 2 Mo sans troncature et octets non UTF-8 conservés |
+| Interruption du transport local | Réussie : délai dépassé et SIGINT réel ; traces partielles conservées, enfant arrêté, état interrupted |
+| Isolation des outils | Partielle : preuves antérieures Bubblewrap et huit refus de patches conservées ; pas de nouvelle certification de toute la chaîne |
+| Interdiction de délégation | Non démontrée techniquement ; aucun spawn_agent tenté, liste native précédemment appelable |
+| Lanceur réel complet | Non prêt : run_relay refuse simulation=False ; pont MCP testé séparément, pas d'adaptateur réel raccordé |
+| Capture/arrêt CLI → MCP → processus et accès modèle | Non qualifiés de bout en bout ; aucun appel authentifié, aucune garantie de quota |
+
+**68 tests de maintenance réussis**, et non 68 tests de calculatrice. Deux nouveaux tests couvrent la capture binaire exacte et SIGINT avec contrôle de l'arrêt de l'enfant. Une correction remplace l'option `-P` dans la commande préparée pour `codex exec` par `-c default_permissions=...` ; `-P` reste réservé au chemin sandbox existant. Le parseur accepte désormais la commande avec `--help` (code zéro) : cela ne prouve ni le chargement du profil ni son confinement effectif.
+
+OpenAI Docs a guidé cette correction de sélection du profil ; aucune valeur de configuration supposée ne remplace une preuve d'exécution. [Permissions officielles](https://learn.chatgpt.com/docs/permissions). [Bilan structuré](v2-2-qualification.json) · [Tests du transport](../tests/test_v2_2_transport.py) · [Lanceur verrouillé](../scripts/run_v2_2.py).
+
+### Simplification proposée — à approuver, non appliquée
+
+Un **pilote supervisé** en trois sessions CLI fraîches, Astra moyen : développeur, revue sur instantané, corrections. Un dossier neuf hors dépôt avec seulement le défi et les livrables ; collecte des messages visibles, métriques disponibles, différences de fichiers et verdict indépendant. Pas de pont MCP personnalisé ni de framework supplémentaire pour ce pilote.
+
+**Compromis explicite :** dossiers séparés et consignes ne constituent pas un confinement technique complet. La non-délégation et les accès seraient contrôlés par consignes et audit des traces disponibles, sans prétendre prouver l'absence de tout accès non observé. Tout écart observé invaliderait le run ; aucune protection de secret ne serait supprimée automatiquement. Les droits exacts devront être écrits avant lancement.
+
+Ce pilote serait étiqueté exploratoire, avec ses différences de dispositif publiées ; aucune comparaison strictement homogène avec l'historique ne serait revendiquée sans référence V1 sous les mêmes conditions. Autre choix : conserver l'exigence de confinement fort et accepter un chantier d'intégration dédié, distinct du benchmark.
+
+**Arbitrage demandé : accepter ce pilote supervisé plutôt que poursuivre le dispositif automatique renforcé ?** Ce choix n'autorise pas encore un lancement : périmètre révisé et gel explicite d'abord. Gouvernance générale, défis et résultats historiques restent inchangés.
+
+## Preuves antérieures conservées
+
 ## Suite — écritures natives contrôlées
 
 **Huit sondes supplémentaires : quatre cibles × deux binaires, huit refus explicites, tous les témoins intacts.** `apply_patch` est disponible mais ne permet pas ces écritures avec `sandbox_mode="read-only"` et `approval_policy="never"`. Cela lève ce doute précis, pas tous les prérequis V2.2.

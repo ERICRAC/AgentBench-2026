@@ -374,3 +374,7 @@ Extension mise à jour vers 0.154.0-alpha.6.2, terminal inchangé. Huit sondes s
 ## Échange 038
 
 Poursuite de la qualification native sans candidat : quatre modifications fixes sur témoins jetables, testées avec chacun des deux binaires. Huit refus explicites de lecture seule ; fichiers et lien contrôlés intacts après chaque appel. Trois tests ajoutés, 66 au total. Rapport existant enrichi en quatre langues, preuves JSON séparées et tableau de bord actualisé. OpenAI Docs utilisé pour distinguer sandbox et approbation. Aucun sous-agent créé ; catalogue global, délégation, lectures, interruptions et capture restent à qualifier. Gouvernance générale et résultats historiques inchangés. [Preuves et limites](../results/v2-2-dispatch.md)
+
+## Échange 039
+
+Demande : terminer une qualification groupée, sans benchmark. Verdict NON-GO explicite, preuves et limites regroupées dans le rapport existant. Deux tests ajoutés (capture binaire et SIGINT réel), 68 réussis ; deux simulations de trois sessions rejouées. Correction de la sélection du profil dans la commande préparée, guidée par OpenAI Docs ; validation du parseur seulement. Aucun candidat ni sous-agent. Proposition non appliquée : pilote supervisé exploratoire, garanties réduites explicitement décrites, arbitrage humain nécessaire avant gel. Gouvernance générale et historique inchangés. [Verdict et choix](../results/v2-2-dispatch.md)

@@ -2,6 +2,36 @@
 
 [Français](v2-2-dispatch.md) · **English (UK)** · [Español](v2-2-dispatch.es.md) · [Português](v2-2-dispatch.pt.md)
 
+## Final qualification verdict — not ready to freeze
+
+**Qualification closes with NO-GO for the current automated setup. No benchmark was launched.** This is not a calculator or Astra failure: launcher integration and isolation guarantees remain incomplete. Incremental qualification stops here; the next decision concerns which setup to use.
+
+| Requirement | Verdict and evidence |
+| --- | --- |
+| Developer → reviewer → developer | Two simulations rerun, three sessions each; no candidate score |
+| Local output capture | Passed: stdin, stdout, stderr, non-zero exit, 2 MB without truncation and non-UTF-8 bytes preserved |
+| Local transport interruption | Passed: timeout and real SIGINT; partial traces retained, child stopped, interrupted checkpoint |
+| Tool isolation | Partial: earlier Bubblewrap evidence and eight patch refusals preserved; no new whole-chain certification |
+| Delegation prohibition | Not technically demonstrated; no spawn_agent attempted, native listing previously callable |
+| Complete live launcher | Not ready: run_relay rejects simulation=False; MCP bridge tested separately, no connected live adapter |
+| CLI → MCP → process capture/termination and model access | Not qualified end to end; no authenticated call or quota guarantee |
+
+**68 maintenance tests passed**, not 68 calculator tests. Two new tests cover exact binary capture and SIGINT with child termination verification. The prepared `codex exec` command now uses `-c default_permissions=...` instead of `-P`; the existing sandbox path retains `-P`. Argument parsing with `--help` succeeds (exit zero), which proves neither profile loading nor effective isolation.
+
+OpenAI Docs informed this profile-selection correction; assumed configuration is no substitute for runtime evidence. [Official permissions](https://learn.chatgpt.com/docs/permissions). [Structured assessment](v2-2-qualification.json) · [Transport tests](../tests/test_v2_2_transport.py) · [Locked launcher](../scripts/run_v2_2.py).
+
+### Proposed simplification — pending approval, not applied
+
+A **supervised pilot** with three fresh CLI sessions, Astra medium: developer, snapshot review, corrections. A new directory outside the repository containing only the challenge and deliverables; capture visible messages, available metrics, file differences and independent verdict. No custom MCP bridge or extra framework for this pilot.
+
+**Explicit trade-off:** separate directories and instructions are not complete technical isolation. Non-delegation and access would be governed by instructions and audits of available traces, without claiming to prove the absence of unobserved access. Any observed breach would invalidate the run; no secret protection would automatically be removed. Exact permissions must be documented before launch.
+
+Label this pilot exploratory and disclose setup differences; do not claim strict historical comparability without a V1 reference under identical conditions. Alternatively, retain strong isolation as a requirement and accept a separate integration project before benchmarking.
+
+**Decision requested: accept this supervised pilot instead of pursuing the reinforced automated setup?** Approval would not itself authorise a launch: revise the scope and explicitly freeze it first. General governance, challenges and historical results remain unchanged.
+
+## Earlier evidence preserved
+
 ## Follow-up — native write checks
 
 **Eight additional probes: four targets × two binaries, eight explicit refusals, all canaries unchanged.** `apply_patch` is available but cannot perform these writes with `sandbox_mode="read-only"` and `approval_policy="never"`. This resolves that specific doubt, not the entire V2.2 preflight.

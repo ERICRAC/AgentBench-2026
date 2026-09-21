@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2 : écritures natives refusées sur les huit sondes ; 66 tests de maintenance réussis.** Témoins intacts dans/hors solution et via lien symbolique. Verrou de délégation et interruptions encore à qualifier ; aucun candidat lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](../results/v2-2-dispatch.md)
+**V2.2 : qualification finale NON-GO pour le dispositif automatisé ; 68 tests de maintenance réussis.** Intégration réelle et confinement global incomplets. Pilote supervisé proposé, non approuvé ; aucun benchmark lancé. [Routage / Dispatch](../results/v2-2-dispatch.md)
 
 ## En une minute
 

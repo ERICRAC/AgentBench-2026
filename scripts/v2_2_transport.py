@@ -49,7 +49,10 @@ def prepared_command(role: str, workspace: Path, cli: Path) -> list[str]:
     del config["sandbox_mode"]
     command = relay.codex_command(config, workspace / "solution")
     command[0] = str(cli.resolve(strict=True))
-    return command[:-1] + permissions(role, workspace, cli) + ["-"]
+    profile = permissions(role, workspace, cli)
+    # -P belongs to `codex sandbox`, not `codex exec`. Select the same
+    # profile through the documented configuration key for the latter.
+    return command[:-1] + ["-c", 'default_permissions="agentbench-v2-2"'] + profile[2:] + ["-"]
 
 
 def capture_process(argv: list[str], prompt: str, capture: Path, *, cwd: Path,

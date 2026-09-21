@@ -1,10 +1,13 @@
 """Real subprocess fixtures, never a model call or an authenticated CLI exec."""
 
 import json
+import os
 from pathlib import Path
+import signal
 import subprocess
 import sys
 import tempfile
+import time
 import unittest
 from unittest.mock import patch
 
@@ -50,6 +53,45 @@ class TransportTests(unittest.TestCase):
         self.run_fixture("import sys; sys.stdout.write('x' * 2000000)")
         self.assertEqual((self.capture / "stdout.jsonl").stat().st_size, 2000000)
 
+    def test_binary_streams_preserved_without_decoding(self):
+        self.run_fixture("import sys; sys.stdout.buffer.write(bytes(range(256)) * 4096); sys.stderr.buffer.write(b'\\xff' * 1048576)")
+        self.assertEqual((self.capture / "stdout.jsonl").read_bytes(), bytes(range(256)) * 4096)
+        self.assertEqual((self.capture / "stderr.txt").read_bytes(), b'\xff' * 1048576)
+
+    @unittest.skipUnless(os.name == "posix", "POSIX interrupt semantics")
+    def test_sigint_preserves_partial_streams_and_stops_child(self):
+        child = "import sys,time; print('ready', flush=True); print('partial error', file=sys.stderr, flush=True); time.sleep(30)"
+        code = ("import sys; from pathlib import Path; "
+                f"sys.path.insert(0, {str(Path(transport.__file__).parent)!r}); "
+                "from v2_2_transport import capture_process; "
+                f"capture_process({[sys.executable, '-B', '-c', child]!r}, '', Path({str(self.capture)!r}), cwd=Path({str(self.workspace)!r}), timeout=5)")
+        runner = subprocess.Popen([sys.executable, "-B", "-c", code],
+                                  stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                                  start_new_session=True)
+        try:
+            deadline = time.monotonic() + 4
+            while time.monotonic() < deadline:
+                output = self.capture / "stderr.txt"
+                if output.exists() and output.read_bytes() == b"partial error\n":
+                    break
+                time.sleep(0.01)
+            else:
+                self.fail("Synthetic child did not become ready")
+            runner.send_signal(signal.SIGINT)
+            runner.wait(timeout=3)
+            state = json.loads((self.capture / "process.json").read_text())
+            self.assertEqual(state["status"], "interrupted")
+            self.assertEqual(state["error_type"], "KeyboardInterrupt")
+            self.assertEqual(state["exit_code"], -9)
+            self.assertEqual((self.capture / "stdout.jsonl").read_bytes(), b"ready\n")
+            self.assertEqual(output.read_bytes(), b"partial error\n")
+            with self.assertRaises(ProcessLookupError):
+                os.kill(state["pid"], 0)
+        finally:
+            if runner.poll() is None:
+                runner.send_signal(signal.SIGINT)
+                runner.wait(timeout=7)
+
     def test_capture_cannot_be_reused(self):
         self.capture.mkdir()
         with self.assertRaises(FileExistsError):
@@ -65,7 +107,8 @@ class TransportTests(unittest.TestCase):
         with patch("subprocess.Popen", side_effect=AssertionError("No model calls")):
             command = transport.prepared_command("MAIN", self.workspace, Path(sys.executable))
         self.assertNotIn("sandbox_mode", " ".join(command))
-        self.assertIn("-P", command)
+        self.assertNotIn("-P", command)
+        self.assertIn('default_permissions="agentbench-v2-2"', command)
         self.assertEqual(command[-1], "-")
         self.assertIn('network.enabled=false', " ".join(command))
 

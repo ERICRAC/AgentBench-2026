@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · **Português**
 
-**V2.2: escritas nativas recusadas nas oito sondas; 66 testes aprovados.** Testemunhas intactas dentro/fora de solution e por ligação simbólica. Bloqueio de delegação e interrupções pendentes; nenhum candidato iniciado. **Astra elevado: apenas histórico.** [Routage / Dispatch](../results/v2-2-dispatch.pt.md)
+**V2.2: qualificação final NO-GO do dispositivo automatizado; 68 testes aprovados.** Integração real e isolamento global incompletos. Piloto supervisionado proposto, não aprovado; nenhum benchmark lançado. [Routage / Dispatch](../results/v2-2-dispatch.pt.md)
 
 ## Num minuto
 

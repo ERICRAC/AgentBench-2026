@@ -284,3 +284,7 @@ Extensión 0.154.0-alpha.6.2, terminal sin cambios. Ocho sondas sin modelo: rech
 ## Intercambio 038
 
 Continúa la comprobación nativa sin candidato: cuatro modificaciones fijas sobre testigos temporales con ambos binarios. Ocho rechazos explícitos de solo lectura; archivos y enlace intactos comprobados después de cada llamada. Tres tests nuevos, 66 en total. Informe existente ampliado en cuatro idiomas, pruebas JSON separadas y panel actualizado. OpenAI Docs distingue sandbox y aprobación. Ningún subagente creado; catálogo global, delegación, lecturas, interrupciones y captura pendientes. Gobernanza general y resultados históricos intactos. [Pruebas y límites](../results/v2-2-dispatch.es.md)
+
+## Intercambio 039
+
+Petición: terminar una cualificación conjunta sin benchmark. NO-GO explícito; pruebas y límites reunidos en el informe existente. Dos tests añadidos (captura binaria y SIGINT real), 68 correctos; dos simulaciones de tres sesiones repetidas. Selección del perfil preparada corregida con OpenAI Docs; solo análisis de argumentos validado. Sin candidato ni subagente. Propuesta no aplicada: piloto supervisado exploratorio, garantías reducidas explicitadas, decisión humana antes de congelar. Gobernanza general e historia intactas. [Veredicto y elección](../results/v2-2-dispatch.es.md)

@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2: escrituras nativas rechazadas en las ocho sondas; 66 tests correctos.** Testigos intactos dentro/fuera de solution y mediante enlace simbólico. Bloqueo de delegación e interrupciones pendientes; ningún candidato iniciado. **Astra alto: solo histórico.** [Routage / Dispatch](../results/v2-2-dispatch.es.md)
+**V2.2: cualificación final NO-GO del dispositivo automatizado; 68 tests correctos.** Integración real y aislamiento global incompletos. Piloto supervisado propuesto, sin aprobar; ningún benchmark lanzado. [Routage / Dispatch](../results/v2-2-dispatch.es.md)
 
 Este directorio publica el método necesario para entender y reproducir el
 experimento sin exponer conversaciones completas ni la configuración privada

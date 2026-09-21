@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2: escritas nativas recusadas nas oito sondas; 66 testes aprovados.** Testemunhas intactas dentro/fora de solution e por ligação simbólica. Bloqueio de delegação e interrupções pendentes; nenhum candidato iniciado. **Astra elevado: apenas histórico.** [Routage / Dispatch](v2-2-dispatch.pt.md)
+**V2.2: qualificação final NO-GO do dispositivo automatizado; 68 testes aprovados.** Integração real e isolamento global incompletos. Piloto supervisionado proposto, não aprovado; nenhum benchmark lançado. [Routage / Dispatch](v2-2-dispatch.pt.md)
 
 [Cinco runs V2, dois minutos cada](run-summaries/index.pt.md) · [📖 Como ler e interpretar um run AgentBench](../docs/reading-guide.pt.md)
 

@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 : écritures natives refusées sur les huit sondes ; 66 tests de maintenance réussis.** Témoins intacts dans/hors solution et via lien symbolique. Verrou de délégation et interruptions encore à qualifier ; aucun candidat lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](v2-2-dispatch.md)
+**V2.2 : qualification finale NON-GO pour le dispositif automatisé ; 68 tests de maintenance réussis.** Intégration réelle et confinement global incomplets. Pilote supervisé proposé, non approuvé ; aucun benchmark lancé. [Routage / Dispatch](v2-2-dispatch.md)
 
 [Les cinq runs V2 en 2 minutes chacun](run-summaries/index.md) · [📖 Comment lire et interpréter un run AgentBench](../docs/reading-guide.md)
 

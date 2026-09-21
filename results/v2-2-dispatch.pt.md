@@ -2,6 +2,36 @@
 
 [Français](v2-2-dispatch.md) · [English (UK)](v2-2-dispatch.en.md) · [Español](v2-2-dispatch.es.md) · **Português**
 
+## Veredicto final de qualificação — não pronto para congelar
+
+**A qualificação termina com NO-GO para o dispositivo automatizado atual. Nenhum benchmark foi lançado.** Não é uma falha da calculadora ou do Astra: faltam integração do lançador e garantias completas de isolamento. Encerram-se as pequenas qualificações sucessivas; a próxima decisão é qual dispositivo utilizar.
+
+| Requisito | Veredicto e prova |
+| --- | --- |
+| Programador → revisor → programador | Duas simulações repetidas, três sessões cada; sem pontuação candidata |
+| Captura local de saídas | Aprovada: stdin, stdout, stderr, saída não nula, 2 MB sem truncagem e bytes não UTF-8 preservados |
+| Interrupção do transporte local | Aprovada: timeout e SIGINT real; rastos parciais preservados, filho parado, estado interrupted |
+| Isolamento de ferramentas | Parcial: provas anteriores Bubblewrap e oito recusas preservadas; sem nova certificação da cadeia completa |
+| Proibição de delegação | Não demonstrada tecnicamente; nenhum spawn_agent tentado, listagem nativa anteriormente disponível |
+| Lançador real completo | Não pronto: run_relay recusa simulation=False; ponte MCP testada separadamente, sem adaptador real ligado |
+| Captura/paragem CLI → MCP → processo e acesso ao modelo | Não qualificados de ponta a ponta; sem chamada autenticada nem garantia de quota |
+
+**68 testes de manutenção aprovados**, não 68 testes da calculadora. Dois testes novos cobrem captura binária exata e SIGINT com verificação da paragem do filho. O comando preparado de `codex exec` usa agora `-c default_permissions=...` em vez de `-P`; o caminho sandbox existente mantém `-P`. A análise de argumentos com `--help` termina com código zero: não comprova carregamento do perfil nem isolamento efetivo.
+
+OpenAI Docs orientou esta correção; configuração presumida não substitui provas de execução. [Permissões oficiais](https://learn.chatgpt.com/docs/permissions). [Avaliação estruturada](v2-2-qualification.json) · [Testes do transporte](../tests/test_v2_2_transport.py) · [Lançador bloqueado](../scripts/run_v2_2.py).
+
+### Simplificação proposta — por aprovar, não aplicada
+
+Um **piloto supervisionado** com três sessões CLI novas, Astra médio: programador, revisão de instantâneo, correções. Uma pasta nova fora do repositório apenas com o desafio e entregáveis; captura de mensagens visíveis, métricas disponíveis, diferenças e veredicto independente. Sem ponte MCP personalizada nem framework adicional.
+
+**Compromisso explícito:** pastas separadas e instruções não equivalem a isolamento técnico completo. Não delegação e acessos seriam controlados por instruções e auditoria dos rastos disponíveis, sem afirmar ausência de acessos não observados. Qualquer infração observada invalidaria o run; nenhuma proteção de segredos seria removida automaticamente. Documentar as permissões exatas antes do lançamento.
+
+Piloto exploratório com diferenças publicadas; sem comparação histórica estritamente homogénea sem referência V1 nas mesmas condições. Alternativa: manter o isolamento forte e aceitar um projeto de integração separado antes do benchmark.
+
+**Decisão solicitada: aceitar o piloto supervisionado em vez de continuar o dispositivo automático reforçado?** Isto não autorizaria o lançamento: primeiro rever e congelar explicitamente o âmbito. Governação geral, desafios e resultados históricos intactos.
+
+## Provas anteriores preservadas
+
 ## Continuação — verificação de escritas nativas
 
 **Oito sondas adicionais: quatro destinos × dois binários, oito recusas explícitas e todos os ficheiros testemunha intactos.** `apply_patch` está disponível, mas não permite estas escritas com `sandbox_mode="read-only"` e `approval_policy="never"`. Esta dúvida específica fica resolvida, não todo o preflight V2.2.

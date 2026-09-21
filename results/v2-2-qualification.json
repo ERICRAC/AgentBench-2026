@@ -1,0 +1,54 @@
+{
+  "kind": "consolidated_qualification_review_not_executable_gate",
+  "verdict": "NO_GO",
+  "scope": "current_automated_V2_2_draft",
+  "model_calls": 0,
+  "subagents_created": 0,
+  "benchmark_runs": 0,
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "current_checks": {
+    "maintenance_tests": {
+      "passed": 68,
+      "command": "python3 -B -m unittest discover -s tests -v"
+    },
+    "simulations": {
+      "completed": 2,
+      "sessions_each": 3,
+      "command": "python3 -B scripts/preflight_v2_2.py",
+      "official_verdict": null
+    },
+    "interruptions": "local_capture_only_timeout_and_real_SIGINT_passed",
+    "capture": "local_exact_stdout_stderr_including_non_UTF8_passed",
+    "prepared_argv": {
+      "previous_option_exit_code": 2,
+      "previous_option_error": "unexpected argument '-P' found",
+      "help_exit_code": 0,
+      "configuration_loaded": false,
+      "isolation_proven": false
+    }
+  },
+  "previous_evidence_not_rerun": [
+    "results/v2-2-transport.json",
+    "results/v2-2-dispatch.json",
+    "results/v2-2-native-patch.json"
+  ],
+  "blockers": [
+    "Live adapter not connected; run_relay rejects simulation=False",
+    "Native non-delegation and complete read isolation not demonstrated",
+    "End-to-end CLI/MCP lifecycle and complete candidate-visible capture not qualified"
+  ],
+  "proposal": {
+    "status": "not_approved_not_implemented",
+    "kind": "supervised_exploratory_three_session_pilot",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "technical_isolation_equivalence_claimed": false,
+    "historical_strict_comparability_claimed": false,
+    "launch_authorized": false
+  },
+  "source_sha256": {
+    "scripts/v2_2_transport.py": "42551e9616a8fde3164ddc9fda540101cb0fb163f68933f0e90cfd76f6a43e2f",
+    "tests/test_v2_2_transport.py": "c2839912d9309d3ab0014ee63863fb8a4b457e57f5b4db70f458d5b1c8760ecb"
+  }
+}

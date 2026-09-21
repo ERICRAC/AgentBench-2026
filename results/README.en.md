@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: native writes refused in all eight probes; 66 maintenance tests passed.** Canaries unchanged inside/outside solution and through a symbolic link. Delegation blocking and interruptions still need qualification; no candidate launched. **Astra high: historical only.** [Routage / Dispatch](v2-2-dispatch.en.md)
+**V2.2: final qualification NO-GO for the automated setup; 68 maintenance tests passed.** Live integration and overall isolation incomplete. Supervised pilot proposed, not approved; no benchmark launched. [Routage / Dispatch](v2-2-dispatch.en.md)
 
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 
