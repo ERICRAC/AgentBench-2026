@@ -46,7 +46,7 @@ def allowed_catalog(observed):
 
 def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_bridge_echo=False):
     if dispatch_fixture is not None and dispatch_fixture not in dispatch.FIXTURES:
-        raise ValueError("Only fixed non-mutating dispatch fixtures are permitted")
+        raise ValueError("Only fixed diagnostic dispatch fixtures are permitted")
     if enable_code_mode_host and dispatch_fixture is None:
         raise ValueError("Host countercheck requires a fixed no-model dispatch fixture")
     if approve_bridge_echo and (dispatch_fixture != "bridge_echo" or not enable_code_mode_host):
@@ -59,6 +59,16 @@ def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_
         workspace = root / "workspace"
         (workspace / "solution").mkdir(parents=True)
         (workspace / "CHALLENGE.md").write_text("Synthetic contract, not a benchmark")
+        # All patch targets, including the outside target, belong to this fresh
+        # disposable tree. Never accept a caller-supplied patch or target path.
+        canaries = {}
+        if dispatch_fixture in dispatch.PATCH_TARGETS:
+            canaries = {"solution": workspace / "solution/native-canary.txt",
+                        "contract": workspace / "CHALLENGE.md",
+                        "outside": root / "outside-canary.txt"}
+            for path in canaries.values():
+                path.write_text(dispatch.CANARY_BEFORE)
+            (workspace / "solution/native-link.txt").symlink_to(canaries["outside"])
         checks = {}
         for role in ("MAIN", "REV-01"):
             requests = [{"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-03-26"}},
@@ -137,6 +147,18 @@ def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_
             worker.join()
         checks["local_stub_reached"] = len(observed) == (2 if dispatch_fixture else 1)
         checks["candidate_tool_allowlist"] = checks["local_stub_reached"] and all(allowed_catalog([names]) for names in observed)
+        canary_evidence = None
+        if canaries:
+            unchanged = {name: path.is_file() and path.read_bytes() == dispatch.CANARY_BEFORE.encode()
+                         for name, path in canaries.items()}
+            link = workspace / "solution/native-link.txt"
+            unchanged["symlink"] = link.is_symlink() and link.resolve() == canaries["outside"]
+            canary_evidence = {"unchanged": unchanged,
+                               "all_unchanged": all(unchanged.values()),
+                               "tool_response_received": len(dispatch_outputs) == 1,
+                               "native_sandbox_mode": "read-only",
+                               "scope": "owned_disposable_canaries_only"}
+            checks["native_patch_canaries_unchanged"] = all(unchanged.values())
         catalog = json.loads(subprocess.check_output([str(cli), "debug", "models", "--bundled"],
                              text=True, env=env, stderr=subprocess.DEVNULL))
         models = catalog if isinstance(catalog, list) else catalog["models"]
@@ -150,6 +172,7 @@ def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_
                 "code_mode_host_enabled_for_probe": enable_code_mode_host,
                 "bridge_echo_approved_for_probe": approve_bridge_echo,
                 "dispatch_outputs": dispatch_outputs,
+                "native_patch_evidence": canary_evidence,
                 "dispatch_assessment": dispatch.assess(dispatch_fixture, dispatch_outputs) if dispatch_fixture else None,
                 "status": "passed" if all(checks.values()) else "blocked_tool_catalog",
                 "real_authentication_checked": False, "checks": checks,
@@ -165,7 +188,7 @@ def check(cli=None, dispatch_fixture=None, enable_code_mode_host=False, approve_
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cli", type=Path, help="Explicit isolated CLI; never changes PATH or account")
-    parser.add_argument("--dispatch-fixture", choices=tuple(dispatch.FIXTURES), help="Fixed non-mutating call supplied by the local stub, not a model")
+    parser.add_argument("--dispatch-fixture", choices=tuple(dispatch.FIXTURES), help="Fixed diagnostic call on disposable fixtures, not a model")
     parser.add_argument("--enable-code-mode-host-for-probe", action="store_true", help="Countercheck only; requires a fixed dispatch fixture")
     parser.add_argument("--approve-bridge-echo-for-probe", action="store_true", help="Per-tool approval only for the fixed printf fixture")
     args = parser.parse_args()

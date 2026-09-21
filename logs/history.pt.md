@@ -277,3 +277,7 @@ Mesmo tratamento retomado após limite de utilização do controlo automático d
 ## Interação 037
 
 Extensão 0.154.0-alpha.6.2, terminal inalterado. Oito sondas sem modelo: recusa host, inventário, aprovação MCP, eco nas duas versões, terminal nativo ausente e listagem de agentes sem criação. Seis testes novos; correção de configuração, não efeito atribuído à atualização. OpenAI Docs para eventos/aprovação. Isolamento nativo global pendente; história/governação intactas. [Routage / Dispatch](../results/v2-2-dispatch.pt.md)
+
+## Interação 038
+
+Continuação da qualificação nativa sem candidato: quatro alterações fixas em testemunhas temporárias com ambos os binários. Oito recusas explícitas de leitura; ficheiros e ligação verificados intactos após cada chamada. Três testes novos, 66 no total. Relatório existente ampliado em quatro línguas, provas JSON separadas e painel atualizado. OpenAI Docs distingue sandbox e aprovação. Nenhum subagente criado; catálogo global, delegação, leituras, interrupções e captura pendentes. Governação geral e resultados históricos intactos. [Provas e limites](../results/v2-2-dispatch.pt.md)

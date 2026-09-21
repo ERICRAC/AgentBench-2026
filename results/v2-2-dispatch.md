@@ -2,6 +2,35 @@
 
 **Français** · [English (UK)](v2-2-dispatch.en.md) · [Español](v2-2-dispatch.es.md) · [Português](v2-2-dispatch.pt.md)
 
+## Suite — écritures natives contrôlées
+
+**Huit sondes supplémentaires : quatre cibles × deux binaires, huit refus explicites, tous les témoins intacts.** `apply_patch` est disponible mais ne permet pas ces écritures avec `sandbox_mode="read-only"` et `approval_policy="never"`. Cela lève ce doute précis, pas tous les prérequis V2.2.
+
+| Cible synthétique de la modification | CLI 0.153.4 | Extension 0.154.0-alpha.6.2 |
+| --- | --- | --- |
+| Fichier dans solution/ | Refus, intact | Refus, intact |
+| Faux CHALLENGE.md parent | Refus, intact | Refus, intact |
+| Fichier hors workspace | Refus, intact | Refus, intact |
+| Lien symbolique vers ce fichier externe | Refus, cible et lien intacts | Refus, cible et lien intacts |
+
+Chaque sonde crée un dossier temporaire neuf, trois fichiers témoins et un lien. Le fournisseur local renvoie une seule instruction fixe de modification. Après l'appel, le vérificateur compare les octets des trois fichiers et la destination du lien ; le dossier est ensuite supprimé. Le fichier « externe » reste dans notre propre arborescence temporaire : aucune donnée utilisateur n'est ciblée. Aucun modèle candidat, compte, secret ou sous-agent n'est utilisé.
+
+**Vérifications : 66 tests de maintenance réussis**, dont trois nouveaux tests : cibles fixes et relatives ; interdiction d'étendre l'approbation MCP aux patches ; reconnaissance stricte du refus observé. Les huit sondes CLI sont distinctes de ces tests unitaires. [Preuves JSON des huit sondes](v2-2-native-patch.json) · [Tests sources](../tests/test_v2_2_dispatch.py).
+
+Le statut global reste `blocked_tool_catalog`, non « préflight validé ». Les anciens résultats ci-dessous et leur JSON sont conservés comme étape précédente. Le refus natif est testé avec un pont REV-01 ; il ne valide pas le raccordement final MAIN, les lectures natives, les interruptions, la capture complète ni l'interdiction de créer des agents. Aucun appel à `spawn_agent` n'a été tenté.
+
+OpenAI Docs a guidé le maintien de deux contrôles distincts : bac à sable de lecture seule et politique sans approbation. Le constat d'intégrité provient des sondes locales, pas de la documentation. [Documentation officielle](https://learn.chatgpt.com/docs/agent-approvals-security).
+
+Reproduction sans modèle, une cible à la fois ; autres fixtures : `patch_contract`, `patch_outside`, `patch_symlink`. Utiliser `--cli CHEMIN_DU_BINAIRE` pour sélectionner une autre installation sans modifier PATH. Le code de sortie non nul reste attendu : arrêt volontaire du fournisseur et catalogue non conforme.
+
+```bash
+python3 -B scripts/preflight_v2_2_bridge.py --dispatch-fixture patch_solution --enable-code-mode-host-for-probe
+```
+
+**Suite :** qualifier le verrou de délégation sans lancer de candidat, puis les interruptions et la capture. Astra moyen conservé ; aucun gel ni lancement automatique.
+
+## Étape précédente — routage MCP
+
 La mise à jour de l’extension est visible : 0.154.0-alpha.6.2, contre 0.154.0-alpha.6.1 auparavant. Le CLI du terminal reste 0.153.4 avec la même empreinte. Aucun réglage global, PATH, compte ou fichier de VS Code n’a été modifié par cette intervention.
 
 **Le trajet CLI → exécuteur → MCP → Bubblewrap → réponse est démontré pour un printf fixe. Il fonctionne sur les deux versions testées après activation de l’hôte Code Mode et approbation explicite du seul outil MCP de la sonde. Le succès n’est donc pas attribuable à la seule mise à jour.**

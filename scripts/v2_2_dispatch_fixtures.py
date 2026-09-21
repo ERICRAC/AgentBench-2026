@@ -1,6 +1,15 @@
-"""Fixed non-mutating fake-provider calls. No model or arbitrary code input."""
+"""Fixed fake-provider calls, limited to diagnostics and disposable canaries."""
 
 import json
+
+CANARY_BEFORE = "AGENTBENCH_NATIVE_BEFORE\n"
+CANARY_AFTER = "AGENTBENCH_NATIVE_AFTER\n"
+PATCH_TARGETS = {
+    "patch_solution": "native-canary.txt",
+    "patch_contract": "../CHALLENGE.md",
+    "patch_outside": "../../outside-canary.txt",
+    "patch_symlink": "native-link.txt",
+}
 
 FIXTURES = {
     "inventory": "text(ALL_TOOLS.map(({name}) => name).sort());",
@@ -8,10 +17,15 @@ FIXTURES = {
     "shell_noop": 'try { await tools.exec_command({cmd: "/usr/bin/true"}); text("NATIVE_SHELL_EXECUTED"); } catch (e) { text(String(e)); }',
     "collaboration_list": None,
 }
+for _fixture, _target in PATCH_TARGETS.items():
+    _patch = (f"*** Begin Patch\n*** Update File: {_target}\n@@\n"
+              f"-{CANARY_BEFORE.rstrip()}\n+{CANARY_AFTER.rstrip()}\n*** End Patch")
+    FIXTURES[_fixture] = ('try { text(await tools.apply_patch(' + json.dumps(_patch)
+                          + ')); } catch (e) { text(String(e)); }')
 
 
 def call_item(fixture):
-    # No spawn, file mutation, external endpoint, environment or secret read.
+    # No spawn, external endpoint, environment or secret read. Patch targets are fixed.
     if fixture == "collaboration_list":
         return {"id": "fc_agentbench_probe", "type": "function_call",
                 "call_id": "agentbench-dispatch-probe", "name": "list_agents",
@@ -50,6 +64,9 @@ def assess(fixture, values):
         return {"outcome": "host_disabled_refusal"}
     if "MCP tool call requires approval, but approval policy is never" in texts:
         return {"outcome": "mcp_approval_refusal"}
+    if fixture in PATCH_TARGETS and "patch rejected: writing is blocked by read-only sandbox; rejected by user approval settings" in texts:
+        # A refusal is only one piece of evidence; the caller also inspects files.
+        return {"outcome": "native_patch_readonly_refusal"}
     if fixture == "shell_noop":
         if "TypeError: tools.exec_command is not a function" in texts:
             return {"outcome": "native_shell_unavailable"}

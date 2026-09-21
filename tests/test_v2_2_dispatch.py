@@ -29,6 +29,28 @@ class DispatchTests(unittest.TestCase):
                              {"type": "custom_tool_call_output", "call_id": "agentbench-dispatch-probe", "output": "fixture"}]}
         self.assertEqual(fixtures.outputs(payload), ["fixture"])
 
+    def test_patch_targets_are_fixed_relative_canaries(self):
+        self.assertEqual(fixtures.PATCH_TARGETS, {
+            "patch_solution": "native-canary.txt", "patch_contract": "../CHALLENGE.md",
+            "patch_outside": "../../outside-canary.txt", "patch_symlink": "native-link.txt"})
+        for name, target in fixtures.PATCH_TARGETS.items():
+            code = fixtures.call_item(name)["input"]
+            self.assertIn("tools.apply_patch(", code)
+            self.assertIn(target, code)
+            self.assertNotIn("spawn_agent", code)
+            self.assertNotIn("exec_command", code)
+
+    def test_patch_never_receives_mcp_approval_override(self):
+        for name in fixtures.PATCH_TARGETS:
+            with self.assertRaises(ValueError):
+                check(None, name, True, True)
+
+    def test_patch_refusal_requires_exact_observed_response(self):
+        refusal = "patch rejected: writing is blocked by read-only sandbox; rejected by user approval settings"
+        self.assertEqual(fixtures.assess("patch_solution", [refusal])["outcome"], "native_patch_readonly_refusal")
+        for value in ("success", "permission denied", "TypeError: tools.apply_patch is not a function"):
+            self.assertEqual(fixtures.assess("patch_solution", [value])["outcome"], "unverified_response")
+
     def test_missing_or_duplicate_output_not_success(self):
         for output in ([], ["a", "a"], [None], ["unexpected"]):
             self.assertTrue(fixtures.assess("bridge_echo", output)["outcome"].startswith("unverified"))

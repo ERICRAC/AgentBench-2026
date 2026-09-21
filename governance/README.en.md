@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: MCP bridge executed end to end with a fixed command; 63 maintenance tests passed.** Native terminal unavailable in the probe; remaining native tools need qualification. No model or benchmark launched. **Astra high: historical only.** [Routage / Dispatch](../results/v2-2-dispatch.en.md)
+**V2.2: native writes refused in all eight probes; 66 maintenance tests passed.** Canaries unchanged inside/outside solution and through a symbolic link. Delegation blocking and interruptions still need qualification; no candidate launched. **Astra high: historical only.** [Routage / Dispatch](../results/v2-2-dispatch.en.md)
 
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private

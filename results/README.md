@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 : pont MCP exécuté de bout en bout avec une commande factice ; 63 tests de maintenance réussis.** Terminal natif indisponible dans la sonde, mais outils natifs restants à qualifier. Aucun modèle ni benchmark lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](v2-2-dispatch.md)
+**V2.2 : écritures natives refusées sur les huit sondes ; 66 tests de maintenance réussis.** Témoins intacts dans/hors solution et via lien symbolique. Verrou de délégation et interruptions encore à qualifier ; aucun candidat lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](v2-2-dispatch.md)
 
 [Les cinq runs V2 en 2 minutes chacun](run-summaries/index.md) · [📖 Comment lire et interpréter un run AgentBench](../docs/reading-guide.md)
 

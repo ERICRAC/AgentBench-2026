@@ -370,3 +370,7 @@ Reprise du même traitement après interruption du contrôle automatique d’aut
 ## Échange 037
 
 Extension mise à jour vers 0.154.0-alpha.6.2, terminal inchangé. Huit sondes sans modèle distinguent catalogue et exécution : hôte désactivé refusé, inventaire réel, approbation MCP nécessaire, écho réussi sur deux versions, terminal natif absent, liste des agents encore exécutable sans création. Six tests ajoutés ; source des corrections : configuration, non effet attribué à la mise à jour. OpenAI Docs utilisé pour événements et approbation par outil. Isolation native globale non certifiée, historique et gouvernance générale préservés. [Routage / Dispatch](../results/v2-2-dispatch.md)
+
+## Échange 038
+
+Poursuite de la qualification native sans candidat : quatre modifications fixes sur témoins jetables, testées avec chacun des deux binaires. Huit refus explicites de lecture seule ; fichiers et lien contrôlés intacts après chaque appel. Trois tests ajoutés, 66 au total. Rapport existant enrichi en quatre langues, preuves JSON séparées et tableau de bord actualisé. OpenAI Docs utilisé pour distinguer sandbox et approbation. Aucun sous-agent créé ; catalogue global, délégation, lectures, interruptions et capture restent à qualifier. Gouvernance générale et résultats historiques inchangés. [Preuves et limites](../results/v2-2-dispatch.md)

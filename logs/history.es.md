@@ -280,3 +280,7 @@ Mismo tratamiento reanudado tras límite de uso del control automático de autor
 ## Intercambio 037
 
 Extensión 0.154.0-alpha.6.2, terminal sin cambios. Ocho sondas sin modelo: rechazo host, inventario, aprobación MCP, eco en ambas versiones, terminal nativo ausente y listado de agentes sin creación. Seis tests nuevos; corrección de configuración, no efecto atribuido a actualizar. OpenAI Docs para eventos/aprobación. Aislamiento nativo global pendiente; historia/gobernanza intactas. [Routage / Dispatch](../results/v2-2-dispatch.es.md)
+
+## Intercambio 038
+
+Continúa la comprobación nativa sin candidato: cuatro modificaciones fijas sobre testigos temporales con ambos binarios. Ocho rechazos explícitos de solo lectura; archivos y enlace intactos comprobados después de cada llamada. Tres tests nuevos, 66 en total. Informe existente ampliado en cuatro idiomas, pruebas JSON separadas y panel actualizado. OpenAI Docs distingue sandbox y aprobación. Ningún subagente creado; catálogo global, delegación, lecturas, interrupciones y captura pendientes. Gobernanza general y resultados históricos intactos. [Pruebas y límites](../results/v2-2-dispatch.es.md)

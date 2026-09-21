@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](V2_2_PROTOCOL.en.md) · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2 : pont MCP exécuté de bout en bout avec une commande factice ; 63 tests de maintenance réussis.** Terminal natif indisponible dans la sonde, mais outils natifs restants à qualifier. Aucun modèle ni benchmark lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](../results/v2-2-dispatch.md)
+**V2.2 : écritures natives refusées sur les huit sondes ; 66 tests de maintenance réussis.** Témoins intacts dans/hors solution et via lien symbolique. Verrou de délégation et interruptions encore à qualifier ; aucun candidat lancé. **Astra élevé : historique uniquement.** [Routage / Dispatch](../results/v2-2-dispatch.md)
 
 ## En une minute
 

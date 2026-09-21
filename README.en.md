@@ -33,7 +33,7 @@ Finding your bearings: **V1 = solo**, **V2 = one developer writer and three cons
 
 **Astra medium V1 versus V2: equal official scores on both challenges.** V2 uses ×3.56 time and ×4.49 tokens overall. Review nevertheless contributes robustness fixes outside the score. [Full comparison and evidence](results/astra-medium-v1-v2.en.md)
 
-**V2.2: MCP bridge executed end to end with a fixed command; 63 maintenance tests passed.** Native terminal unavailable in the probe; remaining native tools need qualification. No model or benchmark launched. **Astra high: historical only.** [Routage / Dispatch](results/v2-2-dispatch.en.md)
+**V2.2: native writes refused in all eight probes; 66 maintenance tests passed.** Canaries unchanged inside/outside solution and through a symbolic link. Delegation blocking and interruptions still need qualification; no candidate launched. **Astra high: historical only.** [Routage / Dispatch](results/v2-2-dispatch.en.md)
 
 Dashboard reference campaign: **Sol high · `sol-high-control-001`**. [71-check catalogue](docs/acceptance-tests.en.md) · [Sol V1 control](results/sol-vs-astra-v1.en.md) · [V2 synthesis](results/sol-v2.en.md) · [V1 archive](results/ARCHIVE_V1.en.md).
 

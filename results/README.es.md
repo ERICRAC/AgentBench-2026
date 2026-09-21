@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2: puente MCP ejecutado de extremo a extremo con orden fija; 63 tests correctos.** Terminal nativo no disponible; otras herramientas nativas pendientes. Sin modelo ni benchmark. **Astra alto: solo histórico.** [Routage / Dispatch](v2-2-dispatch.es.md)
+**V2.2: escrituras nativas rechazadas en las ocho sondas; 66 tests correctos.** Testigos intactos dentro/fuera de solution y mediante enlace simbólico. Bloqueo de delegación e interrupciones pendientes; ningún candidato iniciado. **Astra alto: solo histórico.** [Routage / Dispatch](v2-2-dispatch.es.md)
 
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 

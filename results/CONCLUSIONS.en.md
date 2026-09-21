@@ -39,7 +39,7 @@ For Astra medium, the time ratio decreases from 3.81 to 3.44 between simple and 
 
 **Agreed naming: V2** remains the historical advisory team; **V2.1** is parallel development; **V2.2** is the lean pair; **V2.x** denotes the family of future variants, not an additional run. V1 remains the solo baseline. Future comparisons use Astra medium on simple and scientific calculators. Names are agreed; detailed protocols and launches still require approval.
 
-**V2.2: MCP bridge executed end to end with a fixed command; 63 maintenance tests passed.** Native terminal unavailable in the probe; remaining native tools need qualification. No model or benchmark launched. **Astra high: historical only.** [Routage / Dispatch](v2-2-dispatch.en.md)
+**V2.2: native writes refused in all eight probes; 66 maintenance tests passed.** Canaries unchanged inside/outside solution and through a symbolic link. Delegation blocking and interruptions still need qualification; no candidate launched. **Astra high: historical only.** [Routage / Dispatch](v2-2-dispatch.en.md)
 
 All proposed variants use Astra medium. The same model does not imply identical context, actual expertise or total cost: record roles, supplied information and budgets. The pair also changes team size; it is not a topology-only comparison.
 

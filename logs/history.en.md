@@ -284,3 +284,7 @@ Same task resumed after the automatic Git approval check hit a usage limit. No r
 ## Exchange 037
 
 Extension updated to 0.154.0-alpha.6.2; terminal unchanged. Eight no-model probes distinguish advertisement and execution: host refusal, runtime inventory, MCP approval requirement, echo on both versions, absent native shell, callable agent listing without creation. Six tests added; configuration correction, not an update-attributed effect. OpenAI Docs informed events and per-tool approval. Overall native isolation unqualified; history/general governance preserved. [Routage / Dispatch](../results/v2-2-dispatch.en.md)
+
+## Exchange 038
+
+Native qualification continued without a candidate: four fixed patches against disposable canaries, tested with both binaries. Eight explicit read-only refusals; files and link independently checked unchanged after each call. Three tests added, 66 in total. Existing report extended in four languages, separate JSON evidence and updated dashboard. OpenAI Docs distinguished sandbox and approval controls. No sub-agent created; global catalogue, delegation, reads, interruptions and capture remain unqualified. General governance and historical results unchanged. [Evidence and limits](../results/v2-2-dispatch.en.md)

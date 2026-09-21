@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · **Español** · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2: puente MCP ejecutado de extremo a extremo con orden fija; 63 tests correctos.** Terminal nativo no disponible; otras herramientas nativas pendientes. Sin modelo ni benchmark. **Astra alto: solo histórico.** [Routage / Dispatch](../results/v2-2-dispatch.es.md)
+**V2.2: escrituras nativas rechazadas en las ocho sondas; 66 tests correctos.** Testigos intactos dentro/fuera de solution y mediante enlace simbólico. Bloqueo de delegación e interrupciones pendientes; ningún candidato iniciado. **Astra alto: solo histórico.** [Routage / Dispatch](../results/v2-2-dispatch.es.md)
 
 ## En un minuto
 
