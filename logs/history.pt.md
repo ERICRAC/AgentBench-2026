@@ -285,3 +285,7 @@ Continuação da qualificação nativa sem candidato: quatro alterações fixas 
 ## Interação 039
 
 Pedido: concluir uma qualificação conjunta sem benchmark. NO-GO explícito; provas e limites reunidos no relatório existente. Dois testes adicionados (captura binária e SIGINT real), 68 aprovados; duas simulações de três sessões repetidas. Seleção do perfil preparado corrigida com OpenAI Docs; apenas análise de argumentos validada. Sem candidato nem subagente. Proposta não aplicada: piloto supervisionado exploratório, garantias reduzidas explicitadas, decisão humana antes do congelamento. Governação geral e história intactas. [Veredicto e escolha](../results/v2-2-dispatch.pt.md)
+
+## Interação 040 — autorização do piloto
+
+Acordo humano para experimentar o dispositivo supervisionado. Congelamento separado: calculadora simples Astra médio, máximo três sessões, sem repetição; científica não autorizada. 72 testes aprovados, login local ChatGPT. Desafio intacto copiado e lido antes do início, espaço externo novo, hashes e reserva de ID antes do candidato. Limites de isolamento e comparação exploratória explícitos; MCP continua bloqueado. OpenAI Docs para CLI/JSONL. [Protocolo supervisionado](../governance/V2_2_SUPERVISED.pt.md)

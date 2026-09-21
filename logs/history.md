@@ -378,3 +378,7 @@ Poursuite de la qualification native sans candidat : quatre modifications fixes 
 ## Échange 039
 
 Demande : terminer une qualification groupée, sans benchmark. Verdict NON-GO explicite, preuves et limites regroupées dans le rapport existant. Deux tests ajoutés (capture binaire et SIGINT réel), 68 réussis ; deux simulations de trois sessions rejouées. Correction de la sélection du profil dans la commande préparée, guidée par OpenAI Docs ; validation du parseur seulement. Aucun candidat ni sous-agent. Proposition non appliquée : pilote supervisé exploratoire, garanties réduites explicitement décrites, arbitrage humain nécessaire avant gel. Gouvernance générale et historique inchangés. [Verdict et choix](../results/v2-2-dispatch.md)
+
+## Échange 040 — autorisation du pilote
+
+Accord humain pour essayer le dispositif supervisé. Gel distinct du pilote calculatrice simple Astra moyen, trois sessions maximum, aucun retry ; scientifique non autorisée. 72 tests de maintenance réussis, authentification locale ChatGPT signalée. Défi copié sans changement et lu avant lancement, espace neuf hors dépôt, manifeste d'empreintes et réservation d'identifiant publiés avant candidat. Limites d'isolation et comparaison exploratoire explicites ; dispositif MCP toujours verrouillé. OpenAI Docs utilisé pour CLI/JSONL. [Protocole supervisé](../governance/V2_2_SUPERVISED.md)

@@ -292,3 +292,7 @@ Native qualification continued without a candidate: four fixed patches against d
 ## Exchange 039
 
 Request: complete one consolidated qualification without benchmarking. Explicit NO-GO; evidence and limits grouped in the existing report. Two tests added (binary capture and real SIGINT), 68 passed; two three-session simulations rerun. Prepared profile selection corrected using OpenAI Docs; argument parsing only validated. No candidate or sub-agent. Unapplied proposal: exploratory supervised pilot, reduced guarantees disclosed, human decision needed before freezing. General governance and history unchanged. [Verdict and choice](../results/v2-2-dispatch.en.md)
+
+## Exchange 040 — pilot authority
+
+User approval to try the supervised setup. Separate freeze for simple calculator Astra medium, at most three sessions, no retry; Scientific not authorised. 72 maintenance tests passed, local ChatGPT login reported. Unchanged challenge copied and read before launch, fresh external workspace, hash manifest and ID reservation published before candidate. Explicit isolation limits and exploratory comparison; MCP setup remains locked. OpenAI Docs for CLI/JSONL. [Supervised protocol](../governance/V2_2_SUPERVISED.en.md)

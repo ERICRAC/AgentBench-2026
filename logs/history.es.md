@@ -288,3 +288,7 @@ Continúa la comprobación nativa sin candidato: cuatro modificaciones fijas sob
 ## Intercambio 039
 
 Petición: terminar una cualificación conjunta sin benchmark. NO-GO explícito; pruebas y límites reunidos en el informe existente. Dos tests añadidos (captura binaria y SIGINT real), 68 correctos; dos simulaciones de tres sesiones repetidas. Selección del perfil preparada corregida con OpenAI Docs; solo análisis de argumentos validado. Sin candidato ni subagente. Propuesta no aplicada: piloto supervisado exploratorio, garantías reducidas explicitadas, decisión humana antes de congelar. Gobernanza general e historia intactas. [Veredicto y elección](../results/v2-2-dispatch.es.md)
+
+## Intercambio 040 — autorización del piloto
+
+Acuerdo humano para probar el dispositivo supervisado. Congelación separada: calculadora simple Astra medio, máximo tres sesiones, sin reintento; científica no autorizada. 72 tests correctos, login local ChatGPT. Desafío intacto copiado y leído antes de iniciar, espacio externo nuevo, hashes y reserva de ID antes del candidato. Límites de aislamiento y comparación exploratoria explícitos; MCP sigue bloqueado. OpenAI Docs para CLI/JSONL. [Protocolo supervisado](../governance/V2_2_SUPERVISED.es.md)
