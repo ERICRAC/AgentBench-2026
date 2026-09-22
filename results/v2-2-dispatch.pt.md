@@ -2,6 +2,8 @@
 
 [Français](v2-2-dispatch.md) · [English (UK)](v2-2-dispatch.en.md) · [Español](v2-2-dispatch.es.md) · **Português**
 
+**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.pt.md).
+
 ## Veredicto final de qualificação — não pronto para congelar
 
 **A qualificação termina com NO-GO para o dispositivo automatizado atual. Nenhum benchmark foi lançado.** Não é uma falha da calculadora ou do Astra: faltam integração do lançador e garantias completas de isolamento. Encerram-se as pequenas qualificações sucessivas; a próxima decisão é qual dispositivo utilizar.

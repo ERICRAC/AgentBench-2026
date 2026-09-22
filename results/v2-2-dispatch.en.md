@@ -2,6 +2,8 @@
 
 [Français](v2-2-dispatch.md) · **English (UK)** · [Español](v2-2-dispatch.es.md) · [Português](v2-2-dispatch.pt.md)
 
+**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.en.md).
+
 ## Final qualification verdict — not ready to freeze
 
 **Qualification closes with NO-GO for the current automated setup. No benchmark was launched.** This is not a calculator or Astra failure: launcher integration and isolation guarantees remain incomplete. Incremental qualification stops here; the next decision concerns which setup to use.

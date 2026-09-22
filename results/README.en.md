@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2: final qualification NO-GO for the automated setup; 68 maintenance tests passed.** Live integration and overall isolation incomplete. Supervised pilot proposed, not approved; no benchmark launched. [Routage / Dispatch](v2-2-dispatch.en.md)
+**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.en.md).
 
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 

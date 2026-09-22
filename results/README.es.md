@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
-**V2.2: cualificación final NO-GO del dispositivo automatizado; 68 tests correctos.** Integración real y aislamiento global incompletos. Piloto supervisado propuesto, sin aprobar; ningún benchmark lanzado. [Routage / Dispatch](v2-2-dispatch.es.md)
+**V2.2 supervisada: ensayo simple interrumpido por cuota tras 48,641 s.** Dos entregables conservados; diagnóstico posterior 6/6 grupos, 14 controles. Revisor no iniciado, tokens no registrados: sin conclusión de eficiencia. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.es.md).
 
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 

@@ -296,3 +296,7 @@ Request: complete one consolidated qualification without benchmarking. Explicit 
 ## Exchange 040 — pilot authority
 
 User approval to try the supervised setup. Separate freeze for simple calculator Astra medium, at most three sessions, no retry; Scientific not authorised. 72 maintenance tests passed, local ChatGPT login reported. Unchanged challenge copied and read before launch, fresh external workspace, hash manifest and ID reservation published before candidate. Explicit isolation limits and exploratory comparison; MCP setup remains locked. OpenAI Docs for CLI/JSONL. [Supervised protocol](../governance/V2_2_SUPERVISED.en.md)
+
+## Exchange 041
+
+**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.en.md). Monitoring resumed after chat interruption, without a new candidate. CLI trace confirms the cause; unchanged code, minutes and full mandate archived, hashes verified. 72 maintenance tests. No automatic restart; governance and historical references unchanged.

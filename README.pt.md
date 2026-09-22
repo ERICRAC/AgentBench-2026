@@ -33,7 +33,7 @@ Para orientar a leitura: **V1 = solo**, **V2 = um programador escritor e três c
 
 **V1 versus V2, Astra médio: pontuação oficial igual nos dois desafios.** V2 utiliza ×3,56 tempo e ×4,49 tokens no total. A revisão contribui com correções de robustez fora da pontuação. [Balanço completo e provas](results/astra-medium-v1-v2.pt.md)
 
-**V2.2: qualificação final NO-GO do dispositivo automatizado; 68 testes aprovados.** Integração real e isolamento global incompletos. Piloto supervisionado proposto, não aprovado; nenhum benchmark lançado. [Routage / Dispatch](results/v2-2-dispatch.pt.md)
+**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](results/v2-2-supervised-core.pt.md).
 
 Campanha de referência do painel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controlos](docs/acceptance-tests.pt.md) · [Controlo V1 Sol](results/sol-vs-astra-v1.pt.md) · [Síntese V2](results/sol-v2.pt.md) · [Arquivo V1](results/ARCHIVE_V1.pt.md).
 

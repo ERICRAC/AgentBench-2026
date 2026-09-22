@@ -382,3 +382,7 @@ Demande : terminer une qualification groupée, sans benchmark. Verdict NON-GO ex
 ## Échange 040 — autorisation du pilote
 
 Accord humain pour essayer le dispositif supervisé. Gel distinct du pilote calculatrice simple Astra moyen, trois sessions maximum, aucun retry ; scientifique non autorisée. 72 tests de maintenance réussis, authentification locale ChatGPT signalée. Défi copié sans changement et lu avant lancement, espace neuf hors dépôt, manifeste d'empreintes et réservation d'identifiant publiés avant candidat. Limites d'isolation et comparaison exploratoire explicites ; dispositif MCP toujours verrouillé. OpenAI Docs utilisé pour CLI/JSONL. [Protocole supervisé](../governance/V2_2_SUPERVISED.md)
+
+## Échange 041
+
+**V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.md). Reprise du suivi après interruption du chat, sans nouveau candidat. Cause confirmée par la trace CLI ; code archivé intact, PV et mandat intégral publiés, empreintes vérifiées. 72 tests de maintenance. Aucune reprise automatique ; gouvernance et références historiques inchangées.

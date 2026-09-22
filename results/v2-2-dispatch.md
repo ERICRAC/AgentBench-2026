@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](v2-2-dispatch.en.md) · [Español](v2-2-dispatch.es.md) · [Português](v2-2-dispatch.pt.md)
 
+**V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.md).
+
 ## Verdict final de qualification — non prêt au gel
 
 **La qualification est close avec un verdict NON-GO pour le dispositif automatisé actuel. Aucun benchmark n'a été lancé.** Ce n'est pas un échec de la calculatrice ou d'Astra : le raccordement du lanceur et les garanties d'isolation ne sont pas complets. Nous arrêtons la succession de petites qualifications ; la prochaine décision porte sur le dispositif à retenir.

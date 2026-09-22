@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 : qualification finale NON-GO pour le dispositif automatisé ; 68 tests de maintenance réussis.** Intégration réelle et confinement global incomplets. Pilote supervisé proposé, non approuvé ; aucun benchmark lancé. [Routage / Dispatch](../results/v2-2-dispatch.md)
+**V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.md).
 
 Ce dossier expose juste assez de méthode pour rendre l'expérience lisible et
 reproductible sans publier les conversations brutes ni la configuration privée

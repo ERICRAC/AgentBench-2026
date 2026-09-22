@@ -1,8 +1,55 @@
 {
   "run_id": "astra-medium-core-v2-2-supervised-001",
   "campaign": "astra-medium-supervised-001",
-  "status": "prepared",
+  "status": "interrupted_quota",
   "challenge": "calculator",
   "organisation": "V2.2-supervised",
-  "exploratory": true
+  "exploratory": true,
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "medium",
+  "freeze_commit": "2e64065",
+  "candidate_artifacts_commit": "ce3cb63",
+  "sessions_started": 1,
+  "sessions_completed": 0,
+  "reviewer_started": false,
+  "final_session_started": false,
+  "wall_duration_seconds": 48.640919436999866,
+  "candidate_process_duration_seconds": 48.638935160000074,
+  "candidate_exit_code": 1,
+  "usage": null,
+  "model_request_count": null,
+  "official_run_verdict": null,
+  "post_interruption_diagnostic": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B scripts/verify.py --solution runs/astra-medium-core-v2-2-supervised-001/solution",
+    "groups_passed": 6,
+    "groups_total": 6,
+    "elementary_checks_on_success": 14,
+    "exit_code": 0,
+    "candidate_feedback": false
+  },
+  "failure_reason": "CLI reported usage limit; no automatic retry",
+  "trace": "trace.jsonl",
+  "prompt": "PROMPT.md",
+  "prompt_original_sha256": "e8f3828bb47c2c601e6bfc2e21539d9d4006f03fc50b75b0d0660a65f9e9d5a2",
+  "prompt_public_sha256": "2b9e00a87db26162fb33bf60230f203d60e28ec343f670bdd92ac2c1ad8aa5d7",
+  "prompt_public_normalization": "Final LF added for Markdown; original text otherwise unchanged",
+  "minutes": "PV.md",
+  "redactions": [
+    "private workspace path replaced by <workspace>",
+    "quota message reduced; account links and reset time omitted",
+    "private reasoning excluded if present"
+  ],
+  "raw_trace_sha256": "56a7fe971109573ec1ab298498177ee26bccdebcccef2179601930d7b08a01ca",
+  "files": [
+    {
+      "path": "solution/calculator.py",
+      "sha256": "f2e87cd765203a600dd8812f7778be1143e27c726360d75b141757c9a73d8ef3"
+    },
+    {
+      "path": "solution/README.md",
+      "sha256": "a810bacc99b1411e58d11b6a743bdfb6d466f982b7f3f786c7c895aa3e189f90"
+    }
+  ],
+  "observed_protected_workspace_unchanged": true,
+  "full_isolation_claimed": false
 }

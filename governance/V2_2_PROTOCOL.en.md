@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · **English (UK)** · [Español](V2_2_PROTOCOL.es.md) · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2: final qualification NO-GO for the automated setup; 68 maintenance tests passed.** Live integration and overall isolation incomplete. Supervised pilot proposed, not approved; no benchmark launched. [Routage / Dispatch](../results/v2-2-dispatch.en.md)
+**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.en.md).
 
 ## One-minute overview
 

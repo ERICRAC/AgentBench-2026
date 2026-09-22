@@ -289,3 +289,7 @@ Pedido: concluir uma qualificação conjunta sem benchmark. NO-GO explícito; pr
 ## Interação 040 — autorização do piloto
 
 Acordo humano para experimentar o dispositivo supervisionado. Congelamento separado: calculadora simples Astra médio, máximo três sessões, sem repetição; científica não autorizada. 72 testes aprovados, login local ChatGPT. Desafio intacto copiado e lido antes do início, espaço externo novo, hashes e reserva de ID antes do candidato. Limites de isolamento e comparação exploratória explícitos; MCP continua bloqueado. OpenAI Docs para CLI/JSONL. [Protocolo supervisionado](../governance/V2_2_SUPERVISED.pt.md)
+
+## Interação 041
+
+**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.pt.md). Seguimento retomado após interrupção do chat, sem novo candidato. Causa confirmada pela CLI; código intacto, PV e mandato arquivados, hashes verificados. 72 testes. Sem reinício automático; governação e referências intactas.

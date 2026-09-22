@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2: qualificação final NO-GO do dispositivo automatizado; 68 testes aprovados.** Integração real e isolamento global incompletos. Piloto supervisionado proposto, não aprovado; nenhum benchmark lançado. [Routage / Dispatch](../results/v2-2-dispatch.pt.md)
+**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.pt.md).
 
 Este diretório publica o método necessário para compreender e reproduzir a
 experiência sem expor conversas completas nem a configuração privada do autor.
