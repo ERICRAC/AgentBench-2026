@@ -300,3 +300,9 @@ Acuerdo humano para probar el dispositivo supervisado. Congelación separada: ca
 ## Intercambio 042
 
 **Nueva autorización: intento 002**, calculadora simple Astra medio, desde cero. Mismo motor, mandatos y tests que 001; sin solución anterior. Saldo inicial no medido; go del usuario tras solicitar cuota completa. Sin retry ni científica autorizados. [Manifiesto 002](../governance/v2-2-supervised-002.json). 72 tests.
+
+## Intercambio 043
+
+V2.2 simple 002 completada tras el go: tres sesiones Astra medio, 6/6 grupos y 14 controles, 159,977 s, 113 774 tokens. Sin defecto confirmado en revisión ni cambios de código. Pruebas completas, acta y comparación exploratoria publicadas; 001 conservada. Cuota no medida; científica no autorizada. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.es.md).
+
+Verificaciones: 72 tests de mantenimiento, linter Markdown, enlaces de 188 documentos, 64 huellas históricas, entradas congeladas y configuraciones verificadas; instantáneas idénticas. Código entregado por separado en 064c3c5.

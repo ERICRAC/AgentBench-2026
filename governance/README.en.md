@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.en.md).
+**Simple V2.2 completed with Astra medium: 3 sessions, 6/6 groups (14 checks), 159.977 s and 113,774 tokens.** No changes after review. Cheaper than historical V2, but costlier than the historical solo; exploratory comparison. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.en.md).
 
 This directory exposes enough method to make the experiment understandable and
 reproducible without publishing raw conversations or the author's private

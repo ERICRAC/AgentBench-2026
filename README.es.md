@@ -33,7 +33,7 @@ Para orientarse: **V1 = solo**, **V2 = un desarrollador escritor y tres consulto
 
 **V1 frente a V2, Astra medio: igual puntuación oficial en ambos desafíos.** V2 utiliza ×3,56 tiempo y ×4,49 tokens en total. La revisión aporta correcciones de robustez fuera de la puntuación. [Balance completo y pruebas](results/astra-medium-v1-v2.es.md)
 
-**V2.2 supervisada: ensayo simple interrumpido por cuota tras 48,641 s.** Dos entregables conservados; diagnóstico posterior 6/6 grupos, 14 controles. Revisor no iniciado, tokens no registrados: sin conclusión de eficiencia. [Rapport / Report / Informe / Relatório](results/v2-2-supervised-core.es.md).
+**V2.2 simple completada con Astra medio: 3 sesiones, 6/6 grupos (14 controles), 159,977 s y 113 774 tokens.** Sin cambios tras la revisión. Menor coste que la V2 histórica, pero mayor que el agente solo histórico; comparación exploratoria. [Rapport / Report / Informe / Relatório](results/v2-2-supervised-core-002.es.md).
 
 Campaña de referencia del panel: **Sol high · `sol-high-control-001`**. [Catálogo de 71 controles](docs/acceptance-tests.es.md) · [Control V1 Sol](results/sol-vs-astra-v1.es.md) · [Síntesis V2](results/sol-v2.es.md) · [Archivo V1](results/ARCHIVE_V1.es.md).
 

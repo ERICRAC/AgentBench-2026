@@ -390,3 +390,9 @@ Accord humain pour essayer le dispositif supervisé. Gel distinct du pilote calc
 ## Échange 042
 
 **Nouvelle autorisation : tentative 002**, calculatrice simple Astra moyen, depuis zéro. Même moteur, mêmes mandats et mêmes tests que 001 ; aucune solution antérieure fournie. Solde initial non mesuré, « go » utilisateur après demande de quota plein. Aucun retry ni scientifique autorisés. [Manifeste 002](../governance/v2-2-supervised-002.json). 72 tests.
+
+## Échange 043
+
+V2.2 simple 002 terminée après le « go » : trois sessions Astra moyen, 6/6 groupes et 14 contrôles, 159,977 s, 113 774 tokens. Revue sans défaut confirmé, aucun changement de code. Preuves complètes, PV et comparaison exploratoire publiés ; 001 préservée. Solde de quota non mesuré ; pas de nouvelle autorisation scientifique. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.md).
+
+Vérifications : 72 tests de maintenance, linter Markdown, liens de 188 documents, 64 empreintes historiques, entrées figées et configurations vérifiées ; instantanés identiques. Code livré séparément dans 064c3c5.

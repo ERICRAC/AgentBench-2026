@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.pt.md).
+**V2.2 simples concluída com Astra médio: 3 sessões, 6/6 grupos (14 controlos), 159,977 s e 113 774 tokens.** Sem alterações após revisão. Menor custo que a V2 histórica, mas maior que o agente a solo histórico; comparação exploratória. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.pt.md).
 
 Este diretório publica o método necessário para compreender e reproduzir a
 experiência sem expor conversas completas nem a configuração privada do autor.

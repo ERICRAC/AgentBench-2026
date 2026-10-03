@@ -1,0 +1,18 @@
+{
+  "candidate_final": {
+    "command": "/bin/bash -lc 'python3 -B ../scripts/verify.py --solution .'",
+    "aggregated_output": "test_cli_recovers_from_errors_and_exits_cleanly (test_acceptance.CalculatorAcceptanceTests.test_cli_recovers_from_errors_and_exits_cleanly) ... ok\ntest_division_by_zero (test_acceptance.CalculatorAcceptanceTests.test_division_by_zero) ... ok\ntest_forbidden_dynamic_execution_is_absent (test_acceptance.CalculatorAcceptanceTests.test_forbidden_dynamic_execution_is_absent) ... ok\ntest_four_operations_and_numeric_variants (test_acceptance.CalculatorAcceptanceTests.test_four_operations_and_numeric_variants) ... ok\ntest_invalid_operator (test_acceptance.CalculatorAcceptanceTests.test_invalid_operator) ... ok\ntest_required_files_exist (test_acceptance.CalculatorAcceptanceTests.test_required_files_exist) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.012s\n\nOK\n",
+    "exit_code": 0
+  },
+  "independent_final": {
+    "command": "python3 -B scripts/verify.py --solution runs/astra-medium-core-v2-2-supervised-002/solution",
+    "exit_code": 0,
+    "output": "test_cli_recovers_from_errors_and_exits_cleanly (test_acceptance.CalculatorAcceptanceTests.test_cli_recovers_from_errors_and_exits_cleanly) ... ok\ntest_division_by_zero (test_acceptance.CalculatorAcceptanceTests.test_division_by_zero) ... ok\ntest_forbidden_dynamic_execution_is_absent (test_acceptance.CalculatorAcceptanceTests.test_forbidden_dynamic_execution_is_absent) ... ok\ntest_four_operations_and_numeric_variants (test_acceptance.CalculatorAcceptanceTests.test_four_operations_and_numeric_variants) ... ok\ntest_invalid_operator (test_acceptance.CalculatorAcceptanceTests.test_invalid_operator) ... ok\ntest_required_files_exist (test_acceptance.CalculatorAcceptanceTests.test_required_files_exist) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nOK\n"
+  },
+  "initial_retrospective": {
+    "command": "python3 -B scripts/verify.py --solution runs/astra-medium-core-v2-2-supervised-002/initial",
+    "exit_code": 0,
+    "output": "test_cli_recovers_from_errors_and_exits_cleanly (test_acceptance.CalculatorAcceptanceTests.test_cli_recovers_from_errors_and_exits_cleanly) ... ok\ntest_division_by_zero (test_acceptance.CalculatorAcceptanceTests.test_division_by_zero) ... ok\ntest_forbidden_dynamic_execution_is_absent (test_acceptance.CalculatorAcceptanceTests.test_forbidden_dynamic_execution_is_absent) ... ok\ntest_four_operations_and_numeric_variants (test_acceptance.CalculatorAcceptanceTests.test_four_operations_and_numeric_variants) ... ok\ntest_invalid_operator (test_acceptance.CalculatorAcceptanceTests.test_invalid_operator) ... ok\ntest_required_files_exist (test_acceptance.CalculatorAcceptanceTests.test_required_files_exist) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nOK\n",
+    "feedback_to_candidate": false
+  }
+}

@@ -39,7 +39,7 @@ Em Astra médio, a razão temporal desce de 3,81 para 3,44 entre simples e cient
 
 **Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.
 
-**V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.pt.md).
+**V2.2 simples concluída com Astra médio: 3 sessões, 6/6 grupos (14 controlos), 159,977 s e 113 774 tokens.** Sem alterações após revisão. Menor custo que a V2 histórica, mas maior que o agente a solo histórico; comparação exploratória. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.pt.md).
 
 Todas as variantes propostas usam Astra médio. O mesmo modelo não implica contexto, competências reais ou custo total idênticos: registar papéis, informação e orçamentos. O par também muda o tamanho da equipa, não só a topologia.
 

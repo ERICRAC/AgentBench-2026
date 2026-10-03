@@ -33,7 +33,7 @@ Pour se repérer : **V1 = solo**, **V2 = un développeur écrivain et trois cons
 
 **V1 contre V2, Astra moyen : même score officiel sur les deux défis.** V2 utilise ×3,56 le temps et ×4,49 les tokens au total. La relecture apporte toutefois des corrections de robustesse hors score. [Bilan complet et preuves](results/astra-medium-v1-v2.md)
 
-**V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](results/v2-2-supervised-core.md).
+**V2.2 simple terminée en Astra moyen : 3 sessions, 6/6 groupes (14 contrôles), 159,977 s et 113 774 tokens.** Aucun changement après revue. Moins coûteux que la V2 historique, mais davantage que le solo historique ; comparaison exploratoire. [Rapport / Report / Informe / Relatório](results/v2-2-supervised-core-002.md).
 
 Campagne de référence du tableau de bord : **Sol high · `sol-high-control-001`**. [Catalogue des 71 contrôles](docs/acceptance-tests.md) · [Contrôle V1 Sol](results/sol-vs-astra-v1.md) · [Synthèse V2](results/sol-v2.md) · [Archives V1](results/ARCHIVE_V1.md).
 

@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-**Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.en.md).
+**Simple V2.2 completed with Astra medium: 3 sessions, 6/6 groups (14 checks), 159.977 s and 113,774 tokens.** No changes after review. Cheaper than historical V2, but costlier than the historical solo; exploratory comparison. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.en.md).
 
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 

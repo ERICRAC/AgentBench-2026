@@ -2,7 +2,7 @@
 
 [Français](V2_2_PROTOCOL.md) · [English (UK)](V2_2_PROTOCOL.en.md) · **Español** · [Português](V2_2_PROTOCOL.pt.md)
 
-**V2.2 supervisada: ensayo simple interrumpido por cuota tras 48,641 s.** Dos entregables conservados; diagnóstico posterior 6/6 grupos, 14 controles. Revisor no iniciado, tokens no registrados: sin conclusión de eficiencia. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.es.md).
+**V2.2 simple completada con Astra medio: 3 sesiones, 6/6 grupos (14 controles), 159,977 s y 113 774 tokens.** Sin cambios tras la revisión. Menor coste que la V2 histórica, pero mayor que el agente solo histórico; comparación exploratoria. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.es.md).
 
 ## En un minuto
 

@@ -304,3 +304,9 @@ User approval to try the supervised setup. Separate freeze for simple calculator
 ## Exchange 042
 
 **New authority: attempt 002**, simple calculator Astra medium, from scratch. Same engine, mandates and tests as 001; no prior solution supplied. Starting balance unmeasured; user go after request for full quota. No retry or Scientific authorised. [Manifest 002](../governance/v2-2-supervised-002.json). 72 tests.
+
+## Exchange 043
+
+Simple V2.2 002 completed following the go: three Astra medium sessions, 6/6 groups and 14 checks, 159.977 s, 113,774 tokens. No confirmed review defect or code change. Full evidence, minutes and exploratory comparison published; 001 preserved. Quota balance unmeasured; no scientific authorisation. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.en.md).
+
+Checks: 72 maintenance tests, Markdown lint, links across 188 documents, 64 historical hashes, frozen inputs and configurations verified; identical snapshots. Code delivered separately in 064c3c5.

@@ -39,7 +39,7 @@ En Astra medio, la relación temporal baja de 3,81 a 3,44 entre simple y cientí
 
 **Nombres acordados: V2** sigue siendo el equipo consultivo histórico; **V2.1** es desarrollo paralelo; **V2.2** la pareja ligera; **V2.x** la familia de variantes futuras, no otro intento. V1 sigue como referencia solo. Comparaciones futuras en Astra medio, con calculadoras simple y científica. Nombres aprobados; protocolos detallados y lanzamientos pendientes.
 
-**V2.2 supervisada: ensayo simple interrumpido por cuota tras 48,641 s.** Dos entregables conservados; diagnóstico posterior 6/6 grupos, 14 controles. Revisor no iniciado, tokens no registrados: sin conclusión de eficiencia. [Rapport / Report / Informe / Relatório](v2-2-supervised-core.es.md).
+**V2.2 simple completada con Astra medio: 3 sesiones, 6/6 grupos (14 controles), 159,977 s y 113 774 tokens.** Sin cambios tras la revisión. Menor coste que la V2 histórica, pero mayor que el agente solo histórico; comparación exploratoria. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.es.md).
 
 Todas las variantes propuestas usan Astra medio. El mismo modelo no implica contexto, competencias reales ni coste total idénticos: registrar roles, información y presupuestos. La pareja cambia también el tamaño del equipo, no solo la topología.
 

@@ -2,7 +2,7 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
-**V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.md).
+**V2.2 simple terminée en Astra moyen : 3 sessions, 6/6 groupes (14 contrôles), 159,977 s et 113 774 tokens.** Aucun changement après revue. Moins coûteux que la V2 historique, mais davantage que le solo historique ; comparaison exploratoire. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.md).
 
 Ce dossier expose juste assez de méthode pour rendre l'expérience lisible et
 reproductible sans publier les conversations brutes ni la configuration privée
