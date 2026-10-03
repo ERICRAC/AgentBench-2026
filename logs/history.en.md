@@ -300,3 +300,7 @@ User approval to try the supervised setup. Separate freeze for simple calculator
 ## Exchange 041
 
 **Supervised V2.2: simple trial interrupted by quota after 48.641 s.** Two deliverables preserved; post-stop diagnostic 6/6 groups, 14 checks. Reviewer not started, tokens unrecorded: no pair-efficiency conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.en.md). Monitoring resumed after chat interruption, without a new candidate. CLI trace confirms the cause; unchanged code, minutes and full mandate archived, hashes verified. 72 maintenance tests. No automatic restart; governance and historical references unchanged.
+
+## Exchange 042
+
+**New authority: attempt 002**, simple calculator Astra medium, from scratch. Same engine, mandates and tests as 001; no prior solution supplied. Starting balance unmeasured; user go after request for full quota. No retry or Scientific authorised. [Manifest 002](../governance/v2-2-supervised-002.json). 72 tests.

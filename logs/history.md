@@ -386,3 +386,7 @@ Accord humain pour essayer le dispositif supervisé. Gel distinct du pilote calc
 ## Échange 041
 
 **V2.2 supervisée : essai simple interrompu par quota après 48,641 s.** Deux livrables conservés ; diagnostic après arrêt 6/6 groupes, 14 contrôles. Relecteur non lancé, tokens non enregistrés : aucune conclusion sur l'efficacité du binôme. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.md). Reprise du suivi après interruption du chat, sans nouveau candidat. Cause confirmée par la trace CLI ; code archivé intact, PV et mandat intégral publiés, empreintes vérifiées. 72 tests de maintenance. Aucune reprise automatique ; gouvernance et références historiques inchangées.
+
+## Échange 042
+
+**Nouvelle autorisation : tentative 002**, calculatrice simple Astra moyen, depuis zéro. Même moteur, mêmes mandats et mêmes tests que 001 ; aucune solution antérieure fournie. Solde initial non mesuré, « go » utilisateur après demande de quota plein. Aucun retry ni scientifique autorisés. [Manifeste 002](../governance/v2-2-supervised-002.json). 72 tests.

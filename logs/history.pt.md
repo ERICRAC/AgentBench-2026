@@ -293,3 +293,7 @@ Acordo humano para experimentar o dispositivo supervisionado. Congelamento separ
 ## Interação 041
 
 **V2.2 supervisionada: ensaio simples interrompido por quota após 48,641 s.** Dois entregáveis preservados; diagnóstico posterior 6/6 grupos, 14 controlos. Revisor não iniciado, tokens não registados: sem conclusão de eficiência. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.pt.md). Seguimento retomado após interrupção do chat, sem novo candidato. Causa confirmada pela CLI; código intacto, PV e mandato arquivados, hashes verificados. 72 testes. Sem reinício automático; governação e referências intactas.
+
+## Interação 042
+
+**Nova autorização: tentativa 002**, calculadora simples Astra médio, do zero. Mesmo motor, mandatos e testes de 001; sem solução anterior. Saldo inicial não medido; go do utilizador após pedido de quota completa. Sem retry ou científica autorizados. [Manifesto 002](../governance/v2-2-supervised-002.json). 72 tests.

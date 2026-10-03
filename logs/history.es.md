@@ -296,3 +296,7 @@ Acuerdo humano para probar el dispositivo supervisado. Congelación separada: ca
 ## Intercambio 041
 
 **V2.2 supervisada: ensayo simple interrumpido por cuota tras 48,641 s.** Dos entregables conservados; diagnóstico posterior 6/6 grupos, 14 controles. Revisor no iniciado, tokens no registrados: sin conclusión de eficiencia. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core.es.md). Seguimiento retomado tras interrupción del chat, sin nuevo candidato. Causa confirmada por CLI; código intacto, PV y mandato archivados, hashes verificados. 72 tests. Sin reinicio automático; gobernanza y referencias intactas.
+
+## Intercambio 042
+
+**Nueva autorización: intento 002**, calculadora simple Astra medio, desde cero. Mismo motor, mandatos y tests que 001; sin solución anterior. Saldo inicial no medido; go del usuario tras solicitar cuota completa. Sin retry ni científica autorizados. [Manifiesto 002](../governance/v2-2-supervised-002.json). 72 tests.

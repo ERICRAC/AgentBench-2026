@@ -2,6 +2,8 @@
 
 [Français](V2_2_SUPERVISED.md) · **English (UK)** · [Español](V2_2_SUPERVISED.es.md) · [Português](V2_2_SUPERVISED.pt.md)
 
+**New authority: attempt 002**, simple calculator Astra medium, from scratch. Same engine, mandates and tests as 001; no prior solution supplied. Starting balance unmeasured; user go after request for full quota. No retry or Scientific authorised. [Manifest 002](v2-2-supervised-002.json).
+
 The user authorises **the simple calculator only**, Astra medium, ID astra-medium-core-v2-2-supervised-001. Scientific and repetitions require new approval. [Frozen manifest and hashes](v2-2-supervised.json).
 
 Two roles, three fresh sessions: MAIN implements, REV-01 reviews, MAIN arbitrates and corrects. Existing [V2.2 mandates](V2_2_PROTOCOL.en.md) remain the base texts; the launcher adds only directory context and the local verifier command. No human coding advice or extra consultant. First official verification in the final phase; retrospective initial-snapshot diagnostic only after closure.

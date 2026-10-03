@@ -1,0 +1,41 @@
+{
+  "run_id": "astra-medium-core-v2-2-supervised-002",
+  "campaign": "astra-medium-supervised-001",
+  "challenge": "calculator",
+  "organisation": "V2.2-supervised",
+  "protocol_frozen": true,
+  "launch_authorized": true,
+  "authorization": "User go after request for a new Core attempt with replenished quota; no further retry authorised.",
+  "scientific_authorized": false,
+  "repeat_authorized": false,
+  "max_candidate_sessions": 3,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "model_context_window": 200000,
+  "model_auto_compact_token_limit": 180000,
+  "global_token_cap": null,
+  "global_time_cap_seconds": null,
+  "stop_policy": "stop_on_failure_no_retry",
+  "full_isolation_claimed": false,
+  "strict_historical_comparability_claimed": false,
+  "configuration_source": "scripts/run_v2_2_supervised.py:configuration",
+  "inputs_sha256": {
+    "scripts/run_v2_2_supervised.py": "68fc6d4c51859d363c57d85e359fdd7f192e00158b59d1fc1376df1416c02cf5",
+    "scripts/run_v2_2.py": "2cdbc0c1ffa02bd9c5c34de4a88de9a4963929e453a7ad1f0abb3ef427521f17",
+    "scripts/v2_2_transport.py": "42551e9616a8fde3164ddc9fda540101cb0fb163f68933f0e90cfd76f6a43e2f",
+    "scripts/verify.py": "dedc9f21e989c991233a50066483afa6027c7f3ee51be6de5848fc8403ed81d4",
+    "challenges/calculator/SPEC.md": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+    "challenges/calculator/tests/test_acceptance.py": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+    "governance/v2-2-draft/config-main.toml": "0ec19354d36bc258b1e86926baf8cf23ad861a7b4ab50d7c8ba8a5902671564e",
+    "governance/v2-2-draft/config-rev-01.toml": "cf1f664b4a65b632f6f4cf70cc2c0d4f4d9bade2b4419152ce0d3b033189830c",
+    "prompts/v2-2-developer-initial.md": "a862d4fda86e807829d5bc5a5668f21e2e324a06a72564a37ee9163c51b7e827",
+    "prompts/v2-2-reviewer.md": "78c748db025956d17b10ae697d57a7c5dbecdbb1764da415a516166a53581fb0",
+    "prompts/v2-2-developer-final.md": "43707994ce54c9d19db2eddebb12ba302fd14be94a019cf6e2435a76dba892dc",
+    "scripts/run_v2_2_supervised_002.py": "52977c0b2694ff10430833452844bf4b167d0774ea1f3d81787246ca1f857941"
+  },
+  "quota_start": {
+    "source": "user go interpreted as ready; no independent balance reading",
+    "balance": null
+  },
+  "previous_attempt": "astra-medium-core-v2-2-supervised-001"
+}

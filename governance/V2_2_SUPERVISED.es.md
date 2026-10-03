@@ -2,6 +2,8 @@
 
 [Français](V2_2_SUPERVISED.md) · [English (UK)](V2_2_SUPERVISED.en.md) · **Español** · [Português](V2_2_SUPERVISED.pt.md)
 
+**Nueva autorización: intento 002**, calculadora simple Astra medio, desde cero. Mismo motor, mandatos y tests que 001; sin solución anterior. Saldo inicial no medido; go del usuario tras solicitar cuota completa. Sin retry ni científica autorizados. [Manifiesto 002](v2-2-supervised-002.json).
+
 El usuario autoriza **solo la calculadora simple**, Astra medio, ID astra-medium-core-v2-2-supervised-001. Científica y repeticiones requieren otro acuerdo. [Manifiesto congelado y hashes](v2-2-supervised.json).
 
 Dos roles, tres sesiones nuevas: MAIN implementa, REV-01 revisa, MAIN arbitra y corrige. Se conservan los [mandatos V2.2](V2_2_PROTOCOL.es.md); el lanzador añade únicamente contexto del directorio y orden local del verificador. Sin ayuda humana al código ni consultor adicional. Primera verificación oficial en la fase final; diagnóstico retrospectivo inicial después del cierre.
