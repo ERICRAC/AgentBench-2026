@@ -400,3 +400,7 @@ Vérifications : 72 tests de maintenance, linter Markdown, liens de 188 document
 ## Échange 044
 
 Demande : préparer la reprise dans un nouveau chat après des symptômes de blocage VS Code/WSL. Création de REPRISE_AGENT.md, instruction agent canonique française : état après ecdac58, preuves et coûts V2.2, décisions, limites, diagnostic minimal et prompt de reprise. Aucun run, sous-agent, installation ou changement de gouvernance. Le terminal annonce Debian 13 ; le nouveau projet décrit comme Ubuntu reste à vérifier. OpenAI Docs distingue surfaces IDE/projets ; bug non confirmé. La réduction des coûts reste une proposition non exécutée. Liens et Markdown contrôlés. [Reprise / Handover](../REPRISE_AGENT.md).
+
+## Échange 045
+
+Accord pour l'audit hors modèle. Captures 002 analysées : 10 396 caractères retirés des enveloppes proposées (37,0 %), aucune économie de tokens inférée. Prototype sans transport réel, trois mandats séparés non gelés, dix tests synthétiques ajoutés ; 82 tests réussis. Limites proposées : 12 000 caractères/enveloppe et arrêt intersession à 60 000 tokens, sans garantie contre le dépassement. Preuves et gouvernance inchangées, aucun candidat lancé. [Audit](../results/v2-2-cost-audit.md).

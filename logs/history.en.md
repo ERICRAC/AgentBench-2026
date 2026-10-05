@@ -314,3 +314,7 @@ Checks: 72 maintenance tests, Markdown lint, links across 188 documents, 64 hist
 ## Exchange 044
 
 Request: prepare a new-chat handover following reported VS Code/WSL symptoms. Added REPRISE_AGENT.md, canonical French agent instruction: state after ecdac58, V2.2 evidence and costs, decisions, limitations, minimal diagnostics and restart prompt. No run, subagent, installation or governance change. Terminal reports Debian 13; the new project described as Ubuntu needs checking. OpenAI Docs distinguishes IDE/project surfaces; bug unconfirmed. Cost reduction remains an unimplemented proposal. Links and Markdown checked. [Reprise / Handover](../REPRISE_AGENT.md).
+
+## Exchange 045
+
+Offline audit approved. Run 002 captures analysed: 10,396 characters removed from proposed envelopes (37.0%), no token savings inferred. Prototype has no live transport; three separate unfrozen mandates and ten new synthetic tests; 82 tests pass. Proposed limits: 12,000 characters/envelope and between-session stop at 60,000 tokens, no overshoot guarantee. Evidence and governance unchanged; no candidate launched. [Audit](../results/v2-2-cost-audit.en.md).

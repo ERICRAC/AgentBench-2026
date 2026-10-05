@@ -4,6 +4,8 @@
 
 [Reprendre dans un nouveau chat — instruction agent](REPRISE_AGENT.md)
 
+[Audit de coût : variante allégée testée hors modèle, non autorisée au lancement](results/v2-2-cost-audit.md)
+
 > Un agent sait écrire du code. Mais que se passe-t-il quand plusieurs agents doivent travailler ensemble ?
 
 **AgentBench 2026 est un laboratoire R&D ouvert sur la collaboration et le comportement social des agents IA.** On leur confie les mêmes problèmes, puis on fait varier leur organisation : un développeur seul, une équipe de spécialistes ou, demain, des agents locaux.

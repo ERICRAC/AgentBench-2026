@@ -1,5 +1,11 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Mise à jour après l'échange 045 :** l'audit hors modèle et le prototype allégé
+sont désormais réalisés, avec 82 tests de maintenance réussis. Lire le
+[bilan de coût](results/v2-2-cost-audit.md) avant les propositions historiques
+ci-dessous. Aucun lancement autorisé, aucune économie de tokens démontrée ;
+mandats et seuils restent à arbitrer. Le reste décrit l'instantané de reprise initial.
+
 Instruction de reprise destinée au prochain agent, langue canonique française.
 Ce fichier n'est ni un nouveau protocole ni un mandat candidat. Il relève de
 l'exception « instructions agent » d'AGENTS.md : il n'est pas traduit en quatre

@@ -1,0 +1,44 @@
+{
+  "source_run": "astra-medium-core-v2-2-supervised-002",
+  "mode": "offline_not_a_candidate_run",
+  "unit": "Unicode characters, not tokens; public normalised captures",
+  "scope": "JSON envelope only; not an estimate of quota or total input savings",
+  "phases": [
+    {
+      "phase": "main_initial",
+      "prompt_characters": 3430,
+      "mandate_characters": 1725,
+      "payload_characters": 1652,
+      "proposed_payload_characters": 1652,
+      "removed_payload_characters": 0,
+      "initial_command_characters_retransmitted": 0,
+      "input_tokens": 49294,
+      "cached_input_tokens": 34816,
+      "output_tokens": 2255
+    },
+    {
+      "phase": "review",
+      "prompt_characters": 13927,
+      "mandate_characters": 1790,
+      "payload_characters": 12084,
+      "proposed_payload_characters": 6886,
+      "removed_payload_characters": 5198,
+      "initial_command_characters_retransmitted": 5062,
+      "input_tokens": 13893,
+      "cached_input_tokens": 0,
+      "output_tokens": 596
+    },
+    {
+      "phase": "main_final",
+      "prompt_characters": 16388,
+      "mandate_characters": 1988,
+      "payload_characters": 14347,
+      "proposed_payload_characters": 9149,
+      "removed_payload_characters": 5198,
+      "initial_command_characters_retransmitted": 5062,
+      "input_tokens": 47324,
+      "cached_input_tokens": 30464,
+      "output_tokens": 412
+    }
+  ]
+}

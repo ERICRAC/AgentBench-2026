@@ -4,6 +4,8 @@
 
 [Continuar en otro chat — instrucción canónica del agente (francés)](REPRISE_AGENT.md)
 
+[Auditoría de costes: variante ligera probada sin modelo, sin autorización de lanzamiento](results/v2-2-cost-audit.es.md)
+
 > Un agente sabe escribir código. ¿Qué sucede cuando varios agentes tienen que trabajar juntos?
 
 **AgentBench 2026 es un laboratorio abierto de I+D sobre colaboración y comportamiento social de agentes IA.** Les damos los mismos problemas y cambiamos su organización: un desarrollador solo, un equipo de especialistas o, en el futuro, agentes locales.

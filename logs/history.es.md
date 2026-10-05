@@ -310,3 +310,7 @@ Verificaciones: 72 tests de mantenimiento, linter Markdown, enlaces de 188 docum
 ## Intercambio 044
 
 Solicitud: preparar el relevo en otro chat tras los síntomas comunicados de VS Code/WSL. REPRISE_AGENT.md es una instrucción canónica francesa: estado tras ecdac58, pruebas y costes V2.2, decisiones, límites, diagnóstico mínimo y prompt de reanudación. Sin run, subagente, instalación ni cambio de gobernanza. El terminal indica Debian 13; falta comprobar el proyecto descrito como Ubuntu. OpenAI Docs distingue IDE/proyectos; fallo no confirmado. La reducción de costes sigue sin implementarse. Enlaces y Markdown comprobados. [Reprise / Handover](../REPRISE_AGENT.md).
+
+## Intercambio 045
+
+Auditoría sin modelo aprobada. Capturas 002 analizadas: 10 396 caracteres eliminados de los sobres propuestos (37,0 %), sin inferir ahorro de tokens. Prototipo sin transporte real, tres mandatos sin congelar, diez tests sintéticos nuevos; 82 tests pasan. Límites propuestos: 12 000 caracteres/sobre y parada entre sesiones a 60 000 tokens, sin garantía contra excesos. Pruebas y gobernanza intactas; ningún candidato lanzado. [Audit](../results/v2-2-cost-audit.es.md).
