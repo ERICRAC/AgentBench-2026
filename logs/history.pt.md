@@ -303,3 +303,7 @@ Acordo humano para experimentar o dispositivo supervisionado. Congelamento separ
 V2.2 simples 002 concluída após o go: três sessões Astra médio, 6/6 grupos e 14 controlos, 159,977 s, 113 774 tokens. Sem defeito confirmado na revisão nem alteração de código. Provas completas, ata e comparação exploratória publicadas; 001 preservada. Quota não medida; científica não autorizada. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.pt.md).
 
 Verificações: 72 testes de manutenção, linter Markdown, ligações de 188 documentos, 64 hashes históricos, entradas congeladas e configurações verificadas; instantâneos idênticos. Código entregue separadamente em 064c3c5.
+
+## Interação 044
+
+Pedido: preparar a passagem para outro chat após os sintomas relatados no VS Code/WSL. REPRISE_AGENT.md é uma instrução canónica francesa: estado após ecdac58, provas e custos V2.2, decisões, limites, diagnóstico mínimo e prompt de retoma. Sem run, subagente, instalação ou alteração de governação. O terminal indica Debian 13; falta verificar o projeto descrito como Ubuntu. OpenAI Docs distingue IDE/projetos; erro não confirmado. Redução de custos ainda não implementada. Ligações e Markdown verificados. [Reprise / Handover](../REPRISE_AGENT.md).

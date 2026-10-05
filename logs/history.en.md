@@ -310,3 +310,7 @@ User approval to try the supervised setup. Separate freeze for simple calculator
 Simple V2.2 002 completed following the go: three Astra medium sessions, 6/6 groups and 14 checks, 159.977 s, 113,774 tokens. No confirmed review defect or code change. Full evidence, minutes and exploratory comparison published; 001 preserved. Quota balance unmeasured; no scientific authorisation. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.en.md).
 
 Checks: 72 maintenance tests, Markdown lint, links across 188 documents, 64 historical hashes, frozen inputs and configurations verified; identical snapshots. Code delivered separately in 064c3c5.
+
+## Exchange 044
+
+Request: prepare a new-chat handover following reported VS Code/WSL symptoms. Added REPRISE_AGENT.md, canonical French agent instruction: state after ecdac58, V2.2 evidence and costs, decisions, limitations, minimal diagnostics and restart prompt. No run, subagent, installation or governance change. Terminal reports Debian 13; the new project described as Ubuntu needs checking. OpenAI Docs distinguishes IDE/project surfaces; bug unconfirmed. Cost reduction remains an unimplemented proposal. Links and Markdown checked. [Reprise / Handover](../REPRISE_AGENT.md).

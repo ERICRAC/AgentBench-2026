@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+[Resume in a new chat — canonical agent handover (French)](REPRISE_AGENT.md)
+
 > One agent can write code. What happens when several agents have to work together?
 
 **AgentBench 2026 is an open R&D laboratory exploring collaboration and the social behaviour of AI agents.** We give them the same problems, then vary their organisation: a solo developer, a team of specialists or, in future, local agents.

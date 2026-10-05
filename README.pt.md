@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+[Retomar noutro chat — instrução canónica do agente (francês)](REPRISE_AGENT.md)
+
 > Um agente sabe escrever código. O que acontece quando vários agentes têm de trabalhar juntos?
 
 **AgentBench 2026 é um laboratório aberto de I&D sobre colaboração e comportamento social dos agentes IA.** Damos-lhes os mesmos problemas e variamos a organização: um programador sozinho, uma equipa de especialistas ou, no futuro, agentes locais.

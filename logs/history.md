@@ -396,3 +396,7 @@ Accord humain pour essayer le dispositif supervisé. Gel distinct du pilote calc
 V2.2 simple 002 terminée après le « go » : trois sessions Astra moyen, 6/6 groupes et 14 contrôles, 159,977 s, 113 774 tokens. Revue sans défaut confirmé, aucun changement de code. Preuves complètes, PV et comparaison exploratoire publiés ; 001 préservée. Solde de quota non mesuré ; pas de nouvelle autorisation scientifique. [Rapport / Report / Informe / Relatório](../results/v2-2-supervised-core-002.md).
 
 Vérifications : 72 tests de maintenance, linter Markdown, liens de 188 documents, 64 empreintes historiques, entrées figées et configurations vérifiées ; instantanés identiques. Code livré séparément dans 064c3c5.
+
+## Échange 044
+
+Demande : préparer la reprise dans un nouveau chat après des symptômes de blocage VS Code/WSL. Création de REPRISE_AGENT.md, instruction agent canonique française : état après ecdac58, preuves et coûts V2.2, décisions, limites, diagnostic minimal et prompt de reprise. Aucun run, sous-agent, installation ou changement de gouvernance. Le terminal annonce Debian 13 ; le nouveau projet décrit comme Ubuntu reste à vérifier. OpenAI Docs distingue surfaces IDE/projets ; bug non confirmé. La réduction des coûts reste une proposition non exécutée. Liens et Markdown contrôlés. [Reprise / Handover](../REPRISE_AGENT.md).
