@@ -311,3 +311,7 @@ Pedido: preparar a passagem para outro chat após os sintomas relatados no VS Co
 ## Interação 045
 
 Auditoria sem modelo aprovada. Capturas 002 analisadas: 10 396 caracteres removidos dos envelopes propostos (37,0%), sem inferir poupança de tokens. Protótipo sem transporte real, três mandatos não congelados, dez novos testes sintéticos; 82 testes passam. Limites propostos: 12 000 caracteres/envelope e paragem entre sessões aos 60 000 tokens, sem garantia contra excesso. Provas e governação intactas; nenhum candidato lançado. [Audit](../results/v2-2-cost-audit.pt.md).
+
+## Interação 046
+
+Preparação Astra médio aprovada, sem lançamento. Motor separado dos scripts congelados: mandatos reduzidos, captura completa, controlos de ficheiros e paragem intersessão 150 000 (objetivo abaixo de 100 000, envelopes 12 000 caracteres). 18 novos testes, 100 passam; simulação de três fases com contadores fictícios. Sem modelo ou nova pontuação. Real bloqueado mesmo editando o manifesto; adaptador e congelamento não são apresentados como validados. .github/ preexistente não seguido intacto. [Préflight](../results/v2-2-lean-preflight.pt.md).

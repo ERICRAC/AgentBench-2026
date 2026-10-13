@@ -4,7 +4,7 @@
 
 [Continuar en otro chat — instrucción canónica del agente (francés)](REPRISE_AGENT.md)
 
-[Auditoría de costes: variante ligera probada sin modelo, sin autorización de lanzamiento](results/v2-2-cost-audit.es.md)
+[Preflight ligero: parada entre sesiones a 150 000 tokens, simulación validada, real bloqueado](results/v2-2-lean-preflight.es.md)
 
 > Un agente sabe escribir código. ¿Qué sucede cuando varios agentes tienen que trabajar juntos?
 

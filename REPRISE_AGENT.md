@@ -1,5 +1,12 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 046 :** préparation allégée raccordée dans un moteur
+distinct, [préflight synthétique validé](results/v2-2-lean-preflight.md),
+100 tests. Astra moyen ; cible < 100 000 tokens, seuil intersession 150 000,
+enveloppe 12 000 caractères. Aucun lancement autorisé ; voie réelle verrouillée,
+adaptateur réel et gel restant nécessaires. Cette mise à jour remplace les
+propositions de seuil antérieures, sans modifier les résultats historiques.
+
 **Mise à jour après l'échange 045 :** l'audit hors modèle et le prototype allégé
 sont désormais réalisés, avec 82 tests de maintenance réussis. Lire le
 [bilan de coût](results/v2-2-cost-audit.md) avant les propositions historiques

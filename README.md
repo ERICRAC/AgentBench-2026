@@ -4,7 +4,7 @@
 
 [Reprendre dans un nouveau chat — instruction agent](REPRISE_AGENT.md)
 
-[Audit de coût : variante allégée testée hors modèle, non autorisée au lancement](results/v2-2-cost-audit.md)
+[Préflight allégé : 150 000 tokens entre sessions, simulation validée, réel verrouillé](results/v2-2-lean-preflight.md)
 
 > Un agent sait écrire du code. Mais que se passe-t-il quand plusieurs agents doivent travailler ensemble ?
 

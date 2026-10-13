@@ -1,0 +1,16 @@
+{
+  "condition": "v2-2-lean-preparation",
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "challenge": "calculator",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "max_sessions": 3,
+  "payload_character_cap": 12000,
+  "target_tokens": 100000,
+  "between_session_token_stop": 150000,
+  "hard_token_cap": null,
+  "retry_authorized": false,
+  "scientific_authorized": false,
+  "final_word_limits": [150, 300, 300]
+}

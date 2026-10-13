@@ -404,3 +404,7 @@ Demande : préparer la reprise dans un nouveau chat après des symptômes de blo
 ## Échange 045
 
 Accord pour l'audit hors modèle. Captures 002 analysées : 10 396 caractères retirés des enveloppes proposées (37,0 %), aucune économie de tokens inférée. Prototype sans transport réel, trois mandats séparés non gelés, dix tests synthétiques ajoutés ; 82 tests réussis. Limites proposées : 12 000 caractères/enveloppe et arrêt intersession à 60 000 tokens, sans garantie contre le dépassement. Preuves et gouvernance inchangées, aucun candidat lancé. [Audit](../results/v2-2-cost-audit.md).
+
+## Échange 046
+
+Préparation approuvée en Astra moyen, sans lancement. Nouveau moteur isolé des scripts figés : mandats allégés, captures complètes, contrôles de fichiers et seuil intersession 150 000 (cible inférieure à 100 000, enveloppes 12 000 caractères). 18 tests ajoutés, 100 réussis ; simulation trois phases avec compteurs fictifs. Aucun modèle, aucune nouvelle note de calculatrice. Le réel reste refusé même après édition du manifeste ; son adaptateur et le gel ne sont pas livrés comme validés. Dossier .github/ préexistant non suivi laissé intact. [Préflight](../results/v2-2-lean-preflight.md).

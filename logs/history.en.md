@@ -318,3 +318,7 @@ Request: prepare a new-chat handover following reported VS Code/WSL symptoms. Ad
 ## Exchange 045
 
 Offline audit approved. Run 002 captures analysed: 10,396 characters removed from proposed envelopes (37.0%), no token savings inferred. Prototype has no live transport; three separate unfrozen mandates and ten new synthetic tests; 82 tests pass. Proposed limits: 12,000 characters/envelope and between-session stop at 60,000 tokens, no overshoot guarantee. Evidence and governance unchanged; no candidate launched. [Audit](../results/v2-2-cost-audit.en.md).
+
+## Exchange 046
+
+Approved Astra medium preparation, no launch. Separate engine preserves frozen scripts: lean mandates, full capture, file checks and 150,000 between-session stop (target below 100,000, 12,000-character envelopes). 18 new tests, 100 pass; three-phase simulation with fake counters. No model or new calculator score. Live use stays refused even after manifest edits; its adapter and freeze are not claimed validated. Existing untracked .github/ left untouched. [Préflight](../results/v2-2-lean-preflight.en.md).

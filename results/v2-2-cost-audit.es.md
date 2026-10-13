@@ -2,6 +2,8 @@
 
 [Français](v2-2-cost-audit.md) · [English (UK)](v2-2-cost-audit.en.md) · **Español** · [Português](v2-2-cost-audit.pt.md)
 
+[Preflight ligero: parada entre sesiones a 150 000 tokens, simulación validada, real bloqueado](v2-2-lean-preflight.es.md)
+
 **Ningún candidato ejecutado.** El run 002 terminado sigue intacto. Reducir transmisiones no demuestra conservar la calidad ni ahorrar cuota.
 
 ## Medidas exactas

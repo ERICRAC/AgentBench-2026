@@ -4,7 +4,7 @@
 
 [Resume in a new chat — canonical agent handover (French)](REPRISE_AGENT.md)
 
-[Cost audit: lean draft tested offline, no launch authorisation](results/v2-2-cost-audit.en.md)
+[Lean preflight: 150,000-token between-session stop, simulation passed, live locked](results/v2-2-lean-preflight.en.md)
 
 > One agent can write code. What happens when several agents have to work together?
 

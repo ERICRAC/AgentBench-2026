@@ -2,6 +2,8 @@
 
 [Français](v2-2-cost-audit.md) · **English (UK)** · [Español](v2-2-cost-audit.es.md) · [Português](v2-2-cost-audit.pt.md)
 
+[Lean preflight: 150,000-token between-session stop, simulation passed, live locked](v2-2-lean-preflight.en.md)
+
 **No candidate launched.** Completed run 002 is unchanged. The prototype reduces transmitted data; it does not demonstrate quality preservation or quota savings.
 
 ## Exact measurements

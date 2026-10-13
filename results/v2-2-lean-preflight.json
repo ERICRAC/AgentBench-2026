@@ -1,0 +1,47 @@
+{
+  "kind": "synthetic_preflight_not_benchmark",
+  "cli_exit_code": 0,
+  "cli_summary": {
+    "simulation": true,
+    "status": "simulation_completed",
+    "known_tokens": 39,
+    "quality_verdict": null
+  },
+  "payload_characters": [
+    1652,
+    2078,
+    2280
+  ],
+  "phases": [
+    "main_initial",
+    "review",
+    "main_final"
+  ],
+  "fake_usage_only": true,
+  "real_model_calls": 0,
+  "policy": {
+    "condition": "v2-2-lean-preparation",
+    "protocol_frozen": false,
+    "launch_authorized": false,
+    "challenge": "calculator",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "max_sessions": 3,
+    "payload_character_cap": 12000,
+    "target_tokens": 100000,
+    "between_session_token_stop": 150000,
+    "hard_token_cap": null,
+    "retry_authorized": false,
+    "scientific_authorized": false,
+    "final_word_limits": [
+      150,
+      300,
+      300
+    ]
+  },
+  "source_sha256": {
+    "scripts/run_v2_2_lean.py": "d85e083765ff2a2c492a411f7f0915a74f3ba15ad807170ddc77781997213e09",
+    "tests/test_v2_2_lean.py": "78e95c40f353c7957214de716bed8edddc76608d7957bf07642a9a5f664c59b2",
+    "governance/v2-2-lean-draft.json": "1dcd78473748d2b9cd23d496d7484b3a929e4b9606e2265dd26893564828d3c0"
+  }
+}

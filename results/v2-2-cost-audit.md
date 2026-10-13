@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](v2-2-cost-audit.en.md) · [Español](v2-2-cost-audit.es.md) · [Português](v2-2-cost-audit.pt.md)
 
+[Préflight allégé : 150 000 tokens entre sessions, simulation validée, réel verrouillé](v2-2-lean-preflight.md)
+
 **Aucun candidat lancé.** Le run 002 terminé reste intact. Le prototype réduit les données transmises, pas la qualité démontrée ni le quota mesuré.
 
 ## Mesures exactes
