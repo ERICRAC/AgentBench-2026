@@ -322,3 +322,7 @@ Offline audit approved. Run 002 captures analysed: 10,396 characters removed fro
 ## Exchange 046
 
 Approved Astra medium preparation, no launch. Separate engine preserves frozen scripts: lean mandates, full capture, file checks and 150,000 between-session stop (target below 100,000, 12,000-character envelopes). 18 new tests, 100 pass; three-phase simulation with fake counters. No model or new calculator score. Live use stays refused even after manifest edits; its adapter and freeze are not claimed validated. Existing untracked .github/ left untouched. [Préflight](../results/v2-2-lean-preflight.en.md).
+
+## Exchange 047
+
+Explicit approval for one real simple-calculator Astra medium trial. Native adapter connected to lean engine; named manifest frozen and hashes checked. At most three sessions, target < 100,000 tokens, between-session stop at 150,000, 12,000-character envelopes, no retry or scientific trial. 104 offline tests passed before launch. Supervised isolation, exploratory comparison; quota unmeasured. OpenAI Docs used for non-interactive CLI and JSONL capture. [Manifest](../governance/v2-2-lean-001.json).

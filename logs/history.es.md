@@ -318,3 +318,7 @@ Auditoría sin modelo aprobada. Capturas 002 analizadas: 10 396 caracteres elimi
 ## Intercambio 046
 
 Preparación Astra medio aprobada, sin lanzamiento. Motor separado de scripts congelados: mandatos reducidos, capturas completas, controles de archivos y parada intersesión 150 000 (objetivo inferior a 100 000, sobres 12 000 caracteres). 18 tests nuevos, 100 pasan; simulación de tres fases con contadores ficticios. Sin modelo ni nueva puntuación. Real bloqueado incluso editando el manifiesto; adaptador y congelación no se presentan validados. .github/ preexistente no seguido intacto. [Préflight](../results/v2-2-lean-preflight.es.md).
+
+## Intercambio 047
+
+Autorizado un ensayo real simple Astra medio. Adaptador nativo conectado, manifiesto nominal congelado y huellas verificadas. Máximo tres sesiones, objetivo < 100 000 tokens, parada intersesión 150 000, sobres 12 000 caracteres, sin retry ni científica. 104 tests sin modelo pasan antes del lanzamiento. Aislamiento supervisado, comparación exploratoria, cuota no medida. OpenAI Docs para CLI y JSONL. [Manifest](../governance/v2-2-lean-001.json).

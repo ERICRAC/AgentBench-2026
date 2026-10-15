@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Lean-pair preparation: wired phase engine, synthetic transport only.
 
-No CLI/model invocation. Live use is unconditionally refused, even if the draft
-manifest is edited. Full traces stay in a fresh private directory outside Git.
+The public entry point remains simulation-only. A separate authorised launcher
+may use the shared engine. Full traces stay outside Git until publication.
 """
 import argparse
 import json
+import time
 from pathlib import Path
 
 import run_v2_2 as relay
@@ -42,6 +43,12 @@ def run(root, *, simulation=True, transport=None):
     if simulation is not True:
         raise PermissionError("Real launch is locked; new approval and adapter required")
     settings = policy()
+    callback = relay.fake_transport if transport is None else transport
+    return run_engine(root, settings, callback, simulation=True)
+
+
+def run_engine(root, settings, callback, *, simulation):
+    """Shared engine; launch authority belongs to the separate live wrapper."""
     root = Path(root)
     if root.is_symlink():
         raise ValueError("Linked output directory")
@@ -58,12 +65,12 @@ def run(root, *, simulation=True, transport=None):
         destination = workspace / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes((relay.ROOT / name).read_bytes())
-    callback = relay.fake_transport if transport is None else transport
-    state = {"simulation": True, "status": "running", "policy": settings,
+    state = {"simulation": simulation, "status": "running", "policy": settings,
              "sessions": [], "attempts": [], "known_tokens": 0, "usage_complete": True,
              "threshold_reached": False, "overshoot": 0, "deviations": [],
              "quality_verdict": None}
     first = None
+    started = time.monotonic()
     try:
         for index, (phase, role, _, _) in enumerate(relay.PHASES):
             payload = compact_payload({"challenge": challenge, "first_solution": first,
@@ -75,7 +82,7 @@ def run(root, *, simulation=True, transport=None):
                 attempt["status"] = "not_started"
                 state["status"] = "stopped_payload_size"
                 break
-            mandate = (relay.ROOT / "prompts" / MANDATES[index]).read_text()
+            mandate = (relay.ROOT / "prompts" / settings.get("mandates", MANDATES)[index]).read_text()
             prompt = mandate + "\nDossier courant : solution/. Vérificateur P3 seulement : " \
                 "python3 -B ../scripts/verify.py --solution .\n" + SEPARATOR + encoded(payload)
             capture = root / phase
@@ -84,8 +91,13 @@ def run(root, *, simulation=True, transport=None):
             before = relay.snapshot(workspace)
             attempt["status"] = "started"
             relay.save(root / "state.json", state)
+            phase_started = time.monotonic()
             response = callback({"phase": phase, "role": role, "challenge": "calculator",
-                                 "cwd": solution, "prompt": prompt, "config": attempt["config"]})
+                                 "cwd": solution, "prompt": prompt, "config": attempt["config"],
+                                 "capture": capture})
+            attempt["duration_seconds"] = time.monotonic() - phase_started
+            if "process" in response:
+                attempt["process"] = response["process"]
             (capture / "stdout.jsonl").write_text(response["jsonl"])
             attempt["exit_code"] = response["exit_code"]
             attempt["observed_usage"] = []
@@ -123,7 +135,8 @@ def run(root, *, simulation=True, transport=None):
             files = relay.snapshot(solution)
             if set(files) != relay.DELIVERABLES["calculator"]:
                 raise ValueError("Missing or extra deliverable")
-            state["sessions"].append({**parsed, "phase": phase, "role": role})
+            state["sessions"].append({**parsed, "phase": phase, "role": role,
+                                      "duration_seconds": attempt["duration_seconds"]})
             attempt["status"] = "completed"
             if parsed["final_words"] > settings["final_word_limits"][index]:
                 state["deviations"].append({"phase": phase, "kind": "word_limit"})
@@ -136,7 +149,8 @@ def run(root, *, simulation=True, transport=None):
             relay.save(root / "state.json", state)
         else:
             relay.save(root / "snapshot-final.json", relay.snapshot(solution))
-            state["status"] = "simulation_completed"
+            state["status"] = ("simulation_completed" if simulation else
+                               "candidate_sessions_completed_pending_independent_verification")
     except BaseException as error:
         if state["attempts"] and state["attempts"][-1]["status"] == "started":
             state["attempts"][-1]["status"] = "interrupted"
@@ -144,6 +158,7 @@ def run(root, *, simulation=True, transport=None):
         state["usage_complete"] = False
         raise
     finally:
+        state["wall_duration_seconds"] = time.monotonic() - started
         state["target_met"] = state["known_tokens"] < settings["target_tokens"] if state["usage_complete"] else None
         relay.save(root / "state.json", state)
     return state

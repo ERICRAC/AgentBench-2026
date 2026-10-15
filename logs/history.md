@@ -408,3 +408,7 @@ Accord pour l'audit hors modèle. Captures 002 analysées : 10 396 caractères r
 ## Échange 046
 
 Préparation approuvée en Astra moyen, sans lancement. Nouveau moteur isolé des scripts figés : mandats allégés, captures complètes, contrôles de fichiers et seuil intersession 150 000 (cible inférieure à 100 000, enveloppes 12 000 caractères). 18 tests ajoutés, 100 réussis ; simulation trois phases avec compteurs fictifs. Aucun modèle, aucune nouvelle note de calculatrice. Le réel reste refusé même après édition du manifeste ; son adaptateur et le gel ne sont pas livrés comme validés. Dossier .github/ préexistant non suivi laissé intact. [Préflight](../results/v2-2-lean-preflight.md).
+
+## Échange 047
+
+Accord explicite pour un essai réel simple, Astra moyen. Adaptateur natif raccordé au moteur allégé, manifeste nominatif figé et empreintes vérifiées. Trois sessions maximum, cible < 100 000 tokens, arrêt intersession à 150 000, enveloppes 12 000 caractères, sans retry ni scientifique. 104 tests sans modèle réussis avant lancement. Isolation supervisée, comparaison exploratoire ; quota non mesuré. OpenAI Docs utilisé pour CLI non interactive et capture JSONL. [Manifest](../governance/v2-2-lean-001.json).

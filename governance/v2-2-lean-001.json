@@ -1,0 +1,47 @@
+{
+  "condition": "v2-2-lean-preparation",
+  "protocol_frozen": true,
+  "launch_authorized": true,
+  "challenge": "calculator",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "max_sessions": 3,
+  "payload_character_cap": 12000,
+  "target_tokens": 100000,
+  "between_session_token_stop": 150000,
+  "hard_token_cap": null,
+  "retry_authorized": false,
+  "scientific_authorized": false,
+  "final_word_limits": [
+    150,
+    300,
+    300
+  ],
+  "run_id": "astra-medium-core-v2-2-lean-001",
+  "campaign": "astra-medium-lean-001",
+  "authorization": "User explicitly requests continuation plus real trial; one simple-calculator attempt, no retry.",
+  "full_isolation_claimed": false,
+  "strict_historical_comparability_claimed": false,
+  "quota_start": null,
+  "mandates": [
+    "v2-2-lean-001-initial.md",
+    "v2-2-lean-001-review.md",
+    "v2-2-lean-001-final.md"
+  ],
+  "inputs_sha256": {
+    "scripts/run_v2_2_lean.py": "52d32b337bea5ed5b0d7150c9e45fdd889bb59d6d5097d557b0e93bee8517961",
+    "scripts/run_v2_2_lean_live.py": "b0b69a41c00865750084e339d0aaf1fc3d5839ae2ddcf965bb6e095b8f757fa3",
+    "scripts/audit_v2_2_cost.py": "f9bcb6604f65d9922929a53efa42559e97c6af866fa9a077e357ad420c5c141e",
+    "scripts/run_v2_2.py": "2cdbc0c1ffa02bd9c5c34de4a88de9a4963929e453a7ad1f0abb3ef427521f17",
+    "scripts/run_v2_2_supervised.py": "68fc6d4c51859d363c57d85e359fdd7f192e00158b59d1fc1376df1416c02cf5",
+    "scripts/v2_2_transport.py": "42551e9616a8fde3164ddc9fda540101cb0fb163f68933f0e90cfd76f6a43e2f",
+    "scripts/verify.py": "dedc9f21e989c991233a50066483afa6027c7f3ee51be6de5848fc8403ed81d4",
+    "challenges/calculator/SPEC.md": "b085a0f1efeff1855a22a3ac7af498699b6bed0b641285a7650de15a50bc4021",
+    "challenges/calculator/tests/test_acceptance.py": "9d26de59a6e21c05631833ee7a3df1d6257d46852b68a5684e9f87cf29bd9c97",
+    "governance/v2-2-draft/config-main.toml": "0ec19354d36bc258b1e86926baf8cf23ad861a7b4ab50d7c8ba8a5902671564e",
+    "governance/v2-2-draft/config-rev-01.toml": "cf1f664b4a65b632f6f4cf70cc2c0d4f4d9bade2b4419152ce0d3b033189830c",
+    "prompts/v2-2-lean-001-initial.md": "aec7df65edf57f5ce5536598b3304ca4392847688a0f490004b0f210f9a3b9f8",
+    "prompts/v2-2-lean-001-review.md": "2d16f099b34f1af1105a825ca8096614b0afb4a848223119eb57e0eb6f7183eb",
+    "prompts/v2-2-lean-001-final.md": "b8e59dd6f85440f1f6c6d62505bc70b651f9d6fa18941c3b5eb1a16e4a3ee286"
+  }
+}
