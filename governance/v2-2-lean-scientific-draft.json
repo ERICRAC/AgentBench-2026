@@ -1,0 +1,29 @@
+{
+  "condition": "v2-2-lean-scientific-clarified-draft",
+  "campaign": "astra-medium-lean-002-proposed",
+  "protocol_frozen": false,
+  "launch_authorized": false,
+  "challenge": "scientific-calculator",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "max_sessions": 3,
+  "payload_character_cap": null,
+  "proposed_payload_character_cap": 24000,
+  "between_session_token_stop": 150000,
+  "hard_token_cap": null,
+  "target_tokens": null,
+  "retry_authorized": false,
+  "final_word_limits": [150, 300, 300],
+  "mandates": [
+    "v2-2-lean-scientific-initial-draft.md",
+    "v2-2-lean-scientific-review-draft.md",
+    "v2-2-lean-scientific-final-draft.md"
+  ],
+  "changes_from_lean_001": [
+    "Scientific challenge instead of simple calculator",
+    "Explicit local check permission in candidate mandate, no absent manifest dependency",
+    "Payload cap awaiting approval; no sub-100000-token target promised"
+  ],
+  "strict_historical_comparability_claimed": false,
+  "full_isolation_claimed": false
+}

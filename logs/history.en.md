@@ -330,3 +330,7 @@ Explicit approval for one real simple-calculator Astra medium trial. Native adap
 ## Exchange 048
 
 **Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.en.md). Canonical minutes, prompts, trace, configurations and snapshots published. Candidate code: 5cfa81d; freeze: 7219f54. No retry. 104 tests.
+
+## Exchange 049
+
+Scientific preparation approved without launch. Synthetic sizing and new mandates clarify OBS-001; proposed 24,000 characters, unchanged 150,000-token intersession stop. No candidate or previous solution consulted. 108 maintenance tests passed; protocol not frozen. [Scientific preflight — lean pair](../results/v2-2-lean-scientific-preflight.en.md).

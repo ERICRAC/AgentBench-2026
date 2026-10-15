@@ -416,3 +416,7 @@ Accord explicite pour un essai réel simple, Astra moyen. Adaptateur natif racco
 ## Échange 048
 
 **Essai réel V2.2 allégé terminé : 6/6 groupes, 14 contrôles, 87 775 tokens, 65,964 s.** Cible < 100 000 atteinte. Baisse observée, mais ambiguïté de mandat OBS-001 : pas de conclusion causale. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.md). PV, prompts, trace, configurations et instantanés : artefacts canoniques publiés. Code candidat : 5cfa81d ; gel : 7219f54. Aucun retry. 104 tests.
+
+## Échange 049
+
+Préparation scientifique autorisée sans lancement. Audit de taille synthétique et nouveaux mandats clarifiant OBS-001 ; proposition 24 000 caractères, seuil intersession 150 000 tokens inchangé. Aucun candidat ni ancienne solution consultée. 108 tests de maintenance réussis ; protocole non gelé. [Préflight scientifique — binôme allégé](../results/v2-2-lean-scientific-preflight.md).

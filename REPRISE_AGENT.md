@@ -1,5 +1,16 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 049 : préparation scientifique sans lancement.**
+[Contrôle de taille et protocole proposé](results/v2-2-lean-scientific-preflight.md).
+Audit hors modèle : enveloppe initiale 5 023 caractères ; fixture 8 000 caractères
+de code → transmission finale 21 337. Limite 24 000 proposée, non approuvée.
+Nouveaux mandats explicites pour les contrôles locaux, sans modifier OBS-001.
+108 tests réussis. Aucun candidat lancé, aucune solution historique lue.
+Le moteur figé 001 reste simple seulement. Prochaine décision : approuver
+l'enveloppe 24 000, puis adaptation scientifique versionnée et tests hors modèle.
+Ne pas lancer avant accord explicite ; seuil intersession 150 000, dépassement
+possible. Nouvelle condition exploratoire, pas comparaison homogène acquise.
+
 **Dernier état, échange 048 : essai réel allégé terminé.**
 `astra-medium-core-v2-2-lean-001` : trois sessions Astra moyen, 87 775 tokens,
 65,964 s, 6/6 groupes et 14 contrôles indépendants. Cible < 100 000 atteinte.

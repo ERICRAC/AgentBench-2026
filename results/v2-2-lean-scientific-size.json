@@ -1,0 +1,82 @@
+{
+  "mode": "offline_synthetic_size_audit",
+  "model_calls": 0,
+  "launch_authorized": false,
+  "unit": "Unicode characters, not tokens",
+  "scope": "JSON envelope only, excludes mandate and client context",
+  "challenge_sha256": "6832820b2c964758e1ec96094be27a6ae39b03830209772dc2b56ecf4a032846",
+  "fixture": {
+    "readme_characters": 1000,
+    "initial_words": 150,
+    "review_words": 300,
+    "review_output_characters": 1000
+  },
+  "cases": [
+    {
+      "cap": 12000,
+      "max_synthetic_code_characters": null,
+      "profiles": [
+        {
+          "synthetic_code_characters": 4000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 12527,
+            "main_final": 16791
+          },
+          "fits_all_phases": false
+        },
+        {
+          "synthetic_code_characters": 8000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 17073,
+            "main_final": 21337
+          },
+          "fits_all_phases": false
+        },
+        {
+          "synthetic_code_characters": 16000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 26165,
+            "main_final": 30429
+          },
+          "fits_all_phases": false
+        }
+      ]
+    },
+    {
+      "cap": 24000,
+      "max_synthetic_code_characters": 10342,
+      "profiles": [
+        {
+          "synthetic_code_characters": 4000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 12527,
+            "main_final": 16791
+          },
+          "fits_all_phases": true
+        },
+        {
+          "synthetic_code_characters": 8000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 17073,
+            "main_final": 21337
+          },
+          "fits_all_phases": true
+        },
+        {
+          "synthetic_code_characters": 16000,
+          "payload_characters": {
+            "main_initial": 5023,
+            "review": 26165,
+            "main_final": 30429
+          },
+          "fits_all_phases": false
+        }
+      ]
+    }
+  ]
+}

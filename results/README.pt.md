@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+[Preflight científico — dupla reduzida](v2-2-lean-scientific-preflight.pt.md) — Apenas preparação: nenhum candidato iniciado nem chamada a modelos. Os resultados simples permanecem intactos.
+
 **V2.2 leve real concluída: 6/6 grupos, 14 controlos, 87 775 tokens, 65,964 s.** Objetivo < 100 000 atingido. Redução observada, mas ambiguidade do mandato OBS-001: sem conclusão causal. [Rapport / Report / Informe / Relatório](v2-2-lean-001.pt.md)
 
 **V2.2 simples concluída com Astra médio: 3 sessões, 6/6 grupos (14 controlos), 159,977 s e 113 774 tokens.** Sem alterações após revisão. Menor custo que a V2 histórica, mas maior que o agente a solo histórico; comparação exploratória. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.pt.md).

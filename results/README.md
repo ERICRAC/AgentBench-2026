@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Préflight scientifique — binôme allégé](v2-2-lean-scientific-preflight.md) — Préparation uniquement : aucun candidat lancé, aucun appel modèle. Les résultats simples restent intacts.
+
 **Essai réel V2.2 allégé terminé : 6/6 groupes, 14 contrôles, 87 775 tokens, 65,964 s.** Cible < 100 000 atteinte. Baisse observée, mais ambiguïté de mandat OBS-001 : pas de conclusion causale. [Rapport / Report / Informe / Relatório](v2-2-lean-001.md)
 
 **V2.2 simple terminée en Astra moyen : 3 sessions, 6/6 groupes (14 contrôles), 159,977 s et 113 774 tokens.** Aucun changement après revue. Moins coûteux que la V2 historique, mais davantage que le solo historique ; comparaison exploratoire. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.md).

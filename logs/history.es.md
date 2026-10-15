@@ -326,3 +326,7 @@ Autorizado un ensayo real simple Astra medio. Adaptador nativo conectado, manifi
 ## Intercambio 048
 
 **V2.2 ligera real terminada: 6/6 grupos, 14 controles, 87 775 tokens, 65,964 s.** Objetivo < 100 000 alcanzado. Reducción observada, pero ambigüedad de mandato OBS-001: sin conclusión causal. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.es.md). Acta, prompts, traza, configuraciones e instantáneas canónicas publicados. Código candidato: 5cfa81d; congelación: 7219f54. Sin retry. 104 tests.
+
+## Intercambio 049
+
+Preparación científica aprobada sin lanzamiento. Auditoría sintética y mandatos que aclaran OBS-001; propuesta de 24 000 caracteres, umbral entre sesiones de 150 000 tokens sin cambios. Ningún candidato ni solución previa consultada. 108 pruebas de mantenimiento superadas; protocolo no congelado. [Preflight científico — pareja reducida](../results/v2-2-lean-scientific-preflight.es.md).

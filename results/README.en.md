@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+[Scientific preflight — lean pair](v2-2-lean-scientific-preflight.en.md) — Preparation only: no candidate launched and no model call. Simple results remain unchanged.
+
 **Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](v2-2-lean-001.en.md)
 
 **Simple V2.2 completed with Astra medium: 3 sessions, 6/6 groups (14 checks), 159.977 s and 113,774 tokens.** No changes after review. Cheaper than historical V2, but costlier than the historical solo; exploratory comparison. [Rapport / Report / Informe / Relatório](v2-2-supervised-core-002.en.md).
