@@ -1,5 +1,17 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 051 : transport scientifique raccordé, protocole gelé.**
+governance/v2-2-lean-scientific-001.json épingle les entrées et nouveaux mandats.
+135 tests réussis, dont chaîne de lancement avec capture fictive et refus de
+relance. Aucun appel modèle ni runs/astra-medium-scientific-v2-2-lean-001 créé.
+Prochaine étape : demander l'accord explicite pour cet unique essai réel,
+puis scripts/run_v2_2_lean_scientific_live.py --run DOSSIER_EXTERNE_NEUF
+--approve-run astra-medium-scientific-v2-2-lean-001. Ne pas refaire la préparation.
+--check valide le gel sans modèle. Le manifeste reste launch_authorized=false :
+le consentement futur est distinct du gel, enregistré par la réservation du run.
+Rester Astra moyen ; 24 000 caractères, seuil intersession 150 000 sans garantie
+de quota ni de non-dépassement. Publication indépendante après exécution.
+
 **Dernier état, échange 050 : limite 24 000 approuvée, moteur scientifique validé.**
 scripts/run_v2_2_lean_scientific.py est une version distincte du moteur simple
 figé : défi, suite et livrables scientifiques, commande finale explicite sans

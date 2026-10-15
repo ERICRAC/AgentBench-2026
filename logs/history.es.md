@@ -334,3 +334,7 @@ Preparación científica aprobada sin lanzamiento. Auditoría sintética y manda
 ## Intercambio 050
 
 Límite de 24 000 caracteres aprobado. Motor científico versionado y validado sin modelos: tres fases simuladas completadas, 39 tokens ficticios, sin veredicto de calculadora. 129 pruebas de mantenimiento superadas, 21 de este motor. Huellas del lanzador simple congelado intactas. Quedan transporte real y congelación nominal antes de autorizar el lanzamiento. El motor rechaza el modo real incluso por su entrada interna. Sin ahorro, cuota suficiente ni resultado científico demostrado. La preparación anterior conserva el análisis de tamaño; su límite propuesto ya está aprobado. [Actualización — intercambio 050](../results/v2-2-lean-scientific-preflight.es.md).
+
+## Intercambio 051
+
+Transporte conectado y protocolo científico congelado. 135 pruebas de mantenimiento superadas; seis nuevas cubren adaptador, captura exacta, huellas, rechazo sin autorización y cadena completa con procesos ficticios seguida de rechazo de relanzamiento. Ninguna llamada a modelos ni directorio de candidato real creado. ID previsto: astra-medium-scientific-v2-2-lean-001; campaña astra-medium-lean-002. Astra medio, tres sesiones, sobres de 24 000 caracteres, parada entre sesiones a 150 000 tokens sin límite estricto. Condiciones simples históricas intactas. [Intercambio 051](../results/v2-2-lean-scientific-preflight.es.md).

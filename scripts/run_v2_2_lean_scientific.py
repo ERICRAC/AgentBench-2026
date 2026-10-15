@@ -53,6 +53,11 @@ def run_engine(root, settings, callback, *, simulation):
     """Versioned offline engine; refuse live mode even through this entry point."""
     if simulation is not True:
         raise PermissionError("Scientific live launch is not authorised")
+    return _execute_engine(root, settings, callback, simulation=True)
+
+
+def _execute_engine(root, settings, callback, *, simulation):
+    """Internal phase loop; real authority is checked by the named live wrapper."""
     root = Path(root)
     if root.is_symlink():
         raise ValueError("Linked output directory")

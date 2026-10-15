@@ -338,3 +338,7 @@ Scientific preparation approved without launch. Synthetic sizing and new mandate
 ## Exchange 050
 
 The 24,000-character cap is approved. Versioned scientific engine validated offline: three simulated phases completed, 39 fictional tokens, no calculator verdict. 129 maintenance tests passed, including 21 for this engine. Frozen simple-launcher hashes remain unchanged. Real transport and a named freeze remain to be prepared before launch approval. The engine explicitly refuses live mode, including its internal entry point. No savings, sufficient quota or scientific score demonstrated. Earlier preparation below retains the sizing findings; its proposed cap is now approved. [Update — exchange 050](../results/v2-2-lean-scientific-preflight.en.md).
+
+## Exchange 051
+
+Transport connected and scientific protocol frozen. 135 maintenance tests passed; six new tests cover the adapter, exact capture, hashes, refusal without approval and a complete fake-process chain followed by rejection of a second launch. No model call and no real candidate directory created. Planned ID: astra-medium-scientific-v2-2-lean-001; campaign astra-medium-lean-002. Astra medium, three sessions, 24,000-character envelopes, 150,000-token between-session stop without a hard cap. Historical simple conditions remain intact. [Exchange 051](../results/v2-2-lean-scientific-preflight.en.md).

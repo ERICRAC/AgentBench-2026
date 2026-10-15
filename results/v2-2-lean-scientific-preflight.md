@@ -2,6 +2,22 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+## Échange 051
+
+Transport raccordé et protocole scientifique figé. 135 tests de maintenance réussis ; six nouveaux tests couvrent l'adaptateur, les captures exactes, les empreintes, le refus sans accord et une chaîne complète avec faux processus suivie du refus de relance.
+
+Aucun appel modèle, aucun dossier candidat réel créé. Identifiant prévu : astra-medium-scientific-v2-2-lean-001 ; campagne astra-medium-lean-002. Astra moyen, trois sessions, enveloppe 24 000 caractères, arrêt intersession 150 000 tokens sans plafond strict. Les conditions simples historiques restent intactes.
+
+Le manifeste gelé n'accorde pas le lancement. Après accord humain explicite, l'orchestrateur utilisera --run avec un dossier externe neuf et --approve-run avec cet identifiant exact. Ce paramètre est une confirmation opérateur, pas une preuve automatique du consentement ni une barrière de sécurité contre du code arbitraire. Réservation persistante dès le lancement, même si celui-ci échoue ; pas de retry. Prochaine étape : un unique essai réel, vérification indépendante puis publication du PV et des coûts.
+
+[Manifest](../governance/v2-2-lean-scientific-001.json) · [Adapter](../scripts/run_v2_2_lean_scientific_live.py) · [Tests](../tests/test_lean_scientific_live.py).
+
+[OpenAI Docs — non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode) : CLI JSONL.
+
+```bash
+python3 -B scripts/run_v2_2_lean_scientific_live.py --check
+```
+
 ## Mise à jour — échange 050
 
 Limite de 24 000 caractères approuvée. Moteur scientifique versionné et validé sans modèle : trois phases simulées terminées, 39 tokens fictifs, aucun verdict de calculatrice. 129 tests de maintenance réussis, dont 21 pour ce moteur. Les empreintes du lanceur simple figé restent intactes.
