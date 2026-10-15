@@ -327,3 +327,7 @@ Autorizado um ensaio real simples Astra médio. Adaptador nativo ligado, manifes
 ## Interação 049
 
 Preparação científica aprovada sem lançamento. Auditoria sintética e mandatos esclarecem OBS-001; proposta de 24 000 caracteres, limiar entre sessões de 150 000 tokens inalterado. Nenhum candidato nem solução anterior consultada. 108 testes de manutenção aprovados; protocolo não congelado. [Preflight científico — dupla reduzida](../results/v2-2-lean-scientific-preflight.pt.md).
+
+## Interação 050
+
+Limite de 24 000 caracteres aprovado. Motor científico versionado e validado sem modelos: três fases simuladas concluídas, 39 tokens fictícios, sem veredicto de calculadora. 129 testes de manutenção aprovados, incluindo 21 deste motor. Hashes do lançador simples congelado intactos. Faltam transporte real e congelamento nominal antes da autorização de lançamento. O motor recusa o modo real mesmo pela entrada interna. Sem poupança, quota suficiente ou resultado científico demonstrado. A preparação anterior conserva a análise de tamanho; o limite proposto está agora aprovado. [Atualização — interação 050](../results/v2-2-lean-scientific-preflight.pt.md).

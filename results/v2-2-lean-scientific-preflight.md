@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+## Mise à jour — échange 050
+
+Limite de 24 000 caractères approuvée. Moteur scientifique versionné et validé sans modèle : trois phases simulées terminées, 39 tokens fictifs, aucun verdict de calculatrice. 129 tests de maintenance réussis, dont 21 pour ce moteur. Les empreintes du lanceur simple figé restent intactes.
+
+Les tests couvrent les fichiers scientifiques, le contrat et la suite copiés à l'identique, la commande avec --challenge scientific-calculator, les captures intégrales, la lecture seule de REV-01, les écritures interdites, les enveloppes trop grandes, les compteurs manquants, l'arrêt à 150 000, le dépassement, les sessions distinctes et l'absence de relance. PYTHONDONTWRITEBYTECODE=1 est explicite dans la commande finale pour les processus enfants.
+
+Le transport réel et le gel nominatif restent à préparer avant une autorisation de lancement. Le moteur refuse explicitement le mode réel, même par son point d'entrée interne. Aucun gain, quota suffisant ou score scientifique n'est démontré. Les paragraphes de préparation ci-dessous conservent le constat de taille précédent ; la limite proposée y est désormais approuvée.
+
+[Script](../scripts/run_v2_2_lean_scientific.py) · [Tests](../tests/test_v2_2_lean_scientific.py) · [JSON](v2-2-lean-scientific-simulation.json).
+
 Préparation uniquement : aucun candidat lancé, aucun appel modèle. Les résultats simples restent intacts.
 
 ## Constat et proposition

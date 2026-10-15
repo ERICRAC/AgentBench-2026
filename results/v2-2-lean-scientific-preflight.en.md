@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+## Update — exchange 050
+
+The 24,000-character cap is approved. Versioned scientific engine validated offline: three simulated phases completed, 39 fictional tokens, no calculator verdict. 129 maintenance tests passed, including 21 for this engine. Frozen simple-launcher hashes remain unchanged.
+
+Tests cover scientific files, byte-identical contract and suite copies, the --challenge scientific-calculator command, full captures, read-only REV-01, forbidden writes, oversized envelopes, missing usage, the 150,000 stop, overshoot, distinct sessions and no retry. PYTHONDONTWRITEBYTECODE=1 is explicit in the final command for child processes.
+
+Real transport and a named freeze remain to be prepared before launch approval. The engine explicitly refuses live mode, including its internal entry point. No savings, sufficient quota or scientific score demonstrated. Earlier preparation below retains the sizing findings; its proposed cap is now approved.
+
+[Script](../scripts/run_v2_2_lean_scientific.py) · [Tests](../tests/test_v2_2_lean_scientific.py) · [JSON](v2-2-lean-scientific-simulation.json).
+
 Preparation only: no candidate launched and no model call. Simple results remain unchanged.
 
 ## Finding and proposal

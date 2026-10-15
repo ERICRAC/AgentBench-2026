@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+## Actualización — intercambio 050
+
+Límite de 24 000 caracteres aprobado. Motor científico versionado y validado sin modelos: tres fases simuladas completadas, 39 tokens ficticios, sin veredicto de calculadora. 129 pruebas de mantenimiento superadas, 21 de este motor. Huellas del lanzador simple congelado intactas.
+
+Pruebas de archivos científicos, contrato y suite copiados idénticamente, comando --challenge scientific-calculator, capturas completas, REV-01 de solo lectura, escrituras prohibidas, sobres excesivos, contadores ausentes, parada a 150 000, exceso, sesiones distintas y ausencia de reintento. PYTHONDONTWRITEBYTECODE=1 explícito en el comando final para procesos hijos.
+
+Quedan transporte real y congelación nominal antes de autorizar el lanzamiento. El motor rechaza el modo real incluso por su entrada interna. Sin ahorro, cuota suficiente ni resultado científico demostrado. La preparación anterior conserva el análisis de tamaño; su límite propuesto ya está aprobado.
+
+[Script](../scripts/run_v2_2_lean_scientific.py) · [Tests](../tests/test_v2_2_lean_scientific.py) · [JSON](v2-2-lean-scientific-simulation.json).
+
 Solo preparación: ningún candidato lanzado ni llamada a modelos. Los resultados simples se conservan.
 
 ## Hallazgo y propuesta

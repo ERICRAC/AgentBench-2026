@@ -7,7 +7,7 @@
   "model": "gpt-6-astra",
   "reasoning_effort": "medium",
   "max_sessions": 3,
-  "payload_character_cap": null,
+  "payload_character_cap": 24000,
   "proposed_payload_character_cap": 24000,
   "between_session_token_stop": 150000,
   "hard_token_cap": null,
@@ -22,7 +22,7 @@
   "changes_from_lean_001": [
     "Scientific challenge instead of simple calculator",
     "Explicit local check permission in candidate mandate, no absent manifest dependency",
-    "Payload cap awaiting approval; no sub-100000-token target promised"
+    "Payload cap 24000 approved; no sub-100000-token target promised"
   ],
   "strict_historical_comparability_claimed": false,
   "full_isolation_claimed": false

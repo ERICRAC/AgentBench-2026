@@ -1,5 +1,14 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 050 : limite 24 000 approuvée, moteur scientifique validé.**
+scripts/run_v2_2_lean_scientific.py est une version distincte du moteur simple
+figé : défi, suite et livrables scientifiques, commande finale explicite sans
+cache enfant. Simulation trois phases terminée, 39 tokens fictifs, aucun score.
+129 tests réussis ; aucun modèle ni candidat lancé. Mode réel refusé dans les
+deux points d'entrée. Prochaine étape : transport réel et gel nominatif, puis
+accord de lancement ; ne pas refaire ce préflight ni demander à nouveau 24 000.
+Voir le rapport scientifique lié ci-dessous. Les états antérieurs sont historiques.
+
 **Dernier état, échange 049 : préparation scientifique sans lancement.**
 [Contrôle de taille et protocole proposé](results/v2-2-lean-scientific-preflight.md).
 Audit hors modèle : enveloppe initiale 5 023 caractères ; fixture 8 000 caractères

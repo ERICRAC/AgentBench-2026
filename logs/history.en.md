@@ -334,3 +334,7 @@ Explicit approval for one real simple-calculator Astra medium trial. Native adap
 ## Exchange 049
 
 Scientific preparation approved without launch. Synthetic sizing and new mandates clarify OBS-001; proposed 24,000 characters, unchanged 150,000-token intersession stop. No candidate or previous solution consulted. 108 maintenance tests passed; protocol not frozen. [Scientific preflight — lean pair](../results/v2-2-lean-scientific-preflight.en.md).
+
+## Exchange 050
+
+The 24,000-character cap is approved. Versioned scientific engine validated offline: three simulated phases completed, 39 fictional tokens, no calculator verdict. 129 maintenance tests passed, including 21 for this engine. Frozen simple-launcher hashes remain unchanged. Real transport and a named freeze remain to be prepared before launch approval. The engine explicitly refuses live mode, including its internal entry point. No savings, sufficient quota or scientific score demonstrated. Earlier preparation below retains the sizing findings; its proposed cap is now approved. [Update — exchange 050](../results/v2-2-lean-scientific-preflight.en.md).

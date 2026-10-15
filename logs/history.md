@@ -420,3 +420,7 @@ Accord explicite pour un essai réel simple, Astra moyen. Adaptateur natif racco
 ## Échange 049
 
 Préparation scientifique autorisée sans lancement. Audit de taille synthétique et nouveaux mandats clarifiant OBS-001 ; proposition 24 000 caractères, seuil intersession 150 000 tokens inchangé. Aucun candidat ni ancienne solution consultée. 108 tests de maintenance réussis ; protocole non gelé. [Préflight scientifique — binôme allégé](../results/v2-2-lean-scientific-preflight.md).
+
+## Échange 050
+
+Limite de 24 000 caractères approuvée. Moteur scientifique versionné et validé sans modèle : trois phases simulées terminées, 39 tokens fictifs, aucun verdict de calculatrice. 129 tests de maintenance réussis, dont 21 pour ce moteur. Les empreintes du lanceur simple figé restent intactes. Le transport réel et le gel nominatif restent à préparer avant une autorisation de lancement. Le moteur refuse explicitement le mode réel, même par son point d'entrée interne. Aucun gain, quota suffisant ou score scientifique n'est démontré. Les paragraphes de préparation ci-dessous conservent le constat de taille précédent ; la limite proposée y est désormais approuvée. [Mise à jour — échange 050](../results/v2-2-lean-scientific-preflight.md).

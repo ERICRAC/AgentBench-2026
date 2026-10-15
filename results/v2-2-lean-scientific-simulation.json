@@ -1,0 +1,26 @@
+{
+  "kind": "synthetic_only_not_candidate_evidence",
+  "model_calls": 0,
+  "status": "simulation_completed",
+  "known_fake_tokens": 39,
+  "quality_verdict": null,
+  "payload_character_cap": 24000,
+  "phases": [
+    {
+      "phase": "main_initial",
+      "status": "completed",
+      "payload_characters": 5023
+    },
+    {
+      "phase": "review",
+      "status": "completed",
+      "payload_characters": 5460
+    },
+    {
+      "phase": "main_final",
+      "status": "completed",
+      "payload_characters": 5662
+    }
+  ],
+  "maintenance_tests_passed": 129
+}
