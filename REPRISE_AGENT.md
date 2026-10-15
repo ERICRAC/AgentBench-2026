@@ -1,5 +1,17 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 053 : OBS-002 corrigé pour une future tentative 002.**
+Nouveau lanceur scripts/run_v2_2_lean_scientific_live_002.py, manifeste gelé
+governance/v2-2-lean-scientific-002.json et trois nouveaux mandats 002 : accord
+de phase explicitement transmis après contrôle opérateur. 141 tests réussis,
+dont vérification des trois prompts réellement remis au faux processus.
+Aucun appel modèle ni dossier runs/astra-medium-scientific-v2-2-lean-002 créé.
+L'essai 001 et son gel sont inchangés. Prochaine étape : obtenir l'accord de
+lancement 002, puis --run DOSSIER_EXTERNE_NEUF --approve-run
+astra-medium-scientific-v2-2-lean-002 avec le nouveau lanceur. Ne pas refaire
+la préparation ni utiliser le lanceur 001. Campagne astra-medium-lean-003,
+Astra moyen, enveloppe 24 000, seuil intersession 150 000 sans garantie stricte.
+
 **Dernier état, échange 052 : essai scientifique lancé puis interrompu, OBS-002.**
 astra-medium-scientific-v2-2-lean-001 : MAIN a demandé confirmation de lancement
 au lieu de coder. Le lanceur avait bien reçu l'accord humain mais ne l'a pas

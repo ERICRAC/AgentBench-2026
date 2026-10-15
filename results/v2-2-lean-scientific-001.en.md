@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-001.md) · [English (UK)](v2-2-lean-scientific-001.en.md) · [Español](v2-2-lean-scientific-001.es.md) · [Português](v2-2-lean-scientific-001.pt.md)
 
+## OBS-002 correction prepared, without a new trial
+
+Version 002 explicitly tells each phase that the orchestrator has validated human approval and authorises that phase now. Launch still requires confirmation of the exact run ID; the message is delivered only after that gate. Role restrictions and the prohibition on delegation are unchanged.
+
+141 tests passed. The six adapter-002 tests cover the three prompts actually delivered to the fake process, their equality with captured prompts, the run ID and phase name, removal of ambiguous caveats, refusal without approval and refusal of a repeated launch. Delivery checks alone do not guarantee the model's future interpretation.
+
+Planned trial: astra-medium-scientific-v2-2-lean-002; new campaign astra-medium-lean-003. Astra medium, 24,000 characters, 150,000-token intersession stop without a hard cap. No model call or run-002 directory created. Run 001, its costs and frozen files remain byte-identical. Real launch still requires human approval; no further preparation is planned before that approval.
+
+[Manifest 002](../governance/v2-2-lean-scientific-002.json) · [Adapter 002](../scripts/run_v2_2_lean_scientific_live_002.py) · [Tests 002](../tests/test_lean_scientific_live_002.py).
+
 The real trial stopped before any code: **11,968 tokens, 12.811 s, no calculator result**. This was not quota exhaustion. No retry occurred.
 
 ## What happened

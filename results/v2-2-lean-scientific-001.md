@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-001.md) · [English (UK)](v2-2-lean-scientific-001.en.md) · [Español](v2-2-lean-scientific-001.es.md) · [Português](v2-2-lean-scientific-001.pt.md)
 
+## Correction OBS-002 préparée, sans nouvel essai
+
+La version 002 transmet explicitement à chaque phase : « L'orchestrateur a validé l'accord humain […] et autorise maintenant la phase […] ». Le lancement reste verrouillé sans confirmation nominative ; le texte est délivré seulement après ce contrôle. Les restrictions de rôle et l'interdiction de délégation restent inchangées.
+
+141 tests réussis. Les six tests de l'adaptateur 002 vérifient notamment les trois prompts réellement transmis au faux processus, leur identité avec les captures, l'identifiant et le nom de phase, l'absence des anciennes réserves ambiguës, le refus sans accord et le refus de relance. Ce contrôle de transmission ne garantit pas à lui seul la future interprétation du modèle.
+
+Essai prévu : astra-medium-scientific-v2-2-lean-002 ; nouvelle campagne astra-medium-lean-003. Astra moyen, 24 000 caractères, arrêt intersession 150 000 tokens sans plafond strict. Aucun appel modèle ni dossier de run 002 créé. Le run 001, ses coûts et tous ses fichiers figés sont conservés à l'identique. Le lancement réel nécessite encore l'accord humain ; aucune autre préparation n'est prévue avant cet accord.
+
+[Manifest 002](../governance/v2-2-lean-scientific-002.json) · [Adapter 002](../scripts/run_v2_2_lean_scientific_live_002.py) · [Tests 002](../tests/test_lean_scientific_live_002.py).
+
 L'essai réel est arrêté avant tout code : **11 968 tokens, 12,811 s, aucun résultat de calculatrice**. Ce n'est pas un épuisement de quota. Aucun retry effectué.
 
 ## Ce qui s'est passé

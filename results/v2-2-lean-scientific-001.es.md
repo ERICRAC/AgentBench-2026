@@ -2,6 +2,16 @@
 
 [Français](v2-2-lean-scientific-001.md) · [English (UK)](v2-2-lean-scientific-001.en.md) · [Español](v2-2-lean-scientific-001.es.md) · [Português](v2-2-lean-scientific-001.pt.md)
 
+## Corrección OBS-002 preparada, sin nuevo ensayo
+
+La versión 002 comunica explícitamente a cada fase que el orquestador validó el acuerdo humano y autoriza comenzar ahora. El lanzamiento sigue exigiendo confirmación del ID exacto; el mensaje solo se transmite después de ese control. Restricciones de rol y prohibición de delegación intactas.
+
+141 pruebas superadas. Las seis pruebas del adaptador 002 comprueban los tres prompts enviados al proceso ficticio, su igualdad con las capturas, ID y fase, eliminación de reservas ambiguas, rechazo sin acuerdo y rechazo de repetición. Comprobar la transmisión no garantiza por sí solo la interpretación futura del modelo.
+
+Ensayo previsto: astra-medium-scientific-v2-2-lean-002; nueva campaña astra-medium-lean-003. Astra medio, 24 000 caracteres, parada entre sesiones a 150 000 tokens sin techo estricto. Sin llamada a modelos ni directorio del run 002. Run 001, costes y archivos congelados idénticos. El lanzamiento real requiere acuerdo humano; no se prevé otra preparación antes del acuerdo.
+
+[Manifest 002](../governance/v2-2-lean-scientific-002.json) · [Adapter 002](../scripts/run_v2_2_lean_scientific_live_002.py) · [Tests 002](../tests/test_lean_scientific_live_002.py).
+
 El ensayo real se detuvo antes de crear código: **11 968 tokens, 12,811 s, sin resultado de calculadora**. No fue agotamiento de cuota. Sin reintento.
 
 ## Qué ocurrió
