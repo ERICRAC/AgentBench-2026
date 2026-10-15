@@ -335,3 +335,7 @@ Limite de 24 000 caracteres aprovado. Motor científico versionado e validado se
 ## Interação 051
 
 Transporte ligado e protocolo científico congelado. 135 testes de manutenção aprovados; seis novos cobrem adaptador, captura exata, hashes, recusa sem autorização e cadeia completa com processos fictícios seguida da recusa de repetição. Nenhuma chamada a modelos nem diretório de candidato real criado. ID previsto: astra-medium-scientific-v2-2-lean-001; campanha astra-medium-lean-002. Astra médio, três sessões, envelopes de 24 000 caracteres, paragem entre sessões aos 150 000 tokens sem teto rígido. Condições simples históricas intactas. [Interação 051](../results/v2-2-lean-scientific-preflight.pt.md).
+
+## Interação 052
+
+O ensaio real parou antes de produzir código: **11 968 tokens, 12,811 s, sem resultado de calculadora**. Não houve esgotamento de quota. Sem repetição. É um defeito de transmissão da autorização no dispositivo preparado pelo orquestrador. Os 135 testes sem modelo verificavam caminhos técnicos; candidatos fictícios não interpretavam a condição linguística. OBS-002 fica preservado sem alterar retroativamente o protocolo. [Ensaio científico reduzido — interrupção OBS-002](../results/v2-2-lean-scientific-001.pt.md).

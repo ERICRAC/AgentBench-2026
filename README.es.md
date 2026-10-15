@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+El ensayo real se detuvo antes de crear código: **11 968 tokens, 12,811 s, sin resultado de calculadora**. No fue agotamiento de cuota. Sin reintento. [OBS-002](results/v2-2-lean-scientific-001.es.md).
+
 [Continuar en otro chat — instrucción canónica del agente (francés)](REPRISE_AGENT.md)
 
 **V2.2 ligera real terminada: 6/6 grupos, 14 controles, 87 775 tokens, 65,964 s.** Objetivo < 100 000 alcanzado. Reducción observada, pero ambigüedad de mandato OBS-001: sin conclusión causal. [Rapport / Report / Informe / Relatório](results/v2-2-lean-001.es.md)

@@ -2,6 +2,8 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+L'essai réel est arrêté avant tout code : **11 968 tokens, 12,811 s, aucun résultat de calculatrice**. Ce n'est pas un épuisement de quota. Aucun retry effectué. [OBS-002](v2-2-lean-scientific-001.md).
+
 ## Échange 051
 
 Transport raccordé et protocole scientifique figé. 135 tests de maintenance réussis ; six nouveaux tests couvrent l'adaptateur, les captures exactes, les empreintes, le refus sans accord et une chaîne complète avec faux processus suivie du refus de relance.

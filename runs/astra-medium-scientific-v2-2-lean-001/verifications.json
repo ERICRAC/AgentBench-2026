@@ -1,0 +1,11 @@
+{
+  "acceptance_verdict": null,
+  "acceptance_run": false,
+  "reason": "No candidate deliverables; no calculator score assigned",
+  "checks": {
+    "scripts/verify.py": true,
+    "challenges/scientific-calculator/tests/test_acceptance.py": true,
+    "challenge_exact": true,
+    "solution_empty": true
+  }
+}

@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+L'essai réel est arrêté avant tout code : **11 968 tokens, 12,811 s, aucun résultat de calculatrice**. Ce n'est pas un épuisement de quota. Aucun retry effectué. [OBS-002](results/v2-2-lean-scientific-001.md).
+
 [Reprendre dans un nouveau chat — instruction agent](REPRISE_AGENT.md)
 
 **Essai réel V2.2 allégé terminé : 6/6 groupes, 14 contrôles, 87 775 tokens, 65,964 s.** Cible < 100 000 atteinte. Baisse observée, mais ambiguïté de mandat OBS-001 : pas de conclusion causale. [Rapport / Report / Informe / Relatório](results/v2-2-lean-001.md)

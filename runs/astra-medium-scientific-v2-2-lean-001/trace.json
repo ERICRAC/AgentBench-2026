@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a140d0-6747-7662-9bed-5dec9fc44309"
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "agent_message",
+        "text": "CHALLENGE lu intégralement. Le mandat précise que son gel seul n’autorise aucun lancement ; aucune autorisation explicite de lancement n’est fournie.\n\nAucun fichier modifié, aucun contrôle exécuté. En attente de l’autorisation explicite de l’orchestrateur pour la phase MAIN initial."
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 11810,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 158,
+        "reasoning_output_tokens": 89
+      }
+    }
+  ],
+  "raw_sha256": "37252db1c72fbd614b5e2a7815d0f93c2636300e13b6c77b86f653051eefd0ba",
+  "omitted_events": 0,
+  "private_reasoning_published": false
+}

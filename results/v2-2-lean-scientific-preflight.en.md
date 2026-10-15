@@ -2,6 +2,8 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+The real trial stopped before any code: **11,968 tokens, 12.811 s, no calculator result**. This was not quota exhaustion. No retry occurred. [OBS-002](v2-2-lean-scientific-001.en.md).
+
 ## Exchange 051
 
 Transport connected and scientific protocol frozen. 135 maintenance tests passed; six new tests cover the adapter, exact capture, hashes, refusal without approval and a complete fake-process chain followed by rejection of a second launch.

@@ -2,6 +2,8 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+El ensayo real se detuvo antes de crear código: **11 968 tokens, 12,811 s, sin resultado de calculadora**. No fue agotamiento de cuota. Sin reintento. [OBS-002](v2-2-lean-scientific-001.es.md).
+
 ## Intercambio 051
 
 Transporte conectado y protocolo científico congelado. 135 pruebas de mantenimiento superadas; seis nuevas cubren adaptador, captura exacta, huellas, rechazo sin autorización y cadena completa con procesos ficticios seguida de rechazo de relanzamiento.

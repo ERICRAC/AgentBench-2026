@@ -1,5 +1,17 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 052 : essai scientifique lancé puis interrompu, OBS-002.**
+astra-medium-scientific-v2-2-lean-001 : MAIN a demandé confirmation de lancement
+au lieu de coder. Le lanceur avait bien reçu l'accord humain mais ne l'a pas
+transmis explicitement dans le prompt conditionnel. Aucun outil ni livrable,
+aucune revue ; CLI code 0, relais code 1 (Missing or extra deliverable).
+11 968 tokens observés, 12,811 s ; pas d'erreur quota ni de score scientifique.
+[Rapport](results/v2-2-lean-scientific-001.md) et PV/traces publiés, gel inchangé.
+Ne pas relancer cet identifiant ni appliquer le conseil de lancement ci-dessous.
+Prochaine proposition : nouvelle version transmettant explicitement l'autorisation
+à MAIN, testant cette transmission, puis nouvel essai avec accord distinct.
+Aucune correction ni relance autorisée automatiquement ; pas de processus actif.
+
 **Dernier état, échange 051 : transport scientifique raccordé, protocole gelé.**
 governance/v2-2-lean-scientific-001.json épingle les entrées et nouveaux mandats.
 135 tests réussis, dont chaîne de lancement avec capture fictive et refus de

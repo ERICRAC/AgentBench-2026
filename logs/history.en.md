@@ -342,3 +342,7 @@ The 24,000-character cap is approved. Versioned scientific engine validated offl
 ## Exchange 051
 
 Transport connected and scientific protocol frozen. 135 maintenance tests passed; six new tests cover the adapter, exact capture, hashes, refusal without approval and a complete fake-process chain followed by rejection of a second launch. No model call and no real candidate directory created. Planned ID: astra-medium-scientific-v2-2-lean-001; campaign astra-medium-lean-002. Astra medium, three sessions, 24,000-character envelopes, 150,000-token between-session stop without a hard cap. Historical simple conditions remain intact. [Exchange 051](../results/v2-2-lean-scientific-preflight.en.md).
+
+## Exchange 052
+
+The real trial stopped before any code: **11,968 tokens, 12.811 s, no calculator result**. This was not quota exhaustion. No retry occurred. This is an approval-transmission defect in the orchestrator's setup. The 135 offline tests checked technical paths; fake candidates did not interpret the linguistic approval condition. The defect is preserved as OBS-002 without retroactively changing frozen inputs. [Lean scientific trial — OBS-002 interruption](../results/v2-2-lean-scientific-001.en.md).

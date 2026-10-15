@@ -428,3 +428,7 @@ Limite de 24 000 caractères approuvée. Moteur scientifique versionné et valid
 ## Échange 051
 
 Transport raccordé et protocole scientifique figé. 135 tests de maintenance réussis ; six nouveaux tests couvrent l'adaptateur, les captures exactes, les empreintes, le refus sans accord et une chaîne complète avec faux processus suivie du refus de relance. Aucun appel modèle, aucun dossier candidat réel créé. Identifiant prévu : astra-medium-scientific-v2-2-lean-001 ; campagne astra-medium-lean-002. Astra moyen, trois sessions, enveloppe 24 000 caractères, arrêt intersession 150 000 tokens sans plafond strict. Les conditions simples historiques restent intactes. [Échange 051](../results/v2-2-lean-scientific-preflight.md).
+
+## Échange 052
+
+L'essai réel est arrêté avant tout code : **11 968 tokens, 12,811 s, aucun résultat de calculatrice**. Ce n'est pas un épuisement de quota. Aucun retry effectué. Il s'agit d'une erreur de transmission de l'autorisation dans le dispositif préparé par l'orchestrateur. Les 135 tests hors modèle validaient les chemins techniques ; leurs faux candidats n'interprétaient pas la condition linguistique d'autorisation. Nous conservons ce défaut sous OBS-002, sans corriger rétroactivement le gel. [Essai scientifique allégé — interruption OBS-002](../results/v2-2-lean-scientific-001.md).

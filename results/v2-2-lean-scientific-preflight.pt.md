@@ -2,6 +2,8 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
+O ensaio real parou antes de produzir código: **11 968 tokens, 12,811 s, sem resultado de calculadora**. Não houve esgotamento de quota. Sem repetição. [OBS-002](v2-2-lean-scientific-001.pt.md).
+
 ## Interação 051
 
 Transporte ligado e protocolo científico congelado. 135 testes de manutenção aprovados; seis novos cobrem adaptador, captura exata, hashes, recusa sem autorização e cadeia completa com processos fictícios seguida da recusa de repetição.

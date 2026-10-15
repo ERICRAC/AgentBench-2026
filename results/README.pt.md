@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+O ensaio real parou antes de produzir código: **11 968 tokens, 12,811 s, sem resultado de calculadora**. Não houve esgotamento de quota. Sem repetição. [OBS-002](v2-2-lean-scientific-001.pt.md).
+
 [Preflight científico — dupla reduzida](v2-2-lean-scientific-preflight.pt.md) — Apenas preparação: nenhum candidato iniciado nem chamada a modelos. Os resultados simples permanecem intactos.
 
 **V2.2 leve real concluída: 6/6 grupos, 14 controlos, 87 775 tokens, 65,964 s.** Objetivo < 100 000 atingido. Redução observada, mas ambiguidade do mandato OBS-001: sem conclusão causal. [Rapport / Report / Informe / Relatório](v2-2-lean-001.pt.md)
