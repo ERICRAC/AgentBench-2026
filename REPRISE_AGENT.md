@@ -1,5 +1,17 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 048 : essai réel allégé terminé.**
+`astra-medium-core-v2-2-lean-001` : trois sessions Astra moyen, 87 775 tokens,
+65,964 s, 6/6 groupes et 14 contrôles indépendants. Cible < 100 000 atteinte.
+[Rapport et OBS-001](results/v2-2-lean-001.md) : MAIN initial n'a pas exécuté de
+contrôle local à cause d'une référence au manifeste absent de ses entrées ;
+MAIN final a exécuté le vérificateur. Ne pas attribuer toute la baisse au
+protocole compact. Initial/final identiques, aucune correction après revue.
+Gel 7219f54, code 5cfa81d. Aucun retry ni scientifique autorisés.
+Les états de préparation ci-dessous sont désormais historiques : ne pas refaire
+le raccordement ni ce run. Le push a rencontré un blocage SSH ; vérifier Git
+avant toute affirmation de synchronisation.
+
 **Dernier état, échange 046 :** préparation allégée raccordée dans un moteur
 distinct, [préflight synthétique validé](results/v2-2-lean-preflight.md),
 100 tests. Astra moyen ; cible < 100 000 tokens, seuil intersession 150 000,

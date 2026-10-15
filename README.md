@@ -4,7 +4,7 @@
 
 [Reprendre dans un nouveau chat — instruction agent](REPRISE_AGENT.md)
 
-[Préflight allégé : 150 000 tokens entre sessions, simulation validée, réel verrouillé](results/v2-2-lean-preflight.md)
+**Essai réel V2.2 allégé terminé : 6/6 groupes, 14 contrôles, 87 775 tokens, 65,964 s.** Cible < 100 000 atteinte. Baisse observée, mais ambiguïté de mandat OBS-001 : pas de conclusion causale. [Rapport / Report / Informe / Relatório](results/v2-2-lean-001.md)
 
 > Un agent sait écrire du code. Mais que se passe-t-il quand plusieurs agents doivent travailler ensemble ?
 

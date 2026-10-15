@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · **Español** · [Português](CONCLUSIONS.pt.md)
 
+**V2.2 ligera real terminada: 6/6 grupos, 14 controles, 87 775 tokens, 65,964 s.** Objetivo < 100 000 alcanzado. Reducción observada, pero ambigüedad de mandato OBS-001: sin conclusión causal. [Rapport / Report / Informe / Relatório](v2-2-lean-001.es.md)
+
 [Cinco runs V2, dos minutos cada uno](run-summaries/index.es.md) · [📖 Cómo leer e interpretar un run AgentBench](../docs/reading-guide.es.md)
 
 > En las tareas estudiadas, el coste de coordinación supera el beneficio medido. AgentBench busca las condiciones donde se invierte esta relación: dificultad, especialización, paralelismo y coste de los errores.

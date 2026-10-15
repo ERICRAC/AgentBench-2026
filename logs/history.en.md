@@ -326,3 +326,7 @@ Approved Astra medium preparation, no launch. Separate engine preserves frozen s
 ## Exchange 047
 
 Explicit approval for one real simple-calculator Astra medium trial. Native adapter connected to lean engine; named manifest frozen and hashes checked. At most three sessions, target < 100,000 tokens, between-session stop at 150,000, 12,000-character envelopes, no retry or scientific trial. 104 offline tests passed before launch. Supervised isolation, exploratory comparison; quota unmeasured. OpenAI Docs used for non-interactive CLI and JSONL capture. [Manifest](../governance/v2-2-lean-001.json).
+
+## Exchange 048
+
+**Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.en.md). Canonical minutes, prompts, trace, configurations and snapshots published. Candidate code: 5cfa81d; freeze: 7219f54. No retry. 104 tests.

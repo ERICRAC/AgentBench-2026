@@ -1,0 +1,18 @@
+{
+  "config_serialisation": "UTF-8 JSON.stringify(config) insertion order, no newline",
+  "prompt_scope": "Original private prompt bytes before path normalisation",
+  "phases": {
+    "main_initial": {
+      "config_sha256": "c4c592a33a4c4e946ec3ead9d0849295b715a77862b7af39bdf4c171b1243061",
+      "prompt_sha256": "7fbbcfe2b29ffd855ce3ed5e757f27a783b569c087e9fbe88ae31a981d0c9982"
+    },
+    "review": {
+      "config_sha256": "e6f6ac0d8d907388b4e54847246c181dccf9819ec6c44eb08502b0efcd75e739",
+      "prompt_sha256": "93edd91a6518040c9345f3ae958a58e1e13466bca58eb59c5cd349174fb5e13b"
+    },
+    "main_final": {
+      "config_sha256": "c4c592a33a4c4e946ec3ead9d0849295b715a77862b7af39bdf4c171b1243061",
+      "prompt_sha256": "262359887bee6a6502e2e3937e2e9da1e1655a78588c197e7e90797592d5a9f8"
+    }
+  }
+}

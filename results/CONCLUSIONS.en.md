@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · **English (UK)** · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+**Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](v2-2-lean-001.en.md)
+
 [Five V2 runs, two minutes each](run-summaries/index.en.md) · [📖 How to read and interpret an AgentBench run](../docs/reading-guide.en.md)
 
 > On the tasks studied so far, coordination costs exceed the measured benefit. AgentBench now seeks the conditions where this relationship reverses: difficulty, specialisation, parallelism and the cost of errors.

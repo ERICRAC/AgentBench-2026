@@ -319,3 +319,7 @@ Preparação Astra médio aprovada, sem lançamento. Motor separado dos scripts 
 ## Interação 047
 
 Autorizado um ensaio real simples Astra médio. Adaptador nativo ligado, manifesto nominal congelado e hashes verificados. Máximo três sessões, objetivo < 100 000 tokens, paragem intersessão 150 000, envelopes 12 000 caracteres, sem retry nem científica. 104 testes sem modelo passam antes do lançamento. Isolamento supervisionado, comparação exploratória, quota não medida. OpenAI Docs para CLI e JSONL. [Manifest](../governance/v2-2-lean-001.json).
+
+## Interação 048
+
+**V2.2 leve real concluída: 6/6 grupos, 14 controlos, 87 775 tokens, 65,964 s.** Objetivo < 100 000 atingido. Redução observada, mas ambiguidade do mandato OBS-001: sem conclusão causal. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.pt.md). Ata, prompts, trace, configurações e instantâneos canónicos publicados. Código candidato: 5cfa81d; congelamento: 7219f54. Sem retry. 104 testes.

@@ -4,7 +4,7 @@
 
 [Resume in a new chat — canonical agent handover (French)](REPRISE_AGENT.md)
 
-[Lean preflight: 150,000-token between-session stop, simulation passed, live locked](results/v2-2-lean-preflight.en.md)
+**Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](results/v2-2-lean-001.en.md)
 
 > One agent can write code. What happens when several agents have to work together?
 

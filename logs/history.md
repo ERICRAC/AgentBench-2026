@@ -412,3 +412,7 @@ Préparation approuvée en Astra moyen, sans lancement. Nouveau moteur isolé de
 ## Échange 047
 
 Accord explicite pour un essai réel simple, Astra moyen. Adaptateur natif raccordé au moteur allégé, manifeste nominatif figé et empreintes vérifiées. Trois sessions maximum, cible < 100 000 tokens, arrêt intersession à 150 000, enveloppes 12 000 caractères, sans retry ni scientifique. 104 tests sans modèle réussis avant lancement. Isolation supervisée, comparaison exploratoire ; quota non mesuré. OpenAI Docs utilisé pour CLI non interactive et capture JSONL. [Manifest](../governance/v2-2-lean-001.json).
+
+## Échange 048
+
+**Essai réel V2.2 allégé terminé : 6/6 groupes, 14 contrôles, 87 775 tokens, 65,964 s.** Cible < 100 000 atteinte. Baisse observée, mais ambiguïté de mandat OBS-001 : pas de conclusion causale. [Rapport / Report / Informe / Relatório](../results/v2-2-lean-001.md). PV, prompts, trace, configurations et instantanés : artefacts canoniques publiés. Code candidat : 5cfa81d ; gel : 7219f54. Aucun retry. 104 tests.

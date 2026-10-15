@@ -4,7 +4,7 @@
 
 [Continuar en otro chat — instrucción canónica del agente (francés)](REPRISE_AGENT.md)
 
-[Preflight ligero: parada entre sesiones a 150 000 tokens, simulación validada, real bloqueado](results/v2-2-lean-preflight.es.md)
+**V2.2 ligera real terminada: 6/6 grupos, 14 controles, 87 775 tokens, 65,964 s.** Objetivo < 100 000 alcanzado. Reducción observada, pero ambigüedad de mandato OBS-001: sin conclusión causal. [Rapport / Report / Informe / Relatório](results/v2-2-lean-001.es.md)
 
 > Un agente sabe escribir código. ¿Qué sucede cuando varios agentes tienen que trabajar juntos?
 
