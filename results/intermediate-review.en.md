@@ -2,6 +2,8 @@
 
 [Français](intermediate-review.md) · [English (UK)](intermediate-review.en.md) · [Español](intermediate-review.es.md) · [Português](intermediate-review.pt.md)
 
+[Next pilot and WSL link help](../docs/parallel-pilot.en.md)
+
 ## Answer to the research question
 
 > Under what conditions does a team of agents become more efficient than one agent, with the same requested model and effort, accounting for quality, time, tokens and coordination?

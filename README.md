@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Prochain pilote et aide pour les liens WSL](docs/parallel-pilot.md)
+
 [Expertise intermédiaire](results/intermediate-review.md)
 
 [Décision — ce que nous faisons maintenant](results/CONCLUSIONS.md) — V2.2 → V2.1.

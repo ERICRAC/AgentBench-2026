@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+[Prochain pilote et aide pour les liens WSL](../docs/parallel-pilot.md)
+
 [Expertise intermédiaire](intermediate-review.md) — Le collectif apporte des corrections de robustesse observables, mais aucun avantage net reproductible n'est établi. Six sondes communes confirment un angle mort du score. Prochaine exploration recommandée : deux développeurs parallèles dont un intègre, avec témoin solo contemporain.
 
 ## Décision — ce que nous faisons maintenant
@@ -26,7 +28,7 @@ La revue seule représente 16 696 tokens. Même sa soustraction comptable laisse
 
 ### La bonne expérience suivante
 
-**Proposition : V2.1 sur un défi modulaire, avec un nouveau témoin V1, en Astra moyen.** Exemple de périmètre à approuver : moteur de calcul d'un côté, courbes et interface de l'autre, contrat d'intégration fixé en amont. Deux développeurs en parallèle, un intégrateur et un relecteur ; contributions isolées et droits d'écriture bornés. Les deux organisations reçoivent exactement les mêmes exigences, interfaces et tests. Le solo peut utiliser la même décomposition.
+**Proposition : V2.1 sur un défi modulaire, avec un nouveau témoin V1, en Astra moyen.** Exemple de périmètre à approuver : moteur de calcul d'un côté, courbes et interface de l'autre, contrat d'intégration fixé en amont. Deux développeurs en parallèle, dont un assure ensuite l’intégration ; contributions isolées et droits d'écriture bornés. Les deux organisations reçoivent exactement les mêmes exigences, interfaces et tests. Le solo peut utiliser la même décomposition.
 
 Le défi monofichier actuel ne doit pas être changé rétroactivement. Un défi modulaire ouvre une nouvelle campagne ; les anciens résultats servent de contexte, pas de témoin causal. Préparer en un seul lot le contrat, les tests indépendants, les frontières d'écriture, le protocole d'intégration et les mesures, puis exécuter le pilote autorisé. Pas de série de préflights avec appels modèle.
 
@@ -72,7 +74,7 @@ En Astra moyen, le rapport de temps diminue de 3,81 à 3,44 entre simple et scie
 | --- | --- | --- |
 | Solo (V1) | Un candidat réalise tout. | Deux calculatrices terminées. |
 | Conseil (V2 actuelle) | Un écrivain et trois consultants. | Des avis et une relecture évitent des erreurs. |
-| **V2.1** — Développement parallèle | Deux développeurs, un intégrateur et un relecteur ; contributions isolées, interfaces fixées avant développement. | Le travail simultané compense les échanges et l’intégration. |
+| **V2.1** — Développement parallèle | Deux développeurs, dont un intègre ensuite (variante légère proposée) ; contributions isolées, interfaces fixées avant développement. | Le travail simultané compense les échanges et l’intégration. |
 | **V2.2** — Binôme sobre | Un développeur et un relecteur, une revue bornée. | Conserver la critique utile avec moins de coordination. |
 
 **Nomenclature validée : V2** reste le collectif consultatif historique ; **V2.1** désigne le développement parallèle ; **V2.2** le binôme sobre ; **V2.x** la famille de variantes futures, pas un run supplémentaire. V1 reste la référence solo. Les comparaisons futures sont en Astra moyen, sur calculatrice simple et scientifique. Les noms sont validés ; protocoles détaillés et lancements restent à valider.

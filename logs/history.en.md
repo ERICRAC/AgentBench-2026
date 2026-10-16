@@ -362,3 +362,7 @@ Version 002 explicitly tells each phase that the orchestrator has validated huma
 ## Exchange 056
 
 Project review requested: two reviewers outside candidates, seven run costs recomputed and six identical post-hoc probes across three solutions. V2 handles both boundary expressions; solo and pair reject at least one. No official score changed. Recommendations: discriminating quality checks, session and cache controls, lightweight parallel variant and contemporary control. No benchmark relaunched or general governance changed. Four-language report and read-only diagnostic script. [Intermediate review](../results/intermediate-review.en.md).
+
+## Exchange 057
+
+Added local navigation audit: four historical unavailable links preserved, alternatives published. The four reported files exist; internal URLs come from VS Code rendering. Light V2.1 draft: modules, interfaces, ten planned check groups, isolation and a proposed nominal 300,000-token pair budget (not a hard cap). No model calls. Suite and transport remain to prepare before freeze and launch approval. [Next pilot and WSL link help](../docs/parallel-pilot.en.md).

@@ -2,6 +2,8 @@
 
 [Français](intermediate-review.md) · [English (UK)](intermediate-review.en.md) · [Español](intermediate-review.es.md) · [Português](intermediate-review.pt.md)
 
+[Próximo piloto e ajuda com ligações WSL](../docs/parallel-pilot.pt.md)
+
 ## Resposta à pergunta
 
 > Em que condições uma equipa de agentes se torna mais eficiente do que um agente, com modelo e esforço pedidos idênticos, contando qualidade, tempo, tokens e coordenação?

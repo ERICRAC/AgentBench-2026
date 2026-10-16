@@ -448,3 +448,7 @@ La version 002 transmet explicitement à chaque phase : « L'orchestrateur a val
 ## Échange 056
 
 Expertise du projet demandée : deux relectures hors candidats, coûts de sept runs recalculés et six sondes postérieures identiques sur trois solutions. V2 traite les deux expressions limites, solo et binôme en rejettent au moins une ; aucun score officiel modifié. Recommandations : qualité plus discriminante, contrôle des sessions et du cache, variante parallèle légère et référence contemporaine. Aucun benchmark relancé, aucune gouvernance générale modifiée. Rapport en quatre langues et script diagnostic sans écriture. [Expertise intermédiaire](../results/intermediate-review.md).
+
+## Échange 057
+
+Audit local de navigation ajouté : quatre liens historiques indisponibles conservés, alternatives publiées. Les quatre fichiers signalés existent ; les adresses internes viennent du rendu VS Code. Brouillon V2.1 légère : modules, interfaces, dix groupes de contrôles prévus, isolation et budget proposé de 300 000 tokens nominaux pour la paire (pas un plafond). Aucun appel modèle. Suite et transport à préparer avant gel et accord de lancement. [Prochain pilote et aide pour les liens WSL](../docs/parallel-pilot.md).

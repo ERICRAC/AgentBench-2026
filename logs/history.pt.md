@@ -355,3 +355,7 @@ A versão 002 comunica explicitamente a cada fase que o orquestrador validou o a
 ## Interação 056
 
 Perícia pedida: dois revisores fora de candidatos, custos de sete runs recalculados e seis sondas posteriores idênticas em três soluções. V2 resolve ambas as expressões limite; individual e dupla rejeitam pelo menos uma. Nenhuma pontuação oficial alterada. Recomendações: qualidade discriminante, controlos de sessões e cache, variante paralela leve e referência contemporânea. Sem repetição nem mudança de governança geral. Relatório em quatro línguas e diagnóstico só de leitura. [Perícia intermédia](../results/intermediate-review.pt.md).
+
+## Interação 057
+
+Auditoria local de navegação adicionada: quatro ligações históricas indisponíveis preservadas, alternativas publicadas. Os quatro ficheiros existem; URLs internos vêm do VS Code. Rascunho V2.1 leve: módulos, interfaces, dez grupos previstos, isolamento e orçamento nominal proposto de 300 000 tokens por par (sem teto rígido). Sem chamadas a modelos. Suite e transporte por preparar antes do congelamento e autorização. [Próximo piloto e ajuda com ligações WSL](../docs/parallel-pilot.pt.md).

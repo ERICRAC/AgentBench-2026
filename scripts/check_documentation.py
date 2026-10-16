@@ -33,7 +33,8 @@ def check():
             relative = unquote(target.split("#", 1)[0].strip("<>"))
             if relative and not (path.parent / relative).exists():
                 errors.append(f"{path.relative_to(ROOT)}: missing {relative}")
-    stems = ["docs/reading-guide", "docs/observability", "docs/documentation-audit"]
+    stems = ["docs/reading-guide", "docs/observability", "docs/documentation-audit",
+             "docs/parallel-pilot"]
     stems += [str(p.relative_to(ROOT)).removesuffix(".md") for p in
               (ROOT / "results/run-summaries").glob("*.md")
               if not p.stem.endswith((".en", ".es", ".pt"))]

@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · **Português**
 
+[Próximo piloto e ajuda com ligações WSL](../docs/parallel-pilot.pt.md)
+
 [Perícia intermédia](intermediate-review.pt.md) — O coletivo faz correções de robustez observáveis, mas sem vantagem líquida reproduzível estabelecida. Seis sondas comuns confirmam ponto cego da pontuação. Próxima exploração: dois programadores paralelos, um integrando, com controlo individual contemporâneo.
 
 ## Decisão — o que fazemos agora
@@ -26,7 +28,7 @@ A revisão consome 16 696 tokens. Subtraí-los deixaria 125 098, acima dos 119 3
 
 ### Próxima experiência útil
 
-**Proposta: V2.1 com desafio modular e novo controlo V1, Astra médio.** Exemplo de âmbito a aprovar: motor de cálculo de um lado, curvas e interface do outro, contrato de integração prévio. Dois programadores paralelos, integrador e revisor; contribuições isoladas e permissões limitadas. Ambas as organizações recebem requisitos, interfaces e testes idênticos. O individual pode usar a mesma decomposição.
+**Proposta: V2.1 com desafio modular e novo controlo V1, Astra médio.** Exemplo de âmbito a aprovar: motor de cálculo de um lado, curvas e interface do outro, contrato de integração prévio. Dois programadores paralelos, um integra depois; contribuições isoladas e permissões limitadas. Ambas as organizações recebem requisitos, interfaces e testes idênticos. O individual pode usar a mesma decomposição.
 
 Não alterar retroativamente o desafio monoficheiro. O modular abre nova campanha; resultados anteriores são contexto, não controlo causal. Preparar num lote contrato, testes independentes, fronteiras de escrita, integração e medições; executar depois o piloto autorizado. Sem cadeia de preflights com modelos.
 
@@ -72,7 +74,7 @@ Em Astra médio, a razão temporal desce de 3,81 para 3,44 entre simples e cient
 | --- | --- | --- |
 | Solo (V1) | Um candidato faz tudo. | Ambas as calculadoras terminadas. |
 | Consultiva (V2 atual) | Um escritor e três consultores. | Conselhos e revisão evitam erros. |
-| **V2.1** — Desenvolvimento paralelo | Dois programadores, integrador e revisor; contribuições isoladas e interfaces previamente fixadas. | O trabalho simultâneo compensa comunicação e integração. |
+| **V2.1** — Desenvolvimento paralelo | Dois programadores, um integra depois (variante leve proposta); contribuições isoladas e interfaces previamente fixadas. | O trabalho simultâneo compensa comunicação e integração. |
 | **V2.2** — Par leve | Um programador e um revisor, uma revisão limitada. | Manter crítica útil com menos coordenação. |
 
 **Nomes acordados: V2** continua a equipa consultiva histórica; **V2.1** é desenvolvimento paralelo; **V2.2** o par leve; **V2.x** a família de variantes futuras, não outra tentativa. V1 continua a referência solo. Comparações futuras em Astra médio, com calculadoras simples e científica. Nomes aprovados; protocolos detalhados e lançamentos pendentes.

@@ -2,6 +2,8 @@
 
 [Français](intermediate-review.md) · [English (UK)](intermediate-review.en.md) · [Español](intermediate-review.es.md) · [Português](intermediate-review.pt.md)
 
+[Próximo piloto y ayuda con enlaces WSL](../docs/parallel-pilot.es.md)
+
 ## Respuesta a la pregunta
 
 > ¿En qué condiciones un equipo de agentes resulta más eficiente que uno solo, con modelo y esfuerzo solicitados idénticos, contando calidad, tiempo, tokens y coordinación?

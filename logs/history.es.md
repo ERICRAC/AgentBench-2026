@@ -358,3 +358,7 @@ La versión 002 comunica explícitamente a cada fase que el orquestador validó 
 ## Intercambio 056
 
 Peritaje solicitado: dos revisores fuera de candidatos, costes de siete runs recalculados y seis sondas posteriores idénticas en tres soluciones. V2 resuelve ambas expresiones límite; solo y pareja rechazan al menos una. Ningún resultado oficial cambiado. Recomendaciones: calidad discriminante, controles de sesiones y caché, variante paralela ligera y referencia contemporánea. Sin relanzamiento ni cambios de gobernanza general. Informe en cuatro idiomas y diagnóstico de solo lectura. [Peritaje intermedio](../results/intermediate-review.es.md).
+
+## Intercambio 057
+
+Auditoría local de navegación añadida: cuatro enlaces históricos inaccesibles conservados, alternativas publicadas. Los cuatro archivos señalados existen; las URL internas proceden de VS Code. Borrador V2.1 ligera: módulos, interfaces, diez grupos previstos, aislamiento y presupuesto nominal propuesto de 300 000 tokens por pareja (sin techo estricto). Sin llamadas a modelos. Suite y transporte pendientes antes del cierre y autorización. [Próximo piloto y ayuda con enlaces WSL](../docs/parallel-pilot.es.md).

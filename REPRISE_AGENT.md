@@ -1,5 +1,17 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**État actuel, échange 057 : liens audités et pilote parallèle en brouillon.**
+Lire docs/parallel-pilot.md : nouveau périmètre modulaire avec lots, deux
+développeurs dont un intègre, témoin solo contemporain, Astra moyen.
+Budget proposé : 150 000 tokens intersession par organisation, 300 000
+nominaux pour la paire ; dépassement possible, pas de garantie de quota.
+Aucun lancement ; suite calibrée et transport isolé restent à préparer en lot.
+Les paragraphes suivants décrivent l'historique, pas des ordres de relance.
+Les quatre liens signalés existent ; adresses internes générées par VS Code.
+Utiliser Ctrl+P avec les chemins du dépôt. scripts/check_links.py contrôle
+la navigation locale et signale quatre liens historiques préservés ; alternatives
+publiées dans docs/parallel-pilot.md. Pas de réparation du client WSL démontrée.
+
 **Dernier état, échange 056 : expertise intermédiaire réalisée, hors benchmark.**
 Lire results/intermediate-review.md puis CONCLUSIONS.md. Deux relectures
 séparées (méthode et observation sociale), coûts de sept runs recalculés,
