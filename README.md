@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Expertise intermédiaire](results/intermediate-review.md)
+
 [Décision — ce que nous faisons maintenant](results/CONCLUSIONS.md) — V2.2 → V2.1.
 
 **Essai scientifique 002 réussi : 9/9 groupes, 57/57 contrôles, 141 794 tokens, 207,630 s.** Aucun changement après revue. Le binôme reste plus coûteux que le solo scientifique historique ; comparaison exploratoire. [V2.2 scientifique allégée — essai 002 terminé](results/v2-2-lean-scientific-002.md).

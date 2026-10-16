@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · **Español** · [Português](CONCLUSIONS.pt.md)
 
+[Peritaje intermedio](intermediate-review.es.md) — El colectivo aporta correcciones de robustez observables, pero no hay ventaja neta reproducible establecida. Seis sondas comunes confirman un punto ciego del resultado. Próxima exploración: dos desarrolladores paralelos, uno integrando, con control solo contemporáneo.
+
 ## Decisión — qué hacemos ahora
 
 **Cerrar la exploración V2.2 actual.** Ambos niveles están realizados con límites documentados. No se recomienda repetir el mismo ensayo ni optimizar más el lanzador por ahora. Esto no homogeneiza las campañas ni resuelve la pregunta científica.

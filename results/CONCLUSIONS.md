@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+[Expertise intermédiaire](intermediate-review.md) — Le collectif apporte des corrections de robustesse observables, mais aucun avantage net reproductible n'est établi. Six sondes communes confirment un angle mort du score. Prochaine exploration recommandée : deux développeurs parallèles dont un intègre, avec témoin solo contemporain.
+
 ## Décision — ce que nous faisons maintenant
 
 **Clore l'exploration V2.2 actuelle.** Les deux niveaux sont réalisés, avec leurs limites documentées. Aucun nouvel essai identique ni nouvelle optimisation du lanceur n'est recommandé à ce stade. Cela ne déclare pas les campagnes homogènes ni la question scientifique résolue.

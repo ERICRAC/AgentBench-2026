@@ -1,0 +1,138 @@
+{
+  "scope": "Intermediate audit, no candidate launched; candidate costs exclude audit costs",
+  "python": "3.13.5",
+  "costs": [
+    {
+      "run": "astra-medium-core-v1-001",
+      "metadata_sha256": "aac07f07634a50a333d75664b67317c45becaf5072f4071f374500c24e5f3ac4",
+      "wall_seconds": 98.572,
+      "input_tokens": 96182,
+      "output_tokens": 2314,
+      "cached_input_tokens": 76800,
+      "total_tokens": 98496,
+      "uncached_input_plus_output": 21696
+    },
+    {
+      "run": "astra-medium-core-v2-001",
+      "metadata_sha256": "6fbe539f6508023a54e911c080eed296563f4e7385a8cfd5a40eb383f276c52f",
+      "wall_seconds": 375.169,
+      "input_tokens": 395814,
+      "output_tokens": 12802,
+      "cached_input_tokens": 302080,
+      "total_tokens": 408616,
+      "uncached_input_plus_output": 106536
+    },
+    {
+      "run": "astra-medium-core-v2-2-supervised-002",
+      "metadata_sha256": "55bd5a1e0ceab19d79b13134e591370f4a7105902827d29577a1fcf8e78252b0",
+      "wall_seconds": 159.97742588599976,
+      "input_tokens": 110511,
+      "output_tokens": 3263,
+      "cached_input_tokens": 65280,
+      "total_tokens": 113774,
+      "uncached_input_plus_output": 48494
+    },
+    {
+      "run": "astra-medium-core-v2-2-lean-001",
+      "metadata_sha256": "96e9f2ca26e206c72e23a4ef8349531532bff68c797831c97fd7633f4f929324",
+      "wall_seconds": 65.963864629,
+      "input_tokens": 85859,
+      "output_tokens": 1916,
+      "cached_input_tokens": 48128,
+      "total_tokens": 87775,
+      "uncached_input_plus_output": 39647
+    },
+    {
+      "run": "astra-medium-scientific-v1-001",
+      "metadata_sha256": "7c95af470a111efdd54e9205aec3ebafdb274fbfb0d9ee20dbd459968931d468",
+      "wall_seconds": 188.56,
+      "input_tokens": 113746,
+      "output_tokens": 5642,
+      "cached_input_tokens": 98944,
+      "total_tokens": 119388,
+      "uncached_input_plus_output": 20444
+    },
+    {
+      "run": "astra-medium-scientific-v2-001",
+      "metadata_sha256": "037e1f3b49242826758dc275c1e5253936a0ef1121088abab9edf6899441f06b",
+      "wall_seconds": 648.008,
+      "input_tokens": 548369,
+      "output_tokens": 22013,
+      "cached_input_tokens": 409216,
+      "total_tokens": 570382,
+      "uncached_input_plus_output": 161166
+    },
+    {
+      "run": "astra-medium-scientific-v2-2-lean-002",
+      "metadata_sha256": "d527401582fdb2d65d17b2e1545d043423b35192fd249f9c34110f3b87e82186",
+      "wall_seconds": 207.63034312300442,
+      "input_tokens": 134416,
+      "output_tokens": 7378,
+      "cached_input_tokens": 77440,
+      "total_tokens": 141794,
+      "uncached_input_plus_output": 64354
+    }
+  ],
+  "uncached_metric_note": "Diagnostic only, not monetary cost or subscription quota",
+  "probe_classification": "Post-hoc, previously known cases, common to three archived solutions; not official scores or unseen validation",
+  "probe_definitions": {
+    "P1_trailing_spaces": "'1' + ' ' * 10000",
+    "P2_long_sum": "'+'.join(['1'] * 1500)"
+  },
+  "probes": [
+    {
+      "run": "astra-medium-scientific-v1-001",
+      "probe": "P1_trailing_spaces",
+      "expected": 1,
+      "solution_sha256": "30243f40f14c9014f6e585de9c614605d37bfdaaeff52fdd81347ae1e61e281a",
+      "outcome": "ValueError",
+      "message": "Expression trop longue (maximum 10000 caractères)",
+      "matches_expected": false
+    },
+    {
+      "run": "astra-medium-scientific-v1-001",
+      "probe": "P2_long_sum",
+      "expected": 1500,
+      "solution_sha256": "30243f40f14c9014f6e585de9c614605d37bfdaaeff52fdd81347ae1e61e281a",
+      "outcome": "ValueError",
+      "message": "Résultat hors limites ou expression trop complexe",
+      "matches_expected": false
+    },
+    {
+      "run": "astra-medium-scientific-v2-001",
+      "probe": "P1_trailing_spaces",
+      "expected": 1,
+      "solution_sha256": "7e4b7435700577c84c2c3da2216ca97ff3c37fa59c582b0d622d4eb156204c8f",
+      "outcome": "value",
+      "value": 1,
+      "matches_expected": true
+    },
+    {
+      "run": "astra-medium-scientific-v2-001",
+      "probe": "P2_long_sum",
+      "expected": 1500,
+      "solution_sha256": "7e4b7435700577c84c2c3da2216ca97ff3c37fa59c582b0d622d4eb156204c8f",
+      "outcome": "value",
+      "value": 1500,
+      "matches_expected": true
+    },
+    {
+      "run": "astra-medium-scientific-v2-2-lean-002",
+      "probe": "P1_trailing_spaces",
+      "expected": 1,
+      "solution_sha256": "17f42315b949e1223511006d0ec0fb4543753a3778eac4f02976d56601ef4070",
+      "outcome": "value",
+      "value": 1,
+      "matches_expected": true
+    },
+    {
+      "run": "astra-medium-scientific-v2-2-lean-002",
+      "probe": "P2_long_sum",
+      "expected": 1500,
+      "solution_sha256": "17f42315b949e1223511006d0ec0fb4543753a3778eac4f02976d56601ef4070",
+      "outcome": "ValueError",
+      "message": "Résultat hors domaine ou expression trop complexe",
+      "matches_expected": false
+    }
+  ]
+}

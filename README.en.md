@@ -2,6 +2,8 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
+[Intermediate review](results/intermediate-review.en.md)
+
 [Decision — what we do now](results/CONCLUSIONS.en.md) — V2.2 → V2.1.
 
 **Scientific trial 002 passed: 9/9 groups, 57/57 checks, 141,794 tokens, 207.630 s.** No changes after review. The pair remains costlier than the historical scientific solo; exploratory comparison. [Lean scientific V2.2 — trial 002 completed](results/v2-2-lean-scientific-002.en.md).

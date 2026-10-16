@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
+[Perícia intermédia](results/intermediate-review.pt.md)
+
 [Decisão — o que fazemos agora](results/CONCLUSIONS.pt.md) — V2.2 → V2.1.
 
 **Ensaio científico 002 aprovado: 9/9 grupos, 57/57 controlos, 141 794 tokens, 207,630 s.** Sem alterações após revisão. A dupla continua mais dispendiosa do que o agente individual científico histórico; comparação exploratória. [V2.2 científica reduzida — ensaio 002 concluído](results/v2-2-lean-scientific-002.pt.md).

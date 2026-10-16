@@ -1,5 +1,20 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 056 : expertise intermédiaire réalisée, hors benchmark.**
+Lire results/intermediate-review.md puis CONCLUSIONS.md. Deux relectures
+séparées (méthode et observation sociale), coûts de sept runs recalculés,
+six sondes communes posthoc : V2 scientifique traite espaceslongs et somme1500 ;
+solo rejette les deux, binôme rejette la somme. Aucun nouveau score ni run.
+Script reproductible scripts/audit_intermediate.py, données avec empreintes.
+Recommandation affinée : variante V2.1 légère à deux développeurs dont un
+intègre, témoin V1 contemporain et tests d'intégration discriminants, plutôt
+que quatre rôles dès le pilote. Le solo segmenté contrôle une autre question :
+effet du rôle de relecteur versus redémarrage/calcul supplémentaire.
+Périmètre et budget des futurs runs restent à fixer ; aucune exécution implicite.
+Rappel demandé conservé : expertise du protocole par le modèle le plus puissant
+disponible avant campagne ; ne pas affirmer un classement non vérifié ici.
+Aucun fichier historique ni gouvernance générale modifié par cette expertise.
+
 **Dernier état, échange 055 : synthèse décisionnelle, aucun run supplémentaire.**
 Lire le début de results/CONCLUSIONS.md : recommandation de clore l'exploration
 V2.2 actuelle et de ne plus optimiser le lanceur sans nouvelle hypothèse.

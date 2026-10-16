@@ -2,6 +2,8 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · **Español** · [Português](README.pt.md)
 
+[Peritaje intermedio](results/intermediate-review.es.md)
+
 [Decisión — qué hacemos ahora](results/CONCLUSIONS.es.md) — V2.2 → V2.1.
 
 **Ensayo científico 002 aprobado: 9/9 grupos, 57/57 controles, 141 794 tokens, 207,630 s.** Sin cambios tras revisión. La pareja sigue siendo más costosa que el agente solo científico histórico; comparación exploratoria. [V2.2 científica reducida — ensayo 002 terminado](results/v2-2-lean-scientific-002.es.md).

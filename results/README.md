@@ -2,6 +2,8 @@
 
 **Français** · [English (UK)](README.en.md) · [Español](README.es.md) · [Português](README.pt.md)
 
+[Expertise intermédiaire](intermediate-review.md)
+
 **Essai scientifique 002 réussi : 9/9 groupes, 57/57 contrôles, 141 794 tokens, 207,630 s.** Aucun changement après revue. Le binôme reste plus coûteux que le solo scientifique historique ; comparaison exploratoire. [V2.2 scientifique allégée — essai 002 terminé](v2-2-lean-scientific-002.md).
 
 [Préflight scientifique — binôme allégé](v2-2-lean-scientific-preflight.md) — Préparation uniquement : aucun candidat lancé, aucun appel modèle. Les résultats simples restent intacts.

@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · **English (UK)** · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+[Intermediate review](intermediate-review.en.md) — The team makes observable robustness corrections, but no net reproducible advantage is established. Six common probes confirm a scoring blind spot. Recommended next exploration: two parallel developers, one integrating, with a contemporary solo control.
+
 ## Decision — what we do now
 
 **Close the current V2.2 exploration.** Both difficulty levels have been completed with documented limitations. No identical retry or further launcher optimisation is recommended now. This neither makes the campaigns homogeneous nor resolves the research question.

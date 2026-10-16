@@ -2,6 +2,8 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · **Português**
 
+[Perícia intermédia](intermediate-review.pt.md) — O coletivo faz correções de robustez observáveis, mas sem vantagem líquida reproduzível estabelecida. Seis sondas comuns confirmam ponto cego da pontuação. Próxima exploração: dois programadores paralelos, um integrando, com controlo individual contemporâneo.
+
 ## Decisão — o que fazemos agora
 
 **Encerrar a exploração V2.2 atual.** Ambos os níveis estão concluídos com limites documentados. Não se recomenda repetir o mesmo ensaio nem otimizar mais o lançador agora. Isto não torna as campanhas homogéneas nem resolve a pergunta científica.
