@@ -2,6 +2,36 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · **Português**
 
+## Decisão — o que fazemos agora
+
+**Encerrar a exploração V2.2 atual.** Ambos os níveis estão concluídos com limites documentados. Não se recomenda repetir o mesmo ensaio nem otimizar mais o lançador agora. Isto não torna as campanhas homogéneas nem resolve a pergunta científica.
+
+### Resumo num minuto
+
+| Organização | Observação | Decisão proposta |
+| --- | --- | --- |
+| V2 consultiva histórica | Mesmo resultado, maior custo que individual nas comparações disponíveis | Conservar referência; não repetir sem nova hipótese |
+| Dupla V2.2 reduzida | Científica: +18,8 % tokens, +10,1 % tempo; sem correções após revisão | Revisão explícita, rentabilidade não demonstrada |
+| V2.1 paralela | Ainda não medida | Próxima hipótese, não ganho adquirido |
+
+### Destino do tempo e tokens
+
+Na científica 002, MAIN inicial demora 159,910 s; revisão e MAIN final acrescentam 47,711 s, mais cerca de 0,010 s do relé. Individual histórico: 188,560 s; diferença final: 19,070 s. Igualá-lo exigiria retirar **9,2 % do tempo total e 15,8 % dos tokens da dupla** (22 406 tokens), com qualidade igual. Limiares aritméticos perante referência histórica, não poupanças realizáveis demonstradas.
+
+A revisão consome 16 696 tokens. Subtraí-los deixaria 125 098, acima dos 119 388 do individual. Não equivale a ensaio sem revisor: mudaria também contexto e comportamento de MAIN final. Apenas indica que o consultor não explica todo o custo adicional; retomada e releitura do programador também contam.
+
+[PV / metrics](../runs/astra-medium-scientific-v2-2-lean-002/PV.md) · [V1/V2](astra-medium-v1-v2.pt.md).
+
+### Próxima experiência útil
+
+**Proposta: V2.1 com desafio modular e novo controlo V1, Astra médio.** Exemplo de âmbito a aprovar: motor de cálculo de um lado, curvas e interface do outro, contrato de integração prévio. Dois programadores paralelos, integrador e revisor; contribuições isoladas e permissões limitadas. Ambas as organizações recebem requisitos, interfaces e testes idênticos. O individual pode usar a mesma decomposição.
+
+Não alterar retroativamente o desafio monoficheiro. O modular abre nova campanha; resultados anteriores são contexto, não controlo causal. Preparar num lote contrato, testes independentes, fronteiras de escrita, integração e medições; executar depois o piloto autorizado. Sem cadeia de preflights com modelos.
+
+Fixar antes: qualidade pelo menos igual ao individual, tempo até veredicto e tokens de todos os agentes; incluir integração e correções, separando ensaios interrompidos. Menor tempo com mais tokens é compromisso explícito. Um piloto não localiza o limiar: decide se vale financiar repetições equilibradas.
+
+**Aprovação pendente: novo âmbito e orçamento do par V1/V2.1.** Não se deduz teto fiável de quota Plus. Esta síntese não iniciou candidatos nem chamadas a modelos. Não iniciar o piloto sem esse acordo global.
+
 **Ensaio científico 002 aprovado: 9/9 grupos, 57/57 controlos, 141 794 tokens, 207,630 s.** Sem alterações após revisão. A dupla continua mais dispendiosa do que o agente individual científico histórico; comparação exploratória. [V2.2 científica reduzida — ensaio 002 concluído](v2-2-lean-scientific-002.pt.md).
 
 Face ao individual histórico: **+18,8 % de tokens, +10,1 % de tempo**, sem melhoria de resultado nem correções. Face a V2 histórico: **−75,1 % de tokens, −68,0 % de tempo**. A dupla reduz muito o custo adicional coletivo, mas não supera o individual neste caso.

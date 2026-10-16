@@ -2,6 +2,36 @@
 
 **Français** · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
+## Décision — ce que nous faisons maintenant
+
+**Clore l'exploration V2.2 actuelle.** Les deux niveaux sont réalisés, avec leurs limites documentées. Aucun nouvel essai identique ni nouvelle optimisation du lanceur n'est recommandé à ce stade. Cela ne déclare pas les campagnes homogènes ni la question scientifique résolue.
+
+### Le bilan en une minute
+
+| Organisation | Constat | Décision proposée |
+| --- | --- | --- |
+| V2 consultative historique | Même score, coût supérieur au solo dans les comparaisons disponibles | Conserver comme référence, ne pas répéter sans nouvelle hypothèse |
+| V2.2 binôme allégé | Scientifique : +18,8 % tokens, +10,1 % temps ; aucune correction après revue | Relecture explicite, mais rentabilité non démontrée |
+| V2.1 développement parallèle | Pas encore mesuré | Prochaine hypothèse à tester, pas un gain acquis |
+
+### Où le temps et les tokens partent
+
+Sur la scientifique 002, MAIN initial prend 159,910 s ; revue et MAIN final ajoutent 47,711 s, plus environ 0,010 s de relais. Le solo historique prend 188,560 s : l'écart final est 19,070 s. Pour simplement égaler ce témoin, il faudrait retirer **9,2 % du temps total et 15,8 % des tokens du binôme** (22 406 tokens), à qualité identique. Ce sont des seuils arithmétiques par rapport à un témoin historique, pas des gains réalisables démontrés.
+
+La revue seule représente 16 696 tokens. Même sa soustraction comptable laisserait 125 098 tokens, au-dessus des 119 388 du solo. Ce calcul n'est pas un run sans relecteur : enlever la revue changerait aussi le contexte et le comportement de MAIN final. Il montre seulement que le coût n'est pas porté par le seul consultant ; la reprise et la relecture du développeur comptent aussi.
+
+[PV / metrics](../runs/astra-medium-scientific-v2-2-lean-002/PV.md) · [V1/V2](astra-medium-v1-v2.md).
+
+### La bonne expérience suivante
+
+**Proposition : V2.1 sur un défi modulaire, avec un nouveau témoin V1, en Astra moyen.** Exemple de périmètre à approuver : moteur de calcul d'un côté, courbes et interface de l'autre, contrat d'intégration fixé en amont. Deux développeurs en parallèle, un intégrateur et un relecteur ; contributions isolées et droits d'écriture bornés. Les deux organisations reçoivent exactement les mêmes exigences, interfaces et tests. Le solo peut utiliser la même décomposition.
+
+Le défi monofichier actuel ne doit pas être changé rétroactivement. Un défi modulaire ouvre une nouvelle campagne ; les anciens résultats servent de contexte, pas de témoin causal. Préparer en un seul lot le contrat, les tests indépendants, les frontières d'écriture, le protocole d'intégration et les mesures, puis exécuter le pilote autorisé. Pas de série de préflights avec appels modèle.
+
+Critères à fixer avant lancement : qualité au moins égale au solo, délai jusqu'au verdict final et tokens cumulés de tous les agents ; inclure l'intégration, les corrections et les essais interrompus séparément. Une baisse du délai avec hausse des tokens sera un compromis explicite. Un pilote unique ne localise pas un seuil : il détermine si des répétitions équilibrées méritent leur budget.
+
+**Point restant à approuver : périmètre du nouveau défi et budget de la paire V1/V2.1.** Aucun plafond fiable de quota Plus n'est déduit des anciens runs. Aucun nouveau candidat ni appel modèle n'a été lancé pour cette synthèse. Ne pas relancer le pilote sans cet accord global.
+
 **Essai scientifique 002 réussi : 9/9 groupes, 57/57 contrôles, 141 794 tokens, 207,630 s.** Aucun changement après revue. Le binôme reste plus coûteux que le solo scientifique historique ; comparaison exploratoire. [V2.2 scientifique allégée — essai 002 terminé](v2-2-lean-scientific-002.md).
 
 Face au solo historique : **+18,8 % de tokens, +10,1 % de temps**, sans gain de score ni correction. Face à V2 historique : **−75,1 % de tokens, −68,0 % de temps**. Le binôme allégé réduit fortement le surcoût du collectif, mais ne dépasse pas le solo sur ce cas.

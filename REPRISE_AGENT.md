@@ -1,5 +1,16 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 055 : synthèse décisionnelle, aucun run supplémentaire.**
+Lire le début de results/CONCLUSIONS.md : recommandation de clore l'exploration
+V2.2 actuelle et de ne plus optimiser le lanceur sans nouvelle hypothèse.
+Le binôme scientifique devrait réduire son propre temps de 9,2 % et ses tokens
+de 15,8 % pour égaler les références historiques ; calcul descriptif, pas causal.
+Proposition suivante : nouvelle campagne V1/V2.1 sur défi modulaire, Astra moyen,
+deux développeurs parallèles, intégrateur, relecteur ; même contrat/test/interface
+au solo. Périmètre et budget à approuver globalement, puis préparation groupée.
+Ne pas interpréter cette proposition comme autorisation de nouveaux candidats,
+de nouveaux coûts ou d'un changement rétroactif du défi scientifique actuel.
+
 **Dernier état, échange 054 : essai scientifique 002 terminé et vérifié.**
 astra-medium-scientific-v2-2-lean-002 : 9/9 groupes, 57/57 contrôles, trois
 sessions Astra moyen, 141 794 tokens, 207,630 s. Aucun défaut confirmé par REV,
