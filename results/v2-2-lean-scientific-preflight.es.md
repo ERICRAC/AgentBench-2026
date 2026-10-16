@@ -2,7 +2,7 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
-El ensayo real se detuvo antes de crear código: **11 968 tokens, 12,811 s, sin resultado de calculadora**. No fue agotamiento de cuota. Sin reintento. [OBS-002](v2-2-lean-scientific-001.es.md).
+**Ensayo científico 002 aprobado: 9/9 grupos, 57/57 controles, 141 794 tokens, 207,630 s.** Sin cambios tras revisión. La pareja sigue siendo más costosa que el agente solo científico histórico; comparación exploratoria. [V2.2 científica reducida — ensayo 002 terminado](v2-2-lean-scientific-002.es.md).
 
 ## Intercambio 051
 

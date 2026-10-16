@@ -2,7 +2,9 @@
 
 [Français](CONCLUSIONS.md) · **English (UK)** · [Español](CONCLUSIONS.es.md) · [Português](CONCLUSIONS.pt.md)
 
-The real trial stopped before any code: **11,968 tokens, 12.811 s, no calculator result**. This was not quota exhaustion. No retry occurred. [OBS-002](v2-2-lean-scientific-001.en.md).
+**Scientific trial 002 passed: 9/9 groups, 57/57 checks, 141,794 tokens, 207.630 s.** No changes after review. The pair remains costlier than the historical scientific solo; exploratory comparison. [Lean scientific V2.2 — trial 002 completed](v2-2-lean-scientific-002.en.md).
+
+Against historical solo: **+18.8% tokens, +10.1% time**, without a higher score or corrections. Against historical V2: **−75.1% tokens, −68.0% time**. The lean pair greatly reduces team overhead, but does not beat the solo on this case.
 
 **Real lean V2.2 completed: 6/6 groups, 14 checks, 87,775 tokens, 65.964 s.** Target < 100,000 met. Observed reduction, but mandate ambiguity OBS-001 prevents a causal conclusion. [Rapport / Report / Informe / Relatório](v2-2-lean-001.en.md)
 

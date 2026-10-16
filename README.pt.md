@@ -2,7 +2,7 @@
 
 [Français](README.md) · [English (UK)](README.en.md) · [Español](README.es.md) · **Português**
 
-O ensaio real parou antes de produzir código: **11 968 tokens, 12,811 s, sem resultado de calculadora**. Não houve esgotamento de quota. Sem repetição. [OBS-002](results/v2-2-lean-scientific-001.pt.md).
+**Ensaio científico 002 aprovado: 9/9 grupos, 57/57 controlos, 141 794 tokens, 207,630 s.** Sem alterações após revisão. A dupla continua mais dispendiosa do que o agente individual científico histórico; comparação exploratória. [V2.2 científica reduzida — ensaio 002 concluído](results/v2-2-lean-scientific-002.pt.md).
 
 [Retomar noutro chat — instrução canónica do agente (francês)](REPRISE_AGENT.md)
 

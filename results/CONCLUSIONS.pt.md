@@ -2,7 +2,9 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · [Español](CONCLUSIONS.es.md) · **Português**
 
-O ensaio real parou antes de produzir código: **11 968 tokens, 12,811 s, sem resultado de calculadora**. Não houve esgotamento de quota. Sem repetição. [OBS-002](v2-2-lean-scientific-001.pt.md).
+**Ensaio científico 002 aprovado: 9/9 grupos, 57/57 controlos, 141 794 tokens, 207,630 s.** Sem alterações após revisão. A dupla continua mais dispendiosa do que o agente individual científico histórico; comparação exploratória. [V2.2 científica reduzida — ensaio 002 concluído](v2-2-lean-scientific-002.pt.md).
+
+Face ao individual histórico: **+18,8 % de tokens, +10,1 % de tempo**, sem melhoria de resultado nem correções. Face a V2 histórico: **−75,1 % de tokens, −68,0 % de tempo**. A dupla reduz muito o custo adicional coletivo, mas não supera o individual neste caso.
 
 **V2.2 leve real concluída: 6/6 grupos, 14 controlos, 87 775 tokens, 65,964 s.** Objetivo < 100 000 atingido. Redução observada, mas ambiguidade do mandato OBS-001: sem conclusão causal. [Rapport / Report / Informe / Relatório](v2-2-lean-001.pt.md)
 

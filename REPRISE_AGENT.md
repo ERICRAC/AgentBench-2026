@@ -1,5 +1,21 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**Dernier état, échange 054 : essai scientifique 002 terminé et vérifié.**
+astra-medium-scientific-v2-2-lean-002 : 9/9 groupes, 57/57 contrôles, trois
+sessions Astra moyen, 141 794 tokens, 207,630 s. Aucun défaut confirmé par REV,
+aucun changement après revue ; initial/final identiques et vérifiés séparément.
+78 contrôles locaux du candidat capturés, distincts de la suite indépendante.
+OBS-002 ne se reproduit pas. Code 140cae6, gel 4b3f887, campagne lean-003.
+[Rapport](results/v2-2-lean-scientific-002.md), PV, prompts, traces et coûts publiés.
+Comparaison exploratoire scientifique : +18,8 % tokens / +10,1 % temps face au
+solo historique ; −75,1 % / −68,0 % face à V2 historique, même score. Pas de
+gain collectif démontré, conditions différentes. Essai interrompu 001 conservé :
+11 968 tokens séparés ; sous-total scientifique lean 001+002 = 153 762 tokens,
+pas coût global de campagne. Aucun processus actif ni nouveau lancement autorisé.
+Ne pas relancer 001 ou 002 : prochaine étape proposée, analyse avant tout autre
+budget. Les instructions de lancement ci-dessous sont historiques et révoquées
+par l'achèvement de leur tentative, pas des autorisations de recommencer.
+
 **Dernier état, échange 053 : OBS-002 corrigé pour une future tentative 002.**
 Nouveau lanceur scripts/run_v2_2_lean_scientific_live_002.py, manifeste gelé
 governance/v2-2-lean-scientific-002.json et trois nouveaux mandats 002 : accord

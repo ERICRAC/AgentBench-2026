@@ -2,7 +2,7 @@
 
 [Français](README.md) · **English (UK)** · [Español](README.es.md) · [Português](README.pt.md)
 
-The real trial stopped before any code: **11,968 tokens, 12.811 s, no calculator result**. This was not quota exhaustion. No retry occurred. [OBS-002](results/v2-2-lean-scientific-001.en.md).
+**Scientific trial 002 passed: 9/9 groups, 57/57 checks, 141,794 tokens, 207.630 s.** No changes after review. The pair remains costlier than the historical scientific solo; exploratory comparison. [Lean scientific V2.2 — trial 002 completed](results/v2-2-lean-scientific-002.en.md).
 
 [Resume in a new chat — canonical agent handover (French)](REPRISE_AGENT.md)
 

@@ -1,0 +1,17 @@
+{
+  "config_encoding": "UTF-8 json.dumps(config, ensure_ascii=False, sort_keys=True), no trailing newline",
+  "phases": {
+    "main_initial": {
+      "prompt_sha256": "f3c19f8fca6e7ceefb81011c4ae0840f0b1202f0896238b0f0117bffb5a980a4",
+      "config_sha256": "47df52f5d53fbe83bf6f8a2c8e453eeb60139007eb1f0c2a6299466a70e89985"
+    },
+    "review": {
+      "prompt_sha256": "9cb301cbcd4a3219203ade00b3788fedcff90a1b6205d7811e14754ce912a24a",
+      "config_sha256": "d8ba1c0021622f264f6c2a0f7a0d6828e3fa6fbe591b889dc063e5132b9f53a0"
+    },
+    "main_final": {
+      "prompt_sha256": "f3021a650a86bc6ad6b1f6facf98858e3b4eb92004c2b017b417b97ad89b2667",
+      "config_sha256": "47df52f5d53fbe83bf6f8a2c8e453eeb60139007eb1f0c2a6299466a70e89985"
+    }
+  }
+}

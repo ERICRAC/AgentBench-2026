@@ -2,7 +2,7 @@
 
 [Français](v2-2-lean-scientific-preflight.md) · [English (UK)](v2-2-lean-scientific-preflight.en.md) · [Español](v2-2-lean-scientific-preflight.es.md) · [Português](v2-2-lean-scientific-preflight.pt.md)
 
-L'essai réel est arrêté avant tout code : **11 968 tokens, 12,811 s, aucun résultat de calculatrice**. Ce n'est pas un épuisement de quota. Aucun retry effectué. [OBS-002](v2-2-lean-scientific-001.md).
+**Essai scientifique 002 réussi : 9/9 groupes, 57/57 contrôles, 141 794 tokens, 207,630 s.** Aucun changement après revue. Le binôme reste plus coûteux que le solo scientifique historique ; comparaison exploratoire. [V2.2 scientifique allégée — essai 002 terminé](v2-2-lean-scientific-002.md).
 
 ## Échange 051
 

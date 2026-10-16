@@ -2,7 +2,9 @@
 
 [Français](CONCLUSIONS.md) · [English (UK)](CONCLUSIONS.en.md) · **Español** · [Português](CONCLUSIONS.pt.md)
 
-El ensayo real se detuvo antes de crear código: **11 968 tokens, 12,811 s, sin resultado de calculadora**. No fue agotamiento de cuota. Sin reintento. [OBS-002](v2-2-lean-scientific-001.es.md).
+**Ensayo científico 002 aprobado: 9/9 grupos, 57/57 controles, 141 794 tokens, 207,630 s.** Sin cambios tras revisión. La pareja sigue siendo más costosa que el agente solo científico histórico; comparación exploratoria. [V2.2 científica reducida — ensayo 002 terminado](v2-2-lean-scientific-002.es.md).
+
+Frente al solo histórico: **+18,8 % de tokens, +10,1 % de tiempo**, sin mejora de resultado ni correcciones. Frente a V2 histórico: **−75,1 % de tokens, −68,0 % de tiempo**. La pareja reduce mucho el sobrecoste colectivo, pero no supera al solo en este caso.
 
 **V2.2 ligera real terminada: 6/6 grupos, 14 controles, 87 775 tokens, 65,964 s.** Objetivo < 100 000 alcanzado. Reducción observada, pero ambigüedad de mandato OBS-001: sin conclusión causal. [Rapport / Report / Informe / Relatório](v2-2-lean-001.es.md)
 
