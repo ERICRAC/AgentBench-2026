@@ -2,6 +2,8 @@
 
 [Français](parallel-pilot.md) · [English (UK)](parallel-pilot.en.md) · [Español](parallel-pilot.es.md) · [Português](parallel-pilot.pt.md)
 
+**Technical preparation available** — The specification, ten test groups and isolated simulation are now delivered. Two synthetic variants pass and ten injected faults are detected. These results calibrate the apparatus; no model candidate was launched. Authenticated transport still needs adaptation before freeze. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.en.md).
+
 ## Preparation decision
 
 **Offline preparation; proposed protocol, not frozen. No new candidate launched.**
@@ -33,22 +35,22 @@ Interfaces to specify:
 - `python cli.py batch INPUT.json OUTPUT.json`: invalid input structure returns a non-zero exit and a message without traceback. Individual expression errors remain in the results; other jobs continue.
 - `python cli.py plot EXPRESSION OUTPUT.svg --min A --max B --samples N`: sample and export to the requested file.
 
-Before freezing, specify accepted types, non-finite numbers, numeric bounds, size limits, exit codes, file overwriting and domain errors. The verifier must not invent these choices.
+Types, limits and errors are defined in the new [specification](../challenges/modular-calculator-draft/SPEC.md), still subject to expert review before freezing.
 
-## Planned independent checks
+## Draft independent suite groups
 
-Unchecked items are **planned requirements, not executed tests or a score**.
+Checked items are implemented groups calibrated on fixtures, **not candidate verdicts**. The catalogue details coverage and limitations, particularly M10.
 
-- [ ] M01: standard imports, deliverables and prohibited mechanisms.
-- [ ] M02: four operations, precedence, parentheses, powers and signs.
-- [ ] M03: functions, constants, variable and forbidden names.
-- [ ] M04: invalid syntax, domains and non-finite results.
-- [ ] M05: bounds, point counts and sampling discontinuities.
-- [ ] M06: parseable SVG, escaped title and no bridge across a discontinuity.
-- [ ] M07: mixed success/failure batch, preserved order and continuation.
-- [ ] M08: invalid JSON structure and CLI error messages.
-- [ ] M09: real engine → batch and engine → curve → SVG integration.
-- [ ] M10: documented API, runnable examples and module responsibilities.
+- [x] M01: standard imports, deliverables and prohibited mechanisms.
+- [x] M02: four operations, precedence, parentheses, powers and signs.
+- [x] M03: functions, constants, variable and forbidden names.
+- [x] M04: invalid syntax, domains and non-finite results.
+- [x] M05: bounds, point counts and sampling discontinuities.
+- [x] M06: parseable SVG, escaped title and no bridge across a discontinuity.
+- [x] M07: mixed success/failure batch, preserved order and continuation.
+- [x] M08: invalid JSON structure and CLI error messages.
+- [x] M09: real engine → batch and engine → curve → SVG integration.
+- [x] M10: documented API, runnable examples and module responsibilities.
 
 Publish elementary cases and counts after implementing the suite. Calibrate its loader on standard Python constructions and equivalent implementations; inject known faults to test detection. Reserve an independent robustness evaluation without calling already-public tests hidden. Historical 6/9 groups remain unchanged.
 
@@ -87,4 +89,4 @@ Four unavailable links remain in immutable candidate messages. Published replace
 
 ## Delivery status
 
-Scope and budget proposed; no new frozen suite, no ready parallel launcher, no model call. Next technical delivery: complete specification, calibrated suite and simulated isolated transport together, before the launch checkpoint.
+The specification, ten test groups and isolated simulation are now delivered. Two synthetic variants pass and ten injected faults are detected. These results calibrate the apparatus; no model candidate was launched. Authenticated transport still needs adaptation before freeze. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.en.md).

@@ -2,6 +2,8 @@
 
 [Français](parallel-pilot.md) · [English (UK)](parallel-pilot.en.md) · [Español](parallel-pilot.es.md) · [Português](parallel-pilot.pt.md)
 
+**Preparação técnica disponível** — A especificação, dez grupos de testes e simulação isolada foram entregues. Passam duas variantes sintéticas e são detetados dez defeitos injetados. Isto calibra o dispositivo; nenhum candidato modelo foi executado. Falta adaptar o transporte autenticado antes do congelamento. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.pt.md).
+
 ## Decisão de preparação
 
 **Preparação sem modelos; protocolo proposto, não congelado. Nenhum novo candidato executado.**
@@ -33,22 +35,22 @@ Interfaces a especificar:
 - `python cli.py batch INPUT.json OUTPUT.json`: estrutura inválida produz saída não nula e mensagem sem traceback. Erros de expressões ficam nos resultados; as restantes continuam.
 - `python cli.py plot EXPRESSION OUTPUT.svg --min A --max B --samples N`: amostragem e exportação para o ficheiro escolhido.
 
-Antes do congelamento: fixar tipos, números não finitos, limites numéricos e de tamanho, códigos de saída, substituição de ficheiros e erros de domínio. O verificador não deve inventar estas escolhas.
+Tipos, limites e erros definidos na nova [especificação](../challenges/modular-calculator-draft/SPEC.md), ainda sujeita a revisão especializada antes do congelamento.
 
-## Controlos independentes previstos
+## Grupos da suite independente em rascunho
 
-Caixas por marcar: **requisitos previstos, não testes executados nem pontuação**.
+Caixas marcadas: grupos implementados e calibrados com fixtures, **sem veredictos de candidatos**. O catálogo detalha cobertura e limites, sobretudo M10.
 
-- [ ] M01: importação padrão, entregáveis e mecanismos proibidos.
-- [ ] M02: quatro operações, precedências, parênteses, potências e sinais.
-- [ ] M03: funções, constantes, variável e nomes proibidos.
-- [ ] M04: sintaxe inválida, domínios e resultados não finitos.
-- [ ] M05: limites, número de pontos e descontinuidades.
-- [ ] M06: SVG analisável, título escapado e ausência de pontes sobre descontinuidades.
-- [ ] M07: lote misto, ordem preservada e continuação após erro.
-- [ ] M08: estrutura JSON inválida e erros da CLI.
-- [ ] M09: integração real motor → lote e motor → curva → SVG.
-- [ ] M10: API documentada, exemplos executáveis e responsabilidades.
+- [x] M01: importação padrão, entregáveis e mecanismos proibidos.
+- [x] M02: quatro operações, precedências, parênteses, potências e sinais.
+- [x] M03: funções, constantes, variável e nomes proibidos.
+- [x] M04: sintaxe inválida, domínios e resultados não finitos.
+- [x] M05: limites, número de pontos e descontinuidades.
+- [x] M06: SVG analisável, título escapado e ausência de pontes sobre descontinuidades.
+- [x] M07: lote misto, ordem preservada e continuação após erro.
+- [x] M08: estrutura JSON inválida e erros da CLI.
+- [x] M09: integração real motor → lote e motor → curva → SVG.
+- [x] M10: API documentada, exemplos executáveis e responsabilidades.
 
 Publicar casos elementares e contagens após implementar a suite. Calibrar o carregador com construções Python padrão e implementações equivalentes; injetar defeitos conhecidos para testar a deteção. Reservar avaliação independente de robustez sem chamar ocultos aos testes públicos. Os 6/9 grupos históricos não mudam.
 
@@ -87,4 +89,4 @@ Quatro ligações indisponíveis permanecem em mensagens históricas imutáveis.
 
 ## Estado
 
-Âmbito e orçamento propostos; nenhuma nova suite congelada, lançador paralelo pronto ou chamada a modelos. Próxima entrega técnica conjunta: especificação completa, suite calibrada e transporte isolado simulado antes do lançamento.
+A especificação, dez grupos de testes e simulação isolada foram entregues. Passam duas variantes sintéticas e são detetados dez defeitos injetados. Isto calibra o dispositivo; nenhum candidato modelo foi executado. Falta adaptar o transporte autenticado antes do congelamento. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.pt.md).

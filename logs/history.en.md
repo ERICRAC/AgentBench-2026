@@ -366,3 +366,7 @@ Project review requested: two reviewers outside candidates, seven run costs reco
 ## Exchange 057
 
 Added local navigation audit: four historical unavailable links preserved, alternatives published. The four reported files exist; internal URLs come from VS Code rendering. Light V2.1 draft: modules, interfaces, ten planned check groups, isolation and a proposed nominal 300,000-token pair budget (not a hard cap). No model calls. Suite and transport remain to prepare before freeze and launch approval. [Next pilot and WSL link help](../docs/parallel-pilot.en.md).
+
+## Exchange 058
+
+Offline technical preparation: new modular specification, M01–M10 catalogue, independent suite, calibration with two passing variants and ten detected mutants. Two isolated developers followed by integration simulated successfully with approved local bubblewrap execution; initial outer-sandbox refusal documented. 152 maintenance tests passed. Historical runs and governance unchanged. Authenticated transport and freeze remain. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.en.md).

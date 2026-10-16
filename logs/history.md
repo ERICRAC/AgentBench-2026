@@ -452,3 +452,7 @@ Expertise du projet demandée : deux relectures hors candidats, coûts de sept r
 ## Échange 057
 
 Audit local de navigation ajouté : quatre liens historiques indisponibles conservés, alternatives publiées. Les quatre fichiers signalés existent ; les adresses internes viennent du rendu VS Code. Brouillon V2.1 légère : modules, interfaces, dix groupes de contrôles prévus, isolation et budget proposé de 300 000 tokens nominaux pour la paire (pas un plafond). Aucun appel modèle. Suite et transport à préparer avant gel et accord de lancement. [Prochain pilote et aide pour les liens WSL](../docs/parallel-pilot.md).
+
+## Échange 058
+
+Préparation technique hors modèle : nouvelle spécification modulaire, catalogue M01–M10, suite indépendante, calibration sur deux variantes et dix mutants détectés. Simulation de deux développeurs isolés puis intégration réussie après autorisation locale d’exécuter bubblewrap ; refus initial du bac englobant signalé. 152 tests de maintenance réussis. Aucun run historique ni gouvernance modifié. Transport authentifié et gel restent à réaliser. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.md).

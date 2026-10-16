@@ -2,6 +2,8 @@
 
 [Français](parallel-pilot.md) · [English (UK)](parallel-pilot.en.md) · [Español](parallel-pilot.es.md) · [Português](parallel-pilot.pt.md)
 
+**Preparación técnica disponible** — La especificación, diez grupos de pruebas y simulación aislada están entregados. Pasan dos variantes sintéticas y se detectan diez defectos inyectados. Esto calibra el dispositivo; ningún candidato modelo fue ejecutado. Falta adaptar el transporte autenticado antes del cierre. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.es.md).
+
 ## Decisión de preparación
 
 **Preparación sin modelos; protocolo propuesto, no congelado. Ningún candidato nuevo ejecutado.**
@@ -33,22 +35,22 @@ Interfaces por especificar:
 - `python cli.py batch INPUT.json OUTPUT.json`: estructura inválida, salida no nula y mensaje sin traceback. Los errores de expresiones individuales permanecen en los resultados; las demás continúan.
 - `python cli.py plot EXPRESSION OUTPUT.svg --min A --max B --samples N`: muestreo y exportación al archivo solicitado.
 
-Antes del cierre: fijar tipos, números no finitos, límites numéricos y de tamaño, códigos de salida, sobrescritura y errores de dominio. El verificador no debe inventar estas decisiones.
+Tipos, límites y errores definidos en la nueva [especificación](../challenges/modular-calculator-draft/SPEC.md), pendiente de revisión experta antes del cierre.
 
-## Controles independientes previstos
+## Grupos de la suite independiente en borrador
 
-Casillas pendientes: **requisitos previstos, no pruebas ejecutadas ni puntuación**.
+Casillas marcadas: grupos implementados y calibrados con fixtures, **sin veredictos de candidatos**. El catálogo detalla cobertura y límites, especialmente M10.
 
-- [ ] M01: importación estándar, entregables y mecanismos prohibidos.
-- [ ] M02: cuatro operaciones, prioridades, paréntesis, potencias y signos.
-- [ ] M03: funciones, constantes, variable y nombres prohibidos.
-- [ ] M04: sintaxis inválida, dominios y resultados no finitos.
-- [ ] M05: límites, número de puntos y discontinuidades.
-- [ ] M06: SVG analizable, título escapado y sin puente sobre discontinuidades.
-- [ ] M07: lote mixto, orden conservado y continuación tras error.
-- [ ] M08: estructura JSON inválida y errores de CLI.
-- [ ] M09: integración real motor → lote y motor → curva → SVG.
-- [ ] M10: API documentada, ejemplos ejecutables y responsabilidades.
+- [x] M01: importación estándar, entregables y mecanismos prohibidos.
+- [x] M02: cuatro operaciones, prioridades, paréntesis, potencias y signos.
+- [x] M03: funciones, constantes, variable y nombres prohibidos.
+- [x] M04: sintaxis inválida, dominios y resultados no finitos.
+- [x] M05: límites, número de puntos y discontinuidades.
+- [x] M06: SVG analizable, título escapado y sin puente sobre discontinuidades.
+- [x] M07: lote mixto, orden conservado y continuación tras error.
+- [x] M08: estructura JSON inválida y errores de CLI.
+- [x] M09: integración real motor → lote y motor → curva → SVG.
+- [x] M10: API documentada, ejemplos ejecutables y responsabilidades.
 
 Publicar casos elementales y recuentos tras implementar la suite. Calibrar su cargador con construcciones Python estándar e implementaciones equivalentes; inyectar fallos conocidos para comprobar detección. Reservar una evaluación independiente de robustez sin presentar las pruebas públicas como ocultas. Los 6/9 grupos históricos no cambian.
 
@@ -87,4 +89,4 @@ Cuatro enlaces inaccesibles permanecen en mensajes históricos inmutables. Alter
 
 ## Estado
 
-Alcance y presupuesto propuestos; sin nueva suite congelada, lanzador paralelo listo ni llamadas a modelos. Próxima entrega técnica conjunta: especificación completa, suite calibrada y transporte aislado simulado antes del punto de lanzamiento.
+La especificación, diez grupos de pruebas y simulación aislada están entregados. Pasan dos variantes sintéticas y se detectan diez defectos inyectados. Esto calibra el dispositivo; ningún candidato modelo fue ejecutado. Falta adaptar el transporte autenticado antes del cierre. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.es.md).

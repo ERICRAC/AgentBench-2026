@@ -1,5 +1,18 @@
 # Reprise opérationnelle — AgentBench 2026
 
+**État actuel, échange 058 : préparation technique hors modèle livrée.**
+Lire results/parallel-pilot-preparation.md et son JSON de preuves.
+Nouveau défi brouillon challenges/modular-calculator-draft : SPEC, catalogue,
+suite de dix groupes ; deux variantes synthétiques passent, dix mutants sont
+détectés. Les fixtures de calibration ne doivent jamais être remises aux candidats.
+scripts/preflight_parallel_pilot.py --simulate : deux processus fictifs isolés,
+barrière, assemblage, intégration ; exécution bubblewrap autorisée hors du bac
+englobant après refus initial. Aucun modèle, aucun score candidat.
+152 tests de maintenance réussis. Prochain travail : transport authentifié avec
+deux écrivains, mandats, capture des compteurs/échanges, expertise puis gel.
+Ni le transport modèle ni l'autorisation de lancement ne sont acquis ; budget
+reste proposé, pas garanti. Aucun changement des anciens runs ou gouvernance.
+
 **État actuel, échange 057 : liens audités et pilote parallèle en brouillon.**
 Lire docs/parallel-pilot.md : nouveau périmètre modulaire avec lots, deux
 développeurs dont un intègre, témoin solo contemporain, Astra moyen.

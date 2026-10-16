@@ -362,3 +362,7 @@ Peritaje solicitado: dos revisores fuera de candidatos, costes de siete runs rec
 ## Intercambio 057
 
 Auditoría local de navegación añadida: cuatro enlaces históricos inaccesibles conservados, alternativas publicadas. Los cuatro archivos señalados existen; las URL internas proceden de VS Code. Borrador V2.1 ligera: módulos, interfaces, diez grupos previstos, aislamiento y presupuesto nominal propuesto de 300 000 tokens por pareja (sin techo estricto). Sin llamadas a modelos. Suite y transporte pendientes antes del cierre y autorización. [Próximo piloto y ayuda con enlaces WSL](../docs/parallel-pilot.es.md).
+
+## Intercambio 058
+
+Preparación sin modelos: nueva especificación modular, catálogo M01–M10, suite independiente, calibración con dos variantes y diez mutantes detectados. Simulación de dos desarrolladores aislados e integración aprobada con ejecución local autorizada de bubblewrap; rechazo inicial del aislamiento exterior documentado. 152 tests de mantenimiento aprobados. Runs históricos y gobernanza intactos. Pendientes transporte autenticado y cierre. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.es.md).

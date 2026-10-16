@@ -2,6 +2,8 @@
 
 [Français](parallel-pilot.md) · [English (UK)](parallel-pilot.en.md) · [Español](parallel-pilot.es.md) · [Português](parallel-pilot.pt.md)
 
+**Préparation technique disponible** — La spécification, les dix groupes de tests et la simulation isolée sont maintenant livrés. Deux variantes synthétiques passent et dix défauts injectés sont détectés. Ces résultats calibrent le dispositif ; aucun candidat modèle n’a été lancé. Le transport authentifié reste à adapter avant gel. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.md).
+
 ## Décision de préparation
 
 **Préparation hors modèle, protocole proposé et non gelé. Aucun nouveau candidat lancé.**
@@ -34,22 +36,22 @@ Interfaces à fixer dans la nouvelle spécification :
 - `python cli.py batch INPUT.json OUTPUT.json` ; entrées structurellement invalides : sortie non nulle et message sans traceback. Erreur d'une expression : conservée dans le résultat, autres jobs exécutés.
 - `python cli.py plot EXPRESSION OUTPUT.svg --min A --max B --samples N` ; échantillonnage puis export dans un fichier choisi par l'utilisateur.
 
-Avant gel : préciser types admis, nombres non finis, bornes numériques, limites de taille, codes de sortie, écrasement de fichier et erreurs de domaine. Ces points ne doivent pas être laissés à l'imagination du vérificateur.
+Les types, limites et erreurs sont définis dans la nouvelle [spécification](../challenges/modular-calculator-draft/SPEC.md), encore soumise à expertise avant gel.
 
-## Liste des contrôles à transformer en suite indépendante
+## Groupes de la suite indépendante en brouillon
 
-Cases non cochées : **exigences prévues, pas tests exécutés ni score annoncé**.
+Cases cochées : groupes implémentés et calibrés sur des fixtures, **aucun verdict candidat**. Le catalogue précise la couverture et les limites, notamment M10.
 
-- [ ] M01 : import standard, livrables et interdiction des mécanismes dangereux.
-- [ ] M02 : quatre opérations, priorités, parenthèses, puissance et signes.
-- [ ] M03 : fonctions, constantes, variable et noms interdits.
-- [ ] M04 : syntaxe invalide, domaines et résultats non finis.
-- [ ] M05 : bornes, nombre de points et discontinuités d'échantillonnage.
-- [ ] M06 : SVG analysable, échappement de titre et absence de pont sur une discontinuité.
-- [ ] M07 : lot mixte réussi/échoué, ordre préservé et poursuite après erreur.
-- [ ] M08 : structure JSON invalide et messages d'erreur de la CLI.
-- [ ] M09 : intégration réelle moteur → lot et moteur → courbe → SVG.
-- [ ] M10 : API documentée, exemples exécutables et responsabilités des modules.
+- [x] M01 : import standard, livrables et interdiction des mécanismes dangereux.
+- [x] M02 : quatre opérations, priorités, parenthèses, puissance et signes.
+- [x] M03 : fonctions, constantes, variable et noms interdits.
+- [x] M04 : syntaxe invalide, domaines et résultats non finis.
+- [x] M05 : bornes, nombre de points et discontinuités d'échantillonnage.
+- [x] M06 : SVG analysable, échappement de titre et absence de pont sur une discontinuité.
+- [x] M07 : lot mixte réussi/échoué, ordre préservé et poursuite après erreur.
+- [x] M08 : structure JSON invalide et messages d'erreur de la CLI.
+- [x] M09 : intégration réelle moteur → lot et moteur → courbe → SVG.
+- [x] M10 : API documentée, exemples exécutables et responsabilités des modules.
 
 Publier les cas élémentaires et leur nombre après écriture de la suite. Calibrer le chargeur avec des constructions Python standard et des variantes équivalentes ; injecter des défauts connus pour vérifier que les contrôles les détectent. Réserver une évaluation indépendante de robustesse, sans prétendre que les tests déjà publics sont cachés. Aucun nouveau score ne remplacera les anciens 6/9 groupes.
 
@@ -88,4 +90,4 @@ Quatre liens inutilisables restent dans des messages candidats historiques, pré
 
 ## État de livraison
 
-Contrat et budget proposés ; aucune suite nouvelle figée, aucun lanceur parallèle prêt, aucun appel modèle. Prochain travail technique : spécification complète, suite calibrée et transport isolé simulé, livrés ensemble avant le jalon de lancement.
+La spécification, les dix groupes de tests et la simulation isolée sont maintenant livrés. Deux variantes synthétiques passent et dix défauts injectés sont détectés. Ces résultats calibrent le dispositif ; aucun candidat modèle n’a été lancé. Le transport authentifié reste à adapter avant gel. [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.md).

@@ -62,3 +62,9 @@ These 71 checks describe current coverage, not absolute quality. They do not
 replace edge-case analysis, exploratory checks or statistical repetitions. A
 new official assertion would define a new suite and campaign; historical
 results would remain attached to this version.
+
+## Technical preparation available — M01–M10
+
+The specification, ten test groups and isolated simulation are now delivered. Two synthetic variants pass and ten injected faults are detected. These results calibrate the apparatus; no model candidate was launched. Authenticated transport still needs adaptation before freeze.
+
+[Catalogue JSON M01–M10](../challenges/modular-calculator-draft/catalogue.json) · [Tests Python](../challenges/modular-calculator-draft/tests/test_acceptance.py) · [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.en.md).

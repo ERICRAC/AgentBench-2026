@@ -152,3 +152,9 @@ ne remplacent ni l'analyse des cas limites, ni les contrôles exploratoires, ni
 les répétitions statistiques. Une nouvelle assertion officielle changerait la
 suite et imposerait une nouvelle campagne ; les résultats existants resteraient
 liés à la version ci-dessus.
+
+## Préparation technique disponible — M01–M10
+
+La spécification, les dix groupes de tests et la simulation isolée sont maintenant livrés. Deux variantes synthétiques passent et dix défauts injectés sont détectés. Ces résultats calibrent le dispositif ; aucun candidat modèle n’a été lancé. Le transport authentifié reste à adapter avant gel.
+
+[Catalogue JSON M01–M10](../challenges/modular-calculator-draft/catalogue.json) · [Tests Python](../challenges/modular-calculator-draft/tests/test_acceptance.py) · [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.md).

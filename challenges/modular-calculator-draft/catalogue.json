@@ -1,0 +1,100 @@
+{
+  "status": "draft_not_frozen",
+  "score_unit": "10 unittest groups, not a count of independent experiments or all assertions",
+  "suite": "tests/test_acceptance.py",
+  "groups": {
+    "M01": [
+      "Four deliverables",
+      "AST scan of three modules: forbidden direct/attribute calls and non-standard imports; not a security sandbox"
+    ],
+    "M02": [
+      "2+3=5",
+      "8-3=5",
+      "2*3=6",
+      "9/2=4.5",
+      "2+3*4=14",
+      "(2+3)*4=20",
+      "2^3^2=512",
+      "-2^2=-4",
+      "2^-2=0.25",
+      "+2=2"
+    ],
+    "M03": [
+      "sin(pi/2)=1",
+      "cos(0)+tan(0)=1",
+      "asin(1)+acos(1)+atan(0)=pi/2",
+      "sqrt(9)+ln(e)+log10(100)=6",
+      "exp(0)+abs(-3)=4",
+      "1e-3+2E2=200.001",
+      "x^2 with x=3 gives 9",
+      "Reject missing x, unknown name, attribute, two function arguments, import, list, comparison"
+    ],
+    "M04": [
+      "Reject empty/blank, 2+, 1/0, sqrt(-1), exp(1000), complex result, infinity literal",
+      "Reject length 4097 and parenthesis depth 65",
+      "Reject boolean/non-finite/string x, other variable, non-dictionary variables",
+      "Reject non-string expression",
+      "Accept sum of 500 ones",
+      "Accept 32 nested parentheses"
+    ],
+    "M05": [
+      "1/x at -1,0,1: endpoints and None at zero",
+      "201 default samples",
+      "Entirely undefined curve allowed",
+      "Reject equal bounds, 1/1002/bool samples, infinite bound, malformed expression"
+    ],
+    "M06": [
+      "SVG namespace, positive dimensions and viewBox, escaped title, no active elements/event/href attributes",
+      "Exactly two two-point segments across one None",
+      "Increasing x and inverted y orientation; finite coordinates inside viewBox",
+      "Constant series visible",
+      "Empty and wholly undefined series have no curve"
+    ],
+    "M07": [
+      "Mixed six-job batch: 2+3,1/0,x^2,empty,2+,7",
+      "Order, exact result keys, boolean status, finite float values, nonempty error messages",
+      "Inputs unchanged",
+      "Empty batch",
+      "Reject non-list, missing key, non-string expression, unknown key, bool x,101 jobs"
+    ],
+    "M08": [
+      "Malformed JSON, non-list,missing expression: code2,stderr,no traceback,existing output preserved",
+      "Unknown command,missing input,reversed plot bounds: code2 and readable error",
+      "--help code0"
+    ],
+    "M09": [
+      "CLI mixed batch sin(pi/2),1/0,x+1 with x4",
+      "CLI plot 1/x on five points: two output segments",
+      "CLI executes from a different working directory"
+    ],
+    "M10": [
+      "README API/module/command/limit vocabulary",
+      "Four public API docstrings nonempty"
+    ]
+  },
+  "coverage_limits": [
+    "Static code scan is not a malicious-code detector",
+    "M10 checks presence, not explanation quality or executable documentation examples",
+    "No hidden tests are claimed",
+    "Not all boundary combinations are covered; review before freeze",
+    "No score exists for a model candidate"
+  ],
+  "calibration": {
+    "passing_variants": [
+      "Normal imports with dataclass and sibling import, polyline renderer",
+      "Equivalent absolute M/L path renderer"
+    ],
+    "faults": [
+      "M01 forbidden compile call",
+      "M02 addition changed to subtraction",
+      "M03 pi changed to zero",
+      "M04 expression limit removed",
+      "M05 gaps replaced by zero",
+      "M06 segments bridged",
+      "M07 error marked successful",
+      "M08 error exit becomes zero",
+      "M09 CLI ignores requested samples",
+      "M10 missing API name"
+    ]
+  }
+}

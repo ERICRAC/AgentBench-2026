@@ -57,3 +57,9 @@ O [catálogo francês](acceptance-tests.md) detalha as 71 entradas e resultados.
 Os 71 controlos descrevem a cobertura atual, não uma qualidade absoluta. Não
 substituem análises exploratórias nem repetições estatísticas. Uma nova asserção
 oficial definiria outra suite e outra campanha.
+
+## Preparação técnica disponível — M01–M10
+
+A especificação, dez grupos de testes e simulação isolada foram entregues. Passam duas variantes sintéticas e são detetados dez defeitos injetados. Isto calibra o dispositivo; nenhum candidato modelo foi executado. Falta adaptar o transporte autenticado antes do congelamento.
+
+[Catalogue JSON M01–M10](../challenges/modular-calculator-draft/catalogue.json) · [Tests Python](../challenges/modular-calculator-draft/tests/test_acceptance.py) · [Rapport / Report / Informe / Relatório](../results/parallel-pilot-preparation.pt.md).

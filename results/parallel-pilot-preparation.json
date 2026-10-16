@@ -1,0 +1,97 @@
+{
+  "status": "offline_preparation_passed_not_frozen",
+  "model_calls": 0,
+  "official_candidate_verdict": null,
+  "calibration": {
+    "command": "python3 -B -m unittest tests/test_modular_acceptance.py tests/test_parallel_pilot.py",
+    "unit_tests_passed": 7,
+    "passing_synthetic_variants": 2,
+    "injected_faults_detected": 10,
+    "scope": "Verifier calibration only; not candidate scores or exhaustive quality evaluation"
+  },
+  "simulation": {
+    "status": "passed",
+    "kind": "local_isolated_process_simulation",
+    "model_calls": 0,
+    "official_verdict": null,
+    "usage": null,
+    "protocol_frozen": false,
+    "live_authorized": false,
+    "sessions": [
+      {
+        "role": "DEV-A",
+        "started_relative_s": 0.0021048560010967776,
+        "completion_observed_relative_s": 0.1252123869926436,
+        "checks": {
+          "own_contract_read": true,
+          "peer_read_denied": true,
+          "peer_write_denied": true,
+          "symlink_escape_denied": true,
+          "symlink_write_denied": true,
+          "contract_write_denied": true
+        },
+        "sha256": {
+          "engine.py": "deb545947aa3d83e163eb14c89ce6ccadc5d4aa7a1e6d708ef99556cae093755"
+        },
+        "usage": null
+      },
+      {
+        "role": "DEV-B",
+        "started_relative_s": 0.0027199509931961074,
+        "completion_observed_relative_s": 0.1255591199878836,
+        "checks": {
+          "own_contract_read": true,
+          "peer_read_denied": true,
+          "peer_write_denied": true,
+          "symlink_escape_denied": true,
+          "symlink_write_denied": true,
+          "contract_write_denied": true
+        },
+        "sha256": {
+          "README.md": "f9993f2ecb3f2a94a9a7a273ef2236efeef831bf553e8546d35ac9e72ddf49c6",
+          "cli.py": "55b058118c065d0a096d31bd13fe16f462edf2ce5af1aae9e8940e4f12333c2f",
+          "presentation.py": "50a4671b037e4380b832011a8d0453b1926168759ee5ba35996e02a6f3373dab"
+        },
+        "usage": null
+      }
+    ],
+    "both_ready_before_release": true,
+    "release_relative_s": 0.021715880997362547,
+    "integration_start_relative_s": 0.12758755798859056,
+    "integration_after_both_collected": true,
+    "integration_changed_files": [
+      "engine.py"
+    ],
+    "assembled_sha256": {
+      "README.md": "f9993f2ecb3f2a94a9a7a273ef2236efeef831bf553e8546d35ac9e72ddf49c6",
+      "cli.py": "55b058118c065d0a096d31bd13fe16f462edf2ce5af1aae9e8940e4f12333c2f",
+      "engine.py": "deb545947aa3d83e163eb14c89ce6ccadc5d4aa7a1e6d708ef99556cae093755",
+      "presentation.py": "50a4671b037e4380b832011a8d0453b1926168759ee5ba35996e02a6f3373dab"
+    },
+    "final_sha256": {
+      "README.md": "f9993f2ecb3f2a94a9a7a273ef2236efeef831bf553e8546d35ac9e72ddf49c6",
+      "cli.py": "55b058118c065d0a096d31bd13fe16f462edf2ce5af1aae9e8940e4f12333c2f",
+      "engine.py": "476b746805b4fc1b729cd0bdfd6b652347935284d4d4dc91feab4f76e4a68508",
+      "presentation.py": "50a4671b037e4380b832011a8d0453b1926168759ee5ba35996e02a6f3373dab"
+    },
+    "wall_seconds": 0.14786981299403124,
+    "limitations": [
+      "Fake candidates only; no authenticated model transport",
+      "Completion timestamps are parent observations, not exact process exit times",
+      "No token accounting or quota claim; simulation has no calculator score"
+    ]
+  },
+  "environment_note": "The outer sandbox blocked the first bubblewrap attempt; successful observation used an approved elevated local command, with child process isolation retained.",
+  "sha256": {
+    "challenges/modular-calculator-draft/SPEC.md": "ccf7c7e767234eee3048397a900cdf6c1073b6b0a0d2d04bbcb93769a7ca7c4c",
+    "challenges/modular-calculator-draft/catalogue.json": "8dbfc4972dd4502bed3c6deb1d1a3b703fdad5b494a5cdfbb9a89b64d15b380b",
+    "challenges/modular-calculator-draft/tests/test_acceptance.py": "f4c90f7c4a2392db705a2785c6f93efdfd1564588736fb4038011ac543b03e34",
+    "scripts/preflight_parallel_pilot.py": "b7a3650f87d7275a86fdfd418c5965d5bee3426963e9d30cb6d9ad99f127f872",
+    "scripts/v2_2_transport.py": "42551e9616a8fde3164ddc9fda540101cb0fb163f68933f0e90cfd76f6a43e2f",
+    "tests/test_modular_acceptance.py": "58b5f9be6091af8f02bfc9b84cfc58e6ef8a37a5786fee49063ad2dad388a450",
+    "tests/test_parallel_pilot.py": "75f48e4e01c43346cf346dfce0dc568c666742fe0ab646ea65f19510e36ff2c5",
+    "tests/fixtures/modular/engine.py": "d6df53736ddc358fb74b83db40b58b68d583e4223ceedc7bd9547153ea39079d",
+    "tests/fixtures/modular/presentation.py": "72da95a12f08da9fcfbeb0826dd11e21f88c47b738bd92b3da3e9f800c1b57b0",
+    "tests/fixtures/modular/cli.py": "1a734f7828718c9e8f2128287f2273eddcefd5e87cb0c31073d4499633f76aa2"
+  }
+}
